@@ -1,0 +1,127 @@
+<book>
+	<preheading>10th Class Foundation</preheading>
+	<title>Chemistry</title>
+	<description>Foundation Preperation Course Materials provided by eTester Classes.</description>
+	<book_chapter_number_offset>0</book_chapter_number_offset>
+	<book_page_number_offset>0</book_page_number_offset>
+	<show_chapter_numbers>true</show_chapter_numbers>
+	<chapters>
+		<chapter>
+			<number>1</number>
+			<title>Atomic Structure - Level 3</title>
+			<description>
+				<![CDATA[Essential Exam Preperation guide for Employment Readiness Exams]]>
+			</description>
+			<filename>AtomicStructureLevel3.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>2</number>
+			<title>Periodic Table</title>
+			<description>
+				<![CDATA[Essential Exam Preperation guide for Employment Readiness Exams]]>
+			</description>
+			<filename>PeriodicTable.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>3</number>
+			<title>Chemical Bonding</title>
+			<description>
+				<![CDATA[Essential Exam Preperation guide for Employment Readiness Exams]]>
+			</description>
+			<filename>ChemicalBonding.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>4</number>
+			<title>Mole Concept and Stoichiometry</title>
+			<description>
+				<![CDATA[Essential Exam Preperation guide for Employment Readiness Exams]]>
+			</description>
+			<filename>MoleConceptAndStoichiometry.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>5</number>
+			<title>Electrochemistry</title>
+			<description>
+				<![CDATA[Essential Exam Preperation guide for Employment Readiness Exams]]>
+			</description>
+			<filename>Electrochemistry.html</filename> 
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>6</number>
+			<title>Chemical Kinetics and Chemical Equilibrium</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>ChemicalKineticsAndChemicalEquilibrium.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>7</number>
+			<title>Acids, Bases and Salts</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>AcidsBasesAndSalts.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>8</number>
+			<title>Compounds of Nitrogen</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>CompoundsOfNitrogen.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>9</number>
+			<title>Compounds of Sulphur</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>CompoundsOfSulphur.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>10</number>
+			<title>Compounds of Chlorine</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>CompoundsOfChlorine.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>11</number>
+			<title>Organic Chemistry - Level 1</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>OrganicChemistryLevel1.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>12</number>
+			<title>Organic Chemistry - Level 2</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>OrganicChemistryLevel2.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>13</number>
+			<title>Metallurgy</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>Metallurgy.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+	</chapters>
+</book>

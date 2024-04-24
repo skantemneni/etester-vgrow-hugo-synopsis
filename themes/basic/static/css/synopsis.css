@@ -1,0 +1,132 @@
+.container {
+    margin: 0 auto;
+/*    width: 80%; */
+}
+
+.container > header, #content .topic-header, #content .topic-list-header {
+    font-family: cursive;
+    color: darkblue;
+}
+
+nav,
+footer {
+    background-color: orangered   ;
+    color: #fff;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+}
+
+nav > a {
+    flex: 1;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+.project-container .project-list { 
+    background-color: #dee2e6;
+    padding: 10px;
+}
+
+
+.footer {
+    background-color:var(--bs-light);
+    color: hsl(198.904109589deg, 100%, 25%);
+    text-align: center;
+    padding: 3px 10px;
+    flex: 0 0 auto;
+    border-radius: 10px 10px 0px 0px;
+    border-width: 4px 0px 0px 0px;
+    border-style: ridge;
+    border-color: #e1e5e8;
+}
+
+.main-menu {
+    background-color:var(--bs-light);
+    border-radius: 0px 0px 10px 10px;
+    border-width: 0px 4px 4px 4px;
+    border-style: ridge;
+    border-color: #e1e5e8;
+    position: relative;
+}
+
+
+.project-container .project-list ul {
+    display: block;
+    margin-left: 10px;
+}
+  
+.project-container .project-list  ul li {
+    display: block;
+    position: relative;
+}
+  
+.project-container .project-list  ul li a {
+    display: block;
+    position: relative;
+    text-decoration: none;
+}
+  
+.project-container .project-list ul li:not(:last-child) {
+    margin-bottom: 16px;
+}
+  
+.project-container .project-list ul li:before {
+    content: "";
+    position: absolute;
+    top: 1.2em;
+    left: -30px;
+    margin-top: -.9em;
+    background: linear-gradient(45deg, #00008b, #c7deef);
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+}
+      
+
+
+
+
+
+
+
+
+
+
+
+
+.project-container .project-list ul { 
+    font-family: cursive;
+}
+
+.project-container .project { 
+    padding: 10px;
+    margin-top: 30px;
+}
+
+@media only screen and (min-width: 992px) {
+    nav {
+        flex-direction: row;
+    }
+    
+    .project-container { 
+        display: flex; 
+        column-gap: 5%;
+    }
+    .project-container .project-list { 
+        width: 20%; 
+        min-width:220px;
+        background-color: var(--bs-light);
+        padding: 10px;
+    }
+    .project-container .project {
+        flex: 1;
+        width: 75%;
+    }
+}
+
+

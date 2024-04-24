@@ -1,0 +1,73 @@
+<book>
+	<preheading>8th Class Foundation</preheading>
+	<title>Biology</title>
+	<description>Foundation Preperation Course Materials provided by eTester Classes.</description>
+	<book_chapter_number_offset>0</book_chapter_number_offset>
+	<book_page_number_offset>0</book_page_number_offset>
+	<show_chapter_numbers>true</show_chapter_numbers>
+	<chapters>
+		<chapter>
+			<number>1</number>
+			<title>Crop Production and management</title>
+			<description>
+				<![CDATA[Essential Exam Preperation guide for Employment Readiness Exams]]>
+			</description>
+			<filename>CropProductionAndManagement.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>2</number>
+			<title>Microorganisms: Friends and Foe</title>
+			<description>
+				<![CDATA[Essential Exam Preperation guide for Employment Readiness Exams]]>
+			</description>
+			<filename>MicroorganismsFriendsAndFoe.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>3</number>
+			<title>Conservation of Plants and Animals</title>
+			<description>
+				<![CDATA[Essential Exam Preperation guide for Employment Readiness Exams]]>
+			</description>
+			<filename>ConservationOfPlantsAndAnimals.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>4</number>
+			<title>Cell- Structure and Functions</title>
+			<description>
+				<![CDATA[Essential Exam Preperation guide for Employment Readiness Exams]]>
+			</description>
+			<filename>CellStructureAndFunctions.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>5</number>
+			<title>Reproduction in Animals</title>
+			<description>
+				<![CDATA[Essential Exam Preperation guide for Employment Readiness Exams]]>
+			</description>
+			<filename>ReproductionInAnimals.html</filename> 
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>6</number>
+			<title>Reaching the age of Adolescence</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>ReachingTheAgeOfAdolescence.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>7</number>
+			<title>Pollution of Air and Water</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>PollutionOfAirAndWater.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+	</chapters>
+</book>

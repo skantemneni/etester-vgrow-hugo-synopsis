@@ -1,0 +1,368 @@
+---
+title: "Limits"
+topic: "Limits"
+subject: "Maths"
+channel: "Intermediate"
+tags: [Maths, Intermediate]
+categories: [Maths, Intermediate]
+menuname: "Intermediate-submenu"
+draft: false
+image: "image/Intermediate-Maths-Limits.png"
+defaultSummary: "Limits is an important Topic in the Subject of Maths for the Intermediate course.  Please review it thoroughly and attempt all the associated testing material to perform well on the Intermediate related Exams."
+menu:
+  Intermediate-submenu:
+    identifier: "Intermediate-Maths-Limits"
+    name: "Limits"
+    url: "Intermediate/Maths/Limits"
+    weight: 1800
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="skill" id="01">
+	<h3 class="skill-heading">Limit</h3>
+	<p>In mathematics, the limit of a function is a fundamental concept in calculus and analysis concerning the behavior of that function near a particular input. Informally, a function f assigns an output f(x) to every input x. The function has a limit L at an input p if f(x) is "close" to L whenever x is "close" to p. In other words, f(x) becomes closer and closer to L as x moves closer and closer to p. More specifically, when f is applied to each input sufficiently close to p, the result is an output value that is arbitrarily close to L. If the inputs "close" to p are taken to values that are very different, the limit is said to not exist. </p>
+	<p>Take a positive number <span class=\"latex\" lang=\"latex\"> \(  \varepsilon, \ \lim \limits_{x \rightarrow c} \ f(x) = l  \) </span>, if |f(x) - l| \ &lt; <span class=\"latex\" lang=\"latex\"> \(  \varepsilon  \) </span> for all x sufficiently close to c but different from it. That is, there exists a positive number <span class=\"latex\" lang=\"latex\"> \(  \delta  \) </span> such that if 0 &lt; |x - c| &lt; <span class=\"latex\" lang=\"latex\"> \(  \delta  \) </span>, then  <span class=\"latex\" lang=\"latex\"> \(  |f(x) - l| \ &lt; \varepsilon. \) </span>
+	</p>
+</section>
+<section class="skill" id="02">
+	<h3 class="skill-heading">One-Sided Limits</h3>
+	<p>The left-hand limit is written <span class=\"latex\" lang=\"latex\"> \(  \lim \limits_{x \rightarrow c-} \ f(x) = l  \) </span>
+		<br/>
+		If x approaches c from its left, that is it crosses over values of the form c - h, h > 0, the difference between f(x) and l can be made arbitrarily small. More precisely, <span class=\"latex\" lang=\"latex\"> \(  \lim \limits_{x \rightarrow c-} \ f(x) = l  \) </span> if for each <span class=\"latex\" lang=\"latex\"> \(  \varepsilon &gt; 0  \) </span>, there exists <span class=\"latex\" lang=\"latex\"> \(  a \ \delta > 0  \) </span> such that if <span class=\"latex\" lang=\"latex\"> \(  c - \delta &lt; x &lt; c  \) </span>, then <span class=\"latex\" lang=\"latex\"> \(  |f(x) - l| &lt; \varepsilon. \) </span>
+	</p>
+	<p> Similarly, the right-hand limit is written <span class=\"latex\" lang=\"latex\"> \(  \lim \limits_{x \rightarrow c+} f(x) = l  \) </span> meaning that as x approaches c from its right, that is x crosses over values which are larger than c, then the difference between f(x) and l can be made arbitrarily small. More explicitly, <span class=\"latex\" lang=\"latex\"> \(  \lim \limits_{x \rightarrow c+} \ f(x) = l  \) </span> if for each <span class=\"latex\" lang=\"latex\"> \(  \varepsilon > 0  \) </span>, there exists a <span class=\"latex\" lang=\"latex\"> \(  \delta > 0  \) </span> such that if <span class=\"latex\" lang=\"latex\"> \(  c &lt; x &lt; c + \delta  \) </span>, then <span class=\"latex\" lang=\"latex\"> \(  |f(x) - l| \ &lt; \varepsilon. \) </span>
+		<br />
+		<span class=\"latex\" lang=\"latex\"> \(  If \ \lim \limits_{x \rightarrow c+} \ f(x) = \lim \limits_{x \rightarrow c-} \ f(x)  \) </span> then the limit of f(x) as <span class=\"latex\" lang=\"latex\"> \(  x \rightarrow c  \) </span> exists and is written as <span class=\"latex\" lang=\"latex\"> \(  \lim \limits_{x \rightarrow c} f(x). \) </span> The limit of a function f(x) may not exists in any of the following situations:</p>
+	<div class="synopsis-image"> 
+		<img src="103502009_image-1.png" alt="image1" class="default-synopsis-medium-image" />
+	 </div>
+	<div class="list-custom-block-list-ol spaced20 indented20">
+		<ol>
+			<li>
+				<p>
+					<span class=\"latex\" lang=\"latex\"> \( \lim \limits_{x \rightarrow c+}  \) </span> f(x) does not exist, i.e., f(x) becomes infinitely small or large as <span class=\"latex\" lang=\"latex\"> \(  x \rightarrow c+. \) </span> For example, as <span class=\"latex\" lang=\"latex\"> \(  x \rightarrow 0+, \ f(x) = \frac{1}{x}  \) </span> becomes infinitely large, as in this case x crosses over values which are positive but sufficiently small. </p>
+			</li>
+			<li>
+				<p>
+					<span class=\"latex\" lang=\"latex\"> \(  \lim \limits_{x \rightarrow c-} \ f(x)  \) </span> does not exist, as for example in <span class=\"latex\" lang=\"latex\"> \(  f(x) = \frac{1}{x} \ as \ x \rightarrow 0-  \) </span>, where x crosses over values which are negative, so that f(x) becomes infinitely small.</p>
+			</li>
+			<li>
+				<p> Both <span class=\"latex\" lang=\"latex\"> \(  \lim \limits_{x \rightarrow c+} f(x)  \) </span> and <span class=\"latex\" lang=\"latex\"> \(  \lim \limits_{x \rightarrow c-} \ f(x)  \) </span> exist but are unequal, for example in <br/>
+					<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  f(x) = f(z) = \left \{ \begin{array}{rcl} 1 &amp; x > c  \\\\ -1 &amp; x &lt; c \end{array}\right.  \end{align}  \) </span>
+					<br/>
+					In this case, <span class=\"latex\" lang=\"latex\"> \(  \lim \limits_{x \rightarrow c+} \ f(x) = 1  \) </span> and <span class=\"latex\" lang=\"latex\"> \(  \lim \limits_{x \rightarrow c-} \ f(x) = - 1. \) </span>
+				</p>
+			</li>
+		</ol>
+	</div>
+</section>
+<section class="skill" id="03">
+	<h3 class="skill-heading">Frequently Used Limits</h3>
+	<div class="list-custom-block-list-ol spaced20 indented20">
+		<ol>
+			<li>
+				<p>
+					<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \lim \limits_{x \rightarrow 0} \frac{sin \ x}{x} = 1 = \lim \limits_{x \rightarrow 0} \ cos \ x = \lim \limits_{x \rightarrow 0} \ \frac{tan \ x}{x}  \\\\[12pt]
+						= \lim \limits_{x \rightarrow 0} \frac{sin^{-1} \ x}{x} = \lim \limits_{x \rightarrow 0} \frac{tan^{-1} \ x}{x} \end{align}  \) </span>
+				</p>
+			</li>
+			<li>
+				<p>
+					<span class=\"latex\" lang=\"latex\"> \(  \lim \limits_{x \rightarrow 0} (1 + x)^{\frac{1}{x}} = e = \lim \limits_{x \rightarrow 0} \left(1 + \frac{1}{x}\right)^x. \) </span>
+				</p>
+			</li>
+			<li>
+				<p>
+					<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \lim \limits_{x \rightarrow 0} \frac{log_a \ (1 + x)}{x} = log_a \ e (a > 0, a \neq 0).  \\\\[12pt]
+						In \ particular, \lim \limits_{x \rightarrow 0} \frac{log \ (1 + x)}{x} = 1. \end{align}  \) </span>
+				</p>
+			</li>
+			<li>
+				<p>
+					<span class=\"latex\" lang=\"latex\"> \( \lim \limits_{x \rightarrow 0} \frac{(1 + x)^m - 1}{x} = m. \) </span>
+				</p>
+			</li>
+			<li>
+				<p>
+					<span class=\"latex\" lang=\"latex\"> \( \lim \limits_{x \rightarrow \infty} \frac{log \ x}{x^m} = 0 (m > 0). \) </span>
+				</p>
+			</li>
+			<li>
+				<p>
+					<span class=\"latex\" lang=\"latex\"> \( \lim \limits_{x \rightarrow a} \frac{x^n - a^n}{x - a} = na^{n - 1}. \) </span>
+				</p>
+			</li>
+		</ol>
+	</div>
+</section>
+<section class="skill" id="04">
+	<h3 class="skill-heading">Some Theorems Of Limits</h3>
+	<p>The calculation of limits is based on the following theorems. <br/>
+		<span class=\"latex\" lang=\"latex\"> \(  If \ \lim \limits_{x \rightarrow c} \ f(x) \ and \ \lim \limits_{x \rightarrow c} \ g(x) \ exist, \ then  \) </span>
+	</p>
+	<div class="list-custom-block-list-ol spaced20 indented20">
+		<ol>
+			<li>
+				<p>
+					<span class=\"latex\" lang=\"latex\"> \(  \lim \limits_{x \rightarrow c} (f(x) \pm g(x)) = \lim \limits_{x \rightarrow c} f(x) \pm \lim \limits_{x \rightarrow c} g(x). \) </span>
+				</p>
+			</li>
+			<li>
+				<p>
+					<span class=\"latex\" lang=\"latex\"> \(  \lim \limits_{x \rightarrow c} [kf(x)] = k \lim \limits_{x \rightarrow c} f(x) \ where \ k \ is \ a \ scalar. \) </span>
+				</p>
+			</li>
+			<li>
+				<p>
+					<span class=\"latex\" lang=\"latex\"> \(  \lim \limits_{x \rightarrow c} (f(x) . g(x)) = \lim \limits_{x \rightarrow c} f(x) . \lim \limits_{x \rightarrow c} g(x). \) </span>
+				</p>
+			</li>
+			<li>
+				<p>
+					<span class=\"latex\" lang=\"latex\"> \(  \lim \limits_{x \rightarrow c} \frac{f(x)}{g(x)} = \frac{\lim \limits_{x \rightarrow c} f(x)}{\lim \limits_{x \rightarrow c} g(x)} (provided \ \lim \limits_{x \rightarrow c} \ g(x) \neq 0). \) </span>
+				</p>
+			</li>
+		</ol>
+	</div>
+	<p>For many elementary functions (e.g polynomial, trigonometric, logarthmic and exponential function), we have <br />
+		<span class=\"latex\" lang=\"latex\"> \(  \lim \limits_{x \rightarrow c} \ f(x) = f \left(\lim \limits_{x \rightarrow c} c \right) = f(c) \ if \ c \epsilon \ dom \ (f). \) </span>
+	</p>
+</section>
+<section class="skill" id="05">
+	<h3 class="skill-heading">Use Of Series Expansion In Finding Limits</h3>
+	<p>The following series expansion are useful as in evaluating limits</p>
+	<div class="list-custom-block-list-ol spaced20 indented20">
+		<ol>
+			<li>
+				<p>
+					<span class=\"latex\" lang=\"latex\"> \(  (1 + x)^p = 1 1 + px + \frac{p(p - 1)}{2!} x^2 + \frac{p(p - 1)(p - 2)}{3!}x^3 + ......  \) </span> (for |x| &lt; and p <span class=\"latex\" lang=\"latex\"> \(  \epsilon Q  \) </span>, the set of rational numbers)</p>
+			</li>
+			<li>
+				<p>
+					<span class=\"latex\" lang=\"latex\"> \( e^x = 1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + ..... \) </span>
+				</p>
+			</li>
+			<li>
+				<p>
+					<span class=\"latex\" lang=\"latex\"> \( a^x = 1 + x (log_ea) + \frac{x^2}{2!} (log_ea)^2 + ....  \) </span>
+				</p>
+			</li>
+			<li>
+				<p>
+					<span class=\"latex\" lang=\"latex\"> \( log(1 + x) = x - \frac{x^2}{2} + \frac{x^3}{3} - \frac{x^4}{4} +....(-1 &lt; x \leq 1)  \) </span>
+				</p>
+			</li>
+			<li>
+				<p>
+					<span class=\"latex\" lang=\"latex\"> \( log(1 - x) = - \left( x + \frac{x^2}{2} + \frac{x^3}{3} +....\right) (-1 \leq x &lt; 1)  \) </span>
+				</p>
+			</li>
+			<li>
+				<p>
+					<span class=\"latex\" lang=\"latex\"> \( sin \ x = x - \frac{x^3}{3!} + \frac{x^5}{5!} -...... \) </span>
+				</p>
+			</li>
+			<li>
+				<p>
+					<span class=\"latex\" lang=\"latex\"> \( cos \ x = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} -...... \) </span>
+				</p>
+			</li>
+			<li>
+				<p>
+					<span class=\"latex\" lang=\"latex\"> \( tan \ x = x + \frac{x^3}{3} + \frac{2x^5}{15} +...... \) </span>
+				</p>
+			</li>
+			<li>
+				<p>
+					<span class=\"latex\" lang=\"latex\"> \( sin^{-1} \ x = x + \frac{1}{2} \frac{x^3}{3} + \frac{1}{2}.\frac{3}{4} \frac{x^5}{5} +...... \) </span>
+				</p>
+			</li>
+			<li>
+				<p>
+					<span class=\"latex\" lang=\"latex\"> \( tan^{-1} \ x = x - \frac{x^3}{3} + \frac{x^5}{5} -...... \) </span>
+				</p>
+			</li>
+		</ol>
+	</div>
+</section>  
+<section class="solved-examples" id="examples">
+	<h3 class="solved-examples-heading">Solved examples</h3>
+	<section class="solved-example"> 
+		<h4 class="solved-examples-question">Example 1:</h4>
+		<p>Evaluate: <span class=\"latex\" lang=\"latex\"> \(  \lim \limits_{x \rightarrow \ 1} \frac{x^{15} - 1}{x^{10} - 1}  \) </span>
+			<br />
+			<span class="highlight01"> Solution </span>
+			<br />
+			We have <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \lim \limits_{x \rightarrow \ 1} \frac{x^{15} - 1}{x^{10} - 1}  \\\\[3pt]
+				= \lim \limits_{x \rightarrow 1} \left[ \frac{x^{15} - 1}{x - 1} + \frac{x^{10} - 1}{x - 1} \right ]  \\\\[3pt]
+				= \lim \limits_{x \rightarrow \ 1} \left[ \frac{x^{15} - 1}{x - 1} \right ] + \lim \limits_{x \rightarrow \ 1} \left[ \frac{x^{10} - 1}{x - 1} \right ]  \\\\[3pt]
+				= 15(1)^{14} + 10(1)^9 \ \text{(by the theorem above)}  \\\\[3pt]
+				= 15 + 10 = \frac{3}{2}  \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 2:</h4>
+		<p>Evaluate: <span class=\"latex\" lang=\"latex\"> \(  \lim \limits_{x \rightarrow \ 0} \frac{\sqrt{1 + x} - 1}{x}  \) </span>
+			<br />
+			<span class="highlight01"> Solution </span>
+			<br />
+			Put y = 1 + x, so that <span class=\"latex\" lang=\"latex\"> \( y \rightarrow 1 \ as \ x \rightarrow 0  \) </span>. <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  Then \ \lim \limits_{x \rightarrow \ 0} \frac{\sqrt{1 + x} - 1}{x}  \\\\[3pt]
+				= \lim \limits_{y \rightarrow 0} \frac{\sqrt{y} - 1}{y - 1}  \\\\[3pt]
+				= \lim \limits_{y \rightarrow \ 0} \frac{y^{\frac{1}{2}} - 1^{\frac{1}{2}}}{y - 1}  \\\\[3pt]
+				= \frac{1}{2} (1)^{\frac{1}{2} - 1} \ \text{(by the theorem above)}  \\\\[3pt]
+				=  \frac{1}{2}  \end{align}  \) </span>
+		</p>
+
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 2:</h4>
+		<p>The following are two important limits. </p>
+		<div class="list1-ol default-spaced-indented list-numbered-style-lower-alpha">
+			<ol>
+				<li>
+					<p>
+						<span class=\"latex\" lang=\"latex\"> \(  \lim \limits_{x \rightarrow 0} \frac{sin \ x}{x} = 1  \) </span>
+					</p>
+				</li>
+				<li>
+					<p>
+						<span class=\"latex\" lang=\"latex\"> \(  \lim \limits_{x \rightarrow 0} \frac{1 - cos \ x}{x} = 0 \) </span>
+					</p>
+				</li>
+			</ol>
+		</div>
+		<p>
+			<span class="highlight01"> Solution </span>
+		</p>
+		<div class="list1-ol default-spaced-indented list-numbered-style-lower-alpha">
+			<ol>
+				<li>
+					<p>The inequality in (*) says that the function is sandwiched between the <span class=\"latex\" lang=\"latex\"> \(  \frac{sin \ x}{x}  \) </span> function cos x and the constant function which takes value 1. <br />
+						Futher, <span class=\"latex\" lang=\"latex\"> \(  \lim \limits_{x \rightarrow 0} = cos \ x = 1  \) </span>. we see that the proof of (i) of the theorem is complete by sandwich theorem.</p>
+				</li>
+				<li>
+					<p>To prove (ii), we recall the trigonometric identity <span class=\"latex\" lang=\"latex\"> \(  1 - cos \ x = 2 \ sin^2 \left ( \frac{x}{2} \right )  \) </span>
+						<br />
+						Then <br />
+						<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \lim \limits_{x \rightarrow 0} \frac{1 - cos \ x}{x} = \lim \limits_{x \rightarrow 0} \frac{2 sin^2 \left ( \frac{x}{2} \right )}{x} \lim \limits_{x \rightarrow 0} \frac{ sin \left ( \frac{x}{2} \right ) }{\frac{x}{2} }. sin \left ( \frac{x}{2} \right )  \\\\[3pt]
+							= \lim \limits_{x \rightarrow 0} \frac{sin \left ( \frac{x}{2} \right ) }{\frac{x}{2}} \ \lim \limits_{x \rightarrow 0} \left ( \frac{x}{2} \right ) = 1.0 = 0  \end{align}  \) </span>
+						<br />
+						Observe that we have implicitly used the fact that <span class=\"latex\" lang=\"latex\"> \(  x \rightarrow 0  \) </span> is equivalent to <span class=\"latex\" lang=\"latex\"> \(  \frac{x}{2}  \rightarrow 0  \) </span>. This may be justified by putting <span class=\"latex\" lang=\"latex\"> \( y =  \frac{x}{2}  \) </span>
+					</p>
+				</li>
+			</ol>
+		</div>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 3:</h4>
+		<p> Find the derivative of f(x) = 10x. <br />
+			<span class="highlight01"> Solution </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  since \ f'(x) = \lim \limits_{x \rightarrow 0} \frac{f(x + h) - f(x)}{h}  \\\\[3pt]
+				= \lim \limits_{h \rightarrow 0} \frac{10(x + h) - 10(x)}{h}  \\\\[3pt]
+				= \lim \limits_{h \rightarrow 0} \frac{10 h}{h} = \lim \limits_{h \rightarrow 0} (10) = 10  \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 4:</h4>
+		<p> Find the derivative of <span class=\"latex\" lang=\"latex\"> \(  f(x) = x^2  \) </span>. <br />
+			<span class="highlight01"> Solution </span>
+			<br />
+			We have. <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  f'(x) = \lim \limits_{h \rightarrow 0} \frac{f(x + h) - f(x)}{h}  \\\\[3pt]
+				= \lim \limits_{h \rightarrow 0} \frac{(x + h)^2 - (x)^2}{h} = \lim \limits_{h \rightarrow 0} (h + 2x ) = 2x  \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 5:</h4>
+		<p> Find the derivative of the constant function f(x) = a for a fixed real number a.<br />
+			<span class="highlight01"> Solution </span>
+			<br />
+			We have. <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  f'(x) = \lim \limits_{h \rightarrow 0} \frac{f(x + h) - f(x)}{h}  \\\\[3pt]
+				= \lim \limits_{h \rightarrow 0} \frac{a - a}{h} = \lim \limits_{h \rightarrow 0} \frac{0}{h}  \ as \ h \neq 0  \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 6:</h4>
+		<p> Find the derivative of <span class=\"latex\" lang=\"latex\"> \(  f(x) = \frac{1}{x}  \) </span>
+			<br />
+			<span class="highlight01"> Solution </span>
+			<br />
+			We have. <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  f'(x) = \lim \limits_{h \rightarrow 0} \frac{f(x + h) - f(x)}{h}  \\\\[3pt]
+				= \lim \limits_{h \rightarrow 0} \frac{ \frac{1}{(x - h)} - \frac{1}{x}}{h}  \\\\[3pt]
+				= \lim \limits_{h \rightarrow 0} \frac{1}{h} \left [ \frac{ x - (x + h)}{x(x + h)} \right ]  \\\\[3pt]
+				= \lim \limits_{h \rightarrow 0} \frac{1}{h} \left [ \frac{-h}{x(x + h)} \right ]  \\\\[3pt]
+				= \lim \limits_{h \rightarrow 0} \frac{-1}{x(x + h)} = - \frac{1}{x^2}  \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 7:</h4>
+		<p>Find the derivative of <span class=\"latex\" lang=\"latex\"> \(  f(x) = 1 + x + x^2 + x^3 +... + x^{50}  \) </span> at x = 1.<br />
+			<span class="highlight01"> Solution </span>
+			<br />
+			A direct application of the above Theorem 7 tells that the derivative of the above function is <span class=\"latex\" lang=\"latex\"> \(  1 + 2x + 3x^2 + . . . + 50x^{49}  \) </span>. <br />
+			At x = 1 the value of this function equals <br />
+			<span class=\"latex\" lang=\"latex\"> \(  1 + 2(1) + 3(1)^2 + ... + 50(1)^{49} = 1 + 2 + 3 + ..... + 50 = \frac{(50)(51)}{2} = 1275  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 8:</h4>
+		<p>Find the derivative of <span class=\"latex\" lang=\"latex\"> \(  f(x) = \frac{x + 1}{x}  \) </span>.<br />
+			<span class="highlight01"> Solution </span>
+			<br />
+			Clearly this function is defined everywhere except at x = 0. <br />
+			We use the quotient rule with u = x + 1 and v = x. Hence u' = 1 and v' = 1. Therefore <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \frac{df(x)}{dx} = \frac{d}{dx} \left ( \frac{x + 1}{x} \right ) =  \frac{d}{dx} 	\left ( \frac{u}{v} \right )  \\\\[3pt]
+				= \frac{u' v - uv'}{v^2} = \frac{1(x) - (x + 1)1}{x^2} = - \frac{1}{x^2}  \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 9:</h4>
+		<p>Compute the derivative of sin x.<br />
+			<span class="highlight01"> Solution </span>
+			<br />
+			Let f(x) = sin x. Then <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \frac{df(x)}{dx} = \lim \limits_{h \rightarrow 0} \frac{f(x + h) - f(x)}{h}  \\\\[3pt]
+				\lim \limits_{h \rightarrow
+				0} \frac{sin (x + h) - sin(x)}{h}  \\\\[3pt]
+				= \lim \limits_{h \rightarrow 0} \frac{2 cos \left ( \frac{2x + h}{2} \right ) sin \left ( \frac{h}{2} \right ) }{h} \  \text{using formula for sin A - sin B)}  \\\\[3pt]
+				= \lim \limits_{h \rightarrow 0} \left ( x + \frac{h}{2} \right ). \lim \limits_{h \rightarrow 0} \frac{sin \frac{h}{2}}{\frac{h}{2}} = cos \ x. 1 = cos \ x  \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 10:</h4>
+		<p>Compute the derivative of <span class=\"latex\" lang=\"latex\"> \( f(x) = sin^2 \ x  \) </span>.<br />
+			<span class="highlight01"> Solution </span>
+			<br />
+			We use the Leibnitz product rule to evaluate this <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \frac{df(x)}{dx} = \frac{d}{dx} (sin \ x \ sin \ x)  \) </span>
+			<br />
+			= (sin x)' sin x + sin x(sin x)' <br />
+			= (cos x)sin x + sin x(cos x)
+			= 2sin x cos x = sin 2x. </p>
+	</section>
+</section> 

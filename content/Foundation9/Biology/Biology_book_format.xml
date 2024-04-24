@@ -1,0 +1,64 @@
+<book>
+	<preheading>9th Class Foundation</preheading>
+	<title>Biology</title>
+	<description>Foundation Preperation Course Materials provided by eTester Classes.</description>
+	<book_chapter_number_offset>0</book_chapter_number_offset>
+	<book_page_number_offset>0</book_page_number_offset>
+	<show_chapter_numbers>true</show_chapter_numbers>
+	<chapters>
+		<chapter>
+			<number>1</number>
+			<title>The Fundamental Unit Of Life</title>
+			<description>
+				<![CDATA[Essential Exam Preperation guide for Employment Readiness Exams]]>
+			</description>
+			<filename>TheFundamentalUnitOfLife.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>2</number>
+			<title>Tissues</title>
+			<description>
+				<![CDATA[Essential Exam Preperation guide for Employment Readiness Exams]]>
+			</description>
+			<filename>Tissues.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>3</number>
+			<title>Diversity in Living Organisms</title>
+			<description>
+				<![CDATA[Essential Exam Preperation guide for Employment Readiness Exams]]>
+			</description>
+			<filename>DiversityInLivingOrganisms.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>4</number>
+			<title>Why do we fall ill</title>
+			<description>
+				<![CDATA[Essential Exam Preperation guide for Employment Readiness Exams]]>
+			</description>
+			<filename>WhyDoWeFallIll.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>5</number>
+			<title>Natural Resources</title>
+			<description>
+				<![CDATA[Essential Exam Preperation guide for Employment Readiness Exams]]>
+			</description>
+			<filename>NaturalResources.html</filename> 
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>6</number>
+			<title>Improvement in Food Resources</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>ImprovementInFoodResources.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+	</chapters>
+</book>

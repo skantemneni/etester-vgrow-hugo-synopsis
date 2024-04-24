@@ -1,0 +1,13 @@
+<div class="jumbotron text-center">
+    <h1 class="display-4">
+        {{ .Site.Title }} 
+        {{- with .Params.channel -}}
+         &nbsp;-&nbsp;{{ . }}
+        {{- end -}}
+    </h1>
+    <p class="lead">{{ .Params.defaultSummary }}</p>
+    <hr class="my-4">
+    <p>This is a companion Website with supporting learning materials for the various eTester Channels available via Web and Mobile Applications. </p>
+    <a class="btn btn-primary btn-lg" href="{{ site.Params.parentWebsite }}" target="synopsis" role="button">{{ site.Params.parentWebsiteLinkText }}</a>
+</div>
+

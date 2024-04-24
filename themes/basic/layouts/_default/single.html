@@ -1,0 +1,27 @@
+{{ define "main" }}
+
+<div class= "project-container" >
+    <section class= "project-list " >
+        <h3 class="topic-header" style="margin-bottom: 30px;">{{ .Params.subject }} Topics</h3>
+        <ul>
+            {{$type := .Params.subject}}
+            {{$channel := .Params.channel}}
+            <!-- https://gohugo.io/functions/where/#nest-where-clauses -->
+            {{ range (where (where .Site.RegularPages ".Params.subject" "in" $type) ".Params.channel" "=" $channel ) }}
+                <li><a href= "{{ .Permalink }}" >{{ .Title }}</a></li>
+            {{ end }}
+        </ul>
+    </section>
+    <section class= "project" >
+        <h2 class="topic-list-header">{{ .Title }}</h2>
+        {{ .Content }}
+    </section>
+</div>
+
+<div>
+    &nbsp;
+</div>
+<br />
+
+{{ end }}
+

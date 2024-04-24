@@ -1,0 +1,71 @@
+<div class="jumbotron text-center">
+    <h1 class="display-4">
+        {{ .Site.Title }} 
+        {{- with .Params.channel -}}
+         &nbsp;-&nbsp;{{ . }}
+        {{- end -}}
+    </h1>
+    <p class="lead">{{ .Summary }}</p>
+    <hr class="my-4">
+    <p>This is a companion Website with supporting learning materials for the various eTester Channels available via Web and Mobile Applications. </p>
+    <a class="btn btn-primary btn-lg" href="https://eTester.com" target="etester" role="button">eTester.com</a>
+</div>
+
+<!--
+{{range $index, $element := site.Menus}}
+    <h2>{{$index}}</h2>
+    {{range $element}}
+        <a href="{{ .URL }}">{{.Name}}</a>
+    {{end}}
+
+{{end}}
+-->
+
+
+
+<!--
+<nav>
+    <a href="/">Home</a>
+    <a href="/about">About</a>
+
+    {{ range .Pages }}
+        <a href="{{ .RelPermalink }}">{{.Title}}</a>
+    {{ end }}
+    <a href="/contact">Contact</a>
+</nav>
+-->
+
+<!-- Render the main menu -->
+{{$menu := site.Menus.main}}
+{{with $menu }}
+<nav>
+    {{range .}}
+        <a href="{{ .URL }}">{{.Name}}</a>
+    {{end}}
+</nav>
+{{end}}
+
+<br />
+
+<!-- Render the Context menu -->
+<!-- Render the Context ONLY if the concext menu is not equal to "main" menu -->
+
+{{$menunameForPage := .Params.menuname}}
+{{range $menuname, $menulist := site.Menus}}
+    {{if and 
+            (ne (lower $menunameForPage) "main") 
+            (eq (lower $menuname) (lower $menunameForPage))
+    }}
+        {{with $menulist }}
+        <nav>
+            {{range .}}
+                <a href="{{ .URL }}">{{.Name}}</a>
+            {{end}}
+        </nav>
+        {{end}}  
+    {{end}}  
+
+{{end}}
+
+
+

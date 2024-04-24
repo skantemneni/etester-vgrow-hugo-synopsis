@@ -1,0 +1,62 @@
+<!--
+    Why collapse is not working in Bootstrap 5?
+    You have to use , data-bs-toggle="collapse" and data-bs-target="#collapseExample" insted of data-toggle="collapse" and and data-target
+    for Bootstrap 5. You can check the following updated snippet. thank you!
+-->
+{{ $channel := "Foundation 10" }}
+
+<div class="d-flex justify-content-center main-menu" style="position: relative;">
+    <a class="nav-link {{ if .IsHome }} active fw-bold text-primary {{ end }} " href="{{ .Site.Home.Permalink }}">
+        <img style="height: 50px; position: absolute; top: 4px; left: 20px;" href="{{ .Site.Home.Permalink }}" src="{{ site.Params.logo }}" class="logo" tabindex="0">
+    </a>
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <ul class="navbar-nav flex-wrap">
+                <li class="nav-item">
+                    <a class="nav-link {{ if .IsHome }} active fw-bold text-primary {{ end }} " href="../">{{ $channel }}</a>
+                </li>
+
+                {{ $currentPage := . }}
+
+                {{ range .Site.Menus.main.ByWeight }}
+
+
+
+
+
+
+
+
+                {{ if eq .Title $channel }}
+
+                {{ if .HasChildren }}
+                {{ range .Children }}
+                <li>
+                    <a class="nav-link  {{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active {{ end }}" href="{{ .URL }}">  {{ .Title }}</a>
+                </li>
+                {{ end }}
+
+                {{ end }}
+
+                {{ end }}
+
+
+
+
+
+
+
+
+
+                {{ end }}
+
+            </ul>
+
+        </div>
+    </nav>
+</div>
+

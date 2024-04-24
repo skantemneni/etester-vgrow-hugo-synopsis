@@ -1,0 +1,289 @@
+<book>
+	<preheading>Intermediate</preheading>
+	<title>Physics</title>
+	<description>Intermediate Preperation Course Materials provided by eTester Classes.</description>
+	<book_chapter_number_offset>0</book_chapter_number_offset>
+	<book_page_number_offset>0</book_page_number_offset>
+	<show_chapter_numbers>true</show_chapter_numbers>
+	<chapters>
+		<chapter>
+			<number>1</number>
+			<title>Units and Measurement</title>
+			<description>
+				<![CDATA[Essential Exam Preperation guide for Employment Readiness Exams]]>
+			</description>
+			<filename>Measurement.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>2</number>
+			<title>Motion in a Straight Line</title>
+			<description>
+				<![CDATA[Essential Exam Preperation guide for Employment Readiness Exams]]>
+			</description>
+			<filename>MotionInAStraightLine.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>3</number>
+			<title>Motion in a Plane</title>
+			<description>
+				<![CDATA[Essential Exam Preperation guide for Employment Readiness Exams]]>
+			</description>
+			<filename>MotionInAPlane.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>4</number>
+			<title>Laws of Motion</title>
+			<description>
+				<![CDATA[Essential Exam Preperation guide for Employment Readiness Exams]]>
+			</description>
+			<filename>LawsOfMotion.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>5</number>
+			<title>Friction</title>
+			<description>
+				<![CDATA[Essential Exam Preperation guide for Employment Readiness Exams]]>
+			</description>
+			<filename>Friction.html</filename> 
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>6</number>
+			<title>Work, Power and Energy</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>WorkPowerAndEnergy.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>7</number>
+			<title>System of Particles and Rotational Motion</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>RotationalMotion.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>8</number>
+			<title>Oscillations</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>Oscillations.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>9</number>
+			<title>Gravitation</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>Gravitation.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>10</number>
+			<title>Mechanical Properties of Solids</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>MechanicalPropertiesOfSolids.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>11</number>
+			<title>Mechanical Properties of Fluids</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>MechanicsOfFluid.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>12</number>
+			<title>Thermal Properties of Matter</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>ThermalPropertiesOfMatter.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>13</number>
+			<title>Thermodynamics</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>Thermodynamics.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>14</number>
+			<title>Kinetic Theory of Gases</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>KineticTheory.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>15</number>
+			<title>Waves</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>Waves.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>16</number>
+			<title>Ray Optics</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>RayOptics.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>17</number>
+			<title>Wave Optics</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>WaveOptics.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>18</number>
+			<title>Electric Charges and Fields</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>ElectricChargesAndFields.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>19</number>
+			<title>Electrostatic Potential and Capacitance</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>ElectrostaticPotentialAndCapacitance.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>20</number>
+			<title>Current Electricity</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>CurrentElectricity.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>21</number>
+			<title>Moving Charges and Magnetic Field</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>MovingChargesAndMagneticField.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>22</number>
+			<title>Magnetism and Matter</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>MagnetismAndMatter.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>23</number>
+			<title>Electromagnetic Induction</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>ElectromagneticInduction.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>24</number>
+			<title>Alternating Current</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>AlternatingCurrent.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>25</number>
+			<title>Dual Nature of Radiation and Matter</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>DualNatureOfRadiationAndMatter.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>26</number>
+			<title>Atoms</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>Atoms.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>27</number>
+			<title>Atoms/Nuclei</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>Nuclei.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>28</number>
+			<title>Semiconductor Devices</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>SemiconductorDevices.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>29</number>
+			<title>Communication Systems</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>CommunicationSystems.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>30</number>
+			<title>Electromagnetic Waves</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>ElectromagneticWaves.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>31</number>
+			<title>Magnetic Effect of Current</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>MagneticEffectOfCurrent.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+	</chapters>
+</book>

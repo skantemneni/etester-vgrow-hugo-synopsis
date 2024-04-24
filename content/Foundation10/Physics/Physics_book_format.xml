@@ -1,0 +1,82 @@
+<book>
+	<preheading>10th Class Foundation</preheading>
+	<title>Physics</title>
+	<description>Foundation Preperation Course Materials provided by eTester Classes.</description>
+	<book_chapter_number_offset>0</book_chapter_number_offset>
+	<book_page_number_offset>0</book_page_number_offset>
+	<show_chapter_numbers>true</show_chapter_numbers>
+	<chapters>
+		<chapter>
+			<number>1</number>
+			<title>Light - Level 2</title>
+			<description>
+				<![CDATA[Essential Exam Preperation guide for Employment Readiness Exams]]>
+			</description>
+			<filename>LightLevel2.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>2</number>
+			<title>Light Level-3</title>
+			<description>
+				<![CDATA[Essential Exam Preperation guide for Employment Readiness Exams]]>
+			</description>
+			<filename>LightLevel3.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>3</number>
+			<title>Electrostatistics</title>
+			<description>
+				<![CDATA[Essential Exam Preperation guide for Employment Readiness Exams]]>
+			</description>
+			<filename>Electrostatistics.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>4</number>
+			<title>Current Electricity</title>
+			<description>
+				<![CDATA[Essential Exam Preperation guide for Employment Readiness Exams]]>
+			</description>
+			<filename>CurrentElectricity.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>5</number>
+			<title>Heating and Chemical Effects of Electric Current</title>
+			<description>
+				<![CDATA[Essential Exam Preperation guide for Employment Readiness Exams]]>
+			</description>
+			<filename>HeatingAndChemicalEffectsOfElectricCurrent.html</filename> 
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>6</number>
+			<title>Magnetic effects of Electric Current</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>MagneticEffectsOfElectricCurrent.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>7</number>
+			<title>Heat - Level 3</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>HeatLevel3.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>8</number>
+			<title>Modern Physics</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>ModernPhysics.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+	</chapters>
+</book>

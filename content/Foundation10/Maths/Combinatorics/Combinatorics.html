@@ -1,0 +1,476 @@
+---
+title: "Combinatroics"
+layout: "default_foundation"
+isMath: true
+--- 
+<section class="skill" id="01">
+	<h3 class="skill-heading">Four Enumeration Principles</h3>
+	<p>To answer such questions as How many ways are there to give 30 books to seven friends? as well as much more difficult questions, we use the following enumeration rules and principles. <br />
+		Let A and B be sets with m and n elements, respectively; i.e., <br />
+		let n(A) = m; n(B) = n
+	</p>
+	<section class="subskill">
+		<h4 class="skill-heading">Rule of product</h4>
+		<p> The number of ways of forming an ordered pair (a, b) such that a <span class=\"latex\" lang=\"latex\"> \(  \epsilon  \) </span> A and b <span class=\"latex\" lang=\"latex\"> \(  \epsilon  \) </span> B; equals m.n. In other words: <br />
+			<span class=\"latex\" lang=\"latex\"> \(  n(A \times B) = m.n  \) </span>
+		</p>
+	</section>
+	<section class="subskill">
+		<h4 class="skill-heading">Rule of sum</h4>
+		<p>If sets A and B are disjoint, then the number of ways of picking one element from their union equals the sum m + n. In other words: <br />
+			<span class=\"latex\" lang=\"latex\"> \(  A \cap B = \theta \Rightarrow n(A \cup B) = m + n  \) </span>
+		</p>
+	</section>
+	<section class="subskill">
+		<h4 class="skill-heading">Principle of inclusion - exclusion </h4>
+		<p>In general when A and B are not necessarily disjoint, the following is true: <br />
+			<span class=\"latex\" lang=\"latex\"> \(  (A \cap B = C \ |C| = p \geq 0) \Rightarrow n(A \cup B) = m + n - p  \) </span>
+		</p>
+		<div class="synopsis-image"> 
+			<img src="104190014_image-1.png" alt="image1" class="default-synopsis-medium-image" />
+		 </div>
+		<p> With the principle of inclusion - exclusion. If n(A) = m, n(B) = n, and <span class=\"latex\" lang=\"latex\"> \(  n(A \cap B) = p  \) </span>, then <span class=\"latex\" lang=\"latex\"> \(  n(A \cup B) = m + n - p  \) </span>.<br />
+			It is easy to see that the principle of inclusion-exclusion is a consequence of the rule of sum. Consider the above figure. First of all note that sets B - C and C are disjoint and their union equals A and B - C are disjoint and their union equals the union of A and B. we find that <br />
+			<span class=\"latex\" lang=\"latex\"> \(  n(A \cup B) = n(A \cup (B - C))  \) </span>
+			<br />
+			= m + n - p <br />
+			In other words the union of two sets in the general case does not have m + n elements because this sum counts the common elements of A and B twice. To obtain the correct result, we must subtract p, the number of elements in <span class=\"latex\" lang=\"latex\"> \(  A \cap B  \) </span>.
+		</p>
+	</section>
+	<section class="subskill">
+		<h4 class="skill-heading">Dirichlet's principle </h4>
+		<p>If n disjoint sets contain n + 1 elements, at least one of them has more than one element. <br />
+			Although these principles are very simple, they are used to solve even very difficult problems.
+		</p>
+	</section>
+</section>
+<section class="solved-examples" id="examples">
+	<h3 class="solved-examples-heading">Solved examples</h3>
+	<section class="solved-example">  
+		<h4 class="solved-examples-question">Example 1:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			How many elements are there in the set given by <span class=\"latex\" lang=\"latex\"> \(  A = \{n, \ n + 1, \ ...., n^2 \} ? \) </span>
+		</p>
+		<p>
+			<span class="highlight01">Solution: </span>
+			<br />
+			It is obvious that <span class=\"latex\" lang=\"latex\"> \(  n(A) = n^2 - n + 1  \) </span>, but let us try to justify this answer. What does it actually mean to enumerate the elements of a set? If A has r <span class=\"latex\" lang=\"latex\"> \(  \epsilon  \) </span> N elements, then each element can be assigned an order, a number from the set <span class=\"latex\" lang=\"latex\"> \(  N_r = \{1, \ 2, \ 3, \ .... , \ r \}  \subset N  \) </span>. <br />
+			In our problem, we assign order 1 to n, order 2 to n + 1, and so on. The question now is what is the order of <span class=\"latex\" lang=\"latex\"> \( n^2 ?  \) </span> We notice that in this case, the difference between the element of A and its order is always n - 1. Therefore the order of <span class=\"latex\" lang=\"latex\"> \( n^2  \) </span> is <span class=\"latex\" lang=\"latex\"> \(  n^2 - (n - 1) = n^2 - n + 1  \) </span>, which implies that <span class=\"latex\" lang=\"latex\"> \(  n(A) = n^2 - n + 1  \) </span>.
+		</p>
+	</section>
+	<section class="solved-example">  
+		<h4 class="solved-examples-question">Example 2:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			A certain island is home to 510 seals. Suppose each seal has 10 or more mustaches, but not more than 30. Prove that among these 510 seals at least 25 of them have an equal number of mustaches.
+		</p>
+		<p>
+			<span class="highlight01">Solution: </span>
+			<br />
+			If we divide the seals into 21 groups according to how many mustaches they have (note that 21 is the cardinality of the set {10, 11, ....,30}) and assume that each group has <span class=\"latex\" lang=\"latex\"> \(  \leq  \) </span> 24 seals, then there are <span class=\"latex\" lang=\"latex\"> \(  \leq 21.24 = 504 &lt; 510  \) </span> seals on the island. Hence, at least one group has 25 or more seals.
+		</p>
+	</section>
+	<section class="solved-example"> 
+		<h4 class="solved-examples-question">Example 3:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			How many seven-digit phone numbers begin with 432 and end with 3 or 5?
+		</p>
+		<p>
+			<span class="highlight01">Solution: </span>
+			<br />
+			The fourth digit can be selected from 10 possible choices: 0, 1, 2, ...., 9. The same is true for the fifth and the sixth digit. The seventh digit can be picked in two ways: it can be either 3 or 5. Therefore, according to the rule of product, the number of such phone numbers is 10 . 10 . 10 . 2 = 2000.
+		</p>
+	</section>
+	<section class="solved-example"> 
+		<h4 class="solved-examples-question">Example 4:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			There are n points given in a plane, and no three of these are collinear, i.e., no three lie on the same line. How many lines are defined by these n points?
+		</p>
+		<p>
+			<span class="highlight01">Solution: </span>
+			<br />
+			Since each pair of different points defines a line, in this problem we are actually interested in counting all pairs of different points that can be formed from the n given points. The first point can be picked in n different ways, while the other can be picked in (n - 1) ways since it must differ from the first. Hence the number of pairs is n(n - 1). <br />
+			Please note that every line formed in this way appears twice because, for example, ordered pairs (A, B) and (B, A) define the same line: <span class=\"latex\" lang=\"latex\"> \(  AB \equiv BA  \) </span>. Therefore, the number of lines is twice as small as the number of ordered pairs, it equals <span class=\"latex\" lang=\"latex\"> \(  \frac{n(n - 1)}{2}.  \) </span>
+		</p>
+	</section>
+	<section class="solved-example"> 
+		<h4 class="solved-examples-question">Example 5:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			If n points are given in space and among them no four coplanar, i.e., no four lie in the same plane, there are <span class=\"latex\" lang=\"latex\"> \(  n(n - 1) \frac{(n - 2)}{6}  \) </span> planes defined by these n points.
+		</p>
+		<p>
+			<span class="highlight01">Solution: </span>
+			<br />
+			In examples 4 and 5 we reduced the problems to counting the two or three-element subsets of the n-element sets. Since the order of the elements of a (sub) set is irrelevant, we can uniquely assign {A, B} to the line <span class=\"latex\" lang=\"latex\"> \(  AB \equiv BA  \) </span> and {A, B, C} to the plane <span class=\"latex\" lang=\"latex\"> \( \pi ABC \equiv \pi CBA  \) </span>.
+		</p>
+	</section>
+	<section class="solved-example"> 
+		<h4 class="solved-examples-question">Example 6:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			How many seven-digit phone numbers begin with 215-2 if the last three digits must differ among themselves, they cannot be 0, 2, or 5; and the last digit cannot be 1?
+		</p>
+		<p>
+			<span class="highlight01">Solution: </span>
+		</p>
+		<div class="list1-ol default-spaced-indented list-numbered-style-lower-alpha">
+			<ol>
+				<li>
+					<p>
+						<span class="highlight01">solution 1: </span>
+						<br />
+						Let us try to solve this problem as follows. We cannot change the first four digits; these are fixed. The fifth digit can be selected from the set {1, 3, 4, 6, 7, 8, 9}, i.e., in seven different ways. The sixth digit must differ from the fifth, so it can be picked in six ways. The last digit must be different from the fifth and the sixth, so without the last condition, we could pick it in five ways. Due to the last condition we cannot select the last digit in four ways, because if the fifth or sixth digit were 1, the last digit can be selected in five ways, not four. <br />
+						Let us divide the set of all phone numbers satisfying these conditions into three disjoint sets, the set of numbers having neither a fifth nor sixth digit equal to 1, the set of numbers having 1 at the fifth plane, and the set of numbers having 1 at the sixth place.<br />
+						In the first set, there are 6.5.4 choices. In the second set the first five digits are fixed, so there are 6.5 choices. Similarly in the third set, there are 6.5 choices. Therefore 6 . 5 . 4 + 1 . 6 . 5 + 6 . 1 . 5 = 180 phone numbers have the required properties. <br />
+					</p>
+				</li>
+				<li>
+					<p>
+						<span class="highlight01"> Solution 2: </span>
+						<br />
+						The solution can be obtained much more easily if we begin with the last digit, which can be picked from {3, 4, 6, 7, 8, 9}, i.e., in 6 ways. Once it is selected, we can select the sixth digit in six ways, too, because although we cannot repeat the last digit, we can use digit 1. The fifth digit can be selected in five ways. The result is the same as before: 6 . 6 . 5 = 180. <br />
+					</p>
+				</li>
+				<li>
+					<p>
+						<span class="highlight01"> Solution 3: </span>
+						<br />
+						Let us consider the third way to solve this problem. From, the total number of phone numbers that can be formed using different digits from {1, 3, 4, 6, 7, 8, 9} at their last three places, we subtract the number of phone numbers having 1 at the last place. 7 . 6 . 5 - 6. 5 = 180.
+					</p>
+				</li>
+			</ol>
+		</div>
+	</section>
+	<section class="solved-example"> 
+		<h4 class="solved-examples-question">Example 7:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			From the set containing n arbitrary natural numbers <span class=\"latex\" lang=\"latex\"> \(  \{ a_1, . . . .a_n \}  \) </span> we can select a subset in which the sum of all elements is divisible by n. Prove this.
+		</p>
+		<p>
+			<span class="highlight01">Solution: </span>
+			<br />
+			Let us consider n subsets: <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \{ a_1 \}, \ \{ a_1, \ a_2 \}, \ ......., \ \{ a_1, \ a_2, \ ......., \ a_n \}  \) </span>
+			<br />
+			First calculate the sums in each of these subsets and in the remainders after division by n. If some of these remainders is 0, we have the subset we seek. If none of these is 0 then, according to Dirichlet's principle, among these n subsets there are two with equal remainders. [If none of these has remainder 0, then n remainders are to be distributed in (n - 1) residue classes]. Let these two subsets be <span class=\"latex\" lang=\"latex\"> \(  \{ a_1, \ a_2, \ ......., \ a_r \}  \) </span> and <span class=\"latex\" lang=\"latex\"> \(  \{ a_1, \ a_2, \ ......., \ a_s \}  \) </span>, where, e.g., <span class=\"latex\" lang=\"latex\"> \(  r &lt; s  \) </span>. Then, <br />
+			<span class=\"latex\" lang=\"latex\"> \(  a_1 + a_2 + a_s - (a_1 + a_2 + ... + a_r) = a_{r + 1} + a_{r +2} + ..... + a_s  \) </span>
+			<br />
+			is divisible by n, and <span class=\"latex\" lang=\"latex\"> \(  \{ a_{r + 1}, \ a_{r + 2}, . . . ,a_s}  \) </span> is the subset we seek.
+		</p>
+	</section>
+	<section class="solved-example"> 
+		<h4 class="solved-examples-question">Example 8:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			(Number of divisors) How many different divisors, including itself and 1, does 2520 have?
+		</p>
+		<p>
+			<span class="highlight01">Solution: </span>
+			<br />
+			Canonical decomposition of 2520 is <span class=\"latex\" lang=\"latex\"> \( 2520 = 2^3 . 3^2 . 5 . 7  \) </span>, so all divisors of 2520 can be written as <span class=\"latex\" lang=\"latex\"> \(  2^a . 3^b . 5^c . 7^d  \) </span>, where <span class=\"latex\" lang=\"latex\"> \(  a, \ b, \ c, \ d \geq 0  \) </span>; each of these is less than or equal to the corresponding exponent in the decomposition of 2520. In other words, <span class=\"latex\" lang=\"latex\"> \(  0 \leq a \leq 3, \ 0 \leq b \leq 2, \ 0 \leq c \leq 1, \ 0 \leq d \leq 1  \) </span>. Hence a can be picked in four ways, b in three, c in two, and d in two. Therefore, the number of divisors of 2520 is 4 . 3 . 2 . 2 = 48. <br />
+			<span class="highlight01"> Note : </span> In number theory the number of divisors is denoted by d(n). If <span class=\"latex\" lang=\"latex\"> \(  p_1, \ p_2, . . .,p_r  \) </span> are the prime factors of n, then <br />
+			<span class=\"latex\" lang=\"latex\"> \(  n = p_1^{{\alpha}_1} p_2^{{\alpha}_2}.......p_r^{{\alpha}_r}  \Rightarrow d(n) = ({\alpha}_1 + 1) ( {\alpha}_2 + 1)......( {\alpha}_r + 1)  \) </span>
+		</p>
+	</section>
+	<section class="solved-example"> 
+		<h4 class="solved-examples-question">Example 9:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			A code for a safe is a five-digit number that can have a 0 in the first place as well as in any other place. How many codes are there whose digits form an increasing sequence?
+		</p>
+		<p>
+			<span class="highlight01">Solution: </span>
+			<br />
+			Consider codes composed of different digits without the increasing order restriction. Suppose we select five out of ten possible digits to form these codes. Among all 5 . 4 . 3 . 2 . 1 = 120 codes that can be formed using these five digits, only one code has its digits
+			increasing order. <br />
+			This observation is already an important step toward the solution. Let M be the solution, the number of length-5 increasing sequences.<br />
+			The total number of codes with different digits is 10 . 9 . 8 . 7 . 6 = 30240, but also 120 M, hence, <br />
+			<span class=\"latex\" lang=\"latex\"> \(  M = \frac{10 . 9 . 8 . 7 . 6}{5 . 4 . 3 . 2 . 1} = \frac{30240}{120} = 252  \) </span>
+		</p>
+	</section>
+	<section class="solved-example"> 
+		<h4 class="solved-examples-question">Example 10:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			A code for a safe is a five-digit number that can have a 0 at the first place. How many codes have exactly one digit 7?
+		</p>
+		<p>
+			<span class="highlight01">Solution: </span>
+			<br />
+			There are <span class=\"latex\" lang=\"latex\"> \(  5 .9^4 = 52488  \) </span> codes with exactly one digit 7. Actually, there are <span class=\"latex\" lang=\"latex\"> \(  9 . 9 . 9 . 9 = 9^4   \) </span> codes with a digit 7 in the first place. The same is true for codes with 7 in the second, third, fourth, and fifth places. The total number is therefore <span class=\"latex\" lang=\"latex\"> \(  5 .9^4  \) </span>. W obtain the same result if we say there are five choices for placing 7 and nine choices for each of the remaining four places.
+		</p>
+	</section>
+	<section class="solved-example"> 
+		<h4 class="solved-examples-question">Example 11:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			A code for a safe is a five-digit number that can have a 0 at the first place. How many codes have at least one digit 7?
+		</p>
+		<p>
+			<span class="highlight01">Solution: </span>
+			<br />
+			There are <span class=\"latex\" lang=\"latex\"> \(  5 .9^4  \) </span> with exactly one 7. There are <span class=\"latex\" lang=\"latex\"> \(  10 . 9^3  \) </span> codes with exactly two digits 7 because two places containing 7 can be selected in ten ways. Similarly there are <span class=\"latex\" lang=\"latex\"> \( 10 . 9^2  \) </span> codes with exactly three 7s, 5 . 9 codes with exactly four 7s, and only one code with all five digits equal to 7. The total is <br />
+			<span class=\"latex\" lang=\"latex\"> \(  5 . 9^4 + 10 . 9^3 + 10 . 9^2 + 5. 9 + 1 = 40951  \) </span>
+			<br />
+			The more elegant way of solving this problem involves subtracting the number of codes not having any digits equal to 7 from the total number of codes: <br />
+			<span class=\"latex\" lang=\"latex\"> \(  10^5 - 9^5 = 40951  \) </span>
+		</p>
+	</section>
+	<section class="solved-example"> 
+		<h4 class="solved-examples-question">Example 12:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			A can of red paint is spilled over a white plane. Show that this red and white plane contains two points of the same color whose distance is exactly 1 cm.
+		</p>
+		<p>
+			<span class="highlight01">Solution: </span>
+			<br />
+			Consider the vertices of an equilateral triangle whose side is 1 cm. Each of these three points is either red or white, hence two of them have the same color.
+		</p>
+	</section>
+	<section class="solved-example"> 
+		<h4 class="solved-examples-question">Example 13:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			Let us consider a chess board with a knight moving on it. Can the knight start from the lower left comer (A - 1), visit every field on the board exactly once, and end in the upper right corner (H - 8)?
+		</p>
+		<p>
+			<span class="highlight01">Solution: </span>
+			<br />
+			The answer is no, and this is why. The first field (A - 1) is black, the second, according to rules governing the knight's motion, must be white, the third is then black, and so on. We thus observe that even fields must be white, including the last, sixty-fourth field. But H-8 is black, so it cannot be the last field.
+		</p>
+	</section>
+	<section class="solved-example"> 
+		<h4 class="solved-examples-question">Example 14:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			In a certain class, 15 students play volley - ball, 13 play cricket and 5 play both the games. How many students are there in the class who play only volley - ball, only cricket and the number of students in the class?
+		</p>
+		<p>
+			<span class="highlight01">Solution: </span>
+			<br />
+			Number of students who play volley - ball = 15 <br />
+			n(V) = 15 <br />
+			Number of students who play cricket = 13 <br />
+			n(C) = 13 <br />
+			Number of students who play both the games = 5 <br />
+			<span class=\"latex\" lang=\"latex\"> \(  n(V \cap C) = 5  \) </span>
+			<br />
+			Number of students who play only volley - ball = n(V) - <span class=\"latex\" lang=\"latex\"> \(  n(V \cap C) = 5  \) </span> = 15 - 5 <br />
+			= 10 <br />
+			Number of students who play only cricket <br />
+			<span class=\"latex\" lang=\"latex\"> \(  = n(C) - n(V \cap C)  \) </span> = 13 - 5 <br />
+			= 8 <br />
+			We have, <br />
+			<span class=\"latex\" lang=\"latex\"> \(  n(V \cup C) = n(V) + n(C) — n(V \cap C)  \) </span>
+			<br />
+			= 15 + 13 - 5 = 23 <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \therefore  \) </span> Total number of students in the class = 23
+		</p>
+	</section>
+	<section class="solved-example"> 
+		<h4 class="solved-examples-question">Example 15:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			In a town of 10,000 families it was found that 40% families buy newspaper A, 20% families buy newspaper B, and 10% families buy newspaper C. 5% families buy A and B, 3% buy B and C and 4% buy A and C. If 2% families buy all the three newspapers, find the number of families which buy </p>
+		<div class="list1-ol default-spaced-indented list-numbered-style-lower-alpha">
+			<ol>
+				<li>
+					<p> A only </p>
+				</li>
+				<li>
+					<p> B only </p>
+				</li>
+				<li>
+					<p> none of A, B and C. </p>
+				</li>
+			</ol>
+		</div>
+		<p>
+			<span class="highlight01">Solution: </span>
+			<br />
+			n(A) = 40% of 10,000 = 4000 <br />
+			n(B) = 20% of 10,000 = 2000 <br />
+			n(C) = 10% of 10,000 = 1000 <br />
+			<span class=\"latex\" lang=\"latex\"> \( n(A \cap B)  \) </span> = 5% of 10,000 = 500 <br />
+			<span class=\"latex\" lang=\"latex\"> \( n(B \cap C)  \) </span> = 3% of 10,000 = 300 <br />
+			<span class=\"latex\" lang=\"latex\"> \( n(A \cap C)  \) </span> = 4% of 10,000 = 400 <br />
+			<span class=\"latex\" lang=\"latex\"> \( n(A \cap B \cap C)  \) </span> = 2% of 10,000 = 200 <br />
+			n(U) = 10,000 </p>
+		<div class="list1-ol default-spaced-indented list-numbered-style-lower-alpha">
+			<ol>
+				<li>
+					<p>The number of families which buy newspaper A only<br />
+						<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  = n(A \cap B^{\prime} n C^{\prime})  \\\\[12pt]
+							=n[A \cap(B \cup C)^{\prime}]  \\\\[12pt]
+							= n(A) - n[A (B \cap C)] [ n(P \cap Q^{\prime} ) = n(P) - n(P \cap Q)]  \\\\[12pt]
+							= n(A) - n[A \cap B) \cup (A \cap C)]  \\\\[12pt]
+							= n(A) - \{n (A \cap B) + n(A \cap C) - n[(A \cap B) \cap (A \cap C)] \}  \\\\[12pt]
+							= n(A) - n(A \cap B) - n(A \cap C) + n(A \cap B \cap C)  \\\\[12pt]
+							= 4000 - 500 - 400 + 200 = 3300  \end{align}  \) </span>
+					</p>
+				</li>
+				<li>
+					<p>	The number of families which buy newspaper <br />
+						<span class=\"latex\" lang=\"latex\"> \(  \begin{align} B only = n (A^{\prime} \cap B \cap C^{\prime}) = n[B \cap (A \cup C)^{\prime}]  \\\\[12pt]
+							= n(B) - n[B \cap (A \cuu C)]  \\\\[12pt]
+							= n(B) - n[(B \cap A) \cup (B \cap C)]  \\\\[12pt]
+							= n(B) - [n(B \cap A) + n(B \cap C) - n[(B \cap A) \cap (B \cap C)]]  \\\\[12pt]
+							= n(B) - n(B \cap A) - n(B \cap C) + n(A \cap B \cap C)  \\\\[12pt]
+							= 2000 - 500 - 300 + 200 = 1400  \end{align}  \) </span>
+					</p>
+				</li>
+				<li>
+					<p>	The number of families which buy none of A, B and C <span class=\"latex\" lang=\"latex\"> \(  = n(A^{\prime} \cap B^{\prime} \cap C^{\prime})  \) </span>
+						<br />
+						<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  = n[(A \cup B \cup C)^{\prime}]  \\\\[12pt]
+							= n(U) - n(A \cup B \cup C)  \\\\[12pt]
+							= n(U) - [n(A) + n(B) + n(C) - n(A \cap B) - n(B \cap C) - n(A \cap C) + n(A \cap B \cap C)]  \\\\[12pt]
+							= n(U) - n(A) - n(B) - n(C) + n(A \cap B) + n(B \cap C) + n(A \cap C) - n(A \cap B \cap C)  \\\\[12pt]
+							= 10,000 - 4000 - 2000 - 1000 + 500 + 300 + 400 - 200  \\\\[12pt]
+							= 4000  \end{align}  \) </span>
+					</p>
+				</li>
+			</ol>
+		</div>
+	</section>
+	<section class="solved-example"> 
+		<h4 class="solved-examples-question">Example 16:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			In a group of 120 persons, there are 80 Indians and 40 Americans. Further 70 persons in the group are Mathematicians and the remaining are Musicians. Then find the number of Indian Mathematicians in the group.
+		</p>
+		<p>
+			<span class="highlight01">Solution: </span>
+			<br />
+			There are 70 mathematicians. <br />
+			Even if the 40 Americans are mathematicians, the remaining 30 mathematicians will be Indians. <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \therefore  \) </span> Indian mathematicians will be 30 or more.
+		</p>
+	</section>
+	<section class="solved-example"> 
+		<h4 class="solved-examples-question">Example 17:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			A scientist studying the weather report for "x" days and observed that </p>
+		<div class="list1-ol default-spaced-indented list-numbered-style-lower-alpha">
+			<ol>
+				<li>
+					<p>it rained on 7 days in day time or in the night time. </p>
+				</li>
+				<li>
+					<p>when it rained in the night, it was clear in the day time. </p>
+				</li>
+				<li>
+					<p>there were four clear nights and there were five clear day times. </p>
+				</li>
+			</ol>
+		</div>
+		<p>
+			Then find the value of x ?
+		</p>
+		<p>
+			<span class="highlight01">Solution: </span>
+			<br />
+			Let A = number of days it rained in the day time <br />
+			B = number of days it was clear in the day time <br />
+			C = number of days it rained in the night time <br />
+			D = number of days it was clear in the night time <br />
+			We have, <br />
+			D = 4 and B = 5 and A + C = 7 <br />
+			Also A + B = x and C + D = x <br />
+			A + B + C + D = x + x <br />
+			(A + C) + B + D = 2x <br />
+			7 + 5 + 4 = 2x <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \Rightarrow  \) </span> 2x = 16 <br />
+			x = 8
+		</p>
+	</section>
+	<section class="solved-example"> 
+		<h4 class="solved-examples-question">Example 18:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			In a class of 26 students, 8 take tea but not coffee and 16 take tea. How many students take coffee but not tea?
+		</p>
+		<p>
+			<span class="highlight01">Solution: </span>
+			<br />
+			Let T = tea and C = coffee </p>
+		<div class="synopsis-image"> 
+			<img src="104190014_image-2.png" alt="image2" class="default-synopsis-medium-image" />
+		 </div>
+		<p>Given that, <br />
+			n(T) = 16 <br />
+			and 8 take tea only but not coffee. <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \Rightarrow  \) </span> Number of students who take both tea and coffee = 16 - 8 = 8 <br />
+			i.e. <span class=\"latex\" lang=\"latex\"> \(  n(T \cap C) = 8  \) </span>
+			<br />
+			Also <span class=\"latex\" lang=\"latex\"> \(  n(T \cup C) = 26  \) </span>
+			<br />
+			We have, <br />
+			<span class=\"latex\" lang=\"latex\"> \(  n(T \cup C) = n(T) + n(C) - n(T \cap C)  \) </span>
+			<br />
+			26 = 16 + n(C) - 8 <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \Rightarrow  \) </span> n(C) = 26 - 16 + 8 <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \Rightarrow  \) </span> n(C) = 18 <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \therefore  \) </span> Number of students who take coffee but not tea <br />
+			<span class=\"latex\" lang=\"latex\"> \(  = n(C) — n(T \cap C)  \) </span>
+			<br />
+			= 18 - 8 <br />
+			= 10
+		</p>
+	</section>
+	<section class="solved-example"> 
+		<h4 class="solved-examples-question">Example 19:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			Five points lie within a square, each of whose sides has length 2 units. Show that there exist two of them the distance between which is at the most <span class=\"latex\" lang=\"latex\"> \(  \sqrt{2}  \) </span>.
+		</p>
+		<p>
+			<span class="highlight01">Solution: </span>
+		</p>
+		<div class="synopsis-image"> 
+			<img src="104190014_image-3.png" alt="image3" class="default-synopsis-medium-image" />
+		 </div>
+		<p>Divide the given square into four equal squares by means of dotted lines as in figure. <br />
+			By the pigeon hole principle, at least two of them (say, x and y) must lie in one of the four small squares. The distance between x and y cannot exceed the length of the diagonal of the square, i.e., <span class=\"latex\" lang=\"latex\"> \(  \sqrt{2}  \) </span>.
+		</p>
+	</section>
+	<section class="solved-example"> 
+		<h4 class="solved-examples-question">Example 20:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			A, B, C, D, E and F are six points. Straight line segments are drawn to connect each pair of six points, some of which are coloured in red ink and some of which are in blue ink. Show that irrespective of the mode of colouring, there will always be three of the six points joined by lines of the same colour.
+		</p>
+		<p>
+			<span class="highlight01">Solution: </span>
+			<br />
+			Consider the segments AB, AC, AD, AE, AF joining A to the remaining points. Atleast three of them are of the same colour. Let us say, for the sake of argument, that AB, AC, AD are all red. If atleast one of the segments BC, CD, BD (say BC) is red, then the points A, B, C are all joined by red lines. In case BC, CD, BD are all blue, then the points B, C, D are all joined by blue lines.
+		</p>
+	</section> 
+</section> 

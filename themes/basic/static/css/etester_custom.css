@@ -1,0 +1,776 @@
+/*
+mjx-container {
+    background-color: lightgoldenrodyellow;
+
+}
+*/
+.MathJax {
+    background-color: lightgoldenrodyellow;
+}
+
+
+
+/* Print Chapter Headings Stuff. */
+/* Class to allow for Hide and Show stuff. */
+.default-hidden {
+    display: none;
+}
+
+.chapter-heading-display-number {
+    text-align: center;
+    color: #126daf;
+    margin: 10px 0;
+    font: 500 48px Abril Fatface;
+    margin: 30px 0px;
+}
+
+.chapter-heading-display-name {
+    text-align: center;
+    color: #126daf;
+    margin: 10px 0;
+    font: 600 60px Abril Fatface;
+    margin: margin: 80px 0px 50px 0px;
+}
+
+.chapter-heading-display-description {
+    text-align: center;
+    color: #126daf;
+    font: normal 400 24px/ 1.4 "cardo";
+    margin: 50px 0px;
+}
+hr.hr-content-in-the-middle-blue {
+    border-color: #126daf;
+    border-image: none;
+    border-right: medium none;
+    border-style: double none none;
+    border-width: medium;
+    color: #126daf;
+    padding: 0;
+    text-align: center;
+    box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+}
+.chapter-heading-button-style {
+    font-family: Verdana, sans-serif;
+    font-size: 14px;
+    background-color: #126daf;
+    color: white;
+    border-radius: 5px; 
+}
+
+
+
+
+.toc-heading {
+    margin: 50px 0px 10px 10px;
+    color: #126daf;
+    font: normal 400 24px/ 1.4 "cardo";
+    text-decoration: underline;
+}
+.topic-heading-toc-line {
+    margin-left: 0px;
+    font-size: large;
+}
+.skill-heading-toc-line {
+    margin-left: 30px;
+    font-size: large;
+}
+.skill-subheading-toc-line {
+    margin-left: 70px;
+    font-size: large;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+Automatic Line Breaking
+https://docs.mathjax.org/en/v3.0-latest/output/linebreaks.html
+Automatic line breaking has not yet been implemented in MathJax version 3, but is high on our list for inclusion in a future release.
+
+Read https://github.com/mathjax/MathJax/issues/2312 for short term fixes.
+
+*/
+
+
+
+/* Latex formatting */
+/* For Print do not show background color */
+@media print {
+    :lang(latex), :lang(latexpng) {
+        display:block;
+        vertical-align:middle;
+        /* transform: scale(105%);*/
+        font-size: large;
+        /* zoom: 105%; */
+    }
+}
+/* For devices show yellow background color */
+@media screen {
+    :lang(latex), :lang(latexpng) {
+        background: rgb(225 240 240);
+        margin:2px;
+
+        display:block;
+        vertical-align:middle;
+        /* font-size: large; */
+        /* transform: scale(105%); */
+        font-size: large;
+        /* zoom: 105%; */
+    }
+}
+
+/* Title bar - with images - and Navigarion Bars */
+@media print {
+  .hide-for-print {
+    display: none;
+  }
+}
+/* For devices larger than 400px */
+@media screen {
+  .hide-for-print {
+  }
+}
+
+
+
+
+
+/* Getting rid of all the images encased in a depricated "<center>" tag and will replace with a "<div class="synopsis-image">" tag */
+.synopsis-image {
+    text-align:start;
+}
+
+.default-synopsis-medium-image {
+    max-width: -webkit-fill-available;
+    max-width: -moz-available;
+    max-width: fill-available;
+}
+
+.latex {
+    max-width: 80%;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+/* All tables formatting */
+table, th, td {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #cc6600;
+    padding: 15px;
+    border-collapse: collapse;
+}
+
+/* Overide from skeleton css */
+th:first-child, td:first-child {
+    padding-left: 15px;
+}
+
+
+
+/* Summary table (on top) formatting */
+
+    table.u-full-width {
+        max-width: 95%;
+    }
+
+    table.summary-table, table.summary-table th, table.summary-table td {
+        border-width: 1px;
+        border-style: solid none;
+        border-color: #cc6600;
+        padding: 15px;
+        border-collapse: collapse;
+    }
+table.summary-table tr:nth-child(even) {
+    background-color: #eee;
+}
+table.summary-table tr:nth-child(odd) {
+   background-color:#fff;
+}
+table.summary-table th    {
+    background-color: #ff9900;
+    color: white;
+}
+
+
+/* eTester Text Styles */
+.skill > p, .subskill > p, .solved-example > p {
+    font-size: 115%; 
+}
+
+
+/* eTester Heading Styles */
+.topic-heading, .topic-heading-added {
+    color: #126daf;
+    font-family: "Trebuchet MS";
+    font-size: 48px;
+    margin-bottom: 20px;
+    text-align: left;
+    text-decoration: none;
+}
+.topic-heading, .topic-heading-added {
+    display:inline-block;
+}
+.skill-heading, .skill-heading-added, .solved-examples-heading, .solved-examples-heading-added {
+    color: #126daf;
+    font-family: "Trebuchet MS";
+    font-size: 36px;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    text-align: left;
+    text-decoration: none;
+}
+.skill-heading, .skill-heading-added, .solved-examples-heading, .solved-examples-heading-added {
+    display:inline-block;
+}
+.skill-subheading, .skill-subheading-added, .solved-examples-question {
+    color: #126daf;
+    font-family: "Trebuchet MS";
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: left;
+    text-decoration: none;
+}
+.solved-example {
+    border-bottom: 1px solid #126daf;
+    margin-bottom: 15px;
+}
+.skill-subheading, .skill-subheading-added {
+    display:inline-block;
+}
+.skill-smallheading, .skill-smallheading-added {
+    color: #126daf;
+    font-family: "Trebuchet MS";
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: left;
+    text-decoration: none;
+}
+.skill-smallheading, .skill-smallheading-added {
+    display:inline-block;
+}
+.skill-smallsubheading, .skill-smallsubheading-added {
+    color: #126daf;
+    font-family: "Trebuchet MS";
+    font-size: 14px;
+    margin-bottom: 20px;
+    text-align: left;
+    text-decoration: none;
+}
+.skill-smallsubheading, .skill-smallsubheading-added {
+    display:inline-block;
+}
+
+
+
+
+/* Section Heading Counters */
+body {
+    counter-reset: h3counter;
+}
+h2 {
+    counter-reset: h3counter;
+}
+h3.skill-heading:before, h3.solved-examples:before {
+    content: counter(h3counter) ":\0000a0\0000a0";
+    counter-increment: h3counter;
+}
+h3.skill-heading {
+    counter-reset: h4counter;
+}
+h4.skill-subheading:before {
+    content: counter(h3counter) "." counter(h4counter) ":\0000a0\0000a0";
+    counter-increment: h4counter;
+}
+h4.skill-subheading {
+    counter-reset: h5counter;
+}
+h5.skill-smallheading:before {
+    content: counter(h3counter) "." counter(h4counter) "." counter(h5counter) ":\0000a0\0000a0";
+    counter-increment: h5counter;
+}
+h5.skill-smallheading {
+    counter-reset: h6counter;
+}
+h6.skill-smallsubheading:before {
+    content: counter(h3counter) "." counter(h4counter) "." counter(h5counter) "." counter(h6counter) ":\0000a0\0000a0";
+    counter-increment: h6counter;
+}
+
+
+
+
+
+
+
+/* List styles */
+.ordered-list-lower-roman {
+    list-style-type: lower-roman !important;
+}
+
+.ordered-list-upper-roman {
+    list-style-type: upper-roman !important;
+}
+
+.ordered-list-lower-case {
+    list-style-type: lower-alpha !important;
+}
+
+.ordered-list-upper-case {
+    list-style-type: upper-alpha !important;
+}
+
+.ordered-list-decimal {
+    list-style-type: decimal !important;
+}
+
+.ordered-list-decimal {
+    list-style-type: decimal !important;
+}
+
+.ordered-list-none {
+    list-style-type: none !important;
+}
+
+
+/* Different text highlight styles */
+.highlight01 {
+  font-style: italic;
+  font-weight: bold;
+}
+
+
+
+/***** Lists with DIV Formatting *****/
+/***** Start.................... *****/
+
+.spaced20 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.indented20 {
+    margin-left: 20px;
+}
+.indented40 {
+    margin-left: 40px;
+}
+.default-spaced-indented {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+}
+.list-bullet-style-image-disc ul {
+    list-style-image: none !important;
+    list-style-type: disc !important;
+}
+.list-bullet-style-image-circle ul {
+    list-style-image: none !important;
+    list-style-type: circle !important;
+}
+.list-bullet-style-image-square ul {
+    list-style-image: none !important;
+    list-style-type: square !important;
+}
+.list-bullet-style-image-correct ul {
+    list-style-image: url("http://etester.com/img/statuses/correct_medium.png") !important;
+}
+.list-bullet-style-image-wrong ul {
+    list-style-image: url("http://etester.com/img/statuses/wrong_medium.png") !important;
+}
+.list-numbered-style-lower-alpha ol {
+    list-style-type: lower-alpha !important;
+}
+.list-numbered-style-lower-roman ol {
+    list-style-type: lower-roman !important;
+}
+
+
+.list1-ol {
+}
+.list1-ol ol {
+    font-style:italic;
+    font-family:Georgia, Times, serif;
+    font-size:24px;
+    color:#126daf;
+    list-style: decimal outside;
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+    border-left: none;
+    border-bottom: none;
+}
+.list1-ol ol li {
+    padding:12px;
+    margin-bottom: 0px;
+    border-left: none;
+    border-top: none;
+}
+
+.list2-ol {
+}
+.list2-ol ol {
+    font-style:italic;
+    font-family:Georgia, Times, serif;
+    font-size:24px;
+    color:#126daf;
+    list-style: decimal outside;
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+    border-left: none;
+    border-bottom: 1px solid #222;
+}
+.list2-ol ol li {
+    padding:12px;
+    margin-bottom: 0px;
+    border-left: none;
+    border-top: 1px solid #222;
+}
+
+
+.list3-ol {
+}
+.list3-ol ol {
+    font-style:italic;
+    font-family:Georgia, Times, serif;
+    font-size:24px;
+    color:#126daf;
+    list-style: decimal outside;
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+    border-bottom: none;
+}
+.list3-ol ol li {
+    padding:12px;
+    margin-bottom: 0px;
+    border-left: 1px solid #222;
+    border-top: none;
+}
+
+
+.list1-ul {
+}
+.list1-ul ul {
+    color:#222;
+    font-size:18px;
+    list-style: disc outside url("http://etester.com/img/statuses/correct_medium.png");
+    border-left: none;
+    border-bottom: none;
+}
+.list1-ul ul li {
+    padding:12px;
+    margin-bottom: 0px;
+    line-height:30px;
+    border-left: none;
+    border-top: none;
+}
+
+.list2-ul {
+}
+.list2-ul ul {
+    color:#222;
+    font-size:18px;
+    list-style: outside;
+    list-style: disc outside url("http://etester.com/img/statuses/correct_medium.png");
+    border-left: none;
+    border-bottom: 1px solid #222;
+}
+.list2-ul ul li {
+    padding:12px;
+    margin-bottom: 0px;
+    line-height:30px;
+    border-left: none;
+    border-top: 1px solid #222;
+}
+
+.list3-ul {
+}
+.list3-ul ul {
+    color:#222;
+    font-size:18px;
+    list-style: outside;
+    list-style: disc outside url("http://etester.com/img/statuses/correct_medium.png");
+    border-bottom: none;
+}
+.list3-ul ul li {
+    padding:12px;
+    margin-bottom: 0px;
+    line-height:30px;
+    border-left: 1px solid #222;
+    border-top: none;
+}
+
+
+.list1-ol ol li p, .list2-ol ol li p, .list3-ol ol li p, .list1-ul ul li p , .list2-ul ul li p, .list3-ul ul li p {
+    font-style:normal;
+    font-family:Arial;
+    font-size:15px;
+    color:#222;
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+}
+.list1-ol ol li p em, .list2-ol ol li p em, .list3-ol ol li p em, .list1-ul ul li p em, .list2-ul ul li p em, .list3-ul ul li p em {
+    display:block;
+}
+
+
+
+@media print {
+    .list1-ol ol li p, .list2-ol ol li p, .list3-ol ol li p, .list1-ul ul li p , .list2-ul ul li p, .list3-ul ul li p {
+      font-size:18px;
+    }
+}
+
+
+
+
+
+
+/***** End...................... *****/
+/***** Lists with DIV Formatting *****/
+
+
+/***** Custom Lists with DIV Formatting *****/
+/***** Start.................... *****/
+
+/* -------------------------------------- */
+.list-custom-rounded-list-ol, .list-custom-rectangle-list-ol, list-custom-circle-list-ol {
+}
+.list-custom-rounded-list-ol ol, .list-custom-rectangle-list-ol ol, .list-custom-circle-list-ol ol {
+    counter-reset: li;
+    list-style: none;
+    *list-style: decimal;
+    font: 15px 'trebuchet MS', 'lucida sans';
+    padding: 0;
+    margin-bottom: 4em;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+}
+
+.list-custom-rounded-list-ol ol ol, .list-custom-rectangle-list-ol ol ol, .list-custom-circle-list-ol ol ol{
+    margin: 0 0 0 2em;
+}
+
+/* -------------------------------------- */
+
+.list-custom-rounded-list-ol ol p, .list-custom-rounded-list-ol ol a{
+    position: relative;
+    display: block;
+    padding: .4em .4em .4em 2em;
+    *padding: .4em;
+    margin: .5em 0;
+    background: #ddd;
+    color: #444;
+    text-decoration: none;
+    -moz-border-radius: .3em;
+    -webkit-border-radius: .3em;
+    border-radius: .3em;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -ms-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+}
+
+.list-custom-rounded-list-ol ol p:hover, .list-custom-rounded-list-ol ol a:hover{
+    background: #eee;
+}
+
+.list-custom-rounded-list-ol ol p:hover:before, .list-custom-rounded-list-ol ol a:hover:before{
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
+.list-custom-rounded-list-ol ol p:before, .list-custom-rounded-list-ol ol a:before{
+    content: counter(li);
+    counter-increment: li;
+    position: absolute;
+    left: -1.3em;
+    top: 50%;
+    margin-top: -1.3em;
+    background: #87ceeb;
+    height: 2em;
+    width: 2em;
+    line-height: 2em;
+    border: .3em solid #fff;
+    text-align: center;
+    font-weight: bold;
+    -moz-border-radius: 2em;
+    -webkit-border-radius: 2em;
+    border-radius: 2em;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -ms-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+}
+
+/* -------------------------------------- */
+
+.list-custom-rectangle-list-ol ol a, .list-custom-rectangle-list-ol ol p{
+    position: relative;
+    display: block;
+    padding: .4em .4em .4em .8em;
+    *padding: .4em;
+    margin: .5em 0 .5em 2.5em;
+    background: #ddd;
+    color: #444;
+    text-decoration: none;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -ms-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+}
+
+.list-custom-rectangle-list-ol ol a:hover, .list-custom-rectangle-list-ol ol p:hover{
+    background: #eee;
+}
+
+.list-custom-rectangle-list-ol ol a:before, .list-custom-rectangle-list-ol ol p:before{
+    content: counter(li);
+    counter-increment: li;
+    position: absolute;
+    left: -2.5em;
+    top: 50%;
+    margin-top: -1em;
+    background: #fa8072;
+    height: 2em;
+    width: 2em;
+    line-height: 2em;
+    text-align: center;
+    font-weight: bold;
+}
+
+.list-custom-rectangle-list-ol ol a:after, .list-custom-rectangle-list-ol ol p:after{
+    position: absolute;
+    content: '';
+    border: .5em solid transparent;
+    left: -1em;
+    top: 50%;
+    margin-top: -.5em;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -ms-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+}
+
+.list-custom-rectangle-list-ol ol a:hover:after, .list-custom-rectangle-list-ol ol p:hover:after{
+    left: -.5em;
+    border-left-color: #fa8072;
+}
+
+/* -------------------------------------- */
+
+.list-custom-circle-list-ol ol li{
+    padding: 2.5em;
+    border-bottom: 1px dashed #ccc;
+}
+
+.list-custom-circle-list-ol ol .heading{
+    position: relative;
+    margin: 0;
+}
+
+.list-custom-circle-list-ol ol p{
+    margin: 0;
+}
+
+.list-custom-circle-list-ol ol .heading:before{
+    content: counter(li);
+    counter-increment: li;
+    position: absolute;
+    z-index: -1;
+    left: -1.3em;
+    top: -.8em;
+    background: #f5f5f5;
+    height: 1.5em;
+    width: 1.5em;
+    border: .1em solid rgba(0,0,0,.05);
+    text-align: center;
+    font: italic bold 1em/1.5em Georgia, Serif;
+    color: #ccc;
+    -moz-border-radius: 1.5em;
+    -webkit-border-radius: 1.5em;
+    border-radius: 1.5em;
+    -webkit-transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+    -ms-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+}
+
+.list-custom-circle-list-ol ol li:hover .heading:before{
+    background-color: #ffd797;
+    border-color: rgba(0,0,0,.08);
+    border-width: .2em;
+    color: #444;
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    transform: scale(1.5);
+}
+
+
+/* -------------------------------------- */
+.list-custom-block-list-ol {
+}
+.list-custom-block-list-ol ol {
+    counter-reset:li;
+    margin-left:0;
+    padding-left:0;
+}
+.list-custom-block-list-ol ol > li {
+    position:relative; /* Create a positioning context */
+    margin:0 0 6px 2em; /* Give each list item a left margin to make room for the numbers */
+    padding:4px 8px; /* Add some spacing around the content */
+    list-style:none; /* Disable the normal item numbering */
+    border-top:2px solid #666;
+/*    background:#f6f6f6; */
+}
+.list-custom-block-list-ol ol > li:before {
+    content:counter(li); /* Use the counter as content */
+    counter-increment:li; /* Increment the counter by 1 */
+    /* Position and style the number */
+    position:absolute;
+    top:-2px;
+    left:-2em;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+    width:2em;
+    /* Some space between the number and the content in browsers that support
+       generated content but not positioning it (Camino 2 is one example) */
+    margin-right:8px;
+    padding:4px;
+    border-top:2px solid #666;
+    color:#fff;
+    background:#666;
+    font-weight:bold;
+    font-family:"Helvetica Neue", Arial, sans-serif;
+    text-align:center;
+}
+.list-custom-block-list-ol li ol, li ul {
+    margin-top:6px;
+}
+.list-custom-block-list-ol ol ol li:last-child {
+    margin-bottom:0;
+}
+/* -------------------------------------- */
+
+/***** End.................... *****/
+/***** Custom Lists with DIV Formatting *****/
+
+
+

@@ -1,0 +1,489 @@
+---
+title: "Probability"
+topic: "Probability"
+subject: "Maths"
+channel: "Intermediate"
+tags: [Maths, Intermediate]
+categories: [Maths, Intermediate]
+menuname: "Intermediate-submenu"
+draft: false
+image: "image/Intermediate-Maths-Probability.png"
+defaultSummary: "Probability is an important Topic in the Subject of Maths for the Intermediate course.  Please review it thoroughly and attempt all the associated testing material to perform well on the Intermediate related Exams."
+menu:
+  Intermediate-submenu:
+    identifier: "Intermediate-Maths-Probability"
+    name: "Probability"
+    url: "Intermediate/Maths/Probability"
+    weight: 1800
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+<section class="skill" id="01">
+	<h3 class="skill-heading">Definitions</h3>
+	<div class="list-custom-block-list-ol spaced20 indented20">
+		<ol>
+			<li>
+				<p>A random experiment is an experiment in which (i) all the outcomes of the experiment are known in advance, and (ii) the exact outcome of any specific performance of the experiment is unpredictable, i.e., not known in advance.</p>
+			</li>
+			<li>
+				<p>A sample space, denoted by S, associated with a random experiment is a set of points such that (i) each element of S denotes an outcome of the experiment, and (ii) any performance of the experiment results in an outcome that corresponds to exactly one element of S. In other words, sample space consists of all possible outcomes associated with the random experiment.<br />
+					The element of the sample space associated with a random experiment are called the elementary or simple or indecomposable events of that experiment.</p>
+			</li>
+			<li>
+				<p>An event (associated with a random experiment) is a subset of the sample space S (associated with that experiment). We say that an event <span class=\"latex\" lang=\"latex\"> \( E(\subseteq S) \) </span> has occurred provided the outcome <span class=\"latex\" lang=\"latex\"> \( \omega \) </span> of the experiment is an element of E. If the outcome <span class=\"latex\" lang=\"latex\"> \( \omega \) </span> of the experiment is such that <span class=\"latex\" lang=\"latex\"> \( \omega \notin \) </span> E, we say that the event E has not occurred.<br />
+					The empty set <span class=\"latex\" lang=\"latex\"> \( \varnothing \) </span>, which is a subset of every set, also represents an event and is said to be an impossible event. The set S is itself a subset of S and it represents the sure event.</p>
+			</li>
+			<li>
+				<p>A set of events is said to be mutually exclusive if the occurrence of one of them precludes the occurrence of any of the remaining events. In set-theoretic notation, events <span class=\"latex\" lang=\"latex\"> \( E_1, E_2,.....E_m  \) </span>are mutually exclusive if <span class=\"latex\" lang=\"latex\"> \( E_i \cap E_j =  \varnothing  \) </span> for <span class=\"latex\" lang=\"latex\"> \( i \neq j  \) </span> and <span class=\"latex\" lang=\"latex\"> \( 1 \leq i, j \leq m  \) </span>. See Fig. 1.</p>
+			</li>
+			<div class="synopsis-image"> 
+				<img src="103504003_image-1.png" alt="image1" class="default-synopsis-medium-image" />
+			 </div>
+			<li>
+				<p>A set of events is said to be equally likely if, taking into consideration all the relevant factors, there is no reason to expect one of them in preference to the others.</p>
+			</li>
+			<li>
+				<p>A set of events is said to be exhaustive if the performance of the experiment always results in the occurrence of at least one of them.</p>
+			</li>
+		</ol>
+	</div>
+</section>
+<section class="skill" id="02">
+	<h3 class="skill-heading">Classical  Definitions of Probability</h3>
+	<p>If a random experiment results in N mutually exclusive, equally likely and exhaustive outcomes, out of which n are favourable to the occurrence of an event A, then the probability of occurrence of A, usually denoted by P(A), is given by</p>
+	<span class=\"latex\" lang=\"latex\"> \( P(A) = \frac{n}{N} \) </span>
+	<br />
+	<p>Since the number of favourable outcomes can never exceed the total number of outcomes, we have 0 <span class=\"latex\" lang=\"latex\"> \( \leq P(A) \leq 1. \) </span> Note that <span class=\"latex\" lang=\"latex\"> \( P(\varnothing) = 0  \) </span>and P(S) = 1.</p>
+</section>
+<section class="skill" id="03">
+	<h3 class="skill-heading">Notations</h3>
+	<p>Let A and B be two events. Then</p>
+	<div class="list-custom-block-list-ol spaced20 indented20">
+		<ol>
+			<li>
+				<p>A' or <span class=\"latex\" lang=\"latex\"> \( \overline{A} \) </span> or <span class=\"latex\" lang=\"latex\"> \( A^c. \) </span> stands for the non-occurrence or negation of A.</p>
+			</li>
+			<li>
+				<p>
+					<span class=\"latex\" lang=\"latex\"> \( A \cup B  \) </span>stands for the occurrence of at least one of A and B</p>
+			</li>
+			<li>
+				<p>
+					<span class=\"latex\" lang=\"latex\"> \( A \cap B  \) </span>stands for the simultaneous occurrence of A and B.</p>
+			</li>
+			<li>
+				<p>
+					<span class=\"latex\" lang=\"latex\"> \( A' \cap B'  \) </span>stands for the non-occurrence of both A and B.</p>
+			</li>
+			<li>
+				<p>
+					<span class=\"latex\" lang=\"latex\"> \( A \subseteq B  \) </span>stands for "the occurrence of A implies occurrence of B".</p>
+			</li>
+		</ol>
+	</div>
+</section>
+<section class="skill" id="04">
+	<h3 class="skill-heading">A Few Theprems on Probability</h3>
+	<div class="list-custom-block-list-ol spaced20 indented20">
+		<ol>
+			<li>
+				<p>If A and B are two mutually exclusive events, then <span class=\"latex\" lang=\"latex\"> \( P(A \cup B) = P(A) + P(B). \) </span>
+				</p>
+			</li>
+			<li>
+				<p>If A is any event, then P(A') = 1 - P(A)</p>
+			</li>
+			<li>
+				<p>If A and B are two events, then <span class=\"latex\" lang=\"latex\"> \( P(A \cap B')= P(A) - P(A \cap B) \) </span>
+				</p>
+			</li>
+			<li>
+				<p>If A and B are two events, then <span class=\"latex\" lang=\"latex\"> \( P(A \cup B) = P(A) + P(B) - P(A \cap B) \) </span>
+				</p>
+			</li>
+			<li>
+				<p>If A and B are two events, then <br />
+					P(exactly one of A, B occurs) <br />
+					<span class=\"latex\" lang=\"latex\"> \(  = P[A \cap B') \cup (A' \cap B)]  \) </span>
+					<br />
+					<span class=\"latex\" lang=\"latex\"> \(  = P(A \cap B') + P(A' \cap B)	[Fig. 2]  \) </span>
+					<br />
+					<span class=\"latex\" lang=\"latex\"> \(  = P(A) - P(A \cap B) + P(B) - P(A \cap B)  \) </span>
+					<br />
+					<span class=\"latex\" lang=\"latex\"> \(  = P(A) + P(B) - 2P(A \cap B)  \) </span>
+					<br />
+					<span class=\"latex\" lang=\"latex\"> \(  = P(A \cup B) - P(A \cap B)  \) </span>
+				</p>
+				<div class="synopsis-image"> 
+					<img src="103504003_image-2.png" alt="image2" class="default-synopsis-medium-image" />
+				 </div>
+				<p> Also, P(exactly one of A, B occurs) <br />
+					<span class=\"latex\" lang=\"latex\"> \(  = P(A \cap B') + P(A' \cap B)  \) </span>
+					<br />
+					<span class=\"latex\" lang=\"latex\"> \(  = P(B') - P(A' \cap B') + P(A') - P(A' \cap B')  \) </span>
+					<br />
+					<span class=\"latex\" lang=\"latex\"> \(  = P(A') +  P(B') - 2P(A' \cap B')  \) </span>
+					<br />
+					<span class=\"latex\" lang=\"latex\"> \(  = P(A' \cup B') - P(A' \cap B')  \) </span>
+					<br />
+				</p>
+			</li>
+			<li>
+				<p>If A and B are two events <br />
+					<span class=\"latex\" lang=\"latex\"> \(  P(A' \cup B') = 1 - P(A \cap B)  \) </span> and <br />
+					<span class=\"latex\" lang=\"latex\"> \(  P(A' \cap B') = 1 - P(A \cup B)  \) </span>
+				</p>
+			</li>
+			<li>
+				<p>If <span class=\"latex\" lang=\"latex\"> \(  A_1, A_2,.....,A_n  \) </span> are n events, then <br />
+					<span class=\"latex\" lang=\"latex\"> \(  P(A_1 \cup A_2.....A_n)  \) </span>
+					<br />
+					<span class=\"latex\" lang=\"latex\"> \(  = \lim \limit_{i = 1}^{n} P(A_i) - \lim \limit_{1 \leq i &lt; j \leq n} P(A_i \cap A_j) + \lim \limit_{1 \leq i &lt; k \leq n} P(A_i \cap A_j \cap A_k) - .......+ (-1)^{n - 1} P(A_1 \cap A_2......\cap A_n) \) </span>
+				</p>
+			</li>
+			<li>
+				<ol>
+					<li>
+						<p>
+							<span class=\"latex\" lang=\"latex\"> \( P (A \cup B \cup C) = P(A) + P(B) + P(C) - P(B \cap C) - P(C \cap A) - P(A \cap B) + P(A \cap B \cap C) \) </span>
+						</p>
+					</li>
+					<li>
+						<p>P (at least two of A, B, C occur)<span class=\"latex\" lang=\"latex\"> \( p(B \cap C) + P(C \cap A) + P(A \cap B)-2P(A \cap B \cap C) \) </span>
+						</p>
+					</li>
+					<li>
+						<p>P (exactly two of A, B, C occur)<span class=\"latex\" lang=\"latex\"> \(  = P(B \cap C) + P(C \cap A) + P(A \cap B) - 3P(A \cap B \cap C) \) </span>
+						</p>
+					</li>
+					<li>
+						<p>P(exactly one of A, B, C occurs)<span class=\"latex\" lang=\"latex\"> \(  = P(A) + P(B) + P(C) - 2P(B \cap C) - 2P(C \cap A) - 2P(A \cap B) + 3P(A \cap B \cap C) \) </span>
+						</p>
+					</li>
+				</ol> 
+			</li>
+			<li> 
+				<ol>
+					<li>
+						<p>If<span class=\"latex\" lang=\"latex\"> \( A_1, A_2,.....,A_n  \) </span> are n events, then</p>
+					</li>
+					<li>
+						<p>
+							<span class=\"latex\" lang=\"latex\"> \( P(A_1 \cup A_2 \cup.....\cup A_n) \leq P(A_1) + P(A_2) + ...... + P(A_n) \) </span>
+						</p>
+					</li>
+					<li>
+						<p>
+							<span class=\"latex\" lang=\"latex\"> \( P(A_1 \cap A_2 \cap......\cap A_n) \geq 1 — P(A'_1) - P (A'_2) -.....- P(A'_n) \) </span>
+						</p>
+					</li>
+				</ol> 
+			</li>
+			<li>
+				<p>If <span class=\"latex\" lang=\"latex\"> \( A_1, A_2,......, A_n  \) </span>are n events, then <br />
+					<span class=\"latex\" lang=\"latex\"> \( P(A_1 \cap A_2......\cap A_n) \geq P(A_1) + P(A_2) +.....+ P(A_n) - (n - 1) \) </span>
+				</p>
+			</li>
+			<li>
+				<p>If A and B are two events such that <span class=\"latex\" lang=\"latex\"> \(  A \subseteq B, \) </span> then <span class=\"latex\" lang=\"latex\"> \(  P(A) \leq P(B). \) </span>
+				</p>
+			</li>
+		</ol>
+	</div>
+	<p>Odds in Favour and Against an Event. If x is the number of cases favourable to the occurrence of an event A and y that for event the A', then the odds in favour of A are x : y and the odds against A are y : x. In this case <br />
+		<span class=\"latex\" lang=\"latex\"> \(  P(A) =  \frac{x}{x + y} \ and \ P(A') = \frac{y}{x + y} \) </span>
+	</p>
+</section>
+<section class="skill" id="05">
+	<h3 class="skill-heading">Conditional  Probability</h3>
+	<p>The probability of occurrence of an event A, given that B has already occurred is called the conditional probability of occurrence of A. It is denoted by P(A|B).</p>
+	<div class="synopsis-image"> 
+		<img src="103504003_image-3.png" alt="image3" class="default-synopsis-medium-image" />
+	 </div>
+	<p>If the event B has already occurred, then the sample space reduces to B. Now the outcomes favourable to the occurrence of A (given that B has already occurred) are those that are common to both A and B, that is, those which belong to <span class=\"latex\" lang=\"latex\"> \( A \cap B. \) </span> Thus, <br />
+		<span class=\"latex\" lang=\"latex\"> \( P(A | B) = \frac{N_{A \cap B}}{N_B} \) </span>
+		<br />
+		where <span class=\"latex\" lang=\"latex\"> \( N_{A \cap B} \) </span> is the number of elements in <span class=\"latex\" lang=\"latex\"> \( A \cap B \) </span> and <span class=\"latex\" lang=\"latex\"> \( N_B \) </span> 0 is the number of elements in B and N the total number O; elements in S.<br />
+		<span class=\"latex\" lang=\"latex\"> \( \Rightarrow P(A | B) = \frac{\frac{N_{A \cap B}}{N}}{\frac{N_B}{N}} = \frac{P(A \cap B)}{P(B)}  \) </span>
+		<br />
+		<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  Hence \ P(A \cap B) = \left\{ \begin{array}{rcl} P(B)P(A|B) \ if \ P(B) \neq 0  \\\\ P(A)P(B|A) \ if \ P(A) \neq 0 \end{array}\right. \end{align}  \) </span>
+	</p>
+</section>
+<section class="skill" id="06">
+	<h3 class="skill-heading">Multiplication Theorem</h3>
+	<p>Let <span class=\"latex\" lang=\"latex\"> \(  A_1, A_2,......,A_n,  A_{n + 1}  \) </span>be (n + 1) events such that <span class=\"latex\" lang=\"latex\"> \(  P(A_l \cap A_2  \cap......\cap A_n) > 0. \) </span>
+		<br />
+		Then <span class=\"latex\" lang=\"latex\"> \(  P \left(\underset{j = 1}{\overset{n + 1}{\cap}} A_j \right) = P(A_1) P(A_2 | A_1) P(A_3 | A_1 \cap A_2).....P(A_{n + 1} | A_1 \cap......\cap A_n  \) </span>
+	</p>
+</section>
+<section class="skill" id="07">
+	<h3 class="skill-heading">Total Probability Theorem</h3>
+	<p>Let <span class=\"latex\" lang=\"latex\"> \( {H_i}, i = 1, 2,....,n, \) </span> be n events such that <span class=\"latex\" lang=\"latex\"> \( H_i \cap H_j = \varnothing  \) </span>for <span class=\"latex\" lang=\"latex\"> \( i \neq j  \) </span> and <span class=\"latex\" lang=\"latex\"> \(  \underset{i = 1}{\overset{n}{\cup}} H_i = S. \) </span> Suppose that <span class=\"latex\" lang=\"latex\"> \( P(H_i) > 0 \ for \ 1 \leq i \leq n. \) </span> Then for any event A <br />
+		<span class=\"latex\" lang=\"latex\"> \(  P(A) =	\lim \limits_{i = 1}^{n} P(H_i) P(A | H_i) \) </span>
+	</p>
+</section>
+<section class="skill" id="08">
+	<h3 class="skill-heading">Baye's Rule</h3>
+	<p>Let S be a sample space and <span class=\"latex\" lang=\"latex\"> \( H_i,....,H_n \) </span> be n mutually exclusive events such that <span class=\"latex\" lang=\"latex\"> \( \underset{j = 1}{\overset{n}{\cup}} H_j = S  \) </span> and <span class=\"latex\" lang=\"latex\"> \( P(H_i) > 0 for j = 1, 2,....,n. \) </span> We can think of the <span class=\"latex\" lang=\"latex\"> \( H_j's \) </span> as the 'causes' (or the hypotheses) that lead to the outcome of an experiment. <br />
+		The probabilities <span class=\"latex\" lang=\"latex\"> \( P(H_j), j = 1, 2,.....,n  \) </span> are called prior probabilities. Suppose the experiment results in an outcome of event A, where P(A) > 0. What is the probability that the observed event was due to cause <span class=\"latex\" lang=\"latex\"> \( H_j? \) </span> In other words, we seek the conditional probability <span class=\"latex\" lang=\"latex\"> \( P(H_j | A). \) </span> These probabilities are frequently called posterior probabilities. The information that A has occurred makes us reas ss the probability <span class=\"latex\" lang=\"latex\"> \( P(H_j) \) </span> assigned to <span class=\"latex\" lang=\"latex\"> \( H_j. \) </span>
+	</p>
+</section>
+<section class="skill" id="09">
+	<h3 class="skill-heading">Theorem (Baye's Rule)</h3>
+	<p> Let <span class=\"latex\" lang=\"latex\"> \( {H_j} \) </span> be mutually exclusive events such that <span class=\"latex\" lang=\"latex\"> \( P(H_j) > 0 for j = 1, 2,....,n \) </span> and <span class=\"latex\" lang=\"latex\"> \( S = \underset{j = 1}{\overset{n}{\cup}} H_j  \) </span>. Let A be an event with P(A) > 0. Then for j = 1, 2,....,n <br />
+		<span class=\"latex\" lang=\"latex\"> \( P(H_j | A) = \frac{P(H_j) P(A | H_j)}{\lim \limits_{k=1}^{n} P(H_k)P(A | H_k)} \) </span>
+	</p>
+	<div class="synopsis-image"> 
+		<img src="103504003_image-4.png" alt="image4" class="default-synopsis-medium-image" />
+	 </div>
+</section>
+<section class="skill" id="10">
+	<h3 class="skill-heading">Independent Events</h3>
+	<p>We say that two events A and B are independent if the occurrence or non-occurrence of A(B) does not affect the probability of occurrence or non-occurrence of B(A), that is, if P(B | A) = P(B) provided <span class=\"latex\" lang=\"latex\"> \( P(A) \neq 0  \) </span>
+		<br />
+		<span class=\"latex\" lang=\"latex\"> \(  \Rightarrow \frac{P(B \cap A)}{P(A)} = P(B) \Rightarrow P(A \cap B) = P(A) P(B) \) </span>
+		<br />
+		Thus, two events A and B are independent if and only <span class=\"latex\" lang=\"latex\"> \( P(A \cap B) = P(A) P(B). \) </span>
+		<br />
+		If two events are not independent, they are said to be dependent.<br />
+		We note that if P(A) = 0 then for any event B, <span class=\"latex\" lang=\"latex\"> \(  0 \leq P (A \cap B) \leq P(A) = 0, \) </span> so that <span class=\"latex\" lang=\"latex\"> \( P(A \cap B) = P(A) P(B)  \) </span> and A is independent of any other event.<br />
+		Difference between Mutual Exclusiveness and Independence <br />
+		We advise the reader to distinguish between independent and mutually exclusive events. Independence is a property of probability, whereas mutual exclusion is a set-theoretic property. If A and B are mutually exclusive events with P(A) > 0 and P(B) > 0, then <span class=\"latex\" lang=\"latex\"> \(  P(A \cap B) = 0 \neq P(A) P(B),  \) </span> so that A and B cannot he independent. In fact,P(A | B) = 0 = P(B | A).so that if A occurs,B cannot occur and vice versa. Thus A and B are strongly dependent when <span class=\"latex\" lang=\"latex\"> \(  A \cap B = \varnothing. \) </span>
+	</p>
+	<p>We also note the following fact: two events A and B are independent if and only if</p>
+	<div class="list-custom-block-list-ol spaced20 indented20">
+		<ol>
+			<li>
+				<p>A and B' are independent, or 
+				</p>
+			</li>
+			<li>
+				<p>A' and B are independent, or 
+				</p>
+			</li>
+			<li>
+				<p>A' and B' are independent.</p>
+			</li>
+		</ol>
+	</div>
+	<p>Three events A, B and C are said to be pairwise independent if <br />
+		<span class=\"latex\" lang=\"latex\"> \(  P(A \cap B) = P(A) P(B), P(B \cap C) = P(B) P(C), P(C \cap A) = P(C)P(A) \) </span>
+		<br />
+		Three events A, B and C are said to be mutually independent if <br />
+		<span class=\"latex\" lang=\"latex\"> \(  P(A \cap B) = P(A) P(B), \) </span>
+		<br />
+		<span class=\"latex\" lang=\"latex\"> \( P(B \cap C) = P(B) P(C), \) </span>
+		<br />
+		<span class=\"latex\" lang=\"latex\"> \( P(C \cap A) = P(C) P(A) \) </span>
+		<br />
+		and <span class=\"latex\" lang=\"latex\"> \( P(A \cap B \cap C) = P(A) P(B) P(C)  \) </span>
+	</p>
+</section>  
+<section class="solved-examples" id="examples">
+	<h3 class="solved-examples-heading">Solved examples</h3>
+	<section class="solved-example"> 
+		<h4 class="solved-examples-question">Example 1:</h4>
+		<p>A family has two children. What is the probability that both the children are boys given that at least one of them is a boy?<br />
+			<span class="highlight01"> Solution </span>
+			<br />
+			Let b stand for boy and g for girl. The sample space of the experiment is <br />
+			S = {(b, b), (g, b), (b, g), (g, g)} <br />
+			Let E and F denote the following events : <br />
+			E : 'both the children are boys' <br />
+			F : 'at least one of the child is a boy' <br />
+			Then E = {(b,b)} and F = {(b,b), (g,b), (b,g)} <br />
+			Now <span class=\"latex\" lang=\"latex\"> \(  E \cap F = \{ (b, \ b) \}  \) </span>
+			<br />
+			Thus <span class=\"latex\" lang=\"latex\"> \( P(F) = \frac{3}{4}\ and \ P(E \cap F) = \frac{1}{4}  \) </span>
+			<br />
+			Therefore <span class=\"latex\" lang=\"latex\"> \( P \left ( \frac{E}{F} \right ) = \frac{P( E \cap F)}{P(F)} = \frac{\frac{1}{4}}{\frac{3}{4}} = \frac{1}{3}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 2:</h4>
+		<p>In a school, there are 1000 students, out of which 430 are girls. It is known that out of 430, 10% of the girls study in class XII. What is the probability that a student chosen randomly studies in Class XII given that the chosen student is a girl?<br />
+			<span class="highlight01"> Solution </span>
+			<br />
+			Let E denote the event that a student chosen randomly studies in Class XII and F be the event that the randomly chosen student is a girl. We have to find <span class=\"latex\" lang=\"latex\"> \( P \left ( \frac{E}{F} \right )  \) </span>. <br />
+			<span class=\"latex\" lang=\"latex\"> \( Now \  P(F) = \frac{430}{1000} = 0.43 \ and \ P(E \cap F) = \frac{43}{1000} = 0.043 (Why ?)  \) </span> \\[3pt]
+			Then \ <span class=\"latex\" lang=\"latex\"> \( P \left ( \frac{E}{F} \right ) = \frac{P(E \cap F)}{P(F)} = \frac{0.053}{0.43} = 0.1  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 3:</h4>
+		<p>Consider the experiment of tossing a coin. If the coin shows head, toss it again but if it shows tail, then throw a die. Find the conditional probability of the event that 'the die shows a number greater than 4' given that 'there is at least one tail'.</p>
+		<div class="synopsis-image"> 
+			<img src="103504003_image-6.png" alt="image6" class="default-synopsis-medium-image" />
+		 </div>
+		<p>
+			<span class="highlight01"> Solution </span>
+			<br />
+			The outcomes of the experiment can be represented in following diagrammatic manner called the 'tree diagram'. <br />
+			The sample space of the experiment may be described as <br />
+			S = {(H,H), (H,T), (T,1), (T,2), (T,3), (T,4), (T,5), (T,6)} <br />
+			where (H, H) denotes that both the tosses result into head and (T, i) denote the first toss result into a tail and the number i appeared on the die for i = 1,2,3,4,5,6. Thus, the probabilities assigned to the 8 elementary events
+		</p>
+		<div class="synopsis-image"> 
+			<img src="103504003_image-7.png" alt="image7" class="default-synopsis-medium-image" />
+		 </div>
+		<p>(H, H), (H, T), (T, 1), (T, 2), (T, 3) (T, 4), (T, 5), (T, 6) are <span class=\"latex\" lang=\"latex\"> \(  \frac{1}{4}, \ \frac{1}{4}, \ \frac{1}{12}, \ \frac{1}{12}, \ \frac{1}{12}, \ \frac{1}{12}, \ \frac{1}{12}, \ \frac{1}{12}  \) </span> respectively which is clear from the Fig <br />
+			Let F be the event that 'there is at least one tail' and E be the event 'the die shows a number greater than 4'. Then <br />
+			F = {(H,T), (T,1), (T,2), (T,3), (T,4), (T,5), (T,6)} <br />
+			E = {(T,5), (T,6)} and <span class=\"latex\" lang=\"latex\"> \(  E \cap F  \) </span> = {(T,5), (T,6)} <br />
+			Now P(F) = P({(H,T)}) + P ({(T,1)}) + P ({(T,2)}) + P ({(T,3)}) + P ({(T,4)}) + P({(T,5)}) + P({(T,6)}) <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \frac{1}{4} + \frac{1}{4} + \frac{1}{12} + \frac{1}{12} + \frac{1}{12} + \frac{1}{12} + \frac{1}{12} + \frac{1}{12}  \\\\[3pt]
+				and \ P(E \ cap F) = P( \{ T, \ 5 \}) + P (\{(T,6) \})  \\\\[3pt]
+				\frac{1}{12}  + \frac{1}{12} = \frac{1}{6}  \\\\[3pt]
+				Hence \ \left ( \frac{E}{F} \right ) = \frac{P(E \cap F)}{P(F)} = \frac{\frac{1}{6}}{\frac{3}{4}} = \frac{2}{9}  \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 4:</h4>
+		<p>An urn contains 10 black and 5 white balls. Two balls are drawn from the urn one after the other without replacement. What is the probability that both drawn balls are black?<br />
+			<span class="highlight01"> Solution </span>
+			<br />
+			Let E and F denote respectively the events that first and second ball drawn are black. We have to find <span class=\"latex\" lang=\"latex\"> \(  P(E \cap F)  \) </span> or P (EF). <br />
+			P(E) = P (black ball in first draw) <span class=\"latex\" lang=\"latex\"> \(   = \frac{10}{15}  \) </span>
+			<br />
+			Also given that the first ball drawn is black, i.e., event E has occurred, now there are 9 black balls and five white balls left in the urn. Therefore, the probability that the second ball drawn is black, given that the ball in the first draw is black, is nothing but the conditional probability of F given that E has occurred. <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \left ( \frac{F}{E} \right ) = \frac{9}{14}  \) </span>
+			<br />
+			By multiplication rule of probability, we have <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  P(E \cap F) = P(E)\left ( \frac{F}{E} \right )  \\\\[3pt]
+				= \frac{10}{15} \times \frac{9}{14} = \frac{3}{7}  \end{align}  \) </span>
+			<br />
+			<i> Multiplication rule of probability for more than two events </i> If E, F and G are three events of sample space, we have <br />
+			<span class=\"latex\" lang=\"latex\"> \(  P(E \cap F \cap G) = P(E) \left ( \frac{F}{E} \right )\left ( \frac{G}{E \cap F} \right ) =  P(E) \left ( \frac{F}{E} \right ) \left ( \frac{G}{Ef} \right )  \) </span>
+			<br />
+			Similarly, the multiplication rule of probability can be extended for four or more events. <br />
+			The following example illustrates the extension of multiplication rule of probability for three events.</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 5:</h4>
+		<p>Three cards are drawn successively, without replacement from a pack of 52 well shuffled cards. What is the probability that first two cards are kings and the third card drawn is an ace?<br />
+			<span class="highlight01"> Solution </span>
+			<br />
+			Let K denote the event that the card drawn is king and A be the event that the card drawn is an ace. Clearly, we have to find P (KKA) <br />
+			Now <span class=\"latex\" lang=\"latex\"> \(  P(K) = \frac{4}{52}  \) </span>
+			<br />
+			Also, P (K|K) is the probability of second king with the condition that one king has already been drawn. Now there are three kings in (52 - 1) = 51 cards. <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \left ( \frac{K}{K} \right ) = \frac{3}{51}  \) </span>
+			<br />
+			Lastly, <span class=\"latex\" lang=\"latex\"> \(  \left ( \frac{A}{KK} \right )  \) </span> is the probability of third drawn card to be an ace, with the condition that two kings have already been drawn. Now there are four aces in left 50 cards.<br />
+			Therefore <span class=\"latex\" lang=\"latex\"> \(  \left ( \frac{A}{KK} \right ) = \frac{4}{50}  \) </span>
+			<br />
+			By multiplication law of probability, we have <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  P(KKA) = P(K) \  \left ( \frac{K}{K} \right ) \ \left ( \frac{A}{KK} \right )  \\\\[3pt]
+				= \frac{4}{52} \times \frac{3}{51} \times \frac{4}{50} = \frac{2}{5525}  \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 6:</h4>
+		<p>A die is thrown. If E is the event 'the number appearing is a multiple of 3' and F be the event 'the number appearing is even' then find whether E and F areindependent?<br />
+			<span class="highlight01"> Solution </span>
+			<br />
+			We know that the sample space is S = {1, 2, 3, 4, 5, 6} <br />
+			Now E = { 3, 6}, F = { 2, 4, 6} and <span class=\"latex\" lang=\"latex\"> \(  E \cap F = \{6 \}  \) </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  Then \ P(E) = \frac{2}{6} = \frac{1}{3}, \ P(F) = \frac{3}{6} = \frac{1}{2} \ and \ P(E \ cap F) = \frac{1}{6}  \\\\[3pt]
+				Clearly \ P(E \cap F) = P(E).P(F)  \end{align}  \) </span>
+			<br />
+			Hence E and F are independent events.</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 7:</h4>
+		<p>Prove that if E and F are independent events, then so are the events E and F'.<br />
+			<span class="highlight01"> Solution </span>
+			<br />
+		</p>
+		<div class="synopsis-image"> 
+			<img src="103504003_image-8.png" alt="image8" class="default-synopsis-medium-image" />
+		 </div>
+		<p>Since E and F are independent, we have <br />
+			<span class=\"latex\" lang=\"latex\"> \(  P(E \cap F) = P(E).P(F)  \) </span>
+			<br />
+			From the venn diagram in Fig , it is clear that <span class=\"latex\" lang=\"latex\"> \(  P(E \cap F)  \) </span> and <span class=\"latex\" lang=\"latex\"> \(  P(E \cap F')  \) </span> are mutually exclusive events and also <span class=\"latex\" lang=\"latex\"> \(  E = (E \cap F) F) \cup (E \cap F')  \) </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  Therefore \ P(E) = P(E \cap F) + P(E \cap f')  \\\\[3pt]
+				or \ P(E \cap F') = P(E) - P(E \cap F)  \end{align}  \) </span>
+			<br />
+			= P(E) - P(E) . P(F) (by (1)) <br />
+			= P(E)(1 - P(F)) <br />
+			= P(E).P(F') <br />
+			Hence, E and F' are independent</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 8:</h4>
+		<p>If A and B are two independent events, then the probability of occurrence of at least one of A and B is given by 1 - P(A') P(B')<br />
+			<span class="highlight01"> Solution </span>
+			<br />
+			We have <br />
+			P(at least one of A and B) = <span class=\"latex\" lang=\"latex\"> \(  P(A \cap B)  \) </span>
+			<br />
+			= P(A) + P(B) - <span class=\"latex\" lang=\"latex\"> \(  P(A \cap B)  \) </span>
+			<br />
+			= P(A) + P(B) - P(A) P(B) <br />
+			= P(A) + P(B) [1-P(A)] <br />
+			= P(A) + P(B). P(A') <br />
+			= 1 - P(A') + P(B) P(A') <br />
+			= 1 - P(A') [1 - P(B)] <br />
+			= 1 - P(A')P(B')</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 9:</h4>
+		<p>A person has undertaken a construction job. The probabilities are 0.65 that there will be strike, 0.80 that the construction job will be completed on time if there is no strike, and 0.32 that the construction job will be completed on time if there is a strike. Determine the probability that the construction job will be completed on time.<br />
+			<span class="highlight01"> Solution </span>
+			<br />
+			Let A be the event that the construction job will be completed on time, and B be the event that there will be a strike. We have to find P(A). <br />
+			We have <br />
+			P(B) = 0.65, P(no strike) = P(B') = 1 - P(B) = 1 - 0.65 = 0.35 <br />
+			<span class=\"latex\" lang=\"latex\"> \(  P \left ( \frac{A}{B} \right ) = 0.32, \ P \left ( \frac{A}{B'} \right ) = 0.80  \) </span>
+			<br />
+			Since events B and B' form a partition of the sample space S, therefore, by theorem <br />
+			on total probability, we have <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  P(A) = P(B)  P \left ( \frac{A}{B} \right ) + P(B′)  P \left ( \frac{A}{B'} \right )  \\\\[3pt]
+				= 0.65 \times 0.32 + 0.35 \times 0.8  \\\\[3pt]
+				= 0.208 + 0.28 = 0.488  \end{align}  \) </span>
+			Thus, the probability that the construction job will be completed in time is 0.488.</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 10:</h4>
+		<p>In a factory which manufactures bolts, machines A, B and C manufacture respectively 25%, 35% and 40% of the bolts. Of their outputs, 5, 4 and 2 percent are respectively defective bolts. A bolt is drawn at random from the product and is found to be defective. What is the probability that it is manufactured by the machine B?<br />
+			<span class="highlight01"> Solution </span>
+			<br />
+			Let events <span class=\"latex\" lang=\"latex\"> \(  B_1, \ B_2, \ B_3  \) </span> be the following : <br />
+			<span class=\"latex\" lang=\"latex\"> \(  B_1  \) </span>:the bolt is manufactured by machine A <br />
+			<span class=\"latex\" lang=\"latex\"> \(  B_2  \) </span>:the bolt is manufactured by machine B <br />
+			<span class=\"latex\" lang=\"latex\"> \(  B_3  \) </span>:the bolt is manufactured by machine C <br />
+			Clearly, <span class=\"latex\" lang=\"latex\"> \(  B_1, \ B_2, \ B_3  \) </span> are mutually exclusive and exhaustive events and hence, they represent a partition of the sample space. <br />
+			Let the event E be 'the bolt is defective'. <br />
+			The event E occurs with <span class=\"latex\" lang=\"latex\"> \(  B_1  \) </span> or with <span class=\"latex\" lang=\"latex\"> \(  B_2  \) </span> or with <span class=\"latex\" lang=\"latex\"> \(  B_3  \) </span>. <br />
+			Given that, <span class=\"latex\" lang=\"latex\"> \(  P(B_1)  \) </span>= 25% = 0.25, <span class=\"latex\" lang=\"latex\"> \(  P(B_2)  \) </span> = 0.35 and <span class=\"latex\" lang=\"latex\"> \(  P(B_3)  \) </span> = 0.40 <br />
+			Again <span class=\"latex\" lang=\"latex\"> \(  P \left ( \frac{E}{B_1} \right )  \) </span> = Probability that the bolt drawn is defective given that it is manufactured by machine A = 5% = 0.05 Similarly, <span class=\"latex\" lang=\"latex\"> \(  P \left ( \frac{E}{B_2} \right )  \) </span> = 0.04, <span class=\"latex\" lang=\"latex\"> \(  P \left ( \frac{E}{B_1} \right )  \) </span> = 0.02. <br />
+			Hence, by Bayes' Theorem, we have <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  P \left ( \frac{E}{B_2} \right ) = \frac{P(B_2)P \left ( \frac{E}{B_2} \right ) }{P(B_1)P \left ( \frac{E}{B_1} \right ) + P(B_2)P \left ( \frac{E}{B_2} \right ) + P(B_3)P \left ( \frac{E}{B_3} \right )}  \\\\[3pt]
+				= \frac{0.35 \times 0.04}{0.25 \times + 0.35 \times 0.04 + 0.40 \times 0.02}  \\\\[3pt]
+				= \frac{0.0140}{0.0345} = \frac{28}{69}  \end{align}  \) </span>
+		</p>
+	</section>
+</section> 

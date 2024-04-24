@@ -1,0 +1,19 @@
+<div style="height: 20px;"></div>
+
+<footer class="footer fixed-bottom">
+    <div class="row footer-text">
+        <div class="col-12 col-md text-center text-md-left nav-link">
+            © eTester.com  -  2014-{{now.Format "2006"}}. &nbsp; All rights reserved.
+    </div>
+    <img style="height: 24px; width: 46px;" href="{{ .Site.Home.Permalink }}" src="/image/logo/logoETESTER_ONLY_E.svg" class="logo" tabindex="0">
+
+</div>
+  
+    <!-- Not usaing this yet, however, this is a way to include bootstrap.js, our own js and bundle into a single munified JavaScript -->
+    {{ $bootstrap := resources.Get "js/bootstrap.bundle.min.js" }}
+    {{ $js := slice $bootstrap | resources.Concat "js/bundle.js" | resources.Minify }}
+    <script src="{{$js.RelPermalink}}" defer></script>
+    <!-- JavaScript and dependencies -->
+
+
+</footer>

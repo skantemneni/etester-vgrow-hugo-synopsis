@@ -1,0 +1,833 @@
+---
+title: "Inequalities - II"
+layout: "default_foundation"
+isMath: true
+---
+<section class="skill" id="01">
+	<h3 class="skill-heading">Synopsis</h3>
+	<section class="subskill">
+		<h4 class="skill-subheading">Properties of Logariths (involving inequalities)</h4>
+		<div class="list-custom-block-list-ol spaced20 indented20">
+			<ol>
+				<li>
+					<ol>
+						<li>
+							<p>
+								<span class=\"latex\" lang=\"latex\"> \(  log_a \ x &gt; 0  \) </span> iff ( x &gt; 1,  a &gt; 1) or ( 0 &lt; x &lt;1, 0 &lt; a &lt; 1 ) </p>
+						</li>
+						<li>
+							<p>
+								<span class=\"latex\" lang=\"latex\"> \(  log_a \ x &lt; 0  \) </span> iff ( x &gt; 1,  0 &lt; a &lt; 1) or ( 0 &lt; x &lt;1, a &gt; 1 ) </p>
+						</li>
+					</ol>
+				</li>
+				<li>
+					<ol>
+						<li>
+							<p>If a &gt; 1, x &gt; y &gt; 0 ; <span class=\"latex\" lang=\"latex\"> \(  log_a \ x &gt; log_a \ y  \) </span>
+							</p>
+						</li>
+						<li>
+							<p>If 0 &lt; a &lt; 1, x &gt; y &gt; 0 ; <span class=\"latex\" lang=\"latex\"> \(  log_a \ x &lt; log_a \ y  \) </span>
+							</p>
+						</li>
+					</ol>
+				</li>
+				<li>
+					<ol>
+						<li>
+							<p>If a &gt; 1, <span class=\"latex\" lang=\"latex\"> \(  log_a \ x &lt; p  \) </span> then <span class=\"latex\" lang=\"latex\"> \(  0 &lt; x &lt; a^p  \) </span> and <span class=\"latex\" lang=\"latex\"> \(  log_a \ x &gt; p \ then \ x &gt; a^p  \) </span>
+							</p>
+						</li>
+						<li>
+							<p>If 0 &lt; a &lt; 1, <span class=\"latex\" lang=\"latex\"> \(  log_a \ x &lt; p  \) </span> then <span class=\"latex\" lang=\"latex\"> \( x &gt; a^p  \) </span> and <span class=\"latex\" lang=\"latex\"> \(  log_a \ x &gt; p \ then \ 0 &lt; x &lt; a^p  \) </span>
+							</p>
+						</li>
+					</ol>
+				</li>
+				<li>
+					<ol>
+						<li>
+							<p>If a &gt; 1, <span class=\"latex\" lang=\"latex\"> \(  log_a \ x &gt; 1  \) </span> then x &gt; a, <span class=\"latex\" lang=\"latex\"> \(  0 &lt; log_a \ x &lt; 1  \) </span> then 1 &lt; x &lt; a </p>
+						</li>
+						<li>
+							<p>If 0 &lt; a &lt; 1, <span class=\"latex\" lang=\"latex\"> \(  log_a \ x &gt; 1 \) </span> then x &gt; a, <span class=\"latex\" lang=\"latex\"> \(  0 &lt; log_a \ x &lt; 1  \) </span> then a &lt; x &lt; 1 </p>
+						</li>
+					</ol>
+				</li>
+			</ol>
+		</div>
+		<p>
+			<span class="highlight01">Example: </span>
+			Find "a" if <span class=\"latex\" lang=\"latex\"> \( log_{0.16}(a + 1) &lt; log_{0.4}(a + 1)  \) </span>. <br />
+			<span class="highlight01">Sol</span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  log_{0.16}(a + 1) &lt; log_{0.4} (a + 1)  \\\\[3pt]
+				\Rightarrow \ log_{(0.4)^2}(a + 1) &lt; log_{0.4}(a + 1)  \\\\[3pt]
+				\Rightarrow \ \frac{1}{2} log_{0.4} (a + 1) &lt; log_{0.4}(a  + 1)  \\\\[3pt]
+				\Rightarrow \ \frac{1}{2} log_{0.4} (a + 1) &gt; 0 \ \Rightarrow \ 0 &lt; (a + 1) &lt; 1, \ as \ 0 &lt; \ base \ &lt; 1  \\\\[3pt]
+				\Rightarrow \ - 1 &lt; a &lt; 0  \end{align}  \) </span>.</p>
+	</section>
+	<section class="subskill">
+		<h4 class="skill-subheading">Properties of monotonicity of logarithms</h4>
+		<div class="list-custom-block-list-ol spaced20 indented20">
+			<ol>
+				<li>
+					<p>
+						<span class=\"latex\" lang=\"latex\"> \(  log_a \ x &gt; 0  \) </span> if and only if (x &gt; 1, a &gt; 1) or (0 &lt; x &lt; 1, 0 &lt; a &lt; 1).</p>
+				</li>
+				<li>
+					<p>
+						<span class=\"latex\" lang=\"latex\"> \(  log_a \ x &lt; 0  \) </span> if and only if (x &gt; 1, 0 &lt; a &lt; 1) or (0 &lt; x &lt; 1, a &gt; 1).</p>
+				</li>
+				<li>
+					<p>a &gt; 1, x &gt; y <span class=\"latex\" lang=\"latex\"> \(  \Rightarrow \ log_a \ x &gt; log_a \ y  \) </span>
+					</p>
+					<div class="synopsis-image"> 
+						<img src="104180010_image-1.png" alt="image1" class="default-synopsis-medium-image" />
+					 </div>
+					<p>i.e., for a &gt; 1, <span class=\"latex\" lang=\"latex\"> \(  f(x) = log_{a} \ x  \) </span> is an increasing fuction.</p>
+				</li>
+				<li>
+					<p>0 &lt; a &lt; 1, x &gt; y &gt; 0 <span class=\"latex\" lang=\"latex\"> \(  \Rightarrow \ log_{a} \ x &lt; log_{a} \ y  \) </span>
+					</p>
+					<div class="synopsis-image"> 
+						<img src="104180010_image-2.png" alt="image2" class="default-synopsis-medium-image" />
+					 </div>
+					<p>i.e., for 0 &lt; a &lt; 1, <span class=\"latex\" lang=\"latex\"> \(  f(x) = log_{a} \ x  \) </span> is an decreasing fuction.</p>
+				</li>
+				<li>
+					<p>If a &gt; 1, then <span class=\"latex\" lang=\"latex\"> \(  log_{a} \ (a + 1) &gt; log_{a + 1} \ (a + 2)  \) </span>
+					</p>
+					<div class="synopsis-image"> 
+						<img src="104180010_image-3.png" alt="image3" class="default-synopsis-medium-image" />
+					 </div>
+				</li>
+			</ol>
+		</div>
+	</section>
+</section>
+<section class="skill" id="02">
+	<h3 class="skill-heading">Inequalities in Triangles</h3>
+	<section class="subskill">
+		<h4 class="skill-subheading">Theorem:</h4>
+		<p>If two sides of a triangle are unequal, the longer sides has the greater angle opposite to it.</p>
+		<h5 class="skill-smallheading">Given</h5>
+		<p> A <span class=\"latex\" lang=\"latex\"> \(  \triangle{ABC}  \) </span> in which AC &gt; AB.</p>
+		<h5 class="skill-smallheading">To Prove</h5>
+		<p>
+			<span class=\"latex\" lang=\"latex\"> \(  \angle{ABC} &gt; \angle{ACB}  \) </span>. </p>
+		<h5 class="skill-smallheading">Construction</h5>
+		<p> mark a point D on AC such that AD = AB, Join BD. </p>
+		<div class="synopsis-image"> 
+			<img src="104180010_image-4.png" alt="image4" class="default-synopsis-medium-image" />
+		 </div>
+		<h5 class="skill-smallheading">Proof</h5>
+		<p>In <span class=\"latex\" lang=\"latex\"> \(  \triangle{ABD}  \) </span>, we have: AB = AD [by costruction] <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \therefore \ \angle{ABD} = \angle{BDA}  \) </span>
+			But, <span class=\"latex\" lang=\"latex\"> \(  \angle{BDA}  \) </span> being an exterior angle of <span class=\"latex\" lang=\"latex\"> \(  \triangle{BCD}  \) </span>, we have: <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \angle{BDA} &gt; \angle{ACB}  \) </span>
+			<br />
+			Thus, from (i) and (iii), we get: <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \angle{ABD} &gt; \angle{ACB} \ \Rightarrow \ \angle{ABC} &gt; \angle{ABD} &gt; \angle{ACB} \ \Rightarrow \ \angle{ABC} &gt; \angle{ACB}  \\\\[3pt]
+				Hence, \ \angle{ABC} &gt; \angle{ACB} \end{align}  \) </span>.</p>
+	</section>
+	<section class="subskill">
+		<h4 class="skill-subheading">Theorem:</h4>
+		<p>In a triangle, the greater angle has the longer side opposite to it.</p>
+		<h5 class="skill-smallheading">Given</h5>
+		<p> A <span class=\"latex\" lang=\"latex\"> \(  \triangle{ABC}  \) </span> in which <span class=\"latex\" lang=\"latex\"> \(  \angle{ABC} &gt; \angle{ACB}  \) </span> .</p>
+		<h5 class="skill-smallheading">To Prove</h5>
+		<p>AC &gt; AB </p>
+		<h5 class="skill-smallheading">Proof</h5>
+		<div class="synopsis-image"> 
+			<img src="104180010_image-5.png" alt="image5" class="default-synopsis-medium-image" />
+		 </div>
+		<p>We have the following possibilities only</p>
+		<div class="list-custom-block-list-ol spaced20 indented20">
+			<ol>
+				<li>
+					<p>AC = AB</p>
+				</li>
+				<li>
+					<p>AC &lt; AB</p>
+				</li>
+				<li>
+					<p>AC &gt; AB</p>
+				</li>
+			</ol>
+		</div>
+		<h5 class="skill-smallheading">Case I:</h5>
+		<p> If possible, let AC = AB <br />
+			Then, AC = AB <span class=\"latex\" lang=\"latex\"> \(  \Rightarrow \ \angle{ABC} = \angle{ACB}  \) </span> [since opp.to equal sides are equal] <br />
+			This contradicts the given hypothesis that <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \angle{ABC} &gt; \angle{ACB}  \\\\[3pt]
+				\therefore \ AC \neq AB  \end{align}  \) </span>. </p>
+		<h5 class="skill-smallheading">Case II:</h5>
+		<p>If possible, let AC &lt; AB, i.e., AB &gt; AC. <br />
+			Since the longer side has the greater angle opposite to it, <br />
+			we must have, <span class=\"latex\" lang=\"latex\"> \(  \angle{ACB} &gt; \angle{ABC}  \) </span>
+			<br />
+			This contradicts the given hypothesis that <span class=\"latex\" lang=\"latex\"> \(  \angle{ABC} &gt; \angle{ACB}  \) </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \therefore  \) </span> AC cannot be less than AB.</p>
+		<h5 class="skill-smallheading">Case III:</h5>
+		<p>Thus, we are left with the only possibility, AC &gt; AB, which must be true. <br />
+			Hence, AC &gt; AB.</p>
+	</section>
+	<section class="subskill">
+		<h4 class="skill-subheading">Theorem:</h4>
+		<p>Of all the line segments that can be drawn to a given line, from a point not lying on it, the perpendicular line segment is the shortest.</p>
+		<h5 class="skill-smallheading">Given</h5>
+		<p> A line AB and P is a point outside this line, <span class=\"latex\" lang=\"latex\"> \(  PM \perp AB  \) </span> and N is any point on AB, other than M.</p>
+		<h5 class="skill-smallheading">To Prove</h5>
+		<p>PM &lt; PN.</p>
+		<h5 class="skill-smallheading">Proof</h5>
+		<div class="synopsis-image"> 
+			<img src="104180010_image-6.png" alt="image6" class="default-synopsis-medium-image" />
+		 </div>
+		<p>In <span class=\"latex\" lang=\"latex\"> \(  \triangle{PMN}  \) </span>, we have, <span class=\"latex\" lang=\"latex\"> \(  \angle{M} = 90^{\circ}  \) </span>. <br />
+			But in a right angled triangle, each one of the angles, other than right angle, is an acute angle <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \therefore \ \angle{N} &lt; 90^{\circ} \ Consequently,\ \angle{M} &lt; \angle{N}  \) </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \therefore PN &gt; PM  \) </span> [ Since side opposite to greater angle is longer] <br />
+			Hence, PM &lt; PN. <br />
+			Thus, perpendicular from P to the given line is shortest of all line segments from P to AB.</p>
+	</section>
+	<section class="subskill">
+		<h4 class="skill-subheading">Theorem:</h4>
+		<p>The sum of any two sides of a triangle is greater than its third side.</p>
+		<h5 class="skill-smallheading">Given</h5>
+		<p> A <span class=\"latex\" lang=\"latex\"> \(  \triangle{ABC}  \) </span>
+		</p>
+		<h5 class="skill-smallheading">To Prove</h5>
+		<div class="list-custom-block-list-ol spaced20 indented20">
+			<ol>
+				<li>
+					<p> AB + AC &gt; BC,</p>
+				</li>
+				<li>
+					<p>AB + BC &gt; AC,</p>
+				</li>
+				<li>
+					<p>BC + AC &gt; AB.</p>
+				</li>
+			</ol>
+		</div>
+		<h5 class="skill-smallheading">Construction</h5>
+		<p> Produce BA to D such that AD = AC. Join CD. </p>
+		<div class="synopsis-image"> 
+			<img src="104180010_image-7.png" alt="image7" class="default-synopsis-medium-image" />
+		 </div>
+		<h5 class="skill-smallheading">Proof</h5>
+		<p>In <span class=\"latex\" lang=\"latex\"> \(  \triangle{ACD}  \) </span>,we have AC = AD <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \therefore \ \angle{ACD} = \angle{ADC}  \) </span> [angle opposite to equal sides] <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \Rightarrow \ \angle{BCA} + \angle{ACD} &gt; \angle{ADC}  \\\\[3pt]
+				\Rightarrow \ \angle{BCD} &gt; \angle{BDC} \ [Since \ \angle{ADC} = \angle{BDC} ]  \\\\[3pt]
+				\Rightarrow \ BD &gt; BC; \ \angle{BA} + AD &gt; BC  \\\\[3pt]
+				\Rightarrow \ AB + AC &gt; BC \ [Since AD = AC ]  \end{align}  \) </span>
+			<br />
+			Hence, AB + AC &gt; BC. Similarly AB + BC &gt; AC and BC + AC &gt; AB.</p>
+	</section>
+	<section class="subskill">
+		<h4 class="skill-subheading">Theorem:</h4>
+		<p>The difference between any two sides of a triangle is less than its third side.</p>
+		<h5 class="skill-smallheading">Given:</h5>
+		<p> A <span class=\"latex\" lang=\"latex\"> \(  \triangle{ABC}  \) </span>
+		</p>
+		<h5 class="skill-smallheading">To Prove:</h5>
+		<div class="list-custom-block-list-ol spaced20 indented20">
+			<ol>
+				<li>
+					<p> AC - AB &lt; BC,</p>
+				</li>
+				<li>
+					<p>BC - AC &lt; AB,</p>
+				</li>
+				<li>
+					<p>BC - AB &lt; AC.</p>
+				</li>
+			</ol>
+		</div>
+		<h5 class="skill-smallheading">Construction:</h5>
+		<p> Let AC &gt; AB. Then, along AC, set off AD = AB. Join BD.</p>
+		<div class="synopsis-image"> 
+			<img src="104180010_image-8.png" alt="image8" class="default-synopsis-medium-image" />
+		 </div>
+		<h5 class="skill-smallheading">Proof</h5>
+		<p>
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  AB = AD \ \Rightarrow \ \angle{1} = \angle{2}  \\\\[3pt]
+				\text{Side CD of} \ \triangle{BCD} \ \text{has been produced to A.}  \\\\[3pt]
+				\therefore \ \angle{2} &gt; \angle{4} \  [Since \ ext.angle \ &gt; \ each int.opp.angle].  \\\\[3pt]
+				Again, \ side \ AD \ of \ \triangle{ABD} \ \text{has been produced to C}.  \\\\[3pt]
+				\therefore \ \angle{3} &gt; \angle{1} \ [since \ ext.angle &gt; each int.opp.angle].  \\\\[3pt]
+				Consequently, \ \angle{3} &gt; \angle{2} \ {Since \ \angle{1} = \angle{2}}  \\\\[3pt]
+				Now, \ \angle{3} &gt; \angle{2} \ and \ \angle{2} &gt; \angle{4} \ \Rightarrow \ \angle{3} &gt; \angle{4}.  \\\\[3pt]
+				\therefore \ BC &gt; CD \ \text{Side opposite to greater angle is longer}  \\\\[3pt]
+				\Rightarrow \ CD &lt; BC  \\\\[3pt]
+				\Rightarrow \ AC - AD &lt; BC  \\\\[3pt]
+				\Rightarrow \ AC - AB &lt; BC \ [since \ AD = AB]  \\\\[3pt]
+				Hence, AC - AB &lt; BC.  \\\\[3pt]
+				Similarly, \ BC - AC &lt; AB \ and \ BC - AB &lt; AC .  \end{align}  \) </span>
+		</p>
+	</section>
+</section>
+<section class="skill" id="03">
+	<h3 class="skill-heading">Quadratic Inequations</h3>
+	<p>A quadratic equaiton is a polynomial equaiton of the second degree. The general from is <span class=\"latex\" lang=\"latex\"> \(  ax^2 + bx + c  \) </span> where x represents a variable or an unknown and a, b and c are constant with <span class=\"latex\" lang=\"latex\"> \(  a \neq 0  \) </span> (If a = 0 the equaiton is a linear equaiton)</p>
+	<section class="subskill">
+		<h4 class="skill-subheading">Definition</h4>
+		<p>If <span class=\"latex\" lang=\"latex\"> \(  ax^2 + bc + c = 0  \) </span> is a quadratic expression, then <span class=\"latex\" lang=\"latex\"> \(   ax^2 + bx + c &gt; 0 \ or \ ax^2 + bx + c \leq 0 \ or \ ax^2 + bc + c &lt; 0 \ or \ ax^2 + bx + c \leq 0  \) </span> is called a quadratic inequation or quadratic inequality. <br />
+			<span class="highlight01"> Example: </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  3x^2 - 5x + 7 &gt; 0, \ 4x^2 - 5x + 1 \leq 0 ...... etc.,  \) </span>
+		</p>
+	</section>
+</section>
+<section class="skill" id="04">
+	<h3 class="skill-heading">Methods of Solving Inequations</h3> 
+	<div class="list-custom-block-list-ol spaced20 indented20">
+		<ol>
+			<li>
+				<p> Algebraic method refers to a method of solving an equaitons involving two or more variable where one of the variable is expressed as a function of one of the other variables.</p>
+			</li>
+			<li>
+				<p>There are two types of algebric method used in solving <br />
+					The substitution method and the elimination method.</p>
+			</li>
+		</ol>
+	</div>
+	<section class="subskill">
+		<h4 class="skill-subheading">Algebraic method</h4>
+		<p>In this method we find the solution by observing the changes in sign of the quadratic expression.</p>
+	</section>
+	<section class="subskill">
+		<h4 class="skill-subheading">Graphical method</h4>
+		<p>In this method we find the solution by drawing the graph of the inequation. <br />
+			<span class="highlight01"> Example: </span>
+			<br />
+			Solve <span class=\"latex\" lang=\"latex\"> \(  x^2 - 10x + 21 &lt; 0  \) </span>
+			<br />
+			<span class="highlight01">Algebraic method </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  x^2 - 10x + 21 = 0 \ \Rightarrow \ (x - 3)(x - 7) = 0 \ \Rightarrow \ x = 3 \ or \ 7  \\\\[3pt]
+				x^2 - 10x + 21 &lt; 0, \ coefficient \ of \ x^2 &gt; 0 \ \Rightarrow \ 3 &lt; x &lt; 7  \end{align}  \) </span>
+			<br />
+			Solution set = (3, 7) <br />
+			<span class="highlight01">Graphical method </span>
+			<br />
+			Let <span class=\"latex\" lang=\"latex\"> \( y = x^2 - 10x + 21  \) </span>. <br />
+			Some points on the graph are </p>
+		<table class="default-html-table">
+			<tr>
+				<td align="center">x</td>
+				<td align="center">0</td>
+				<td align="center">1</td>
+				<td align="center">2</td>
+				<td align="center">3</td>
+				<td align="center">4</td>
+				<td align="center">5</td>
+				<td align="center">6</td>
+				<td align="center">7</td>
+				<td align="center">8</td>
+				<td align="center">9</td>
+				<td align="center">10</td>
+			</tr>
+			<tr>
+				<td align="center">y</td>
+				<td align="center">21</td>
+				<td align="center">12</td>
+				<td align="center">5</td>
+				<td align="center">0</td>
+				<td align="center">-3</td>
+				<td align="center">-4</td>
+				<td align="center">-3</td>
+				<td align="center">0</td>
+				<td align="center">5</td>
+				<td align="center">12</td>
+				<td align="center">21</td>
+			</tr>
+		</table>
+		<p>We	require the value of x for which <span class=\"latex\" lang=\"latex\"> \(  x^2 - 10x + 21 &lt; 0  \) </span>
+		</p>
+		<div class="synopsis-image"> 
+			<img src="104180010_image-9.png" alt="image9" class="default-synopsis-medium-image" />
+		 </div>
+		<p> From the graph it can observed that <span class=\"latex\" lang=\"latex\"> \(  y = x^2 - 10x + 21 &lt; 0  \) </span> where 3 &lt; x &lt; 7  <br />
+			<span class=\"latex\" lang=\"latex\"> \( \therefore  \) </span> Solution set = (3, 7) </p>
+	</section>
+</section>
+<section class="skill" id="05">
+	<h3 class="skill-heading">Sign of Quadratic Expression</h3>
+	<p> If <span class=\"latex\" lang=\"latex\"> \(  \alpha, \ \beta  \) </span> are roots of the quadratic equaiton <span class=\"latex\" lang=\"latex\"> \(  ax^2 + bx + c = 0  \) </span>, then for <span class=\"latex\" lang=\"latex\"> \(  x = \alpha \ and \ x = \beta  \) </span>, the value of the expression <span class=\"latex\" lang=\"latex\"> \(  ax^2 + bx + c  \) </span> is equal to zero. For other real values of x, the expression <span class=\"latex\" lang=\"latex\"> \(  ax^2 + bx + c &gt; 0 \ or &lt; 0  \) </span>. <br />
+		The sign of <span class=\"latex\" lang=\"latex\"> \(  ax^2 + bx + c, \ x \epsilon R  \) </span> is determined by the following rule:</p>
+	<div class="list-custom-block-list-ol spaced20 indented20">
+		<ol>
+			<li>
+				<p>If <span class=\"latex\" lang=\"latex\"> \(  \alpha, \ \beta \ (\alpha &lt; \beta)  \) </span> are real and unequal (i.e. D &gt; 0) roots of the quadratic equaiton, then the sign of the expression <span class=\"latex\" lang=\"latex\"> \(  ax^2 + bx + c, \ x \epsilon R  \) </span>is determined as follows:</p>
+				<div class="synopsis-image"> 
+					<img src="104180010_image-10.png" alt="image10" class="default-synopsis-medium-image" />
+				 </div>
+			</li>
+			<li>
+				<p>If <span class=\"latex\" lang=\"latex\"> \(  \alpha, \ \beta  \) </span> are real and equal (i.e, D = 0) roots of the quadratic equaiton, then the sign of the expression <br />
+					<span class=\"latex\" lang=\"latex\"> \(  ax^2 + bx + c, \ x \epsilon \ R  \) </span> is as follows: <br />
+					<span class=\"latex\" lang=\"latex\"> \(  ax^2 + bx + c \qeq 0  \) </span> if a &gt; 0 <br />
+					and <span class=\"latex\" lang=\"latex\"> \(  ax^2 + bx + c \leq 0  \) </span>,if a &lt; 0</p>
+			</li>
+			<li>
+				<p>If <span class=\"latex\" lang=\"latex\"> \(  \alpha  \) </span>
+					<span class=\"latex\" lang=\"latex\"> \(  \beta  \) </span> are imaginary (i.e, D &lt; 0), then the expression <br />
+					<span class=\"latex\" lang=\"latex\"> \(  ax^2 + bx + c &gt; 0  \) </span>, if a &gt; 0 <br />
+					<span class=\"latex\" lang=\"latex\"> \(  ax^2 + bx + c &lt; 0  \) </span>, if a &lt; 0 </p>
+			</li>
+		</ol>
+	</div>
+	<section class="subskill">
+		<h4 class="skill-subheading">Nature of Roots of a Quadratic Equation With Respect to One or Two Real Numbers</h4>
+		<p>Let <span class=\"latex\" lang=\"latex\"> \( f(x) = ax^2 + bx + c = 0  \) </span>, where <span class=\"latex\" lang=\"latex\"> \( a, \ b, \ c \ \epsilon \ R, \ a \ \neq 0  \) </span>, Let  <span class=\"latex\" lang=\"latex\"> \(  \alpha, \ \beta(\alpha &lt; \beta)  \) </span> be the roots of the corresponding quadratic equaiton. Let  <span class=\"latex\" lang=\"latex\"> \(  k, k_1, \ k_2, \ \epsilon \ R \ and \ k_1 &lt; k_2  \) </span>.</p>
+	</section>
+	<section class="subskill">
+		<h4 class="skill-subheading">Nature of Roots with Respect to One Real number</h4>
+		<div class="list-custom-block-list-ol spaced20 indented20">
+			<ol>
+				<li>
+					<p>If both the roots of f(x) = 0 are greater than k, then <span class=\"latex\" lang=\"latex\"> \(  D \geq 0  \) </span>, a f(k) &gt; 0 and <span class=\"latex\" lang=\"latex\"> \(  k &lt; - \frac{b}{2a}  \) </span>. </p>
+					<div class="synopsis-image"> 
+						<img src="104180010_image-11.png" alt="image11" class="default-synopsis-medium-image" />
+					 </div>
+				</li>
+				<li>
+					<p>If both the roots of f(x) = 0 are less than k, then <span class=\"latex\" lang=\"latex\"> \(  D \geq 0  \) </span>, a f(k) &gt; 0 and <span class=\"latex\" lang=\"latex\"> \(  k &gt; - \frac{b}{2a}  \) </span>.</p>
+					<div class="synopsis-image"> 
+						<img src="104180010_image-12.png" alt="image12" class="default-synopsis-medium-image" />
+					 </div>
+				</li>
+				<li>
+					<p> If one root is less than k and other is greater than k, then D &gt; 0 and a f(k) &lt; 0 </p>
+					<div class="synopsis-image"> 
+						<img src="104180010_image-13.png" alt="image13" class="default-synopsis-medium-image" />
+					 </div>
+				</li>
+			</ol>
+		</div>
+	</section>
+	<section class="subskill">
+		<h4 class="skill-subheading">Roots with Respect to Two Real Numbers</h4>
+		<div class="list-custom-block-list-ol spaced20 indented20">
+			<ol>
+				<li>
+					<p>If exactly one root of f(x) = 0 lies in the interval <span class=\"latex\" lang=\"latex\"> \(  (k_1, \ k_2)  \) </span>, then D &gt; and <span class=\"latex\" lang=\"latex\"> \( f(k_1).f(k_2)  \) </span> &lt; 0 </p>
+					<div class="synopsis-image"> 
+						<img src="104180010_image-14.png" alt="image14" class="default-synopsis-medium-image" />
+					 </div>
+				</li>
+				<li>
+					<p>If both roots of f(x) = 0 lie between <span class=\"latex\" lang=\"latex\"> \(  k_1, \ and \ k_2  \) </span>, then  <span class=\"latex\" lang=\"latex\"> \(  D \geq 0, \ a f(k_1) &gt; a f(k_2) &gt; 0 \ and \ k_1 &lt; \left ( \frac{\alpha + \beta}{2} &lt; k_2  \right )  \) </span>
+					</p>
+					<div class="synopsis-image"> 
+						<img src="104180010_image-15.png" alt="image15" class="default-synopsis-medium-image" />
+					 </div>
+				</li>
+				<li>
+					<p>If  <span class=\"latex\" lang=\"latex\"> \(  k_2  \) </span> and  <span class=\"latex\" lang=\"latex\"> \(  k_2  \) </span> lie between the roots of f(x) = 0, then  <span class=\"latex\" lang=\"latex\"> \(  D \geq  0, \ af(k_1) &lt; 0 \ and \ af(k_2) &lt; 0.  \) </span>
+					</p>
+				</li>
+			</ol>
+		</div>
+		<div class="synopsis-image"> 
+			<img src="104180010_image-16.png" alt="image16" class="default-synopsis-medium-image" />
+		 </div>
+	</section>
+</section>
+<section class="solved-examples" id="examples">
+	<h3 class="solved-examples-heading">Solved examples</h3>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 1:</h4>
+		<p>If <span class=\"latex\" lang=\"latex\"> \(  log_{2006}(log_{2007} \ x) &lt; 0 \) </span>, then find the interval in which x lies.</p>
+		<p>
+			<span class="highlight01">Solution:</span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  log_{2006}(log_{2007} \ x) &lt; 0 \ \Rightarrow \ 0 &lt; log_{2007} \ x &lt; 1  \\\\[3pt]
+				\Rightarrow \ x \ \epsilon \ (1, \ 2007)  \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 2:</h4>
+		<p>If <span class=\"latex\" lang=\"latex\"> \(  log_{0.1} (x - 2) &gt; log_{0.01}(x - 2)  \) </span>, then find the interval in which "x" lies.</p>
+		<p>
+			<span class="highlight01">Solution:</span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align} log_{0.1} \ (x - 2) &gt; log_{(0.1)^2} (x - 2)  \\\\[3pt]
+				&gt; \frac{1}{2} log_{0.1}(x - 2)  \\\\[3pt]
+				2 \ log_{0.1} \ (x - 2) &gt; log_{0.1} \ (x - 2)  \\\\[3pt]
+				log_{0.1} \ (x - 2)^2 &gt; log_{0.1} \ (x - 2) \Rightarrow \ (x - 2)^2 &lt; x - 2  \\\\[3pt]
+				(x - 2)[(x - 2) - 1] &lt; 0  \\\\[3pt]
+				(x - 2)(x - 3) &lt; 0 \ \Rightarrow \ x \ \epsilon (2, \ 3)  \end{align}  \) </span>
+			<br />
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 3:</h4>
+		<p>For how many positive integers n &lt;   1000 is [<span class=\"latex\" lang=\"latex\"> \(  log_{5} \ n  \) </span>] positive and even.</p>
+		<p>
+			<span class="highlight01">Solution:</span>
+		</p>
+		<table class="u-full-width summary-table">
+			<thead>
+				<tr>
+					<th align="center">
+						<span class=\"latex\" lang=\"latex\"> \(  [log_5 \ n]  \) </span>
+					</th>
+					<th align="center">Numbers</th>
+				</tr>
+			</thead>
+			<tr>
+				<td align="center">0</td>
+				<td align="center">1 - 4</td>
+			</tr>
+			<tr>
+				<td align="center">1</td>
+				<td align="center">5 - 24</td>
+			</tr>
+			<tr>
+				<td align="center">2</td>
+				<td align="center">25 - 124</td>
+			</tr>
+			<tr>
+				<td align="center">3</td>
+				<td align="center">125 - 624</td>
+			</tr>
+			<tr>
+				<td align="center">4</td>
+				<td align="center">625 - 3125</td>
+			</tr>
+		</table>
+		<p>Number of integers <span class=\"latex\" lang=\"latex\"> \(  \geq 625  \) </span> &lt; 1000 is 1000 - 624 = 375 <br />
+			Number of values of n = 100 + 375 = 475</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 4:</h4>
+		<p>Arrange the following in ascending order. <br />
+			<span class=\"latex\" lang=\"latex\"> \(  log_3 \ 108, \ log_4 \ 192, \ log_5 \ 500, \ log_6 \ 1080.  \) </span>
+		</p>
+		<p>
+			<span class="highlight01">Solution:</span>
+			<br />
+			Let <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  x = log_3 \ 108, \ y = log_4 \ 192, \ z = log_5 \ 500 \ and \ w = log_6 \ 1080  \\\\[3pt]
+				x = log_3 \ 108 = log_3 (3^3 \times 4) = 3 + log_3 \ 4  \\\\[3pt]
+				y = log_4 \ 192 = log_4 (4^3 \times 3) = 3 + log_4 \ 3  \\\\[3pt]
+				z = log_5 \ 500 = log_5 (5^3 \times 4) = 3 + log_5 \ 4  \\\\[3pt]
+				w = log_6 \ 1080 = log_6 (6^3 \times 5) = 3 + log_6 \ 5  \end{align}  \) </span>
+			<br />
+			From the above equaitons we have <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  4 = 3^{x - 3}  \\\\[3pt]
+				3 = 4^{y - 3}  \\\\[3pt]
+				4 = 5^{x - 3}  \\\\[3pt]
+				and \ 5 = 6^{w - 3} \ Now \ 15 = 3 \times 5 = 4^{y - 3} \times 4^{\frac{1}{4^{x - 3}}} = 4^{(y - 3) + \frac{1}{z - 3}}  \\\\[3pt]
+				\Rightarrow \ y - 3 + \frac{1}{z - 3} &lt; 2 &lt; z - 3 + \frac{1}{z - 3} \ ..... \ (1)  \\\\[3pt]
+				24 = 4 \times 6 = 5^{z - 3} \times 5^{\frac{1}{w - 3}} = 5^{(z - 3) + \frac{1}{w - 3}}  \\\\[3pt]
+				\Rightarrow \ z - 3 + \frac{1}{w - 3} &lt; 2 &lt; w - 3 + \frac{1}{w - 3} ......(2)  \end{align}  \) </span>
+			<br />
+			From (1), (y - 3) &lt; (z - 3) <br />
+			From (2), (y - 3) &lt; (w - 3) <br />
+			<span lang ="latex"> Since \ (x - 3) = log_3 \ 4, \ (x - 3) &gt; 1 \ and \ (w - 3) = log_6 \ 5, \ (w - 3) &lt; 1 \\[3pt]
+				\Rightarrow \ (y - 3) &lt; (z - 3) &lt; (w - 3) &lt; (x - 3) \\[3pt]
+				\Rightarrow \ y &lt; z &lt; w &lt; x \ \Rightarrow \ log_4 \ 192 &lt; log_5 \ 500 &lt; log_6 \ 1080 &lt; log_3 \ 108 </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 5:</h4>
+		<p>FInd the least of "n" in order that the sum of first n terms of the infinite series <span class=\"latex\" lang=\"latex\"> \( 1 + \frac{3}{4} + \left ( \frac{3}{4} \right )^2 + \left ( \frac{3}{4} \right )^2 + .....  \) </span> should differ from the sum of the series by less than <span class=\"latex\" lang=\"latex\"> \(  10^{-6}  \) </span>. Given that log 2 = 0.30103 and log 3 = 0.47712.</p>
+		<p>
+			<span class="highlight01">Solution:</span>
+			<br />
+			Let <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  S = 1 + \frac{3}{4} + \left ( \frac{3}{4} \right )^2  + \left ( \frac{3}{4} \right )^3 +.... \ \ = \frac{1}{1 - \frac{3}{4}} = \frac{1}{\frac{1}{4}} = 4  \\\\[3pt]
+				and \ S_n = 1 + \frac{3}{4} + \left ( \frac{3}{4} \right )^2  + \left ( \frac{3}{4} \right )^3 +....+ \left ( \frac{3}{4} \right )^{n - 1} = \frac{1 - \left ( \frac{3}{4} \right )^n }{1 - \frac{3}{4}} = 4 - 4 \times \left ( \frac{3}{4} \right )^n  \\\\[3pt]
+				S - S_n &lt; 10^{-6} \ \Rightarrow \ 4 \times \left ( \frac{3}{4} \right )^n &lt; 10^{-6} \end{align}  \) </span>
+			<br />
+			Taking common logarithm, log 4 + n(log 3 - log 4) &lt; - 6 <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align} \Rightarrow \ n(log \ 4 - log \ 3) &gt; 6 + log \ 4  \\\\[3pt]
+				\Rightarrow \ n &gt; \frac{6 + log \ 4}{log \ 4 - log \ 3} \ \ since (log \ 4 - log \ 3) &gt; 0  \\\\[3pt]
+				\Rightarrow \ n &gt; \frac{6 + 2 \ log \ 2}{2log \ 2 - log \ 3} = 52.84238  \end{align}  \) </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \Rightarrow  \) </span> The least value of n = 53.
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 6:</h4>
+		<p>In the figure, given below, AD bisects <span class=\"latex\" lang=\"latex\"> \(  \angle{BAC}. \) </span> Prove that: </p>
+		<div class="list1-ol default-spaced-indented list-numbered-style-lower-alpha">
+			<ol>
+				<li>
+					<p>AB &gt; BD</p>
+				</li>
+				<li>
+					<p>AC &gt; CD</p>
+				</li>
+				<li>
+					<p>AB + AC &gt; BC</p>
+				</li>
+			</ol>
+		</div>
+		<div class="synopsis-image"> 
+			<img src="104180010_image-17.png" alt="image17" class="default-synopsis-medium-image" />
+		 </div>
+		<p>
+			<span class="highlight01">Solution:</span>
+			<br />
+			Given, AD bisects angle BAC <span class=\"latex\" lang=\"latex\"> \(  \Rightarrow \ \angle{BAD} = \angle{CAD}  \) </span>
+		</p>
+		<div class="list1-ol default-spaced-indented list-numbered-style-lower-alpha">
+			<ol>
+				<li>
+					<p>In  <span class=\"latex\" lang=\"latex\"> \(  \triangle {ADC}  \) </span>
+						<br />
+						<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  ext. \ \angle{ADB} = \angle{CAD} + \angle{C}  \\\\[3pt]
+							\Rightarrow \ \angle{ADB} = \angle{BAD} + \angle{C} \ [since \ \angle{CAD} = \angle{BAD} ]  \\\\[3pt]
+							\Rightarrow \ \angle{ADB} = \angle{BAD}  \\\\[3pt]
+							In triangle ABD, \ \angle{ADB} &gt; \angle{BAD}  \\\\[3pt]
+							\Rightarrow \ AB &gt; BD \ \ \text{[Greater angle has greater side opposite to it.]}  \\\\[3pt]
+							\text{Hence it is proved}  \end{align}  \) </span>
+					</p>
+				</li>
+				<li>
+					<p>In<br />
+						<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \triangle{ABD}  \\\\[3pt]
+							\Rightarrow \ ext. \angle{ADC} = \angle{BAD} + \angle{B}  \\\\[3pt]
+							\Rightarrow \ \angle{ADC} = \angle{CAD} + \angle{B} \ [SInce \ \angle{BAD} = \angle{CAD}]  \\\\[3pt]
+							\Rightarrow \ \angle{ADC} &gt; \angle{CAD}  \\\\[3pt]
+							In \ \triangle{ADC}, \ \angle{ADC} &gt; \angle{CAD} \ \Rightarrow \ AC &gt; CD  \\\\[3pt]
+							\tect{Hence it is proved}  \end{align}  \) </span>
+					</p>
+				</li>
+				<li>
+					<p>Since, AB &gt; BD and AAC &gt; CD <br />
+						<span class=\"latex\" lang=\"latex\"> \(  \therefore \
+							AB + AC &gt; BD + CD \ \Rightarrow \ AB + AC &gt; AC  \) </span>
+						<br />
+						Hence it is proved</p>
+				</li>
+			</ol>
+		</div>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 7:</h4>
+		<p>In quadrilateral ABCD; AB is the shortest side and DC is the longest side. Prove that: </p>
+		<div class="list1-ol default-spaced-indented list-numbered-style-lower-alpha">
+			<ol>
+				<li>
+					<p>
+						<span class=\"latex\" lang=\"latex\"> \( \angle{B} &gt; \angle{D}  \) </span>
+					</p>
+				</li>
+				<li>
+					<p>
+						<span class=\"latex\" lang=\"latex\"> \( \angle{A} &lt; \angle{C}  \) </span>
+					</p>
+				</li>
+			</ol>
+		</div>
+		<div class="synopsis-image"> 
+			<img src="104180010_image-18.png" alt="image18" class="default-synopsis-medium-image" />
+		 </div>
+		<p>
+			<span class="highlight01">Solution:</span>
+			<br />
+			Join B and D <br />
+			In <span class=\"latex\" lang=\"latex\"> \( \triangle{ABD}, \ AD &gt; AB  \) </span> [Given, AB is the shortest] <br />
+			<span class=\"latex\" lang=\"latex\"> \( 	\therefore \ \angle{a} &gt; \angle{c} ...... (I)  \) </span> [Angle opposite to the greater side is greater] <br />
+			In <span class=\"latex\" lang=\"latex\"> \(  \triangle{BCD} \  CD &gt; BC  \) </span> [Given, CD is the longest side] <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \therefore \angle{b} &gt; \angle{d} ...... II  \) </span> [Angle opposite to greater side is greater] <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \therefore \ \angle{a} + \angle{b} &gt; \angle{c} + \angle{d}  \) </span> [Adding I and II] <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \Rightarrow \ \angle{B} &gt; \angle{D}   \) </span>
+			<br />
+			Hence it is proved. </p>
+		<div class="synopsis-image"> 
+			<img src="104180010_image-19.png" alt="image19" class="default-synopsis-medium-image" />
+		 </div>
+		<p>Similarly, by joining A and C, it can be proved that <span class=\"latex\" lang=\"latex\"> \(  \angle{A} &gt; \angle{c}  \) </span>
+			<br />
+			Hence it is proved.</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 8:</h4>
+		<p>AD is a median of triangle ABC. Prove that: AB + AC &gt; 2AD</p>
+		<p>
+			<span class="highlight01">Solution:</span>
+			<br />
+			According to the given statement, the figure will be as drawn alongside in which AD is a median i.e., BD = CD. <br />
+			Produce AD upto a point E such that AD = DE i.e. AE = 2AD.</p>
+		<div class="synopsis-image"> 
+			<img src="104180010_image-20.png" alt="image20" class="default-synopsis-medium-image" />
+		 </div>
+		<p>Also join C and E. <br />
+			Since, the sum of any two sides of a triangle is greater than the third side, therefore in triangle ACE.</p>
+		<div class="synopsis-image"> 
+			<img src="104180010_image-21.png" alt="image21" class="default-synopsis-medium-image" />
+		 </div>
+		<p>AC + CE &gt; AE <br />
+			i.e., AC + CE &gt; 2 AD .....I <br />
+			In <span class=\"latex\" lang=\"latex\"> \(  \triangle{ADB}  \) </span> and <span class=\"latex\" lang=\"latex\"> \(  \triangle{CDE}  \) </span>
+			<br />
+			BD = CD    [Given] <br />
+			AD = DE    [By construction] <br />
+			and, <span class=\"latex\" lang=\"latex\"> \(  \angle{ADB} = \angle{CDE}  \) </span>  [Vertically opposite angles]  <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \triangle{ADB} \cong \triangle{CDE}  \) </span> [By S.A.S.] <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \Rightarrow  \) </span> AB = CE   [C.P.C.T.C] <br />
+			Substituting CE = AB in equation (I), we get : <br />
+			AC + AB &gt; 2AD <br />
+			i.e. AB + AC &gt; 2 AD <br />
+			Hence it is proved <br />
+			As proved above, if AD is a median of the triangle ABC ; <br />
+			AB + AC &gt; 2AD </p>
+		<div class="synopsis-image"> 
+			<img src="104180010_image-22.png" alt="image22" class="default-synopsis-medium-image" />
+		 </div>
+		<p>Similarly, if BE and CF are also the medias: <br />
+			AB + BC &gt; 2BE <br />
+			and, BC + AC &gt; 2CF <br />
+			Adding these results, we get: <br />
+			2AB + 2BC + 2AC &gt; 2AD + 2BE + 2CF <br />
+			<span lang="latexpng"> \Rightarrow </span> AB + BC + AC &gt; AD + BE + CF <br />
+			i.e., the perimeter of a triangle is greater than the sum of the lengths of its medians.</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 9:</h4>
+		<p>P is any point in the interior of a triangle ABC. <br />
+			Prove that : PA + PB &lt; AC + BC </p>
+		<p>
+			<span class="highlight01">Solution:</span>
+			<br />
+			According to the given statement, the figure will be as shown below. </p>
+		<div class="synopsis-image"> 
+			<img src="104180010_image-23.png" alt="image23" class="default-synopsis-medium-image" />
+		 </div>
+		<p>Produce, BP to meet AC at point M. <br />
+			Since, the sum of any two sides of a triangle is greater than its third side. <br />
+			<span class=\"latex\" lang=\"latex\"> \(   In \ \triangle{BCM}, \ BC + CM &gt; BM ..... I  \) </span>
+			<br />
+			and,in <span class=\"latex\" lang=\"latex\"> \(  \triangle{APM}  \) </span>, AM + PM &gt; AP.......II <br />
+			Adding I and II, we get : <br />
+			BC + CM + AM + PM &gt; BM + AP <br />
+			<span lang="latexpng"> \Rightarrow </span> BC + (CM + AM) &gt; BM - PM + AP <br />
+			<span lang="latexpng"> \Rightarrow </span>  BC + AC &gt; PB + PA  <br />
+			i.e. PB + PA &lt; BC + AC <br />
+			Hence it is proved </p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 10:</h4>
+		<p>Show that the sum of three altitudes of a triangle is less than the sum of the three sides of the triangle.</p>
+		<p>
+			<span class="highlight01">Solution:</span>
+		</p>
+		<div class="synopsis-image"> 
+			<img src="104180010_image-24.png" alt="image24" class="default-synopsis-medium-image" />
+		 </div>
+		<p>Let AL, BM, CN be the three altitudes of <span class=\"latex\" lang=\"latex\"> \(  \triangle{ABC}  \) </span>. We know that, of all line segments drawn from a point outside a line to the line, the perpendicular is the shortest. <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \therefore  \) </span> AL &lt; AB, BM &lt; BC and CN &lt; AC <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \therefore  \) </span> AL + BM + CN &lt; AB + BC + AC. </p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 11:</h4>
+		<p>Prove that the perimeter of a triangle is greater than the sum of its three medians.</p>
+		<p>
+			<span class="highlight01">Solution:</span>
+		</p>
+		<div class="synopsis-image"> 
+			<img src="104180010_image-25.png" alt="image25" class="default-synopsis-medium-image" />
+		 </div>
+		<p> Let AD, BE and CF be the three medians of a A ABC. We know that the sum of any two sides of a triangle is greater than twice the median drawn to the third side. <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \therefore  \) </span> AB + AC &gt; 2AD <br />
+			AB + BC &gt; 2AE and BC + AC &gt; 2CF. <br />
+			Adding, we get : 2 (AB + BC + AC) &gt; 2 (AD + BE + CF) <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \therefore  \) </span> (AB + BC + AC) &gt; (AD + BE + CF) </p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 12:</h4>
+		<p> In the given figure, PQ &gt; PR. QS and RS are the bisectors of  <span class=\"latex\" lang=\"latex\"> \(  \angle{Q}  \) </span> and <span class=\"latex\" lang=\"latex\"> \(  \angle{R}  \) </span> respectively. Prove that SQ &gt; SR.</p>
+		<div class="synopsis-image"> 
+			<img src="104180010_image-26.png" alt="image26" class="default-synopsis-medium-image" />
+		 </div>
+		<p>
+			<span class="highlight01">Solution:</span>
+			<br />
+			In <span class=\"latex\" lang=\"latex\"> \(  \triangle{PQR}  \) </span>
+			<br />
+			PQ &gt; PR (given) [Angle opposite to greater side of a <span class=\"latex\" lang=\"latex\"> \(  \triangle  \) </span> is greater] <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \Rightarrow \frac{1}{2} \angle{PRQ} &gt; \frac{1}{2} \angle{PQR}  \\\\[3pt]
+				\Rightarrow \ \angle{SRQ} &gt; \angle{SQR}  \end{align}  \) </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \Rightarrow  \) </span> SQ &gt; SR ( side opposite to greater angle is greater)</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 13:</h4>
+		<p>AD is the bisector of <span class=\"latex\" lang=\"latex\"> \(  \angle{A}  \) </span> of <span class=\"latex\" lang=\"latex\"> \(  \triangle{ABC}  \) </span>, D lies on BC. show that AB &gt; BD and AC &gt; CD.</p>
+		<div class="synopsis-image"> 
+			<img src="104180010_image-27.png" alt="image27" class="default-synopsis-medium-image" />
+		 </div>
+		<p>
+			<span class="highlight01">Solution:</span>
+			<br />
+			In <span class=\"latex\" lang=\"latex\"> \(  \triangle{ABC}  \) </span>
+			<br />
+			AD is bisector of <span class=\"latex\" lang=\"latex\"> \( \angle{A}  \) </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \therefore \ \angle{1} = \angle{2}  \) </span>
+			<br />
+			But in <span class=\"latex\" lang=\"latex\"> \(  \triangle{ABD} \ ext \ \angle{ADC} &gt; \angle{1}   \) </span> [exterior <span class=\"latex\" lang=\"latex\"> \(  \angle  \) </span> of a <span class=\"latex\" lang=\"latex\"> \(  \triangle  \) </span> is greater than each of interior opposite angles]. <br />
+			i.e.,<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \angle{3} &gt; \angle{1}  \\\\[3pt]
+				\therefore \ \angle{3} &gt; \angle{2} \  [from \ (i)]  \\\\[3pt]
+				\therefore \ from \ \triangle{ADC}  \end{align}  \) </span>
+			<br />
+			AC &gt; AD [since side opposite to greater angle is greater] <br />
+			Also <span class=\"latex\" lang=\"latex\"> \(  \angle{4} &gt; \angle{2}  \) </span> [In ADC, <span class=\"latex\" lang=\"latex\"> \(  \angle{4}  \) </span> is exterior angle] <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \angle{4} &gt; \angle{1}  \) </span>
+			<br />
+			AB &gt; BD [since side opposite to greater angle is greater]</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 14:</h4>
+		<p>Solve the inequation <span class=\"latex\" lang=\"latex\"> \(  \sqrt{3x - 8} &lt; -2  \) </span>.</p>
+		<p>
+			<span class="highlight01">Solution:</span>
+			<br />
+			Since <span class=\"latex\" lang=\"latex\"> \(  \sqrt{3x - 8} \geq 0  \) </span> for any real x, there is no real number "x" such that <span class=\"latex\" lang=\"latex\"> \(  \sqrt{3x - 8} &gt; -2  \) </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \sqrt{3x - 8} \geq 0 \  \\\\[3pt]
+				\therefore \ Solution \ set = \Phi  \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 15:</h4>
+		<p> Solve <span class=\"latex\" lang=\"latex\"> \(  x^2 - 6x + 8 &gt; 0  \) </span>
+		</p>
+		<p>
+			<span class="highlight01">Solution:</span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  x^2 - 6x + 8 &gt; 0  \\\\[3pt]
+				\Leftrightarrow \ x^2 - 6x &gt; - 8  \\\\[3pt]
+				i.e., \ x^2 - 6x + 9 &gt; -8 + 9  \end{align}  \) </span>
+			<br />
+			9 is added on both sides to make L.H.S of (i) a perfect square. <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \therefore \ (x - 3)^2 &gt; 1  \\\\[3pt]
+				i.e., \ |(x - 3)| &gt; 1.  \end{align}  \) </span>
+			<br />
+			That is the absolute value of (x - 3) should be greater than 1. In order to have this (x - 3) should not lie between - 1 and 1. Therefore x should not lie between 2 and 4. <br />
+			The set of solutions <span class=\"latex\" lang=\"latex\"> \(  x^2 - 6x + 8 &gt; 0  \) </span> is { x : x &gt; 2 or x &gt; 4}</p>
+		<div class="synopsis-image"> 
+			<img src="104180010_image-28.png" alt="image28" class="default-synopsis-medium-image" />
+		 </div>
+		<p>Alternatively the given inequation can be solved as follows: <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  x^2 - 6x + 8 &gt; 0  \\\\[3pt]
+				i.e., \ (x - 2)(x - 4) &gt; 0  \\\\[3pt]
+				\Leftrightarrow \ (x - 2) &lt; 0 \  and \ (x - 4) &lt; 0 \ (or) \ (x - 2) &gt; 0 \ and \ (x - 4) &gt; 0  \\\\[3pt]
+				\Leftrightarrow \ x &lt; 2 \ and \ x &lt; 4 \ (or) \ x &gt; 2 \ and \ x &gt; 4  \\\\[3pt]
+				\Leftrightarrow \ x &lt; 2 \ (or) \ x &gt; 4  \\\\[3pt]
+				\therefore \ \text{The set of solution of } \ x^2 - 6x + 8 &gt; 0 \ is \ \{x : x &lt; 2 \ or \ x &gt; 4 \} \end{align}  \) </span>
+		</p>
+	</section>
+</section>

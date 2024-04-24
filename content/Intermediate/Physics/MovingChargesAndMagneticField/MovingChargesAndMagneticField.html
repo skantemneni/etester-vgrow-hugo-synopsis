@@ -1,0 +1,349 @@
+---
+title: "Moving Charges and Magnetic Field"
+layout: "default"
+isPhysics: true
+---
+<section class="skill" id="01">
+	<h3 class="skill-heading">	Magnetic Induction Due To Current Carrying Circular Coil</h3>
+	<p> Examining the direction of the magnetic field produced by a current-carrying segment of wire shows that all parts of the loop contribute magnetic field in the same direction inside the loop.</p>
+	<div class="synopsis-image"> 
+		<img src="103102008_image-1.png" alt="image1" class="default-synopsis-medium-image" />
+	 </div>
+	<p> Electric current in a circular loop creates a magnetic field which is more concentrated in the center of the loop than outside the loop. Stacking multiple loops concentrates the field even more into what is called a solenoid.</p>
+	<div class="synopsis-image"> 
+		<img src="103102008_image-2.png" alt="image2" class="default-synopsis-medium-image" />
+	 </div>
+	<section class="subskill">
+		<h4 class="skill-subheading">Field at Center Of Current Loop</h4>
+		<p> The form of the magnetic field from a current element in the Biot-Savart law becomes <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}   dB = \frac{\mu_0 I \overrightarrow{dL} \times \overrightarrow{\hat{r}}}{4 \pi R^2}  \\\\[3pt]
+				\frac{\mu_0 I dL sin \ \theta}{4 \pi R^2}  \end{align}  \) </span>
+			<br />
+			which in this case simplifies greatly because the angle <span class=\"latex\" lang=\"latex\"> \(   = 90^{\circ}  \) </span> for all points along the path and the distance to the field point is constant. The integral becomes <br />
+			<span class=\"latex\" lang=\"latex\"> \(   \mu_0 = 4 \pi \times 10^{-7} T-m/A  \) </span>
+		</p>
+	</section>
+	<section class="subskill">
+		<h4 class="skill-subheading">Field on Axis of Current Loop</h4>
+		<p>The application of the Biot-Savart law on the centerline of a current loop involves integrating the z-component. </p>
+		<div class="synopsis-image"> 
+			<img src="103102008_image-3.png" alt="image3" class="default-synopsis-medium-image" />
+		 </div>
+		<p> The symmetry is such that all the terms in this element are constant except the distance element dL,which when integrated just gives the circumference of the circle. The magnetic field is then</p>
+	</section>
+</section>
+<section class="skill" id="02">
+	<h3 class="skill-heading">Magnetic Field Due to Current Carrying Straight Conductors</h3>
+	<div class="synopsis-image"> 
+		<img src="103102008_image-4.png" alt="image4" class="default-synopsis-medium-image" />
+	 </div>
+	<p> Consider an infinitely long conductor AB through which current I flows. Let P be any point at a distance a from the centre of conductor. Consider dl be the small current carrying element at point c at a distance r from point p. <span class=\"latex\" lang=\"latex\"> \(  \alpha  \) </span> be the angle between r and dl. l be the distance between centre of the coil and elementary length dl. <br />
+		From biot-savart law, magnetic field due to current carrying element dl at point P is <br />
+		<span class=\"latex\" lang=\"latex\"> \(  \begin{align} dB =  \frac{\mu_0}{4 \pi}  \frac{I dl \ sin \ \alpha}{r^2} ------ (i)  \\\\[3pt]
+			from \ fig, \ sin \ \alpha = \frac{a}{r} = cos \ \theta  \\\\[3pt]
+			r = \frac{a}{cos \ \theta} ------ (ii)  \\\\[3pt]
+			again, \ tan \ \theta = \frac{a}{l}   \\\\[3pt]
+			dl = a \ sec^2 \ \theta d \theta ----- (iii)   \\\\[3pt]
+			from \ above \ three \ equations  \\\\[3pt]
+			dB = \frac{\mu_0}{4 \pi} \frac{Ia \ sec^2 \theta \ d \theta \ cos \ \theta}{\left ( \frac{a}{cos \ \theta} \right )^2 }  \\\\[3pt]
+			dB = \frac{\mu_0}{4 \pi} \frac{Ia \ sec^2 \theta \ d \theta \ cos \ \theta}{(a)^2 } cos^2 \theta  \\\\[3pt]
+			dB = \frac{\mu_0}{4 \pi} \frac{I \ cos \ \theta \ d \theta}{a}  \end{align}  \) </span>
+		<br />
+		Total magnetic field due to straight current carrying conductor is<br />
+		<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  B = \int \limits_{- \theta_1}^{\theta_2} \frac{\mu_0}{4 \pi} \frac{I \ cos \ \theta \ d \theta}{a}  \\\\[3pt]
+			B = \frac{\mu_0}{4 \pi} \frac{I}{a}[sin \ \theta]_{- \theta_1}^{\theta_2}   \\\\[3pt]
+			B = \frac{\mu_0}{4 \pi} \frac{I}{a} (sin \ \theta_2 + sin \ \theta_1)  \end{align}  \) </span>
+		<br/>
+		his is the final expression for total magnetic field due to staright current carrying conductor. <br />
+		If the conductor having infinite length then, <br />
+		<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \theta_1 = \theta_2 = \frac{\pi}{2}  \\\\[3pt]
+			B = \frac{\mu_0}{4 \pi} \frac{I}{a} \left ( sin \ \frac{\pi}{2} + sin  \frac{\pi}{2} \right )  \\\\[3pt]
+			B = \frac{\mu_0}{4 \pi} \frac{I}{a} 2  \\\\[3pt]
+			B = \frac{\mu_0}{2 \pi} \frac{I}{a} \ Tesla  \end{align}  \) </span>
+	</p>
+</section> 
+<section class="skill" id="03">
+	<h3 class="skill-heading">Solenoid And Toroid</h3>
+	<p>Toroid is a hollow circular ring (like a medu vadai) on which a large number of turns of a wire are wound </p>
+	<div class="synopsis-image"> 
+		<img src="103102008_image-5.png" alt="image5" class="default-synopsis-medium-image" />
+	 </div>
+	<p> The above figure represents a toroid wound with a wire carrying a current I. Consider path 1, by symmetry , if there is any field at all in this region,it will be tangent to the path at all point and <span class=\"latex\" lang=\"latex\"> \(  \oint B.dl  \) </span> will equal the product will equal the product of B and the circumference d = 2pr of the path. The current through the path however is zero and hence from Ampere's law the field B must be zero. <br />
+		Similarly, if there is any field at path 3, it will also be tangent to the path at all points. Each turn of the winding passes twice through the area bounded by this path, carrying equal currents in opposite directions. The net current though the area is therefore zero and hence B = 0 at all points of the path. <br />
+		The field of the toroidal solenoid is therefore confined wholly to the space enclosed by the windings. <br />
+		If we consider path 2, a circle of radius r, again by symmetry the field is tangent to the path and <br />
+		<span class=\"latex\" lang=\"latex\"> \(  \oint B.dl  = B \oint dl = B 2 \pi r  \) </span>
+		<br/>
+		Each turn of the winding passes once through the area bounded by path 2 and total current through the area is NI, where N is the total number of turns in the windings. <br />
+		Using Ampere's law <br />
+		<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  2 \pi r B = \mu_0  Ni  \\\\[3pt]
+			B = \frac{\mu_0 Ni}{2 \pi r}  \end{align}  \) </span>
+		<br />
+		If the radial thickness of the core is small, field is almost constant across the section. <br />
+		Here 2pr circumferential length of to the toroid. <br />
+		<span class=\"latex\" lang=\"latex\"> \(   \frac{N}{2 \pi r}  \) </span> - Number of turns per unit 'n' then  <span class=\"latex\" lang=\"latex\"> \(   B = \mu_0 ni  \) </span>
+	</p>
+</section> 
+<section class="skill" id="04">
+	<h3 class="skill-heading">Summary</h3>
+	<div class="list-custom-block-list-ol spaced20 indented20">
+		<ol>
+			<li>
+				<p>The total force on a charge q moving with velocity v in the presence of magnetic and electric fields B and E, respectively is called the Lorentz force. It is given by the expression: <span class=\"latex\" lang=\"latex\"> \(  F = q(v \times B + E)  \) </span>
+					<br />
+					The magnetic force <span class=\"latex\" lang=\"latex\"> \(  q(v \times B)  \) </span> is normal to v and work done by it is zero.</p>
+			</li>
+			<li>
+				<p>A straight conductor of length l and carrying a steady current I experiences a force F in a uniform external magnetic field B,<br />
+					<span class=\"latex\" lang=\"latex\"> \(  F = lI  \times B  \) </span>
+					<br />
+					where |l| = l and the direction of l is given by the direction of the current.</p>
+			</li>
+			<li>
+				<p>In a uniform magnetic field B, a charge q executes a circular orbit in a plane normal to B. Its frequency of uniform circular motion is called the cyclotron frequency and is given by: <br />
+					<span class=\"latex\" lang=\"latex\"> \(  v_c = \frac{qB}{2 \pi m}  \) </span>
+					<br />
+					This frequency is independent of the particle’s speed and radius. This fact is exploited in a machine, the cyclotron, which is used to accelerate charged particles.</p>
+			</li>
+			<li>
+				<p>The Biot-Savart law asserts that the magnetic field dB due to an element dl carrying a steady current I at a point P at a distance r from the current element is: <br />
+					<span class=\"latex\" lang=\"latex\"> \(  dB = \frac{\mu_0}{4 \pi} I \frac{dl \times r}{r^3}  \) </span>
+					<br />
+					To obtain the total field at P, we must integrate this vector expression over the entire length of the conductor.</p>
+			</li>
+			<li>
+				<p>The magnitude of the magnetic field due to a circular coil of radius R carrying a current I at an axial distance x from the centre is <br />
+					<span class=\"latex\" lang=\"latex\"> \(  B = \frac{\mu_0 I R^2}{2(x^2 + R^2)^{\frac{3}{2}}}  \) </span>
+					<br />
+					At the center this reduces to <br />
+					<span class=\"latex\" lang=\"latex\"> \(  B = \frac{\mu_0 I}{2 R}  \) </span>
+				</p>
+			</li>
+			<li>
+				<p>Ampere's Circuital Law: Let an open surface S be bounded by a loop C. Then the Ampere's law states that<span class=\"latex\" lang=\"latex\"> \(  \oint \limits_{C} B.dl = \mu_0 \ I  \) </span> where I refers to the current passing through S. The sign of I is determined from the right-hand rule. We have discussed a simplified form of this law. If B is directed along the tangent to every point on the perimeter L of a closed curve and is constant in magnitude along perimeter then, <br />
+					<span class=\"latex\" lang=\"latex\"> \(  B L = \mu_0 \ I_e  \) </span>
+					<br />
+					where <span class=\"latex\" lang=\"latex\"> \(  I_e  \) </span> is the net current enclosed by the closed circuit.</p>
+			</li>
+			<li>
+				<p>The magnitude of the magnetic field at a distance R from a long, straight wire carrying a current I is given by: <br />
+					<span class=\"latex\" lang=\"latex\"> \(  B = \farc{\mu_0 I}{2 \pi R}  \) </span>
+					<br />
+					The field lines are circles concentric with the wire.
+				</p>
+			</li>
+			<li>
+				<p>The magnitude of the field B inside a long solenoid carrying a current I is <br />
+					<span class=\"latex\" lang=\"latex\"> \(  B = \mu_0 n I  \) </span>
+					<br />
+					where N is the total number of turns and r is the average radius</p>
+			</li>
+			<li>
+				<p>Parallel currents attract and anti-parallel currents repel</p>
+			</li>
+			<li>
+				<p>A planar loop carrying a current I, having N closely wound turns, and an area A possesses a magnetic moment m where, m = N I A<br />
+					and the direction of m is given by the right-hand thumb rule : curl the palm of your right hand along the loop with the fingers pointing in the direction of the current. The thumb sticking out gives the direction of m (and A) <br />
+					When this loop is placed in a uniform magnetic field B, the force F on it is: F = 0<br />
+					And the torque on it is, <br />
+					<span class=\"latex\" lang=\"latex\"> \(  \tau = m \times B  \) </span>
+					<br />
+					In a moving coil galvanometer, this torque is balanced by a countertorque due to a spring, yielding <br />
+					<span class=\"latex\" lang=\"latex\"> \(  k \phi = NIAB  \) </span>
+					<br />
+					where <span class=\"latex\" lang=\"latex\"> \(  \phi  \) </span> is the equilibrium deflection and k the torsion constant of the spring.</p>
+			</li>
+			<li>
+				<p>An electron moving around the central nucleus has a magnetic moment <span class=\"latex\" lang=\"latex\"> \(  \mu_l  \) </span> given by: <br />
+					<span class=\"latex\" lang=\"latex\"> \(  \mu_l = \frac{e}{2m} l  \) </span>
+					<br />
+					where l is the magnitude of the angular momentum of the circulating electron about the central nucleus. The smallest value of <span class=\"latex\" lang=\"latex\"> \(  \mu_l  \) </span> is called the Bohr magneton <span class=\"latex\" lang=\"latex\"> \(  \mu_B  \) </span> and it is <span class=\"latex\" lang=\"latex\"> \(  \mu_B = 9.27 \times 10^{-24} \ \frac{J}{T}  \) </span>
+				</p>
+			</li>
+			<li>
+				<p>A moving coil galvanometer can be converted into a ammeter by introducing a shunt resistance <span class=\"latex\" lang=\"latex\"> \(  r_s  \) </span>, of small value in parallel. It can be converted into a voltmeter by introducing a resistance of a large value in series.</p>
+			</li>
+		</ol>
+	</div>
+</section>  
+<section class="solved-examples" id="examples">
+	<h3 class="solved-examples-heading">Solved examples</h3>
+	<section class="solved-example"> 
+		<h4 class="solved-examples-question">Example 1:</h4>
+		<p>A straight wire of mass 200 g and length 1.5 m carries a current of 2 A. It is suspended in mid-air by a uniform horizontal magnetic field B (Fig.). What is the magnitude of the magnetic field?</p>
+		<div class="synopsis-image"> 
+			<img src="103102008_image-6.png" alt="image6" class="default-synopsis-medium-image" />
+		 </div>
+		<p>
+			<span class="highlight01"> Solution </span>
+			<br />
+			From , we find that there is an upward force F, of magnitude IlB,. For mid-air suspension, this must be balanced by the force due to gravity:<br />
+			m g = I l B <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  B = \frac{mg}{Il}  \\\\[3pt]
+				= \frac{0.2 \times 9.8}{2 \times 1.5} = 0.65 \ T  \end{align}  \) </span>
+			<br />
+			Note that it would have been sufficient to specify <span class=\"latex\" lang=\"latex\"> \(  \frac{m}{l}  \) </span>, the mass per unit length of the wire. The earth's magnetic field is approximately <span class=\"latex\" lang=\"latex\"> \(   4 \times 10^{-5} \ T  \) </span> and we have ignored it.</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 2:</h4>
+		<p>If the magnetic field is parallel to the positive y-axis and the charged particle is moving along the positive x-axis (Fig.), which way would the Lorentz force be for</p>
+		<div class="list1-ol default-spaced-indented list-numbered-style-lower-alpha">
+			<ol>
+				<li>
+					<p>an electron (negative charge),</p>
+				</li>
+				<li>
+					<p>a proton (positive charge).</p>
+				</li>
+			</ol>
+		</div>
+		<div class="synopsis-image"> 
+			<img src="103102008_image-7.png" alt="image7" class="default-synopsis-medium-image" />
+		 </div>
+		<p>
+			<span class="highlight01"> Solution </span>
+			<br />
+			The velocity v of particle is along the x-axis, while B, the magnetic field is along the y-axis, so <span class=\"latex\" lang=\"latex\"> \(   v \times B  \) </span> is along the z-axis (screw rule or right-hand thumb rule). So, </p>
+		<div class="list1-ol default-spaced-indented list-numbered-style-lower-alpha">
+			<ol>
+				<li>
+					<p>for electron it will be along -axis.</p>
+				</li>
+				<li>
+					<p>for a positive charge (proton) the force is along +z axis.</p>
+				</li>
+			</ol>
+		</div>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 3:</h4>
+		<p>What is the radius of the path of an electron (mass <span class=\"latex\" lang=\"latex\"> \(  9 \times 10^{-31} \ kg \ and \ charge \ 1.6 \times \ 10^{-19} \ C)  \) </span> moving at a speed of <span class=\"latex\" lang=\"latex\"> \(  3 \times 10^7 \ m/s  \) </span> in a magnetic field of <span class=\"latex\" lang=\"latex\"> \(  6 \times 10^{-4} \ T  \) </span> perpendicular to it? What is its frequency? Calculate its energy in keV. ( <span class=\"latex\" lang=\"latex\"> \(  1 eV = 1.6 \times 10^{-19} \ J)  \) </span>.<br />
+			<span class="highlight01"> Solution </span>
+			<br />
+			we find <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  r = \frac{mv}{(qB)} = \frac{9 \times 10^{-31} \ kg \times 3 \times 10^7 \ m \ s^{-1}}{( 1.6 \times 10^{-19} \ C \times 6 \times 10^{-4} \ T )}  \\\\[3pt]
+				= 26 \times 10^{-2} m = 26 \ cm  \\\\[3pt]
+				v = \frac{v}{(2 \pi \ r)} = 2 \times 10^6 s^{-1}  = 2 \times 10^6 \ Hz = 2 MHz.  \\\\[3pt]
+				E = \left (\frac{1}{2} \right ) mv^2 = \left (\frac{1}{2} \right ) 9 \times 10^{-31} \ kg \times 9 \times 10^{14} \ \frac{m^2}{s^2}  \\\\[3pt]
+				= 40.5 \times 10^{-17} \ J  \\\\[3pt]
+				\approx \ 4 \times 10^{16 } \ J = 2.5 \ keV.  \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 4:</h4>
+		<p>A cyclotron's oscillator frequency is 10 MHz. What should be the operating magnetic field for accelerating protons? If the radius of its 'dees' is 60 cm, what is the kinetic energy (in MeV) of the proton beam produced by the accelerator.<br />
+			<span class=\"latex\" lang=\"latex\"> \(  (e = 1.60 \times 10^{-19} , \ m_p = 1.67 \times 10^{-27} \ kg, \ 1 \ MeV = 1.6 \times 10^{-13} \ J)  \) </span>
+			<br />
+			<span class="highlight01"> Solution </span>
+			<br />
+			The oscillator frequency should be same as proton's cyclotron frequency <br />
+			we have <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  B = \frac{2 \pi \ m v}{q} = \frac{6.3 \times 1.67 \times 10^{-27} \times 10^7}{(1.6 \times 10^{-19})} = 0.66 T  \\\\[3pt]
+				\text{Final velocity of protons is}  \\\\[3pt]
+				v = r \times 2 \pi v  = 0.6 m \times 6.3 \times 10^7 = 3.78 \times 10^7 \frac{m}{s}  \\\\[3pt]
+				E = \frac{1}{2} mv^2 = \frac{1.67 \times 10^{-27} \times 14.3 \times 10^{14}}{(2 \times 1.6 \times 10^{-13})} = 7 MeV.  \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 5:</h4>
+		<p> A straight wire carrying a current of 12 A is bent into a semi-circular arc of radius 2.0 cm as shown in Fig.(a). Consider the magnetic field B at the centre of the arc. </p>
+		<div class="list1-ol default-spaced-indented list-numbered-style-lower-alpha">
+			<ol>
+				<li>
+					<p>What is the magnetic field due to the straight segments?</p>
+				</li>
+				<li>
+					<p>In what way the contribution to B from the semicircle differs from that of a circular loop and in what way does it resemble?</p>
+				</li>
+				<li>
+					<p>Would your answer be different if the wire were bent into a semi-circular arc of the same radius but in the opposite way as shown in Fig.(b)</p>
+				</li>
+			</ol>
+		</div>
+		<div class="synopsis-image"> 
+			<img src="103102008_image-8.png" alt="image8" class="default-synopsis-medium-image" />
+		 </div>
+		<p>
+			<span class="highlight01">Solution:</span>
+		</p>
+		<div class="list1-ol default-spaced-indented list-numbered-style-lower-alpha">
+			<ol>
+				<li>
+					<p>dl and r for each element of the straight segments are parallel. Therefore, <span class=\"latex\" lang=\"latex\"> \(  dl \times r = 0  \) </span>. Straight segments do not contribute to |B|.</p>
+				</li>
+				<li>
+					<p>For all segments of the semicircular arc, <span class=\"latex\" lang=\"latex\"> \(  dl \times r  \) </span> are all parallel to each other (into the plane of the paper). All such contributions add up in magnitude. Hence direction of B for a semicircular arc is given by the right-hand rule and magnitude is half that of a circular loop. Thus B is <span class=\"latex\" lang=\"latex\"> \(  1.9 \times 10^{-4} \ T  \) </span> normal to the plane of the paper going into it.</p>
+				</li>
+				<li>
+					<p>Same magnitude of B but opposite in direction to that in (b).</p>
+				</li>
+			</ol>
+		</div>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 6:</h4>
+		<p>Consider a tightly wound 100 turn coil of radius 10 cm, carrying a current of 1 A. What is the magnitude of the magnetic field at the centre of the coil? <br />
+			<span class="highlight01"> Solution </span>
+			<br />
+			Since the coil is tightly wound, we may take each circular element to have the same radius R = 10 cm = 0.1 m. The number of turns N = 100. The magnitude of the magnetic field is, <br />
+			<span class=\"latex\" lang=\"latex\"> \(  B = \frac{\mu_0 NI}{2R} = \frac{4 \pi \times 10^{-7} \times 10^2 \times 1}{2 \times 10^{-1}} = 2 \pi \times 10^{-4} = 6.28 \times 10^{-4} \  T  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 7:</h4>
+		<p> Figure shows a long straight wire of a circular cross-section (radius a) carrying steady current I. The current I is uniformly distributed across this cross-section. Calculate the magnetic field in the region r &lt; a and r &gt; a.</p>
+		<div class="synopsis-image"> 
+			<img src="103102008_image-9.png" alt="image9" class="default-synopsis-medium-image" />
+		 </div>
+		<p>
+			<span class="highlight01">Solution:</span>
+		</p>
+		<div class="list1-ol default-spaced-indented list-numbered-style-lower-alpha">
+			<ol>
+				<li>
+					<p>Consider the case r &gt; a. The Amperian loop, labelled 2, is a circle concentric with the cross-section. For this loop, <br />
+						<span class=\"latex\" lang=\"latex\"> \(  L = 2 \ \pi \ r  \) </span>
+						<br />
+						<span class=\"latex\" lang=\"latex\"> \(  I_e  \) </span> = Current enclosed by the loop = I <br />
+						The result is the familiar expression for a long straight wire<br />
+						<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  B (2\pi r) = \mu_0 I  \\\\[3pt]
+							= B = \frac{\mu_0 I}{2 \pi r} \ \ \ \ (1)  \\\\[3pt]
+							B \ \propto \frac{1}{r} \ \ \ \ \ \ (r &gt; a)  \end{align}  \) </span>
+						<br />
+					</p>
+				</li>
+				<li>
+					<p>Consider the case r &lt; a. The Amperian loop is a circle labelled 1. For this loop, taking the radius of the circle to be r, <span class=\"latex\" lang=\"latex\"> \( L = 2 \pi r  \) </span>
+						<br />
+						Now the current enclosed <span class=\"latex\" lang=\"latex\"> \(  I_e  \) </span> is not I, but is less than this value. Since the current distribution is uniform, the current enclosed is, <br />
+						<span class=\"latex\" lang=\"latex\"> \(  I_e = I \left ( \frac{\pi r^2}{\pi a^2} = \frac{Ir^2}{a^2} \right )  \) </span>
+						<br />
+						Using Ampere's law, <span class=\"latex\" lang=\"latex\"> \(  B \left ( 2 \pi r \right ) = \mu_0 \frac{Ir^2}{a^2}  \) </span>
+						<br />
+						<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  B = \left ( \frac{\mu_0 I}{2 \pi a^2} \right ) r \ \ \ \ (b)  \\\\[3pt]
+							B \propto \ r \ \ \ \ \ \ (r &lt; a)  \end{align}  \) </span>
+					</p>
+				</li>
+			</ol>
+		</div>
+		<div class="synopsis-image"> 
+			<img src="103102008_image-10.png" alt="image10" class="default-synopsis-medium-image" />
+		 </div>
+		<p>Figure shows a plot of the magnitude of B with distance r from the centre of the wire. The direction of the field is tangential to the respective circular loop (1 or 2) and given by the right-hand rule described earlier in this section. <br /> This example possesses the required symmetry so that Ampere's law can be applied readily.</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 8:</h4>
+		<p>A solenoid of length 0.5 m has a radius of 1 cm and is made up of 500 turns. It carries a current of 5 A. What is the magnitude of the magnetic field inside the solenoid?<br />
+			<span class="highlight01"> Solution </span>
+			<br />
+			The number of turns per unit length is, <br />
+			<span class=\"latex\" lang=\"latex\"> \(  n = \frac{500}{0.5} = 1000 \ \frac{truns}{m}   \) </span>
+			<br />
+			The length l = 0.5 m and radius r = 0.01 m. Thus,  <span class=\"latex\" lang=\"latex\"> \(  \frac{l}{a} = 50 \ i.e., \ l \gg  a  \) </span>. <br />
+			Hence, we can use the long solenoid formula, namely,  <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  B = \mu_0 \ n \ I  \\\\[3pt]
+				= 4 \pi \times 10^{-7} \times 10^3 \times 5  \\\\[3pt]
+				= 6.28 \times 10^{-3} \ T  \end{align}  \) </span>
+		</p>
+	</section>
+</section>

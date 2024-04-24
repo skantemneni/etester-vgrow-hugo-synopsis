@@ -1,0 +1,127 @@
+<book>
+	<preheading>9th Class Foundation</preheading>
+	<title>Chemistry</title>
+	<description>Foundation Preperation Course Materials provided by eTester Classes.</description>
+	<book_chapter_number_offset>0</book_chapter_number_offset>
+	<book_page_number_offset>0</book_page_number_offset>
+	<show_chapter_numbers>true</show_chapter_numbers>
+	<chapters>
+		<chapter>
+			<number>1</number>
+			<title>Matter and its Classification</title>
+			<description>
+				<![CDATA[Essential Exam Preperation guide for Employment Readiness Exams]]>
+			</description>
+			<filename>MatterAndItsClassification.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>2</number>
+			<title>Language of Chemistry</title>
+			<description>
+				<![CDATA[Essential Exam Preperation guide for Employment Readiness Exams]]>
+			</description>
+			<filename>LanguageOfChemistry.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>3</number>
+			<title>Atomic Structure - Level 2</title>
+			<description>
+				<![CDATA[Essential Exam Preperation guide for Employment Readiness Exams]]>
+			</description>
+			<filename>AtomicStructureLevel2.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>4</number>
+			<title>Classification of Elements</title>
+			<description>
+				<![CDATA[Essential Exam Preperation guide for Employment Readiness Exams]]>
+			</description>
+			<filename>ClassificationOfElements.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>5</number>
+			<title>Chemical Bonding</title>
+			<description>
+				<![CDATA[Essential Exam Preperation guide for Employment Readiness Exams]]>
+			</description>
+			<filename>ChemicalBonding.html</filename> 
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>6</number>
+			<title>Study of Gas Law</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>StudyOfGasLaw.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>7</number>
+			<title>Atoms Molecules and Ions</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>AtomsMoleculesAndIons.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>8</number>
+			<title>Solutions</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>Solutions.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>9</number>
+			<title>Nitrogen</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>Nitrogen.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>10</number>
+			<title>Sulphur</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>Sulphur.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>11</number>
+			<title>Chlorine</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>Chlorine.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>12</number>
+			<title>Phosphorus and its Compounds</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>PhosphorusAndItsCompounds.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>13</number>
+			<title>Analytical Chemistry</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>AnalyticalChemistry.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+	</chapters>
+</book>

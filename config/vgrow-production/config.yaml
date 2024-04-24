@@ -1,0 +1,9 @@
+baseURL: https://vgrowassist.com/vgrowsynopsis/
+publishDir: vgrowsynopsis
+title: Vgrow Synopsis
+
+params:
+  description: Vgrow-eTester Synopsis
+  logo: /image/logo/logoVGROW.png
+  parentWebsite: https://vgrowassist.com
+  parentWebsiteLinkText: Vgrow Assistant

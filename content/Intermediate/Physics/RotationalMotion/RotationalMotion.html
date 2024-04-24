@@ -1,0 +1,356 @@
+---
+title: "System Of Particles And Rotational Motion"
+layout: "default"
+isPhysics: true
+--- 
+<section class="skill" id="01">
+	<h3 class="skill-heading">Centre Of Mass</h3>
+	<p> Centre of mass of a system(body) is a point that moves when external forces are applied on the body as though all the mass were concentrated at that point and all external forces were applied there. <br/>
+		If particles of masses <span class=\"latex\" lang=\"latex\"> \(  m_1, \ m_2, \ m_3....... m_n  \) </span> are placed at <span class=\"latex\" lang=\"latex\"> \(  x_1, \ x_2, \ x_3........ \ x_n  \) </span> distances from the origin then the position of the centre of the mass of this particle system will be given by <br/>
+		<span class=\"latex\" lang=\"latex\"> \(  x_{CM} = \frac{m_1 x_1 + m_2 x_2 + m_3 x_3 + ...... + m_n x_n}{m_1 + m_2 + m_3 + ...... + m_n}  \) </span>
+		<br/>
+		<span class=\"latex\" lang=\"latex\"> \(  \frac{\sum \limits_{i = 1}^n m_i x_i}{\sum \limits_{i = 1}^n m_i}  \) </span>
+		<br/>
+		The position vector <span class=\"latex\" lang=\"latex\"> \(  \vec{r}_{CM}  \) </span> of the centre of mass of the system can be expressed in terms of position vectors <span class=\"latex\" lang=\"latex\"> \(  \vec{r_1}, \ \vec{r_2}......  \) </span> of the particles as <br/>
+		<span class=\"latex\" lang=\"latex\"> \(  \vec{r}_{CM} = \frac{m_1 \vec{r_1} + m_2 \vec{r_2} + .......}{m_1 + m_2 +.....} = \frac{\sum \limits_{i = 1}^n m_i \vec{r_i}}{\sum \limits_{i = 1}^n m_i}  \) </span>
+	</p>
+</section>
+<section class="skill" id="02">
+	<h3 class="skill-heading">Vector Product Or Cross Product</h3>
+	<p> The vector product of two vectors is a vector quantity. The cross product of two vectors is a single vector whose magnitude is equal to the product of the magnitudes of two given vectors multiplied by the sine of the smaller angle between the two given vectors. <br/>
+		The direction of the vector given by the cross product of the two vectors is perpendicular to the plane containing the two vectors.<br/>
+		ie, <span class=\"latex\" lang=\"latex\"> \(  \vec{A} \times \vec{B} = (AB sin \theta) \hat{n} = \vec{C}  \) </span>. <br/>
+		where <span class=\"latex\" lang=\"latex\"> \(  \hat{n}  \) </span> is the unit vector which gives the direction of vector <span class=\"latex\" lang=\"latex\"> \(  \vec{C}  \) </span>. <br/>
+		The unit vector <span class=\"latex\" lang=\"latex\"> \(  \hat{n}  \) </span> normal to the plane containing vectors <span class=\"latex\" lang=\"latex\"> \(  \vec{A}  \) </span> and <span class=\"latex\" lang=\"latex\"> \(  \vec{B}  \) </span>, is given by <br/>
+		<span class=\"latex\" lang=\"latex\"> \(  \hat{n} = \frac{\vec{A} \times \vec{B}}{AB sin \theta} = \frac{\vec{A} \times \vec{B}}{| \vec{A} \times \vec{B} |}  \) </span>
+	</p>
+	<div class="synopsis-image"> 
+		<img src="103101008_image-1.png" alt="image1" class="default-synopsis-medium-image" />
+	 </div>
+	<section class="subskill">
+		<h4 class="skill-subheading"> Right Hand Rule </h4>
+		<p> If a right handed screw is placed over the plane containing <span class=\"latex\" lang=\"latex\"> \(  \vec{A}  \) </span> and <span class=\"latex\" lang=\"latex\"> \(  \vec{B}  \) </span> as shown in the figure and is turned from <span class=\"latex\" lang=\"latex\"> \(  \vec{A}  \) </span> to <span class=\"latex\" lang=\"latex\"> \(  \vec{B}  \) </span> (anti-clockwise) through a small angle <span class=\"latex\" lang=\"latex\"> \(  \theta  \) </span> then the direction of advancement of the screw gives the direction of <span class=\"latex\" lang=\"latex\"> \(  \hat{n}  \) </span> or <span class=\"latex\" lang=\"latex\"> \(  \vec{A} \times \vec{B}  \) </span>. ie, upward perpendicular to the plane containing <span class=\"latex\" lang=\"latex\"> \(  \vec{A}  \) </span> and <span class=\"latex\" lang=\"latex\"> \(  \vec{B}  \) </span>. </p>
+		<div class="synopsis-image"> 
+			<img src="103101008_image-2.png" alt="image2" class="default-synopsis-medium-image" />
+		 </div>
+		<h5 class="note"> Note </h5>
+		<div class="list-custom-block-list-ol spaced20 indented20">
+			<ol>
+				<li>
+					<p>The cross product of angular velocity <span class=\"latex\" lang=\"latex\"> \(  (\vec{\omega})  \) </span> and the radius vector <span class=\"latex\" lang=\"latex\"> \(  (\vec{r})  \) </span> is equal to the velocity <span class=\"latex\" lang=\"latex\"> \(  (\vec{r})  \) </span> ie, <span class=\"latex\" lang=\"latex\"> \(  \vec{v} = \vec{r} \times \vec{\omega}  \) </span>
+					</p>
+				</li>
+				<li>
+					<p> The cross product of position vector <span class=\"latex\" lang=\"latex\"> \(  (\vec{r})  \) </span> and force <span class=\"latex\" lang=\"latex\"> \(  (\vec{F})  \) </span> is equal to the torque <span class=\"latex\" lang=\"latex\"> \(  (\vec{\tau})  \) </span> ie, <br/>
+						<span class=\"latex\" lang=\"latex\"> \(  \vec{\tau} = \vec{r} \times \vec{F}  \) </span>
+					</p>
+				</li>
+				<li>
+					<p> Angular momentum is the vector product of position vector <span class=\"latex\" lang=\"latex\"> \(  (\vec{r})  \) </span> and linear momentum <span class=\"latex\" lang=\"latex\"> \(  (\vec{p})  \) </span> ie, <span class=\"latex\" lang=\"latex\"> \(  \vec{L} = \vec{r} \times \vec{p}  \) </span>.
+					</p>
+				</li>
+			</ol>
+		</div>
+	</section>
+</section>
+<section class="skill" id="03">
+	<h3 class="skill-heading">Moment Of Inertia</h3>
+	<p>The <span class="highlight01"> moment of inertia </span>, otherwise known as the <span class="highlight01"> angular mass </span> or <span class="highlight01">rotational inertia </span>, of a rigid body determines the torque needed for a desired angular acceleration about a rotational axis. It depends on the body's mass distribution and the axis chosen, with larger moments requiring more torque to change the body's rotation. It is an extensive (additive) property: the moment of inertia of a composite system is the sum of the moments of inertia of its component subsystems (all taken about the same axis). One of its definitions is the second moment of mass with respect to distance from an axis r, <span class=\"latex\" lang=\"latex\"> \(  I = \int \limits_m r^2 dm  \) </span>, integrating over the entire mass. <br/>
+		For bodies constrained to rotate in a plane, it is sufficient to consider their moment of inertia about an axis perpendicular to the plane. For bodies free to rotate in three dimensions, their moments can be described by a symmetric <span class=\"latex\" lang=\"latex\"> \(  3 \times 3  \) </span> matrix; each body has a set of mutually perpendicular principal axes for which this matrix is diagonal and torques around the axes act independently of each other.
+		<br />
+		Moment of inertia I is defined as the ratio of the <span class="highlight01"> angular momentum </span> L of a system to its <span class="highlight01"> angular velocity </span>
+		<span class=\"latex\" lang=\"latex\"> \(  \omega  \) </span> around a principal axis, that is <br/>
+		<span class=\"latex\" lang=\"latex\"> \(  I = \frac{L}{ \omega}.  \) </span>
+		<br/>
+		If the angular momentum of a system is constant, then as the moment of inertia gets smaller, the angular velocity must increase. This occurs when spinning figure skaters pull in their outstretched arms or divers move from a straight position to a tuck position during a dive. <br/>
+		If the shape of the body does not change, then its moment of inertia appears in Newton's law of motion as the ratio of an applied torque <span class=\"latex\" lang=\"latex\"> \(  \tau  \) </span> on a body to the angular acceleration <span class=\"latex\" lang=\"latex\"> \(  \alpha  \) </span> around a principal axis, that is <br/>
+		<span class=\"latex\" lang=\"latex\"> \(  \tau = I \alpha  \) </span>. <br/>
+		For a simple pendulum, this definition yields a formula for the moment of inertia I in terms of the mass m of the pendulum and its distance r from the pivot point as, <br/>
+		<span class=\"latex\" lang=\"latex\"> \(  I = mr^2  \) </span>. <br/>
+		Thus, moment of inertia depends on both the mass m of a body and its geometry, or shape, as defined by the distance r to the axis of rotation. <br/>
+		This simple formula generalizes to define moment of inertia for an arbitrarily shaped body as the sum of all the elemental point masses dm each multiplied by the square of its perpendicular distance r to an axis S . <br/>
+		In general, given an object of mass m, an effective radius k can be defined for an axis through its center of mass, with such a value that its moment of inertia is <br/>
+		<span class=\"latex\" lang=\"latex\"> \(  I = mk^2  \) </span>, <br/>
+		where k is known as the radius of gyration.
+	</p>
+</section>
+<section class="skill" id="04">
+	<h3 class="skill-heading">Conservation Of Angular Momentum</h3>
+	<p>Conservation follows mathematically from isotropy, or continuous directional symmetry of space, that is, no direction in space is any different from any other direction. See Noether's theorem.<br/>
+		A rotational analog of Newton's Third Law of Motion might be written, "In a closed system, no torque can be exerted on any matter without the exertion on some other matter of an equal and opposite torque." Hence, angular momentum can be exchanged between objects in a closed system, but total angular momentum before and after an exchange remains constant (is conserved).<br/>
+		Similarly, a rotational analogy of Newton's Second law of Motion might be, "A change in angular momentum is proportional to the applied torque and occurs about the same axis as that torque." Since a torque applied over time is equivalent to a change in angular momentum, then if torque is zero, angular momentum is constant. As above, a system with constant angular momentum is a closed system. Therefore, requiring the system to be closed is equivalent to requiring that no external influence, in the form of a torque, acts upon it.<br/>
+		A rotational analog of Newton's First Law of Motion might be written, "A body continues in a state of rest or of uniform rotation unless compelled by a torque to change its state." Thus with no external influence to act upon it, the original angular momentum of the system is conserved.<br/>
+		The conservation of angular momentum is used in analyzing central force motion. If the net force on some body is directed always toward some point, the center, then there is no torque on the body with respect to the center, as all of the force is directed along the radius vector, and none is perpendicular to the radius. Mathematically, torque <span class=\"latex\" lang=\"latex\"> \(  \tau = r \times F = 0  \) </span>,  because in this case r and F are parallel vectors. Therefore, the angular momentum of the body about the center is constant. This is the case with gravitational attraction in the orbits of planets and satellites, where the gravitational force is always directed toward the primary body and orbiting bodies conserve angular momentum by exchanging distance and velocity as they move about the primary. Central force motion is also used in the analysis of the Bohr model of the atom.
+		<br />
+		For a planet, angular momentum is distributed between the spin of the planet and its revolution in its orbit, and these are often exchanged by various mechanisms. The conservation of angular momentum in the Earth-Moon system results in the transfer of angular momentum from Earth to Moon, due to tidal torque the Moon exerts on the Earth. This in turn results in the slowing down of the rotation rate of Earth, at about 65.7 nanoseconds per day, and in gradual increase of the radius of Moon's orbit, at about 3.82 centimeters per year. <br/>
+		The conservation of angular momentum explains the angular acceleration of an ice skater as she brings her arms and legs close to the vertical axis of rotation. By bringing part of the mass of her body closer to the axis she decreases her body's moment of inertia. Because angular momentum is the product of moment of inertia and angular velocity, if the angular momentum remains constant (is conserved), then the angular velocity (rotational speed) of the skater must increase. <br/>
+		The same phenomenon results in extremely fast spin of compact stars (like white dwarfs, neutron stars and black holes) when they are formed out of much larger and slower rotating stars. Decrease in the size of an object n times results in increase of its angular velocity by the factor of <span class=\"latex\" lang=\"latex\"> \(  n^2  \) </span>.
+	</p>
+</section>
+<section class="skill" id="05">
+	<h3 class="skill-heading">Rotational Dynamics</h3>
+	<p> Having developed the kinematics of rotational motion, we now turn to the dynamics of rotational motion. Unlike the linear case, however, we do not have Newton's Laws to guide us in our study. Instead, we try to develop parallel concepts to those of linear dynamics. Still, the study of rotational dynamics contains unique concepts and equations. <br/>
+		Just as force played a huge role in linear dynamics, we have a torque in rotational dynamics. We begin by defining this quantity and showing how it acts on objects in rotational motion. Next, we relate torque to our study of kinematics through an equation very similar to Newton's Second Law. In addition, we develop concepts of work, kinetic energy, and power similar to those seen in linear motion, and develop equations to describe the combined motion of linear and angular motion. <br/>
+		This SparkNote holds perhaps the most information on rotational motion. We develop a multitude of equations to describe the motion, relate force, torque, and kinematic quantities, and even study the complexities of combined motion. From this chapter one can gain a full understanding of the causes and effects of rotational motion.
+	</p>
+	<section class="subskill">
+		<h4 class="skill-subheading">Formulae </h4>
+		<div class="list-custom-block-list-ol spaced20 indented20">
+			<ol>
+				<li>
+					<p> Definition of torque <span class=\"latex\" lang=\"latex\"> \(  \tau = Fr sin \theta  \) </span>
+					</p>
+				</li>
+				<li>
+					<p> Vector definition of torque <span class=\"latex\" lang=\"latex\"> \(  \tau = r \times F  \) </span>
+					</p>
+				</li>
+				<li>
+					<p> Relation between <span class=\"latex\" lang=\"latex\"> \(  \tau  \) </span> and <span class=\"latex\" lang=\"latex\"> \(  \alpha  \) </span>
+						<span class=\"latex\" lang=\"latex\"> \(  \tau = mr^2 \alpha  \) </span> 
+					</p>
+				</li>
+				<li>
+					<p> Rotational Analogue to Newton's Second Law	 <span class=\"latex\" lang=\"latex\"> \(  \tau = \sum I \alpha  \) </span>
+					</p>
+				</li>
+				<li>
+					<p> Definition of work in angular motion <span class=\"latex\" lang=\"latex\"> \(  \omega = \tau \mu  \) </span>
+					</p>
+				</li>
+				<li>
+					<p> Integral definition of work in angular motion	<span class=\"latex\" lang=\"latex\"> \(  \omega = \int \tau d \mu  \) </span>
+					</p>
+				</li>
+				<li>
+					<p> Definition of kinetic energy in angular motion	<span class=\"latex\" lang=\"latex\"> \(  K = \frac{1}{2} I \sigma^2  \) </span>
+					</p>
+				</li>
+				<li>
+					<p> Definition of power in angular motion	<span class=\"latex\" lang=\"latex\"> \(  P = \tau \sigma  \) </span>
+					</p>
+				</li>
+				<li>
+					<p> Relation between linear and angular velocity when an object is rolling without slipping <span class=\"latex\" lang=\"latex\"> \( v_{cm} = \sigma r  \) </span>
+					</p>
+				</li>
+			</ol>
+		</div>
+	</section>
+</section>
+<section class="skill" id="06">
+	<h3 class="skill-heading">Rolling Motion</h3>
+	<div class="list-custom-block-list-ol spaced20 indented20">
+		<ol>
+			<li>
+				<p> A motion that is a combination of rotational and translational motion, e.g. a wheel rolling down the road. </p>
+			</li>
+			<li>
+				<p> Will only consider rolling with out slipping. </p>
+			</li>
+		</ol>
+	</div>
+	<p> For a disk or sphere rolling along a horizontal surface, the motion can be considered in two ways: </p>
+	<div class="list-custom-block-list-ol spaced20 indented20">
+		<ol>
+			<li>
+				<p>
+					Combination of rotational and translational motion: <br/>
+					<ol>
+						<li>
+							<p>Center of mass moves in a translational motion. </p>
+						</li>
+						<li>
+							<p>
+								The rest of the body is rotating around the center of mass. <br/>
+								<div class="synopsis-image"> 
+									<img src="103101008_image-3.png" alt="image3" class="default-synopsis-medium-image" />
+								 </div>
+							</p>
+						</li>
+					</ol>
+				</p>
+			</li>
+			<li>
+				<p>
+					Pure Rotational Motion : <br/>
+					<ol>
+						<li>
+							<p>The whole object is revolving around a point on the object in contact with the surface. </p>
+						</li>
+						<li>
+							<p> The point of contact changes with time. </p>
+						</li>
+						<li>
+							<p>
+								Most people find method I simpler to understand. <br/>
+								<div class="synopsis-image"> 
+									<img src="103101008_image-4.png" alt="image4" class="default-synopsis-medium-image" />
+								 </div>
+							</p>
+						</li>
+					</ol>
+				</p>
+			</li>
+		</ol>
+	</div>
+</section>  
+<section class="solved-examples" id="examples">
+	<h3 class="solved-examples-heading">Solved examples</h3>
+	<section class="solved-example"> 
+		<h4 class="solved-examples-question">Example 1:</h4>
+		<p>Find the centre of mass of three particles at the vertices of an equilateral triangle. The masses of the particles are 100g, 150g, and 200g respectively. Each side of the equilateral triangle is 0.5m long.<br />
+			<span class="highlight01"> Solution </span>
+		</p>
+		<div class="synopsis-image"> 
+			<img src="103101008_image-5.png" alt="image5" class="default-synopsis-medium-image" />
+		 </div> 
+		<p>With the X and Y axes chosen as shown in Fig. the coordinates of points O, A and B forming the equilateral triangle are respectively (0,0), (0.5,0), <span class=\"latex\" lang=\"latex\"> \(  (0.25, \ 0.25 \sqrt{3})  \) </span>. Let the masses 100 g, 150g and 200g be respectively. Then, <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  X = \frac{m_1 x_1 + m_2 x_2 + m_3 x_3}{m_1 + m_2 + m_3}  \\\\[3pt]
+				= \frac{[100(0) + 150(0.5) + 200(0.25)]}{(100 + 150 + 200) g}  \\\\[3pt]
+				= \frac{75 + 50}{450} m = \frac{125}{450} m = \frac{5}{18} m  \\\\[3pt]
+				Y = \frac{[100(0) + 150(0) + 200(0.25 \sqrt{3}] gm}{450 \ g}  \\\\[3pt]
+				= \frac{50 \sqrt{3}}{450} m = \frac{\sqrt{3}}{9} m = \frac{1}{3 \sqrt{3}} m  \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 2:</h4>
+		<p>Find the centre of mass of a triangular lamina. <br />
+			<span class="highlight01"> Solution </span>
+		</p>
+		<div class="synopsis-image"> 
+			<img src="103101008_image-6.png" alt="image6" class="default-synopsis-medium-image" />
+		 </div>
+		<p>The lamina ( <span class=\"latex\" lang=\"latex\"> \(  \triangle{LMN}  \) </span> ) may be subdivided into narrow strips each parallel to the base (MN) as shown in Fig. <br />
+			By symmetry each strip has its centre of mass at its midpoint. If we join the midpoint of all the strips we get the median LP. The centre of mass of the triangle as a whole therefore, has to lie on the median LP. Similarly, we can argue that it lies on the median MQ and NR. This means the centre of mass lies on the point of concurrence of the medians, i.e. on the centroid G of the triangle.
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 3:</h4>
+		<p>Find the centre of mass of a uniform L-shaped lamina (a thin flat plate) with dimensions as shown. The mass of the lamina is 3 kg.<br />
+			<span class="highlight01"> Solution </span>
+		</p>
+		<div class="synopsis-image"> 
+			<img src="103101008_image-7.png" alt="image7" class="default-synopsis-medium-image" />
+		 </div>
+		<p>Choosing the X and Y axes as shown in Fig. we have the coordinates of the vertices of the L-shaped lamina as given in the figure. <br />
+			We can think of the L-shape to consist of 3 squares each of length 1m. The mass of each square is 1kg, since the lamina is uniform. The centres of mass <span class=\"latex\" lang=\"latex\"> \(  C_1, \ C_2  \) </span> and <span class=\"latex\" lang=\"latex\"> \(  C_3  \) </span> of the squares are, by symmetry, their geometric centres and have coordinates <span class=\"latex\" lang=\"latex\"> \(  \left ( \frac{1}{2}, \ \frac{1}{2} \right)  \) </span>, <span class=\"latex\" lang=\"latex\"> \(  \left ( \frac{3}{2}, \ \frac{1}{2} \right)  \) </span>, <span class=\"latex\" lang=\"latex\"> \(  \left ( \frac{1}{2}, \ \frac{3}{2} \right)  \) </span>  respectively. We take the masses of the squares to be concentrated at these points. The centre of mass of the whole L shape (X, Y) is the centre of mass of these mass points.  <br />
+			Hence <br />
+			<span class=\"latex\" lang=\"latex\"> \( X = \frac{\left [ 1 \left ( \frac{1}{2} \right ) + \left ( \frac{1}{2} \right ) + \left ( \frac{3}{2} \right )\right ] kg \ m}{(1 + 1 + 1) kg} = \frac{5}{6} \ m   \) </span>
+			<br />
+			The centre of mass of the L-shape lies on the line OD. We could have guessed this without calculations. Can you tell why? Suppose, the three squares that make up the L shaped lamina of Fig. had different masses. How will you then determine the centre of mass of the lamina?</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 4:</h4>
+		<p>Find the scalar and vector products of two vectors. <span class=\"latex\" lang=\"latex\"> \(  a = (3 \hat{i} - 4 \hat{j} + 5 \hat{k}) \ and \ b = (- 2 \hat{i} + \hat{j} - 3 \hat{k} )  \) </span>
+			<br />
+			<span class="highlight01"> Solution </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  agb = (3 \hat{i} - 4 \hat{j} + 5 \hat{k})g(- 2 \hat{i} + \hat{j} - 3 \hat{k} )= - 6 - 4 - 15 = - 25   \\\\[3pt]
+				a \times b = \left | \begin{array}{ccc}   \hat{i} &amp; \hat{j} &amp; \hat{k}  \\\\ 3 &amp; -4 &amp; 5  \\\\ -2 &amp; 1 &amp; - 3 \end{array} \right|  \\\\[3pt]
+				Note \ b \times a = - 7 \hat{i} + \hat{j} + 5 \hat{k}  \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 5:</h4>
+		<p>Find the torque of a force <span class=\"latex\" lang=\"latex\"> \(  7 \hat{i} + 3 \hat{j} - 5 \hat{k}  \) </span> about the origin. The force acts on a particle whose position vector is  <span class=\"latex\" lang=\"latex\"> \(  \hat{i} - \hat{j} + \hat{k}   \) </span>
+			<br />
+			<span class="highlight01"> Solution </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  Here \ r = \hat{i} - \hat{j} + \hat{k}   \\\\[3pt]
+				and \ 7 \hat{i} + 3 \hat{j} - 5 \hat{k}  \\\\[3pt]
+				\tau \times b = \left | \begin{array}{ccc}   \hat{i} &amp; \hat{j} &amp; \hat{k}  \\\\ 1 &amp; -1 &amp; 1  \\\\ 7 &amp; 3 &amp; - 5 \end{array} \right|  \\\\[3pt]
+				= (5 -3) \hat{i} - (-5 - 7) \hat{j} + (3 - (-7)) \hat{k} \ or \ \tau = 2 \hat{i} + 12 \hat{j} + 10 \hat{k}  \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 6:</h4>
+		<p>Show that the angular momentum about any point of a single particle moving with constant velocity remains constant throughout the motion.<br />
+			<span class="highlight01"> Solution </span>
+			<br />
+			Let the particle with velocity v be at point P at some instant t. We want to calculate the angular momentum of the particle about an arbitrary point O.</p>
+		<div class="synopsis-image"> 
+			<img src="103101008_image-8.png" alt="image8" class="default-synopsis-medium-image" />
+		 </div>
+		<p>The angular momentum is <span class=\"latex\" lang=\"latex\"> \(  l = r \times mv  \) </span> . Its magnitude is <span class=\"latex\" lang=\"latex\"> \(  mvr \ sin \theta  \) </span> , where <span class=\"latex\" lang=\"latex\"> \(  \theta  \) </span> is the angle between r and v as shown in Fig. Although the particle changes position with time, the line of direction of v remains the same and hence <span class=\"latex\" lang=\"latex\"> \(  OM = r \ sin \ \theta  \) </span> . is a constant.	<br />
+			Further, the direction of l is perpendicular to the plane of r and v. It is into the page of the figure.This direction does not change with time. <br />
+			Thus, l remains the same in magnitude and direction and is therefore conserved. Is there any external torque on the particle? </p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 7:</h4>
+		<p>Show that moment of a couple does not depend on the point about which you take the moments.<br />
+			<span class="highlight01"> Solution </span>
+			<br />
+		</p>
+		<div class="synopsis-image"> 
+			<img src="103101008_image-9.png" alt="image9" class="default-synopsis-medium-image" />
+		 </div>
+		<p>Consider a couple as shown in Fig.  acting on a rigid body. The forces F and -F act respectively at points B and A. These points have position vectors <span class=\"latex\" lang=\"latex\"> \(  r_1  \) </span> and <span class=\"latex\" lang=\"latex\"> \(  r_2  \) </span> with respect to origin O. Let us take the moments of the forces about the origin. <br />
+			The moment of the couple = sum of the moments of the two forces making the couple <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  = r_1 \times (-F) + r_2 \times F  \\\\[3pt]
+				= r_2 \times F - r_1 \times F  \\\\[3pt]
+				= (r_2 - r_1) \times F  \\\\[3pt]
+				But \ r_1 + AB = r_2 \ and \ hence \ AB = r_2 - r_1  \end{align}  \) </span>. <br />
+			The moment of the couple, therefore, is <span class=\"latex\" lang=\"latex\"> \(   AB \times F  \) </span>
+			<br />
+			Clearly this is independent of the origin, the point about which we took the moments of the forces.</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 8:</h4>
+		<p>What is the moment of inertia of a rod of mass M, length l about an axis perpendicular to it through one end?<br />
+			<span class="highlight01"> Solution </span>
+			<br />
+			For the rod of mass M and length l, <span class=\"latex\" lang=\"latex\"> \(  I = \frac{Ml^2}{12}  \) </span>. <br />
+			Using the parallel axes theorem, <span class=\"latex\" lang=\"latex\"> \(  I' = I + M a^2 \ with \ a = \frac{1}{2}  \) </span> we get <br />
+			<span class=\"latex\" lang=\"latex\"> \(  I' = M \frac{l^2}{12} + M \left( \frac{l}{2} \right)^2 = \frac{Ml^2}{3}  \) </span>
+			<br />
+			We can check this independently since I is half the moment of inertia of a rod of mass 2M and length 2l about its midpoint,<span class=\"latex\" lang=\"latex\"> \(  I' = 2M \frac{4l^2}{12}  \times \frac{l}{2}  = \frac{Ml^2}{3}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 9:</h4>
+		<p>Obtain Eq.<span class=\"latex\" lang=\"latex\"> \(  \omega = \omega_0 + \alpha t  \) </span>  from first principles.<br />
+			<span class="highlight01"> Solution </span>
+			<br />
+			The angular acceleration is uniform, hence <br />
+			<span class=\"latex\" lang=\"latex\"> \(   \frac{d \omega}{dt} = \alpha = constant  \) </span>  (1) <br />
+			Integrating this equation, <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \omega = \int \alpha \ dt + C  \\\\[3pt]
+				\omega = \alpha \ t + c \ \ (as \ \alpha \ is  \ constant)  \end{align}  \) </span>
+			<br />
+			At t = 0, <span class=\"latex\" lang=\"latex\"> \(  \omega = \omega_0 (given)  \) </span>
+			<br />
+			From (i) we get at t = 0, <span class=\"latex\" lang=\"latex\"> \(  \omega= c = \omega_0  \) </span>
+			<br />
+			Thus, <span class=\"latex\" lang=\"latex\"> \(  \omega = \alpha t + \omega_0  \) </span> as required. <br />
+			With the definition of <span class=\"latex\" lang=\"latex\"> \(  \omega = \frac{d \theta}{dt}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 10:</h4>
+		<p>Three bodies, a ring, a solid cylinder and a solid sphere roll down the same inclined plane without slipping. They start from rest. The radii of the bodies are identical. Which of the bodies reaches the ground with maximum velocity?<br />
+			<span class="highlight01">Solution </span>
+			<br />
+			We assume conservation of energy of the rolling body, i.e. there is no loss of energy due to friction etc. The potential energy lost by the body in rolling down the inclined plane (= mgh) must, therefore, be equal to kinetic energy gained. (See Fig.) Since the bodies start from rest the kinetic energy gained is equal to the final kinetic energy of the bodies. From <span class=\"latex\" lang=\"latex\"> \(  K = \frac{1}{2} mv^2 \left ( 1 + \frac{k^2}{R^2} \right )  \) </span>,where v is the final velocity of (the centre of mass of) the body. Equating K and mgh,</p>
+		<div class="synopsis-image"> 
+			<img src="103101008_image-10.png" alt="image10" class="default-synopsis-medium-image" />
+		 </div>
+		<p>
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  mgh = \frac{1}{2} mv^2  \left ( 1 + \frac{k^2}{R^2} \right )  \\\\[3pt]
+				or \ v^2 = \left ( \frac{2gh}{1 + \frac{k^2}{R^2}} \right )  \end{align}  \) </span>
+			<br />
+			Note is independent of the mass of the rolling body; <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  For \ a  \ ring, \ k^2 = R^2  \\\\[3pt]
+				v_{ring} = \sqrt{ \frac{2gh}{1 + 1}}  \\\\[3pt]
+				= \sqrt{gh}  \\\\[3pt]
+				\text{For a solid cylinder} \ k^2 = \frac{R^2}{2}  \\\\[3pt]
+				v_{disc} = \sqrt{\frac{2gh}{1 + \frac{1}{2}}}  \\\\[3pt]
+				= \sqrt{ \frac{4gh}{3}}  \\\\[3pt]
+				\text{For a solid sphere} \ k^2 = \frac{2R^2}{5}  \\\\[3pt]
+				v_{sphere} = \sqrt{\frac{2gh}{1 + \frac{2}{5}}}  \\\\[3pt]
+				= \sqrt{\frac{10 gh}{7}}  \end{align}  \) </span>
+			<br />
+			From the results obtained it is clear that among the three bodies the sphere has the greatest and the ring has the least velocity of the centre of mass at the bottom of the inclined plane	 <br />
+			Suppose the bodies have the same mass. Which body has the greatest rotational kinetic energy while reaching the bottom of the inclined plane?</p> 
+	</section>
+</section> 

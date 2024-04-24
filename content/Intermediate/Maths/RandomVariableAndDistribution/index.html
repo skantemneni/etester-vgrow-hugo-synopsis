@@ -1,0 +1,454 @@
+---
+title: "Random Variable And Distribution"
+topic: "Random Variable And Distribution"
+subject: "Maths"
+channel: "Intermediate"
+tags: [Maths, Intermediate]
+categories: [Maths, Intermediate]
+menuname: "Intermediate-submenu"
+draft: false
+image: "image/Intermediate-Maths-RandomVariableAndDistribution.png"
+defaultSummary: "Random Variable And Distribution is an important Topic in the Subject of Maths for the Intermediate course.  Please review it thoroughly and attempt all the associated testing material to perform well on the Intermediate related Exams."
+menu:
+  Intermediate-submenu:
+    identifier: "Intermediate-Maths-RandomVariableAndDistribution"
+    name: "Random Variable And Distribution"
+    url: "Intermediate/Maths/RandomVariableAndDistribution"
+    weight: 1800
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="skill" id="01">
+	<h3 class="skill-heading">Random Variables</h3>
+	<p>Let S be a sample space. A random variable X is a function from the set S to R, the set of real numbers. If X is a random variable defined on the sample space S and r is a real number, then {X = r} = <span class=\"latex\" lang=\"latex\"> \( \{w \epsilon S I \times (w) = r\}  \) </span>is an event. If the random variable X takes n distinct values <span class=\"latex\" lang=\"latex\"> \( x_1, x_2,......,x_n, \) </span> then <span class=\"latex\" lang=\"latex\"> \( \{X = x_1\}, \{X = x_2\},.....,\{X = x_n\} \) </span> are mutually exclusive and exhaustive events (Fig.5).</p>
+	<div class="synopsis-image"> 
+		<img src="103504004_image-1.png" alt="image1" class="default-synopsis-medium-image" />
+	 </div>
+	<p>Now, since <span class=\"latex\" lang=\"latex\"> \( (X = x_i) \) </span> is an event, we can talk of <span class=\"latex\" lang=\"latex\"> \( P(X = x_i). \) </span> If <span class=\"latex\" lang=\"latex\"> \( P(X = x_i) = p_i (1 \leq i \leq n), \) </span> then the system of numbers <span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \left( \begin{array}{ccc} x_1 &amp; x_2.... &amp; x_n  \\\\ p_1 &amp; p_2.... &amp; p_n \end{array} \right) \end{align}  \) </span>
+		<br />
+		is said to be the probability distribution of the random variable X.</p>
+	<h4 class="skill-heading" id="01">Mean and Variance of a Random Variable</h4>
+	<p>The expectation (mean) of the random variable X is defined as <br />
+		<span class=\"latex\" lang=\"latex\"> \(  E (X) = \lim \limits_{i = 1}^{n} p_i x_i  \) </span>
+		<br />
+		and the variance of X is defined as <br />
+		<span class=\"latex\" lang=\"latex\"> \(  var (X) = \lim \limits_{i = 1}^{n} p_i (x_i - E(X)^2 = \lim \limits_{i = 1}^{n} p_i x_i^2 - (E(X))^2  \) </span>
+	</p>
+</section>
+<section class="skill" id="02">
+	<h3 class="skill-heading">Binomial Distribution</h3>
+	<p>Consider a random experiment with sample space S and an event E (a subset of S) associated with it. Then the event "not E" may be denoted by E', the complement (in S) of the subset E. Let P(E) = p and P(E') = q, so that p, q > 0 and p + q = 1. <br />
+		If the experiment results in the event E, we say a success, denoted by S, has occurred. If on the other hand, the event E does not occur (i.e., E' occurs) the experiment is said to have resulted in a failure, denoted by F. The probability of a success is equal to p and that of a failure is q = 1 - p. <br />
+		Suppose the above experiment is carried out n times under identical conditions. If the success (occurrence of E) and failure (non-occurrence of E) are recorded successively as the experiment is repeated, we will get a result of the type  <br />
+		S F F S S F F........F S F <br />
+		There are <span class=\"latex\" lang=\"latex\"> \( 2^n \) </span> such outcomes, and these constitute the sample space of the combined experiment. Since the successive experiments are independent, the probability of the outcome above is  <br />
+		p q q p p q q.....q p q = <span class=\"latex\" lang=\"latex\"> \(  p^r q^{n - r} \) </span>
+		<br />
+		where r is the number of successes in the outcome. If X denotes the random variable "number of successes", then the possible values of X are 0, 1, 2,....n. <br />
+		We shall now calculate the probability of the event (X = r). Out of the <span class=\"latex\" lang=\"latex\"> \(  2^n  \) </span> outcomes, r successes and (n - failures can occur in <span class=\"latex\" lang=\"latex\"> \(  ^nC_r  \) </span> ways. Also, the probability of r successes and (n - r) failures is <span class=\"latex\" lang=\"latex\"> \( p^r q^{n - r}. \) </span> Thus <span class=\"latex\" lang=\"latex\"> \( P(X = r) = ^nC_r p^r q^{n - r}. \) </span> The probability distribution of the random variable X is given by</p>
+	<table class="u-full-width summary-table">
+		<tr>
+			<td align="center">r</td>
+			<td align="center">0</td>
+			<td align="center">1</td>
+			<td align="center">...</td>
+			<td align="center">r</td>
+			<td align="center">...</td>
+			<td align="center">n</td>
+		</tr>
+		<tr>
+			<td align="center">p(x = r)</td>
+			<td align="center">
+				<span class=\"latex\" lang=\"latex\"> \(  ^nC_0 q^n  \) </span>
+			</td>
+			<td align="center">
+				<span class=\"latex\" lang=\"latex\"> \(  ^nC_1 q^{n - 1}  \) </span>
+			</td>
+			<td align="center">...</td>
+			<td align="center">
+				<span class=\"latex\" lang=\"latex\"> \(  ^nC_r p^r q^{n - r}  \) </span>
+			</td>
+			<td align="center">...</td>
+			<td align="center">
+				<span class=\"latex\" lang=\"latex\"> \(  C_n P^n  \) </span>
+			</td>
+		</tr>
+	</table>
+	<p>Note that the probabilities that the random variable takes the values 0, 1, 2, • • n are given by the terms in the binomial expansion of <span class=\"latex\" lang=\"latex\"> \( (q + p)^n. \) </span> Because of this, the probability distribution of the random variable X is said to be a binomial distribution and X is said to be a binomial random variable. <br />
+		A binomial distribution B(n, p) is the probability distribution of a random variable X which takes values 0, 1, 2,.....,n with probabilities <span class=\"latex\" lang=\"latex\"> \(  ^n_C_0 p^0 q^n, ^n_C_1 p q^{n - 1},.....^n_C_r p^r q^{n - r},.....^n_C_n p^n q^0  \) </span>
+		<br />
+		where p, q > 0 and p + q = 1. The numbers n and p are said to be parameters of the binomial distribution B(n . p). We usually write, <span class=\"latex\" lang=\"latex\"> \(  X \approx B (n, p). \) </span>
+	</p>
+	<h4 class="skill-heading" id="02">Mode of Binomial Distribution</h4>
+	<p>For the value of r so that P(X = r) is maximum, we have two cases.<br />
+		Case 1 (n + 1)p is not an integer then, P(X = r) is maximum when r = m, where m is the greatest integer <span class=\"latex\" lang=\"latex\"> \(  \leq (n + 1)p, \) </span> that is, m = [(n + 1)p].<br />
+		Case 2 (n + 1)p is an integer then, P(X = r) is maximum when r = m - 1 or m, where (n + 1)p = m and in is an integer.<br />
+		If <span class=\"latex\" lang=\"latex\"> \(  X \approx B  \) </span> (n, p), then E(X) = np and var (X) = npq.</p>
+</section>  
+<section class="solved-examples" id="examples">
+	<h3 class="solved-examples-heading">Solved examples</h3>
+	<section class="solved-example"> 
+		<h4 class="solved-examples-question">Example 1:</h4>
+		<p>A person plays a game of tossing a coin thrice. For each head, he is given Rs 2 by the organiser of the game and for each tail, he has to give Rs 1.50 to the organiser. Let X denote the amount gained or lost by the person. Show that X is a random variable and exhibit it as a function on the sample space of the experiment.<br />
+			<span class="highlight01"> Solution </span>
+			<br />
+			is a number whose values are defined on the outcomes of a random experiment. Therefore, X is a random variable. <br />
+			Now, sample space of the experiment is <br />
+			S = {HHH, HHT, HTH, THH, HTT, THT, TTH, TTT} <br />
+			Then X(HHH) = <span class=\"latex\" lang=\"latex\"> \(  Rs(2 \times 3)  \) </span> = Rs 6 <br />
+			X(HHT) = X(HTH) = X(THH) = <span class=\"latex\" lang=\"latex\"> \( Rs (2 \times 2 - 1 \times 1.50)  \) </span> = Rs 2.50 <br />
+			X(HTT) = X(THT) = (TTH) = <span class=\"latex\" lang=\"latex\"> \(  Rs (1 \times  2) - (2 \times 1.50)  \) </span> = - Re 1 and X(TTT) = <span class=\"latex\" lang=\"latex\"> \(  - Rs (3 \times 1.50)  \) </span> = - Rs 4.50 <br />
+			where, minus sign shows the loss to the player. Thus, for each element of the sample space, X takes a unique value, hence, X is a function on the sample space whose range is <br />
+			{-1, 2.50, - 4.50, 6}</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 2:</h4>
+		<p>A bag contains 2 white and 1 red balls. One ball is drawn at random and then put back in the box after noting its colour. The process is repeated again. If X denotes the number of red balls recorded in the two draws, describe X.<br />
+			<span class="highlight01"> Solution </span>
+			<br />
+			Let the balls in the bag be denoted by <span class=\"latex\" lang=\"latex\"> \(  w_1, \ w_2,  \) </span> r. Then the sample space is <br />
+			<span class=\"latex\" lang=\"latex\"> \(  S = \{ w_1, \ w_1, \ w_1, w_2, \ w_2, \ w_2, \ w_2, \ w_1, \ w_1, \ r, \ w_2, \ r, \ r, \ w_1, r, \ w_2, \ r \ r  \}  \) </span>
+			<br />
+			Now, for <span class=\"latex\" lang=\"latex\"> \(  \omega \ \in \ S  \) </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  X(\omega)  \) </span> = number of red balls <br />
+			Therefore <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  X( \{ w_1 \ w_1 \} ) = X( \{ w_1 \ w_2 \} ) = X( \{ w_2 \ w_2 \} ) = X( \{ w_2 \ w_1 \} ) = 0  \\\\[3pt]
+				= X( \{ w_1 \ r \} ) = X( \{ w_2 \ r \} ) = X( \{ r \ w_1 \} ) = X( \{ r \ w_2 \} ) = 1 \ and \ X( \{ r  \ r \} ) = 2  \end{align}  \) </span>
+			<br />
+			Thus, X is a random variable which can take values 0, 1 or 2.</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 3:</h4>
+		<p>Two cards are drawn successively with replacement from a well-shuffled deck of 52 cards. Find the probability distribution of the number of aces. <br />
+			<span class="highlight01"> Solution </span>
+			<br />
+			The number of aces is a random variable. Let it be denoted by X. Clearly, X can take the values 0, 1, or 2. <br />
+			Now, since the draws are done with replacement, therefore, the two draws form independent experiments <br />
+			Therefore, P(X = 0) = P(non-ace and non-ace) <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align} = P(non-ace) \times P(non-ace)  \\\\[3pt]
+				= \frac{48}{52} \times \frac{48}{52} = \frac{144}{169}  \end{align}  \) </span>
+			<br />
+			P(X = 1) = P(ace and non-ace or non-ace and ace) <br />
+			= P(ace and non-ace) + P(non-ace and ace) <br />
+			= P(ace). P(non-ace) + P (non-ace).P(ace) <br />
+			<span class=\"latex\" lang=\"latex\"> \(  = \frac{4}{52} \times \frac{48}{52} + \frac{48}{52} \times \frac{4}{52} = \frac{24}{169}  \) </span>
+			<br />
+			and P(X = 2) = P (ace and ace) <br />
+			<span class=\"latex\" lang=\"latex\"> \(  = \frac{4}{52} \times \frac{4}{52} = \frac{24}{169}  \) </span>
+			<br />
+			Thus, the required probability distribution is
+		</p>
+		<table class="u-full-width summary-table">
+			<thead>
+				<tr>
+					<th align="center">X</th>
+					<th align="center">P(X)</th>
+				</tr>
+			</thead>
+			<tr>
+				<td align="center">0</td>
+				<td align="center">
+					<span class=\"latex\" lang=\"latex\"> \(  \frac{144}{169}  \) </span>
+				</td>
+			</tr>
+			<tr>
+				<td align="center">1</td>
+				<td align="center">
+					<span class=\"latex\" lang=\"latex\"> \(  \frac{24}{169} \) </span>
+				</td>
+			</tr>
+			<tr>
+				<td align="center">2</td>
+				<td align="center">
+					<span class=\"latex\" lang=\"latex\"> \(  \frac{1}{169}  \) </span>
+				</td>
+			</tr>
+		</table>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 4:</h4>
+		<p>Let a pair of dice be thrown and the random variable X be the sum of the numbers that appear on the two dice. Find the mean or expectation of X.<br />
+			<span class="highlight01"> Solution </span>
+			<br />
+			The sample space of the experiment consists of 36 elementary events in the form of ordered pairs <span class=\"latex\" lang=\"latex\"> \(  (x_i, \ y_i)  \) </span> , where <span class=\"latex\" lang=\"latex\"> \(  x_i  \) </span> = 1, 2, 3, 4, 5, 6 and yi = 1, 2, 3, 4, 5, 6. <br />
+			The random variable X i.e. the sum of the numbers on the two dice takes the values 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 or 12. <br />
+			Now  P(X = 2) = P({(1,1)}) = <span class=\"latex\" lang=\"latex\"> \(  \frac{1}{36}  \) </span>
+			<br />
+			P(X = 3) = P({(1,2), (2, 1)}) = <span class=\"latex\" lang=\"latex\"> \(  \frac{2}{36}  \) </span>
+			<br />
+			P(X = 4) = P({(1,3), (2,2), (3,1)}) = <span class=\"latex\" lang=\"latex\"> \(  \frac{3}{36}  \) </span>
+			<br />
+			P(X = 5) = P({(1,4), (2,3), (3,2), (4,1)}) = <span class=\"latex\" lang=\"latex\"> \(  \frac{4}{36}  \) </span>
+			<br />
+			P(X = 6) = P({(1,5), (2,4), (3,3), (4,2), (5,1)}) = <span class=\"latex\" lang=\"latex\"> \(  \frac{5}{36}  \) </span>
+			<br />
+			P(X = 7) = P({(1,6), (2,5), (3,4), (4,3), (5,2), (6,1)}) = <span class=\"latex\" lang=\"latex\"> \(  \frac{6}{36}  \) </span>
+			<br />
+			P(X = 8) = P({(2,6), (3,5), (4,4), (5,3), (6,2)}) = <span class=\"latex\" lang=\"latex\"> \(  \frac{5}{36}  \) </span>
+			<br />
+			P(X = 9) = P({(3,6), (4,5), (5,4), (6,3)}) = <span class=\"latex\" lang=\"latex\"> \(  \frac{4}{36}  \) </span>
+			<br />
+			P(X = 10) = P({(4,6), (5,5), (6,4)}) = <span class=\"latex\" lang=\"latex\"> \(  \frac{3}{36}  \) </span>
+			<br />
+			P(X = 11) = P({(5,6), (6,5)}) = <span class=\"latex\" lang=\"latex\"> \(  \frac{2}{36}  \) </span>
+			<br />
+			P(X = 12) = P({(6,6)}) = <span class=\"latex\" lang=\"latex\"> \(  \frac{1}{36}  \) </span>
+			<br />
+			The probability distribution of X is </p>
+		<table class="u-full-width summary-table">
+			<thead>
+				<tr>
+					<th align="center">X or <span class=\"latex\" lang=\"latex\"> \( x_i  \) </span>
+					</th>
+					<th align="center">P(X) or <span class=\"latex\" lang=\"latex\"> \( p_i  \) </span>
+					</th>
+				</tr>
+			</thead>
+			<tr>
+				<td align="center">2</td>
+				<td align="center">
+					<span class=\"latex\" lang=\"latex\"> \(  \frac{1}{36}  \) </span>
+				</td>
+			</tr>
+			<tr>
+				<td align="center">3</td>
+				<td align="center">
+					<span class=\"latex\" lang=\"latex\"> \(  \frac{2}{36} \) </span>
+				</td>
+			</tr>
+			<tr>
+				<td align="center">4</td>
+				<td align="center">
+					<span class=\"latex\" lang=\"latex\"> \(  \frac{3}{36}  \) </span>
+				</td>
+			</tr>
+			<tr>
+				<td align="center">5</td>
+				<td align="center">
+					<span class=\"latex\" lang=\"latex\"> \(  \frac{4}{36}  \) </span>
+				</td>
+			</tr>
+			<tr>
+				<td align="center">6</td>
+				<td align="center">
+					<span class=\"latex\" lang=\"latex\"> \(  \frac{5}{36}  \) </span>
+				</td>
+			</tr>
+			<tr>
+				<td align="center">7</td>
+				<td align="center">
+					<span class=\"latex\" lang=\"latex\"> \(  \frac{6}{36}  \) </span>
+				</td>
+			</tr>
+			<tr>
+				<td align="center">8</td>
+				<td align="center">
+					<span class=\"latex\" lang=\"latex\"> \(  \frac{5}{36}  \) </span>
+				</td>
+			</tr>
+			<tr>
+				<td align="center">9</td>
+				<td align="center">
+					<span class=\"latex\" lang=\"latex\"> \(  \frac{4}{36}  \) </span>
+				</td>
+			</tr>
+			<tr>
+				<td align="center">10</td>
+				<td align="center">
+					<span class=\"latex\" lang=\"latex\"> \(  \frac{3}{36}  \) </span>
+				</td>
+			</tr>
+			<tr>
+				<td align="center">11</td>
+				<td align="center">
+					<span class=\"latex\" lang=\"latex\"> \(  \frac{2}{36}  \) </span>
+				</td>
+			</tr>
+			<tr>
+				<td align="center">12</td>
+				<td align="center">
+					<span class=\"latex\" lang=\"latex\"> \(  \frac{1}{36}  \) </span>
+				</td>
+			</tr>
+		</table>
+		<p> Therefore <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \mu = \sum \limits_{i = 1}^{n} x_i p_i = 2 \times \frac{1}{36} +  3 \times \frac{2}{36} +  4 \times \frac{3}{36} +  5 \times \frac{4}{36} +	 6 \times \frac{5}{36} +  7 \times \frac{6}{36} +  8 \times \frac{5}{36} + 9 \times \frac{4}{36} +  10 \times \frac{3}{36} +  11 \times \frac{2}{36} +  12 \times \frac{1}{36}  \\\\[3pt]
+				= \frac{2 + 6 + 12 + 20 + 30 + 42 + 40 + 36 + 30 + 22 + 12}{36} = 7  \end{align}  \) </span>
+			<br />
+			Thus, the mean of the sum of the numbers that appear on throwing two fair dice is 7.</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 5:</h4>
+		<p>Find the variance of the number obtained on a throw of an unbiased die.<br />
+			<span class="highlight01"> Solution </span>
+			<br />
+			The sample space of the experiment is S = {1, 2, 3, 4, 5, 6}. <br />
+			Let X denote the number obtained on the throw. Then X is a random variable which can take values 1, 2, 3, 4, 5, or 6. <br />
+			Also P(1) = P(2) = P(3) = P(4) = P(5) = P(6) = <span class=\"latex\" lang=\"latex\"> \(  \frac{1}{6}  \) </span>
+			<br />
+			Therefore, the Probability distribution of X is </p>
+		<table class="u-full-width summary-table">
+			<thead>
+				<tr>
+					<th align="center">X</th>
+					<th align="center">P(X)</th>
+				</tr>
+			</thead>
+			<tr>
+				<td align="center">1</td>
+				<td align="center">
+					<span class=\"latex\" lang=\"latex\"> \(  \frac{1}{6}  \) </span>
+				</td>
+			</tr>
+			<tr>
+				<td align="center">2</td>
+				<td align="center">
+					<span class=\"latex\" lang=\"latex\"> \(  \frac{1}{6}  \) </span>
+				</td>
+			</tr>
+			<tr>
+				<td align="center">3</td>
+				<td align="center">
+					<span class=\"latex\" lang=\"latex\"> \(  \frac{1}{6}  \) </span>
+				</td>
+			</tr>
+			<tr>
+				<td align="center">4</td>
+				<td align="center">
+					<span class=\"latex\" lang=\"latex\"> \(  \frac{1}{6}  \) </span>
+				</td>
+			</tr>
+			<tr>
+				<td align="center">5</td>
+				<td align="center">
+					<span class=\"latex\" lang=\"latex\"> \(  \frac{1}{6}  \) </span>
+				</td>
+			</tr>
+			<tr>
+				<td align="center">6</td>
+				<td align="center">
+					<span class=\"latex\" lang=\"latex\"> \(  \frac{1}{6}  \) </span>
+				</td>
+			</tr>
+		</table>
+		<p>
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  Now \  E(X) = \sum \limits_{i = 1}^{n} x_i p(x_i)  \\\\[3pt]
+				= 1 \times \frac{1}{6} + 2 \times \frac{1}{6} + 3 \times \frac{1}{6} + 4 \times \frac{1}{6} + 5 \times \frac{1}{6} + 6 \times \frac{1}{6} = \frac{21}{6}  \\\\[3pt]
+				Also \ E(X^2) = 1^2 \times \frac{1}{6} + 2^2 \times \frac{1}{6} + 3^2 \times \frac{1}{6} + 4^2 \times \frac{1}{6} + 5^2 \times \frac{1}{6} + 6^2 \times \frac{1}{6} = \frac{91}{6}  \\\\[3pt]
+				Thus, \ Var(X) = E(X^2) - (E(X))^2  \\\\[3pt]
+				= \frac{91}{6} - \left ( \frac{21}{6} \right)^2 = \frac{91}{6} - \frac{441}{36} = \frac{35}{12}  \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 6:</h4>
+		<p>Six balls are drawn successively from an urn containing 7 red and 9 black balls. Tell whether or not the trials of drawing balls are Bernoulli trials when after each draw the ball drawn is </p>
+		<div class="list1-ol default-spaced-indented list-numbered-style-lower-alpha">
+			<ol>
+				<li>
+					<p>replaced</p>
+				</li>
+				<li>
+					<p>not replaced in the urn.</p>
+				</li>
+			</ol>
+		</div>
+		<p>
+			<span class="highlight01"> Solution </span>
+		</p>
+		<div class="list1-ol default-spaced-indented list-numbered-style-lower-alpha">
+			<ol>
+				<li>
+					<p>The number of trials is finite. When the drawing is done with replacement, the probability of success (say, red ball) is <span class=\"latex\" lang=\"latex\"> \(  p = \frac{7}{16}  \) </span>which is same for all six trials (draws). Hence, the drawing of balls with replacements are Bernoulli trials.</p>
+				</li>
+				<li>
+					<p>When the drawing is done without replacement, the probability of success (i.e., red ball) in first trial is <span class=\"latex\" lang=\"latex\"> \(  \frac{7}{16}  \) </span>, in 2nd trial is <span class=\"latex\" lang=\"latex\"> \(  \frac{6}{15}  \) </span>if the first ball drawn is red or <span class=\"latex\" lang=\"latex\"> \(  \frac{7}{16}  \) </span> if the first ball drawn is black and so on. Clearly, the probability of success is not same for all trials, hence the trials are not Bernoulli trials.</p>
+				</li>
+			</ol>
+		</div>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 7:</h4>
+		<p>If a fair coin is tossed 10 times, find the probability of </p>
+		<div class="list1-ol default-spaced-indented list-numbered-style-lower-alpha">
+			<ol>
+				<li>
+					<p>exactly six heads</p>
+				</li>
+				<li>
+					<p>at least six heads</p>
+				</li>
+				<li>
+					<p>at most six heads</p>
+				</li>
+			</ol>
+		</div>
+		<p>
+			<span class="highlight01"> Solution </span>
+			<br />
+			The repeated tosses of a coin are Bernoulli trials. Let X denote the number of heads in an experiment of 10 trials. <br />
+			Clearly, X has the binomial distribution with n = 10 and p = <span class=\"latex\" lang=\"latex\"> \(  \frac{1}{2}  \) </span>
+			<br />
+			Therefore <span class=\"latex\" lang=\"latex\"> \(  P(X = x) = \ ^nC_x q^{n - x} p6x, \ x = 0, \ 1, \ 2, ....., \ n  \) </span>
+			<br />
+			Here n = 10, <span class=\"latex\" lang=\"latex\"> \(  p = \frac{1}{2}, \ q = 1 - p = \frac{1}{2}  \) </span>
+			<br />
+			Therefore <span class=\"latex\" lang=\"latex\"> \(  P(X = x) = \ ^{10}C_x \left ( \frac{1}{2} \right )^{10 - x} \ \left ( \frac{1}{2} \right )^x = \ ^{10}C_x \left ( \frac{1}{2} \right )^{10} \) </span>
+		</p>
+		<div class="list1-ol default-spaced-indented list-numbered-style-lower-alpha">
+			<ol>
+				<li>
+					<p>Now <span class=\"latex\" lang=\"latex\"> \(  P(X = 6) = \ ^{10}C_6 \left ( \frac{1}{2} \right )^{10} = \frac{10!}{6! \times 4!} \frac{1}{2^{10}} = \frac{105}{512}  \) </span>
+					</p>
+				</li>
+				<li>
+					<p>P(at least six heads) = <span class=\"latex\" lang=\"latex\"> \(  P(X \geq 6)  \) </span> = P (X = 6) + P (X = 7) + P (X = 8) + P(X = 9) + P(X = 10) <br />
+						<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  = \ ^{10}C_6 \left ( \frac{1}{2} \right )^{10} + \ ^{10}C_7 \left ( \frac{1}{2} \right )^{10} + ^{10}C_8 \left ( \frac{1}{2} \right )^{10} + ^{10}C_9 \left ( \frac{1}{2} \right )^{10} + ^{10}C_{10} \left ( \frac{1}{2} \right )^{10}  \\\\[3pt]
+							= \left [ \left ( \frac{10!}{6! \times 4!} \right ) + \left ( \frac{10!}{7! \times 3!} \right ) + \left ( \frac{10!}{8! \times 2!} \right ) + \left ( \frac{10!}{9! \times 1!} \right ) + \left ( \frac{10!}{10!} \right ) \right ] \frac{1}{2^{10}} = \frac{193}{512}  \end{align}  \) </span>
+					</p>
+				</li>
+				<li>
+					<p>
+						<span class=\"latex\" lang=\"latex\"> \( P(X \leq 6)  \) </span> = P (X = 0) + P (X = 1) + P (X = 2) + P(X = 3) + P(X = 4) + P(X = 5) + P(X = 6)<br />
+						<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \left ( \frac{1}{2} \right )^{10} + \ ^{10}C_1 \left ( \frac{1}{2} \right )^{10} + \ ^{10}C_2 \left ( \frac{1}{2} \right )^{10} + \ ^{10}C_3 \left ( \frac{1}{2} \right )^{10} + \ ^{10}C_4 \left ( \frac{1}{2} \right )^{10} + \ ^{10}C_5 \left ( \frac{1}{2} \right )^{10} + \ ^{10}C_6 \left ( \frac{1}{2} \right )^{10}  \\\\[3pt]
+							= \frac{848}{1024} = \frac{53}{64}  \end{align}  \) </span>
+					</p>
+				</li>
+			</ol>
+		</div>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 8:</h4>
+		<p>Ten eggs are drawn successively with replacement from a lot containing 10% defective eggs. Find the probability that there is at least one defective egg.<br />
+			<span class="highlight01"> Solution </span>
+			<br />
+			Let X denote the number of defective eggs in the 10 eggs drawn. Since the drawing is done with replacement, the trials are Bernoulli trials. Clearly, X has the binomial distribution with n = 10 and <span class=\"latex\" lang=\"latex\"> \(  P = \frac{10}{100} = \frac{1}{10}  \) </span>
+			<br />
+			Therefore \ q = 1 - p = <span class=\"latex\" lang=\"latex\"> \(  \frac{9}{10}  \) </span>
+			<br />
+			Now P(at least one defective egg) <span class=\"latex\" lang=\"latex\"> \(  = P(X \geq 1) = 1 - p(X = 0)  \) </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(   1 - \ ^{10}C_) \left ( \frac{9}{10} \right )^{10} = 1 - \frac{9^{10}}{10^{10}}  \) </span>
+		</p>
+	</section>
+</section> 

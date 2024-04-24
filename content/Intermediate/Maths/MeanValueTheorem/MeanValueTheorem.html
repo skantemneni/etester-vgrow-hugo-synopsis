@@ -1,0 +1,121 @@
+---
+title: "Mean Values Theorems" 
+layout: "default"
+isMath: true 
+---
+<section class="skill" id="01">
+	<h3 class="skill-heading">The Rolle And Lagrange Theorems</h3>
+	<p>
+		<span class="highlight01">Rolle's theorem</span> Let f(x) be a function defined on a closed interval [a, b], such that</p>
+	<div class="list-custom-block-list-ol spaced20 indented20">
+		<ol>
+			<li>
+				<p>f(x) is continuous on [a, b],</p>
+			</li>
+			<li>
+				<p>f(x) is derivable on [a, b], and</p>
+			</li>
+			<li>
+				<p> f(a) = f(b).</p>
+			</li>
+		</ol>
+	</div>
+	<p>Then there exists <span class=\"latex\" lang=\"latex\"> \(  c \epsilon  \) </span> (a, b) such that f'(c) = 0.<br />
+		<span class="highlight01">Lagrange's theorem</span> Let f(x) be a function defined on [a, b], such that</p>
+	<div class="list-custom-block-list-ol spaced20 indented20">
+		<ol>
+			<li>
+				<p> f(x) is continuous on [a, b], and </p>
+			</li>
+			<li>
+				<p> f(x) is derivable on [a, b].</p>
+			</li>
+		</ol>
+	</div>
+	<p>Then there exists a c <span class=\"latex\" lang=\"latex\"> \(  \epsilon  \) </span>[a, b] such that <br />
+		<span class=\"latex\" lang=\"latex\"> \(  f'(c) = \frac{f(b) - f(a)}{b - a}  \) </span>
+	</p>
+</section>  
+<section class="solved-examples" id="examples">
+	<h3 class="solved-examples-heading">Solved examples</h3>
+	<section class="solved-example"> 
+		<h4 class="solved-examples-question">Example 1:</h4>
+		<p>Verify Rolle’s theorem for the function <span class=\"latex\" lang=\"latex\"> \( y = x^2 + 2, \ a = - 2  \) </span> and b = 2. <br />
+			<span class="highlight01"> Solution </span>
+			<br />
+			The function <span class=\"latex\" lang=\"latex\"> \( y = x^2 + 2, \ a = - 2  \) </span> is continuous in [- 2, 2] and differentiable in (- 2, 2). <br />
+			Also f (-2) = f(2) = 6 and hence the value of f (x) at – 2 and 2 coincide.<br />
+			Rolle’s theorem states that there is a point <span class=\"latex\" lang=\"latex\"> \(  c \in (- 2, 2)  \) </span>, where f'(c) = 0. Since f'(x) = 2x, we get c = 0. Thus at c = 0, we have f'(c) = 0 and <span class=\"latex\" lang=\"latex\"> \(  c = 0 \in (- 2, \ 2)  \) </span>.</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 2:</h4>
+		<p>Verify Mean Value Theorem for the function<span class=\"latex\" lang=\"latex\"> \(  f(x) = x^2  \) </span> in the interval [2, 4].<br />
+			<span class="highlight01"> Solution </span>
+			<br />
+			The function <span class=\"latex\" lang=\"latex\"> \(  f(x) = x^2  \) </span> is continuous in [2, 4] and differentiable in (2, 4) as its derivative f'(x) = 2x is defined in (2, 4). <br />
+			Now, f (2) = 4 and f (4) = 16. Hence <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \frac{f(b) - f(a)}{b - a} = \frac{16 - 4}{4 - 2} = 6  \) </span>
+			<br />
+			MVT states that there is a point c <span class=\"latex\" lang=\"latex\"> \(  \in  \) </span> (2, 4) such that f'(c) = 6. But f'(x) = 2x which implies c = 3. Thus at c = 3 <span class=\"latex\" lang=\"latex\"> \(  \in  \) </span> (2, 4), we have f'(c) = 6. </p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 3:</h4>
+		<p>Differentiate w.r.t. x, the following function: <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \sqrt{3x + 2} + \frac{1}{\sqrt{2x^2 + 4}}  \) </span>
+			<br />
+			<span class="highlight01"> Solution </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  Let \ y = \sqrt{3x + 2} + \frac{1}{\sqrt{2x^2 + 4}}  \\\\[3pt]
+				= \left (3x + 2 \right )^{\frac{1}{2}} + \left (2x^2 + 4 \right )^{\frac{1}{2}}  \\\\[3pt]
+				\text{Note that this function is defined at all real numbers} \ x &gt; - \frac{2}{3}. \ Therefore  \\\\[3pt]
+				\frac{dy}{dx} = \frac{1}{2} \left (3x + 2 \right )^{\frac{1}{2} - 1}. \frac{d}{dx} (3x + 2) + \left ( - \frac{1}{2} \right ) \left (2x^2 + 4 \right )^{\frac{1}{2} - 1} \frac{d}{dx} (2x^2 + 4)  \\\\[3pt]
+				= \frac{1}{2} \left (3x + 2) \right )^{\frac{1}{2}}. (3) - \left ( \frac{1}{2} \right ) (2x^2 + 4)^{ - \frac{3}{2}} . 4x  \\\\[3pt]
+				= \frac{3}{2 \sqrt{3x + 2}} - \frac{2x}{(2x^2 + 4)^{ - \frac{3}{2}}}  \\\\[3pt]
+				\text{This is defined for all real numbers} \ x &gt; - \frac{2}{3}  \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 4:</h4>
+		<p> Find f'(x) if <span class=\"latex\" lang=\"latex\"> \(  f(x) = (sin \ x)^{sin \ x} \ for \ all \ 0 &lt; x &lt; \pi  \) </span>
+			<br />
+			<span class="highlight01"> Solution </span>
+			<br />
+			The function <span class=\"latex\" lang=\"latex\"> \(  f(x) = (sin \ x)^{sin \ x}  \) </span> is defined for all positive real numbers. Taking logarithms, we have <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  log \ y = log(sin \ x)^{sin \ x} = sin \ x \ log (sin \ x)  \\\\[3pt]
+				Then \ \frac{1}{y} \frac{dy}{dx} = \frac{d}{dx} \ (sin \ x \ log \ (sin \ x))  \\\\[3pt]
+				= cos \ x \ log(sin \ x) + sin \ x. \frac{1}{sin \ x}. \frac{d}{dx} (sin \ x)  \\\\[3pt]
+				= cos \ x \ log(sin \ x) + cos \ x  \\\\[3pt]
+				= (1 + log (sin \ x)) cos \ x  \\\\[3pt]
+				Thus \  \\\\frac{dy}{dx} = y ((1 + log(sin \ x) cos \ x) = (1 + log(sin \ x))(sin \ x)^{sin \ x}  cos \ x  \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 5:</h4>
+		<p> For a positive constant a find <span class=\"latex\" lang=\"latex\"> \(  \frac{dy}{dx}  \) </span>, where <span class=\"latex\" lang=\"latex\"> \(  y = a^{t + \frac{1}{t}}, \ and \ x = \left ( t + \frac{1}{t} \right )^a  \) </span>
+			<br />
+			<span class="highlight01"> Solution </span>
+			<br />
+			Observe that both y and x are defined for all real <span class=\"latex\" lang=\"latex\"> \( t \neq 0  \) </span>. Clearly<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \frac{dy}{dt} = \frac{d}{dt} \left ( a^{t + \frac{1}{t}} \right )  \\\\[3pt]
+				= a^{t + \frac{1}{t}} \frac{d}{dt} \left ( t + \frac{1}{t} \right ). log \ a  \\\\[3pt]
+				= a^{t + \frac{1}{t}} \left ( 1 - \frac{1}{t^2} \right) log \ a  \\\\[3pt]
+				Similarly \ \frac{dx}{dt} = a \left [ t + \frac{1}{t} \right ]^{a - 1}. \frac{d}{dt} \left ( t + \frac{1}{t} \right )  \\\\[3pt]
+				= a \left [ t + \frac{1}{t} \right ]^{a - 1} . \left ( 1 - \frac{1}{t^2} \right )  \\\\[3pt]
+				\frac{dx}{dt} \ \neq \ 0 \ only \ if \ t \ \neq \ \pm \ 1. Thus \ for \ t \ \neq \ \pm \ 1.  \\\\[3pt]
+				\frac{dy}{dx} = \frac{\frac{dy}{dt}}{\frac{dx}{dt}} = \frac{a^{t + \frac{1}{t}} \left ( 1 - \frac{1}{t^2} \right ) log \ a}{a \left [ t + \frac{1}{t} \right ]^{a - 1}} . \left ( 1 - \frac{1}{t^2} \right )  \\\\[3pt]
+				= \frac{a^{t + \frac{1}{t} log \ a}}{a  \left ( t + \frac{1}{t} \right )^{a - 1}}  \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 6:</h4>
+		<p>Differentiate <span class=\"latex\" lang=\"latex\"> \(  sin^2 \ x \ w.r.t. \ e^{cos \ x}  \) </span>.<br />
+			<span class="highlight01"> Solution </span>
+			<br />
+			Let <span class=\"latex\" lang=\"latex\"> \(  u(x) = sin^2  \ x \ and \ v(x) = e^{cos \ x}  \) </span>
+			<br />
+			We want to find <span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \frac{du}{dv} = \frac{\frac{du}{dv}}{\frac{dv}{dx}}  \\\\[3pt]
+				Clearly \ \frac{du}{dv} = 2 \ sin \ x \ cos \ x \ and \ \frac{dv}{dx} = e^{cos \ x} (- sin \ x) = - (sin \ x) e^{cos \ x}  \\\\[3pt]
+				Thus \ \frac{du}{dv} = \frac{2 \ sin \ x \ cos \ x}{- sin \ x \ e^{cos \ x}} = - \frac{2 \ cos \ x}{e^{cos \ x}}  \end{align}  \) </span>
+		</p>
+	</section>
+</section> 

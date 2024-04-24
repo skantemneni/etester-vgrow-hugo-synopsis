@@ -1,0 +1,127 @@
+<book>
+	<preheading>9th Class Foundation</preheading>
+	<title>Mathematics</title>
+	<description>Foundation Preperation Course Materials provided by eTester Classes.</description>
+	<book_chapter_number_offset>0</book_chapter_number_offset>
+	<book_page_number_offset>0</book_page_number_offset>
+	<show_chapter_numbers>true</show_chapter_numbers>
+	<chapters>
+		<chapter>
+			<number>1</number>
+			<title>Surds</title>
+			<description>
+				<![CDATA[Essential Exam Preperation guide for Employment Readiness Exams]]>
+			</description>
+			<filename>Surds.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>2</number>
+			<title>Logarithms</title>
+			<description>
+				<![CDATA[Essential Exam Preperation guide for Employment Readiness Exams]]>
+			</description>
+			<filename>Logarithms.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>3</number>
+			<title>Relations</title>
+			<description>
+				<![CDATA[Essential Exam Preperation guide for Employment Readiness Exams]]>
+			</description>
+			<filename>Relations.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>4</number>
+			<title>Mensuration - Level 2</title>
+			<description>
+				<![CDATA[Essential Exam Preperation guide for Employment Readiness Exams]]>
+			</description>
+			<filename>MensurationLevel2.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>5</number>
+			<title>Polynomials - Level 2</title>
+			<description>
+				<![CDATA[Essential Exam Preperation guide for Employment Readiness Exams]]>
+			</description>
+			<filename>PolynomialsLevel2.html</filename> 
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>6</number>
+			<title>Quadratic Equations - Level 1</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>QuadraticEquationsLevel1.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>7</number>
+			<title>Plane Geometry - Level 2</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>PlaneGeometryLevel2.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>8</number>
+			<title>Permutations and Combinations</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>PermutationsAndCombinations.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>9</number>
+			<title>Inequalities - Level 2</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>InequalitiesLevel2.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>10</number>
+			<title>Coordinate Geometry - Level 2</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>CoordinateGeometryLevel2.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>11</number>
+			<title>Number Theory</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>NumberTheory.html</filename>
+			<notespages>0</notespages>
+		</chapter> 
+		<chapter>
+			<number>12</number>
+			<title>Trigonometry - Level 1</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>TrigonometryLevel1.html</filename>
+			<notespages>0</notespages>
+		</chapter> 
+		<chapter>
+			<number>13</number>
+			<title>Matrices</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>Matrices.html</filename>
+			<notespages>0</notespages>
+		</chapter> 
+	</chapters>
+</book>

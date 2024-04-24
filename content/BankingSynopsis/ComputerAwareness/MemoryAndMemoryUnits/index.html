@@ -1,0 +1,448 @@
+---
+title: "Memory And Memory Units"
+topic: "Memory And Memory Units"
+subject: "Computer Awareness"
+channel: "Banking Synopsis"
+tags: [ComputerAwareness, BankingSynopsis]
+categories: [ComputerAwareness, BankingSynopsis]
+menuname: "BankingSynopsis-submenu"
+draft: false
+image: "image/BankingSynopsis-ComputerAwareness-MemoryAndMemoryUnits.png"
+defaultSummary: "Memory And Memory Units is an important Topic in the Subject of Computer Awareness for the Banking Synopsis course.  Please review it thoroughly and attempt all the associated testing material to perform well on the Banking Synopsis related Exams."
+menu:
+  BankingSynopsis-submenu:
+    identifier: "BankingSynopsis-ComputerAwareness-MemoryAndMemoryUnits"
+    name: "Memory And Memory Units"
+    url: "BankingSynopsis/ComputerAwareness/MemoryAndMemoryUnits"
+    weight: 1800
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="skill" id="01">
+	<h3 class="skill-heading">Main Memory</h3>
+	<p>
+		<span class="highlight01">Main Memory:</span>
+		is the second major subsystem in a computer. It consists of a collection of storage locations, each with a unique identifier, called an <span class="highlight01">address.</span> Data is transferred to and from memory in groups of bits called <span class="highlight01">words.</span> A word can be a group of 8 bits, 16 bits, 32 bits or 64 bits (and growing). If the word is 8 bits, it is referred to as a <span class="highlight01">byte.</span> The term "byte" is so common in computer science that sometimes a 16-bit word is referred to as a 2-byte word or a 32-bit word is referred to as a 4-byte word.<br />
+		<span class="highlight01">Address space</span>
+		<br />
+		To access a word in memory requires an identifier. Although programmers use a name to identify a word (or a collection of words), at the hardware level each word is identified by an address. The total number of uniquely identifiable locations in memory is called the <span class="highlight01">address space.</span> For example, a memory with 64 kilobytes and a word size of 1 byte has an address space that ranges from 0 to 65,535. <br />
+		<span class="highlight01"> Example 1:</span>
+		<br />
+		A computer has 32 MB (Megabytes) of memory. How many bits are needed to address any single byte in memory? <br />
+		<span class="highlight01"> Solution</span>
+		<br />
+		The Memory address space is 32 MB, or <span class=\"latex\" lang=\"latex\"> \(  2^{25} (2^5 \times 2^{20})  \) </span> This means that we need <span class=\"latex\" lang=\"latex\"> \(   log_2 2^{25}, \) </span> or 25 bits, to address each byte. <br />
+		<span class="highlight01"> Example 2:</span>
+		<br />
+		A computer has 128 MB of memory. Each word in this computer is eight bytes. How many bits are needed to address any single word in memory? <br />
+		<span class="highlight01"> Solution</span>
+		<br />
+		The memory has 128 MB, which means <span class=\"latex\" lang=\"latex\"> \(   2^{27}. \) </span> However, each word is right <span class=\"latex\" lang=\"latex\"> \(   2^3. \) </span> bytes, which means that we have <span class=\"latex\" lang=\"latex\"> \(   2^{24}  \) </span> words. The means that we need <span class=\"latex\" lang=\"latex\"> \(  log_2 2^{24},  \) </span> bits, to address each word. </p>
+	<section class="subskill">
+		<h4 class="skill-subheading">Memory Types</h4>
+		<p>Two main types of memory exist: <span class="highlight01"> RAM</span> and <span class="highlight01"> ROM.</span>
+		</p>
+		<div class="list-custom-block-list-ol spaced20 indented20">
+			<ol>
+				<li>
+					<p>
+						<span class="highlight01"> Random access memory (RAM):</span>
+					</p>
+
+					<ol>
+						<li>
+							<p>
+								Holds its data as long as the computer is switched on
+							</p>
+						</li>
+						<li>
+							<p>
+								All data in RAM is lost when the computer is switched off
+							</p>
+						</li>
+						<li>
+							<p>
+								Described as being volatile
+							</p>
+						</li>
+						<li>
+							<p>
+								It is direct access as it can be both written to or read from in any order
+							</p>
+						</li>
+					</ol>
+				</li>
+			</ol>
+		</div>
+		<p> Its purpose is to temporarily hold programs and data for processing. In modern computers it also holds the <span class="highlight01"> operating system.</span>
+		</p>
+	</section>
+	<section class="subskill">
+		<h4 class="skill-subheading">Types of Ram</h4>
+		<div class="list-custom-block-list-ol spaced20 indented20">
+			<ol>
+				<li>
+					<p>
+						<span class="highlight01"> Dynamic Random Access Memory (DRAM)</span>
+					</p>
+					<ol>
+						<li>
+							<p>
+								Contents are constantly refreshed 1000 times per second
+							</p>
+						</li>
+						<li>
+							<p>
+								Access time 60-70 nanoseconds
+							</p>
+						</li>
+					</ol>
+				</li>
+				<li>
+					<p>
+						<span class="highlight01"> Note :</span> a  <span class="highlight01"> nanosecond</span> is one <span class="highlight01"> billionth </span> of a second! </p>
+				</li>
+				<li>
+					<p>
+						<span class="highlight01"> Synchronous Dynamic Random Access Nlemory (SDRAM) </span>
+					</p>
+					<ol>
+						<li>
+							<p>
+								Quicker than DRAM
+							</p>
+						</li>
+						<li>
+							<p>
+								Access time less than 60 nanoseconds
+							</p>
+						</li>
+					</ol>
+				</li>
+				<li>
+					<p>
+						<span class="highlight01"> Direct Rambus Dynamic Random Access Memory (DRDRAM) </span>
+					</p>
+					<ol>
+						<li>
+							<p>
+								New type of RAM architecture
+							</p>
+						</li>
+						<li>
+							<p>
+								Access time 20 times faster than DRAM
+							</p>
+						</li>
+						<li>
+							<p>
+								More expensive
+							</p>
+						</li>
+					</ol>
+				</li>
+				<li>
+					<p>
+						<span class="highlight01"> Static Random Access Memory (SRAM) </span>
+					</p>
+					<ol>
+						<li>
+							<p>
+								Doesn,t need refreshing
+							</p>
+						</li>
+						<li>
+							<p>
+								Ratains contents as long as power applied to the chip
+							</p>
+						</li>
+						<li>
+							<p>
+								Access time around
+							</p>
+						</li>
+						<li>
+							<p>
+								Used for <span class="highlight01">cach</span> memory
+							</p>
+						</li>
+					</ol>
+				</li>
+				<li>
+					<p>
+						<span class="highlight01"> Cach memory</span>
+					</p>
+					<ol>
+						<li>
+							<p>
+								Small amount of memory
+							</p>
+						</li>
+						<li>
+							<p>
+								Temporary store for often used instructions
+							</p>
+						</li>
+						<li>
+							<p>
+								<span class="highlight01"> Level 1</span>cache is buit within the CPU (internal)
+							</p>
+						</li>
+						<li>
+							<p>
+								<span class="highlight01"> Level 2</span> cach may be on chip or nearby (external)
+							</p>
+						</li>
+						<li>
+							<p>
+								Faster for CPU to access than main memory
+							</p>
+						</li>
+					</ol>
+				</li>
+				<li>
+					<p>
+
+						<span class="highlight01"> Video Random Access memory</span>
+					</p>
+					<ol>
+						<li>
+							<p>
+								Holds data to be displayed on computer screen
+							</p>
+						</li>
+						<li>
+							<p>
+								Has two data paths allowing READ and WRITE to occur at the same time
+							</p>
+						</li>
+						<li>
+							<p>
+								A system amount of VRAM relates to the number of colours and resolution
+							</p>
+						</li>
+						<li>
+							<p>
+								A graphics card may have its own VRAM chip on board
+							</p>
+						</li>
+					</ol>
+				</li>
+				<li>
+					<p>
+						<span class="highlight01"> Virtual memory</span>
+					</p>
+					<ol>
+						<li>
+							<p>
+								Uses backing storage e.g. hard disk as a <span class="highlight01"> temporary location </span> for programs and data where insufficient RAM available
+							</p>
+						</li>
+						<li>
+							<p>
+								Swaps programs and data between the hard-disk and RAM as the CPU requires them for processing
+							</p>
+						</li>
+						<li>
+							<p>
+								A cheap method of running large or many programs on a computer system
+							</p>
+						</li>
+						<li>
+							<p>
+								Cost is speed: the CPU can access RAM in nanoseconds but hard-disk in <span class="highlight01">milliseconds</span> (Note: a millisecond is a <span class="highlight01"> thousandth</span> of a second)
+							</p>
+						</li>
+						<li>
+							<p>
+								Virtual memory is much slower tha RAM
+							</p>
+						</li>
+					</ol>
+				</li>
+			</ol>
+		</div>
+		<div class="list-custom-block-list-ol spaced20 indented20">
+			<ol>
+				<li>
+					<p>
+						<span class="highlight01"> Read only memory (ROM)</span>
+					</p>
+					<ol>
+						<li>
+							<p>
+								ROM holds programs and data <span class="highlight01"> permanently</span> even when computer is switched off
+							</p>
+						</li>
+						<li>
+							<p>
+								Data can be read by the CPU in any order so ROM is also <span class="highlight01"> direct access</span>
+							</p>
+						</li>
+						<li>
+							<p>
+								The contents of ROM are fixed at the time of manufacture
+							</p>
+						</li>
+						<li>
+							<p>
+								Stores a program called the <span class="highlight01"> bootstrap loader</span> that helps start up the computer
+							</p>
+						</li>
+						<li>
+							<p>
+								Access time of between 10 and 50 nanoseconds
+							</p>
+						</li>
+					</ol>
+				</li>
+			</ol>
+		</div>
+	</section>
+	<section class="subskill">
+		<h4 class="skill-subheading">Types of Rom</h4>
+		<div class="list-custom-block-list-ol spaced20 indented20">
+			<ol>
+				<li>
+					<p>
+						<span class="highlight01"> Proprammable Read Only Memory (PROM)</span>
+					</p>
+					<ol>
+						<li>
+							<p>
+								Empty of data when manufactured
+							</p>
+						</li>
+						<li>
+							<p>
+								May be permanently programmed by the user
+							</p>
+						</li>
+					</ol>
+				</li>
+				<li>
+					<p>
+						<span class="highlight01"> Erasable Proprammable Read Only Memory (EPROM)</span>
+					</p>
+					<ol>
+						<li>
+							<p>
+								Can be programmed, erased and reprogrammed
+							</p>
+						</li>
+						<li>
+							<p>
+								The EPROM chip has a small window on top allowing it to be erased by shining ultra-violet light on it
+							</p>
+						</li>
+						<li>
+							<p>
+								After reprogramming the window is covered to prevent new contents being erased
+							</p>
+						</li>
+						<li>
+							<p>
+								Access time is around 45 90 nanoseconds
+							</p>
+						</li>
+					</ol>
+				</li>
+				<li>
+					<p>
+						<span class="highlight01"> Electrically Erasable Programmable Read Only Memory (EEPROM)</span>
+					</p>
+					<ol>
+						<li>
+							<p>
+								Reprogrammed electrically <span class="highlight01"> without </span> using ultraviolet light
+							</p>
+						</li>
+						<li>
+							<p>
+								Must be removed from the computer and placed in a special machine to do this
+							</p>
+						</li>
+						<li>
+							<p>
+								Access times between 45 and 200 nanoseconds
+							</p>
+						</li>
+					</ol>
+				</li>
+				<li>
+					<p>
+						<span class="highlight01"> Flash ROM</span>
+					</p>
+					<ol>
+						<li>
+							<p>
+								Similar to EEPROM
+							</p>
+						</li>
+						<li>
+							<p>
+								However, can be reprogrammed while still in the computer
+							</p>
+						</li>
+						<li>
+							<p>
+								Easier to upgrade programs stored in Flash ROM
+							</p>
+						</li>
+						<li>
+							<p>
+								Used to store programs in devices e.g. modems
+							</p>
+						</li>
+						<li>
+							<p>
+								Access time is around 45 90 nanoseconds
+							</p>
+						</li>
+					</ol>
+				</li>
+				<li>
+					<p>
+						<span class="highlight01"> ROM cartridges</span>
+					</p>
+					<ol>
+						<li>
+							<p>
+								Commonly used in games machines
+							</p>
+						</li>
+						<li>
+							<p>
+								Prevents software from being easily copied
+							</p>
+						</li>
+					</ol>
+				</li>
+			</ol>
+		</div>
+		<p>
+			<span class="highlight01">  Connecting CPU and memory </span>
+			The CPU and memory are normally connected by three groups of connections, each called a <span class="highlight01">bus: </span> data bus, address bus and control bus. I/O devices cannot be connected directly to the buses that connect the CPU and memory, because the nature of I/O devices is different from the nature of CPU and memory. <br />
+			I/O devices are electromechanical, magnetic, or optical devices, whereas the CPU and memory are electronic device I/O devices also operate at a much slower speed than the CPU/memory. There is a need for some sort ofintermediarytohandie this difference. Input/output devices are therefore attached to the buses through input/output controllers or interfaces. There is one specific controller for each input/output device.</p>
+	</section>
+</section>

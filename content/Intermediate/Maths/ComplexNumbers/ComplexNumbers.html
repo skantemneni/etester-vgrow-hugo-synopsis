@@ -1,0 +1,360 @@
+---
+title: "Complex Numbers"
+layout: "default"
+isMath: true
+---
+<section class="skill" id="01">
+	<h3 class="skill-heading"> Complex Number - Definition</h3>
+	<p>A number of the form a + ib where <span class=\"latex\" lang=\"latex\"> \(  a, \ b \epsilon R  \) </span>, the set of real numbers, and <span class=\"latex\" lang=\"latex\"> \( i = \sqrt{-1}  \) </span> is called a <i>complex number</i>. A complex number can also be defined as an ordered pair of real numbers a and b, and may be written as (a, b), where the first number denotes the real part and the second number denotes the <i>imaginary part</i>. If z = a + ib, then the real part of z is denoted by Re(z) and the imaginary part of z is denoted by Im(z). </p>
+	<p> A complex number z is said to be purely real if Im(z)= 0 and is said to be purely imaginary if Re(z) = 0. Note that the complex number 0 = 0 + i0 is both purely real and <i>purely imaginary</i>. It is the only complex number with this property. </p>
+	<p>We denote the set of all complex numbers by C. That is, <span class=\"latex\" lang=\"latex\"> \(  C = \{ a + ib | a, \ b \epsilon R \}  \) </span>. Two complex numbers <span class=\"latex\" lang=\"latex\"> \(  z_1 = a_1 + i b_1  \) </span> and <span class=\"latex\" lang=\"latex\"> \(  z_2 = a_2 + ib_2  \) </span>, are said to be equal if <span class=\"latex\" lang=\"latex\"> \(  a_1 = a_2  \) </span> and <span class=\"latex\" lang=\"latex\"> \(  b_1 = b_2  \) </span>.
+	</p>
+</section>
+<section class="skill" id="02">
+	<h3 class="skill-heading"> Algebraic Operations With Complex Numbers</h3>
+	<div class="list-custom-block-list-ol spaced20 indented20">
+		<ol>
+			<li>
+				<p>
+					<span class="highlight01"> Addition </span> : <span class=\"latex\" lang=\"latex\"> \(  (a + ib) + (c + id) = (a + c) + i(b + d)  \) </span>
+				</p>
+			</li>
+			<li>
+				<p>
+					<span class="highlight01"> Subtraction </span> : <span class=\"latex\" lang=\"latex\"> \(  (a + ib) - (c + id) = (a - c) + i(b - d)  \) </span>
+				</p>
+			</li>
+			<li>
+				<p>
+					<span class="highlight01"> Multiplication </span> : <span class=\"latex\" lang=\"latex\"> \( (a + ib)(c + id) = (ac - bd) + i(ad + bc)  \) </span>
+				</p>
+			</li>
+			<li>
+				<p>
+					<span class="highlight01"> Reciprocal </span> : If at least one of a, b is non-zero then the reciprocal of a + bi is given by <br />
+					<span class=\"latex\" lang=\"latex\"> \(  \frac{1}{a + ib} = \frac{a - ib}{(a + ib)(a - ib)} = \frac{a}{a^2 + b^2} - i \frac{b}{a^2 + b^2}  \) </span>
+				</p>
+			</li>
+			<li>
+				<p>
+					<span class="highlight01"> Quotient </span> : If at least one of c, d is non-zero, then quotient of a + bi and c + di is given by <br />
+					<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \frac{a + bi}{c + di} = \frac{(a + ib)(c - id)}{(c + id) (c - id)} = \frac{(ac + bd) + i(bc - ad)}{c^2 + d^2}  \\\\[12pt]
+						= \frac{ac + bd}{c^2 + d^2} + i \frac{bc - ad}{c^2 + d^2}  \end{align}  \) </span>
+				</p>
+			</li>
+		</ol>
+	</div>
+</section>
+<section class="skill" id="03">
+	<h3 class="skill-heading"> Conjugate Of Complex Number</h3>
+	<p> Let z = a + ib be a complex number. We define conjugate of z, denoted by <span class=\"latex\" lang=\"latex\"> \(  \overline{z}  \) </span>. to be the complex number a - ib. That is, if z = a + ib, then <span class=\"latex\" lang=\"latex\"> \(  \overline{z}  \) </span> = a - ib. </p>
+	<h4 class="skill-subheading"> Properties of Conjugate of a Complex Number </h4>
+	<div class="list-custom-block-list-ol spaced20 indented20">
+		<ol>
+			<li>
+				<p>
+					<span class=\"latex\" lang=\"latex\"> \(  z_1 = z_2 \Leftrightarrow \overline{z_1} = \overline{z_2}  \) </span>
+				</p>
+			</li>
+			<li>
+				<p>
+					<span class=\"latex\" lang=\"latex\"> \(  \overline{ ( \overline{z} )} = z  \) </span>
+				</p>
+			</li>
+			<li>
+				<p>
+					<span class=\"latex\" lang=\"latex\"> \(  z + \overline{z} = 2 \ Re(z)  \) </span>
+				</p>
+			</li>
+			<li>
+				<p>
+					<span class=\"latex\" lang=\"latex\"> \(  z - \overline{z} = 2i \ Im(z)  \) </span>
+				</p>
+			</li>
+			<li>
+				<p>
+					<span class=\"latex\" lang=\"latex\"> \(  z = \overline{z} \Leftrightarrow z  \) </span> is purely real </p>
+			</li>
+			<li>
+				<p>
+					<span class=\"latex\" lang=\"latex\"> \(  z + \overline{z} = 0 \Leftrightarrow z  \) </span> is purely imaginary.  </p>
+			</li>
+			<li>
+				<p>
+					<span class=\"latex\" lang=\"latex\"> \(  z \overline{z} = [Re(z)]^2 + [Im(z)^2]  \) </span>
+				</p>
+			</li>
+			<li>
+				<p>
+					<span class=\"latex\" lang=\"latex\"> \(  \overline{z_1 + z_2} = \overline{z_1} + \overline{z_2}  \) </span>
+				</p>
+			</li>
+			<li>
+				<p>
+					<span class=\"latex\" lang=\"latex\"> \(  \overline{z_1 - z_2} = \overline{z_1} - \overline{z_2}  \) </span>
+				</p>
+			</li>
+			<li>
+				<p>
+					<span class=\"latex\" lang=\"latex\"> \(  \overline{z_1 z_2} = \overline{z_1} \overline{z_2}  \) </span>
+				</p>
+			</li>
+			<li>
+				<p>
+					<span class=\"latex\" lang=\"latex\"> \(   \overline{ \left ( \frac{z_1}{z_2} \right )} = \frac{ \overline{z_1}}{ \overline{z_2}}  \) </span> if <span class=\"latex\" lang=\"latex\"> \(  z_2 \neq 0  \) </span>
+				</p>
+			</li>
+			<li>
+				<p>  If <span class=\"latex\" lang=\"latex\"> \( P(z) = a_0 + a_1 z + a_2 z^2 + ..... + a_n z^n  \) </span>
+					<br />
+					where <span class=\"latex\" lang=\"latex\"> \(  a_0, \ a_1, \ ..... \ a_n  \) </span> and z are complex number, then <br />
+					<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \overline{P(z)} = \overline{a_0} + \overline{a_1} (\overline{z}) + \overline{a_2}(\overline{z})^2 + ....... + \overline{a_n}(\overline{z})^n = \overline{P}(\overline{z})  \\\\[12pt]
+						where \ \overline{P}(z) = \overline{a_0} + \overline{a_1}z + \overline{a_2}z^2 + .......+ \overline{a_n} z^n  \end{align}  \) </span>
+				</p>
+			</li>
+			<li>
+				<p> If <span class=\"latex\" lang=\"latex\"> \(  R(z) = \frac{P(z)}{Q(z)}  \) </span> where P(z) and Q(z) are polynomials in z, and <span class=\"latex\" lang=\"latex\"> \(  Q(z) \neq 0  \) </span>, then <br />
+					for instance <br />
+					<span class=\"latex\" lang=\"latex\"> \(  \overline{ \left ( \frac{z + 3z^2}{z - 1} \right ) } = \frac{\overline{z} + 3 \overline{z}^2}{\overline{z} - 1}  \) </span>
+				</p>
+			</li>
+			<li>
+				<p> If <span class=\"latex\" lang=\"latex\"> \(  \begin{align}  z = \left | \begin{array}{ccc} a_1 &amp; a_2 &amp; a_3  \\\\ b_1 &amp; b_2 &amp; b_3  \\\\ c_1 &amp; c_2 &amp; c_3 \end{array} \right |  \end{align}  \) </span>, then <span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \overline{z} = \left | \begin{array}{ccc} \overline{a_1} &amp; \overline{a_2} &amp; \overline{a_3}  \\\\ \overline{b_1} &amp; \overline{b_2} &amp; \overline{b_3}  \\\\ \overline{c_1} &amp; \overline{c_2} &amp; \overline{c_3} \end{array} \right |  \end{align}  \) </span> where <span class=\"latex\" lang=\"latex\"> \(  a_i, \ b_i, \ c_i(i = 1, \ 2, \ 3)  \) </span> are complex numbers.
+				</p>
+			</li>
+		</ol>
+	</div>
+</section>
+<section class="skill" id="04">
+	<h3 class="skill-heading"> Modulus Of Complex Number</h3>
+	<p>Let z = a + ib be a complex number. We define the modulus or the absolute value of z to be the real number <span class=\"latex\" lang=\"latex\"> \(  \sqrt{a^2 + b^2}  \) </span> and we denote it by |z|. <br />
+		Note that <span class=\"latex\" lang=\"latex\"> \(  |z| \geq 0 \forall z \epsilon C  \) </span>
+	</p>
+	<section class="subskill">
+		<h4 class="skill-subheading"> Properties of Modulus </h4>
+		<p>If z is a complex number, then </p>
+		<div class="list-custom-block-list-ol spaced20 indented20">
+			<ol>
+				<li>
+					<p>
+						<span class=\"latex\" lang=\"latex\"> \(  |z| = 0 \Leftrightarrow z = 0  \) </span>
+					</p>
+				</li>
+				<li>
+					<p>
+						<span class=\"latex\" lang=\"latex\"> \(  |z| = | \overline{z} | = |— z| = | - \overline{z} |  \) </span>
+					</p>
+				</li>
+				<li>
+					<p>
+						<span class=\"latex\" lang=\"latex\"> \(  -|z| \leq Re(z) \leq |z|  \) </span>
+					</p>
+				</li>
+				<li>
+					<p>
+						<span class=\"latex\" lang=\"latex\"> \( 	-|z| \leq Im(z) \leq |z|  \) </span>
+					</p>
+				</li>
+				<li>
+					<p>
+						<span class=\"latex\" lang=\"latex\"> \( z \overline{z} = |z|^2  \) </span>
+					</p>
+				</li>
+				<p>If <span class=\"latex\" lang=\"latex\"> \(  z_1, \ z_2  \) </span> are two complex numbers, then </p>
+				<li>
+					<p>
+						<span class=\"latex\" lang=\"latex\"> \(  |z_1 z_2| = |z_1| |z_2|  \) </span>
+					</p>
+				</li>
+				<li>
+					<p>
+						<span class=\"latex\" lang=\"latex\"> \(  \left | \frac{z_1}{z_2} \right | = \frac{|z_1|}{|z_2|}, \ if \ z_2 \neq 0  \) </span>
+					</p>
+				</li>
+				<li>
+					<p>
+						<span class=\"latex\" lang=\"latex\"> \(  |z_1 + z_2|^2 = |z_1|^2 + |z_2|^2 + \overline{z_1}z_2 + z_1 \overline{z_2}  \) </span>
+						<br />
+						<span class=\"latex\" lang=\"latex\"> \(  |z_1|^2 + |z_2|^2 + 2Re(z_1 \overline{z_2})  \) </span>
+					</p>
+				</li>
+				<li>
+					<p>
+						<span class=\"latex\" lang=\"latex\"> \(  |z_1 - z_2|^2 = |z_1|^2 + |z_2|^2 - \overline{z_1}z_2 - z_1 \overline{z_2}  \) </span>
+						<br />
+						<span class=\"latex\" lang=\"latex\"> \(  |z_1|^2 + |z_2|^2 - 2Re(z_1 \overline{z_2})  \) </span>
+					</p>
+				</li>
+				<li>
+					<p>
+						<span class=\"latex\" lang=\"latex\"> \( | z_1 + z_2 |^2 + | z_1 - z_2 |^2 = 2(|z_1|^2 + |z_2|^2)  \) </span>
+					</p>
+				</li>
+				<li>
+					<p> If a and b are real numbers and <span class=\"latex\" lang=\"latex\"> \(  z_1, \ z_2  \) </span>, are complex numbers, then <br />
+						<span class=\"latex\" lang=\"latex\"> \(  |az_1 + bz_2|^2 + |bz_1 - az_2|^2 = (a^2 + b^2)(|z_1|^2 + |z_2|^2)  \) </span>
+					</p>
+				</li>
+				<li>
+					<p> If <span class=\"latex\" lang=\"latex\"> \(  z_1, \ z_2 \neq 0  \) </span>,then <span class=\"latex\" lang=\"latex\"> \(  |z_1 + z_2|^2 = |z_1|^2 + |z_2|^2 \Leftrightarrow \frac{z_1}{z_2}  \) </span> is purely imaginary. </p>
+				</li>
+				<li>
+					<p>
+						<span class=\"latex\" lang=\"latex\"> \(  |z_1 - z_2| \leq |z_1| + |z_2|  \) </span>
+					</p>
+				</li>
+				<li>
+					<p>
+						<span class=\"latex\" lang=\"latex\"> \(  ||z_1| - |z_2|| \leq |z_1| + |z_2|  \) </span>
+					</p>
+				</li>
+				<li>
+					<p>
+						<span class=\"latex\" lang=\"latex\"> \(  |z_1 - z_2| \geq ||z_1| - |z_2||  \) </span>
+					</p>
+				</li>
+			</ol>
+		</div>
+	</section>
+</section>
+<section class="skill" id="05">
+	<h3 class="skill-heading"> Polar Form Of A Complex Number</h3>
+	<p> Let z be a non zero complex number, then we can write <br />
+		<span class=\"latex\" lang=\"latex\"> \(  z = r(cos \theta + i sin \theta)  \) </span>
+		<br />
+		where r = |z| and <span class=\"latex\" lang=\"latex\"> \(  \theta = arg(z).  \) </span>
+		<br />
+		for instance, <br />
+		<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  -1 + i = \sqrt{2} \left ( cos \frac{3 \pi}{4} + i sin \frac{3 \pi}{4} \right )  \\\\[12pt]
+			and \ -1 - i = \sqrt{2} \left \{ cos \left ( - \frac{3 \pi}{4} \right ) + sin \left ( - \frac{3 \pi}{4} \right ) \right \}  \end{align}  \) </span>
+		<br />
+		In fact, if <span class=\"latex\" lang=\"latex\"> \(  z = r(cos \ \theta + i sin \ \theta)  \) </span> then z is also given by <span class=\"latex\" lang=\"latex\"> \(  z = r [ cos(2 k \pi + \theta) + i sin(2 k \pi + \theta)]  \) </span>
+		<br />
+		where k is any integer.
+	</p>
+	<section class="subskill">
+		<h4 class="skill-subheading">Euler's Formula </h4>
+		<p>The complex number <span class=\"latex\" lang=\"latex\"> \(  cos \ \theta + i sin \ \theta  \) </span> is denoted by <span class=\"latex\" lang=\"latex\"> \(  e^{i \theta}  \) </span> or <span class=\"latex\" lang=\"latex\"> \(  cis \ \theta  \) </span> That is <br />
+			<span class=\"latex\" lang=\"latex\"> \(  e^{i \theta} = cis \ \theta = cos \theta + i sin \theta  \) </span>
+		</p>
+	</section>
+</section>  
+<section class="solved-examples" id="examples">
+	<h3 class="solved-examples-heading">Solved examples</h3>
+	<section class="solved-example"> 
+		<h4 class="solved-examples-question">Example 1:</h4>
+		<p>If 4x + i(3x - y) = 3 + i (-6), where x and y are real numbers, then find the values of x and y.<br />
+			<span class="highlight01"> Solution </span>
+			<br />
+			We have <br />
+			4x + i(3x - y) = 3 + i(-6) ... (1) <br />
+			Equating the real and the imaginary parts of (1), we get <br />
+			4x = 3, 3x - y = - 6, <br />
+			which, on solving simultaneously, give <span class=\"latex\" lang=\"latex\"> \(  x = \frac{3}{4} \ and \ y = \frac{33}{4}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 2:</h4>
+		<p>Express <span class=\"latex\" lang=\"latex\"> \(  (5 - 3i)^3  \) </span> in the form a + ib.<br />
+			<span class="highlight01"> Solution </span>
+			<br />
+			We have, <span class=\"latex\" lang=\"latex\"> \(  (5 - 3i)^3 = 5^3 - 3 \times 5^2 \times (3i) + 3 \times 5(3i)^2 - (3i)^3  \) </span>
+			<br />
+			= 125 - 225i - 135 + 27i = - 10 - 198i.</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 3:</h4>
+		<p>Find the multiplicative inverse of 2 - 3i.<br />
+			<span class="highlight01"> Solution </span>
+			<br />
+			Let z = 2 - 3i <br />
+			Then <span class=\"latex\" lang=\"latex\"> \(  \overline{z} = 2 + 3i  \) </span> aand <span class=\"latex\" lang=\"latex\"> \(  |z|^2 = 2^2 + (-3)^2 = 13  \) </span>
+			<br />
+			Therefore, the multiplicative inverse of 2 - 3i is given by <br />
+			<span class=\"latex\" lang=\"latex\"> \(   z^{-1} =  \frac{\overline{z}}{|z|^2} = \frac{2 + 3i}{13} = \frac{2}{13} + \frac{3}{13}i  \) </span>
+			<br />
+			The above working can be reproduced in the following manner also, <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  z^{-1} = \frac{1}{2 - 3i} = \frac{2 + 3i}{(2 - 3i)(2 + 3i)}  \\\\[3pt]
+				= \frac{2 + 3i}{2^2 - (3i)^2} = \frac{2 + 3i}{13} = \frac{2}{13} + \frac{3}{13} i  \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 4:</h4>
+		<p>Represent the complex number <span class=\"latex\" lang=\"latex\"> \(  z = 1 + i \sqrt{3}  \) </span> in the polar form<br />
+			<span class="highlight01"> Solution </span>
+			<br />
+		</p>
+		<div class="synopsis-image"> 
+			<img src="103503006_image-1.png" alt="image1" class="default-synopsis-medium-image" />
+		 </div>
+		<p>Let <span class=\"latex\" lang=\"latex\"> \(  1 = r \ cos \ \theta, \ i \sqrt{3} = r \ sin \ \theta  \) </span>
+			<br />
+			By squaring and adding, we get <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  r^2(cos^2 \ \theta + sin^2 \theta) = 4  \\\\[3pt]
+				i.e., \ r = \sqrt{4} = (conventionally, \ r &gt; 0 )  \\\\[3pt]
+				Therefore, \ cos \ \theta = \frac{1}{2}, \ sin \ \theta = \frac{\sqrt{3}}{2}, \ which \ gives \ \theta = \frac{\pi}{3}  \\\\[3pt]
+				\text{Therefore, required polar form is} \ z = 2 \left ( cos \frac{\pi}{3} + i sin \ \frac{\pi}{3} \right )  \\\\[3pt]
+				\text{The complex number} \ z = 1 + 1 \sqrt{3} \ \text{is represented as shown in Fig}  \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 5:</h4>
+		<p>Convert the complex number <span class=\"latex\" lang=\"latex\"> \(  \frac{-16}{1 + i \sqrt{3}}  \) </span> into polar form.<br />
+			<span class="highlight01"> Solution </span>
+			<br />
+		</p>
+		<div class="synopsis-image"> 
+			<img src="103503006_image-2.png" alt="image2" class="default-synopsis-medium-image" />
+		 </div>
+		<p>The given complex number <span class=\"latex\" lang=\"latex\"> \(  \frac{-16}{1 + i \sqrt{3}} = \frac{-16}{1 + i \sqrt{3}} \times \frac{1 - i \sqrt{3}}{1 - i \sqrt{3}} \) </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \frac{-16(1 - i \sqrt{3})}{1 - (i \sqrt{3})^2}  \\\\[3pt]
+				= \frac{-16(1 - i \sqrt{3})}{1 + 3}  \\\\[3pt]
+				= -4(1 - i \sqrt{3}) = - 4 + i 4 \sqrt{3}  \\\\[3pt]
+				Let \ -4 = r \ cos \ \theta, \ 4 \sqrt{3} = r \ sin \ \theta  \\\\[3pt]
+				\text{By squaring and adding, we get}  \\\\[3pt]
+				16 + 48 = r^2(cos^2 \ \theta + sin^2 \ \theta)  \\\\[3pt]
+				which \ gives \ r^2 = 64, \ i.e. \ r = 8  \\\\[3pt]
+				Hence \ cos \ \theta = - \frac{1}{2}, \ sin \ \theta = = \frac{\sqrt{3}}{2}  \\\\[3pt]
+				= \theta = \pi - \frac{\pi}{3} = \frac{2 \pi}{3}  \\\\[3pt]
+				\text{Thus, the required polar form is} \ 8 \left ( cos \frac{2 \pi}{3} + i \ sin \frac{2 \pi}{3} \right )  \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 6:</h4>
+		<p>Express the following in the form a + ib <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \frac{5 + \sqrt{2} i}{1 - \sqrt{2} i}  \) </span>
+			<br />
+			<span class="highlight01"> Solution </span>
+			<br />
+			We have, <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \frac{5 + \sqrt{2} i}{1 - \sqrt{2} i} = \frac{5 + \sqrt{2} i}{1 - \sqrt{2} i} \times \frac{1 + \sqrt{2} i}{1 + \sqrt{2} i}  \\\\[3pt]
+				= \frac{5 + 5 \sqrt{2} i + \sqrt{2}i - 1}{1 - ( \sqrt{2} i)^2 }  \\\\[3pt]
+				= \frac{3 + 6 \sqrt{2} i}{1 + 2}  \\\\[3pt]
+				= \frac{3(1 + 2 \sqrt{2} i)}{3} = 1 + 2 \sqrt{2}i  \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 7:</h4>
+		<p>Express the following in the form a + ib <br />
+			<span class=\"latex\" lang=\"latex\"> \(  i^{-35}  \) </span>
+			<br />
+			<span class="highlight01"> Solution </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  i^{-35} = \frac{1}{i^{35}}  \\\\[3pt]
+				= \frac{1}{i^{35}} = \frac{1}{(i^2)^{17} i} = \frac{1}{-i} \times \frac{i}{i}  \\\\[3pt]
+				= \frac{i}{- i^2} = i  \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 8:</h4>
+		<p>Express <span class=\"latex\" lang=\"latex\"> \(  (-\sqrt{3} + \sqrt{-2})( 2 \sqrt{3} - i)  \) </span> in the form of a + ib<br />
+			<span class="highlight01"> Solution </span>
+			<br />
+			We have, <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  (-\sqrt{3} + \sqrt{-2})( 2 \sqrt{3} - i)  \\\\[3pt]
+				= (-\sqrt{3} + \sqrt{2} i )( 2 \sqrt{3} - i)  \\\\[3pt]
+				= -6 \sqrt{3} i + 2 \sqrt{6} i - \sqrt{2} i^2 = (-6 + \sqrt{2}) + \sqrt{3} (1 + 2 \sqrt{2}) i  \end{align}  \) </span>
+		</p>
+	</section>
+</section> 

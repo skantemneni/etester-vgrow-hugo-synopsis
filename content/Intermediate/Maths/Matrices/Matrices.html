@@ -1,0 +1,634 @@
+---
+title: "Matrices"
+layout: "default"
+isMath: true
+---
+<section class="skill" id="01">
+	<h3 class="skill-heading">The Algebra Of Matrices</h3>
+	<p>A matrix is a rectangular array of numbers. The numbers may be real or complex. It may be represented as</p>
+	<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \left( \begin{array}{cccc} a_{11} &amp; a_{12} &amp; ..... &amp; a_{1n}  \\\\ a_{21} &amp; a_{22} &amp; ...... &amp; a_{2n}  \\\\ . &amp;  &amp;  &amp;   \\\\  . &amp;  &amp;  &amp;   \\\\  . &amp;  &amp;  &amp;   \\\\ a_{n1} &amp; a_{n2} &amp; ..... &amp; a_{nn} \end{array} \right )  \end{align}  \) </span>
+	<br />
+	<p>or as <span class=\"latex\" lang=\"latex\"> \(  A = (a_ij)_{m \times n} \) </span>
+		<br />A matrix with m rows and n columns is called as <span class=\"latex\" lang=\"latex\"> \(  m \times n \) </span> matrix and the size (or dimension) of this matrix is said be <span class=\"latex\" lang=\"latex\"> \(  m \times n \) </span>
+	</p>
+	<p>Two matrices are said to be equal provided they are of the same size and corresponding elements are equal. For example</p>
+	<span class=\"latex\" lang=\"latex\"> \(  \begin{align} \left [ \begin{array}{ccc} a &amp; b &amp; c  \\\\ d &amp; e &amp; f \end {array} \right] = \left [ \begin{array}{ccc} -1 &amp; 2 &amp; 5  \\\\ 7 &amp; 3 &amp; 1 \end{array} \right] \end{align}  \) </span>
+	<br />
+	<p>if and only if<br />
+		a = -1, b = 2, c = 5, d = 7, e = 3 and f = 1
+	</p>
+	<section class="subskill">
+		<h4 class="skill-subheading">Definitions</h4>
+		<p>A matrix <span class=\"latex\" lang=\"latex\"> \( A = (a_{ij})_{m \times n}  \) </span> is said to be</p>
+		<table class="u-full-width">
+			<tr>
+				<td align="center">(i)</td>
+				<td align="center">square matrix</td>
+				<td align="center">if m = n</td>
+			</tr>
+			<tr>
+				<td align="center">(ii)</td>
+				<td align="center">row matrix</td>
+				<td align="center">if m = 1</td>
+			</tr>
+			<tr>
+				<td align="center">(iii)</td>
+				<td align="center">column matrix</td>
+				<td align="center">if n = 1</td>
+			</tr>
+			<tr>
+				<td align="center">(iv)</td>
+				<td align="center">null or zero matrix</td>
+				<td align="center">if <span class=\"latex\" lang=\"latex\"> \(  a_{ij} = 0 \ \forall \) </span> i and j</td>
+			</tr>
+			<tr>
+				<td align="center">(v)</td>
+				<td align="center">diagonal matrix</td>
+				<td align="center">if m = n and <span class=\"latex\" lang=\"latex\"> \(  a_{ij} = 0 \ \forall \ i \neq j \) </span>
+				</td>
+			</tr>
+			<tr>
+				<td align="center">(vi)</td>
+				<td align="center">scalar matrix</td>
+				<td align="center">if m = n and <span class=\"latex\" lang=\"latex\"> \(  a_{ij} = 0 \ \forall \ i \neq j \) </span> and <span class=\"latex\" lang=\"latex\"> \(  a_{ii} = \lambda \ \forall \ i \) </span>
+				</td>
+			</tr>
+			<tr>
+				<td align="center">(vii)</td>
+				<td align="center">unit or identity matrix</td>
+				<td align="center">if m = n and <span class=\"latex\" lang=\"latex\"> \(  a_{ij} = 0 \ \forall \ i \neq j \) </span> and <span class=\"latex\" lang=\"latex\"> \(  a_{ii} = 1 \ \forall \ i \) </span>
+				</td>
+			</tr>
+			<tr>
+				<td align="center">(viii)</td>
+				<td align="center">upper (lower) triangular matrix</td>
+				<td align="center">if m = n and <span class=\"latex\" lang=\"latex\"> \(  a_{ij} = 0 \ \forall \ i &amp;gt; j \) </span> and <span class=\"latex\" lang=\"latex\"> \(  (a_{ij} = 0 \ \forall \  i &amp;lt; j)  \) </span>
+				</td>
+			</tr>
+		</table>
+		<p>A matrix is said to be triangular if it is either lower or upper triangular matrix </p>
+	</section>
+</section>
+<section class="skill" id="02">
+	<h3 class="skill-heading">Addition of Matrices</h3>
+	<p>Two matrices A and B can be added if and only if they are of the same size. Matrices of the same size are added term by term. For instance</p>
+	<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \left [ \begin{array}{ccc} a &amp; b &amp; c  \\\\ d &amp; e &amp; f \end{array}\right] + \left [ \begin{array}{ccc} p &amp; q &amp; r  \\\\ s &amp; t &amp; u \end{array}\right] = \left [ \begin{array}{ccc} a + p &amp; b + q &amp; c + r  \\\\ d + s &amp; e + t &amp; f + u \end{array}\right]  \end{align}  \) </span>
+</section>
+<section class="skill" id="03">
+	<h3 class="skill-heading">Scalar Multiplication</h3>
+	<p>If A is a matrix and a is a scalar, <span class=\"latex\" lang=\"latex\"> \(  \alpha  \) </span> then it is defined as the matrix obtained by multiplying every element of A by <span class=\"latex\" lang=\"latex\"> \(  \alpha  \) </span>. For example</p>
+	<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  3 \left [ \begin{array}{ccc} 1 &amp; -2 &amp; 5  \\\\ 7 &amp; 8 &amp; 1 \end{array}\right]  = \left [ \begin{array}{ccc} 3 &amp; -6 &amp; 15  \\\\ 21 &amp; 24 &amp; 3 \end{array}\right]  \end{align}  \) </span>
+	<section class="subskill">
+		<h4 class="skill-subheading">Properties of Scalar Multiplication</h4> <p>If A and B are two matrices of the same size, and <span class=\"latex\" lang=\"latex\"> \(  \alpha, \ \beta  \) </span> are two scalars, then</p>
+		<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  ( \alpha + \beta) A = \alpha A + \beta A  \\\\[3pt]
+			( \alpha \beta) A = \alpha ( \beta A)  \\\\[3pt]
+			\alpha (A + B) = \alpha A + \alpha B \end{align}  \) </span>
+	</section>
+</section>
+<section class="skill" id="04">
+	<h3 class="skill-heading">Matrix Multiplication</h3>
+	<p>Let <span class=\"latex\" lang=\"latex\"> \(  A = (a_{ij})_{m \times n}  \) </span> and <span class=\"latex\" lang=\"latex\"> \(  B = (b_{ij})_{r \times s}  \) </span> be two matrices. We say that A and B are comparable for the product AB if n = r, that is, if the number of columns of A is equal to the number of rows of B.
+	</p>
+	<section class="subskill">
+		<h4 class="skill-subheading">Definition</h4>
+		<p>
+			<span class=\"latex\" lang=\"latex\"> \( A = (a_{ij})_{m \times n}  \) </span> and <span class=\"latex\" lang=\"latex\"> \(  B = (b_{ij})_{r \times s}  \) </span> be two matrices. Their product AB is matrix <span class=\"latex\" lang=\"latex\"> \(  C = (c_{ij})_{m \times p}  \) </span> such that <span class=\"latex\" lang=\"latex\"> \(  c_{ij} = a_{i1} b_{1j} + a_{i2} b_{2j} + a_{i3} b_{3j} +......+a_{in} b_{nj}  \) </span> for <span class=\"latex\" lang=\"latex\"> \( l \leq i \leq m, \ l \leq j \leq p.  \) </span> Note that <span class=\"latex\" lang=\"latex\"> \( c_{ij},  \) </span> then (i, j) th element of AB, has been obtained by multiplying the <span class=\"latex\" lang=\"latex\"> \( i^{th} \) </span> row of A, namely <span class=\"latex\" lang=\"latex\"> \(  (a_{i1} \ a_{i2} \ a_{i3}.......a_{in})  \) </span>
+		</p>
+		<p> with the jth column of B, namely <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align} \left( \begin{array}{c} b_{1j}  \\\\ b_{2j}  \\\\ b_{3j}  \\\\ .  \\\\ .  \\\\ .  \\\\ b_{nj} \end{array}\right) = (b_{1j} \ b_{2j} \ ..... \ b_{nj}) \end{align}  \) </span>
+			<br />
+			where A' denotes the transpose of the matrix A.
+		</p>
+	</section>
+	<section class="subskill">
+		<h4 class="skill-subheading">Properties of Matrix Multiplication</h4>
+		<p>If <span class=\"latex\" lang=\"latex\"> \(  A = (a_{ij})_{m \times n}, \ B = (b_{ij})_{n \times p} \ and \ C = (c_{ij})_{p \times q}  \) </span> then
+		</p>
+		<div class="list-custom-block-list-ol spaced20 indented20">
+			<ol>
+				<li>
+					<p>(AB)C = A(BC)	[Associative law]</p>
+				</li>
+				<li>
+					<p>
+						<span class=\"latex\" lang=\"latex\"> \( AI_{n} = I_{m}A = A  \) </span>
+					</p>
+				</li>
+				<li>
+					<p>AB may not be equal to BA.</p>
+				</li>
+				<li>
+					<p>k(AB) = (kA)B = A(kB) where k is a scalar.</p>
+				</li>
+				<li>
+					<p>If A is a square matrix, then <br />
+						<span class=\"latex\" lang=\"latex\"> \(  \begin{align} A^{m} A^{n} = A^{m + n} \forall \ m, \ n \epsilon N  \\\\[3pt]
+							(A^{m})^{n} = A^{mn} \ \forall \ m \epsilon \ N. \end{align}  \) </span>
+					</p>
+				</li>
+				<li>
+					<p>If A is an invertible matrix then <br />
+						<span class=\"latex\" lang=\"latex\"> \(  \begin{align} (A^{-1} B A)^m = A^{-1} B^m A \ and  \\\\[3pt]
+							A^{-m} = (A^{-1})^m \ \forall \ m \epsilon N \end{align}  \) </span>
+					</p>
+				</li>
+			</ol>
+		</div>
+	</section>
+</section>
+<section class="skill" id="05">
+	<h3 class="skill-heading">Transpose of a matrix</h3>
+	<section class="subskill">
+		<h4 class="skill-subheading">Definition</h4> 
+		<p>Let <span class=\"latex\" lang=\"latex\"> \(  A = (a_{ij})_{m \times n}  \) </span> be a matrix. The transpose of A, denoted by A' or by <span class=\"latex\" lang=\"latex\"> \( A^t \) </span> is the matrix <span class=\"latex\" lang=\"latex\"> \(  A' = (a_{ij})_{n \times m}  \) </span> where <span class=\"latex\" lang=\"latex\"> \(  b_{ij} = a_{ij} \ \forall  \) </span> i and j <br />
+			By <span class=\"latex\" lang=\"latex\"> \(  \overline{A}  \) </span> we mean a matrix  <span class=\"latex\" lang=\"latex\"> \(  B = (b_{ij})_{m \times n}  \) </span> where <span class=\"latex\" lang=\"latex\"> \(  b_{ij} = \overline{a}_{ij} \ where \ \overline{a}  \) </span> denotes conjugate of a and by  <span class=\"latex\" lang=\"latex\"> \(  A^{*}  \) </span> we mean <br />
+			<span class=\"latex\" lang=\"latex\"> \(  A^{*} = ( \overline{A})' = ( \overline{A}')  \) </span>
+		</p>
+	</section>
+	<section class="subskill">
+		<h4 class="skill-subheading">Properties of transpose of matrix</h4>
+		<div class="list-custom-block-list-ol spaced20 indented20">
+			<ol>
+				<li>
+					<p>
+						<span class=\"latex\" lang=\"latex\"> \( (A + B)' = A' + B' \) </span>
+					</p>
+				</li>
+				<li>
+					<p>
+						<span class=\"latex\" lang=\"latex\"> \( (kA') = kA' \) </span> where k is a scalar.</p>
+				</li>
+				<li>
+					<p>
+						<span class=\"latex\" lang=\"latex\"> \( (AB)' = B' A' \) </span> [Reversal law]</p>
+				</li>
+				<li>
+					<p>If A is an invertible matrix, then<span class=\"latex\" lang=\"latex\"> \( (A^{-1})' = (A')^{-1} \) </span>
+					</p>
+				</li>
+			</ol>
+		</div>
+	</section>
+</section>
+<section class="skill" id="06">
+	<h3 class="skill-heading">Adjoint and inverse of a matrix</h3>
+	<p>Let <span class=\"latex\" lang=\"latex\"> \(  A = (a_{ij})_{n \times n}  \) </span> be a square matrix. The adjoint of A is defined to be the matrix <span class=\"latex\" lang=\"latex\"> \(  adj A = (b_{ij})_{n \times n}  \) </span> where <br />
+		<span class=\"latex\" lang=\"latex\"> \(  b_{ij} = A_{ji}  \) </span>
+		<br />
+		where <span class=\"latex\" lang=\"latex\"> \(  A_{ji}  \) </span> is the cofactor of (j, i)th element of A. </p>
+	<section class="subskill">
+		<h4 class="skill-subheading">Properties of Adjoint</h4>
+		<div class="list-custom-block-list-ol spaced20 indented20">
+			<ol>
+				<li>
+					<p>A(adj A) = (adj A)A <span class=\"latex\" lang=\"latex\"> \(  = |A| I_{n} \) </span>
+					</p>
+				</li>
+				<li>
+					<p>adj(kA)<span class=\"latex\" lang=\"latex\"> \(  = k^{n - 1} \ (adj A) \) </span>
+					</p>
+				</li>
+				<li>
+					<p>adj(AB) = (adj B) (adj A)</p>
+				</li>
+			</ol>
+		</div>
+	</section>
+	<section class="subskill">
+		<h4 class="skill-subheading">Definition Inverse of Square Matrix</h4> <p>A square matrix A is said to be singular if |A| = 0 and non - singular if <span class=\"latex\" lang=\"latex\"> \(  |A| \neq 0  \) </span>
+			<br />
+			Inverse of a square matrix <span class=\"latex\" lang=\"latex\"> \(  A = (a_{ij})_{m \times n}  \) </span> is the matrix <span class=\"latex\" lang=\"latex\"> \(  B = (b_{ij})_{n \times n}  \) </span> such that <span class=\"latex\" lang=\"latex\"> \(  AB = BA = I_n  \) </span>
+			<br />
+			In fact <span class=\"latex\" lang=\"latex\"> \(  A^{-1} = \frac{1}{|A|} (adj A) \) </span>
+		</p>
+	</section>
+	<section class="subskill">
+		<h4 class="skill-subheading">Properties of inverse Square Matrix</h4>
+		<div class="list-custom-block-list-ol spaced20 indented20">
+			<ol>
+				<li>
+					<p>Inverse of a matrix if it exists is unique</p>
+				</li>
+				<li>
+					<p>
+						<span class=\"latex\" lang=\"latex\"> \( AA^{-1} = A^{-1} A = I_n  \) </span>
+					</p>
+				</li>
+				<li>
+					<p>
+						<span class=\"latex\" lang=\"latex\"> \( (A^{-1})^{-1} = A. \) </span>
+					</p>
+				</li>
+				<li>
+					<p>
+						<span class=\"latex\" lang=\"latex\"> \( (k A^{-1})^{-1} = k^{-1} A^{-1} \ if \ k \neq 0. \) </span>
+					</p>
+				</li>
+				<li>
+					<p>
+						<span class=\"latex\" lang=\"latex\"> \( (AB)^{-1} = B^{-1} A^{-1} \) </span> [Reversal law]</p>
+				</li>
+				<li>
+					<p> For matrix <br />
+						<span class=\"latex\" lang=\"latex\"> \(  \begin{align} A = \left( \begin {array}{cc} a &amp; b  \\\\ c &amp; d \end {array} \right)  \\\\[3pt]
+							adj \ A =  \left( \begin {array}{cc} d &amp; -b  \\\\ -c &amp; a \end {array} \right)  \\\\[3pt]
+							and \ A^{-1} = \frac{1}{ad - bc}  \left( \begin {array}{cc} d &amp; -b  \\\\ -c &amp; a \end {array} \right) \ if \ ad - bc \neq 0  \end{align}  \) </span>
+					</p>
+				</li>
+				<li>
+					<p> If A is a triangular matrix, then <span class=\"latex\" lang=\"latex\"> \( A^{-1}  \) </span> if it exists is a triangular matrix of the same kind <br />
+						In fact if <span class=\"latex\" lang=\"latex\"> \(  \begin{align} A = \left( \begin{array}{ccc} a_{11} &amp; 0 &amp; 0  \\\\ a_{21} &amp; a_{22} &amp; 0  \\\\ a_{31} &amp; a_{32} &amp; a_{33} \end {array}\right) \ and \ a_{11} a_{22} a_{33} \neq 0, \end{align}  \) </span>
+						<br />
+						then <br />
+						<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  A^{-1} = \frac{1}{a_{11} a_{22} a_{33}} \left( \begin{array}{ccc} a_{11} &amp; 0 &amp; 0  \\\\ - a_{21} a_{33} &amp; a_{33} a_{11} &amp; 0  \\\\ A_{13} &amp; - a_{32} a_{11} &amp; a_{11} a_{22} \end {array}\right) \end{align}  \) </span>
+						<br />
+						where <span class=\"latex\" lang=\"latex\"> \( A_{13} =  \) </span> cofactor of (1, 3)th element in A i.e <br />
+						<span class=\"latex\" lang=\"latex\"> \(  \begin{align} A_{13} = \left| \begin{array}{cc} a_{21}  &amp; a_{22}  \\\\ a_{31} &amp; a_{32} \end {array}\right| \end{align}  \) </span>
+					</p>
+				</li>
+				<li>
+					<p> If <span class=\"latex\" lang=\"latex\"> \(  A = diag ( \lambda_1, \ \lambda_2, .........\ \lambda_n) \ then \ A^{-1} \ exists \ if \ \lambda_i \neq 0 \ \forall \ i \ and  \) </span>
+						<br />
+						<span class=\"latex\" lang=\"latex\"> \(  \begin{align} A^{-1} = diag( \lambda_1^{-1}, \ \lambda_2^{-1}, \ .... \ \lambda_n^{-1})  \\\\[3pt]
+							Also, A^{m} = diag( \lambda_1^{m}, \ \lambda_2^{m}, \ .... \ \lambda_n^{m}) \ if \ m \epsilon N \end{align}  \) </span>
+					</p>
+				</li>
+			</ol>
+		</div>
+	</section>
+</section>
+<section class="skill" id="07">
+	<h3 class="skill-heading">Rank Of a Matrix</h3>
+	<p>If <span class=\"latex\" lang=\"latex\"> \(  A = (a_{ij})_{m \times n}  \) </span> is a matrix, and B is its submatrix of order r, then |B|, the determinant is called as r-rowed minor of A. </p>
+	<section class="subskill">
+		<h4 class="skill-subheading">Definition</h4>
+		<p>Let <span class=\"latex\" lang=\"latex\"> \(  A = (a_{ij})_{m \times n}  \) </span> be a matrix. A positive integer r is said to be of rank of A if
+		</p>
+		<div class="list-custom-block-list-ol spaced20 indented20">
+			<ol>
+				<li>
+					<p>A possesses at least one r-rowed minor which is different from zero; and</p>
+				</li>
+				<li>
+					<p>every (r + 1) rowed minor of A is zero.<br />
+						From ii, it automatically follows that all minors of higher order are zeros.
+					</p>
+				</li>
+			</ol>
+		</div>
+	</section>
+	<section class="subskill">
+		<h4 class="skill-subheading">Result</h4>
+		<p>The rank of a matrix does not change when the following elementary row operations are applied to the matrix.</p>
+		<div class="list-custom-block-list-ol spaced20 indented20">
+			<ol>
+				<li>
+					<p>Two rows are interchanged <span class=\"latex\" lang=\"latex\"> \(  (R_i \leftrightarrow R_j)  \) </span>
+					</p>
+				</li>
+				<li>
+					<p>A row is multiplied by a non-zero constant,<span class=\"latex\" lang=\"latex\"> \(  (R_i \rightarrow k R_i, \ with \ k \neq 0)  \) </span>
+					</p>
+				</li>
+				<li>
+					<p>A constant multiple of another row is added to a given row <span class=\"latex\" lang=\"latex\"> \(  (R_i \rightarrow R_i + kR_j) \ where \ i \neq j  \) </span>
+					</p>
+				</li>
+			</ol>
+		</div>
+		<p>
+			<span class="highlight01">Note :</span>
+			<br />
+			The arrow <span class=\"latex\" lang=\"latex\"> \(  \rightarrow  \) </span> means "replaced by".</p>
+	</section>
+</section>
+<section class="skill" id="08">
+	<h3 class="skill-heading">Summary</h3>
+	<div class="list-custom-block-list-ol spaced20 indented20">
+		<ol>
+			<li>
+				<p>A matrix is an ordered rectangular array of numbers or functions.</p>
+			</li>
+			<li>
+				<p>A matrix having m rows and n columns is called a matrix of order <span class=\"latex\" lang=\"latex\"> \(  m \times n  \) </span>.</p>
+			</li>
+			<li>
+				<p>
+					<span class=\"latex\" lang=\"latex\"> \(  [a_{ij}]_{m \times 1}  \) </span> is a column matrix.</p>
+			</li>
+			<li>
+				<p>
+					<span class=\"latex\" lang=\"latex\"> \(  [a_{ij}]_{1 \times n}  \) </span> is a row matrix.</p>
+			</li>
+			<li>
+				<p>An <span class=\"latex\" lang=\"latex\"> \(  m \times n  \) </span> matrix is a square matrix if m = n.</p>
+			</li>
+			<li>
+				<p>
+					<span class=\"latex\" lang=\"latex\"> \(  A = [a_{ij}]_{m \times m}  \) </span> is a diagonal matrix if <span class=\"latex\" lang=\"latex\"> \(  a_{ij} = 0  \) </span>, when <span class=\"latex\" lang=\"latex\"> \(  i \neq j  \) </span>.</p>
+			</li>
+			<li>
+				<p>
+					<span class=\"latex\" lang=\"latex\"> \(  A = [a_{ij}]_{n \times n}  \) </span> is a scalar matrix if <span class=\"latex\" lang=\"latex\"> \(  a_{ij} = 0  \) </span>, when <span class=\"latex\" lang=\"latex\"> \(  i \neq j  \ a_{ij} = k  \) </span>, (k is some constant), when i = j.</p>
+			</li>
+			<li>
+				<p>
+					<span class=\"latex\" lang=\"latex\"> \(  A = [a_{ij}]_{n \times n}  \) </span> is an identity matrix, if <span class=\"latex\" lang=\"latex\"> \(  a_{ij} = 1  \) </span>, when i = j, <span class=\"latex\" lang=\"latex\"> \(  a_{ij} = 0  \) </span> , when <span class=\"latex\" lang=\"latex\"> \(  i \neq j  \) </span>. </p>
+			</li>
+			<li>
+				<p>A zero matrix has all its elements as zero.</p>
+			</li>
+			<li>
+				<p>
+					<span class=\"latex\" lang=\"latex\"> \(  A = [a_{ij}] =[b_{ij}] = B \ if  \) </span>
+					<br />
+					A and B are of same order, <br />
+					<span class=\"latex\" lang=\"latex\"> \(  A = a_{ij} = b_{ij}  \) </span> for all possible values of i and j.</p>
+			</li>
+			<li>
+				<p>
+					<span class=\"latex\" lang=\"latex\"> \(  kA = k[a_{ij}]_{m \times n} =[k(a_{ij})]_{m \times n}  \) </span>
+				</p>
+			</li>
+			<li>
+				<p>- A = (-1)A </p>
+			</li>
+			<li>
+				<p>A - B = AA + (-1) B</p>
+			</li>
+			<li>
+				<p>A + B = B + A</p>
+			</li>
+			<li>
+				<p>(A + B) + C = A + (B + C), where A, B and C are of same order.</p>
+			</li>
+			<li>
+				<p>k(A + B) = kA + kB, where A and B are of same order, k is constant.</p>
+			</li>
+			<li>
+				<p>(k + l ) A = kA + lA, where k and l are constant.</p>
+			</li>
+			<li>
+				<p>If <span class=\"latex\" lang=\"latex\"> \(  A = [a_{ij}]_{m \time n}  \) </span> and <span class=\"latex\" lang=\"latex\"> \(  B = [b_{jk}]_{n \time p}  \) </span>, then <span class=\"latex\" lang=\"latex\"> \(  AB = C = [c_{ik}]_{m \time p}  \) </span>, where <span class=\"latex\" lang=\"latex\"> \(  c_{ik} = \sum \limits_{j = 1}^{n} a_{ij} b_{jk}  \) </span>
+				</p>
+			</li>
+			<li>
+				<p>
+					<ol>
+						<li>
+							<p>A(BC) = (AB)C</p>
+						</li>
+						<li>
+							<p>AA(B + C) = AB + AC</p>
+						</li>
+						<li>
+							<p>(A + B)C = AC + BC</p>
+						</li>
+					</ol>
+				</p>
+			</li>
+			<li>
+				<p>If <span class=\"latex\" lang=\"latex\"> \(  [a_{ij}]_{m \time n}  \) </span>, then A' or <span class=\"latex\" lang=\"latex\"> \(  A^T = [a_{ji}]_{n \times m}  \) </span>
+				</p>
+			</li>
+			<li>
+				<p>
+					<ol>
+						<li>
+							<p>A(BC) = (AB)C</p>
+						</li>
+						<li>
+							<p>A(B + C) = AB + AC</p>
+						</li>
+						<li>
+							<p>(A + B)C = AC + BC</p>
+						</li>
+					</ol>
+				</p>
+			</li>
+			<li>
+				<p>If <span class=\"latex\" lang=\"latex\"> \(  A = [a_{ij}]_{m \time n},  \) </span> then A' or <span class=\"latex\" lang=\"latex\"> \(  A^T = [a_{ji}]_{n \times m}  \) </span>
+				</p>
+			</li>
+			<li>
+				<p>
+					<ol>
+						<li>
+							<p>(A')' = A</p>
+						</li>
+						<li>
+							<p>(kA)' = kA' </p>
+						</li>
+						<li>
+							<p>(A + B)' = A' + B'</p>
+						</li>
+						<li>
+							<p>(AB)' = B' A'</p>
+						</li>
+					</ol>
+				</p>
+			</li>
+			<li>
+				<p>A is a symmetric matrix if A' = A.</p>
+			</li>
+			<li>
+				<p>A is a skew symmetric matrix if A' = -A.</p>
+			</li>
+			<li>
+				<p>Any square matrix can be represented as the sum of a symmetric and a skew symmetric matrix.</p>
+			</li>
+			<li>
+				<p>Elementary operations of a matrix are as follows:
+					<ol>
+						<li>
+							<p>
+								<span class=\"latex\" lang=\"latex\"> \(  R_i \leftrightarrow R_j \ or \ C_i \leftrightarrow C_j  \) </span>
+							</p>
+						</li>
+						<li>
+							<p>
+								<span class=\"latex\" lang=\"latex\"> \(  R_i \leftrightarrow k R_j \ or \ C_i \leftrightarrow k C_j  \) </span>
+							</p>
+						</li>
+						<li>
+							<p>
+								<span class=\"latex\" lang=\"latex\"> \(  R_i \leftrightarrow R-i + k R_j \ or \ C_i \leftrightarrow C_i + k C_j  \) </span>
+							</p>
+						</li>
+					</ol>
+				</p>
+			</li>
+			<li>
+				<p>If A and B are two square matrices such that AB = BA = I, then B is the inverse matrix of A and is denoted by <span class=\"latex\" lang=\"latex\"> \(  A^{-1}  \) </span> and A is the inverse of B.</p>
+			</li>
+			<li>
+				<p>Inverse of a square matrix, if it exists, is unique.</p>
+			</li>
+		</ol>
+	</div>
+</section>  
+<section class="solved-examples" id="examples">
+	<h3 class="solved-examples-heading">Solved examples</h3>
+	<section class="solved-example"> 
+		<h4 class="solved-examples-question">Example 1:</h4>
+		<p>Consider the following information regarding the number of men and women workers in three factories I, II and III
+		</p>
+		<table class="u-full-width summary-table">
+			<thead>
+				<tr>
+					<th align="center"/>
+					<th align="center">Men workers</th>
+					<th align="center">Women workers</th>
+				</tr>
+			</thead>
+			<tr>
+				<td align="center">I</td>
+				<td align="center">30</td>
+				<td align="center">25</td>
+			</tr>
+			<tr>
+				<td align="center">II</td>
+				<td align="center">25</td>
+				<td align="center">31</td>
+			</tr>
+			<tr>
+				<td align="center">III</td>
+				<td align="center">27</td>
+				<td align="center">26</td>
+			</tr>
+		</table>
+		<p>Represent the above information in the form of a <span class=\"latex\" lang=\"latex\"> \(  3 \times 2  \) </span> matrix. What does the entry in the third row and second column represent? </p>
+		<p>
+			<span class="highlight10">Solution </span>
+			<br />
+			The information is represented in the form of a <span class=\"latex\" lang=\"latex\"> \(  3 \times 2  \) </span> matrix as follows: <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align} A = \left [ \begin{array}{ccc} 30 &amp; 25  \\\\ 25 &amp; 31  \\\\ 27 &amp; 26  \end {array} \right]  \end{align}  \) </span>
+			<br />
+			The entry in the third row and second column represents the number of women workers in factory III.</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 2:</h4>
+		<p>If a matrix has 8 elements, what are the possible orders it can have? <br />
+			<span class="highlight10"> Solution:</span>
+			<br />
+			SolutionWe know that if a matrix is of order <span class=\"latex\" lang=\"latex\"> \(  m \times n  \) </span>, it has mn elements. Thus, to find all possible orders of a matrix with 8 elements, we will find all ordered pairs of natural numbers, whose product is 8. <br />
+			Thus, all possible ordered pairs are (1, 8), (8, 1), (4, 2), (2, 4) <br />
+			Hence, possible orders are <span class=\"latex\" lang=\"latex\"> \(  1 \times 8, \ 8 \times 1, \ 4 \times 2, \ 2 \times 4  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 3:</h4>
+		<p>Construct a <span class=\"latex\" lang=\"latex\"> \(  3 \times 2  \) </span> matrix whose elements are given by <span class=\"latex\" lang=\"latex\"> \(  a_{ij} = \frac{1}{2} |i - 3j|  \) </span>.<br />
+			<span class="highlight10"> Solution:</span>
+			<br />
+			In general a <span class=\"latex\" lang=\"latex\"> \(  3 \times 2  \) </span> matrix is given by <br />
+			matrix as follows: <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  A = \left [ \begin{array}{ccc} a_{11} &amp; a_{12}  \\\\ a_{21} &amp; a_{22}  \\\\ a_{31} &amp; a_{32}  \end {array} \right]  \end{align}  \) </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  Now \ a_{ij} = \frac{1}{2} |i - 3j|, \ i = 1, \ 2, \ 3 \ and \ j = 1, \ 2.  \\\\[3pt]
+				Therefore \ a_{11} = \frac{1}{2} |1 - 3 \times 1| = 1 \ \ a_{12} = \frac{1}{2} |1 - 3 \times 2| = \frac{5}{2}  \\\\[3pt]
+				a_{21} = \frac{1}{2} |2 - 3 \times 1| = \frac{1}{2} \ \ a_{22} = \frac{1}{2} |2 - 3 \times 2| = 2  \\\\[3pt]
+				a_{31} = \frac{1}{2} |3 - 3 \times 1| = 0 \ \ a_{32} = \frac{1}{2} |3 - 3 \times 2| = \frac{3}{2}  \\\\[3pt]
+				\text{Hence the required matrix is given by A} = \left [ \begin{array}{ccc} 1 &amp; \frac{5}{2}  \\\\ \frac{1}{2} &amp; 2  \\\\ 0 &amp; \frac{3}{2}  \end {array} \right]  \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 4:</h4>
+		<p>If <span class=\"latex\" lang=\"latex\"> \(  \begin{align}  A = \left [ \begin{array}{ccc} x + 3 &amp; z + 4 &amp; 2y - 7  \\\\ - 6 &amp; a - 1 &amp; 0  \\\\ b - 3 &amp; - 21 &amp; 0   \end {array} \right] = \left [ \begin{array}{ccc} 0 &amp; 6 &amp; 3y - 2  \\\\ - 6 &amp; - 3 &amp; 2c + 2  \\\\ 2b + 4 &amp; - 21 &amp; 0   \end {array} \right]  \end{align}  \) </span> Find the values of a, b, c, x, y and z. <br />
+			<span class="highlight10"> Solution:</span>
+			<br />
+			As the given matrices are equal, therefore, their corresponding elements must be equal. Comparing the corresponding elements, we get <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \begin{array}{ccc} x + 3 = 0, &amp; z + 4 = 6, &amp; 2y - 7 = 3y - 2  \\\\   a - 1 = -3, &amp; 0 = 2c + 2 &amp; b - 3 = 2b + 4  \end {array}  \end{align}  \) </span>
+			<br />
+			Simplifying, we get <br />
+			a = - 2, b = - 7, c = - 1, x = - 3, y = - 5, z = 2</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 5:</h4>
+		<p> Find the values of a, b, c, and d from the following equation: <span class=\"latex\" lang=\"latex\"> \(  \begin{align}  A = \left [ \begin{array}{cc} 2a + b &amp; a - 2b  \\\\ 5c - d &amp; 4c + 3d  \end {array} \right] = \left [ \begin{array}{cc} 4 &amp; - 3  \\\\ 11 &amp; 24  \end {array} \right]  \end{align}  \) </span>
+			<br />
+			<span class="highlight10"> Solution:</span>
+			<br />
+			By equality of two matrices, equating the corresponding elements, we get <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \begin{array}{ccc} 2a + b = 4 &amp; 5c - d = 11  \\\\ a - 2b = - 3 &amp; 4c + 3d = 24 \end {array}  \end{align}  \) </span>
+			<br />
+			Solving these equations, we get <br />
+			a = 1, b = 2, c = 3 and d = 4</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 6:</h4>
+		<p> If <span class=\"latex\" lang=\"latex\"> \(  \begin{align}  A = \left [ \begin{array}{ccc} 1 &amp; 2 &amp; 3  \\\\ 2 &amp; 3 &amp; 1  \end {array} \right] \ and \ B =  \left [ \begin{array}{ccc}  3 &amp; -1 &amp; 3  \\\\ -1 &amp; 0 &amp; 2 \end {array} \right]  \end{align}  \) </span>, then find 2A - B. <br />
+			<span class="highlight10"> Solution:</span>
+			<br />
+			We have <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  2A - B = 2 \left [ \begin{array}{ccc} 1 &amp; 2 &amp; 3  \\\\ 2 &amp; 3 &amp; 1  \end {array} \right] - \left [ \begin{array}{ccc}  3 &amp; -1 &amp; 3  \\\\ -1 &amp; 0 &amp; 2 \end {array} \right]  \\\\[3pt]
+				= \left [ \begin{array}{ccc} 2 &amp; 4 &amp; 6  \\\\ 4 &amp; 6 &amp; 2  \end {array} \right] + \left [ \begin{array}{ccc}  - 3 &amp; 1 &amp; -3  \\\\ 1 &amp; 0 &amp; - 2 \end {array} \right]  \\\\[3pt]
+				= \left [ \begin{array}{ccc} 2 - 3 &amp; 4 + 1 &amp; 6 - 3  \\\\ 4 + 1 &amp; 6 + 0 &amp; 2 - 2  \end {array} \right]  \\\\[3pt]
+				= \left [ \begin{array}{ccc} -1 &amp; 5 &amp; 3  \\\\ 5 &amp; 6 &amp; 0  \end {array} \right] \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 7:</h4>
+		<p> Find X and Y, if <span class=\"latex\" lang=\"latex\"> \(  \begin{align}  X + Y = \left [ \begin{array}{cc} 5 &amp; 2  \\\\ 0 &amp; 9  \end {array} \right] \ and \ X - Y =  \left [ \begin{array}{cc}  3 &amp; 6  \\\\ 0 &amp; - 1 \end {array} \right]  \end{align}  \) </span>, then find 2A - B. <br />
+			<span class="highlight10"> Solution:</span>
+			<br />
+			We have <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  (X + Y) + (X - Y) = \left [ \begin{array}{cc} 5 &amp; 2  \\\\ 0 &amp; 9  \end {array} \right] + \left [ \begin{array}{cc}  3 &amp; 6  \\\\ 0 &amp; - 1 \end {array} \right]  \\\\[3pt]
+				or \ (X + X) +(Y - Y) = \left [ \begin{array}{cc}  8 &amp; 8  \\\\ 0 &amp; 8 \end {array} \right] \ \Rightarrow \ 2x = \left [ \begin{array}{cc}  8 &amp; 8  \\\\ 0 &amp; 8 \end {array} \right]  \\\\[3pt]
+				or \ X = \frac{1}{2} \left [ \begin{array}{cc}  8 &amp; 8  \\\\ 0 &amp; 8 \end {array} \right] = \left [ \begin{array}{cc}  4 &amp; 4  \\\\ 0 &amp; 4 \end {array} \right]  \\\\[3pt]
+				Also \ (X + Y) - (X - Y) = \left [ \begin{array}{cc}  5 &amp; 2  \\\\ 0 &amp; 9 \end {array} \right] - \left [ \begin{array}{cc}  3 &amp; 6  \\\\ 0 &amp; -1 \end {array} \right]  \\\\[3pt]
+				or \ (X - X) + (Y - Y) = \left [ \begin{array}{cc}  5 - 3 &amp; 2 - 6  \\\\ 0 &amp; 9 + 1 \end {array} \right] \ \Rightarrow \ 2Y = \left [ \begin{array}{cc}  2 &amp; -4  \\\\ 0 &amp; 10 \end {array} \right]  \\\\[3pt]
+				or \ Y = \frac{1}{2} \left [ \begin{array}{cc}  2 &amp; -4  \\\\ 0 &amp; 10 \end {array} \right] = \left [ \begin{array}{cc}  1 &amp; -2  \\\\ 0 &amp; 5 \end {array} \right]  \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 8:</h4>
+		<p> Find the values of x and y from the following equation: <span class=\"latex\" lang=\"latex\"> \(  \begin{align}  2 \left [ \begin{array}{cc} x &amp; 5  \\\\ 7 &amp; y - 3  \end {array} \right] + \left [ \begin{array}{cc}  3 &amp; - 4  \\\\ 1 &amp; 2 \end {array} \right] =  \left [ \begin{array}{cc}  3 &amp; - 4  \\\\ 1 &amp; 2 \end {array} \right] = \left [ \begin{array}{cc}  7 &amp; 6  \\\\ 15 &amp; 14 \end {array} \right] \end{align}  \) </span>
+			<br />
+			<span class="highlight10"> Solution:</span>
+			<br />
+			We have <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  2 \left [ \begin{array}{cc} x &amp; 5  \\\\ 7 &amp; y - 3  \end {array} \right] + \left [ \begin{array}{cc}  3 &amp; - 4  \\\\ 1 &amp; 2 \end {array} \right] =  \left [ \begin{array}{cc}  3 &amp; - 4  \\\\ 1 &amp; 2 \end {array} \right] = \left [ \begin{array}{cc}  7 &amp; 6  \\\\ 15 &amp; 14 \end {array} \right]  \\\\[3pt]
+				\Rightarrow \ \left [ \begin{array}{cc} 2x &amp; 10  \\\\ 14 &amp; 2y - 6  \end {array} \right] + \left [ \begin{array}{cc}  3 &amp; - 4  \\\\ 1 &amp; 2 \end {array} \right] =  \left [ \begin{array}{cc}  3 &amp; - 4  \\\\ 1 &amp; 2 \end {array} \right] = \left [ \begin{array}{cc}  7 &amp; 6  \\\\ 15 &amp; 14 \end {array} \right]  \\\\[3pt]
+				or \ \left [ \begin{array}{cc} 2x + 3 &amp; 10 - 4  \\\\ 14 + 1&amp; 2y - 6 + 2  \end {array} \right]  = \left [ \begin{array}{cc}  7 &amp; 6  \\\\ 15 &amp; 14 \end {array} \right]  \\\\[3pt]
+				\Rightarrow \ \left [ \begin{array}{cc} 2x + 3 &amp; 6  \\\\ 15 &amp; 2y - 4  \end {array} \right]  = \left [ \begin{array}{cc}  7 &amp; 6  \\\\ 15 &amp; 14 \end {array} \right]  \end{align}  \) </span>
+			<br />
+			or 2x + 3 = 7 and 2y - 4 = 14 (Why?) <br />
+			or 2x = 7 - 3 and 2y = 18 <br />
+			or <span class=\"latex\" lang=\"latex\"> \(  x = \frac{4}{2} \ \ \ and \ \ \ y = \frac{18}{2}  \) </span>
+			<br />
+			i.e. x = 2 and y = 9. </p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 9:</h4>
+		<p> Find AB, if  <span class=\"latex\" lang=\"latex\"> \(  \begin{align} A = \left [ \begin{array}{cc} 6 &amp; 9  \\\\ 2 &amp; 3 \end {array} \right]  \ and \ B =  \left [ \begin{array}{ccc}  2 &amp; 6 &amp; 0  \\\\ 7 &amp; 9 &amp; 8 \end {array} \right]  \end{align}  \) </span>
+			<br />
+			<span class="highlight10"> Solution:</span>
+			<br />
+			The matrix A has 2 columns which is equal to the number of rows of B. <br />
+			Hence AB is defined. Now <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \left [ \begin{array}{ccc} 6(2) + 9(7) &amp; 6(6) + 9(9) &amp; 6(0) + 9(8)  \\\\ 2(2) + 3(7) &amp; 2(6) + 3(9) &amp; 2(0) + 3(8) \end {array} \right]  \\\\[3pt]
+				= \left [ \begin{array}{ccc} 12 +63 &amp; 36 + 81 &amp; 0 + 72  \\\\ 4 + 21 &amp; 12 + 27 &amp; 0 + 24 \end {array} \right]  \\\\[3pt]
+				= \left [ \begin{array}{ccc} 75 &amp; 117 &amp; 72  \\\\ 25 &amp; 39 &amp; 24 \end {array} \right ]  \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 10:</h4>
+		<p>If  <span class=\"latex\" lang=\"latex\"> \(  \begin{align} A = \left [ \begin{array}{ccc} 0 &amp; 6 &amp; 7  \\\\ -6 &amp; 0 &amp; 8  \\\\ 7 &amp; -8 &amp; 0  \end {array} \right], \ B =  \left [ \begin{array}{ccc} 0 &amp; 1 &amp; 1  \\\\ 1 &amp; 0 &amp; 2  \\\\ 1 &amp; 2 &amp; 0 \end {array} \right], \ C = =  \left [ \begin{array}{c} 2  \\\\ - 2  \\\\ 3 \end {array} \right]  \end{align}  \) </span>
+			<br />
+			Calculate AC, BC and (A + B)C. Also, verify that (A + B)C = AC + BC <br />
+			<span class="highlight10"> Solution:</span>
+			<br />
+			Now, A + B =  <span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \left [ \begin{array}{ccc}0 &amp; 7 &amp; 8  \\\\ - 5 &amp; 0 &amp; 10  \\\\ 8 &amp; -6 &amp; 0 \end {array} \right]  \\\\[3pt]
+				So \ (A + B)C = \left [ \begin{array}{ccc}0 &amp; 7 &amp; 8  \\\\ - 5 &amp; 0 &amp; 10  \\\\ 8 &amp; -6 &amp; 0 \end {array} \right] \left [ \begin{array}{c} 2  \\\\ - 2  \\\\ 3 \end {array} \right]  \\\\[3pt]
+				= \left [ \begin{array}{ccc} 0 - 14 + 24 &amp; - 10 + 0 + 30  \\\\ 16 + 12 + 0 \end {array} \right ] =  \left [ \begin{array}{c} 10  \\\\ 20  \\\\ 28 \end {array} \right]  \\\\[3pt]
+				= Further \ AC = \left [ \begin{array}{ccc} 0 &amp; 6 &amp; 7  \\\\ -6 &amp; 0 &amp; 8  \\\\ 7 &amp; - 8 &amp; 0 \end {array} \right] \left [ \begin{array}{c} 2  \\\\ - 2  \\\\ 3 \end {array} \right]  \\\\[3pt]
+				= \left [ \begin{array}{ccc} 0 - 12 + 21  \\\\ -12 + 0 + 24  \\\\ 14 + 16 + 0 \end {array} \right ] =  \left [ \begin{array}{c} 9  \\\\ 12  \\\\ 30 \end {array} \right]   \end{align}  \) </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  and \ BC = \left [ \begin{array}{ccc} 0 &amp; 1 &amp; 1  \\\\ 1 &amp; 0 &amp; 2  \\\\ 1 &amp; 2 &amp; 0 \end {array} \right] \left [ \begin{array}{c} 2  \\\\ - 2  \\\\ 3 \end {array} \right]  \\\\[3pt]
+				= \left [ \begin{array}{ccc} 0 - 2 + 3 &amp; 2 + 0 + 6  \\\\ 2 - 4 + 0 \end {array} \right ] =  \left [ \begin{array}{c} 1  \\\\ 8  \\\\ - 2 \end {array} \right]  \\\\[3pt]
+				So \ AC + BC = \left [ \begin{array}{c} 9  \\\\ 12  \\\\ 30 \end {array} \right] + \left [ \begin{array}{c} 1  \\\\ 8  \\\\ - 2 \end {array} \right] = \left [ \begin{array}{c} 10  \\\\ 20  \\\\ 28 \end {array} \right]  \end{align}  \) </span>
+		</p>
+	</section>
+</section> 
+

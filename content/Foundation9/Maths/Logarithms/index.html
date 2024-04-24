@@ -1,0 +1,446 @@
+---
+title: "Logarithms"
+topic: "Logarithms"
+subject: "Maths"
+channel: "Foundation 9"
+tags: [Maths, Foundation9]
+categories: [Maths, Foundation9]
+menuname: "Foundation9-submenu"
+draft: false
+image: "image/Foundation9-Maths-Logarithms.png"
+defaultSummary: "Logarithms is an important Topic in the Subject of Maths for the Foundation 9 course.  Please review it thoroughly and attempt all the associated testing material to perform well on the Foundation 9 related Exams."
+menu:
+  Foundation9-submenu:
+    identifier: "Foundation9-Maths-Logarithms"
+    name: "Logarithms"
+    url: "Foundation9/Maths/Logarithms"
+    weight: 1800
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="skill" id="01">
+	<h3 class="skill-heading">Definition</h3>
+	<p>Let 'N' and 'a' <span class=\"latex\" lang=\"latex\"> \(  (a \neq 1)  \) </span> be any two positive real numbers. Consider a third real number 'x' connecting 'N' and 'a' by the relation <span class=\"latex\" lang=\"latex\"> \(  N = a^x  \) </span>. Then, we say 'x' is the logarithm of 'N' to the base 'a'. It is written as <span class=\"latex\" lang=\"latex\"> \(  x = log_a N  \) </span>
+		<br />
+		<span class="highlight01">Note</span>
+	</p>
+	<div class="list-custom-block-list-ol spaced20 indented20">
+		<ol>
+			<li>
+				<p>'N' should be a positive real number i.e., <span class=\"latex\" lang=\"latex\"> \(  (N \neq 0) \) </span>
+				</p>
+			</li>
+			<li>
+				<p>'a' cannot be negative and cannot be equal to 1</p>
+			</li>
+			<li>
+				<p>X is a real number, such that logarithm of N should be real</p>
+			</li>
+		</ol>
+	</div>
+</section>
+<section class="skill" id="02">
+	<h3 class="skill-heading">Common logarithms</h3>
+	<div class="synopsis-image"> 
+		<img src="104180003_image-1.png" alt="image1" class="default-synopsis-medium-image" />
+	 </div>
+	<p> Logarithms to the base 10 are called common logarithms. The notation <span class="highlight01">log x</span> is used by physicists, engineers and calculator keypads to denote the common logarithm. However, mathematicians generally use the same symbol to mean the natural lagarithm in <span class="highlight01">ln x</span>. It is best to explicitly specify <span class=\"latex\" lang=\"latex\"> \(  log_{10} x  \) </span> when the logarithm to base 10 is intended. In this work, <span class=\"latex\" lang=\"latex\"> \(  log \ x = log_{10} x  \) </span>, <span class=\"latex\" lang=\"latex\"> \(  ln \ x = log_e x  \) </span> is used for the natural logarithm, and <span class=\"latex\" lang=\"latex\"> \(  lg \ x = log_2 x  \) </span> is used for the logarithm to the base 2.<br />
+		<span class=\"latex\" lang=\"latex\"> \(  log_{10} 120 = log_{10} (10^2 \times 1.2) = 2 + log_{10} 1.2 \approx 2 + 0.07918  \) </span>
+		<br />
+		The last number 0.07918 the fractional part or the mantissa of the common logarithm of 120 can be found in the logarithms table. The location of the decimal point in 120 tells us that the integer part of the common logarithm of 120, the characteristic, is 2.<br />
+		Numbers greater than 0 and less than 1 have negative logarithms. For example,<br />
+		<span class=\"latex\" lang=\"latex\"> \(  log_{10} 0.012 = log_{10}(10^{-2} \times 1.2) = -2 + log_{10} 1.2 \approx - 2 + 0.07918 = - 1.92082  \) </span>
+		<br />
+		To avoid the need for separate tables to convert positive and negative logarithms back to their original numbers, a bar notation is used:<br />
+		<span class=\"latex\" lang=\"latex\"> \(  log_{10} 0.012 \approx - 2 + 0.07918 = \overline{2}.07918  \) </span>
+		The bar over the characteristic indicates that it is negative whilst the mantissa remains positive. When reading a number in bar notation out loud, the symbol <span class=\"latex\" lang=\"latex\"> \(  \overline{n}  \) </span> is read as "bar n", so that <span class=\"latex\" lang=\"latex\"> \(  \overline{2}.07918  \) </span> is read as "bar 2 point 07918...".<br />
+		The following example uses the bar notation to calculate <span class=\"latex\" lang=\"latex\"> \(  0.012 \times 0.85 = 0.0102  \) </span>
+		<br />
+		As found above, <span class=\"latex\" lang=\"latex\"> \(  log_{10} 0.012 \approx \overline{2}.07918  \) </span>
+		<br />
+		<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  Since, \ log_{10} 0.85 = log_{10}(10^{-1} \times 8.5) = - 1 + log_{10}8.5 \approx - 1 + 0.92942 = \overline{1}.92942  \\\\[3pt]
+			log_{10}(0.012 \times 0.85) = log_{10} 0.012 + log_{10}0.85 \approx \overline{2}.07918 + \overline{1}.92942  \\\\[3pt]
+			= (- 2 + 0.07918) + (- 1 + 0.92942) = - (2 + 1) + (0.07918 + 0.92942)  \\\\[3pt]
+			= - 3 + 1.00860 = - 2 + 0.00860^*  \\\\[3pt]
+			\approx log_{10}(10^{-2}) + log_{10}(1.02) = log_{10}(0.01 \times 1.02)  \\\\[3pt]
+			= log_{10}(0.0102) \end{align}  \) </span>
+		<br />
+		This step makes the mantissa between 0 and 1, so that its antilog (<span class=\"latex\" lang=\"latex\"> \(  10^{mantissa}  \) </span>) can be looked up.<br />
+		Note that the mantissa is common to all of the <span class=\"latex\" lang=\"latex\"> \(  5 \times 10^i  \) </span>. This holds for any positive real number x because:<br />
+		<span class=\"latex\" lang=\"latex\"> \(  log_{10}(x \times 10^i) = log_{10}(x) + log_{10}(10^i) = log_{10}(x) + i  \) </span>
+		<br />
+		Since i is always an integer the mantissa comes from <span class=\"latex\" lang=\"latex\"> \(  log_{10}(x)  \) </span> which is constant for given x. This allows a table of logarithms to include only one entry for each mantissa. In the example of <span class=\"latex\" lang=\"latex\"> \(  5 \times 10^i  \) </span>, 0.698 970(004 336 018 ...) will be listed once indexed by 5, or 0.5, or 500 etc.</p>
+</section> 
+<section class="skill" id="03">
+	<h3 class="skill-heading">Napierian logarithms</h3>
+	<div class="synopsis-image"> 
+		<img src="104180003_image-2.png" alt="image2" class="default-synopsis-medium-image" />
+	 </div>
+	<p>The logarithms of numbers calculated to the base 'e' are called natural logarithms or Napierian logarithms.<br />
+		<span class=\"latex\" lang=\"latex\"> \(  NapLog(x) = \frac{log \frac{10^7}{x}}{ log \frac{10^7}{10^7 - 1}}  \) </span>
+		<br />
+		(Since this is a quotient of logarithms, the base of the logarithm chosen is irrelevant.)<br />
+		It is not a logarithm to any particular base in the modern sense of the term; however, it can be rewritten as:<br />
+		<span class=\"latex\" lang=\"latex\"> \(  NapLog(x) = NapLog(x) + NapLog(y) - 161180950  \) </span>
+	</p>
+	<section class="subskill">
+		<h4 class="skill-subheading">Properties</h4>
+		<p> Napier's "logarithm" is related to the natural logarithm by the relation<br />
+			<span class=\"latex\" lang=\"latex\"> \(  NapLog(x) \approx 9999999.5(16.11809565 - ln \ x)  \) </span>
+			<br />
+			and to the common logarithm by<br />
+			<span class=\"latex\" lang=\"latex\"> \(  NapLog(x) \approx 23025850(7 - log_{10} x) \) </span>
+			<br />
+			Note that<br />
+			<span class=\"latex\" lang=\"latex\"> \(  16.11809565 \approx 7 \ ln(10)  \) </span>
+			<br />
+			and<br />
+			<span class=\"latex\" lang=\"latex\"> \(  23025850 \approx 10^7 ln(10)  \) </span>
+		</p>
+	</section>
+</section>
+<section class="skill" id="04">
+	<h3 class="skill-heading">Properties of logarithms</h3>
+	<div class="list-custom-block-list-ol spaced20 indented20">
+		<ol>
+			<li>
+				<p>log mn = log m + log n </p>
+			</li>
+			<li>
+				<p>
+					<span class=\"latex\" lang=\"latex\"> \(  log \frac{m}{n} = log \ m - log \ n \) </span>
+				</p>
+			</li>
+			<li>
+				<p>
+					<span class=\"latex\" lang=\"latex\"> \(  log_a x^m = m \ log_a x \) </span>
+				</p>
+			</li>
+			<li>
+				<p>
+					<span class=\"latex\" lang=\"latex\"> \(  log a^m = \frac{log \ m}{log \ n}  \) </span>
+				</p>
+			</li>
+			<li>
+				<p>
+					<span class=\"latex\" lang=\"latex\"> \(  log_n m = \frac{log_a \ m}{log_a \ n} \) </span>
+				</p>
+			</li>
+			<li>
+				<p>
+					<span class=\"latex\" lang=\"latex\"> \(  log_{a^n} x^m = \frac{m}{n} \ log_a x \) </span>
+				</p>
+			</li>
+			<li>
+				<p>
+					<span class=\"latex\" lang=\"latex\"> \(  log_n m = \frac{1}{log_m n}  \) </span>
+				</p>
+			</li>
+			<li>
+				<p>
+					<span class=\"latex\" lang=\"latex\"> \(  _a log_{a} x = x  \) </span>
+				</p>
+			</li>
+			<li>
+				<p>
+					<span class=\"latex\" lang=\"latex\"> \(  a^{log \ m} = m^{log \ a}  \) </span>
+				</p>
+			</li>
+			<li>
+				<p>
+					<span class=\"latex\" lang=\"latex\"> \(  e^{log x} = x  \) </span>
+				</p>
+			</li>
+			<li>
+				<p>
+					<span class=\"latex\" lang=\"latex\"> \(  log_a 1 = 0 \ (a &gt; 0, \ a \neq 1)  \) </span>
+				</p>
+			</li>
+			<li>
+				<p>If <span class=\"latex\" lang=\"latex\"> \(  a \neq 1, \ a &gt; 0  \) </span> then <span class=\"latex\" lang=\"latex\"> \(  log_a a = 1 \) </span>
+					<br />
+					<span class=\"latex\" lang=\"latex\"> \(  log_e e = 1  \) </span>
+				</p>
+			</li>
+			<li>
+				<p> If <span class=\"latex\" lang=\"latex\"> \(  n \leq log_{10} \ x &lt; n + 1  \) </span> where 'n' is any integer and 'x'' is a positive real number, then 'n' is called the characteristic (integral part) of <span class=\"latex\" lang=\"latex\"> \(  log_{10} \ x  \) </span>
+				</p>
+			</li>
+			<li>
+				<p> If positive number 'x' is greater than 1 and consists of N digits in its integral part, then the characteristic of <span class=\"latex\" lang=\"latex\"> \(  log_{10} \ x  \) </span> is (N - 1).</p>
+			</li>
+			<li>
+				<p>If 0 &lt; x &lt; 1 and if there exists N zeroes immediately after the decimal point in'x' hen the characteristic of <span class=\"latex\" lang=\"latex\"> \(  log_{10} x \) </span> is - (N + 1) and it is denoted by <span class=\"latex\" lang=\"latex\"> \(  \overline{N + 1}  \) </span>
+				</p>
+			</li>
+			<li>
+				<p> The mantissa is always positive </p>
+			</li>
+			<li>
+				<p> If <span class=\"latex\" lang=\"latex\"> \(  log_a M = x  \) </span>, then <span class=\"latex\" lang=\"latex\"> \(  log_{ \frac{1}{a}} M = - x,  \) </span>
+					<br />
+					<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  log_a \left( \frac{1}{m} \right) = - x,  \\\\[3pt]
+						log_a \left( \frac{1}{m} \right) = x  \end{align}  \) </span>
+				</p>
+			</li>
+			<li>
+				<p>
+					<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  a = b \Leftrightarrow log_x a = log_x b  \\\\[3pt]
+						a \neq b \Leftrightarrow log_x a \neq log_x b  \end{align}  \) </span>
+				</p>
+			</li>
+		</ol>
+	</div>
+</section> 
+<section class="solved-examples" id="examples">
+	<h3 class="solved-examples-heading">Solved examples</h3>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 1:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			Find the value of <span class=\"latex\" lang=\"latex\"> \(  \frac{log_{10} 5 + 1}{log_{10} 50}  \) </span>
+		</p>
+		<p>
+			<span class="highlight01">Solution:</span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \frac{log_{10} 5 + 1}{log_{10} 50} = \frac{log_{10} 5 + log_{10} 10}{log_{10} 50}  \\\\[3pt]
+				= \frac{log_{10} (5.10)}{log_{10} 50} = \frac{log_{10} 50}{log_{10} 50} = 1  \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 2:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			Prove that <span class=\"latex\" lang=\"latex\"> \(  (log \ a)^2 - (log \ b)^2 = (log \ ab) \left( log \frac{a}{b} \right).  \) </span>.</p>
+		<p>
+			<span class="highlight01">Solution:</span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  (log \ a)^2 - (log \ b)^2  \) </span> is in the form <span class=\"latex\" lang=\"latex\"> \(  (a^2 - b^2)  \) </span>
+			<br />
+			we know that <span class=\"latex\" lang=\"latex\"> \(  a^2 - b^2 = (a + b) (a - b)  \) </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \therefore (log \ a)^2 - (log \ b)^2 = (log \ a + log \ b) (log \ a - log \ b)  \\\\[3pt]
+				= (log \ ab) \left( log \frac{a}{b} \right)  \\\\[3pt]
+				\therefore (log \ a)^2 - (log \ b)^2 = (log \ ab) \left( log \ \frac{a}{b} \right)  \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 3:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			If <span class=\"latex\" lang=\"latex\"> \(  (2.5)^x = (0.025)^y = 10^3  \) </span>, find <span class=\"latex\" lang=\"latex\"> \(  \frac{1}{x} - \frac{1}{y}  \) </span>
+		</p>
+		<p>
+			<span class="highlight01">Solution:</span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  (2.5)^x = 10^3 \Rightarrow log_{2.5} 1000 = x  \\\\[3pt]
+				(0.025)^y = 10^3 \Rightarrow log_{0.025} 1000 = y  \\\\[3pt]
+				\frac{1}{x} - \frac{1}{y} = log_{1000} 2.5 - log_{1000} 0.025  \\\\[3pt]
+				= log_{1000} \frac{2.5}{0.025} = log_{1000} 100 = \frac{2}{3} log_{10} 10 = \frac{2}{3} \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 4:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			If <span class=\"latex\" lang=\"latex\"> \(  log_{a} bc = x, \ log_b ca = y, \ log_c ab = z,  \) </span> then find <span class=\"latex\" lang=\"latex\"> \(  \frac{1}{x + 1} + \frac{1}{y + 1} + \frac{1}{z + 1}  \) </span>
+		</p>
+		<p>
+			<span class="highlight01">Solution:</span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  x = log_a bc, \ y = log_b ca, \ z = log_c ab  \\\\[3pt]
+				x + 1 = log_a bc + 1  \\\\[3pt]
+				= log_a bc + log_a a = log_a abc  \\\\[3pt]
+				y + 1 = log_b abc  \\\\[3pt]
+				z + 1 = log_c abc  \\\\[3pt]
+				\frac{1}{x + 1} = \frac{1}{log_a abc} = log_{abc} a  \\\\[3pt]
+				\frac{1}{y + 1} = \frac{1}{log_b abc} = log_{abc} b  \\\\[3pt]
+				\frac{1}{z + 1} = \frac{1}{log_a abc} = log_{abc} c  \\\\[3pt]
+				\therefore \frac{1}{x + 1} + \frac{1}{y + 1} + \frac{1}{z + 1} = log_{abc} a + log_{abc} b + log_{abc} c  \\\\[3pt]
+				= log_{abc} abc  \\\\[3pt]
+				= 1 \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 5:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			Solve <span class=\"latex\" lang=\"latex\"> \(  log(3 + 2 \ log(1 + x)) = 0.  \) </span>
+		</p>
+		<p>
+			<span class="highlight01">Solution:</span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  log(3  + 2 \ log(1 + x)) = log 1  \\\\[3pt]
+				3 + 2 \ log(1 + x) = 1 \Rightarrow 2 log(1 + x) = - 2  \\\\[3pt]
+				log(1 + x) = - 1 \Rightarrow log_{10} (1 + x) = - 1  \\\\[3pt]
+				\Rightarrow 1 + x = 10^{-1}  \\\\[3pt]
+				\Rightarrow x = \frac{1}{10} - 1 = \frac{-9}{10} \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 6:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			Solve <span class=\"latex\" lang=\"latex\"> \(  _5 log \ x + \ _x log \ 5 = 50  \) </span>
+		</p>
+		<p>
+			<span class="highlight01">Solution:</span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  _5 log \ x = \ _x log \ 5  \\\\[3pt]
+				\Rightarrow  _5 log x + \ _x log \ 5 = 50  \\\\[3pt]
+				\Rightarrow _5 log \ x + 5^{log \ x} = 50  \\\\[3pt]
+				2(_5 log \ x) = 50 \Rightarrow _5 log \ x = 25  \\\\[3pt]
+				_5 log \ x = 5^2 \Rightarrow log \ x = 2  \\\\[3pt]
+				x = 10^2; \ x = 100 \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 7:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			If a, b, c are three consecutive integers, then show that 2 log b = log(1 + ac)</p>
+		<p>
+			<span class="highlight01">Solution:</span>
+			<br />
+			Let the three consecutive positive integers a, b, c be the form m- 1, m + 1 respectively then <br />
+			a = m - 1, b = m, c = m + 1 <br />
+			Now taking log(1 + ac) = log[1 + (m - 1) (m + 1)] <br />
+			<span class=\"latex\" lang=\"latex\"> \(  log(1 + m^2 - 1) = log m^2  \) </span>
+			<br />
+			= 2 log m But b = m <br />
+			log(1 + ac) = 2 log m = 2 log b <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \therefore  \) </span> 2 log b = log (1 + ac) 
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 8:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			Find the value of <span class=\"latex\" lang=\"latex\"> \(  log_{1003} \left(1 + \frac{1}{2} \right) + log_{1003} \left(1 + \frac{1}{3} \right) + ....... + log_{1003} \ \left( 1 + \frac{1}{2005} \right) \) </span>
+		</p>
+		<p>
+			<span class="highlight01">Solution:</span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  log_{1003} \ \left( \frac{3}{2} \right) + log_{1003} \left( \frac{4}{3} \right) + ....... + log_{1003} \left( \frac{2006}{2005} \right)  \\\\[3pt]
+				log_{1003} \ \frac{3}{2} \times \frac{4}{3}........ \times \frac{2004}{2003} \times \frac{2005}{2004} \times \frac{2006}{2005}  \\\\[3pt]
+				log_{1003} \ \frac{2006}{2} = log_{1003} 1003 = 1 \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 9</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			Find the value of <span class=\"latex\" lang=\"latex\"> \(  2005^{log_{2007} \ 2006} - 2006^{log_{2007} \ 2005} \) </span>
+		</p>
+		<p>
+			<span class="highlight01">Solution:</span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  2005^{ \frac{log 2006}{log 2007} \times \frac{log 2005}{log 2006}} - 2005^{log {2007} \ 2005}  \\\\[3pt]
+				= \left( 2005^{ log_{2007} \ 2006} \right)^{ log_{2007} \ 2005} - 2006^{ log_{2007} \ 2005}  \\\\[3pt]
+				= 2006^{ log_{2007} \ 2005} - 2006^{ log_{2007} \ 2005}  \\\\[3pt]
+				= 0 \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 10</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			Solve <span class=\"latex\" lang=\"latex\"> \(  log_4 \ log_2 \ log_{ \sqrt{2}} \ log_3 \ (x - 2006) = 0  \) </span>
+		</p>
+		<p>
+			<span class="highlight01">Solution:</span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  log_2 \ log_{ \sqrt{2}} \ log_3 (x - 2006) = 4^{ \circ} = 1  \\\\[3pt]
+				log_{ \sqrt{2}} \ log_3 \ (x - 2006) = 2  \\\\[3pt]
+				log_3 (x - 2006) = ( \sqrt{2})^2 = 2  \\\\[3pt]
+				\Rightarrow x - 2006 = 3^2 \Rightarrow x = 2006 + 9 = 2015  \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 11</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			simplify <span class=\"latex\" lang=\"latex\"> \(  \frac{1}{_2 log_{ \frac{1}{2}} 2008}  \) </span>
+		</p>
+		<p>
+			<span class="highlight01">Solution:</span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \frac{1}{_2 log_{ \frac{1}{2}} 2008} = \frac{1^{log_{ \frac{1}{2}} 2008}}{2^{log_{ \frac{1}{2}} 2008}}  \\\\[3pt]
+				= _{ \left( \frac{1}{2} \right)} log_{ \frac{1}{2}} 2008  \\\\[3pt]
+				= 2008 \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 12</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			If <span class=\"latex\" lang=\"latex\"> \(  \frac{log \ a}{b - c} = \frac{log \ b}{c - a} = \frac{log \ c}{a - b}  \) </span>, then find <span class=\"latex\" lang=\"latex\"> \(  a^a \times b^b \times c^c  \) </span>
+		</p>
+		<p>
+			<span class="highlight01">Solution:</span>
+			<br />
+			Let <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \frac{log \ a}{b - c} = \frac{log \ b}{c - a} = \frac{log \ c}{a - b} = k  \\\\[3pt]
+				log \ a = k(b - c) = kb - kc  \\\\[3pt]
+				log \ b = k(c - a) = kc - ka  \\\\[3pt]
+				log \ c = k(a - b) = ka - kb  \\\\[3pt]
+				log \ a^a = a \ log \ a = kab - kac....(1)  \\\\[3pt]
+				log \ b^b = b \ log \ b = kbc - kba....(2)  \\\\[3pt]
+				log \ c^c = c \ log \ c = kca - kcb....(3)  \\\\[3pt]
+				(1) + (2) + (3) = 0  \\\\[3pt]
+				log_{10} \ a^a \times b^b \times c^c = 0  \\\\[3pt]
+				a^a b^b c^c = 10^{ \circ} = 1  \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 13</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			solve: <span class=\"latex\" lang=\"latex\"> \(  log_4 \sqrt[3]{8^{3 + \frac{1}{3} log_2 x}} = 4  \) </span>
+		</p>
+		<p>
+			<span class="highlight01">Solution:</span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  log_4 \sqrt[3]{8^{3 + \frac{1}{3} log_2 x}} = 4  \\\\[3pt]
+				log_{2^2} \left( (2^3)^{ 3 + \frac{1}{3} log_2 x} \right)^{ \frac{1}{3}} = 4  \\\\[3pt]
+				\left(3 + \frac{1}{3} log_2 x \right) log_{2^2} 2 = 4  \\\\[3pt]
+				\frac{1}{2} \left( 3 + \frac{1}{3} log_2 x \right) = 4  \\\\[3pt]
+				3 + \frac{1}{3} log_2 \ x = 8  \\\\[3pt]
+				\frac{1}{3} log_2 \ x = 8 - 3 = 5  \\\\[3pt]
+				log_2 \ x = 15  \\\\[3pt]
+				x = 2^{15} \end{align}  \) </span>
+		</p>
+	</section> 
+</section> 

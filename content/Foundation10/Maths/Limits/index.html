@@ -1,0 +1,668 @@
+---
+title: "Limits"
+topic: "Limits"
+subject: "Maths"
+channel: "Foundation 1 0"
+tags: [Maths, Foundation10]
+categories: [Maths, Foundation10]
+menuname: "Foundation10-submenu"
+draft: false
+image: "image/Foundation10-Maths-Limits.png"
+defaultSummary: "Limits is an important Topic in the Subject of Maths for the Foundation 1 0 course.  Please review it thoroughly and attempt all the associated testing material to perform well on the Foundation 1 0 related Exams."
+menu:
+  Foundation10-submenu:
+    identifier: "Foundation10-Maths-Limits"
+    name: "Limits"
+    url: "Foundation10/Maths/Limits"
+    weight: 1800
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+<section class="skill" id="01">
+	<h3 class="skill-heading">Introduction</h3>
+	<p>Limits describe the behaviour of a function f(x) as its variable x approaches a particular number.<br />
+		To illustrate this concept, by saying that, what will happen to the function <span class=\"latex\" lang=\"latex\"> \(  f(x) = \frac{x^2 + x - 2}{x - 1}  \) </span> as x approaches 1.<br />
+		Although f(x) is not defined at x = 1, you can get a feel for the situation by evaluating f(x) using values of x that get closer and closer to 1 from both the left and the right. The following table summarizes the behaviour of f(x) for x near 1.<br />
+		<span class="highlight01">x approaches 1 from the left</span>
+		<span class=\"latex\" lang=\"latex\"> \(  \longrightarrow \longleftarrow  \) </span>. <span class="highlight01">x approaches 1 from the right</span>
+	</p>
+	<table class="u-full-width summary-table">
+		<tr>
+			<td align="center">x</td>
+			<td align="center">0.8</td>
+			<td align="center">0.9</td>
+			<td align="center">0.95</td>
+			<td align="center">0.99</td>
+			<td align="center">0.999</td>
+			<td align="center">1</td>
+			<td align="center">1.001</td>
+			<td align="center">1.01</td>
+			<td align="center">1.05</td>
+			<td align="center">1.1</td>
+		</tr>
+		<tr>
+			<td align="center">f(x)</td>
+			<td align="center">2.8</td>
+			<td align="center">2.9</td>
+			<td align="center">2.95</td>
+			<td align="center">2.99</td>
+			<td align="center">2.999</td>
+			<td align="center">x</td>
+			<td align="center">3.001</td>
+			<td align="center">3.01</td>
+			<td align="center">3.05</td>
+			<td align="center">3.10</td>
+		</tr>
+	</table>
+	<p>The function values in this table suggest that f(x) approaches the number 3 as x gets closer and closer to 1 from either side. This behaviour may be described by saying "the limit of f(x) as x approaches 1 equals 3" and abbreviated as<br />
+		<span class=\"latex\" lang=\"latex\"> \(  \lim\limits_{x \rightarrow 1}f(x) = 3  \) </span>
+	</p>
+	<section class="subskill">
+		<h4 class="skill-subheading">Important</h4>
+		<h5 class="skill-smallheading">Limit:</h5>
+		<p>If f(x) gets closer and closer to a number L as x gets closer and closer to c from either side, then L is the limit of f(x) as x approaches c. The behaviour is expressed by writing.<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \lim\limits_{x \rightarrow c}f(x) = L  \) </span>
+		</p>
+	</section>
+</section>
+<section class="skill" id="02">
+	<h3 class="skill-heading">Definition of Limit</h3>
+	<p>Let a function 'f' be defined at every point in the neighbourhood of 'a' (an open interval about a) except possibly at 'a'. If as x approaches closer and closer to 'a', but not equal to 'a', then the value of the function f(x) approaches a real number l.<br />
+		The number l is referred to as the limit of f(x) as x tends to 'a' and we write it as<br />
+		<span class=\"latex\" lang=\"latex\"> \(  \lim\limits_{x \rightarrow a}f(x) = l  \) </span>
+		<br />
+		Note that f(x) approaches l means the absolute difference between f(x) and l, i.e, [f(x) - l] can be made as small as we please.<br />
+		When, the values of f(x) do not approach a single finite value as x approaches 'a', we say that the limit does not exist.</p>
+</section>
+<section class="skill" id="03">
+	<h3 class="skill-heading">Right Hand Limit</h3>
+	<p>We say that right hand limit of f(x) as x tends to 'a' exists and is equal to <span class=\"latex\" lang=\"latex\"> \(  l_1  \) </span> if as x approaches 'a' through values greater than 'a', the values of f(x) approach a definite unique real number <span class=\"latex\" lang=\"latex\"> \(  l_1  \) </span> and we write<br />
+		<span class=\"latex\" lang=\"latex\"> \(  \lim\limits_{x \rightarrow a^{+}} f(x) = l_1  \) </span>
+	</p>
+</section>
+<section class="skill" id="04">
+	<h3 class="skill-heading">Left Hand Limit</h3>
+	<p>We say that left hand limit of f(x) as x tends to 'a' exists and is equal to <span class=\"latex\" lang=\"latex\"> \(  l_2  \) </span> if as x approaches 'a' through values less than 'a', the values of f(x) approach a definite unique real number <span class=\"latex\" lang=\"latex\"> \(  l_2  \) </span> and we write<br />
+		<span class=\"latex\" lang=\"latex\"> \(  \lim\limits_{x \rightarrow a^{-}} f(x) = l_2  \) </span>
+	</p>
+</section>
+<section class="skill" id="05">
+	<h3 class="skill-heading">Indeterminate Forms</h3>
+	<p>Most general of all indeterminate forms is <span class=\"latex\" lang=\"latex\"> \(  \frac{0}{0}  \) </span>, others being</p>
+	<div class="list-custom-block-list-ol spaced20 indented20">
+		<ol>
+			<li>
+				<p>
+					<span class=\"latex\" lang=\"latex\"> \(  \infty - \infty = \frac{1}{0} - \frac{1}{0} = \frac{0 - 0}{0} = \frac{0}{0}  \) </span> which is indeterminate and hence is <span class=\"latex\" lang=\"latex\"> \(  ( \infty - \infty)  \) </span>
+				</p>
+			</li>
+			<li>
+				<p>
+					<span class=\"latex\" lang=\"latex\"> \(  \frac{ \infty}{ \infty} = \frac{ \frac{1}{0}}{ \frac{1}{0}} = \frac{0}{0}  \) </span> which is indeterminate and hence is <span class=\"latex\" lang=\"latex\"> \(  \left( \frac{ \infty}{ \infty} \right)  \) </span>
+				</p>
+			</li>
+			<li>
+				<p>
+					<span class=\"latex\" lang=\"latex\"> \(  0 \times \infty = 0. \frac{1}{0} = \frac{0}{0}  \) </span> which is indeterminate and hence is <span class=\"latex\" lang=\"latex\"> \(  (0 \times \infty)  \) </span>
+				</p>
+			</li>
+			<li>
+				<p>
+					<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  1^{ \infty}  \\\\[3pt]
+						Let \ y = 1^{ \infty}  \\\\[3pt]
+						\Rightarrow log \ y = \infty log \ 1 = \infty \times 0  \end{align}  \) </span>
+					<br />
+					which is indeterminate and hence is <span class=\"latex\" lang=\"latex\"> \(  1^{ \infty}  \) </span>
+				</p>
+			</li>
+			<li>
+				<p>
+					<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  0^{ \circ}  \\\\[3pt]
+						Let \ y = 0^{ \circ}  \\\\[3pt]
+						\Rightarrow log \ y = 0.log \ 0 = 0 \times \infty  \end{align}  \) </span>
+					<br />
+					which is indeterminate and hence is <span class=\"latex\" lang=\"latex\"> \(  0^{ \circ}  \) </span>
+				</p>
+			</li>
+			<li>
+				<p>
+					<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \infty^{ \circ}  \\\\[3pt]
+						Let \ y = \infty^{ \circ}  \\\\[3pt]
+						\Rightarrow log \ y = 0.log \infty = 0 \times \infty  \end{align}  \) </span>
+					<br />
+					which is indeterminate and hence is <span class=\"latex\" lang=\"latex\"> \(  \infty^{ \circ}  \) </span>
+				</p>
+			</li>
+		</ol>
+	</div>
+</section>
+<section class="skill" id="06">
+	<h3 class="skill-heading">Limit of Sum and Difference</h3>
+	<p>Limit of sum/difference equals sum/difference of the individual limits<br />
+		<span class=\"latex\" lang=\"latex\"> \(  \lim\limits_{x \rightarrow a} \{f(x) \pm g(x) \} = \lim\limits_{x \rightarrow a}f(x) \pm \lim\limits_{x \rightarrow a}g(x)  \) </span>
+	</p>
+</section>
+<section class="skill" id="07">
+	<h3 class="skill-heading">Limit of Product/Quotient</h3>
+	<div class="list-custom-block-list-ol spaced20 indented20">
+		<ol>
+			<li>
+				<p>Limit of product is the product of individual limits, such that<br />
+					<span class=\"latex\" lang=\"latex\"> \(  \lim\limits_{x \rightarrow a} \{f(x) . g(x) \} = \{\lim\limits_{x \rightarrow a}f(x) \} . \{\lim\limits_{x \rightarrow a}g(x) \}  \) </span>
+					<br />
+					also <span class=\"latex\" lang=\"latex\"> \(  \lim\limits_{x \rightarrow a} \{kf(x) \} = k \{\lim\limits_{x \rightarrow a}f(x) \}  \) </span> (where, k is a constant)</p>
+			</li>
+			<li>
+				<p>Limit of quotient is the quotient of individual limits, provided the denominator must not be zero, such that<br />
+					<span class=\"latex\" lang=\"latex\"> \(  \lim\limits_{x \rightarrow a} \left\{ \frac{f(x)}{g(x)} \right\} = \frac{ \lim\limits_{x \rightarrow a} f(x)}{ \lim\limits_{x \rightarrow a} g(x)} \ \ \ \ \ \{provided \ \lim\limits_{x \rightarrow a} g(x) \neq 0 \}  \) </span>
+				</p>
+			</li>
+		</ol>
+	</div>
+</section>
+<section class="skill" id="08">
+	<h3 class="skill-heading">Evaluation of Algebraic Limits</h3>
+	<p>Let f(x) be an algebraic function(polynomial or rational) and 'a' be any real number, then <span class=\"latex\" lang=\"latex\"> \(  \lim\limits_{x \rightarrow a} f(x)  \) </span> is known as an algebraic limit.</p>
+</section>
+<section class="skill" id="09">
+	<h3 class="skill-heading">Method of direct Substitution</h3>
+	<p>
+		<span class=\"latex\" lang=\"latex\"> \(  \lim\limits_{x \rightarrow a} f(x)  \) </span> can be evaluated by method of direct substitution if f(x) exists finitely for x = a<br />
+		<span class=\"latex\" lang=\"latex\"> \(  Ex: \ \ \ \ \lim\limits_{x \rightarrow 1} \frac{x^2 + 2x + 3}{x^2 + x + 1}  \) </span>
+	</p>
+</section>
+<section class="skill" id="10">
+	<h3 class="skill-heading">Method of Factorisation</h3>
+	<p>These are algebraic limits generally of <span class=\"latex\" lang=\"latex\"> \(  \frac{0}{0}  \) </span> or <span class=\"latex\" lang=\"latex\"> \(  \frac{ \infty}{ \infty}  \) </span> form. Consider the limiting expression of the form <span class=\"latex\" lang=\"latex\"> \(  \lim\limits_{x \rightarrow a} \frac{f(x)}{g(x)}  \) </span> such that on substitution of x = a in the algebraic expression, it reduces to <span class=\"latex\" lang=\"latex\"> \(  \left( \frac{0}{0} \right)  \) </span> form. i.e, x = a is the root of both f(x) and g(x) simultaneously. Hence, according to <span class="highlight01"> factor theorem </span> both f(x) and g(x) has one of their factors as (x - a), such that<br />
+		<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \lim\limits_{x \rightarrow a} \frac{f(x)}{g(x)} = \lim\limits_{x \rightarrow a} \frac{{(x - a)} f'(x)}{{(x - a)} g'(x)} \ \ \ \ \{x \rightarrow a \ 				   and \ x \ne a \}  \\\\[3pt]
+			\therefore \lim\limits_{x \rightarrow a} \frac{f(x)}{g(x)} = \frac{f'(x)}{g'(x)} \ \ \ \ \{ for \ non \ zero \ values \ of \ f'(a) \ and \ g'(a) \}  \end{align}  \) </span>
+	</p>
+</section>
+<section class="skill" id="11">
+	<h3 class="skill-heading">Method of Rationalisation</h3>
+	<p>Rationalisation method is used when we have radical signs in a expession <span class=\"latex\" lang=\"latex\"> \(  \left(like \ \frac{1}{2}, \ \frac{1}{3} \ etc. \right)  \) </span> and there exists a negative sign between two terms of an algebraic expression.<br />
+		After rationalisation, the terms are factorised which on cancellation gives the required preferred result.</p>
+</section>
+<section class="skill" id="12">
+	<h3 class="skill-heading" id="12">Evaluation of limits using standard results</h3>
+	<p>
+		<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \lim\limits_{x \rightarrow a} \frac{x^n - a^n}{x - a} = \lim\limits_{x \rightarrow a} \left(x^{n - 1} + x^{n - 2}a + x^{n - 3}a^2 +....+ a^{n - 1} \right) \ \ \ \ (using \ expansion)  \\\\[3pt]
+			\Rightarrow \lim\limits_{x \rightarrow a} \frac{x^n - a^n}{x - a} = a^{n - 1} + a^{n - 1} + a^{n - 1} +....+ a^{n - 1} = na^{n - 1}  \\\\[3pt]
+			\therefore \lim\limits_{x \rightarrow a} \frac{x^n - a^n}{x - a} = na^{n - 1}  \end{align}  \) </span>
+	</p>
+</section>
+<section class="solved-examples" id="examples">
+	<h3 class="solved-examples-heading">Solved examples</h3>
+	<section class="solved-example">  
+		<h4 class="solved-examples-question">Example 1:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			Find k so that <span class=\"latex\" lang=\"latex\"> \(  \lim\limits_{x \rightarrow 2} f(x)  \) </span> may exist where <span class=\"latex\" lang=\"latex\"> \(  \begin{align}  f(x) = \left\{ \begin{array}{rcl} x^2 + 1, &amp; x \leq 2  \\\\ x + k, &amp; x > 2 \end{array}\right.  \end{align}  \) </span>
+		</p>
+		<p>
+			<span class="highlight01">Solution:</span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \lim\limits_{x \rightarrow 2^{-}} f(x) = \lim\limits_{x \rightarrow 2^{-}} (x^2 + 1) = 2^2 + 1 = 5 \ \ \ \ [since \ f(x) = x^2 + 1 \ for \ x \leq 2]  \\\\[3pt]
+				and \ \lim\limits_{x \rightarrow 2^{+}} f(x) = \lim\limits_{x \rightarrow 2^{+}} (x + k) = 2 + k \ \ \ \ [since \ f(x) = x + k \ for \ x > 2]  \\\\[3pt]
+				Since \ \lim\limits_{x \rightarrow 2} f(x) \ exists(given)  \\\\[3pt]
+				\Rightarrow \lim\limits_{x \rightarrow 2^{-}} f(x) = \lim\limits_{x \rightarrow 2^{+}} f(x)  \\\\[3pt]
+				\Rightarrow 5 = 2 + k \Rightarrow k = 3. \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 2:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			Evaluate the following limits:</p>
+		<div class="list1-ol default-spaced-indented list-numbered-style-lower-alpha">
+			<ol>
+				<li>
+					<p>
+						<span class=\"latex\" lang=\"latex\"> \(  \lim\limits_{x \rightarrow 2} (x^{101} + 3)  \) </span>
+					</p>
+				</li>
+				<li>
+					<p>
+						<span class=\"latex\" lang=\"latex\"> \(  \lim\limits_{x \rightarrow 3} \frac{2x^2 + 3x + 1}{x + 2}  \) </span>
+					</p>
+				</li>
+				<li>
+					<p>
+						<span class=\"latex\" lang=\"latex\"> \(  \lim\limits_{x \rightarrow a} \frac{ \sqrt{x} + \sqrt{a}}{x + a}  \) </span>
+					</p>
+				</li>
+				<li>
+					<p>
+						<span class=\"latex\" lang=\"latex\"> \(  \lim\limits_{x \rightarrow a} \frac{ \sqrt{x + 8}}{ \sqrt{x}}  \) </span>
+					</p>
+				</li>
+			</ol>
+		</div>
+		<p>
+			<span class="highlight01">Solution:</span>
+		</p>
+		<div class="list1-ol default-spaced-indented list-numbered-style-lower-alpha">
+			<ol>
+				<li>
+					<p>
+						<span class=\"latex\" lang=\"latex\"> \(  \lim\limits_{x \rightarrow 2} (x^{101} + 3) = 2^{101} + 3  \) </span>
+						<br />
+						(since <span class=\"latex\" lang=\"latex\"> \(  \lim\limits_{x \rightarrow 2} f(x) = f(a)  \) </span> for all <span class=\"latex\" lang=\"latex\"> \(  a \epsilon R,  \) </span> wherever f(x) is a real polynomial)</p>
+				</li>
+				<li>
+					<p>
+						<span class=\"latex\" lang=\"latex\"> \(  \lim\limits_{x \rightarrow 2} \frac{2x^2 + 3x + 1}{x + 2} = \frac{ \lim\limits_{x \rightarrow 3}( 2x^2 + 3x + 1)}{ \lim\limits_{x \rightarrow 3}(x + 2)} = \frac{2 \times 3^2 + 3 \times 3 + 1}{3 + 2} = \frac{28}{5}  \) </span>
+					</p>
+				</li>
+				<li>
+					<p>
+						<span class=\"latex\" lang=\"latex\"> \(  \lim\limits_{x \rightarrow a} \left( \frac{ \sqrt{x} + \sqrt{a}}{x + a} \right) = \frac{ \lim\limits_{x \rightarrow a}( \sqrt{x} + \sqrt{a})}{ \lim\limits_{x \rightarrow a}(x + a)} = \frac{ \sqrt{a} + \sqrt{a}}{a + a} = \frac{2 \sqrt{a}}{2a} = \frac{1}{ \sqrt{a}}  \) </span>
+					</p>
+				</li>
+				<li>
+					<p>
+						<span class=\"latex\" lang=\"latex\"> \(  \lim\limits_{x \rightarrow 1} \frac{ \sqrt{x + 8}}{ \sqrt{x}} = \frac{ \lim\limits_{x \rightarrow 1} \sqrt{x + 8}}{ \lim\limits_{x \rightarrow 1} \sqrt{x}} = \frac{ \sqrt{1 + 8}}{ \sqrt{1}} = \frac{3}{1} = 3  \) </span>
+					</p>
+				</li>
+			</ol>
+		</div>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 3:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			Find n if <span class=\"latex\" lang=\"latex\"> \(  \lim\limits_{x \rightarrow 2} \frac{x^n - 2^n}{x - 2} = 80  \) </span>, n being a positive integer.</p>
+		<p>
+			<span class="highlight01">Solution:</span>
+			<br />
+			We know that <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \lim\limits_{x \rightarrow a} \frac{x^n - a^n}{x - a} = na^{n - 1}  \\\\[3pt]
+				Hence \ \lim\limits_{x \rightarrow 2} \frac{x^n - 2a^n}{x - 2} = 80 \Rightarrow n2^{n - 1} = 80 \Rightarrow n2^{n - 1} = 5 \times 16 = 5 \times 2^4  \\\\[3pt]
+				\Rightarrow n2^{n - 1} = 5 \times 2^{5 - 1} \Rightarrow n = 5. \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 4:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			If <span class=\"latex\" lang=\"latex\"> \(  f(x) = 4x^3  \) </span>, evaluate <span class=\"latex\" lang=\"latex\"> \(  \lim\limits_{t \rightarrow 0} \frac{f(2 + t) - f(2)}{t}  \) </span>
+		</p>
+		<p>
+			<span class="highlight01">Solution:</span>
+			<br />
+			Now <span class=\"latex\" lang=\"latex\"> \(  f(x) = 4x^3  \) </span>, therefore,<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  f(2) = 4(2)^3 = 32 \ and \ f(2 + t) = 4(2 + t)^3  \\\\[3pt]
+				\therefore \lim\limits_{t \rightarrow 0} \frac{f(2 + t) - f(2)}{t} = \lim\limits_{t \rightarrow 0} \frac{4(2 + t)^3 - 32}{t} = \lim\limits_{t \rightarrow 0} \frac{4[(t + 2)^3 -2^3]}{(t + 2) - 2}  \\\\[3pt]
+				put \ t + 2 = u, \ then \ t \rightarrow 0 \Rightarrow u \rightarrow 2  \\\\[3pt]
+				= 4 \lim\limits_{u \rightarrow 2} \frac{u^3 - 2^3}{u - 2} = 4[3(2)^{3 - 1}] = 48. \ \ \ \ \ \ since \ \lim\limits_{x \rightarrow a} \frac{x^n - a^n}{x - a} = na^{n - 1}  \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 5:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			Evaluate <span class=\"latex\" lang=\"latex\"> \(  \lim\limits_{x \rightarrow 0} \frac{(8 + x)^{ \frac{1}{3}} - 2}{x}  \) </span>
+		</p>
+		<p>
+			<span class="highlight01">Solution:</span>
+			<br />
+			Substitute 8 + x = t <span lang="latexpng"> \Rightarrow </span> x = t - 8<br />
+			so, <span class=\"latex\" lang=\"latex\"> \(  x \rightarrow 0, \ t - 8 \rightarrow 0, \ i.e., \ t \rightarrow 8.  \) </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  Hence, \ \lim\limits_{x \rightarrow 0} \frac{(8 + x)^{ \frac{1}{3}} - 2}{x} = \lim\limits_{t \rightarrow 8} \frac{t^{ \frac{1}{3}} - 8^{ \frac{1}{3}}}{t - 8} = \frac{1}{3}(8)^{ \frac{1}{3} - 1} \ \ \ \ \left( \because \lim\limits_{x \rightarrow a} \frac{x^n - a^n}{x - a} = na^{n - 1} \right)   \\\\[3pt]
+				= \frac{1}{3}(2^3)^{ \frac{-2}{3}} = \frac{1}{3}(2^{-2}) = \frac{1}{3 \times 4} = \frac{1}{12} \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 6:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			Evaluate <span class=\"latex\" lang=\"latex\"> \(  \lim\limits_{x \rightarrow 0} \frac{(1 + x)^6 - 1}{(1 + x)^2 - 1}  \) </span>
+		</p>
+		<p>
+			<span class="highlight01">Solution:</span>
+			<br />
+			Let 1 + x = t, then x = t - 1.<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  Hence \ \ x \rightarrow 0 \Leftrightarrow t - 1 \rightarrow 0 \Leftrightarrow t \rightarrow 1  \\\\[3pt]
+				\therefore \lim\limits_{x \rightarrow 0} \frac{(1 + x)^6 - 1}{(1 + x)^2 - 1} = \lim\limits_{t \rightarrow 1} \left\{ \frac{ \left( \frac{t^6 - 1}{t - 1} \right)}{ \left( \frac{t^2 - 1}{t - 1} \right)} \right\} = \frac{ \lim\limits_{t \rightarrow 1} \frac{t^6 - 1^6}{t - 1}}{ \lim\limits_{t \rightarrow 1} \frac{t^2 - 1^2}{t - 1}}  \\\\[3pt]
+				= \frac{6(1)^{6 - 1}}{2(1)^{2 - 1}} \ \ \ \ since \ \lim\limits_{x \rightarrow a} \frac{x^n - a^n}{x - a} = na^{n - 1}  \\\\[3pt]
+				= \frac{6}{2} = 3  \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 7:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			Evaluate <span class=\"latex\" lang=\"latex\"> \(  \lim\limits_{x \rightarrow -1} \left( \frac{x^3 + 1}{x + 1} \right).  \) </span>
+		</p>
+		<p>
+			<span class="highlight01">Solution:</span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \lim\limits_{x \rightarrow -1} \frac{x^3 + 1}{x + 1} = \lim\limits_{x \rightarrow -1} \frac{x^3 + 1^3}{x + 1} \ \ \ \ \left( \frac{0}{0} \ form \right)  \\\\[3pt]
+				= \lim\limits_{x \rightarrow -1} \frac{(x + 1)(x^2 - x + 1)}{x + 1} \ \lim\limits_{x \rightarrow -1} \frac{x^2 - x + 1}{1}  \\\\[3pt]
+				= \lim\limits_{x \rightarrow -1}(x^2 - x + 1) = \lim\limits_{x \rightarrow -1}x^2 - \lim\limits_{x \rightarrow -1}x + \lim\limits_{x \rightarrow -1}1 = (-1)^2 - (-1) + 1 = 3  \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 8:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			Evaluate <span class=\"latex\" lang=\"latex\"> \(  \lim\limits_{x \rightarrow a} \frac{x^3 - a^3}{x^2 - a^2}, \ a \neq 0.  \) </span>
+		</p>
+		<p>
+			<span class="highlight01">Solution:</span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \lim\limits_{x \rightarrow a} \frac{x^3 - a^3}{x^2 - a^2} = \lim\limits_{x \rightarrow a} \frac{(x - a)(x^2 + xa + a^2)}{(x - a)(x + a)} = \lim\limits_{x \rightarrow a} \frac{x^2 + xa + a^2}{x + a}  \\\\[3pt]
+				= \frac{\lim\limits_{x \rightarrow a}(x^2 + xa + a^2)}{ \lim\limits_{x \rightarrow a}(x + a)}  \\\\[3pt]
+				= \frac{a^2 + a.a + a^2}{a + a} = \frac{3a^2}{2a} = \frac{3}{2}a  \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 9:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			Evaluate <span class=\"latex\" lang=\"latex\"> \(  \lim\limits_{x \rightarrow -2} \frac{x^3 + x^2 + 4x + 12}{x^3 - 3x + 2}  \) </span>
+		</p>
+		<p>
+			<span class="highlight01">Solution:</span>
+			<br />
+			We note that both numerator and denominator vanish for x = -2<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \Rightarrow x - (-2),  \) </span> i.e., x + 2 is a factor of both numerator and denominator.<br />
+			For factorisation, we use long division method.<br />
+			<span class=\"latex\" lang=\"latex\"> \(  x^3 + x^2 + 4x + 12  \) </span> is divided by x + 2 we get the divisor <span class=\"latex\" lang=\"latex\"> \(  x^2 - x + 6  \) </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  x^3 - 3x + 2  \) </span> is divided by x + 2 we get the divisor <span class=\"latex\" lang=\"latex\"> \(  x^2 - 2x + 1  \) </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \lim\limits_{x \rightarrow -2} \frac{x^3 + x^2 + 4x + 12}{x^3 - 3x + 2} = \lim\limits_{x \rightarrow -2} \frac{(x + 2)(x^2 - x + 6)}{(x + 2)(x^2 - 2x + 1)}  \\\\[3pt]
+				= \lim\limits_{x \rightarrow -2} \frac{x^2 - x + 6}{x^2 - 2x + 1} = \frac{(-2)^2 - (-2) + 6}{(-2)^2 - 2(-2) + 1} = \frac{12}{9} = \frac{4}{3}  \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 10:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			Evaluate</p>
+		<div class="list1-ol default-spaced-indented list-numbered-style-lower-alpha">
+			<ol>
+				<li>
+					<p>
+						<span class=\"latex\" lang=\"latex\"> \(  \lim\limits_{x \rightarrow 1} \left( \frac{1}{x^2 + x - 2} - \frac{x}{x^3 - 1} \right)  \) </span>
+					</p>
+				</li>
+				<li>
+					<p>
+						<span class=\"latex\" lang=\"latex\"> \(  \lim\limits_{x \rightarrow 2} \left( \frac{1}{x - 2} - \frac{4}{x^3 - 2x^2} \right)  \) </span>
+					</p>
+				</li>
+			</ol>
+		</div>
+		<p>
+			<span class="highlight01">Solution:</span>
+		</p>
+		<div class="list1-ol default-spaced-indented list-numbered-style-lower-alpha">
+			<ol>
+				<li>
+					<p>
+						<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \lim\limits_{x \rightarrow 1} \left( \frac{1}{x^2 + x - 2} - \frac{x}{x^3 - 1} \right)  \\\\[3pt]
+							= \lim\limits_{x \rightarrow 1} \left\{ \frac{1}{(x + 2)(x - 1)} - \frac{x}{(x - 1)(x^2 + x + 1)} \right\}  \\\\[3pt]
+							= \lim\limits_{x \rightarrow 1} \frac{x^2 + x + 1 - x(x + 2)}{(x - 1)(x + 2)(x^2 + x + 1)}  \\\\[3pt]
+							= \lim\limits_{x \rightarrow 1} \frac{-(x - 1)}{(x - 1)(x + 2)(x^2 + x + 1)} \ \ \ \ \left( \frac{0}{0} \ form \right)  \\\\[3pt]
+							= \lim\limits_{x \rightarrow 1} \frac{-1}{(x + 2)(x^2 + x + 1)}  \\\\[3pt]
+							= \frac{-1}{(1 + 2)(1 + 1 + 1)} = - \frac{1}{9}  \end{align}  \) </span>
+					</p>
+				</li>
+				<li>
+					<p>
+						<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \lim\limits_{x \rightarrow 2} \left( \frac{1}{x - 2} - \frac{4}{x^3 - 2x^2} \right) = \lim\limits_{x \rightarrow 2} \left\{ \frac{1}{x - 2} - \frac{4}{x^2(x - 2)} \right\}  \\\\[3pt]
+							= \lim\limits_{x \rightarrow 2} \frac{x^2 - 4}{x^2(x - 2)} \ \ \ \ \left( \frac{0}{0} \ form \right)  \\\\[3pt]
+							= \lim\limits_{x \rightarrow 2} \frac{(x - 2)(x + 2)}{x^2(x - 2)} = \lim\limits_{x \rightarrow 2} \frac{x + 2}{x^2}  \\\\[3pt]
+							= \frac{2 + 2}{2^2} = \frac{4}{4} = 1 \end{align}  \) </span>
+					</p>
+				</li>
+			</ol>
+		</div>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 11:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			Evaluate <span class=\"latex\" lang=\"latex\"> \(  \lim\limits_{x \rightarrow 1} \frac{(2x - 3)( \sqrt{x} - 1)}{2x^2 + x - 3}  \) </span>
+		</p>
+		<p>
+			<span class="highlight01">Solution:</span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \lim\limits_{x \rightarrow 1} \frac{(2x - 3)( \sqrt{x} - 1)}{2x^2 + x - 3} \ \ \ \left( \frac{0}{0} \ form \right)  \\\\[3pt]
+				= \lim\limits_{x \rightarrow 1} \frac{(2x - 3)( \sqrt{x} - 1)}{(x - 1)(2x + 3)}  \\\\[3pt]
+				= \lim\limits_{x \rightarrow 1} \frac{(2x - 3)( \sqrt{x} - 1)}{( \sqrt{x} - 1)( \sqrt(x) + 1)(2x + 3)} \ \ \ \ since \ x - 1 = ( \sqrt{x})^2 - 1 = ( \sqrt{x} - 1)( \sqrt{x} + 1)  \\\\[3pt]
+				= \lim\limits_{x \rightarrow 1} \frac{2x - 3}{( \sqrt{x} + 1)(2x + 3)} \ \ \ \ since \ \sqrt{x} - 1 \neq 0  \\\\[3pt]
+				= \frac{2 - 3}{( \sqrt{1} + 1)(2 + 3)} = \frac{-1}{2 \times 5} = - \frac{1}{10}  \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 12:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			Evaluate <span class=\"latex\" lang=\"latex\"> \(  \lim\limits_{x \rightarrow 1^{+}} \frac{ \sqrt{x^2 - 1} + \sqrt{x - 1}}{ \sqrt{x^2 - 1}}  \) </span>
+		</p>
+		<p>
+			<span class="highlight01">Solution:</span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \lim\limits_{x \rightarrow 1^{+}} \frac{ \sqrt{x^2 - 1} + \sqrt{x - 1}}{ \sqrt{x^2 - 1}}  = \lim\limits_{x \rightarrow 1^{+}} \frac{ \sqrt{x + 1} \sqrt{x - 1} + \sqrt{x - 1}}{ \sqrt{x - 1} \sqrt{x + 1}}  \\\\[3pt]
+				= \lim\limits_{x \rightarrow 1^{+}} \frac{ \sqrt{x - 1}( \sqrt{x + 1} + 1)}{ \sqrt{x - 1} \sqrt{x + 1}} = \lim\limits_{x \rightarrow 1^{+}} \frac{ \sqrt{x + 1} + 1}{ \sqrt{1 + 1}} = \frac{ \sqrt{2} + 1}{ \sqrt{2}}  \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 13:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			Evaluate <span class=\"latex\" lang=\"latex\"> \(  \lim\limits_{x \rightarrow \sqrt{2}} \frac{x^4 - 4}{x^2 + 3x \sqrt{2} - 8}  \) </span>
+		</p>
+		<p>
+			<span class="highlight01">Solution:</span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \lim\limits_{x \rightarrow \sqrt{2}} \frac{x^4 - 4}{x^2 + 3x \sqrt{2} - 8} \ \ \ \ \left( \frac{0}{0} \ form \right)  \\\\[3pt]
+				= \lim\limits_{x \rightarrow \sqrt{2}} \frac{(x^2 - 2)((x^2 + 2))}{x^2 + 4 \sqrt{2}x - \sqrt{2}x - 8}  \\\\[3pt]
+				= \lim\limits+{x \rightarrow \sqrt{2}} \frac{(x - \sqrt{2})(x + \sqrt{2})(x^2 + 2)}{x(x + 4 \sqrt{2}) - \sqrt{2}(x + 4 \sqrt{2})} \ \ \ since 8 = 4 \sqrt{2} \times \sqrt{2}  \\\\[3pt]
+				= \lim\limits_{x \rightarrow \sqrt{2}} \frac{(x - \sqrt{2})(x + \sqrt{2})(x^2 + 2)}{(x + 4 \sqrt{2})(x - \sqrt{2})} = \lim\limits_{x \rightarrow \sqrt{2}} \frac{(x + \sqrt{2})(x^2 + 2)}{x + 4 \sqrt{2}}  \\\\[3pt]
+				= \frac{( \sqrt{2} + \sqrt{2})(( \sqrt{2})^2 + 2)}{ \sqrt{2} + 4 \sqrt{2}} = \frac{(2 \sqrt{2})4}{5 \sqrt{2}} = \frac{8}{5}  \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 14:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			Evaluate</p>
+		<div class="list1-ol default-spaced-indented list-numbered-style-lower-alpha">
+			<ol>
+				<li>
+					<p>
+						<span class=\"latex\" lang=\"latex\"> \(  \lim\limits_{x \rightarrow 0} \frac{ \sqrt{3 - x} - \sqrt{3 + x}}{x}  \) </span>
+					</p>
+				</li>
+				<li>
+					<p>
+						<span class=\"latex\" lang=\"latex\"> \(  \lim\limits_{x \rightarrow 3} \frac{x^2 - 9}{ \sqrt{3x - 2} - \sqrt{x + 4}}  \) </span>
+					</p>
+				</li>
+			</ol>
+		</div>
+		<p>
+			<span class="highlight01">Solution:</span>
+		</p>
+		<div class="list1-ol default-spaced-indented list-numbered-style-lower-alpha">
+			<ol>
+				<li>
+					<p>
+						<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \lim\limits_{x \rightarrow 0} \frac{ \sqrt{3 - x} - \sqrt{3 + x}}{x} \ \ \ \left( \frac{0}{0} \ form \right)  \\\\[3pt]
+							= \lim\limits_{x \rightarrow 0} \frac{ \sqrt{3 - x} - \sqrt{3 + x}}{x} \times \frac{ \sqrt{3 - x} + \sqrt{3 + x}}{ \sqrt{3 - x} + \sqrt{3 + x}}  \\\\[3pt]
+							= \lim\limits_{x \rightarrow 0} \frac{(3 - x) - (3 + x)}{x( \sqrt{3 - x} + \sqrt{3 + x})} = \lim\limits_{x \rightarrow 0} \frac{- 2x}{x( \sqrt{3 - x} + \sqrt{3 + x})}  \\\\[3pt]
+							= \lim\limits_{x \rightarrow 0} \frac{-2}{ \sqrt{3 - x} + \sqrt{3 + x}} \ \ \ \ since x \neq 0  \\\\[3pt]
+							= \frac{-2}{\sqrt{3 - 0} + \sqrt{3 + 0}} = - \frac{2}{2 \sqrt{3}} = - \frac{1}{ \sqrt{3}}  \end{align}  \) </span>
+					</p>
+				</li>
+				<li>
+					<p>
+						<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \lim\limits_{x \rightarrow 3} \frac{x^2 - 9}{ \sqrt{3x - 2} - \sqrt{x + 4}}  \\\\[3pt]
+							= \lim\limits_{x \rightarrow 3} \left(\frac{x^2 - 9}{ \sqrt{3x - 2} - \sqrt{x + 4}} \right) \times \left( \frac{\sqrt{3x - 2} + \sqrt{x + 4}}{\sqrt{3x - 2} + \sqrt{x + 4}} \right)  \\\\[3pt]
+							= \lim\limits_{x \rightarrow 3} \frac{(x - 3)(x + 3)( \sqrt{3x - 2} + \sqrt{x + 4})}{3x - 2 - (x + 4)}  \\\\[3pt]
+							= \lim\limits_{x \rightarrow 3} \frac{(x - 3)(x + 3)( \sqrt{3x - 2} + \sqrt{x + 4})}{2(x - 3)}  \\\\[3pt]
+							= \lim\limits_{x \rightarrow 3} \frac{(x + 3)( \sqrt{3x - 2} + \sqrt{x + 4})}{2}  \\\\[3pt]
+							= \frac{(3 + 3)( \sqrt{3 \times 3 - 2} + \sqrt{3 + 4})}{2} = 6 \sqrt{7}  \end{align}  \) </span>
+					</p>
+				</li>
+			</ol>
+		</div>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 15:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			Evaluate <span class=\"latex\" lang=\"latex\"> \(  \lim\limits_{x \rightarrow -3} \frac{x3 + 27}{ \sqrt{x^2 + 7} - 4}  \) </span>
+		</p>
+		<p>
+			<span class="highlight01">Solution:</span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \lim\limits_{x \rightarrow -3} \frac{x3 + 27}{ \sqrt{x^2 + 7} - 4} \ \ \ \left( \frac{0}{0} \ form \right)  \\\\[3pt]
+				= \lim \limits_{x \rightarrow -3} \frac{x3 + 27}{ \sqrt{x^2 + 7} - 4} \times \frac{ \sqrt{x^2 + 7} + 4}{ \sqrt{x^2 + 7} + 4}  \\\\[3pt]
+				= \lim\limits_{x \rightarrow -3} \frac{(x^3 + 3^3) \left( \sqrt{x^2 + 7} + 4 \right)}{( \sqrt{x^2 + 7})^2 - (4)^2}  \\\\[3pt]
+				= \lim\limits_{x \rightarrow -3} \frac{(x + 3)(x^2 - 3x + 3^2)( \sqrt{x^2 + 7} + 4)}{(x - 3)(x + 3)} \ \ \ since \ x^2 + 7 - 16 = x^2 - 9 = (x -3)(x + 3)  \\\\[3pt]
+				= \lim\limits_{x \rightarrow -3} \frac{(x^2 - 3x + 9)( \sqrt{x^2 + 7} + 4)}{(x - 3)}  \\\\[3pt]
+				= \frac{ \{(-3)^2 - 3(-3) + 9 \} \{ \sqrt{(-3)^2 + 7} + 4 \}}{- 3 - 3} = \frac{27(4 + 4)}{- 6} = - 36  \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 16:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			Evaluate <span class=\"latex\" lang=\"latex\"> \(  \lim\limits_{x \rightarrow \sqrt{10}} \frac{ \sqrt{2x + 7} - ( \sqrt{5} + \sqrt{2})}{x^2 - 10}  \) </span>
+		</p>
+		<p>
+			<span class="highlight01">Solution:</span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \lim\limits_{x \rightarrow \sqrt{10}} \frac{ \sqrt{2x + 7} - ( \sqrt{5} + \sqrt{2})}{x^2 - 10}  \ \ \ \left( \frac{0}{0} \ form \right)  \\\\[3pt]
+				= \lim\limits_{x \rightarrow \sqrt{10}} \frac{ \sqrt{2x + 7} - ( \sqrt{5} + \sqrt{2})}{x^2 - 10} \times \frac{ \sqrt{2x + 7} + ( \sqrt{5} + \sqrt{2})}{ \sqrt{2x + 7} + ( \sqrt{5} + \sqrt{2})}  \\\\[3pt]
+				= \lim\limits_{x \rightarrow \sqrt{10}} \frac{( \sqrt{2x + 7})^2 - ( \sqrt{5} + \sqrt{2})^2}{(x - \sqrt{10})(x + \sqrt{10}) \{ \sqrt{2x + 7} + \sqrt{5} + \sqrt{2} \}}  \\\\[3pt]
+				= \lim\limits_{x \rightarrow \sqrt{10}} \frac{2x + 7 - (5 + 2 + 2 \sqrt{10})}{(x - \sqrt{10})(x + \sqrt{10}) \{ \sqrt{2x + 7} + \sqrt{5} + \sqrt{2} \}}  \end{align}  \) </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  = \lim\limits_{x \rightarrow \sqrt{10}} \frac{2(x - \sqrt{10})}{(x - \sqrt{10})(x + \sqrt{10})( \sqrt{2x + 7} + \sqrt{5} + \sqrt{2})}  \\\\[3pt]
+				= \lim\limits_{x \rightarrow \sqrt{10}} \frac{2}{( \sqrt{10} + \sqrt{10})( \sqrt{2 \sqrt{10} + 7} + \sqrt{5} + \sqrt{2})}  \\\\[3pt]
+				= \frac{2}{2 \sqrt{10}( \sqrt{5} + \sqrt{2} + \sqrt{5} + \sqrt{2})}  \\\\[3pt]
+				= \frac{1}{2 \sqrt{10}( \sqrt{5} + \sqrt{2})} \times \frac{ \sqrt{5} - \sqrt{2}}{ \sqrt{5} - \sqrt{2}}  \\\\[3pt]
+				= \frac{ \sqrt{5} - \sqrt{2}}{2 \sqrt{10}(5 - 2)} = \frac{ \sqrt{5} - \sqrt{2}}{6 \sqrt{10}}  \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 17:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			Evaluate <span class=\"latex\" lang=\"latex\"> \(  \lim\limits_{x \rightarrow 7} \left(\frac{4 - \sqrt{9 + x}}{1 - \sqrt{8 - x}} \right)  \) </span>
+		</p>
+		<p>
+			<span class="highlight01">Solution:</span>
+			<br />
+			In this case, we shall rationalise both the numerator and the denominator.<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \lim\limits_{x \rightarrow 7} \left(\frac{4 - \sqrt{9 + x}}{1 - \sqrt{8 - x}} \right) \ \ \ \left( \frac{0}{0} \ form \right)  \\\\[3pt]
+				\lim\limits_{x \rightarrow 7} \frac{4 - \sqrt{9 + x}}{1 - \sqrt{8 - x}} \times \frac{4 + \sqrt{9 + x}}{4 + \sqrt{9 + x}} \times \frac{1 + \sqrt{8 - x}}{1 + \sqrt{8 - x}}  \\\\[3pt]
+				\lim\limits_{x \rightarrow 7} \frac{[16 - (9 + x)](1 + \sqrt{8 - x})}{[1 - (8 - x)](4 + \sqrt{9 + x})}  \\\\[3pt]
+				\lim\limits_{x \rightarrow 7} \frac{(7 - x)(1 + \sqrt{8 - x})}{(x - 7)(4 + \sqrt{9 + x})} = \lim\limits_{x \rightarrow 7} \frac{- (1 + \sqrt{8 - x})}{4 + \sqrt{9 + x}} \ \ \ \ since x - 7 \neq 0  \\\\[3pt]
+				= \frac{-(1 + \sqrt{8 - 7})}{4 + \sqrt{9 + 7}} = \frac{-(1 + 1)}{4 + 4} = - \frac{1}{4}  \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 18:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			Evaluate <span class=\"latex\" lang=\"latex\"> \(  \lim\limits_{x \rightarrow a} \frac{ \sqrt{a + 2x} - \sqrt{3x}}{ \sqrt{3a + x} - 2 \sqrt{x}}  \) </span> it being given that a &gt; 0.</p>
+		<p>
+			<span class="highlight01">Solution:</span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \lim\limits_{x \rightarrow a} \frac{ \sqrt{a + 2x} - \sqrt{3x}}{ \sqrt{3a + x} - 2 \sqrt{x}}  \) </span>, rationalise both the numerator and the denominator<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \lim\limits_{x \rightarrow a} \frac{ \sqrt{a + 2x} - \sqrt{3x}}{ \sqrt{3a + x} - 2 \sqrt{x}} \times \frac{ \sqrt{a + 2x} + \sqrt{3x}}{ \sqrt{a + 2x} + \sqrt{3x}} \times \frac{ \sqrt{3a + x} + 2 \sqrt{x}}{ \sqrt{3a + x} + 2 \sqrt{x}}  \\\\[3pt]
+				= \lim\limits_{x \rightarrow a} \frac{(a + 2x - 3x)( \sqrt{3a + x} + 2 \sqrt{x})}{(3a + x - 4x)( \sqrt{a + 2x} + \sqrt{3x})}  \\\\[3pt]
+				= \lim\limits_{x \rightarrow a} \frac{(a - x)( \sqrt{3a + x} + 2 \sqrt{x})}{3(a - x)( \sqrt{a + 2x} + \sqrt{3x})}  \\\\[3pt]
+				= \lim\limits_{x \rightarrow a} \frac{ \sqrt{3a + x} + 2 \sqrt{x}}{3( \sqrt{a + 2x} + \sqrt{3x})} = \frac{ \sqrt{3a + a} + 2 \sqrt{a}}{3( \sqrt{a + 2a} + \sqrt{3a})}  \\\\[3pt]
+				= \frac{2 \sqrt{a} + 2 \sqrt{a}}{3( \sqrt{3a} + \sqrt{3a})} = \frac{4 \sqrt{a}}{3 \sqrt{3}( \sqrt{a} + \sqrt{a})} = \frac{2}{3 \sqrt{3}}  \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 19:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+		</p>
+		<div class="list1-ol default-spaced-indented list-numbered-style-lower-alpha">
+			<ol>
+				<li>
+					<p>
+						<span class=\"latex\" lang=\"latex\"> \(  \lim\limits_{x \rightarrow \infty} \frac{1}{x^n}, \ n > 1  \) </span>
+					</p>
+				</li>
+				<li>
+					<p>
+						<span class=\"latex\" lang=\"latex\"> \(  \lim\limits_{x \rightarrow \infty} \frac{2x^2 - 3x + 5}{7x^3 - 8x - 4}  \) </span>
+					</p>
+				</li>
+			</ol>
+		</div>
+		<p>
+			<span class="highlight01">Solution:</span>
+		</p>
+		<div class="list1-ol default-spaced-indented list-numbered-style-lower-alpha">
+			<ol>
+				<li>
+					<p>Let <span class=\"latex\" lang=\"latex\"> \(  x = \frac{1}{y}  \) </span> so that when <span class=\"latex\" lang=\"latex\"> \(  x \rightarrow \infty, \ y \rightarrow 0^{+}  \) </span>
+						<br />
+						<span class=\"latex\" lang=\"latex\"> \(  \lim\limits_{x \rightarrow \infty} \frac{1}{x^n} = \lim\limits_{y \rightarrow 0^{+}} y^n = 0  \) </span>
+					</p>
+				</li>
+				<li>
+					<p>Divide the numerator and denominator by the highest power of x, that occurs either in the numerator or in the denominator which, in this case is <span class=\"latex\" lang=\"latex\"> \(  x^3.  \) </span>
+						<br />
+						<span class=\"latex\" lang=\"latex\"> \(  \lim\limits_{x \rightarrow \infty} \frac{2x^2 - 3x + 5}{7x^3 - 8x - 4} = \lim\limits_{x \rightarrow \infty} \frac{ \frac{2}{x} - \frac{3}{x^2} + \frac{5}{x^3}}{7 - \frac{8}{x^2} - \frac{4}{x^3}} = \frac{0 - 0 + 0}{7 - 0 - 0} = 0  \) </span>
+						<br />
+						Alternatively,<br />
+						<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \lim\limits_{x \rightarrow \infty} \frac{2x^2 - 3x + 5}{7x^3 - 8x - 4} = \lim\limits_{x \rightarrow 0^{+}} \frac{2 \left( \frac{1}{y} \right)^2 - 3 \left( \frac{1}{y} \right) - 5}{7 \left( \frac{1}{y} \right)^3 - 8 \left( \frac{1}{y} \right) - 4} \ \ \ \ \ since \lim\limits_{x \rightarrow \infty} f(x) = \lim\limits_{y \rightarrow \infty^{+}} f \left( \frac{1}{y} \right)  \\\\[3pt]
+							= \lim\limits_{y \rightarrow 0^{+}} \frac{2 - 3y - 5y^2}{y^2} \times \frac{y^3}{7 - 8y^2 - 4y^3}  \\\\[3pt]
+							= \lim\limits_{y \rightarrow 0^{+}} \frac{y(2 - 3y - 5y^2)}{7 - 8y^2 - 4y^3} = \frac{0(2 - 0 - 0)}{7 - 0 - 0} = 0  \end{align}  \) </span>
+					</p>
+				</li>
+			</ol>
+		</div>
+	</section> 
+</section>

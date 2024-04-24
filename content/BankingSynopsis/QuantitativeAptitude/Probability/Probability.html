@@ -1,0 +1,251 @@
+---
+title: "Probability"
+layout: "default_banking"
+isQuantitativeAptitude: true
+---
+
+<section class="skill" id="01">
+	<h3 class="skill-heading" id="01">Probability</h3>
+	<p>Human life is full of uncertaintities. In our day to day life we very often make guess and give statements like : "Possibility of a particular party to win this election is more", "Most probably it will be sunny day today"; "It is almost certain that Ramesh will compete in Bank Clerk Exam." Whenever we use such statements we have intuition which enables us to claim that one event is more likely to happen than the other. In probability theory, the degree of certainty and uncertainty is measured in terms of numbers lying between 0 and 1.</p>
+	<section class="subskill">
+		<h4 class="skill-subheading">Experiment</h4>
+		<p> An operation which results in some well defined outcomes is called an experiment.</p>
+	</section>
+	<section class="subskill">
+		<h4 class="skill-subheading">Random Experiment:</h4>
+		<p>An experiment whose outcome cannot be predicted with certainty is called a random experiment. In other words if an experiment is performed many times under similar conditions and the outcome each time is not the same, then this experiment is known as a random experiment. <br />
+			<span class="highlight01">Remark:</span> An experiment whose out - come cannot be predicted before hand is not a random experiment. For example, when we throw an apple upward, it is certain that it will come to the earth falling downward. So, throwing an apple upward is not a random experiment <br />
+			<span class="highlight01">Examples:</span>
+		</p>
+		<div class="list-custom-block-list-ol spaced20 indented20">
+			<ol>
+				<li>
+					<p>"Tossing of a fair coin" is a random experiment because if we toss a coin either a head or a tail will come up. But if we toss a coin again and again, the outcome in each case will not be the same.</p>
+				</li>
+				<li>
+					<p>"Drawing a card from a well shuffled pack of 52 playing cards" is a random experiment.</p>
+				</li>
+				<li>
+					<p>"Throwing an unbiased dice" is a random experiment since when we throw a dice, we cannot say with certainty that a particular number ranging from 1 to 6 will come up. </p>
+				</li>
+			</ol>
+		</div>
+	</section>
+	<section class="subskill">
+		<h4 class="skill-subheading">Trial and Elementary Events :</h4>
+		<p>When an experiment is repeated under similar conditions and it does not give the same result each time but may result in any one of the several possible outcomes, the experiment is called a trial and the outcomes are called cases. The number of times the experiment is repeated is called the number of trials.<br />
+			<span class="highlight01">For example:</span>
+		</p>
+		<div class="list-custom-block-list-ol spaced20 indented20">
+			<ol>
+				<li>
+					<p>Tossing of a coin is a trial and getting a head or a tail is case or elementary event.</p>
+				</li>
+				<li>
+					<p>Throwing of a dice is trial and getting 3 on its upper face is an elementary event or case.</p>
+				</li>
+				<li>
+					<p>One toss of a coin is a trial when the coin is tossed 5 times.</p>
+				</li>
+				<li>
+					<p>Drawing a card from a pack of a well shuffled cards is a trial and getting a king of diamond is an elementary event.</p>
+				</li>
+			</ol>
+		</div>
+	</section>
+	<section class="subskill">
+		<h4 class="skill-subheading">Exhaustive Number of Cases:</h4>
+		<p> The total number of possible outcomes of a random experiment in a trial is known as the exhaustive number of cases. In other words the total number of elementary events of a random experiment is called the exhaustive number of cases. It is generally denoted by n (S). <br />
+			<span class="highlight01">For example:</span>
+		</p>
+		<div class="list-custom-block-list-ol spaced20 indented20">
+			<ol>
+				<li>
+					<p>In throwing of a dice the exhaus-tive number of cases is 6, since any one of the six faces marked with 1, 2, 3, 4, 5, 6 may come uppermost</p>
+				</li>
+				<li>
+					<p>In drawing 2 cards from a well-shuffled pack of 52 cards, the exhuastive number of cases is <span class=\"latex\" lang=\"latex\"> \(  ^{52}C_2  \) </span> since 2 cards can be drawn out of 52 cards in <span class=\"latex\" lang=\"latex\"> \(  ^{52}C_2  \) </span> ways.</p>
+				</li>
+				<li>
+					<p>In drawing three balls from a bag containing 3 white, 5 black and 3 red balls, the exhaustive number of cases is <span class=\"latex\" lang=\"latex\"> \(  ^{11}C_3  \) </span> since 3 balls can be drawn out of (3 + 5 + 3) = 11 balls in <span class=\"latex\" lang=\"latex\"> \(  ^{11}C_3  \) </span> ways.</p>
+				</li>
+			</ol>
+		</div>
+	</section>
+	<section class="subskill">
+		<h4 class="skill-subheading">Equally Likely Events :</h4>
+		<p>Events are equally likely if there is no reason for an event to occur in preference to any other event. <br />
+			Thus when an unbiased dice is thrown all the six faces 1, 2, 3, 4, 5 and 6 are equally likely to come up. <br />
+			Similarly when an unbiased coin is tossed occurrences of head and tail are equally likely cases.</p>
+	</section>
+	<section class="subskill">
+		<h4 class="skill-subheading">Favourable Number of Cases:</h4>
+		<p> The number of cases favourable to an event in a trial is the number of elementary events such that if any one of them occurs, we say that the event happens. <br />
+			In other words, the number of cases favourable to an event in a trial is the total number of elementary events such that the occurrence of any one of them ensures the happening of the event. It is generally denoted by n (E). <br />
+			<span class="highlight01">For example:</span>
+		</p>
+		<div class="list-custom-block-list-ol spaced20 indented20">
+			<ol>
+				<li>
+					<p>In tossing of a dice, the number of cases favourable to the appearance of a multiple of 2 is 3 viz 2. 4, 6.</p>
+				</li>
+				<li>
+					<p>In drawing two cards from a pack of 52 cards, the number of cases favourable to drawing 2 kings is <span class=\"latex\" lang=\"latex\"> \( ^4C_2  \) </span> .</p>
+				</li>
+			</ol>
+		</div>
+	</section>
+	<section class="subskill">
+		<h4 class="skill-subheading">Mathematical Definition of Probability </h4>
+		<p>If there are n elementary events associated with a random experiment and m of them are favourable to an event E. then the probability of happening of E is denoted by P(E) and is defined as the ratio  <span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \frac{m}{n}  \\\\[3pt]
+				or,  \\\\ P(E) = \frac{\text{Number of cases favourable to event A}}{\text{Total no . of cases}}  \\\\[3pt]
+				or,  \\\\ P(E) = \frac{\text{No.of desired events}}{\text{Total no.of events}} = \frac{n(E)}{n(S)}  \\\\[3pt]
+				= \frac{\text{Favourable number of cases}}{\text{Exhaustive number of cases }}  \end{align}  \) </span>
+			<br />
+			<span class="highlight01">Note:</span>
+		</p>
+		<div class="list-custom-block-list-ol spaced20 indented20">
+			<ol>
+				<li>
+					<p>Probability of occurrence of an event is a number lying between 0 and 1.</p>
+				</li>
+				<li>
+					<p>Probability of a certain event = 1.</p>
+				</li>
+				<li>
+					<p>Probability of happening an event of not happening an event = 1 </p>
+				</li>
+			</ol>
+		</div>
+	</section>
+	<section class="subskill">
+		<h4 class="skill-subheading">Some information about playing cards:</h4>
+		<div class="list-custom-block-list-ol spaced20 indented20">
+			<ol>
+				<li>
+					<p>A pack of 52 playing cards has 4 suits.
+						<ol>
+							<li>
+								<p>Spades</p>
+							</li>
+							<li>
+								<p>Hearts</p>
+							</li>
+							<li>
+								<p>Diamonds</p>
+							</li>
+							<li>
+								<p>Clubs.</p>
+							</li>
+						</ol>
+					</p>
+				</li>
+				<li>
+					<p>Spades and clubs are black faced cards.</p>
+					<div class="synopsis-image"> 
+						<img src="111101009_image-1.png" alt="image1" class="default-synopsis-medium-image" />
+					 </div>
+				</li>
+				<li>
+					<p>Hearts and diamonds are red faced cards.</p>
+					<div class="synopsis-image"> 
+						<img src="111101009_image-2.png" alt="image2" class="default-synopsis-medium-image" />
+					 </div>
+				</li>
+				<li>
+					<p>Each suit consists of 13 cards</p>
+				</li>
+				<li>
+					<p>The aces, kings, queens, jacks are called face cards or honours cards.</p>
+				</li>
+			</ol>
+		</div>
+	</section>
+	<section class="subskill">
+		<h4 class="skill-subheading">Sample Space:</h4>
+		<p>The set of all possible outcomes of a random experiment is called the sample space and is denoted by S. No. of events in S = n(S).</p>
+	</section>
+</section>
+<section class="solved-examples" id="examples">
+	<h3 class="solved-examples-heading">Solved examples</h3>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 1:</h4>
+		<p>We tossed a single coin on the air and Find the probability of getting head? </p>
+		<p>
+			<span class="highlight01">sol:</span>
+			<br />
+			Here n (S) is Total number of Possible outcomes So,<br />
+			S = { H, T }. <br />
+			n(E) Total number of required outcomes. n(E)= 1{H}.<br />
+			P(E)Probability of Event. <br />
+			<span class=\"latex\" lang=\"latex\"> \( P(E) = \frac{n(E)}{n(S)} = \frac{1}{2}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 2:</h4>
+		<p>Two Coins are impartial way throw on air and find the Probability of 1 head</p>
+		<p>
+			<span class="highlight01">sol:</span>
+			<br />
+			Here n (S) is total number of possible outcomes So,<br />
+			S = { H, H, HT,TH, T T }. <br />
+			E = Event of getting at most one head.<br />
+			E = {T, T,HT, TH}. <br />
+			<span class=\"latex\" lang=\"latex\"> \( P(E) = \frac{n(E)}{n(S)} = \frac{3}{4}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 3:</h4>
+		<p>In a bag contains 8 White balls and 6 Black balls from that bag two balls are taken out at random. Find the Probability that they are of the same color?</p>
+		<p>
+			<span class="highlight01">sol:</span>
+			<br />
+			Here S be the sample space So,
+			<br />
+			n(S) = Number of ways of taken out balls of <span class=\"latex\" lang=\"latex\"> \( ( 8 + 6 ) = \ ^{14}C_2 = \frac{(14 \times 13)}{(2 \times 1)} = \frac{182}{2} = 91.  \) </span>
+			<br />
+			E = Event of getting both balls of the same color. <br />
+			Then, n(E) = Number of ways of drawing ( 2 ball out of 8) or ( 2 balls out of 6) <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align} (^8C_2 + ^6C_2) = \frac{8 \times 7}{2} + \frac{6 \times 5}{2 \times 1}  \\\\[3pt]
+			= \frac{56}{2} + \frac{30}{2} = 28 + 15 = 43.  \\\\[3pt]
+				P(E) = \frac{n(E)}{n(S)} = \frac{43}{91}  \end{align}  \) </span>.</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 4:</h4>
+		<p>A bag contain 4 red, 6 yellow balls, if 3 balls are drawn randomly . What is the probability that they are of the same color?</p>
+		<p>
+			<span class="highlight01">sol:</span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  P(E) = \frac{n(E)}{n(S)} = \frac{^4C_3 + ^6C_3}{^{10}C_3}  \\\\[3pt]
+				= \frac{\left ( \frac{4 \times 3 \times 2}{3} + \frac{6 \times 5 \times 4}{3} \right )}{\frac{10 \times 9 \times 8}{3}}  \\\\[3pt]
+				= \frac{8 + 40}{240} = \frac{48}{240} = \frac{1}{5}.  \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 5:</h4>
+		<p>Find Probability of getting a total more than 7, when sequentially throw of a pair of dice.</p>
+		<p>
+			<span class="highlight01">sol:</span>
+			<br />
+			Here n(S) is Total number of Possible outcomes So, <br />
+			that is n(S) = ( 6 x 6 ) = 36. <br /> Here E = Event of getting a total more than 7. <br />
+			= {( 2, 6 )( 3, 5 )( 3, 6 )( 4, 4 )( 4, 5 )( 4, 6 )( 5, 3 )( 5, 4 )( 5, 5 )( 5, 6 )( 6, 2 )( 6, 3 )( 6, 4 )( 6, 5 )( 6, 6 )} <br />
+			P(E)Probability of Event. <br />
+			n(E) Total number of required outcomes. <br />
+			n(S) is Total number of Possible outcomes So, <br />
+			<span class=\"latex\" lang=\"latex\"> \( P(E) = \frac{n(E)}{n(S)} = \frac{15}{36} = \frac{5}{12}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 6:</h4>
+		<p>A dice is thrown. What is the probability that the number shown on the dice is an divisible by 2 number?</p>
+		<p>
+			<span class="highlight01">sol:</span>
+			<br />
+			S = { 1 , 2 , 3 , 4 , 5 , 6 }, <br />
+			n(S) = 6 . <br />
+			E an number is divisible by 2 = { 2 , 4 , 6 } , n ( E ) = 3 . <br />
+			So, <span class=\"latex\" lang=\"latex\"> \( P(E) = \frac{n(E)}{n(S)} = \frac{3}{6} = \frac{1}{2}  \) </span>
+		</p>
+	</section>
+</section>

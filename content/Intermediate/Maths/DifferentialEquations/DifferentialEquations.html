@@ -1,0 +1,341 @@
+---
+title: "Differential Equations"
+layout: "default"
+isMath: true 
+---
+<section class="skill" id="01">
+	<h3 class="skill-heading">Definition</h3>
+	<p> An equation involving the derivatives of a dependent variable with respect to one or more independent variables is called a <i>differential equation</i>.The order of a differential equation is the order of the highest differential coefficient involved. when an equation is a polynomial in all the differential coefficients, the power to which the highest differential coefficient is raised is known as the <i>degree of the equation</i>. e.g. the differential equation <br />
+		<span class=\"latex\" lang=\"latex\"> \(  \frac{d^2y}{dx^2} + y = x^3  \) </span>
+		<br />
+		has order 2 and degree 1 whereas <br />
+		<span class=\"latex\" lang=\"latex\"> \(  1 + \left ( \frac{dy}{dx} \right )^5 = \frac{d^3y}{dx^3}  \) </span>
+		<br />
+		has order as 3 and degree as 1
+	</p>
+</section>
+<section class="skill" id="02">
+	<h3 class="skill-heading">Formation of a Differential Equation </h3>
+	<p> To obtain the differential equation whose solution is the equation <span class=\"latex\" lang=\"latex\"> \(  f(x, \ y, \ c_1, \ c_2,...., \ c_n) = 0  \) </span>, where x and y are variables and <span class=\"latex\" lang=\"latex\"> \(  c_1, \ c_2,..., \ c_n  \) </span> are arbitrary constants, we differentiate the above equation n times successively, so that n + 1 equations are obtained from these n + 1 equations eliminate the constants <span class=\"latex\" lang=\"latex\"> \(  c_1, \ c_2,..., \ c_n  \) </span>. </p>
+	<p>
+		<span class="highlight01">Illustration</span>
+		<br />
+		obtain a differential equation whose solution is <span class=\"latex\" lang=\"latex\"> \(  x^2 + y^2 + 2ax + 2by + c = 0  \) </span>, where a, b, c are arbitrary constants. Differentiate three times <br />
+		<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  2x + 2yy_1 + 2a + 2by_1 = 0  \\\\[6pt]
+			\Rightarrow x + yy_1 + a + by_1 = 0....(i)  \end{align}  \) </span>
+		<br />
+		Differentiating again, we have <br />
+		<span class=\"latex\" lang=\"latex\"> \(  1 + y_1^2 + yy_2 + by_2 = 0....(ii)  \) </span>
+		<br />
+		Differentiating once again, we get <br/>
+		<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  2 y_1 y_2 + y_1 y_2 + y y_3 + b y_3 = 0  \\\\[6pt]
+			\Rightarrow 3 y_1 y_2 + y y_3 + b y_3 = 0....(iii)  \end{align}  \) </span>
+		<br />
+		Eliminating b between (ii) and (iii), we have <br />
+		<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  3 y_1 y_2 + \left(y - \frac{1 + y_1^2 + y y_2}{y_2} \right )y_3 = 0  \\\\[6pt]
+			\Rightarrow 3 y_1 y_2^2 - (1 + y_1^2)y_3 = 0  \end{align}  \) </span>
+	</p>
+</section>
+<section class="skill" id="03">
+	<h3 class="skill-heading">Equations in Which the Variables are Seperable </h3>
+	<p>These are the expressions which can be so expressed that the coefficients of dx is only a function of x and that of dy is only a function of y. Thus the general form of such an equation is f(x) dx + g(y) dy = 0. Integrating both the sides, we get the solution. </p>
+	<p>
+		<span class="highlight01">Illustration</span>
+		<br />
+		solve <span class=\"latex\" lang=\"latex\"> \(  (x^2 - yx^2)dy + (y^3 + xy^3)dx = 0  \) </span>. <br />
+		The given equation can be written as <br />
+		<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  x^2(1 - y) dy + (1 + x)y^3 dx = 0  \\\\[6pt]
+			\Rightarrow \left( \frac{1 - y}{y^3} \right) dy + \left( \frac{1 + x}{x^2} \right) dx = 0  \\\\[6pt]
+			\Rightarrow (y^{-3} - y^{-2})dy + (x^{-2} + x^{-1})dx = 0  \end{align}  \) </span>
+		<br />
+		Integrating both sides we get, <br />
+		<span class=\"latex\" lang=\"latex\"> \(  \left(- \frac{1}{2} \right)y^{-2} + y^{-1} - x^{-1} + log \ x  \) </span> = constant <br />
+		which is the required solution.
+	</p>
+</section>
+<section class="skill" id="04">
+	<h3 class="skill-heading">Linear Equations </h3>
+	<p> A differential equation is said to be linear if the dependent variable and its differential coefficients occur in it in the first degree only and are not multiplied together. Any linear equation is either of the form <br />
+		<span class=\"latex\" lang=\"latex\"> \(  \frac{dy}{dx} + Py = Q...........(i)  \) </span>
+		<br />
+		where P and Q are functions of x or <br />
+		<span class=\"latex\" lang=\"latex\"> \(  \frac{dx}{dy} + P_1 x = Q_1  \) </span>
+		<br />
+		where <span class=\"latex\" lang=\"latex\"> \(  P_1  \) </span> and <span class=\"latex\" lang=\"latex\"> \(  Q_1  \) </span>  are functions of y. In order to solve equation (i), we multiply both sides by integrating factor which is <span class=\"latex\" lang=\"latex\"> \(  e^{ \int P dx}  \) </span> ( for solving (ii), the integrating factor will be <span class=\"latex\" lang=\"latex\"> \(  e^{ \int P_1 dy}  \) </span> ). After the multiplication, left hand side becomes the differential coefficient of <span class=\"latex\" lang=\"latex\"> \(  ye^{ \int P dx}  \) </span> and now integrating both the sides, we have <br />
+		<span class=\"latex\" lang=\"latex\"> \(  y e^{ \int P dx} = \int Q e^{ \int P dx} dx + C  \) </span> as the solution.
+	</p>
+	<p>
+		<span class="highlight01">Illustration</span>
+		<br />
+		Solve <span class=\"latex\" lang=\"latex\"> \(  x \ log \ x \frac{dy}{dx} + y = 2 \ log \ x ........(1)  \) </span>
+		<br />
+		The given equation can be written as <br />
+		<span class=\"latex\" lang=\"latex\"> \(  \frac{dy}{dx} + \frac{1}{x \ log \ x} y = \frac{2}{x}  \) </span>
+		<br />
+		Comparing with the standard linear equation <span class=\"latex\" lang=\"latex\"> \(  \frac{dy}{dx} + Py = Q  \) </span>, we have <span class=\"latex\" lang=\"latex\"> \(  P = \frac{1}{x \ log \ x}  \) </span>.
+		so the integrating factor is <br />
+		<span class=\"latex\" lang=\"latex\"> \(  e^{ \int \frac{1}{x \ log \ x} dx} = e^{log \ (log \ x)} = log \ x  \) </span>
+		<br />
+		Multiplying both sides of (1) by log x, we get <br />
+		<span class=\"latex\" lang=\"latex\"> \(  \frac{d}{dx}(y \ log \ x) = log \ x \frac{dy}{dx} + \frac{1}{x} y = \frac{2 \ log \ x}{x}  \) </span>
+		<br />
+		Thus, <span class=\"latex\" lang=\"latex\"> \(  y \ log \ x = 2 \int \frac{log \ x}{x} dx + C = (log \ x)^2 + C  \) </span>
+		<br />
+		Equations reducible to linear form. If the given equation is of the form <span class=\"latex\" lang=\"latex\"> \(  \frac{dy}{dx} + Py = Qy^n  \) </span> where P, Q are functions of x, we can reduce it to a linear equation by dividing both the sides by <span class=\"latex\" lang=\"latex\"> \(  y^n  \) </span> and then substituting <span class=\"latex\" lang=\"latex\"> \(  y^{-n + 1} = z  \) </span>. The given equation will be linear in z.
+	</p>
+</section>
+<section class="skill" id="05">
+	<h3 class="skill-heading">Homogeneous Equations </h3>
+	<p>It is a differential equation of the form <span class=\"latex\" lang=\"latex\"> \(  \frac{dy}{dx} = f(x, \ y)/ \phi(x, \ y)  \) </span> where f(x, y) and <span class=\"latex\" lang=\"latex\"> \(  \phi(x, \ y)  \) </span> are homogeneous functions of x and y of the same degree. A function f(x, y) is said to be homogeneous of degree n if it can be written as <span class=\"latex\" lang=\"latex\"> \(  x^n f_1 \left ( \frac{y}{x} \right )  \) </span>, e.g., f(x, y) = <span class=\"latex\" lang=\"latex\"> \(  x^3 + 3x^2 y  \) </span>, is a homogeneous function of degree 3 and f(x, y) = <span class=\"latex\" lang=\"latex\"> \(  x^4 + 2x y^3  \) </span> is a homogeneous function of degree 4. such an equation can be solved by putting y = Vx. After substituting y = Vx, the given equation will have variables separable in V and x. </p>
+	<p> The equations of the form <span class=\"latex\" lang=\"latex\"> \(  \frac{dy}{dx} = \frac{(ax + by + c)}{(Ax + By + C)}  \) </span> can be reduced to a homogeneous equation by changing x = X + h and y = Y + k, where h and k are the constants to be chosen so that it makes the given equation homogeneous provided <span class=\"latex\" lang=\"latex\"> \(  aB - bA \neq 0  \) </span>. <br />
+		If aB - bA = 0 then the given equation can be written as <br />
+		<span class=\"latex\" lang=\"latex\"> \(  \frac{dy}{dx} = \frac{b \left ( \frac{a}{b}x + y \right ) + c}{B \left ( \frac{A}{B}x + y \right ) + C}  \) </span>
+		<br />
+		Now put <span class=\"latex\" lang=\"latex\"> \(  \left ( \frac{a}{b} \right )x + y = z  \) </span> so that the given equation reduces to an equation whose variables are seperable in z and x.
+	</p>
+	<p> The following exact differential will be useful in solving many differential equations</p>
+	<div class="list-custom-block-list-ol spaced20 indented20">
+		<ol>
+			<li>
+				<p>
+					<span class=\"latex\" lang=\"latex\"> \(  x dy + y dx = d(xy)  \) </span>
+				</p>
+			</li>
+			<li>
+				<p>
+					<span class=\"latex\" lang=\"latex\"> \(  \frac{x dy - y dx}{x^2} = d \left ( \frac{y}{x} \right )  \) </span>
+				</p>
+			</li>
+			<li>
+				<p>
+					<span class=\"latex\" lang=\"latex\"> \(  \frac{y dx - x dy}{y^2} = d \left ( \frac{y}{x} \right )  \) </span>
+				</p>
+			</li>
+			<li>
+				<p>
+					<span class=\"latex\" lang=\"latex\"> \(  \frac{y dx + x dy}{xy} = d(log \ (xy))  \) </span>
+				</p>
+			</li>
+			<li>
+				<p>
+					<span class=\"latex\" lang=\"latex\"> \(  \frac{x dy - y dx}{xy} = d \left (log \ \frac{y}{x} \right )  \) </span>
+				</p>
+			</li>
+			<li>
+				<p>
+					<span class=\"latex\" lang=\"latex\"> \(  \frac{y dx - x dy}{xy} = d \left(log \ \frac{x}{y} \right)  \) </span>
+				</p>
+			</li>
+			<li>
+				<p>
+					<span class=\"latex\" lang=\"latex\"> \(  \frac{x dy - y dx}{x^2 + y^2} = d \left (tan^{-1} \frac{y}{x} \right )  \) </span>
+				</p>
+			</li>
+			<li>
+				<p>
+					<span class=\"latex\" lang=\"latex\"> \(  \frac{y dx - x dy}{x^2 + y^2} = d \left (tan^{-1} \frac{x}{y} \right )  \) </span>
+				</p>
+			</li>
+			<li>
+				<p>
+					<span class=\"latex\" lang=\"latex\"> \(  \frac{x dx + y dx}{x^2 + y^2} = d(log \sqrt{x^2 + y^2})  \) </span>
+				</p>
+			</li>
+		</ol>
+	</div>
+</section>
+<section class="skill" id="06">
+	<h3 class="skill-heading">Summary</h3>
+	<div class="list-custom-block-list-ol spaced20 indented20">
+		<ol>
+			<li>
+				<p>An equation involving derivatives of the dependent variable with respect to independent variable (variables) is known as a differential equation.</p>
+			</li>
+			<li>
+				<p>Order of a differential equation is the order of the highest order derivative occurring in the differential equation.</p>
+			</li>
+			<li>
+				<p>Degree of a differential equation is defined if it is a polynomial equation in its derivatives.</p>
+			</li>
+			<li>
+				<p>Degree (when defined) of a differential equation is the highest power (positive integer only) of the highest order derivative in it.</p>
+			</li>
+			<li>
+				<p>A function which satisfies the given differential equation is called its solution. The solution which contains as many arbitrary constants as the order of the differential equation is called a general solution and the solution free from arbitrary constants is called particular solution.</p>
+			</li>
+			<li>
+				<p>To form a differential equation from a given function we differentiate the function successively as many times as the number of arbitrary constants in the given function and then eliminate the arbitrary constants.</p>
+			</li>
+			<li>
+				<p>Variable separable method is used to solve such an equation in which variables can be separated completely i.e. terms containing y should remain with dy and terms containing x should remain with dx.</p>
+			</li>
+			<li>
+				<p>A differential equation which can be expressed in the form <span class=\"latex\" lang=\"latex\"> \(  \frac{dy}{dx} = f(x, \ y) \ or\ \frac{dx}{dy} = g(x, \ y)  \) </span> where, f (x, y) and g(x, y) are homogenous functions of degree zero is called a homogeneous differential equation.</p>
+			</li>
+			<li>
+				<p>A differential equation of the form <span class=\"latex\" lang=\"latex\"> \(  \frac{dy}{dx} + py = Q  \) </span> where P and Q are constants or functions of x only is called a first order linear differential equation.</p>
+			</li>
+		</ol>
+	</div>
+</section>  
+<section class="solved-examples" id="examples">
+	<h3 class="solved-examples-heading">Solved examples</h3>
+	<section class="solved-example"> 
+		<h4 class="solved-examples-question">Example 1:</h4>
+		<p> Verify that the function <span class=\"latex\" lang=\"latex\"> \(  y = e^{-3x}  \) </span> is a solution of the differential equation <span class=\"latex\" lang=\"latex\"> \(  \frac{d^2 y}{dx^2} + \frac{dy}{dx} - 6y = 0  \) </span>
+			<br />
+			<span class="highlight01"> Solution </span>
+			<br />
+			Given function is <span class=\"latex\" lang=\"latex\"> \(  y = e^{-3x}  \) </span>. Differentiating both sides of equation with respect to x , we get <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \frac{dy}{dx} = - 3 e^{-3x}  \) </span> ...... (1) <br />
+			Now, differentiating (1) with respect to x, we have <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \frac{d^2 y}{dx^2} = - 9 e^{-3x}  \) </span>
+			<br />
+			Substituting the values of <span class=\"latex\" lang=\"latex\"> \(  \frac{d^2 y}{dx^2}, \ \frac{dy}{dx}  \) </span> and y in the given differential equation, we get <br />
+			L.H.S = <span class=\"latex\" lang=\"latex\"> \(  \begin{align}  9 e^{- 3x} + (- 3 e^{-3x}) - 6 . e^{- 3x}  \\\\[3pt]
+				= 9 e^{-3x} - 9 e^{-3x} = 0 = R.H.S.  \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 2:</h4>
+		<p> Form the differential equation representing the family of curves y = mx, where, m is arbitrary constant<br />
+			<span class="highlight01"> Solution </span>
+			<br />
+			We have <br />
+			y = mx ..... (1) <br />
+			Differentiating both sides of equation (1) with respect to x, we get <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \frac{dy}{dx} = m  \) </span>
+			<br />
+			Substituting the value of m in equation (1) we get <span class=\"latex\" lang=\"latex\"> \(  y = \frac{dy}{dx}. x \ or \ x \frac{dy}{dx} - y = 0   \) </span>
+			<br />
+			which is free from the parameter m and hence this is the required differential equation. </p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 3:</h4>
+		<p>Form the differential equation representing the family of ellipses having foci on x-axis and centre at the origin.</p>
+		<div class="synopsis-image"> 
+			<img src="103506006_image-1.png" alt="image2" class="default-synopsis-medium-image" />
+		 </div>
+		<p>
+			<span class="highlight01"> Solution </span>
+			<br />
+			SolutionWe know that the equation of said family of ellipses<br />
+			<span class=\"latex\" lang=\"latex\"> \(   \frac{x^2}{a62} + \frac{y^2}{b^2} = 1  \) </span>...... (1) <br />
+			Differentiating equation (1) with respect to x, we get <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \frac{2x}{a^2} + \frac{2y}{b^2} \frac{dy}{dx} = 0 \ or \ \frac{y}{x} \left ( \frac{dy}{dx} \right ) = \frac{- b^2}{a^2}  \) </span> ...... (2) <br />
+			Differentiating both sides of equation (2) with respect to x, we get <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}   \left ( \frac{y}{y} \right ) \left (  \frac{d^2 y}{dx^2} \right ) + \left ( \frac{x \frac{dy}{dx} - y}{x^2} \right ) \frac{dy}{dx} = 0  \\\\[3pt]
+				or \ xy \frac{d^2 y}{dx^2} + x \left ( \frac{dy}{dx} \right )^2 - y \frac{dy}{dx} = 0  \end{align}  \) </span> ..... (3) <br />
+			which is the required differential equation</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 4:</h4>
+		<p>Find the general solution of the differential equation <span class=\"latex\" lang=\"latex\"> \(  \frac{dy}{dx} = \frac{1 + y^2}{1 + x^2}  \) </span>.<br />
+			<span class="highlight01"> Solution </span>
+			<br />
+			Since <span class=\"latex\" lang=\"latex\"> \(  1 + y^2 \neq 0  \) </span>, therefore separating the variables, the given differential equation can be written as <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \frac{dy}{1 + y^2} = \frac{dx}{1 + x^2}  \) </span> ..... (1) <br />
+			Integrating both sides of equation (1), we get <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \int \frac{dx}{1 + y^2} = \int \frac{dx}{1 + x^2}  \\\\[3pt]
+				or \ tan^{-1} \ y = tan^{-1} \ x + C  \end{align}  \) </span>
+			<br />
+			which is the general solution of equation (1). </p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 5:</h4>
+		<p>Find the equation of the curve passing through the point (1, 1) whose differential equation is <span class=\"latex\" lang=\"latex\"> \(  x \ dy = (2x^2 + 1)dx \ (x \neq 0)  \) </span>
+			<br />
+			<span class="highlight01"> Solution </span>
+			<br />
+			The given differential equation can be expressed as <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  dy* = \left ( \frac{2x^2 + 1}{x} \right ) dx*  \\\\[3pt]
+				or \ dy = \left ( 2x + \frac{1}{x} \right )  \end{align}  \) </span> ...... (91) <br />
+			Integrating both sides of equation (1), we get <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \int dy = \int \left ( 2x + \frac{1}{x} \right ) dx \\\\[3pt]
+				or \ y = x^2 + log|x| + C  \end{align}  \) </span> ....... (2) <br />
+			Equation (2) represents the family of solution curves of the given differential equation but we are interested in finding the equation of a particular member of the family which passes through the point (1, 1). Therefore substituting x = 1, y = 1 in equation (2), we get C = 0.<br />
+			Now substituting the value of C in equation (2) we get the equation of the required curve as <span class=\"latex\" lang=\"latex\"> \(  y = x^2 + log |x|  \) </span>.	</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 6:</h4>
+		<p>In a bank, principal increases continuously at the rate of 5% per year. In how many years Rs 1000 double itself?<br />
+			<span class="highlight01"> Solution </span>
+			<br />
+			Let p be the principal at any time t. According to the given problem <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \frac{dp}{dt} = \left ( \frac{5}{100} \right ) \times p  \\\\[3pt]
+				or \ \frac{dp}{dt} = \frac{P}{20}  \end{align}  \) </span>..... (1) <br />
+			separating the variables in equation (1), we get <br />
+			<span class=\"latex\" lang=\"latex\"> \(  frac{dp}{P} = \frac{dt}{20}  \) </span> ..... (2) <br />
+			Integrating both sides of equation (2), we get <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  log \ P = \frac{t}{20} + C_1  \\\\[3pt]
+				or \ P = e^{\frac{t}{20}} . e^(C_1)  \\\\[3pt]
+				or \ P = C e^{ \frac{t}{20}} \ (where \ e^{C_1} = C)  \end{align}  \) </span> ..... (3) <br />
+			Now P = 1000, when t = 0 <br />
+			Substituting the values of P and t in (3), we get C = 1000. Therefore, equation (3), gives <br />
+			<span class=\"latex\" lang=\"latex\"> \(  P = 1000 e^{ \frac{t}{20}}  \) </span>
+			<br />
+			Let t years be the time required to double the principal. Then <br />
+			<span class=\"latex\" lang=\"latex\"> \(  2000 = 1000 e^{\frac{t}{20}} \ \Rightarrow \ t = 20 \ log_e \ 2  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 7:</h4>
+		<p>Show that the differential equation <span class=\"latex\" lang=\"latex\"> \(  x \ cos \left ( \frac{y}{x} \right ) \frac{dy}{dx} = y \ cos \ \left ( \frac{y}{x} \right ) + x  \) </span> is homogeneous and solve it.<br />
+			<span class="highlight01"> Solution </span>
+			<br />
+			The given differential equation can be written as <br />
+			<span class=\"latex\" lang=\"latex\"> \(   \frac{dy}{dx} = \frac{y \ cos \left ( \frac{y}{x} \right ) + x}{x \ cos \left ( \frac{y}{x} \right )}  \) </span>..... (1)<br />
+			It is a differential equation of the form <span class=\"latex\" lang=\"latex\"> \(  \frac{dy}{dx} = F(x, \ y)  \) </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \( Here \ F(x, \ y) = \frac{y \ cos \left ( \frac{y}{x} \right ) + x}{x \ cos \left ( \frac{y}{x} \right )} \) </span>
+			<br />
+			Replacing x by <span class=\"latex\" lang=\"latex\"> \(  \lambda \ x  \) </span>  and y by <span class=\"latex\" lang=\"latex\"> \(  \lambda \ x  \) </span> , we get <br />
+			<span class=\"latex\" lang=\"latex\"> \(  F(\lambda x, \ \lambda y) =  \frac{\lambda \left [ y \ cos \left ( \frac{y}{x} \right ) + x \right ]}{\lambda  \left ( x \ cos \frac{y}{x} \right )} = \lambda^{\circ} F(x, \ y)  \) </span>
+			<br />
+			Thus, F(x, y) is a homogeneous function of degree zero. <br />
+			Therefore, the given differential equation is a homogeneous differential equation. To solve it we make the substitution <br />
+			y = vx  ..... (2) <br />
+			Differentiating equation (2) with respect to x, we get <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \frac{dy}{dx} = v + x \frac{dv}{dx}  \) </span> ..... (3)
+			Substituting the value of y and <span laang="latex"> \frac{dy}{dx} </span> in equation (1), we get <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  v + x \frac{dv}{dx} = \frac{v \ cos \ c + 1}{cos \ v}  \\\\[3pt]
+				or \ x \frac{dv}{dx} = \frac{v  \ cos \ v + 1}{cos \ v} - v  \\\\[3pt]
+				or \ x \frac{dv}{dx} = \frac{1}{cos \ v}  \\\\[3pt]
+				or \ cos \ v \ dv = \frac{dx}{x}  \\\\[3pt]
+				Therefore \ \int cos \ v \ dv = \int \frac{1}{x} dx  \\\\[3pt]
+				or \ sin \ v = log|x| + log|C|  \\\\[3pt]
+				or \ sin v = log |Cx|  \\\\[3pt]
+				Replacing \ v \ by \ \frac{y}{x}, \ we \ get  \\\\[3pt]
+				sin \left (\frac{y}{x} \right ) = log|Cx|   \end{align}  \) </span>
+			<br />
+			which is the general solution of the differential equation (1). </p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 8:</h4>
+		<p>Form the differential equation of the family of circles in the second quadrant and touching the coordinate axes. <br />
+			<span class="highlight01"> Solution </span>
+			<br />
+		</p>
+		<div class="synopsis-image"> 
+			<img src="103506006_image-2.png" alt="image2" class="default-synopsis-medium-image" />
+		 </div>
+		<p>
+			Let C denote the family of circles in the second quadrant and touching the coordinate axes. Let (-a, a) be the coordinate of the centre of any member of this family Equation representing the family C is <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  (x + a)^2 + (y - a)^2 \ .... \ (1)  \\\\[3pt]
+				or \ x^2 + y^2 + 2ax - 2ay + a^2 = 0 \ .... \ (2)   \end{align}  \) </span>
+			<br />
+			Differentiating equation (2) with respect to x, we get <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  2x + 2y \frac{dy}{dx} + 2ax - 2ay + a^2 = 0  \\\\[3pt]
+				or \ x + y \frac{dy}{dx} = a \left ( \frac{dy}{dx} - 1 \right )  \\\\[3pt]
+				or \ a = \frac{x + y y'}{y' - 1}  \end{align}  \) </span>
+			<br />
+			Substituting the value of a in equation (1), we get <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \left [ x + \frac{x + y y'}{y' - 1} \right ]^2 +  \left [ y - \frac{x + y y'}{y' - 1} \right ]^2  \\\\[3pt]
+				= \left [ \frac{x + y y'}{y' - 1} \right ]^2  \\\\[3pt]
+				or \ [xy' - x + x + y y']^2 +[yy' - y - x - yy']^2 = [x + y y']^2  \\\\[3pt]
+				or \ (x + y)^2 + [x + y]^2 = [x + yy']^2  \\\\[3pt]
+				or \ (x + y)2 [(y')^2 + 1] = [x + y y']^2  \end{align}  \) </span>
+			<br />
+			which is the differential equation representing the given family of circles.</p>
+	</section>
+</section> 

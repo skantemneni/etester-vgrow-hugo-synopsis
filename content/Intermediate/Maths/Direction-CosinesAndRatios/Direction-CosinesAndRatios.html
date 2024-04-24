@@ -1,0 +1,205 @@
+--- 
+title: "Direction - Cosines and Ratios"
+layout: "default"
+isMath: true 
+---
+<section class="skill" id="01">
+	<h3 class="skill-heading">Direction-Cosines</h3>
+	<p>
+		<span class=\"latex\" lang=\"latex\"> \(  \alpha, \ \beta, \ \gamma  \) </span> are the angles that a given directed line makes with the positive directions X'OX, Y'OY, Z'OZ of the coordinate axes, then <span class=\"latex\" lang=\"latex\"> \(  cos \ \alpha, \ cos \ \beta, \ cos \gamma  \) </span> are called the direction-cosines of the line. </p>
+	<div class="synopsis-image"> 
+		<img src="103502007_image-1.png" alt="image1" class="default-synopsis-medium-image" />
+	 </div>
+	<p>Let P(x, y, z) be any point on A'OA. and let the length of OP be r. Let PN be the perpendicular from P on to the plane XOY, and NM be the perpendicular from N on OX. Then <br />
+		<span class=\"latex\" lang=\"latex\"> \(  x = r \ cos \ \alpha, \ y = r \ cos \ \beta, \ z = r \ cos \ \gamma  \) </span> and <span class=\"latex\" lang=\"latex\"> \(  cos^2 \alpha + cos^2 \beta + cos^2 \gamma = 1  \) </span>. </p>
+</section>
+<section class="skill" id="02">
+	<h3 class="skill-heading">Direction - Ratios </h3>
+	<p> If l, m, n be the direction-cosines of a line OP and a, b, c be numbers proportional to l, m, n respectively, then a, b, c are called the direction ratios of OP. If l, m, n be the direction-cosines of a line and <span class=\"latex\" lang=\"latex\"> \(  (k \neq 0)  \) </span> be any number, then kl, km. kn are the direction-ratios of OP. </p>
+	<p> If a, b, c are the direction-ratios of a line, the actual direction - cosines <span class=\"latex\" lang=\"latex\"> \(  cos \ \alpha, \ cos \ \beta, \ cos \gamma  \) </span> are obtained from the relations <br />
+		<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \frac{cos \ \alpha}{a} = \frac{cos \ \beta}{b} = \frac{cos \ \gamma}{c}  \\\\[3pt]
+			= \pm \frac{\sqrt{cos^2 \alpha + cos^2 \beta + cos^2 \gamma}}{\sqrt{(a^2 + b^2 + c^2)}}  \\\\[3pt]
+			= \frac{\pm 1}{\sqrt{(a^2 + b^2 + c^2)}}  \end{align}  \) </span>
+		<br />
+		If P be the point (a, b, c), and <span class=\"latex\" lang=\"latex\"> \(  cos \ \alpha, \ cos \ \beta, \ cos \gamma  \) </span> are the direction cosines of the directed line OP, then <br />
+		<span class=\"latex\" lang=\"latex\"> \(  cos \ \alpha = \frac{a}{\sqrt{(a^2 + b^2 + c^2)}}, \  cos \ \beta = \frac{b}{\sqrt{(a^2 + b^2 + c^2)}}, \ cos \gamma = \frac{a}{\sqrt{(a^2 + b^2 + c^2)}}  \) </span>
+		<br />
+		The direction - cosines of PO are <br />
+		<span class=\"latex\" lang=\"latex\"> \(  - \frac{a}{\sqrt{(a^2 + b^2 + c^2)}}, \ - \frac{b}{\sqrt{(a^2 + b^2 + c^2)}}, \ - \frac{c}{\sqrt{(a^2 + b^2 + c^2)}}  \) </span>
+	</p>
+</section>
+<section class="skill" id="03">
+	<h3 class="skill-heading">Angle Between Two Lines</h3>
+	<div class="list-custom-block-list-ol spaced20 indented20">
+		<ol>
+			<li>
+				<p>If <span class=\"latex\" lang=\"latex\"> \(  \theta  \) </span> is an angle between two lines whose direction-cosines are <span class=\"latex\" lang=\"latex\"> \(  (l_1, \ m_1, \ n_1) \ and \ (l_2, \ m_2, \ n_2)  \) </span> then <br />
+					<span class=\"latex\" lang=\"latex\"> \(  cos \ \theta = l_1 l_2 + m_1 m_2 + n_1 n_2.  \) </span>
+					<br />
+					The expressions for <span class=\"latex\" lang=\"latex\"> \(  sin \ \theta, \  tan \ \theta  \) </span> are given below: <br />
+					<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  sin^2 \theta =  \left| \begin{array}{cc} m_1 &amp; n_1   \\\\ m_2 &amp; n_2 \end{array} \right|^2 + \left| \begin{array}{cc} n_1 &amp; l_1   \\\\ n_2 &amp; l_2 \end{array} \right|^2 + \left| \begin{array}{cc} l_1 &amp; m_1   \\\\ l_2 &amp; m_2 \end{array} \right|^2   \\\\[3pt]
+						and \ tan \theta = \pm \frac{\left [ \sum (l_1 m_2 - l_2 m_1)^2 \right ]^{\frac{1}{2}}}{(l_1 l_2 + m_1 m_2 + n_1 n_2)}  \end{align}  \) </span>
+					<br />
+					The lines are parallel to each other if and only if <br />
+					<span class=\"latex\" lang=\"latex\"> \(  \frac{l_1}{l_2} = \frac{m_1}{m_2} = \frac{n_1}{n_2}  \) </span>. <br />
+					Also the lines are perpendicular to each other provided <br />
+					<span class=\"latex\" lang=\"latex\"> \(  l_1 l_2 + m_1 m_2 + n_1 n_2 = 0  \) </span>
+				</p>
+			</li>
+			<li>
+				<p>Angle <span class=\"latex\" lang=\"latex\"> \(  \theta  \) </span> between two lines whose direction-ratios are <span class=\"latex\" lang=\"latex\"> \(  a_1, \ b_1, \ c_1  \) </span> and <span class=\"latex\" lang=\"latex\"> \(  a_2, \ b_2, \ c_2  \) </span> is given by <br />
+					<span class=\"latex\" lang=\"latex\"> \(  \begin{align}   cos \ \theta = \pm \frac{a_1 a_2 + b_1 b_2 + c_1 c_2}{\sqrt{{a_1}^2 + {b_1}^2 + {c_1}^2}\sqrt{{a_2}^2 + {b_2}^2 + {c_2}^2}}  \\\\[3pt]
+						sin \ \theta = \pm \frac{\left [ (a_1 b_2 - a_2 b_1)^2 + (b_1 c_2 - b_2 c_1)^2 + (c_1 a_2 - c_2 a_1)^2 \right ]^{\frac{1}{2}}}{\sqrt{{a_1}^2 + {b_1}^2 + {c_1}^2}\sqrt{{a_2}^2 + {b_2}^2 + {c_2}^2}}  \\\\[3pt]
+						tan \ \theta = \pm \frac{\left [ (a_1 b_2 - a_2 b_1)^2 + (b_1 c_2 - b_2 c_1)^2 + (c_1 a_2 - c_2 a_1)^2 \right ]^{\frac{1}{2}}}{a_1 a_2 + b_1 b_2 + c_1 c_2}  \end{align}  \) </span>
+					<br />
+					Also, the lines are perpendicular to each other if and only if <br />
+					<span class=\"latex\" lang=\"latex\"> \(  a_1 a_2 + b_1 b_2 + c_1 c_2 = 0  \) </span>.</p>
+			</li>
+		</ol>
+	</div>
+</section>  
+<section class="solved-examples" id="examples">
+	<h3 class="solved-examples-heading">Solved examples</h3>
+	<section class="solved-example"> 
+		<h4 class="solved-examples-question">Example 1:</h4>
+		<p>If a line makes angle <span class=\"latex\" lang=\"latex\"> \(  90^{\circ}, \ 60^{\circ} \ and \ 30^{\circ}  \) </span> with the positive direction of x, y and z-axis respectively, find its direction cosines.<br />
+			<span class="highlight01"> Solution </span>
+			<br />
+			Let the d.c.'s of the lines be l , m, n. Then <span class=\"latex\" lang=\"latex\"> \(  l = cos \ 90^{\circ}, \ m = cos \ 60^{\circ} = \frac{1}{2}, \ n = cos \ 30^{\circ} = \frac{\sqrt{3}}{2}  \) </span>.</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 2:</h4>
+		<p>If a line has direction ratios 2, -1, -2, determine its direction cosines.<br />
+			<span class="highlight01"> Solution </span>
+			<br />
+			Direction cosines are <br />
+			<span class=\"latex\" lang=\"latex\"> \( 	\frac{2}{\sqrt{2^2 + (-1)^2 + (-2)^2}}, \ \frac{- 1}{\sqrt{2^2 + (-1)^2 + (-2)^2}}, \ \frac{- 2}{\sqrt{2^2 + (-1)^2 + (-2)^2}} \ or \ \frac{2}{3}, \ \frac{-1}{3}, \ \frac{-2}{3}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 3:</h4>
+		<p>Find the direction cosines of the line passing through the two points (- 2, 4, - 5) and (1, 2, 3).<br />
+			<span class="highlight01"> Solution </span>
+			<br />
+			We know the direction cosines of the line passing through two points <span class=\"latex\" lang=\"latex\"> \(  P(x_1, \ y_1, \ z_1) \ and \ Q(x_2, \ y_2, \ z_2)  \) </span> are given by	<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \frac{x_2 - x_1}{PQ}, \ \frac{y_2 - y_1}{PQ}, \ \frac{z_2 - z_1}{PQ}  \\\\[3pt]
+				Where \ PQ = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2 + (Z_2 - Z_1)^2}  \end{align}  \) </span>
+			<br />
+			Here P is (- 2, 4, - 5) and Q is (1, 2, 3). <br />
+			So \ <span class=\"latex\" lang=\"latex\"> \(  PQ = \sqrt{ (1 - (-2))^2 + (2 - 4)^2 + (3 - (-5))^2} = \sqrt{77}  \) </span>
+			<br />
+			Thus, the direction cosines of the line joining two points is <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \frac{3}{\sqrt{77}}, \  \frac{-2}{\sqrt{77}}, \  \frac{8}{\sqrt{77}}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 4:</h4>
+		<p>Find the direction cosines of x, y and z-axis.<br />
+			<span class="highlight01"> Solution </span>
+			<br />
+			The x-axis makes angles <span class=\"latex\" lang=\"latex\"> \(  0^{\circ}, \ 90^{\circ} \ and \ 90^{\circ}  \) </span> respectively with x, y and z-axis. <br />
+			Therefore, the direction cosines of x-axis are <span class=\"latex\" lang=\"latex\"> \(   cos \ 0^{\circ}, \ cos \ 90^{\circ}, \ cos \ 90^{\circ}  \) </span> i.e., 1,0,0. Similarly, direction cosines of y-axis and z-axis are 0, 1, 0 and 0, 0, 1 respectively.</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 5:</h4>
+		<p>Show that the points A (2, 3, - 4), B (1, - 2, 3) and C (3, 8, - 11) are collinear.<br />
+			<span class="highlight01"> Solution </span>
+			<br />
+			Direction ratios of line joining A and B are 1 - 2, - 2 - 3, 3 + 4 i.e., - 1, - 5, 7. <br />
+			The direction ratios of line joining B and C are <br />
+			3 -1, 8 + 2, - 11 - 3, i.e., 2, 10, - 14. <br />
+			It is clear that direction ratios of AB and BC are proportional, hence, AB is parallel to BC. <br />
+			But point B is common to both AB and BC. Therefore, A, B, C are collinear points.</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 6:</h4>
+		<p>Find the vector and the Cartesian equations of the line through the point (5, 2, - 4) and which is parallel to the vector <span class=\"latex\" lang=\"latex\"> \( 3 \hat{i} + 2 \hat{j} - 8 \hat{k}  \) </span> .<br />
+			<span class="highlight01"> Solution </span>
+			<br />
+			We have <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \overrightarrow{a} = 5 \hat{i} + 2 \hat{j} - 4 \hat{k} \ and \ \overrightarrow{b} = 3 \hat{i} + 2 \hat{j} - 8 \hat{k}  \) </span>
+			<br />
+			Therefore, the vector equation of the line is <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \overrightarrow{r} =  5 \hat{i} + 2 \hat{j} - 4 \hat{k} + \lambda(3 \hat{i} + 2 \hat{j} - 8 \hat{k})  \) </span>
+			<br />
+			Now, <span class=\"latex\" lang=\"latex\"> \(  \overrightarrow{r}  \) </span> is the position vector of any point P(x, y, z) on the line. <br />
+			Therefore, <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  x \hat{i} + y \hat{j} + z \hat{k} = 5 \hat{i} + 2 \hat{j} - 4 \hat{k} + \lambda(3 \hat{i} + 2 \hat{j} - 8 \hat{k})  \\\\[3pt]
+				= (5 + 5 \lambda) \hat{i} + (2 + 2 \lambda) \hat{j} + (-4 - 8 \lambda) \hat{k}  \\\\[3pt]
+				Eliminating \ \lambda, \ we \ get  \\\\[3pt]
+				\frac{x - 5}{3} = \frac{y - 2}{2} = \frac{z + 4}{-8}  \end{align}  \) </span>
+			<br />
+			which is the equation of the line in Cartesian form.</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 7:</h4>
+		<p>The Cartesian equation of a line is<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \frac{x + 3}{2} = \frac{y - 5}{4} = \frac{z + 6}{2}  \) </span>
+			<br />
+			Find the vector equation for the line. <br />
+			<span class="highlight01"> Solution </span>
+			<br />
+			Comparing the given equation with the standard form <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \frac{x - x_1}{a} = \frac{y - y_1}{b} = \frac{z - z_1}{c}  \) </span>
+			<br />
+			We observe that <span lang ="latex">x_1 = - 3, \ y_1 = 5, \ z_1 = - 6; \ a = 2, \ b = 4, \ c = 2. </span>
+			<br />
+			Thus, the required line passes through the point (- 3, 5, -6) and is parallel to the vector <span class=\"latex\" lang=\"latex\"> \(  2 \hat{i} + 4 \hat{j} + 2 \hat{k}  \) </span>.<br />
+			Let <span class=\"latex\" lang=\"latex\"> \(  \overrightarrow{r}  \) </span> be the position vector of any point on the line, then the vector equation of the line is given by <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \overrightarrow{r} = (- 3 \hat{i} + 5 \hat{j} - 6 \hat{k}) + \lambda (2 \hat{i} + 4 \hat{j} + 2 \hat{k})  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 8:</h4>
+		<p>Find the angle between the pair of lines given by<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \overrightarrow{r} = 3 \hat{i} + 2 \hat{j} - 4 \hat{k}  + \lambda ( \hat{i} + 2 \hat{j} + 2 \hat{k}) \ and \ \overrightarrow{r} = 5 \hat{i} - 2 \hat{j} - 4 \hat{k}  + \mu ( 3 \hat{i} + 2 \hat{j} + 6 \hat{k})  \) </span>
+			<br />
+			<span class="highlight01"> Solution </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \( Here \ \overrightarrow{b_1} = \hat{i} + 2 \hat{j} + 2 \hat{k} \ and \ \overrightarrow{b_2} = 3 \hat{i} + 2 \hat{j} + 6 \hat{k}  \) </span>
+			<br />
+			The angle <span class=\"latex\" lang=\"latex\"> \(  \theta  \) </span> between the two lines is given by <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  cos \ \theta = \left | \frac{\overrightarrow{b_1} . \overrightarrow{b_2}}{|\overrightarrow{b_1}||\overrightarrow{b_2}|} \right |  \\\\[3pt]
+				= \left | \frac{(\hat{i} + 2 \hat{j} + 2 \hat{k}).(3 \hat{i} + 2 \hat{j} + 6 \hat{k})}{\sqrt{1 + 4 + 4} \sqrt{9 + 4 + 36}} \right |  \\\\[3pt]
+				\left | \frac{3 + 4 + 12}{3 \times 7} \right | = \frac{19}{27}  \\\\[3pt]
+				Hence \ \theta = cos^{-1} \left ( \frac{19}{21} \right )  \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 9:</h4>
+		<p>Find the angle between the pair of lines<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \frac{x + 3}{3} = \frac{y - 1}{5} = \frac{z + 3}{4} \ and \ \frac{x + 1}{1} = \frac{y - 4}{1} = \frac{z - 5}{2}  \) </span>
+			<br />
+			<span class="highlight01"> Solution </span>
+			<br />
+			The direction ratios of the first line are 3, 5, 4 and the direction ratios of the second line are 1, 1, 2. If <span class=\"latex\" lang=\"latex\"> \(  \theta  \) </span> is the angle between them, then <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  cos \ \theta = \left | \frac{3.1 + 5.1 + 4.2}{\sqrt{3^2 + 5^2 + 4^2} \sqrt{1^2 + 1^2 + 2^2}} \right |  \\\\[3pt]
+				= \frac{16}{\sqrt{50} \sqrt{6}} = \frac{16}{5 \sqrt{2} \sqrt{6}}  \\\\[3pt]
+				= \frac{8 \sqrt{3}}{15}  \end{align}  \) </span>
+			<br />
+			Hence, the required angle is <span class=\"latex\" lang=\"latex\"> \(   cos^{-1} = \left ( \frac{8 \sqrt{3}}{15} \right )  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 10:</h4>
+		<p>Find the shortest distance between the lines <span class=\"latex\" lang=\"latex\"> \( l_1  \) </span> and <span class=\"latex\" lang=\"latex\"> \( l_2  \) </span> whose vector equations are <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \overrightarrow{r} = \hat{i} + \hat{j} + \lambda(2 \hat{i} - \hat{j} + \hat{k}) \ ....... \ (1)  \\\\[3pt]
+				and \ \overrightarrow{r} = 2 \hat{i} + \hat{j} - \hat{k} = \mu(3 \hat{i} - 5 \hat{j} + 2 \hat{k}) \ ..... \ (2)  \end{align}  \) </span>
+			<br />
+			<span class="highlight01"> Solution </span>
+			<br />
+			Comparing (1) and (2) with <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \overrightarrow{r} = \overrightarrow{a_1} + \lambda \overrightarrow{b_1} \ and \ \overrightarrow{r} = \overrightarrow{a_2} + \mu \overrightarrow{b_2} \ respectively,  \\\\[3pt]
+				we \ get \ \overrightarrow{a_1} = \hat{i} + \hat{j}, \ \overrightarrow{b_1} = 2 \hat{i} - \hat{j} + \hat{k}  \\\\[3pt]
+				\overrightarrow{a_2} = 2 \hat{i} + \hat{j} - \hat{k}  \ and \ \overrightarrow{b_2} = 3 \hat{i} - 5 \hat{j} + 2 \hat{k}  \\\\[3pt]
+				Therefore \ \overrightarrow{a_2} - \overrightarrow{a_1} = \hat{i} - \hat{k}  \\\\[3pt]
+				and \ \overrightarrow{b_1} \times \overrightarrow{b_2} = ( 2 \hat{i} - \hat{j} + \hat{k}) \times ( 3 \hat{i} - 5 \hat{j} + 2 \hat{k})  \\\\[3pt]
+				=  \left| \begin{array}{ccc} \hat{i} &amp; \hat{j} &amp; \hat{k}  \\\\ 2 &amp; - 1 &amp; 1  \\\\ 3 &amp; -5 &amp; 2  \end{array} \right| = 3 \hat{i} - \hat{j} - 7 \hat{k}  \\\\[3pt]
+				So \ | \overrightarrow{b_1} \times \overrightarrow{b_2}| = \sqrt{9 + 1 + 49} = \sqrt{59}  \end{align}  \) </span>
+			<br />
+			Hence, the shortest distance between the given lines is given by <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  d = \left | \frac{(\overrightarrow{b_1} \times \overrightarrow{b_2}).(\overrightarrow{a_2} - \overrightarrow{a_1})}{|\overrightarrow{b_1} \times \overrightarrow{b_2}|} \right |  \\\\[3pt]
+				= \frac{|3 - 0 + 7|}{\sqrt{59}} = \frac{10}{\sqrt{59}}  \end{align}  \) </span>
+		</p>
+	</section>
+</section> 

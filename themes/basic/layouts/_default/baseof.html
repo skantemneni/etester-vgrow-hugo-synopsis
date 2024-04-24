@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+{{- partial "head.html" . -}}
+
+<body>
+    <div class="container">
+        <!-- Hide Menu on Default Home Page       {{- partial "menu.html" . -}} -->
+        <!-- On second thought, I kept the menu but disabled all links on it. -->
+        {{- partial "menu.html" . -}}
+        {{- partial "header.html" . -}}
+        <div id="content">
+            {{- partial "breadcrumb.html" . -}}
+            {{- block "main" . }}{{- end }}
+        </div>
+        {{- partial "footer.html" . -}}
+    </div>
+</body>
+
+</html>

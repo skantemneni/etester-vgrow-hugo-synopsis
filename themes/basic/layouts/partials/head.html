@@ -1,0 +1,61 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#1A94D2" />
+    <meta name="description" content="{{ .Site.Params.description }}" />
+
+    <title>{{ .Site.Title }}-{{ .Title }}</title>
+
+
+    <!-- doing the following to include bootstrap scss to css -->
+    <!-- Make sure to create the themes/<mytheme>/assets and themes/<mytheme>/assets/sass folders and main.scss and styles.scss in that sass folder -->
+    <!-- https://www.noorix.com.au/blog/how-to/static-website-hugo-bootstrap-serverless-2/ -->
+    {{ $options := (dict "targetPath" "css/styles.css" "outputStyle" "compressed") }}
+    {{ $style := resources.Get "sass/main.scss" | toCSS  $options | minify }}
+    <link rel="stylesheet" href="{{ $style.RelPermalink }}" media="screen">
+    <!-- doing the above to include bootstrap scss to css -->
+    <!--    <img style="height: 24px; width: 46px;" href="{{ .Site.Home.Permalink }}" src="/image/logo/logoETESTER_ONLY_E.svg" class="logo" tabindex="0"> -->
+
+    <link rel="stylesheet" href='{{ .Site.BaseURL }}css/synopsis.css'>
+    <link rel="stylesheet" href='{{ .Site.BaseURL }}css/etester_custom.css'>
+
+    <!--
+        Automatic Line Breaking
+        https://docs.mathjax.org/en/v3.0-latest/output/linebreaks.html
+        Automatic line breaking has not yet been implemented in MathJax version 3, but is high on our list for inclusion in a future release.
+        WOW!!!  This is a comment from 2019 - 3 years ago.
+        Falling back to previous release.
+
+        WRONG:
+        Jan-2023.  2.7 MathJax had plenty of other issues.  Am NOT falling back to previous release.  Used a DOCPAD conversion program to
+        introduce manual workaround for linebreaks.
+    -->
+
+    <script defer src='{{ "js/math-code.js" | relURL }}'></script>
+
+    <script>
+        MathJax.Hub.Config = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                processClass: "mathjax",
+                ignoreClass: "no-mathjax"
+            },
+            svg: {
+                fontCache: 'global'
+            }
+        };
+
+    </script>
+    <script type="text/javascript" id="MathJax-script" async
+            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js?config=TeX-MML-AM_CHTML">
+    </script>
+
+
+    <!--
+        include a favicon for your site if you have it, else omit the line below
+        Location of favicon can be in mytheme/static/favicon.ico
+    -->
+    <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
+
+</head>
+

@@ -1,0 +1,807 @@
+---
+title: "Matrices"
+layout: "default_foundation"
+isMath: true
+---
+<section class="skill" id="01">
+	<h3 class="skill-heading">Matrix</h3>
+	<p>An array of complex numbers or real numbers that are arranged in the form of a square or rectangle is called a matrix.<br />
+		The order of a matrix is denoted by <span class=\"latex\" lang=\"latex\"> \(  m \times n  \) </span>, where "m" indicates the number of rows and "n" indicates
+		Matrices are generally denoted by capital letters of the alphabet i.e. A, B, C, D,.... etc , <br />
+		<span class="highlight01"> Example: </span>
+		<br />
+		<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  A = \left[ \begin{array}{ccc} -1 &amp; 2 &amp; 5  \\\\ 7 &amp; 6 &amp; 2  \end{array} \right ]_{2 \times 3}  \end{align}  \) </span>
+	</p>
+</section>
+<section class="skill" id="02">
+	<h3 class="skill-heading">Types of Matrices</h3>
+	<section class="subskill">
+		<h4 class="skill-subheading"> Rectangular Matrix</h4>
+		<p>If the number of rows and columns of a matrix are not equal, then the matrix is called rectangular matrix. <br />
+			<span class="highlight01"> Example: </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \left[ \begin{array}{ccc} -1 &amp; 0 &amp; 3  \\\\ 4 &amp; 7 &amp; 9  \end{array} \right ]_{2 \times 3}  \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="subskill">
+		<h4 class="skill-subheading"> Row Matrix</h4>
+		<p>A matrix containing only one row is called a row matrix.<br />
+			<span class="highlight01"> Example: </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  [3 \ 4 \ 5]_{1 \times 3}  \) </span>
+		</p>
+	</section>
+	<section class="subskill">
+		<h4 class="skill-subheading"> Columan Matrix</h4>
+		<p>A matrix having only one column is called a column matrix.<br />
+			<span class="highlight01"> Example: </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \left[ \begin{array}{c} 1  \\\\ 2  \\\\ 3  \end{array} \right ]_{3 \times 1}  \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="subskill">
+		<h4 class="skill-subheading"> Null Matrix or Zero Matrix</h4>
+		<p> If every element of a matrix is O, then it is called a null matrix. It was denoted by "O".<br />
+			<span class="highlight01"> Example: </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  0_{3 \times 4} = \left[ \begin{array}{cccc} 0 &amp; 0 &amp; 0 &amp; 0  \\\\ 0 &amp; 0 &amp; 0 &amp; 0  \\\\ 0 &amp; 0 &amp; 0 &amp; 0   \end{array} \right ]_{3 \times 4}  \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="subskill">
+		<h4 class="skill-subheading">Square Matrix</h4>
+		<p>A matrix in which the number of rows is equal to the number of columns is called square matrix.<br />
+			<span class="highlight01"> Example: </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \left[ \begin{array}{cc} 3 &amp; 4  \\\\ 5 &amp; 6  \end{array} \right ]_{2 \times 2}  \end{align}  \) </span>
+		</p>
+		<h5 class="skill-smallheading">Principal diagonal of a Matrix</h5>
+		<p>In a square matix, the diagonal having the elements from the first element of first row to the last element of last row is called the principal diagonal of a matrix.<br />
+			<span class="highlight01"> Example: </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  In \ \left[ \begin{array}{ccc} 1 &amp; 2 &amp; 4  \\\\ 3 &amp; -2 &amp; 8  \\\\ 4 &amp; 0 &amp; 3  \end{array} \right ]  \end{align}  \) </span>, the elements of the principal diagonal are 1, - 2, 3. </p>
+		<h5 class="skill-smallheading">Trace of a Matrix</h5>
+		<p>In a square matrix, the sum of elements of the principal diagonal is called the "trace of a matrix". We denote the trace of the matrix A by 'tr A'.<br />
+			<span class="highlight01"> Example: </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  If \ A = \left[ \begin{array}{ccc} 1 &amp; 2 &amp; 6  \\\\ 9 &amp; -1 &amp; 4  \\\\ 8 &amp; 7 &amp; 3  \end{array} \right ]  \end{align}  \) </span>,  <br />
+			then tr A = 1 + (-1) + 3 = 3 </p>
+	</section>
+	<section class="subskill">
+		<h4 class="skill-subheading">Scalar Matrix</h4>
+		<p>scalar matrix in which all the elements in the principal diagonal are equal and the rest of the elements are zero is called a scalr matrix.<br />
+			<span class="highlight01"> Example: </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \left[ \begin{array}{ccc} 3 &amp; 0 &amp; 0  \\\\ 0 &amp; 3 &amp; 0  \\\\ 0 &amp; 0 &amp; 3 \end{array} \right ]_{3 \times 3}  \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="subskill">
+		<h4 class="skill-subheading">Diagonal Matrix</h4>
+		<p>If all the elements of a square matrix are zero except those of principal diagonal then the matix is called a diagonal matrix. <br />
+			<span class="highlight01"> Example: </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \left[ \begin{array}{ccc} 4 &amp; 0 &amp; 0  \\\\ 0 &amp; -3 &amp; 0  \\\\ 0 &amp; 0 &amp; 2 \end{array} \right ]_{3 \times 3}  \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="subskill">
+		<h4 class="skill-subheading"> Identity Matrix or Unit Matrix</h4>
+		<p>A square matrix in which each diagonal element is unity and all other elements are zeroes is called a unit matrix. It was denoted by I. <br />
+			<span class="highlight01"> Example: </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  I_2 = \left[ \begin{array}{cc} 1 &amp; 0   \\\\ 0 &amp; 1 \end{array} \right ] , \ I_3 = \left[ \begin{array}{ccc} 1 &amp; 0 &amp; 0  \\\\ 0 &amp; 1 &amp; 0  \\\\ 0 &amp; 0 &amp; 1 \end{array} \right ]  \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="subskill">
+		<h4 class="skill-subheading">Upper triangular Matrix</h4>
+		<p>A square matrix in which all the elements below the principal diagonal are zeroes is called an upper triangular matrix.<br />
+			<span class="highlight01"> Example: </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \left[ \begin{array}{ccc} - 4 &amp; 1 &amp; 9  \\\\ 0 &amp; 2 &amp; 3  \\\\ 0 &amp; 0 &amp; -1 \end{array} \right ]_{3 \times 3}  \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="subskill">
+		<h4 class="skill-subheading">Lower triangular Matrix</h4>
+		<p>A square matrix in which all the elements above the principal diagonal are zeroes is called an lower triangular matrix.<br />
+			<span class="highlight01"> Example: </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \left[ \begin{array}{ccc} - 2 &amp; 0 &amp; 0  \\\\ 4 &amp; -3 &amp; 0  \\\\ 2 &amp; 5 &amp; 7 \end{array} \right ]_{3 \times 3}  \end{align}  \) </span>
+		</p>
+	</section>
+</section>
+<section class="skill" id="03">
+	<h3 class="skill-heading">Transpose of a Matrix</h3>
+	<p>The matrix obtained by interchancing the rows and columns of a matrix is said to be the
+		transpose of that matrix. <br />
+		The transpose of matrix A is denoted by <span class=\"latex\" lang=\"latex\"> \(  A^1  \) </span> or <span class=\"latex\" lang=\"latex\"> \(  A^T  \) </span>
+		<br />
+		<span class="highlight01"> Example: </span>
+		<br />
+		<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  If \ A = \left[ \begin{array}{ccc} 1 &amp; 2 &amp; 3  \\\\ 4 &amp; 5 &amp; 6   \end{array} \right ]_{2 \times 3}  \end{align}  \) </span>
+		then  <span class=\"latex\" lang=\"latex\"> \(  \begin{align}  A^T = \left[ \begin{array}{cc} 1 &amp; 4  \\\\ 2 &amp; 5   \\\\ 3 &amp; 6  \end{array} \right ]_{3 \times 2}  \end{align}  \) </span>
+	</p> 
+	<section class="subskill">
+		<h4 class="skill-subheading">Symmetric Matrix</h4>
+		<p>If a matrix is equal to its transpose, then it is called a symmetric matrix.<br />
+			<span class="highlight01"> Example: </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  If \ A = \left[ \begin{array}{cc} 2 &amp; - 5  \\\\ -5 &amp; 3  \end{array} \right ] \ then \ A^T  = \left[ \begin{array}{cc} 2 &amp; - 5  \\\\ -5 &amp; 3  \end{array} \right ]   \\\\[3pt]
+				\therefore \ A = A^T  \end{align}  \) </span>
+			<br />
+			So A is called the symmetric matix</p>
+	</section>
+	<section class="subskill">
+		<section class="subskill">
+			<h4 class="skill-subheading">Skew-Symmetric Matrix</h4>
+			<p>If the transpose of a given matrix is equal to its additive inverse, then that matrix is called skew-symmetric matrix<br />
+				<span class="highlight01"> Example: </span>
+				<br />
+				<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  If \ A = \left[ \begin{array}{cc} 0 &amp; 5  \\\\ -5 &amp; 0  \end{array} \right ] \ then \ A^T  = \left[ \begin{array}{cc} 0 &amp; - 5  \\\\ 5 &amp; 0  \end{array} \right ]   \\\\[3pt]
+					= - \left[ \begin{array}{cc} 0 &amp; 5  \\\\ - 5 &amp; 0  \end{array} \right ]   \\\\[3pt]
+					\therefore \ A^T = A  \end{align}  \) </span>
+				<br />
+				So A is called the Skew-symmetric matix <br />
+				<span class="highlight01">Note:</span>
+			</p>
+			<div class="list-custom-block-list-ol spaced20 indented20">
+				<ol>
+					<li>
+						<p>
+							<span class=\"latex\" lang=\"latex\"> \(  (A^T)^T = A  \) </span>
+						</p>
+					</li>
+					<li>
+						<p>
+							<span class=\"latex\" lang=\"latex\"> \( (A + B)^T = A^T + B^T  \) </span>
+						</p>
+					</li>
+					<li>
+						<p>
+							<span class=\"latex\" lang=\"latex\"> \( (AB)^T = B^T. A^T  \) </span>
+						</p>
+					</li>
+					<li>
+						<p>
+							<span class=\"latex\" lang=\"latex\"> \( (KA)^T = K. A^T  \) </span>
+						</p>
+					</li>
+					<li>
+						<p>
+							<span class=\"latex\" lang=\"latex\"> \( (A^2)^T = (A^T)^2  \) </span>
+						</p>
+					</li>
+					<li>
+						<p>
+							<span class=\"latex\" lang=\"latex\"> \( AB^T = (BA^T)^T  \) </span>
+						</p>
+					</li>
+				</ol>
+			</div>
+		</section>
+	</section>
+	<section class="skill" id="04">
+		<h3 class="skill-heading">Equality of Matrices</h3>
+		<p>Two matrices are equal if and only if they have same order and corresponding elements are identical. <br />
+			<span class="highlight01"> Example: </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  If \ A = \left[ \begin{array}{cc} a &amp; b  \\\\ c &amp; d  \end{array} \right ] \ B = \left[ \begin{array}{cc} 1 &amp; 2  \\\\ 3 &amp; 4  \end{array} \right ] \ then  \\\\[3pt]
+				A = B \ \Leftrightarrow \ a = 1, \ b = 2, \ c = 3, \ b = 4  \end{align}  \) </span>
+		</p>
+	</section>
+</section>
+<section class="skill" id="05">
+	<h3 class="skill-heading">Addition of Matrices</h3> 
+	<section class="subskill">
+		<h4 class="skill-subheading">Condition :</h4> 
+		<p>Two matrices are said to be conformable for addition, if they have the same order.</p>
+		<h5 class="skill-smallheading">Properties</h5>
+		<div class="list-custom-block-list-ol spaced20 indented20">
+			<ol>
+				<li>
+					<p>Closure property <br />
+						If A and B are two matrices of same order, then A + B is also a matrix.</p>
+				</li>
+				<li>
+					<p>Associative property<br />
+						If A, B and C are of the same order matrices then <br />
+						A + (B + C) = (A + B)+ C</p>
+				</li>
+				<li>
+					<p>Additive identity<br />
+						Let A be a matrix and "O" be a null matrix of same order, then A + O = O + A = A, <br />
+						Hence zero is the additive identity matrix for addition.</p>
+				</li>
+				<li>
+					<p>Additive inverse <br />
+						If A is any matrix of order <span class=\"latex\" lang=\"latex\"> \( m \times n  \) </span>, then A + (-A) = (-A) + A = O. <br />
+						Here the matrix "-A" is called additive inverse of A.</p>
+				</li>
+				<li>
+					<p>Commutative property <br />
+						If A and B are of the same order matrices, then A + B = B + A.</p>
+				</li>
+			</ol>
+		</div>
+		<p>
+			<span class="highlight01">Note :</span>
+		</p>
+		<div class="list1-ol default-spaced-indented">
+			<ol>
+				<li>
+					<p>k(A + B) = kA + kB</p>
+				</li>
+				<li>
+					<p>(k + m)A = kA + mA</p>
+				</li>
+				<li>
+					<p>	m(nA) = n(mA) = (mn)A</p>
+				</li>
+			</ol>
+		</div>
+	</section>
+</section>
+<section class="skill" id="06">
+	<h3 class="skill-heading">Multiplication of Matrices</h3> 
+	<section class="subskill">
+		<h4 class="skill-subheading">Condition :</h4> 
+		<p> Two matrices are said to be conformable for multiplication, if the number of columns of the first matrix are equal to the number of rows of the second matrix.</p>
+		<h5 class="skill-smallheading">Properties</h5>
+		<div class="list-custom-block-list-ol spaced20 indented20">
+			<ol>
+				<li>
+					<p>Closure property <br />
+						If A and B are two matrices, then AB is also a matrix.</p>
+				</li>
+				<li>
+					<p>Associative property <br />
+						Suppose A, B, C are matrices. If AB and (AB)C are defined, BC and A(BC) are defined then (AB)C = A(BC).</p>
+				</li>
+				<li>
+					<p>Multiplicative identity <br />
+						If A and I are square matrices of the same order then <br />
+						AI = IA = A. </p>
+				</li>
+				<li>
+					<p>Distributive property <br />
+						Matrix multiplication is distributive with respect to matrix addition.<br />
+						i.e. A.(B + C) = A.B + A.C </p>
+				</li>
+			</ol>
+		</div>
+		<p>
+			<span class="highlight01">Note :</span>
+		</p>
+		<div class="list1-ol default-spaced-indented">
+			<ol>
+				<li>
+					<p>If AC = BC and <span class=\"latex\" lang=\"latex\"> \( C \ \neq \ 0  \) </span>, then A need not be equal to B.</p>
+				</li>
+				<li>
+					<p>If AB = BA = A, then B is called unit matrix. This is denoted by I.</p>
+				</li>
+				<li>
+					<p>	For any positive integer n, <span class=\"latex\" lang=\"latex\"> \(  I^n = I  \) </span>
+					</p>
+				</li>
+				<li>
+					<p>If A is a square matrix such that <span class=\"latex\" lang=\"latex\"> \( A^2 = I  \) </span>. Then A is called an involutory matrix.</p>
+				</li>
+				<li>
+					<p>If A is a matrix of order <span class=\"latex\" lang=\"latex\"> \( m \times n  \) </span>, B is a matrix of order <span class=\"latex\" lang=\"latex\"> \( n \times p  \) </span>,  then product matrix AB has order <span class=\"latex\" lang=\"latex\"> \( m \times p  \) </span>.</p>
+				</li>
+			</ol>
+		</div>
+	</section>
+</section>
+<section class="skill" id="07">
+	<h3 class="skill-heading">Determinants</h3>
+	<p>Deterininartt of a square matrix of order 2 <br />
+		(ad bc) is called the determinant of the second order square matrix <span class=\"latex\" lang=\"latex\"> \(  \begin{align}   \left[ \begin{array}{cc} a &amp; b  \\\\ c &amp; d  \end{array} \right ]  \end{align}  \) </span> and write <span class=\"latex\" lang=\"latex\"> \(  \begin{align}   \left|\begin{array}{cc} a &amp; b  \\\\ c &amp; d  \end{array} \right |  \end{align}  \) </span>, We denote it by det A or |A|. <br />
+		<span class="highlight01"> Example:</span>
+		<br />
+		<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \left| \begin{array}{cc} 2 &amp; -3   \\\\ 4 &amp; 6  \end{array} \right | = 2 \times 6 - 4 \times 3 = 24  \end{align}  \) </span>.</p> 
+	<section class="subskill">
+		<h4 class="skill-subheading">Minors and Co-factors</h4>
+		<p>Consider any element of a square matrix <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  A = \left [ \begin{array}{ccc} a_1 &amp; b_1 &amp; c_1  \\\\ a_2 &amp; b_2 &amp; c_2  \\\\ a_3 &amp; b_3 &amp; c_3 \end{array} \right ]  \end{align}  \) </span> of order 3. <br />
+			The minor of that element is the determinant of the square matrix of order 2 which is obtained by excluding the row and the column containing that element. <br />
+			<span class="highlight01"> Example:</span>
+			<br />
+			In the given matrix, <br />
+			minor of <span class=\"latex\" lang=\"latex\"> \(  \begin{align}  a_1  = \left | \begin{array}{cc} b_2 &amp; c_2  \\\\ b_3 &amp; c_3  \end{array} \right |  \end{align}  \) </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  b_2  = \left | \begin{array}{cc} a_1 &amp; c_1  \\\\ a_3 &amp; c_3  \end{array} \right |  \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="subskill">
+		<h4 class="skill-subheading">Co-factors</h4>
+		<p>In a <span class=\"latex\" lang=\"latex\"> \(  3 \times 3  \) </span> square matrix, the co-factor of the element in <span class=\"latex\" lang=\"latex\"> \(  i^{th}  \) </span> row and <span class=\"latex\" lang=\"latex\"> \(  j^{th}  \) </span> column is defined as its minor multiplied by  <br />
+			<span class=\"latex\" lang=\"latex\"> \(  (-1)^{i + j}  \) </span>
+			<br />
+			<span class="highlight01"> Example:</span>
+			<br />
+			In the given matrix, <br />
+			co - factor of <span class=\"latex\" lang=\"latex\"> \(  \begin{align}  a_1  = (-1)^{1 + 1} \left | \begin{array}{cc} b_2 &amp; c_2  \\\\ b_3 &amp; c_3  \end{array} \right | = \left | \begin{array}{cc} b_2 &amp; c_2  \\\\ b_3 &amp; c_3  \end{array} \right |   \end{align}  \) </span>
+			<br />
+			co - factor of <span class=\"latex\" lang=\"latex\"> \(  \begin{align}  c_1  = (-1)^{2 + 3} \left | \begin{array}{cc} a_1 &amp; b_1  \\\\ a_3 &amp; b_3  \end{array} \right | =  - \left | \begin{array}{cc} a_1 &amp; b_1  \\\\ a_3 &amp; b_3  \end{array} \right |   \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="subskill">
+		<h4 class="skill-subheading"> Determinant of a Square Matrix of Order Three</h4>
+		<p>In a square matrix <span class=\"latex\" lang=\"latex\"> \(  \begin{align}  A = \left [ \begin{array}{ccc} a_1 &amp; b_1 &amp; c_1  \\\\ a_2 &amp; b_2 &amp; c_2  \\\\ a_3 &amp; b_3 &amp; c_3 \end{array} \right ]  \end{align}  \) </span> of order 3, the sum of the products of the elements of the first row with their corresponding cofactors is called the determinant of the matrix A. <br />
+			We write it by <span class=\"latex\" lang=\"latex\"> \(  \begin{align}  A = \left [ \begin{array}{ccc} a_1 &amp; b_1 &amp; c_1  \\\\ a_2 &amp; b_2 &amp; c_2  \\\\ a_3 &amp; b_3 &amp; c_3 \end{array} \right ]  \end{align}  \) </span>
+			<br />
+			det A = <span class=\"latex\" lang=\"latex\"> \(  a_1. A_1 + b_1. B_1 + c_1. C_1  \) </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align} = a_1 \left | \begin{array}{cc} b_2 &amp; c_2  \\\\  b_3 &amp; c_3 \end{array} \right | -  b_1 \left | \begin{array}{cc} a_2 &amp; c_2  \\\\  a_3 &amp; c_3 \end{array} \right | + c_1 \left | \begin{array}{cc} a_2 &amp; b_2  \\\\  a_3 &amp; b_3 \end{array} \right |  \end{align}  \) </span>
+		</p>
+	</section>
+</section>
+<section class="skill" id="08">
+	<h3 class="skill-heading">Singular and Non-Singular Matrices</h3>
+	<p>A square matrix is called singular if its determinant is zero. Otherwise, it is called a non - singular matrix.</p> 
+	<section class="subskill">
+		<h4 class="skill-subheading">Adjoint of a Square Matrix</h4>
+		<p>The adjoint of a square matrix is the transpose of the matrix obtained by replacing each element of A by its co-factor in |A|. <br />
+			Adjoint of A is written as adj A. <br />
+			<span class="highlight01"> Note:</span>
+			<span class=\"latex\" lang=\"latex\"> \(  A.(adj \ A) = (adj \ A). A = |A| . I_n  \) </span>
+		</p>
+	</section>
+</section>
+<section class="skill" id="09">
+	<h3 class="skill-heading">Inverse of a Matrix</h3>
+	<div class="list-custom-block-list-ol spaced20 indented20">
+		<ol>
+			<li>
+				<p>
+					<span class=\"latex\" lang=\"latex\"> \(  A^{-1} = \frac{1}{|A|}. (adj \ A)  \) </span>
+					<br />
+					Where A is a square matrix of order 3 or more.</p>
+			</li>
+			<li>
+				<p>if <span class=\"latex\" lang=\"latex\"> \(  \begin{align}  A = \left [ \begin{array}{cc} a &amp; b  \\\\  c &amp; d \end{array} \right ]  \end{align}  \) </span> is a square matrix of order 2, then <br />
+					<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  A^{-1} = \frac{1}{ab - bc} \left [ \begin{array}{cc} d &amp; -b  \\\\  -c &amp; a \end{array} \right ]  \end{align}  \) </span>
+				</p>
+			</li>
+		</ol>
+	</div>
+	<p>
+		<span class="highlight01">Note :</span>
+	</p>
+	<div class="list1-ol default-spaced-indented">
+		<ol>
+			<li>
+				<p>Only square matrix can have inverse</p>
+			</li>
+			<li>
+				<p>If B is the inverse of A, then A is the inverse of B</p>
+			</li>
+			<li>
+				<p>
+					<span class="highlight01">(A^{-1})^{-1} = A </span>
+				</p>
+			</li>
+			<li>
+				<p>
+					<span class="highlight01">(AB)^{-1} = B^{-1} . A^{-1} </span>
+				</p>
+			</li>
+			<li>
+				<p>
+					<span class="highlight01"> (A^T)^{-1} = (A^{-1})^T </span>
+				</p>
+			</li>
+			<li>
+				<p>matrix such that <span class="highlight01">A^2 = A </span> is called idempotent matrix.</p>
+			</li>
+		</ol>
+	</div>
+</section>
+<section class="skill" id="10">
+	<h3 class="skill-heading">Properties of Determinants</h3>
+	<div class="list-custom-block-list-ol spaced20 indented20">
+		<ol>
+			<li>
+				<p>det A = det <span class=\"latex\" lang=\"latex\"> \(  A^T  \) </span>
+				</p>
+			</li>
+			<li>
+				<p>If the determinant of a matrix is <span class=\"latex\" lang=\"latex\"> \(  \triangle  \) </span> , then the determinant of a matrix obtained by interchancing any two rows (or columns) is <span class=\"latex\" lang=\"latex\"> \(  - \triangle  \) </span>
+				</p>
+			</li>
+			<li>
+				<p>If two rows (or columns) of a matrix are identical, then the value of the determinant is zero.</p>
+			</li>
+			<li>
+				<p>If all the elements of a row (or column) of matrix are multiplied by a number k,then the determinant of the resulting matrix is equal to k times the determinant of the original matrix.</p>
+			</li>
+			<li>
+				<p>If A is a <span class=\"latex\" lang=\"latex\"> \(  n \times n  \) </span> matrix and k is a scalar , then <span class=\"latex\" lang=\"latex\"> \(  |KA| = K^n . |A|.  \) </span>
+				</p>
+			</li>
+			<li>
+				<p>The sum of the products of the elements of any row (or column) with the co-factors of the corresponding elements of any other row (or column) of a matrix is zero.</p>
+			</li>
+			<li>
+				<p>If the elements of a square matrix are polynomials in x and two rows (or columns) are identical when "a" is substituted for "x", then (x - a ) is a factor of its determinant. </p>
+			</li>
+			<li>
+				<p>det (AB) = (det A)(det B) </p>
+			</li>
+			<li>
+				<p>
+					<span class=\"latex\" lang=\"latex\"> \(  (det \ A^{-1} = (det \ A)^{-1}  \) </span>
+				</p>
+			</li>
+			<li>
+				<p>
+					<span class=\"latex\" lang=\"latex\"> \(  |Adj \ A| = |A|^{n - 1}  \) </span>
+				</p>
+			</li>
+		</ol>
+	</div> 
+	<section class="subskill">
+		<h4 class="skill-subheading">Some Important Results</h4>
+		<div class="list-custom-block-list-ol spaced20 indented20">
+			<ol>
+				<li>
+					<p>
+						<span class=\"latex\" lang=\"latex\"> \(  (Adj \ A)^{-1} = Adj(A^{-1})  \) </span>
+					</p>
+				</li>
+				<li>
+					<p>
+						<span class=\"latex\" lang=\"latex\"> \(   Adj \ A^{T} = (Adj \ A)^T  \) </span>
+					</p>
+				</li>
+				<li>
+					<p>
+						<span class=\"latex\" lang=\"latex\"> \(  Adj(adj \ A) = |A|^{n - 2}. A  \) </span>
+					</p>
+				</li>
+				<li>
+					<p>For any scalar "K", <span class=\"latex\" lang=\"latex\"> \(   Adj (KA) = K^{n - 1}. Adj.A  \) </span>
+					</p>
+				</li>
+				<li>
+					<p>
+						<span class=\"latex\" lang=\"latex\"> \(  |Adj \ Adj \ A| = (n - 1)^2 . |A|  \) </span>
+					</p>
+				</li>
+				<li>
+					<p>
+						<span class=\"latex\" lang=\"latex\"> \(  |Adj \ Adj \ Adj \ A| = (n - 1)^3 . |A|  \) </span>
+					</p>
+				</li>
+				<li>
+					<p>Adj(AB) = (Adj \ B).(Adj \ A)</p>
+				</li>
+				<li>
+					<p>|Adj (AB) | = {Adj  A|.|Adj  B|</p>
+				</li>
+				<li>
+					<p>tr (A + B) = tr A + tr B</p>
+				</li>
+				<li>
+					<p>If A, B, C be three matrices Aof order "n", then tr ABC = tr BCA = tr CBA = tr ACB = tr BCA = tr CBA </p>
+				</li>
+			</ol>
+		</div>
+	</section>
+	<section class="subskill">
+		<h4 class="skill-subheading"> Solution of Simultaneous Linear Equations</h4>
+		<p>Consider the simultaneous linear equations x, y and z as  <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  a_1 x + b_1 y + c_1 z = d_1  \\\\[3pt]
+				a_2 x + b_2 y + c_2 z = d_2  \\\\[3pt]
+				a_3 x + b_3 y + c_3 z = d_3  \end{align}  \) </span>
+		</p>
+		<h5 class="skill-smallheading">Cramer's rule </h5>
+		<p>
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \triangle = \left | \begin{array}{ccc} a_1 &amp; b_1 &amp; c_1  \\\\ a_2 &amp; b_2 &amp; c_2  \\\\ a_3 &amp; b_3 &amp; c_3 \end{array} \right | ; \   \triangle_1 = \left | \begin{array}{ccc} d_1 &amp; b_1 &amp; c_1  \\\\ d_2 &amp; b_2 &amp; c_2  \\\\ d_3 &amp; b_3 &amp; c_3 \end{array} \right |  \\\\[3pt]
+				\triangle_2 = \left | \begin{array}{ccc} a_1 &amp; d_1 &amp; c_1  \\\\ a_2 &amp; d_2 &amp; c_2  \\\\ a_3 &amp; d_3 &amp; c_3 \end{array} \right | ; \ \triangle_3 = \left | \begin{array}{ccc} a_1 &amp; b_1 &amp; d_1  \\\\ a_2 &amp; b_2 &amp; d_2  \\\\ a_3 &amp; b_3 &amp; d_3 \end{array} \right |  \end{align}  \) </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  x = \frac{\triangle_1}{\triangle}, \ y = \frac{\triangle_2}{\triangle} \ and \ z = \frac{\triangle_3}{\triangle}  \) </span>
+		</p>
+		<h5 class="skill-smallheading">Matrix Inversion Method</h5>
+		<p> Given equations can be written in the matrix form as, AX = B <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  Where \ A  = \left [ \begin{array}{ccc} a_1 &amp; b_1 &amp; c_1  \\\\ a_2 &amp; b_2 &amp; c_2  \\\\ a_3 &amp; b_3 &amp; c_3 \end{array} \right ]  \\\\[3pt]
+				X = \left [ \begin{array}{c} x  \\\\ y  \\\\ z \end{array} \right ]| \ and \ B =  \left [ \begin{array}{c} d_1  \\\\ d_2  \\\\ d_3 \end{array} \right ]  \\\\[3pt]
+				AX = B \ \Rightarrow \ X = A^1 . B  \end{align}  \) </span>
+			<br />
+			From this x, y and z are known. </p>
+	</section> 
+</section> 
+<section class="solved-examples" id="examples">
+	<h3 class="solved-examples-heading">Solved examples</h3>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 1:</h4>
+		<p> If <span class=\"latex\" lang=\"latex\"> \(  \begin{align}  A =  \left [ \begin{array}{ccc} 0 &amp; 1 &amp; 2  \\\\ 2 &amp; 3 &amp; 4  \\\\ 4 &amp; 5 &amp; -6  \end{array} \right ], \ B =  \left [ \begin{array}{ccc} - 1 &amp; 2 &amp; 3  \\\\ 0 &amp; 1 &amp; 0  \\\\ 0 &amp; 0 &amp; -1 \end{array} \right ]  \end{align}  \) </span>, find B - A and 4A - 5B <br />
+			<span class="highlight01"> Solution: </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  B - A =  \left [ \begin{array}{ccc} - 1 &amp; 2 &amp; 3  \\\\ 0 &amp; 1 &amp; 0  \\\\ 0 &amp; 0 &amp; -1 \end{array} \right ] - \left [ \begin{array}{ccc} 0 &amp; 1 &amp; 2  \\\\ 2 &amp; 3 &amp; 4  \\\\ 4 &amp; 5 &amp; -6  \end{array} \right ]  \\\\[3pt]
+				= \left [ \begin{array}{ccc} -1 &amp; 1 &amp; 1  \\\\ -2 &amp; -2 &amp; -4  \\\\ -4 &amp; -5 &amp; 5  \end{array} \right ]  \\\\[3pt]
+				4A - 5B = 4 \left [ \begin{array}{ccc} 0 &amp; 1 &amp; 2  \\\\ 2 &amp; 3 &amp; 4  \\\\ 4 &amp; 5 &amp; -6  \end{array} \right ]  - 5  \left [ \begin{array}{ccc} - 1 &amp; 2 &amp; 3  \\\\ 0 &amp; 1 &amp; 0  \\\\ 0 &amp; 0 &amp; -1 \end{array} \right ]  \\\\[3pt]
+				=  \left [ \begin{array}{ccc} 0 &amp; 4 &amp; 8  \\\\ 8 &amp; 12 &amp; 16  \\\\ 16 &amp; 20 &amp; - 24 \end{array} \right ]  \\\\[3pt]
+				=  \left [ \begin{array}{ccc} 5 &amp; - 6 &amp; - 7  \\\\ 8 &amp; 7 &amp; 16  \\\\ 16 &amp; 20 &amp; - 19 \end{array} \right ]  \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 2:</h4>
+		<p> If <span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \left [ \begin{array}{ccc} x - 1 &amp; 2 &amp; 5 - y  \\\\ 0 &amp; z - 1 &amp; 7  \\\\ 1 &amp; 0 &amp; a - 1 \end{array} \right ] = \left [ \begin{array}{ccc} 1 &amp; 2 &amp; 3  \\\\ 0 &amp; 4 &amp; 7  \\\\ 1 &amp; 0 &amp; 0 \end{array} \right ]  \end{align}  \) </span> then find x, y, z and a. <br />
+			<span class="highlight01"> Solution: </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \left [ \begin{array}{ccc} x - 1 &amp; 2 &amp; 5 - y  \\\\ 0 &amp; z - 1 &amp; 7  \\\\ 1 &amp; 0 &amp; a - 1 \end{array} \right ] = \left [ \begin{array}{ccc} 1 &amp; 2 &amp; 3  \\\\ 0 &amp; 4 &amp; 7  \\\\ 1 &amp; 0 &amp; 0 \end{array} \right ]  \\\\[3pt]
+				\Rightarrow \ x - 1 = 1, \ 5 - y = 3, \ z - 1 = 4, \ a - 5 = 0  \\\\[3pt]
+				\Rightarrow \ x = 2, \ y = 2, \ z = 5, \ a = 5. \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 3:</h4>
+		<p> Give examples of two square matrices A and B of the same orer for which AB = O and <span class=\"latex\" lang=\"latex\"> \(  BA \ \neq \ O  \) </span>.<br />
+			<span class="highlight01"> Solution: </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align} If \ A =  \left [ \begin{array}{cc} 1 &amp; 0  \\\\ 1 &amp; 0 \end{array} \right ], \ B = \left [ \begin{array}{cc} 0 &amp; 0  \\\\ 1 &amp; 1 \end{array} \right ] \ \text{then AB = O and} \  BA = \left [ \begin{array}{cc} 0 &amp; 0  \\\\ 2 &amp; 2 \end{array} \right ] \ \neq \ O.  \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 4:</h4>
+		<p> Find the adjoint and inverse of the matrix  <span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \left [ \begin{array}{ccc} 2 &amp; 1 &amp; 2  \\\\ 1 &amp; 0 &amp; 1  \\\\ 2 &amp; 2 &amp; 1 \end{array} \right ]  \end{align}  \) </span>
+			<br />
+			<span class="highlight01"> Solution: </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  Let \ A = \left [ \begin{array}{ccc} 2 &amp; 1 &amp; 2  \\\\ 1 &amp; 0 &amp; 1  \\\\ 2 &amp; 2 &amp; 1 \end{array} \right ]  \end{align}  \) </span>
+			<br />
+			det A = 2(0 - 2) - 1(1 - 2) + 2(2 - 0) = - 4 + 1 + 4 = 1 <br />
+			The cofactors of elements of A are <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  A_{11} = + (0 - 2) = -2,  \ A_{12} = - (1 - 2) = 1, \ A_{13} = + (2 - 0) = 2,  \\\\[3pt]
+				A_{21} = - (1 - 4) = 3, \ A_{2211} = + (2 - 4) = -2, \ A_{23} = - (4 - 2) = -2  \\\\[3pt]
+				A_{31} = + (1 - 0) = 1, \ A_{32} = - (2 - 2) = 0, \ A_{33} = + (0 - 1) = - 1  \\\\[3pt]
+				\therefore \ Adj \ A = \left [ \begin{array}{ccc} A_{11} &amp; A_{21} &amp; A_{31}  \\\\ A_{12} &amp; A_{22} &amp; A_{32}  \\\\ A_{13} &amp; A_{23} &amp; A_{33} \end{array} \right ]  \\\\[3pt]
+				= \left [ \begin{array}{ccc} -2 &amp; 3 &amp; 1  \\\\ 1 &amp; -2 &amp; 0  \\\\ 2 &amp; - 2 &amp; - 1 \end{array} \right ]  \\\\[3pt]
+				\therefore \ adj \ A^1 = \frac{Adj \ A}{det \ A}  \\\\[3pt]
+				= Adj \ A = \left [ \begin{array}{ccc} -2 &amp; 3 &amp; 1  \\\\ 1 &amp; -2 &amp; 0  \\\\ 2 &amp; - 2 &amp; - 1 \end{array} \right ]   \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 5:</h4>
+		<div class="list-custom-block-list-ol spaced20 indented20">
+			<ol>
+				<li>
+					<p>a matrix has 7 elements, what are the possible orders it can have?</p>
+				</li>
+				<li>
+					<p>a matrix has 12 elements, what are the possible orders it can have?</p>
+				</li>
+			</ol>
+		</div>
+		<span class="highlight01"> Solution: </span>
+		<br />
+		<p>If the order of a matrix is <span class=\"latex\" lang=\"latex\"> \(  m \times n  \) </span> then the matrix has mn elements.</p>
+		<div class="list-custom-block-list-ol spaced20 indented20">
+			<ol>
+				<li>
+					<p>If mn = 7 then m = 7, n = 1 or m = 1, n = 7. <br />
+						<span class=\"latex\" lang=\"latex\"> \(  \therefore  \) </span> The possible orders of the matrix are <span class=\"latex\" lang=\"latex\"> \(  7 \times 1, \ 1 \times 7  \) </span>.</p>
+				</li>
+				<li>
+					<p>If mn = l2 then m = 1 , n = 12 or m = 2, n = 6 or m = 3 , n = 4 or m = 4, n = 3 or m = 6, n = 2 or m = 12, n = 1. <br />
+						<span class=\"latex\" lang=\"latex\"> \(  \therefore  \) </span> The possible orders of the matrix are <span class=\"latex\" lang=\"latex\"> \(  1 \times 12, \ 2 \times 6, \ 3 \times 4, \ 4 \times 3, \ 6 \times 2, \ 12 \times 1  \) </span>.</p>
+				</li>
+			</ol>
+		</div>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 6:</h4>
+		<p> Find the additive inverse of the matrix  <span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \left [ \begin{array}{ccc} 7 &amp; 15 &amp; 8  \\\\ - 1 &amp; 10 &amp; 9  \\\\ - 2 &amp; 2 &amp; - 10 \end{array} \right ]  \end{align}  \) </span>. <br />
+			<span class="highlight01"> Solution: </span>
+			<br />
+			Additive inverse of <span class=\"latex\" lang=\"latex\"> \(  \begin{align} \left [ \begin{array}{ccc} 7 &amp; 15 &amp; 8  \\\\ - 1 &amp; 10 &amp; 9  \\\\ - 2 &amp; 2 &amp; - 10 \end{array} \right ] \ is \ \left [ \begin{array}{ccc} - 7 &amp; - 15 &amp; 1  \\\\ - 10 &amp; - 9 &amp; 2  \\\\ - 2 &amp; 2 &amp; - 10 \end{array} \right ]   \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 7:</h4>
+		<p> If <span class=\"latex\" lang=\"latex\"> \(  \begin{align}  A = \left [ \begin{array}{ccc} 2 &amp; 3 &amp; 1  \\\\ 0 &amp; -1 &amp; 5  \end{array} \right ], \ B = \left [ \begin{array}{ccc} 1 &amp; 2 &amp; - 1  \\\\ 0 &amp; -1 &amp; 3  \end{array} \right ]  \end{align}  \) </span> find 2A - 3B. <br />
+			<span class="highlight01"> Solution: </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  2A - 3B = 2 \left [ \begin{array}{ccc} 2 &amp; 3 &amp; 1  \\\\ 0 &amp; -1 &amp; 5  \end{array} \right ] - 3 \left [ \begin{array}{ccc} 1 &amp; 2 &amp; - 1  \\\\ 0 &amp; -1 &amp; 3  \end{array} \right ]  \\\\[3pt]
+				= \left [ \begin{array}{ccc} 4 &amp; 6 &amp; 2  \\\\ 0 &amp; -2 &amp; 10  \end{array} \right ] - \left [ \begin{array}{ccc} 3 &amp; 6 &amp; - 3  \\\\ 0 &amp; -3 &amp; 9  \end{array} \right ]  \\\\[3pt]
+				= \left [ \begin{array}{ccc} 1 &amp; 0 &amp; 5  \\\\ 0 &amp; 1 &amp; 1  \end{array} \right ]
+			 \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 8:</h4>
+		<p> If <span class=\"latex\" lang=\"latex\"> \(  \begin{align}  A = \left [ \begin{array}{ccc} 0 &amp; 1 &amp; 2  \\\\ 2 &amp; 3 &amp; 4  \\\\ 4 &amp; 5 &amp; 6  \end{array} \right ], \ B = \left [ \begin{array}{ccc} 5 &amp; 0 &amp; 0  \\\\ 0 &amp; 5 &amp; 0  \\\\ 0 &amp; 0 &amp; 5  \end{array} \right ]  \end{align}  \) </span> then find 2A + B and 2A - B.<br />
+			<span class="highlight01"> Solution: </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  2A - 3B = 2 \left [ \begin{array}{ccc} 0 &amp; 1 &amp; 2  \\\\ 2 &amp; 3 &amp; 4  \\\\ 4 &amp; 5 &amp; 6  \end{array} \right ] + \left [ \begin{array}{ccc} 5 &amp; 0 &amp; 0  \\\\ 0 &amp; 5 &amp; 0  \\\\ 0 &amp; 0 &amp; 5  \end{array} \right ]  \\\\[3pt]
+				= \left [ \begin{array}{ccc} 5 &amp; 2 &amp; 4  \\\\ 4 &amp; 11 &amp; 8  \\\\ 8 &amp; 10 &amp; 17  \end{array} \right ]  \end{align}  \) </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  2A - B = 2 \left [ \begin{array}{ccc} 0 &amp; 1 &amp; 2  \\\\ 2 &amp; 3 &amp; 4  \\\\ 4 &amp; 5 &amp; 6  \end{array} \right ] - \left [ \begin{array}{ccc} 5 &amp; 0 &amp; 0  \\\\ 0 &amp; 5 &amp; 0  \\\\ 0 &amp; 0 &amp; 5  \end{array} \right ]  \\\\[3pt]
+				= \left [ \begin{array}{ccc} 5 &amp; 2 &amp; 4  \\\\ 4 &amp; 1 &amp; 8  \\\\ 8 &amp; 10 &amp; 7  \end{array} \right ]
+			 \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 9:</h4>
+		<p> If <span class=\"latex\" lang=\"latex\"> \(  \begin{align}  A = \left [ \begin{array}{cc} 1 &amp; 2  \\\\ 3 &amp; 4  \end{array} \right ], \ B = \left [ \begin{array}{cc} 2 &amp; 3  \\\\ 4 &amp; 5 \end{array} \right ]  \end{align}  \) </span> and A + B - C = 0, the find C .<br />
+			<span class="highlight01"> Solution: </span>
+			<br />
+			A + B - C = 0 <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \Rightarrow \ C = A + B  \\\\[3pt]
+				= \left [ \begin{array}{cc} 3 &amp; 5  \\\\ 7 &amp; 9  \end{array} \right ]
+			 \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 10:</h4>
+		<p> If <span class=\"latex\" lang=\"latex\"> \(  \begin{align}  A = \left [ \begin{array}{cc} 9 &amp; 1  \\\\ 4 &amp; 3  \end{array} \right ], \ B = \left [ \begin{array}{cc} 1 &amp; 5  \\\\ 6 &amp; 11 \end{array} \right ]  \end{align}  \) </span> Then find the matrix X such that 3A + 5B + 2X = 0  <br />
+			<span class="highlight01"> Solution: </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align} 3A + 5B + 2X = 0 \ \Rightarrow \ 2X = - 3A - 5B <br />
+				= - 3 \left [ \begin{array}{cc} 9 &amp; 1  \\\\ 4 &amp; 3  \end{array} \right ] - 5 \left [ \begin{array}{cc} 1 &amp; 5  \\\\ 6 &amp; 11  \end{array} \right ]  \\\\[3pt]
+				= \left [ \begin{array}{cc} - 32 &amp; - 28  \\\\ - 42 &amp; - 64  \end{array} \right ]  \\\\[3pt]
+				\Rightarrow \ X = \frac{1}{2} \left [ \begin{array}{cc} - 32 &amp; - 28  \\\\ - 42 &amp; - 64  \end{array} \right ]  \\\\[3pt]
+				=  \left [ \begin{array}{cc} - 16 &amp; - 14  \\\\ - 21 &amp; - 32  \end{array} \right ]
+			 \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 11:</h4>
+		<p> If <span class=\"latex\" lang=\"latex\"> \(  \begin{align}  A + B = \left [ \begin{array}{ccc} 2 &amp; 3 &amp; 1  \\\\ 6 &amp; -1 &amp; 5  \end{array} \right ], \ A - B = \left [ \begin{array}{ccc} 2 &amp; 1  &amp; -1  \\\\ 0 &amp; -1 &amp; 3 \end{array} \right ]  \end{align}  \) </span> then find the matrix X such that A and B<br />
+			<span class="highlight01"> Solution: </span>
+			<br />
+			2A = (A + B) + ( A - B) <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}   = \left [ \begin{array}{ccc} 4 &amp; 4 &amp; 0  \\\\ 6 &amp; -2 &amp; 8  \end{array} \right ] \Rightarrow \ A = \left [ \begin{array}{ccc} 2 &amp; 2 &amp; 0  \\\\ 3 &amp; -1 &amp; 4  \end{array} \right ]  \\\\[3pt]
+				2B = (A + B) - (A - B) = \left [ \begin{array}{ccc} 0 &amp; 2 &amp; 2  \\\\ 6 &amp; 0 &amp; 2  \end{array} \right ]  \\\\[3pt]
+				\Rightarrow \ B = \left [ \begin{array}{ccc} 0 &amp; 1 &amp; 1  \\\\ 3 &amp; 0 &amp; 1  \end{array} \right ]
+			 \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 12:</h4>
+		<p> If <span class=\"latex\" lang=\"latex\"> \(  \begin{align}  A = [4 \ -2  \ 5],  \ B = \left [ \begin{array}{c} 2  \\\\ 0  \\\\ 3 \end{array} \right ]  \end{align}  \) </span> find AB.<br />
+			<span class="highlight01"> Solution: </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  AB = [4 \ -2 \ 5] \left [ \begin{array}{c} 2  \\\\ 0  \\\\ 3 \end{array} \right ]  \end{align}  \) </span>
+			<br />
+			[8 - 0  + 15] = [23]
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 13:</h4>
+		<p> If <span class=\"latex\" lang=\"latex\"> \(  \begin{align}  A = \left [ \begin{array}{cc} x &amp; 1  \\\\ 1 &amp; 0  \end{array} \right ]  \end{align}  \) </span> and <span class=\"latex\" lang=\"latex\"> \(  A^2 = I  \) </span> then find x.<br />
+			<span class="highlight01"> Solution: </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  A^2 = I \ \Rightarrow \ \left [ \begin{array}{cc}x &amp; 1  \\\\ 1 &amp; 0  \end{array} \right ] \left [ \begin{array}{cc} x &amp; 1  \\\\ 1 &amp; 0  \end{array} \right ]  \\\\[3pt]
+				\left [ \begin{array}{cc} 1 &amp; 0  \\\\ 0 &amp; 1  \end{array} \right ]  \\\\[3pt]
+				\Rightarrow \ \left [ \begin{array}{cc} x^2 + 1 &amp; x + 0  \\\\ x + 0 &amp; 1 + 0  \end{array} \right ] \Rightarrow \ x = 0  \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 14:</h4>
+		<p> If <span class=\"latex\" lang=\"latex\"> \(  \begin{align}  A = [x \ y \ z] , \ B = \left [ \begin{array}{ccc} a &amp; h &amp; g  \\\\ h &amp; b &amp; f  \\\\  g &amp; f &amp; c  \end{array} \right ]  \end{align}  \) </span> then find ABC.<br />
+			<span class="highlight01"> Solution: </span>
+			<br />
+			= [x(ax + hy + gz) + y(hx + by + fz) + z(gx + fy + cz)] <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  [ax^2 + hxy + gxz + hxy + by^2 + fyz + gxz + fyz + cz^2]  \\\\[3pt]
+				= [ax^2 + b^2 + cz^2 + 2hxy + 2fyz + 2gxz]  \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 15:</h4>
+		<p> If <span class=\"latex\" lang=\"latex\"> \(  \begin{align}  A = \left [ \begin{array}{cc} 4 &amp; 2  \\\\ -1 &amp; 1  \end{array} \right ]  \end{align}  \) </span> then show that (A - 2I) (A - 3I) = O. <br />
+			<span class="highlight01"> Solution: </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align} A - 2I = \left [ \begin{array}{cc} 4 &amp; 2  \\\\ -1 &amp; 1  \end{array} \right ] - 2 \left [ \begin{array}{cc} 1 &amp; 0  \\\\ 0 &amp; 1  \end{array} \right ]  \\\\[3pt]
+				= \left [ \begin{array}{cc} 2 &amp; 2  \\\\ -1 &amp; - 1  \end{array} \right ],  \\\\[3pt]
+				A - 3I = \left [ \begin{array}{cc} 4 &amp; 2  \\\\ -1 &amp; 1  \end{array} \right ] - 3 \left [ \begin{array}{cc} 1 &amp; 0  \\\\ 0 &amp; 1  \end{array} \right ]  \\\\[3pt]
+				= \left [ \begin{array}{cc} 2 &amp; 2  \\\\ -1 &amp; -2  \end{array} \right ]  \\\\[3pt]
+				(A - 2I) (A - 3I) = \left [ \begin{array}{cc} 2 &amp; 2  \\\\ -1 &amp; - 1  \end{array} \right ] \left [ \begin{array}{cc} 2 &amp; 2  \\\\ -1 &amp; -2  \end{array} \right ]  \\\\[3pt]
+				= \left [ \begin{array}{cc} 2 - 2 &amp; 4 - 4  \\\\ -1 + 1 &amp; - 2 + 2  \end{array} \right ] = O.
+			 \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 16:</h4>
+		<p> If <span class=\"latex\" lang=\"latex\"> \(  \begin{align}  A = \left [ \begin{array}{cc} 1 &amp; -1  \\\\ 1 &amp; 2  \end{array} \right ]  \end{align}  \) </span> then find <span class=\"latex\" lang=\"latex\"> \(  AA^T  \) </span>. <br />
+			<span class="highlight01"> Solution: </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}   AA^T = \left [ \begin{array}{cc} 1 &amp; -1  \\\\ 1 &amp; 2  \end{array} \right ] \left [ \begin{array}{cc} 1 &amp; 1  \\\\ - 1 &amp; 2  \end{array} \right ]  \\\\[3pt]
+				= \left [ \begin{array}{cc} 1 + 1 &amp; 1 - 2  \\\\ 1 - 2 &amp; 1 + 4  \end{array} \right ]  \\\\[3pt]
+				= \left [ \begin{array}{cc} 2 &amp; -1  \\\\ - 1 &amp; 5  \end{array} \right ]
+			 \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 17:</h4>
+		<p> If <span class=\"latex\" lang=\"latex\"> \(  \begin{align}  A = \left [ \begin{array}{cc} 1 &amp; 2  \\\\ 3 &amp; 4  \end{array} \right ], \ B = \left [ \begin{array}{cc} 3 &amp; 1  \\\\ 4 &amp; 5  \end{array} \right ]  \end{align}  \) </span> then show that <span class=\"latex\" lang=\"latex\"> \(  (AB)^T = B^T \ A^T  \) </span>. <br />
+			<span class="highlight01"> Solution: </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}    AB = \left [ \begin{array}{cc} 1 &amp; 2  \\\\ 3 &amp; 4  \end{array} \right ] \left [ \begin{array}{cc} 3 &amp; 1  \\\\ 4 &amp; 5  \end{array} \right ]  \\\\[3pt]
+				= \left [ \begin{array}{cc} 3 + 8 &amp; 1 + 10  \\\\ 9 + 16 &amp; 3 + 20  \end{array} \right ]  \\\\[3pt]
+				= \left [ \begin{array}{cc} 11 &amp; 11  \\\\ 15 &amp; 23  \end{array} \right ],  \\\\[3pt]
+				(AB)^T = \left [ \begin{array}{cc} 11 &amp; 25  \\\\ 11 &amp; 23  \end{array} \right ],  \\\\[3pt]
+				A^T = \left [ \begin{array}{cc} 1 &amp; 3  \\\\ 2 &amp; 4  \end{array} \right ]; \ B^T = \left [ \begin{array}{cc} 3 &amp; 4  \\\\ 1 &amp; 5  \end{array} \right ],  \\\\[3pt]
+				B^T A^T = \left [ \begin{array}{cc} 3 &amp; 4  \\\\ 1 &amp; 5  \end{array} \right ] \left [ \begin{array}{cc} 1 &amp; 3  \\\\ 2 &amp; 4  \end{array} \right ],  \\\\[3pt]
+				= \left [ \begin{array}{cc} 3 + 8 &amp; 9 + 16  \\\\ 1 + 10 &amp; 3 + 20  \end{array} \right ],  \\\\[3pt]
+				= \left [ \begin{array}{cc} 11 &amp; 25  \\\\ 11 &amp; 23  \end{array} \right ],  \\\\[3pt]
+				\therefore \ (AB)^T = B^T \ A^T.  \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 18:</h4>
+		<p> Find the inverse of the matrix  <br />
+			(i) <span class=\"latex\" lang=\"latex\"> \(  \begin{align}  A = \left [ \begin{array}{ccc} 2 &amp; 2 &amp; 1  \\\\ -1 &amp; 0 &amp; 2  \\\\ 4 &amp; 1 &amp; 0  \end{array} \right ]  \end{align}  \) </span>
+			<br />
+			<span class="highlight01"> Solution: </span>
+			<br />
+			det A = 2(0 - 2) - 2(0 - 8) + (- 1 - 0) = - 4 + 16 - 1 = 11<br />
+			The cofactors of elements of A are <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  A_{11} = + (0 - 2) = -2, \ A_{12} = - (0 - 8), \ A_{13} = + (-1 - 0) = -1,  \\\\[3pt]
+				A_{21} = - (0 - 1) = 1, \ A_{22} = + (0 - 4) = - 4, \ A_{23} = - (2 - 8) = 6,  \\\\[3pt]
+				A_{31} = + (4 - 0) = 4, \ A_{32} = - (4 + 1) = - 5, \ A_{33} = + (0 + 2) = 2  \\\\[3pt]
+				\therefore \  Adj \ A = \left [ \begin{array}{ccc} A_{11} &amp; A_{21} &amp; A_{31}  \\\\ A_{12} &amp; A_{22} &amp; A_{32}  \\\\ A_{13} &amp; A_{23} &amp; A_{33} \end{array} \right ]  \\\\[3pt]
+				= \left [ \begin{array}{ccc} - 2 &amp; 1 &amp; 4  \\\\ 8 &amp; -4  &amp;  -5  \\\\ -1 &amp; 6 &amp; 2  \end{array} \right ]  \\\\[3pt]
+				\therefore \ A^{-1} = \frac{Adj \ A}{det \ A} = \frac{1}{11} \left [ \begin{array}{ccc} - 2 &amp; 1 &amp; 4  \\\\ 8 &amp; -4  &amp;  -5  \\\\ -1 &amp; 6 &amp; 2  \end{array} \right ]
+			 \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 19:</h4>
+		<p>
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align} If \ A = \left [ \begin{array}{ccc} 1 &amp; 1 &amp; 1  \\\\ 1 &amp; 2 &amp; -3  \\\\ 2 &amp; - 1 &amp; 3  \end{array} \right ]  \end{align}  \) </span> show that A(Adj A) = |A| I. <br />
+			<span class="highlight01"> Solution: </span>
+			<br />
+			det A = 1(6 - 3) - 1(3 + 6) + 1(- 1 - 4) = 3 - 9 - 51 = - 11 <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}   Adj \ A = \left [ \begin{array}{ccc} 3 &amp; -4 &amp; - 5  \\\\ -9 &amp; 1 &amp; 4  \\\\ -5  &amp; 3 &amp; 1 \end{array} \right ]  \\\\[3pt]
+				A(Adj \ A)= \left [ \begin{array}{ccc} 1 &amp; 1 &amp; 1  \\\\ 1 &amp; 2  &amp;  -3  \\\\ 2 &amp; -1 &amp; 1  \end{array} \right ] \left [ \begin{array}{ccc} 3 &amp; -4 &amp; -5  \\\\ - 9 &amp; 1  &amp;  43  \\\\ -5 &amp; 3 &amp; 1  \end{array} \right ]  \\\\[3pt]
+				= \left [ \begin{array}{ccc} 3 - 9 - 5 &amp;  -4 + 1 + 3 &amp; -5 + 4 + 1  \\\\ 3 - 18 + 15 &amp; -4 + 2 - 9   &amp;  -5 + 8 - 3  \\\\ 6 + 9 - 15 &amp; -8 - 1 + 9 &amp; -10 - 4 + 3  \end{array} \right ]  \\\\[3pt]
+				= \left [ \begin{array}{ccc} -11 &amp; 0 &amp; 0  \\\\ 0 &amp; -11  &amp;  0  \\\\ 0 &amp; 0 &amp; -11  \end{array} \right ]  \\\\[3pt]
+				= - 11 \left [ \begin{array}{ccc} 1 &amp; 0 &amp; 0  \\\\ 0 &amp; 1  &amp;  0  \\\\ 0 &amp; 0 &amp; 1  \end{array} \right ] = (det \ A)I  \end{align}  \) </span>.</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 20:</h4>
+		<p>Solve the system of equation given below by Matrix inversion method and Cra Rule. <br />
+			(i) 3x + y + 4z = 2, x - y + 2z = -1, 2y + z = -4 <br />
+			<span class="highlight01"> Solution: </span>
+			<br />
+			Matrix inversion method <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}   Let \ A = \left [ \begin{array}{ccc} 3 &amp; 1 &amp; 4  \\\\ 1 &amp; -1 &amp; 2  \\\\ 0  &amp; 2 &amp; 1 \end{array} \right ],  \\\\[3pt]
+				X = \left [ \begin{array}{c} x  \\\\ y   \\\\ z  \end{array} \right ], \ B = \left [ \begin{array}{ccc} 2  \\\\ - 1  \\\\ - 4  \end{array} \right ]  \end{align}  \) </span>
+			<br />
+			Given equations can be written AX = B <br />
+			By matrix inversion method <span class=\"latex\" lang=\"latex\"> \( X = A^{-1}B  \) </span> is the solution.<br />
+			det A = 3(-1 - 4) - 1 (1 - 0) + 4(2 - 0) = - 15 - 1 + 8 = - 8.<br />
+			The cofactors of elements of A are <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  A_{11} = + (-1 - 4) = -5, \ A_{12} = - (1 - 0), \ A_{13} = + (2 - 0) = 2,  \\\\[3pt]
+				A_{21} = - (1 - 8) = 7, \ A_{22} = + (3 - 0) = 3, \ A_{23} = - (6 - 0) = - 6,  \\\\[3pt]
+				A_{31} = + (2 + 4 0) = 6, \ A_{32} = - (6 - 4) = - 2, \ A_{33} = + (-3 - 1) = - 4  \\\\[3pt]
+				\therefore \  Adj \ A = \left [ \begin{array}{ccc} A_{11} &amp; A_{21} &amp; A_{31}  \\\\ A_{12} &amp; A_{22} &amp; A_{32}  \\\\ A_{13} &amp; A_{23} &amp; A_{33} \end{array} \right ]  \\\\[3pt]
+				= \left [ \begin{array}{ccc} - 5 &amp; 7 &amp; 6  \\\\ -1 &amp; 3  &amp;  -2  \\\\ 2 &amp; - 6 &amp; -4   \end{array} \right ]  \end{align}  \) </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \therefore \ A^{-1} = \frac{Adj \ A}{det \ A} = \frac{1}{8} \left [ \begin{array}{ccc} - 5 &amp; 7 &amp; 6  \\\\ -1 &amp; 3  &amp;  -2  \\\\ 2 &amp; - 6 &amp; -4   \end{array} \right ]  \\\\[3pt]
+				x = A^{-1} B = - \frac{1}{8} \left [ \begin{array}{ccc} - 5 &amp; 7 &amp; 6  \\\\ -1 &amp; 3  &amp;  -2  \\\\ 2 &amp; - 6 &amp; -4   \end{array} \right ] \left [ \begin{array}{c} 2  \\\\ -1  \\\\ -4   \end{array} \right ]  \\\\[3pt]
+				= - \frac{1}{8} \left [ \begin{array}{c} -10 - 7 - 24  \\\\ -2 - 3 + 3  \\\\ 4 + 6 + 16   \end{array} \right ]  \\\\[3pt]
+				= - \frac{1}{8} \left [ \begin{array}{c} -41  \\\\ 3  \\\\ 26   \end{array} \right ]  \\\\[3pt]
+				= \left [ \begin{array}{c} \frac{41}{8}  \\\\ \frac{-3}{8}  \\\\ \frac{-13}{4} \end{array} \right ]  \\\\[3pt]
+				\therefore \ x = \frac{41}{8}, \ y = \frac{-3}{8}, \ z = - \frac{13}{4}  \end{align}  \) </span>
+			<br />
+			is the solution. <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}   Cramer's \ rule : \triangle = \left | \begin{array}{ccc} 3 &amp; 1 &amp; 4  \\\\ 1 &amp; -1  &amp;  2  \\\\ 0 &amp; 2 &amp; 1   \end{array} \right |  \\\\[3pt]
+				= 3(-1 - 4) - 1(1 - 0) + 4(2 - 0)   \\\\[3pt]
+				= -15 - 1 + 8 = - 8  \\\\[3pt]
+				= \triangle_1 = \left | \begin{array}{ccc} 2 &amp; 1 &amp; 4  \\\\ -1 &amp; -1  &amp;  2  \\\\ -4 &amp; 2 &amp; 1   \end{array} \right |  \\\\[3pt]
+				= 2(-1 - 4) - 1(1 - 8) + 4(-2 - 4)   \\\\[3pt]
+				= 10 - 7 - 24 = - 41  \\\\[3pt]
+				= \triangle_2 = \left | \begin{array}{ccc} 3 &amp; 2 &amp; 4  \\\\ 1 &amp; - 1  &amp; 2  \\\\ 0 &amp; -4 &amp; 1   \end{array} \right |  \\\\[3pt]
+				= 3(-1 + 8) - 2(1 - 0) + 4(-4 - 0)   \\\\[3pt]
+				= -21 - 2 - 16 = 3  \\\\[3pt]
+				= \triangle_3 = \left | \begin{array}{ccc} 3 &amp; 1 &amp; 2  \\\\ 1 &amp; -1  &amp;  -1  \\\\ 0 &amp; 2 &amp; -4   \end{array} \right |  \\\\[3pt]
+				= 3(4 + 2) - 1(-4 - 0) + 2(2 - 0)   \end{align}  \) </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  = 18 + 4 + 4 = 26  \\\\[3pt]
+				By \ Cramer's \ rile \ x = \frac{\triangle_1}{\triangle} = \frac{-41}{-8} = \frac{41}{8}, \ y = \frac{\triangle_2}{\triangle} = \frac{3}{-8} = - \frac{3}{8}, \ z =  x = \frac{\triangle_3}{\triangle} = \frac{26}{-8} = -\frac{13}{4}  \\\\[3pt]
+				\therefore \ x = \frac{41}{8}, \ y = \frac{-3}{8}, \ z = - \frac{13}{4}  \end{align}  \) </span>
+			<br />is the solution.</p>
+	</section> 
+</section> 

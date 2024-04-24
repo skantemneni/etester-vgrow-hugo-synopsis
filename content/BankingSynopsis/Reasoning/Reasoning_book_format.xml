@@ -1,0 +1,276 @@
+<book>
+    <preheading>Bank Exam Preparation</preheading>
+    <title>Data Interpretation and Logical Reasoning</title>
+    <description>Bank Exam Preparation Course Materials provided by eTester Classes.</description>
+    <book_chapter_number_offset>0</book_chapter_number_offset>
+    <book_page_number_offset>0</book_page_number_offset>
+    <show_chapter_numbers>true</show_chapter_numbers>
+    <chapters>
+        <chapter>
+            <number>1</number>
+            <title>Data Interpretation and Analysis</title>
+            <description><![CDATA[Essential Exam Preparation guide for Employment Readiness Exams]]></description>
+            <filename>DataInterpretationAndAnalysis.html</filename>
+			<notespages>0</notespages>
+        </chapter>
+        <chapter>
+            <number>2</number>
+            <title>Tables and Caselets</title>
+            <description><![CDATA[Essential Exam Preparation guide for Employment Readiness Exams]]></description>
+            <filename>TablesAndCaselets.html</filename>
+			<notespages>0</notespages>
+        </chapter>
+        <chapter>
+            <number>3</number>
+            <title>Charts and Diagrams</title>
+            <description><![CDATA[Essential Exam Preparation guide for Employment Readiness Exams]]></description>
+            <filename>ChartsAndDiagrams.html</filename>
+			<notespages>0</notespages>
+        </chapter>
+        <chapter>
+            <number>4</number>
+            <title>Relationships</title>
+            <description><![CDATA[Essential Exam Preparation guide for Employment Readiness Exams]]></description>
+			  <filename>Relationships.html</filename>
+			  <notespages>0</notespages>
+        </chapter>
+        <chapter>
+            <number>5</number>
+            <title>Directions and Arrangements</title>
+            <description><![CDATA[Essential Exam Preparation guide for Employment Readiness Exams]]></description>
+            <filename>DirectionsAndArrangements.html</filename>
+			<notespages>0</notespages>
+        </chapter>
+        <chapter>
+            <number>6</number>
+            <title>Series and Analogy</title>
+            <description><![CDATA[Essential Exam Preparation content for Employment Readiness Exams]]></description>
+            <filename>SeriesAndAnalogy.html</filename>
+			<notespages>0</notespages>
+        </chapter>
+		<chapter>
+            <number>7</number>
+            <title>Codes</title>
+            <description><![CDATA[Essential Exam Preparation content for Employment Readiness Exams]]></description>
+            <filename>Codes.html</filename>
+			<notespages>0</notespages>
+        </chapter>
+		 <chapter>
+            <number>8</number>
+            <title>Logical Puzzles</title>
+            <description><![CDATA[Essential Exam Preparation content for Employment Readiness Exams]]></description>
+            <filename>LogicalPuzzles.html</filename>
+			<notespages>0</notespages>
+        </chapter>
+		<chapter>
+            <number>9</number>
+            <title>Venn Diagrams</title>
+            <description><![CDATA[Essential Exam Preparation content for Employment Readiness Exams]]></description>
+            <filename>VennDiagrams.html</filename>
+			<notespages>0</notespages>
+        </chapter>
+<!--		<chapter> -->
+<!--            <number>10</number> -->
+<!--            <title>Numerical Logic</title> -->
+<!--            <description><![CDATA[Essential Exam Preparation content for Employment Readiness Exams]]></description> -->
+<!--            <filename>NumericalLogic.html</filename> -->
+<!--            <notespages>0</notespages> -->
+<!--        </chapter> -->
+		<chapter>
+            <number>11</number>
+            <title>Visual Reasoning</title>
+            <description><![CDATA[Essential Exam Preparation content for Employment Readiness Exams]]></description>
+            <filename>VisualReasoning.html</filename>
+			<notespages>0</notespages>
+        </chapter>
+		<chapter>
+            <number>12</number>
+            <title>Syllogism</title>
+            <description><![CDATA[Essential Exam Preparation content for Employment Readiness Exams]]></description>
+            <filename>Syllogism.html</filename>
+			<notespages>0</notespages>
+        </chapter>
+		<chapter>
+            <number>13</number>
+            <title>Statement and reasoning</title>
+            <description><![CDATA[Essential Exam Preparation content for Employment Readiness Exams]]></description>
+            <filename>StatementAndReasoning.html</filename>
+			<notespages>0</notespages>
+        </chapter>
+		<chapter>
+            <number>14</number>
+            <title>Data Sufficiency</title>
+            <description><![CDATA[Essential Exam Preparation content for Employment Readiness Exams]]></description>
+            <filename>DataSufficiency.html</filename>
+			<notespages>0</notespages>
+        </chapter>
+		<chapter>
+            <number>15</number>
+            <title>Alphabetical Order and Miscellaneous Series</title>
+            <description><![CDATA[Essential Exam Preparation content for Employment Readiness Exams]]></description>
+            <filename>AlphabeticalOrderAndMiscellaneousSeries.html</filename>
+			<notespages>0</notespages>
+        </chapter>
+		<chapter>
+            <number>16</number>
+            <title>Verbal Reasoning</title>
+            <description><![CDATA[Essential Exam Preparation content for Employment Readiness Exams]]></description>
+            <filename>VerbalReasoning.html</filename>
+			<notespages>0</notespages>
+			</chapter>
+			<chapter>
+            <number>17</number>
+            <title>Inserting the Missing Characters</title>
+            <description><![CDATA[Essential Exam Preparation content for Employment Readiness Exams]]></description>
+            <filename>InsertingTheMissingCharacters.html</filename>
+			<notespages>0</notespages>
+        </chapter>
+		<chapter>
+            <number>18</number>
+            <title>Arithmetical Reasoning</title>
+            <description><![CDATA[Essential Exam Preparation content for Employment Readiness Exams]]></description>
+            <filename>ArithmeticalReasoning.html</filename>
+			<notespages>0</notespages>
+        </chapter>
+		<chapter>
+            <number>19</number>
+            <title>Symbols and Notations</title>
+            <description><![CDATA[Essential Exam Preparation content for Employment Readiness Exams]]></description>
+            <filename>SymbolsAndNotation.html</filename>
+			<notespages>0</notespages>
+        </chapter>
+		<chapter>
+            <number>20</number>
+            <title>Word Formation and Logical Order of Words</title>
+            <description><![CDATA[Essential Exam Preparation content for Employment Readiness Exams]]></description>
+            <filename>WordFormationAndLogicalOrderOfWords.html</filename>
+			<notespages>0</notespages>
+        </chapter>
+		<chapter>
+            <number>21</number>
+            <title>Cube, Cuboid and Dice</title>
+            <description><![CDATA[Essential Exam Preparation content for Employment Readiness Exams]]></description>
+            <filename>CubeCuboidAndDice.html</filename>
+			<notespages>0</notespages>
+        </chapter>
+		<chapter>
+            <number>22</number>
+            <title>Statement and Conclusion</title>
+            <description><![CDATA[Essential Exam Preparation content for Employment Readiness Exams]]></description>
+            <filename>StatementAndConclusion.html</filename>
+			<notespages>0</notespages>
+        </chapter>
+		<chapter>
+            <number>23</number>
+            <title>Mirror Image</title>
+            <description><![CDATA[Essential Exam Preparation content for Employment Readiness Exams]]></description>
+            <filename>MirrorImage.html</filename>
+			<notespages>0</notespages>
+        </chapter>
+		<chapter>
+            <number>24</number>
+            <title>Paper Folding and Cutting</title>
+            <description><![CDATA[Essential Exam Preparation content for Employment Readiness Exams]]></description>
+            <filename>PaperFoldingAndCutting.html</filename>
+			<notespages>0</notespages>
+        </chapter>
+		<chapter>
+            <number>25</number>
+            <title>Counting Figures</title>
+            <description><![CDATA[Essential Exam Preparation content for Employment Readiness Exams]]></description>
+            <filename>CountingFigures.html</filename>
+			<notespages>0</notespages>
+        </chapter>
+		<chapter>
+            <number>26</number>
+            <title>Figure based Problems</title>
+            <description><![CDATA[Essential Exam Preparation content for Employment Readiness Exams]]></description>
+            <filename>FigureBasedProblems.html</filename>
+			<notespages>0</notespages>
+        </chapter>
+		<chapter>
+            <number>27</number>
+            <title>Non Verbal Reasoning</title>
+            <description><![CDATA[Essential Exam Preparation content for Employment Readiness Exams]]></description>
+            <filename>NonVerbalReasoning.html</filename>
+			<notespages>0</notespages>
+        </chapter>
+		<chapter>
+            <number>28</number>
+            <title>Matrix</title>
+            <description><![CDATA[Essential Exam Preparation content for Employment Readiness Exams]]></description>
+            <filename>Matrix.html</filename>
+			<notespages>0</notespages>
+        </chapter>
+		<chapter>
+            <number>29</number>
+            <title>Order and Ranking</title>
+            <description><![CDATA[Essential Exam Preparation content for Employment Readiness Exams]]></description>
+            <filename>OrderAndRanking.html</filename>
+			<notespages>0</notespages>
+        </chapter>
+		<chapter>
+            <number>30</number>
+            <title>Puzzle</title>
+            <description><![CDATA[Essential Exam Preparation content for Employment Readiness Exams]]></description>
+            <filename>Puzzle.html</filename>
+			<notespages>0</notespages>
+        </chapter>
+		<chapter>
+            <number>31</number>
+            <title>Machine Input</title>
+            <description><![CDATA[Essential Exam Preparation content for Employment Readiness Exams]]></description>
+            <filename>MachineInput.html</filename>
+			<notespages>0</notespages>
+        </chapter>
+		<chapter>
+            <number>32</number>
+            <title>Inequality</title>
+            <description><![CDATA[Essential Exam Preparation content for Employment Readiness Exams]]></description>
+            <filename>Inequality.html</filename>
+			<notespages>0</notespages>
+        </chapter>
+		<chapter>
+            <number>33</number>
+            <title>Decision Making</title>
+            <description><![CDATA[Essential Exam Preparation content for Employment Readiness Exams]]></description>
+            <filename>DecisionMaking.html</filename>
+			<notespages>0</notespages>
+        </chapter>
+		<chapter>
+            <number>34</number>
+            <title>Problem and Course of Action</title>
+            <description><![CDATA[Essential Exam Preparation content for Employment Readiness Exams]]></description>
+            <filename>ProblemAndCourseOfAction.html</filename>
+			<notespages>0</notespages>
+        </chapter>
+		<chapter>
+            <number>35</number>
+            <title>Cause and Effect</title>
+            <description><![CDATA[Essential Exam Preparation content for Employment Readiness Exams]]></description>
+            <filename>CauseAndEffect.html</filename>
+			<notespages>0</notespages>
+        </chapter>
+		<chapter>
+            <number>36</number>
+            <title>Statement and Argument</title>
+            <description><![CDATA[Essential Exam Preparation content for Employment Readiness Exams]]></description>
+            <filename>StatementAndArgument.html</filename>
+			<notespages>0</notespages>
+        </chapter>
+		<chapter>
+            <number>37</number>
+            <title>Drawing Inference</title>
+            <description><![CDATA[Essential Exam Preparation content for Employment Readiness Exams]]></description>
+            <filename>DrawingInference.html</filename>
+			<notespages>0</notespages>
+        </chapter>
+		<chapter>
+            <number>38</number>
+            <title>Combined Logical</title>
+            <description><![CDATA[Essential Exam Preparation content for Employment Readiness Exams]]></description>
+            <filename>CombinedLogical.html</filename>
+			<notespages>0</notespages>
+        </chapter>
+    </chapters>
+</book>

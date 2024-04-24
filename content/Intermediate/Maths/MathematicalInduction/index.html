@@ -1,0 +1,454 @@
+---
+title: "Mathematical Induction"
+topic: "Mathematical Induction"
+subject: "Maths"
+channel: "Intermediate"
+tags: [Maths, Intermediate]
+categories: [Maths, Intermediate]
+menuname: "Intermediate-submenu"
+draft: false
+image: "image/Intermediate-Maths-MathematicalInduction.png"
+defaultSummary: "Mathematical Induction is an important Topic in the Subject of Maths for the Intermediate course.  Please review it thoroughly and attempt all the associated testing material to perform well on the Intermediate related Exams."
+menu:
+  Intermediate-submenu:
+    identifier: "Intermediate-Maths-MathematicalInduction"
+    name: "Mathematical Induction"
+    url: "Intermediate/Maths/MathematicalInduction"
+    weight: 1800
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="skill" id="01">
+	<h3 class="skill-heading">Definitions</h3>
+	<div class="list-custom-block-list-ol spaced20 indented20">
+		<ol>
+			<li>
+				<p>
+					<span class="highlight01"> Natural numbers </span> : The set { 1, 2, 3, ....} is called the <span class="highlight01"> set of natural numbers </span> or the <span class="highlight01"> set of positive integers </span>. It is denoted by N. The elements of N are called <span class="highlight01"> natural numbers </span> or <span class="highlight01"> positive integers </span>. In N, there are two fundamental binary operations addition (+) and multiplication (.) with the following properties. </p>
+				<ol>
+					<li>
+						<p>	a <span class=\"latex\" lang=\"latex\"> \(  \epsilon  \) </span> N, b <span class=\"latex\" lang=\"latex\"> \(  \epsilon N \Rightarrow a + b \epsilon N  \) </span>
+						</p>
+					</li>
+					<li>
+						<p> a, b, c <span class=\"latex\" lang=\"latex\"> \(  \epsilon N \Rightarrow  \) </span> (a + b)+ c = a + (b + c) (associative law) </p>
+					</li>
+					<li>
+						<p> a,b <span class=\"latex\" lang=\"latex\"> \(  \epsilon N \Rightarrow  \) </span> a + b = b + a (commutative law) </p>
+					</li>
+					<li>
+						<p>a <span class=\"latex\" lang=\"latex\"> \(  \epsilon  \) </span> N, b <span class=\"latex\" lang=\"latex\"> \(  \epsilon N \Rightarrow ab \epsilon N  \) </span>
+						</p>
+					</li>
+					<li>
+						<p>a, b, c <span class=\"latex\" lang=\"latex\"> \(  \epsilon N \Rightarrow  \) </span> (ab)c = a(bc) (associative law) </p>
+					</li>
+					<li>
+						<p>a, b <span class=\"latex\" lang=\"latex\"> \(  \epsilon N \Rightarrow  \) </span> ab = ba (commutative law) </p>
+					</li>
+					<li>
+						<p>a <span class=\"latex\" lang=\"latex\"> \(  \epsilon N \Rightarrow  \) </span> a 1 = 1 a = a </p>
+					</li>
+					<li>
+						<p>a, b, c <span class=\"latex\" lang=\"latex\"> \(  \epsilon N \Rightarrow  \) </span> a(b + c) = ab + ac (distributive law) </p>
+					</li> 
+					<li>
+						<p>In N, there is an order relation denoted by &lt; with the following properties. </p>
+					</li> 
+					<li>
+						<p>	a, b <span class=\"latex\" lang=\"latex\"> \(  \epsilon N \Rightarrow \) </span> one and only one of the conditions a = b, a &lt; b, b &lt; a holds. </p>
+					</li>
+					<li>
+						<p>	a,b,c <span class=\"latex\" lang=\"latex\"> \(  \epsilon  \) </span> N, a &lt; b, b &lt; c <span class=\"latex\" lang=\"latex\"> \(  \Rightarrow  \) </span> a &lt; c </p>
+					</li>
+					<li>
+						<p>	a,b,c <span class=\"latex\" lang=\"latex\"> \(  \epsilon  \) </span> N, a &lt;b <span class=\"latex\" lang=\"latex\"> \(  \Rightarrow  \) </span> a + c &lt; b + c, ac &lt; bc </p>
+					</li>
+					<li>
+						<p>	a <span class=\"latex\" lang=\"latex\"> \(  \epsilon N \Rightarrow 1 \leq a  \) </span>
+						</p>
+					</li>
+					<li>
+						<p>	a <span class=\"latex\" lang=\"latex\"> \(  \epsilon  \) </span> N, a <span class=\"latex\" lang=\"latex\"> \(  \neq 1 \Rightarrow a - 1 \epsilon N  \) </span>
+						</p>
+					</li>
+					<li>
+						<p> a,b <span class=\"latex\" lang=\"latex\"> \(  \epsilon  \) </span> N, a &lt; b <span class=\"latex\" lang=\"latex\"> \(  \Rightarrow  \) </span> b - a <span class=\"latex\" lang=\"latex\"> \(  \epsilon  \) </span> N </p>
+					</li> 
+				</ol>
+			</li>
+			<li>
+				<p>	If a, b <span class=\"latex\" lang=\"latex\"> \(  \epsilon  \) </span> N then a &lt; b is also denoted by b &gt; a. We say <span class=\"latex\" lang=\"latex\"> \(  a \leq b  \) </span> if a = b or a &lt; b. </p>
+			</li>
+			<li>
+				<p>
+					<span class="highlight01"> Induction theorem </span> : If A is a subset of N such that</p>
+				<ol>
+					<li>
+						<p> 1 <span class=\"latex\" lang=\"latex\"> \(  \epsilon  \) </span> A and </p>
+					</li>
+					<li>
+						<p> k <span class=\"latex\" lang=\"latex\"> \(  \epsilon A \Rightarrow k + 1 \epsilon A  \) </span>, then A = N </p>
+					</li>
+				</ol>
+			</li>
+			<li>
+				<p> Let A be a subset of N. An element x <span class=\"latex\" lang=\"latex\"> \(  \epsilon  \) </span> A is said to be the <span class="highlight01"> least element </span> of A if <span class=\"latex\" lang=\"latex\"> \(  x \leq a  \) </span> for all a <span class=\"latex\" lang=\"latex\"> \(  \epsilon  \) </span> A. </p>
+			</li>
+			<li>
+				<p>
+					<span class="highlight01"> Well ordering principle </span> : Every non empty subset of N has a least element. </p>
+			</li>
+			<li>
+				<p>
+					<span class="highlight01"> Principle of finite Mathematical Induction </span>: Le S(n) be a statement for each n <span class=\"latex\" lang=\"latex\"> \(  \epsilon  \) </span> N. If </p>
+				<ol>
+					<li>
+						<p> S(1) is true </p>
+					</li>
+					<li>
+						<p> S(k) is true <span class=\"latex\" lang=\"latex\"> \(  \Rightarrow  \) </span> S(k + 1) is true,</p>
+					</li>
+				</ol>
+				<p> then S(n) is true for all n <span class=\"latex\" lang=\"latex\"> \(  \epsilon  \) </span> N.
+				</p>
+			</li>
+			<li>
+				<p>
+					<span class="highlight01"> Principle of complete Mathematical Induction </span>: Let S(n) be a statement for each n <span class=\"latex\" lang=\"latex\"> \(  \epsilon  \) </span> N. If </p>
+				<ol>
+					<li>
+						<p> S(1) is true </p>
+					</li>
+					<li>
+						<p> S(1), S(2).......S(k) are true <span class=\"latex\" lang=\"latex\"> \(  \Rightarrow  \) </span> S(k + 1) is true, </p>
+					</li>
+				</ol>
+				<p>then S(n) is true for all n <span class=\"latex\" lang=\"latex\"> \(  \epsilon  \) </span> N.
+				</p>
+			</li>
+			<li>
+				<p>
+					<span class="highlight01"> Integers </span>: The set <span class=\"latex\" lang=\"latex\"> \(  \{ 0, \ \pm 1, \ \pm 2,..... \}  \) </span>	is called the <span class="highlight01"> set of integers </span>. It is denoted by Z. The elements of Z are called integers. In Z, there are two binary operations + and ., called as <span class="highlight01"> usual addition </span> and <span class="highlight01"> usual multiplication </span> with the following properties. </p>
+				<ol>
+					<li>
+						<p> a,b <span class=\"latex\" lang=\"latex\"> \(  \epsilon  \) </span> Z <span class=\"latex\" lang=\"latex\"> \(  \Rightarrow  \) </span> a + b <span class=\"latex\" lang=\"latex\"> \(  \epsilon  \) </span> Z	</p>
+					</li>
+					<li>
+						<p> a, b, c <span class=\"latex\" lang=\"latex\"> \(  \epsilon  \) </span> Z <span class=\"latex\" lang=\"latex\"> \(  \Rightarrow  \) </span> (a + b) + c = a + (b + c) </p>
+					</li>
+					<li>
+						<p> a,b <span class=\"latex\" lang=\"latex\"> \(  \epsilon  \) </span> Z <span class=\"latex\" lang=\"latex\"> \(  \Rightarrow  \) </span> a + b = b + a </p>
+					</li>
+					<li>
+						<p> a <span class=\"latex\" lang=\"latex\"> \(  \epsilon  \) </span> Z <span class=\"latex\" lang=\"latex\"> \(  \Rightarrow  \) </span> a + 0 = 0 + a = a </p>
+					</li>
+					<li>
+						<p> a <span class=\"latex\" lang=\"latex\"> \(  \epsilon  \) </span>Z <span class=\"latex\" lang=\"latex\"> \(  \Rightarrow \exists - a \epsilon Z \ni  \) </span> a + (-a) = (-a) + a = 0 </p>
+					</li>
+					<li>
+						<p> a, b <span class=\"latex\" lang=\"latex\"> \(  \epsilon  \) </span> Z <span class=\"latex\" lang=\"latex\"> \(  \Rightarrow  \) </span> ab <span class=\"latex\" lang=\"latex\"> \(  \epsilon  \) </span> Z </p>
+					</li>
+					<li>
+						<p> a, b, c <span class=\"latex\" lang=\"latex\"> \(  \epsilon  \) </span> Z <span class=\"latex\" lang=\"latex\"> \(  \Rightarrow  \) </span> (ab)c = a(bc) </p>
+					</li>
+					<li>
+						<p> a,b <span class=\"latex\" lang=\"latex\"> \(  \epsilon  \) </span> Z <span class=\"latex\" lang=\"latex\"> \(  \Rightarrow  \) </span> ab = ba </p>
+					</li>
+					<li>
+						<p> a <span class=\"latex\" lang=\"latex\"> \(  \epsilon  \) </span> Z <span class=\"latex\" lang=\"latex\"> \(  \Rightarrow  \) </span> a.1 = 1.a = a </p>
+					</li>
+					<li>
+						<p> a, b, c <span class=\"latex\" lang=\"latex\"> \(  \epsilon  \) </span> Z <span class=\"latex\" lang=\"latex\"> \(  \Rightarrow  \) </span>	a (b + c) = ab + ac </p>
+					</li>
+				</ol> 
+				<p> In Z, there is an order relation (denoted by) &lt; with the following properties.</p>
+			</li>
+			<li>
+				<p> a <span class=\"latex\" lang=\"latex\"> \(  \epsilon  \) </span> Z <span class=\"latex\" lang=\"latex\"> \(  \Rightarrow  \) </span> one and only one of the conditions a <span class=\"latex\" lang=\"latex\"> \(  \epsilon  \) </span> N, a = 0, -a <span class=\"latex\" lang=\"latex\"> \(  \epsilon  \) </span> N holds. Equivalently a &gt; 0, a = 0, a &lt; 0. </p>
+			</li>
+			<li>
+				<p>	a,b,c <span class=\"latex\" lang=\"latex\"> \(  \epsilon  \) </span> Z, a &lt; b, b &lt; c <span class=\"latex\" lang=\"latex\"> \(  \Rightarrow  \) </span> a &lt; c </p>
+			</li>
+			<li>
+				<p>	a,b,c <span class=\"latex\" lang=\"latex\"> \(  \epsilon  \) </span> Z, a &lt; b <span class=\"latex\" lang=\"latex\"> \(  \Rightarrow  \) </span> a + c &lt; b + c </p>
+			</li>
+			<li>
+				<p>	a, b, c <span class=\"latex\" lang=\"latex\"> \(  \epsilon  \) </span> Z, a &lt; b, 0 &lt; c <span class=\"latex\" lang=\"latex\"> \(  \Rightarrow  \) </span> ac &lt; bc </p>
+			</li>
+			<li>
+				<p>	a, b, c <span class=\"latex\" lang=\"latex\"> \(  \epsilon  \) </span> Z, a &lt; b, c &lt; 0 <span class=\"latex\" lang=\"latex\"> \(  \Rightarrow  \) </span> bc &lt; ac </p>
+			</li> 
+			<li>
+				<p> If a <span class=\"latex\" lang=\"latex\"> \(  \epsilon  \) </span> Z, then the <span class="highlight01"> modulus </span> or <span class="highlight01"> absolute value </span> of a is denoted by |a| and defined as follows. If a <span class=\"latex\" lang=\"latex\"> \(  \geq  \) </span> 0, then	|a| = a. If a &lt; 0, then |a| = - a. </p>
+			</li>
+			<li>
+				<p>
+					<span class="highlight01"> Division algorithm </span>: If 0 <span class=\"latex\" lang=\"latex\"> \(  \neq  \) </span> a, b <span class=\"latex\" lang=\"latex\"> \(  \epsilon  \) </span> Z then <span class=\"latex\" lang=\"latex\"> \(  \exists q, \ r \epsilon Z  \) </span> uniquely <span class=\"latex\" lang=\"latex\"> \(  \ni b = aq + r  \) </span> where <span class=\"latex\" lang=\"latex\"> \(  0 \leq r &lt; |a|  \) </span>
+				</p>
+			</li>
+			<li>
+				<p> A nonzero integer a is said to <span class="highlight01"> divide </span> an integer b if there exists q <span class=\"latex\" lang=\"latex\"> \(  \epsilon  \) </span> Z such that b = aq. It is denoted by a | b. </p>
+			</li>
+			<li>
+				<p> If a | b then we also called a is a <span class="highlight01"> divisor </span> of b or a is a <span class="highlight01"> factor </span> of b or b is a <span class="highlight01"> multiple </span> of a or b is <span class="highlight01"> divisible </span> by a. </p>
+			</li>
+			<li>
+				<p> If a, b <span class=\"latex\" lang=\"latex\"> \(  \epsilon  \) </span> N, a | b then the integer q <span class=\"latex\" lang=\"latex\"> \(  \ni  \) </span> b = aq is a positive integer. </p>
+			</li>
+		</ol>
+	</div>
+</section>
+<section class="skill" id="02">
+	<h3 class="skill-heading">Formulae</h3>
+	<div class="list-custom-block-list-ol spaced20 indented20">
+		<ol>
+			<li>
+				<p> The sum of first n natural numbers = <span class=\"latex\" lang=\"latex\"> \(  \sum n = \frac{n(n + 1)}{2}  \) </span>
+				</p>
+			</li>
+			<li>
+				<p> The sum of squares of first n natural numbers = <span class=\"latex\" lang=\"latex\"> \(  \sum n^2 = \frac{n(n + 1)(2n + 1)}{6}  \) </span>
+				</p>
+			</li>
+			<li>
+				<p> The sum of cubes of first n natural numbers = <span class=\"latex\" lang=\"latex\"> \(  \sum n^3 = \frac{n^2(n + 1)^2}{4} = \left ( \sum n \right )^2  \) </span>
+					<ol>
+						<li>
+							<p>The sum of first n even positive integers = <span class=\"latex\" lang=\"latex\"> \(  \sum 2n  \) </span> = n(n + 1). </p>
+						</li>
+						<li>
+							<p> The sum of first n odd positive integers = <span class=\"latex\" lang=\"latex\"> \(  \sum (2n - 1) = n^2  \) </span>
+							</p>
+						</li>
+						<li>
+							<p>
+								<span class=\"latex\" lang=\"latex\"> \(  \sum n(n + 1) = \frac{n(n + 1)(n + 2)}{3}  \) </span>
+							</p>
+						</li>
+						<li>
+							<p>
+								<span class=\"latex\" lang=\"latex\"> \(  \sum n(n + 1)(n + 2) = \frac{n(n + 1)(n + 2)(n + 3)}{4}  \) </span>. </p>
+						</li>
+					</ol>
+				</p>
+			</li>
+		</ol>
+	</div>
+</section>
+<section class="skill" id="03">
+	<h3 class="skill-heading">Summary</h3>
+	<div class="list-custom-block-list-ol spaced20 indented20">
+		<ol>
+			<li>
+				<p>One key basis for mathematical thinking is deductive reasoning. In contrast to deduction, inductive reasoning depends on working with different cases and developing a conjective by observing incidences till we have observed each and every case. Thus, in simple language we can say the word 'induction' means the generalisation from particular cases or facts. </p>
+			</li>
+			<li>
+				<p>The principle of mathematical induction is one such tool which can be used toprove a wide variety of mathematical statements. Each such statement is assumed as P(n) associated with positive integer n, for which the correctness for the case n = 1 is examined. Then assuming the truth of P(k) for some positive integer k, the truth of P(k + 1) is established.</p> 
+			</li>
+		</ol>
+	</div>
+</section>  
+<section class="solved-examples" id="examples">
+	<h3 class="solved-examples-heading">Solved examples</h3>
+	<section class="solved-example"> 
+		<h4 class="solved-examples-question">Example 1:</h4>
+		<p>For all <span class=\"latex\" lang=\"latex\"> \(  n \ \leq \ 1  \) </span>, prove that <br />
+			<span class=\"latex\" lang=\"latex\"> \(  1^2 + 2^2 + 3^2 + 4^2 + ..... + n^2 = \frac{n(n + 1)(2n + 1)}{6}  \) </span>. <br />
+			<span class="highlight01"> Solution :</span>
+			<br />
+			Let the given statement be P(n), i.e., <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  P(n) = 1^2 + 2^2 + 3^2 + 4^2 + ..... + n^2 = \frac{n(n + 1)(2n + 1)}{6}  \\\\[3pt]
+				For \ n = 1, \ P91): 1 = \frac{1(1 + 1)}{(2 \times 1 + 1)} = \frac{1 \times 2 \times 3}{6} = 1  \end{align}  \) </span>
+			<br />
+			which is true. <br />
+			Assume that P(k) is true for some positive integers k, i.e., <br />
+			<span class=\"latex\" lang=\"latex\"> \(  1^2 + 2^2 + 3^2 + 4^2 + ..... + k^2 = \frac{k(k + 1)(2k + 1)}{6}  \) </span> ..... (1) <br />
+			We shall now prove that P(k + 1) is also true. Now, we have <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  (1^2 + 2^2 + 3^2 + 4^2 + ..... + k^2 ) + (k + 1)^2  \\\\[3pt]
+				= \frac{k(k + 1)(2k + 1)}{6} + (k + 1)^2 \ \ \ \ \ [Using \ (1)]  \\\\[3pt]
+				= \frac{k(k + 1)(2k + 1) + 6(k + 1)^2}{6}  \\\\[3pt]
+				=  \frac{(k + 1)(2k^2 + 7k + 6)}{6}  \\\\[3pt]
+				= \frac{(k + 1)(k + 1 + 1) \{ 2(k + 1) + 1 \} }{6} + (k + 1)^2   \end{align}  \) </span>
+			<br />
+			Thus P(k + 1) is true, whenever P (k) is true. <br />
+			Hence, from the principle of mathematical induction, the statement P(n) is true for all natural numbers N. </p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 2:</h4>
+		<p>Prove that <span class=\"latex\" lang=\"latex\"> \(  2^n &gt; n  \) </span> for all positive integers n.<br />
+			<span class="highlight01"> Solution :</span>
+			<br />
+			Let <span class=\"latex\" lang=\"latex\"> \(  P(n): 2^n &gt; n  \) </span>
+			<br />
+			When n = 1, <span class=\"latex\" lang=\"latex\"> \(  2^1 &gt; 1  \) </span>. Hence P(1) is true. <br />
+			Assume that P(k) is true for any positive integers k, i.e., <br />
+			2k &gt; k ... (1) <br />
+			We shall now prove that P(k +1) is true whenever P(k) is true. <br />
+			Multiplying both sides of (1) by 2, we get <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  2. 2^k  &gt; 2k   \\\\[3pt]
+				i.e., \ 2^{k + 1} &gt; 2k = k + k &gt; k + 1  \end{align}  \) </span>
+			<br />
+			Therefore, P(k + 1) is true when P(k) is true. Hence, by principle of mathematical induction, P(n) is true for every positive integer n.</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 3:</h4>
+		<p>For all <span class=\"latex\" lang=\"latex\"> \(  n \geq 1 \) </span>, prove that <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \frac{1}{1.2} + \frac{1}{2.3} + \frac{1}{3.4}  + ..... + \frac{1}{n(n + 1)} = \frac{n}{n + 1}  \) </span>
+			<br />
+			<span class="highlight01"> Solution :</span>
+			<br />
+			We can write <br />
+			<span class=\"latex\" lang=\"latex\"> \(  p(n): \frac{1}{1.2} + \frac{1}{2.3} + \frac{1}{3.4}  + ..... + \frac{1}{n(n + 1)} = \frac{n}{n + 1}  \) </span>
+			<br />
+			We note that <span class=\"latex\" lang=\"latex\"> \(  \frac{1}{1.2} + \frac{1}{2} = \frac{1}{1 + 1}  \) </span>, which is true. Thus, P(n) is true for n = 1. <br />
+			Assume that P(k) is true for some natural numbers k, <br />
+			<span class=\"latex\" lang=\"latex\"> \(  i.e., \  \frac{1}{1.2} + \frac{1}{2.3} + \frac{1}{3.4}  + ..... + \frac{1}{k(k + 1)} = \frac{k}{k + 1}  \) </span> ..... (1) <br />
+			We need to prove that P(k + 1) is true whenever P(k) is true. We have <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  i.e., \  \frac{1}{1.2} + \frac{1}{2.3} + \frac{1}{3.4}  + ..... + \frac{1}{k(k + 1)} = \frac{1}{(k + 1)(k + 2)}  \\\\[3pt]
+				= \left [ \frac{1}{1.2} + \frac{1}{2.3} + \frac{1}{3.4}  + ...... + \frac{1}{k(k + 1)} \right ] + \frac{1}{(k + 1)(k + 2)}  \\\\[3pt]
+				= \frac{k}{k + 1} = \frac{1}{(k + 1)(k + 2)} \ \ \ \ [Using \ (1)  \\\\[3pt]
+				= \frac{k(k + 2) + 1}{(k + 1)(k + 2)} = \frac{(k^2 + 2k + 1)}{(k + 1)(k + 2)}  \\\\[3pt]
+				\frac{(k + 1)^2}{(k + 1)(k + 2)}  \\\\[3pt]
+				= \frac{k + 1}{k + 2}  \\\\[3pt]
+				= \frac{k + 1}{(k + 1) + 1}  \end{align}  \) </span>
+			<br />
+			Thus P(k + 1) is true whenever P(k) is true.<br />
+			Hence, by the principle of mathematical induction, P(n) is true for all natural numbers.</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 4:</h4>
+		<p>For every positive integer n, prove that <span class=\"latex\" lang=\"latex\"> \(  7^n - 3^n  \) </span> is divisible by 4.<br />
+			<span class="highlight01"> Solution :</span>
+			<br />
+			We can write <br />
+			<span class=\"latex\" lang=\"latex\"> \(  p(1): 7^n - 3^n  \) </span>  is divisible by 4. <br />
+			We note that <br />
+			<span class=\"latex\" lang=\"latex\"> \(  p(1): 7^1 - 3^1 = 4  \) </span>  which is divisile by 4. Thus P(n) is true for n = 1 <br />
+			Let P(k) be true for some natural number k, <br />
+			<span class=\"latex\" lang=\"latex\"> \(  i.e., p(k) :   7^k - 3^k  \) </span>  is divisible by 4. <br />
+			We can write  <span class=\"latex\" lang=\"latex\"> \(  7^k - 3^k = 4d, \ , where \ d \ \epsilon \ N  \) </span>. <br />
+			Now, we wish to prove that P(k + 1) is true whenever P(k) is true. <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align} Now \ 7^{(k + 1)} - 3^{(k + 1)} = 7^{(k + 1)} - 7.3^k + 7.3^k - 3^{(k + 1)}  \\\\[3pt]
+				= 7(7^k - 3^k) + (7 - 3)3^k = 7(4d) + (7 - 3)3^k  \\\\[3pt]
+				= 7(4d) + 4.3^k = 4(7d + 3^k)  \end{align}  \) </span>
+			<br />
+			From the last line, we see that <span class=\"latex\" lang=\"latex\"> \(  7^{(k + 1)} - 3^{(k + 1)}  \) </span> is divisible by 4.<br />
+			Thus, P(k + 1) is true when P(k) is true. Therefore, by princlple of mathematical induction the statement is true for every positive integer n. </p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 5:</h4>
+		<p>Prove that <span class=\"latex\" lang=\"latex\"> \(  (1 + x)n \geq (1 + nx)  \) </span>, for all natural number n, where x &gt; - 1.<br />
+			<span class="highlight01"> Solution :</span>
+			<br />
+			Let P(n) be the given statement, <br />
+			i.e., <span class=\"latex\" lang=\"latex\"> \(  P(n): (1 + x)^n \geq (1 + nx), \ for x &gt; - 1.  \) </span>
+			<br />
+			We note that P(n) is true when n = 1, since <span class=\"latex\" lang=\"latex\"> \(  (1 + x) \geq (1 + x)  \) </span>  for x &gt; -1 <br />
+			Assume that <br />
+			<span class=\"latex\" lang=\"latex\"> \(  P(k) : (1 + x)^k \geq (1 + kx), \ x &gt; - 1  \) </span> is true. ... (1) <br />
+			We want to prove that P(k + 1) is true for x &gt; -1 whenever P(k) is true. ... (2) <br />
+			Consider the identity <br />
+			<span class=\"latex\" lang=\"latex\"> \(  (1 + x)^k + 1 = (1 + x)^k (1 + x)  \) </span>
+			<br />
+			Given that x &gt; -1, so (1 + x) &gt; 0. <br />
+			Therefore , by using <span class=\"latex\" lang=\"latex\"> \(  (1 + x)^k \geq (1 + kx)  \) </span>, we have <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  (1 + x)^{k + 1} \geq (1 + kx)(1 + x)  \\\\[3pt]
+				i.e. \ (1 + x)^{k + 1} \ \geq \ (1 + x + kx + kx^2)  \end{align}  \) </span>...... (3) <br />
+			Here k is a natural number and  <span class=\"latex\" lang=\"latex\"> \(  x^2 \geq 0  \) </span> so that  <span class=\"latex\" lang=\"latex\"> \(  kx^2 \geq 0  \) </span>. <br />
+			Therefore <span class=\"latex\" lang=\"latex\"> \(  (1 + x + kx + kx^2) \geq (1 + x + kx)  \) </span>, <br />
+			and so we obtain <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  (1 + x)^{k + 1} \ \geq \ (1 + x + kx)  \\\\[3pt]
+				i.e. \ (1 + x)^{k + 1} \ \geq \ [1 + (1 + k)x]  \end{align}  \) </span>
+			<br />
+			Thus, the statement in (2) is established. Hence, by the principle of mathematical induction, P(n) is true for all natural numbers.</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 6:</h4>
+		<p>Prove that <br />
+			<span class=\"latex\" lang=\"latex\"> \(  2.7^n + 3.5^n - 5  \) </span> is divisible by 24, for all <span class=\"latex\" lang=\"latex\"> \(  n \ \epsilon N  \) </span>.<br />
+			<span class="highlight01"> Solution :</span>
+			<br />
+			Let the statement P(n) be defined as <br />
+			<span class=\"latex\" lang=\"latex\"> \( p(n) :  2.7^n + 3.5^n - 5  \) </span> is divisible by 24. <br />
+			We note that P(n) is true for n = 1, since 2.7 + 3.5 - 5 = 24, which is divisible by 24. <br />
+			Assume that P(k) is true <br />
+			<span class=\"latex\" lang=\"latex\"> \( i.e., \  2.7^k + 3.5^k - 5 = 24 q \ when \ q \ \epsilon \ N  \) </span>.... (1) <br />
+			Now, we wish to prove that P(k + 1) is true whenever P(k) is true. <br />
+			We have <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}   2.7^{k + 1}  + 3.5^{k+ 1} - 5 = 2.7^k . 7^1 + 3.5^k. 5^1 - 5  \\\\[3pt]
+				= 7 [2.7^k + 3.5^k - 5 - 3.5^k + 5] + 3.5^k . 5 - 5  \\\\[3pt]
+				= 7 [24q - 3.5^k + 5] + 15.5^k - 5  \\\\[3pt]
+				= 7 \times 24q - 21.5^k + 35 + 15.5^k - 5  \\\\[3pt]
+				= 7 \times 24q - 6.5^k + 30  \\\\[3pt]
+				= 7 \times 24q - 6 (5k - 5)  \\\\[3pt]
+				= 7 \times 24q - 6(4p) [(5^k - 5) \ \text{is a multiple of 4 (why?)]}  \\\\[3pt]
+				= 7 \times 24q - 24p  \\\\[3pt]
+				= 24 (7q - p)  \\\\[3pt]
+				= 24 \times r; \ r = 7q – p, \ \text{is some natural number}  \end{align}  \) </span> .... (2) <br />
+			The expresion on the R.H.S. of (1) is divisible by 24. Thus P(k + 1) is true whenever P(k) is true. <br />
+			Hence, by principle of mathematical induction, P(n) is true for all <span laang="latex"> n \ \epsilon \ N </span>.</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 7:</h4>
+		<p>Prove that <br />
+			<span class=\"latex\" lang=\"latex\"> \(  1^2 + 2^2 + .... + n^2 &gt; \frac{n^3}{3}, \ n \ \epsilon \ N   \) </span>
+			<br />
+			<span class="highlight01"> Solution :</span>
+			<br />
+			Let P(n) be the given statement. <br />
+			<span class=\"latex\" lang=\"latex\"> \(  i.e., \ p(n): 1^2 + 2^2 + .... + n^2 &gt; \frac{n^3}{3}, \ n \ \epsilon \ N   \) </span>
+			<br />
+			We note that P(n) is true for n = 1 since <span class=\"latex\" lang=\"latex\"> \(  1^2 &gt; \frac{1^3}{3}  \) </span>
+			<br />
+			Assume that P(k) is true <br />
+			<span class=\"latex\" lang=\"latex\"> \(  i.e., \ p(n): 1^2 + 2^2 + .... + k^2 &gt; \frac{k^3}{3}  \) </span>.... (1) <br />
+			We shall now prove that P(k + 1) is true whenever P(k) is true. <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  1^2 + 2^2 + 3^2 + ..... + k^2 + (k + 1)^2  \\\\[3pt]
+				= \left ( 1^2 + 2^2 + .... + k^2 \right ) + (k + 1)^2 &gt; \frac{k^3}{3} + (k + 1)^2 \ \ \ \ \ [by \ (1) ]  \\\\[3pt]
+				= \frac{1}{3} [ k^3 + 3k^2 + 6k + 3]  \\\\[3pt]
+				= \frac{1}{3} [ (k + 1)^3 + 3k + 2 ] &gt; \frac{1}{3} (k + 1)^3  \end{align}  \) </span>
+			<br />
+			Therefore, P(k + 1) is also true whenever P(k) is true. Hence, by mathematical induction P(n) is true for all <span class=\"latex\" lang=\"latex\"> \(  n \epsilon N  \) </span>. </p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 8:</h4>
+		<p>Prove the rule of exponents <span class=\"latex\" lang=\"latex\"> \(  (ab)^n = a^nb^n  \) </span>  by using principle of mathematical induction for every natural number<br />
+			<span class="highlight01"> Solution :</span>
+			<br />
+			Let P(n) be the given statement <br />
+			<span class=\"latex\" lang=\"latex\"> \(  p(n) : (ab)^n = a^n b^n  \) </span>
+			<br />
+			We note that P(n) is true for n = 1 since <span class=\"latex\" lang=\"latex\"> \(  (ab)^1 = a^1 b^1  \) </span>. <br />
+			Let P(k) be true, i.e., <br />
+			<span class=\"latex\" lang=\"latex\"> \(  (ab)^k = a^k b^k  \) </span> ...... (1) <br />
+			We shall now prove that P(k + 1) is true whenever P(k) is true. <br />
+			Now, we have <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  (ab)^{k + 1} = (ab)^k (ab)  \\\\[3pt]
+				= (a^k \ b^k )(ab) \ \ \ [by \ (1)]  \\\\[3pt]
+				= (a^k. a^1)(b^k. b^1) = a^{k + 1} . b^{k + 1}  \end{align}  \) </span>
+			<br />
+			Therefore, P(k + 1) is also true whenever P(k) is true. Hence, by principle of
+			mathematical induction, P(n) is true for all <span class=\"latex\" lang=\"latex\"> \(  n \ \epsilon \ N  \) </span> .</p>
+	</section>
+</section> 

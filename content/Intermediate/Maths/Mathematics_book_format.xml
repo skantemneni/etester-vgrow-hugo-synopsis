@@ -1,0 +1,514 @@
+<book>
+	<preheading>Intermediate</preheading>
+	<title>Mathematics</title>
+	<description>Intermediate Preperation Course Materials provided by eTester Classes.</description>
+	<book_chapter_number_offset>0</book_chapter_number_offset>
+	<book_page_number_offset>0</book_page_number_offset>
+	<show_chapter_numbers>true</show_chapter_numbers>
+	<chapters>
+		<chapter>
+			<number>1</number>
+			<title>Functions</title>
+			<description>
+				<![CDATA[Essential Exam Preperation guide for Employment Readiness Exams]]>
+			</description>
+			<filename>Functions.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>2</number>
+			<title>Mathematical Induction</title>
+			<description>
+				<![CDATA[Essential Exam Preperation guide for Employment Readiness Exams]]>
+			</description>
+            <filename>MathematicalInduction.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>3</number>
+			<title>Matrices</title>
+			<description>
+				<![CDATA[Essential Exam Preperation guide for Employment Readiness Exams]]>
+			</description>
+			<filename>Matrices.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>4</number>
+			<title>Properties of Vectors</title>
+			<description>
+				<![CDATA[Essential Exam Preperation guide for Employment Readiness Exams]]>
+			</description>
+			<filename>PropertiesOfVectors.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>5</number>
+			<title>DOT product of two vectors</title>
+			<description>
+				<![CDATA[Essential Exam Preperation guide for Employment Readiness Exams]]>
+			</description>
+			<filename>DotProductOfVectors.html</filename> 
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>6</number>
+			<title>Vector cross product of two vectors</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>VectorCrossProductOfTwoVectors.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>7</number>
+			<title>Multiple product of two vectors</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>MultipleProductOfTwoVectors.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>8</number>
+			<title>Trigonometric ratios</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>TrigonometricRatios.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>9</number>
+			<title>Compound angles</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>CompoundAngles.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<!-- Topic need to be added. -->
+		<!-- Topic having some changes working on it. -->
+		<!-- It will be added soon in the Curriculum. -->
+		<!-- <chapter> -->
+			<!-- <number>10</number> -->
+			<!-- <title>Multiple and sub multiple angles</title> -->
+			<!-- <description> -->
+				<!-- <![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]> -->
+			<!-- </description> -->
+			<!-- <filename>MultipleAndSubMultipleAngles.html</filename> -->
+			<!-- <notespages>0</notespages> -->
+		<!-- </chapter> -->
+		<chapter>
+			<number>11</number>
+			<title>Transformation and identities</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>TransformationAndIdentities.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>12</number>
+			<title>Periodicity, extreme values and graphs</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+            <filename>Periodicity.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>13</number>
+			<title>Trigonometric Equations</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>TrigonometricEquations.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>14</number>
+			<title>Inverse Trigonometric Functions</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>InverseTrigonometricFunction.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<!-- Topic need to be added. -->
+		<!-- Topic having some changes working on it. -->
+		<!-- It will be added soon in the Curriculum. -->
+		<!-- <chapter> -->
+			<!-- <number>15</number> -->
+			<!-- <title>Hyperbolic Functions</title> -->
+			<!-- <description> -->
+				<!-- <![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]> -->
+			<!-- </description> -->
+			<!-- <filename>HyperbolicFunctions.html</filename> -->
+			<!-- <notespages>0</notespages> -->
+		<!-- </chapter> -->
+		<chapter>
+			<number>16</number>
+			<title>Properties of triangles</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>PropertiesOfTriangle.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>17</number>
+			<title>Mathematical Reasoning</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>MathematicalReasoning.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>18</number>
+			<title>Sets and Relations</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>SetsAndRelations.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>19</number>
+			<title>Co-ordinate system</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>Co-ordinateSystem.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>20</number>
+			<title>Change of axes</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>ChangeOfAxes.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>21</number>
+			<title>Straight lines</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>StrightLines.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>22</number>
+			<title>Pair of straight lines</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>PairOfStraightLines.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>23</number>
+			<title>3D Co-ordinate system</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>3DCo-ordinateSystem.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>24</number>
+			<title>Direction cosines and ratios</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>Direction-CosinesAndRatios.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>25</number>
+			<title>Planes</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>Plane.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>26</number>
+			<title>Limits</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>Limits.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>27</number>
+			<title>Continuity</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>Continuity.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>28</number>
+			<title>Differentiation</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>Differentiation.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<!-- Topic need to be added. -->
+		<!-- Topic having some changes working on it. -->
+		<!-- It will be added soon in the Curriculum. -->
+		<!-- <chapter> -->
+			<!-- <number>29</number> -->
+			<!-- <title>Errors and approximations</title> -->
+			<!-- <description> -->
+				<!-- <![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]> -->
+			<!-- </description> -->
+			<!-- <filename>ErrorsAndApproximations.html</filename> -->
+			<!-- <notespages>0</notespages> -->
+		<!-- </chapter> -->
+		<chapter>
+			<number>30</number>
+			<title>Rate of change</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>RateOfChange.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>31</number>
+			<title>Tangent and Normals</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>TangentAndNormal.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>32</number>
+			<title>Maxima and Minima</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>MaximaAndMinima.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>33</number>
+			<title>Mean Values Theorem</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+            <filename>MeanValueTheorem.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<!-- Topic need to be added. -->
+		<!-- Topic having some changes working on it. -->
+		<!-- It will be added soon in the Curriculum. -->
+		<!-- <chapter> -->
+			<!-- <number>34</number> -->
+			<!-- <title>Linear Programming</title> -->
+			<!-- <description> -->
+				<!-- <![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]> -->
+			<!-- </description> -->
+			<!-- <filename>LinearProgramming.html</filename> -->
+			<!-- <notespages>0</notespages> -->
+		<!-- </chapter> -->
+		<chapter>
+			<number>35</number>
+			<title>Quadratic Equations and Expressions</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>QuadraticEquationsAndExpressions.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<!-- Topic need to be added. -->
+		<!-- Topic having some changes working on it. -->
+		<!-- It will be added soon in the Curriculum. -->
+		<!-- <chapter> -->
+			<!-- <number>36</number> -->
+			<!-- <title>Theory of Equations</title> -->
+			<!-- <description> -->
+				<!-- <![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]> -->
+			<!-- </description> -->
+			<!-- <filename>TheoryOfEquations.html</filename> -->
+			<!-- <notespages>0</notespages> -->
+		<!-- </chapter> -->
+		<chapter>
+			<number>37</number>
+			<title>Binomial Theorem</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>BinomialTheorem.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<!-- Topic need to be added. -->
+		<!-- Topic having some changes working on it. -->
+		<!-- It will be added soon in the Curriculum. -->
+		<!-- <chapter> -->
+			<!-- <number>38</number> -->
+			<!-- <title>Partial Fractions</title> -->
+			<!-- <description> -->
+				<!-- <![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]> -->
+			<!-- </description> -->
+			<!-- <filename>PartialFractions.html</filename> -->
+			<!-- <notespages>0</notespages> -->
+		<!-- </chapter> -->
+		<chapter>
+			<number>39</number>
+			<title>Complex Numbers</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>ComplexNumbers.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>40</number>
+			<title>Demoivre’s Theorem</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>DemoivresTheorem.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>41</number>
+			<title>Permutations and Combinations</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>PermutationsAndCombinations.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>42</number>
+			<title>Probability</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>Probability.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>43</number>
+			<title>Random Variable and Distributions</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>RandomVariableAndDistributions.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>44</number>
+			<title>Measures of Dispersion (Statistics)</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+            <filename>MeasuresOfDispersionStatistics.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>45</number>
+			<title>Circles</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>Circles.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>46</number>
+			<title>System of Circles</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>SystemOfCircles.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>47</number>
+			<title>Parabola</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>Parabola.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>48</number>
+			<title>Ellipse</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>Ellipse.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>49</number>
+			<title>Hyperbola</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>Hyperbola.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>50</number>
+			<title>Indefinite Integrals</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>IndefiniteIntegrals.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>51</number>
+			<title>Definite Integrals</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>DefiniteIntegrals.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>52</number>
+			<title>Integrals as a Limit of Summation</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>IntegralsAsALimitOfSummation.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>53</number>
+			<title>Areas</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>Areas.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>54</number>
+			<title>Differential Equations</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>DifferentialEquations.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+	</chapters>
+</book>

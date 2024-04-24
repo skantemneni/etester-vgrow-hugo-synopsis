@@ -1,0 +1,838 @@
+---
+title: "Mathematical Reasoning"
+layout: "default"
+isMath: true
+---
+<section class="skill" id="01">
+	<h3 class="skill-heading">Definitions And Formulae</h3>
+	<div class="list-custom-block-list-ol spaced20 indented20">
+		<ol>
+			<li>
+				<p> A <span class="highlight01"> statement </span> is a sentence which is either true or false but not both. We denote statements by lower case letters such as p, q, r,.... </p>
+			</li>
+			<li>
+				<p> The truthness or falsity of a statement is called its <span class="highlight01"> truth value </span>. Truthfulness of a statement is denoted by T while its falsity is denoted by F.</p>
+			</li>
+			<li>
+				<p>Two statements are said to be <span class="highlight01"> equivalent </span> if the two statements have the same truth values. If the statements p and q are equivalent then it is denoted by p = q. </p>
+			</li>
+			<li>
+				<p>Many statements are the combination of simple statements with some connecting words. These words are called <span class="highlight01"> connectives </span>. Some connectives are 'and', 'or', 'if......then', 'if and only if'.</p>
+			</li>
+			<li>
+				<p>A statement which is composed of some simple statements with the connectives is called <span class="highlight01"> compound statement </span>. </p>
+			</li>
+			<li>
+				<p>
+					<span class="highlight01"> Negation : </span> The negation connective <span class=\"latex\" lang=\"latex\"> \(  \sim  \) </span> ( read as NOT) is defined for a given statement p by the following truth table. The negation of the statement p is denoted by <span class=\"latex\" lang=\"latex\"> \(  \sim \ p  \) </span>. <br/>
+					<table class="u-full-width">
+						<thead>
+							<tr>
+								<th align="center">p</th>
+								<th align="center">
+									<span class=\"latex\" lang=\"latex\"> \(  \sim \ p  \) </span>
+								</th>
+							</tr>
+						</thead>
+						<tr>
+							<td align="center">T</td>
+							<td align="center">F</td>
+						</tr>
+						<tr>
+							<td align="center">F</td>
+							<td align="center">T</td>
+						</tr>
+					</table>
+				</p>
+			</li>
+			<li>
+				<p>
+					<span class="highlight01"> Disjunction </span> : The disjunction connective <span class=\"latex\" lang=\"latex\"> \(  \vee  \) </span> (read as OR) is defined between two given statements p, q by the following truth table. The disjunction of p, q is denoted by <span class=\"latex\" lang=\"latex\"> \(  p \vee q  \) </span>. <br/>
+					The disjunction of two statements is false only when both the statements are false. <br/>
+					<table class="u-full-width">
+						<thead>
+							<tr>
+								<th align="center">p</th>
+								<th align="center">q</th>
+								<th align="center">
+									<span class=\"latex\" lang=\"latex\"> \(  p \vee q \) </span>
+								</th>
+							</tr>
+						</thead>
+						<tr>
+							<td align="center">T</td>
+							<td align="center">T</td>
+							<td align="center">T</td>
+						</tr>
+						<tr>
+							<td align="center">T</td>
+							<td align="center">F</td>
+							<td align="center">T</td>
+						</tr>
+						<tr>
+							<td align="center">F</td>
+							<td align="center">T</td>
+							<td align="center">T</td>
+						</tr>
+						<tr>
+							<td align="center">F</td>
+							<td align="center">F</td>
+							<td align="center">F</td>
+						</tr>
+					</table>
+				</p>
+			</li>
+			<li>
+				<p>
+					<span class="highlight01"> Conjunction </span>: The conjunction connective <span class=\"latex\" lang=\"latex\"> \(  \wedge  \) </span> (read as AND) is defined between two given statements p, q by the following truth table. The conjunction of p, q is denoted by <span class=\"latex\" lang=\"latex\"> \(  p \wedge q  \) </span>. The conjunction of two statements is true only when both the statements are true. <br/>
+					<table class="u-full-width">
+						<thead>
+							<tr>
+								<th align="center">p</th>
+								<th align="center">q</th>
+								<th align="center">
+									<span class=\"latex\" lang=\"latex\"> \(  p \wedge q \) </span>
+								</th>
+							</tr>
+						</thead>
+						<tr>
+							<td align="center">T</td>
+							<td align="center">T</td>
+							<td align="center">T</td>
+						</tr>
+						<tr>
+							<td align="center">T</td>
+							<td align="center">F</td>
+							<td align="center">F</td>
+						</tr>
+						<tr>
+							<td align="center">F</td>
+							<td align="center">T</td>
+							<td align="center">F</td>
+						</tr>
+						<tr>
+							<td align="center">F</td>
+							<td align="center">F</td>
+							<td align="center">F</td>
+						</tr>
+					</table>
+				</p>
+			</li>
+			<li>
+				<p>
+					<span class="highlight01"> Conditional or Implication </span>: The conditional or implication connective <span class=\"latex\" lang=\"latex\"> \(  \Rightarrow  \) </span> (read as IF... THEN or IMPLIES) is defined between two given statements p, q by the following truth table. The implication "if p then q" is denoted by p <span class=\"latex\" lang=\"latex\"> \(  \Rightarrow  \) </span> q or p <span class=\"latex\" lang=\"latex\"> \(  \rightarrow  \) </span> q. A true statement cannot imply a false statement p <span class=\"latex\" lang=\"latex\"> \(  \Rightarrow  \) </span> q is true always except the case when p is true and q is false. <br/>
+					<table class="u-full-width">
+						<thead>
+							<tr>
+								<th align="center">p</th>
+								<th align="center">q</th>
+								<th align="center">
+									<span class=\"latex\" lang=\"latex\"> \(  p \Rightarrow q  \) </span>
+								</th>
+							</tr>
+						</thead>
+						<tr>
+							<td align="center">T</td>
+							<td align="center">T</td>
+							<td align="center">T</td>
+						</tr>
+						<tr>
+							<td align="center">T</td>
+							<td align="center">F</td>
+							<td align="center">F</td>
+						</tr>
+						<tr>
+							<td align="center">F</td>
+							<td align="center">T</td>
+							<td align="center">T</td>
+						</tr>
+						<tr>
+							<td align="center">F</td>
+							<td align="center">F</td>
+							<td align="center">T</td>
+						</tr>
+					</table>
+				</p>
+			</li>
+			<li>
+				<p> If p and q are two statements such that <span class=\"latex\" lang=\"latex\"> \(  p \Rightarrow q  \) </span>. Then p is called hypothesis and q is called conclusion. </p>
+			</li>
+			<li>
+				<p>
+					<span class="highlight01"> Biconditional or Bi-implication </span> : The bi-conditional connective <span class=\"latex\" lang=\"latex\"> \(  \Leftrightarrow  \) </span> ( read as IF AND ONLY IF or IMPLIES AND IMPLIED BY) is defined between two given statements p, q by the following truth table. The bi-implication " p if and only if q " is denoted by p <span class=\"latex\" lang=\"latex\"> \(  \Leftrightarrow  \) </span> q or p <span class=\"latex\" lang=\"latex\"> \(  \leftrightarrow  \) </span> q. <br/>
+					The biconditional of p and q is the conjunction of the two conditionals p <span class=\"latex\" lang=\"latex\"> \(  \Rightarrow  \) </span> q and q <span class=\"latex\" lang=\"latex\"> \(  \Rightarrow  \) </span> p. If p and q have the same turth value then p <span class=\"latex\" lang=\"latex\"> \(  \Leftrightarrow  \) </span> q is true. If p and q have opposite truth values then p <span class=\"latex\" lang=\"latex\"> \(  \Leftrightarrow  \) </span> q is false. <br/>
+					<table class="u-full-width">
+						<thead>
+							<tr>
+								<th align="center">p</th>
+								<th align="center">q</th>
+								<th align="center">
+									<span class=\"latex\" lang=\"latex\"> \(  p \Leftrightarrow q  \) </span>
+								</th>
+							</tr>
+						</thead>
+						<tr>
+							<td align="center">T</td>
+							<td align="center">T</td>
+							<td align="center">T</td>
+						</tr>
+						<tr>
+							<td align="center">T</td>
+							<td align="center">F</td>
+							<td align="center">F</td>
+						</tr>
+						<tr>
+							<td align="center">F</td>
+							<td align="center">T</td>
+							<td align="center">F</td>
+						</tr>
+						<tr>
+							<td align="center">F</td>
+							<td align="center">F</td>
+							<td align="center">T</td>
+						</tr>
+					</table>
+				</p>
+			</li>
+			<li>
+				<p>
+					<span class="highlight01"> Converse </span> : Let p, q be two statements. "If q then p " is called the converse of " if p then q ". Thus the converse of p <span class=\"latex\" lang=\"latex\"> \(  \Rightarrow  \) </span> q is q <span class=\"latex\" lang=\"latex\"> \(  \Rightarrow  \) </span> p. </p>
+			</li>
+			<li>
+				<p>
+					<span class="highlight01"> Inverse </span> : Let p, q be two statements. " If <span class=\"latex\" lang=\"latex\"> \(  \sim  \) </span> p then <span class=\"latex\" lang=\"latex\"> \(  \sim  \) </span> q " is called the inverse of " if p then q". Thus the inverse of p <span class=\"latex\" lang=\"latex\"> \(  \Rightarrow  \) </span> q is <span class=\"latex\" lang=\"latex\"> \(  \sim p	\Rightarrow \sim q.  \) </span>
+				</p>
+			</li>
+			<li>
+				<p>
+					<span class="highlight01"> Contrapositive </span> : Let p, q be two statements. "If <span class=\"latex\" lang=\"latex\"> \(  \sim  \) </span> q then <span class=\"latex\" lang=\"latex\"> \(  \sim  \) </span> p" is called the contrapositive of " if p then q". Thus the contrapositive of p <span class=\"latex\" lang=\"latex\"> \(  \Rightarrow  \) </span> q is <span class=\"latex\" lang=\"latex\"> \(  \sim q \Rightarrow \sim p  \) </span>. <br/>
+					The following is the truth table for the conditional, converse, inverse, contrapositive statements. <br/>
+					<table class="u-full-width">
+						<thead>
+							<tr>
+								<th align="center">p</th>
+								<th align="center">q</th>
+								<th align="center"> Conditional <br/>
+									<span class=\"latex\" lang=\"latex\"> \(  p \Rightarrow q  \) </span>
+								</th>
+								<th align="center"> Converse <br/>
+									<span class=\"latex\" lang=\"latex\"> \(  q \Rightarrow p  \) </span>
+								</th>
+								<th align="center"> Inverse <br/>
+									<span class=\"latex\" lang=\"latex\"> \(  \sim p \Rightarrow \sim q  \) </span>
+								</th>
+								<th align="center"> Contrapositive <br/>
+									<span class=\"latex\" lang=\"latex\"> \(  \sim q \Rightarrow \sim p  \) </span>
+								</th>
+							</tr>
+						</thead>
+						<tr>
+							<td align="center">T</td>
+							<td align="center">T</td>
+							<td align="center">T</td>
+							<td align="center">T</td>
+							<td align="center">T</td>
+							<td align="center">T</td>
+						</tr>
+						<tr>
+							<td align="center">T</td>
+							<td align="center">F</td>
+							<td align="center">F</td>
+							<td align="center">T</td>
+							<td align="center">T</td>
+							<td align="center">F</td>
+						</tr>
+						<tr>
+							<td align="center">F</td>
+							<td align="center">T</td>
+							<td align="center">T</td>
+							<td align="center">F</td>
+							<td align="center">F</td>
+							<td align="center">T</td>
+						</tr>
+						<tr>
+							<td align="center">F</td>
+							<td align="center">F</td>
+							<td align="center">T</td>
+							<td align="center">T</td>
+							<td align="center">T</td>
+							<td align="center">T</td>
+						</tr>
+					</table>
+				</p>
+			</li>
+			<li>
+				<p> A compound statement which contains only T in the last column of its truth table is called a tautology. </p>
+			</li>
+			<li>
+				<p> A compound statement which contains only F in the last column of its truth table is called a contradiction. </p>
+			</li>
+			<li>
+				<p> Two compound statements are said to be logically equivalent if their truth tables are identical. If the compound statements p and q are logically equivalent then it is denoted by <span class=\"latex\" lang=\"latex\"> \(  p \equiv q  \) </span>. </p>
+			</li>
+			<li>
+				<p>
+					<span class="highlight01"> Algebra of statements </span> : <br/>
+					<ol>
+						<li>
+							<p>
+								<span class="highlight01"> Idempotent laws </span> : <br/>
+								<ol>
+									<li>
+										<p> p <span class=\"latex\" lang=\"latex\"> \(  \vee  \) </span> p <span class=\"latex\" lang=\"latex\"> \(  \equiv  \) </span> p </p>
+									</li>
+									<li>
+										<p> p <span class=\"latex\" lang=\"latex\"> \(  \wedge  \) </span> p <span class=\"latex\" lang=\"latex\"> \(  \equiv  \) </span> p </p>
+									</li>
+								</ol>
+							</p>
+						</li>
+						<li>
+							<p>
+								<span class="highlight01"> Associative laws </span> : <br/>
+								<ol>
+									<li>
+										<p> (p <span class=\"latex\" lang=\"latex\"> \(  \vee  \) </span> q) <span class=\"latex\" lang=\"latex\"> \(  \vee  \) </span>r <span class=\"latex\" lang=\"latex\"> \(  \equiv  \) </span> p <span class=\"latex\" lang=\"latex\"> \(  \vee  \) </span>(q <span class=\"latex\" lang=\"latex\"> \(  \vee  \) </span> r) </p>
+									</li>
+									<li>
+										<p> (p <span class=\"latex\" lang=\"latex\"> \(  \wedge  \) </span> q) <span class=\"latex\" lang=\"latex\"> \(  \wedge  \) </span>r <span class=\"latex\" lang=\"latex\"> \(  \equiv  \) </span> p <span class=\"latex\" lang=\"latex\"> \(  \wedge  \) </span> (q <span class=\"latex\" lang=\"latex\"> \(  \wedge  \) </span> r) </p>
+									</li>
+								</ol>
+							</p>
+						</li>
+						<li>
+							<p>
+								<span class="highlight01"> Commutative laws </span> : <br/>
+								<ol>
+									<li>
+										<p>p <span class=\"latex\" lang=\"latex\"> \(  \vee  \) </span> q <span class=\"latex\" lang=\"latex\"> \(  \equiv  \) </span> q<span class=\"latex\" lang=\"latex\"> \(  \vee  \) </span> p </p>
+									</li>
+									<li>
+										<p> p <span class=\"latex\" lang=\"latex\"> \(  \wedge  \) </span> q <span class=\"latex\" lang=\"latex\"> \(  \equiv  \) </span> q <span class=\"latex\" lang=\"latex\"> \(  \wedge  \) </span> p </p>
+									</li>
+								</ol>
+							</p>
+						</li>
+						<li>
+							<p>
+								<span class="highlight01">Distributive laws </span> : <br/>
+								<ol>
+									<li>
+										<p>p <span class=\"latex\" lang=\"latex\"> \(  \vee  \) </span> (q <span class=\"latex\" lang=\"latex\"> \(  \wedge  \) </span> r)	<span class=\"latex\" lang=\"latex\"> \(  \equiv  \) </span> ( p <span class=\"latex\" lang=\"latex\"> \(  \vee  \) </span> q) <span class=\"latex\" lang=\"latex\"> \(  \wedge  \) </span> (p <span class=\"latex\" lang=\"latex\"> \(  \vee  \) </span> r)	</p>
+									</li>
+									<li>
+										<p>p <span class=\"latex\" lang=\"latex\"> \(  \wedge  \) </span> (q <span class=\"latex\" lang=\"latex\"> \(  \vee  \) </span> r) <span class=\"latex\" lang=\"latex\"> \(  \equiv  \) </span> (p <span class=\"latex\" lang=\"latex\"> \(  \wedge  \) </span> q) <span class=\"latex\" lang=\"latex\"> \(  \vee  \) </span> (p <span class=\"latex\" lang=\"latex\"> \(  \wedge  \) </span> r) </p>
+									</li>
+								</ol>
+							</p>
+						</li>
+						<li>
+							<p>
+								<span class="highlight01"> De Morgan's laws </span> : <br/>
+								<ol>
+									<li>
+										<p>
+											<span class=\"latex\" lang=\"latex\"> \(  \sim  \) </span> (p <span class=\"latex\" lang=\"latex\"> \(  \vee  \) </span> q) <span class=\"latex\" lang=\"latex\"> \(  \equiv  \) </span> (<span class=\"latex\" lang=\"latex\"> \(  \sim  \) </span> p)	<span class=\"latex\" lang=\"latex\"> \(  \wedge  \) </span> (<span class=\"latex\" lang=\"latex\"> \(  \sim  \) </span> q) </p>
+									</li>
+									<li>
+										<p>
+											<span class=\"latex\" lang=\"latex\"> \(  \sim  \) </span> (p <span class=\"latex\" lang=\"latex\"> \(  \wedge  \) </span> q) <span class=\"latex\" lang=\"latex\"> \(  \equiv  \) </span> (<span class=\"latex\" lang=\"latex\"> \(  \sim  \) </span> p) <span class=\"latex\" lang=\"latex\"> \(  \vee  \) </span> (<span class=\"latex\" lang=\"latex\"> \(  \sim  \) </span> q) </p>
+									</li>
+								</ol>
+							</p>
+						</li>
+						<li>
+							<p>
+								<span class="highlight01"> Identity laws </span> : <br/>
+								<ol>
+									<li>
+										<p> p <span class=\"latex\" lang=\"latex\"> \(  \vee  \) </span> f <span class=\"latex\" lang=\"latex\"> \(  \equiv  \) </span> p </p>
+									</li>
+									<li>
+										<p> p <span class=\"latex\" lang=\"latex\"> \(  \wedge  \) </span> t <span class=\"latex\" lang=\"latex\"> \(  \equiv  \) </span> p </p>
+									</li>
+									<li>
+										<p> p <span class=\"latex\" lang=\"latex\"> \(  \vee  \) </span> t <span class=\"latex\" lang=\"latex\"> \(  \equiv  \) </span> t </p>
+									</li>
+									<li>
+										<p> p <span class=\"latex\" lang=\"latex\"> \(  \wedge  \) </span> f <span class=\"latex\" lang=\"latex\"> \(  \equiv  \) </span> f <br/>
+											where t can takes only the value T and f can take only the value F.
+										</p>
+									</li>
+								</ol>
+							</p>
+						</li>
+						<li>
+							<p>
+								<span class="highlight01">	Complement laws </span> : <br/>
+								<ol>
+									<li>
+										<p> p <span class=\"latex\" lang=\"latex\"> \(  \vee  \) </span> (<span class=\"latex\" lang=\"latex\"> \(  \sim  \) </span> p) <span class=\"latex\" lang=\"latex\"> \(  \equiv  \) </span> t </p>
+									</li>
+									<li>
+										<p> p <span class=\"latex\" lang=\"latex\"> \(  \wedge  \) </span> (<span class=\"latex\" lang=\"latex\"> \(  \sim  \) </span> p) <span class=\"latex\" lang=\"latex\"> \(  \equiv  \) </span> f </p>
+									</li>
+								</ol>
+							</p>
+						</li>
+						<li>
+							<p>
+								<span class="highlight01"> Involution laws </span> : <br/>
+								<ol>
+									<li>
+										<p>
+											<span class=\"latex\" lang=\"latex\"> \(  \sim  \) </span> (<span class=\"latex\" lang=\"latex\"> \(  \sim  \) </span> p) = p </p>
+									</li>
+									<li>
+										<p>
+											<span class=\"latex\" lang=\"latex\"> \(  \sim  \) </span> t = f, <span class=\"latex\" lang=\"latex\"> \(  \sim  \) </span> f = t. </p>
+									</li>
+								</ol>
+							</p>
+						</li>
+					</ol>
+				</p>
+			</li>
+			<li>
+				<p> A sentence having one or more variables is called an open sentence if it becomes true or false statement when we replace the variable by some specific value from a given set. The replacement set is called the domain of the variable. </p>
+			</li>
+			<li>
+				<p> The phrases, "for all", "for some", "for no", "for every", and "there exists atleast one" convey the idea of quantity and refer to some specific collection of numbers or objects. These phrases quantify the variables in open sentences. They are called <span class="highlight01"> quantifiers </span>. </p>
+			</li>
+			<li>
+				<p> The quantifier, 'for all' or 'for every' is called the <span class="highlight01"> universal quantifier </span> and is denoted by <span class=\"latex\" lang=\"latex\"> \(  \forall  \) </span> The quantifier "some" or "there exists atleast one" is called <span class="highlight01"> existantial quantifier </span> and is denoted by the symbol <span class=\"latex\" lang=\"latex\"> \(  \exists  \) </span>. </p>
+			</li>
+			<li>
+				<p> A switching net work is a collection of wires capable of carrying an electric current and the various switches each capable of creating a gap in the wire. Observe that a switch allows only two possibilities namely (1) it is either open (F) in which case there is no flow of current or (2) it is closed (T) in which case there is flow of current.
+				</p>
+			</li>
+		</ol>
+	</div>
+</section>
+<section class="skill" id="02">
+	<h3 class="skill-heading">Summary</h3>
+	<div class="list-custom-block-list-ol spaced20 indented20">
+		<ol>
+			<li>
+				<p>A mathematically acceptable statement is a sentence which is either true or false.</p>
+			</li>
+
+			<li>
+				<p>Explained the terms:</p>
+				<ol>
+					<li>
+						<p>Negation of a statement p : If p denote a statement, then the negation of p is denoted by  <span class=\"latex\" lang=\"latex\"> \(  \sim \ p  \) </span>.</p>
+					</li>
+					<li>
+						<p>Compound statements and their related component statements: <br />
+							A statement is a compound statement if it is made up of two or more smaller statements. The smaller statements are called component statements of the compound statement.</p>
+					</li>
+					<li>
+						<p>The role of "And", " Or ", "There exists" and "For every" in compound statements.</p>
+					</li>
+					<li>
+						<p>The meaning of implications "If", "only if ", "if and only if". A sentence with if p, then q can be written in the following ways.</p>
+					</li>
+					<li>
+						<p>p implies q (denoted by p  <span class=\"latex\" lang=\"latex\"> \(  \Rightarrow  \) </span> q )</p>
+					</li>
+					<li>
+						<p>p is a sufficient condition for q</p>
+					</li>
+					<li>
+						<p>q is a necessary condition for p</p>
+					</li>
+					<li>
+						<p>p only if q</p>
+					</li>
+					<li>
+						<p>
+							<span class=\"latex\" lang=\"latex\"> \(  \sim q  \) </span> implies  <span class=\"latex\" lang=\"latex\"> \(  \sim p  \) </span>
+						</p>
+					</li>
+					<li>
+						<p>The contrapositive of a statement p ⇒ q is the statement <span class=\"latex\" lang=\"latex\"> \(  \sim q \ \Rightarrow \ \sim p  \) </span> . The converse of a statement p <span class=\"latex\" lang=\"latex\"> \(  \Rightarrow  \) </span> q is the statement q <span class=\"latex\" lang=\"latex\"> \(  \Rightarrow  \) </span> p. p <span class=\"latex\" lang=\"latex\"> \(  \Rightarrow  \) </span> q together with its converse, gives p if and only if q</p>
+					</li>
+				</ol>
+			</li> 
+			<li>
+				<p>The following methods are used to check the validity of statements:</p>
+				<ol>
+					<li>
+						<p>direct method</p>
+					</li>
+					<li>
+						<p>contrapositive method</p>
+					</li>
+					<li>
+						<p>method of contradiction</p>
+					</li>
+					<li>
+						<p>using a counter example.</p>
+					</li>
+				</ol>
+			</li> 
+		</ol>
+	</div>
+</section>  
+<section class="solved-examples" id="examples">
+	<h3 class="solved-examples-heading">Solved examples</h3>
+	<section class="solved-example"> 
+		<h4 class="solved-examples-question">Example 1:</h4>
+		<p>Check whether the following sentences are statements. Give reasons for your answer.</p>
+		<div class="list1-ol default-spaced-indented list-numbered-style-lower-roman">
+			<ol>
+				<li>
+					<p>8 is less than 6.</p>
+				</li>
+				<li>
+					<p>Every set is a finite set.</p>
+				</li>
+				<li>
+					<p>The sun is a star.</p>
+				</li>
+				<li>
+					<p>Mathematics is fun.</p>
+				</li>
+				<li>
+					<p>There is no rain without clouds.</p>
+				</li>
+				<li>
+					<p>How far is Chennai from here?</p>
+				</li>
+			</ol>
+		</div>
+		<p>
+			<span class="highlight01">Solution</span>
+		</p>
+		<div class="list1-ol default-spaced-indented list-numbered-style-lower-roman">
+			<ol>
+				<li>
+					<p>This sentence is false because 8 is greater than 6. Hence it is a statement.</p>
+				</li>
+				<li>
+					<p>This sentence is also false since there are sets which are not finite. Hence it is a statement.</p>
+				</li>
+				<li>
+					<p>It is a scientifically established fact that sun is a star and, therefore, this sentence is always true. Hence it is a statement.</p>
+				</li>
+				<li>
+					<p>This sentence is subjective in the sense that for those who like mathematics, it may be fun but for others it may not be. This means that this sentence is not always true. Hence it is not a statement.</p>
+				</li>
+				<li>
+					<p>It is a scientifically established natural phenomenon that cloud is formed before it rains. Therefore, this sentence is always true. Hence it is a statement.</p>
+				</li>
+				<li>
+					<p>This is a question which also contains the word "Here". Hence it is not a statement.</p>
+				</li>
+			</ol>
+		</div>
+		<p>The above examples show that whenever we say that a sentence is a statement we should always say why it is so. This "why" of it is more important than the answer.</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 2:</h4>
+		<p>Write the negation of the following statements and check whether the resulting statements are true,</p>
+		<div class="list1-ol default-spaced-indented list-numbered-style-lower-roman">
+			<ol>
+				<li>
+					<p>Australia is a continent.</p>
+				</li>
+				<li>
+					<p>There does not exist a quadrilateral which has all its sides equal.</p>
+				</li>
+				<li>
+					<p>Every natural number is greater than 0.</p>
+				</li>
+				<li>
+					<p>The sum of 3 and 4 is 9.</p>
+				</li>
+			</ol>
+		</div>
+		<p>
+			<span class="highlight01"> Solution</span>
+		</p>
+		<div class="list1-ol default-spaced-indented list-numbered-style-lower-roman">
+			<ol>
+				<li>
+					<p>The negation of the statement is <br />
+						It is false that Australia is a continent. <br />
+						This can also be rewritten as <br />
+						Australia is not a continent. <br />
+						We know that this statement is false.</p>
+				</li>
+				<li>
+					<p>The negation of the statement is <br />
+						It is not the case that there does not exist a quadrilateral which has all its sides equal. <br />
+						This also means the following: <br />
+						There exists a quadrilateral which has all its sides equal. <br />
+						This statement is true because we know that square is a quadrilaterial such that its four sides are equal.</p>
+				</li>
+				<li>
+					<p>The negation of the statement is <br />
+						It is false that every natural number is greater than 0. <br />
+						This can be rewritten as <br />
+						There exists a natural number which is not greater than 0. <br />
+						This is a false statement.</p>
+				</li>
+				<li>
+					<p>The negation is <br />
+						It is false that the sum of 3 and 4 is 9. <br />
+						This can be written as <br />
+						The sum of 3 and 4 is not equal to 9. <br />
+						This statement is true.</p>
+				</li>
+			</ol>
+		</div>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 3:</h4>
+		<p>Write the component statements of the following compound statements and check whether the compound statement is true or false.</p>
+		<div class="list1-ol default-spaced-indented list-numbered-style-lower-roman">
+			<ol>
+				<li>
+					<p>A line is straight and extends indefinitely in both directions.</p>
+				</li>
+				<li>
+					<p>0 is less than every positive integer and every negative integer.</p>
+				</li>
+				<li>
+					<p>All living things have two legs and two eyes.</p>
+				</li>
+			</ol>
+		</div>
+		<p>
+			<span class="highlight01"> Solution</span>
+		</p>
+		<div class="list1-ol default-spaced-indented list-numbered-style-lower-roman">
+			<ol>
+				<li>
+					<p>The component statements are <br />p: A line is straight. <br />
+						q: A line extends indefinitely in both directions. <br />
+						Both these statements are true, therefore, the compound statement is true. </p>
+				</li>
+				<li>
+					<p>The component statements are <br />
+						p: 0 is less than every positive integer. <br />
+						q: 0 is less than every negative integer. <br />
+						The second statement is false. Therefore, the compound statement is false.</p>
+				</li>
+				<li>
+					<p>The two component statements are <br />
+						p : All living things have two legs. <br />
+						q : All living things have two eyes. <br />
+						Both these statements are false. Therefore, the compound statement is false. <br />
+						Now, consider the following statement. <br />
+						p : A mixture of alcohol and water can be separated by chemical methods.</p>
+				</li>
+			</ol>
+		</div>
+		<p>This sentence cannot be considered as a compound statement with "And". Here the word "And" refers to two things - alcohol and water. This leads us to an important note.</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question"> Example 4:</h4>
+		<p>For each of the following statements, determine whether an inclusive "Or" or exclusive "Or" is used. Give reasons for your answer.</p>
+		<div class="list1-ol default-spaced-indented list-numbered-style-lower-roman">
+			<ol>
+				<li>
+					<p>To enter a country, you need a passport or a voter registration card.</p>
+				</li>
+				<li>
+					<p>The school is closed if it is a holiday or a Sunday.</p>
+				</li>
+				<li>
+					<p>Two lines intersect at a point or are parallel.</p>
+				</li>
+				<li>
+					<p>Students can take French or Sanskrit as their third language.</p>
+				</li>
+			</ol>
+		</div>
+		<p>
+			<span class="highlight01"> Solution</span>
+		</p>
+		<div class="list1-ol default-spaced-indented list-numbered-style-lower-roman">
+			<ol>
+				<li>
+					<p>Here "Or" is inclusive since a person can have both a passport and a voter registration card to enter a country.</p>
+				</li>
+				<li>
+					<p>Here also "Or" is inclusive since school is closed on holiday as well as on Sunday.</p>
+				</li>
+				<li>
+					<p>Here "Or" is exclusive because it is not possible for two lines to intersect and parallel together.</p>
+				</li>
+				<li>
+					<p>Here also "Or" is exclusive because a student cannot take both French and Sanskrit.</p>
+				</li>
+			</ol>
+		</div>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 5:</h4>
+		<p>Write the contrapositive of the following statement:</p>
+		<div class="list1-ol default-spaced-indented list-numbered-style-lower-roman">
+			<ol>
+				<li>
+					<p>If a number is divisible by 9, then it is divisible by 3.</p>
+				</li>
+				<li>
+					<p>If you are born in India, then you are a citizen of India.</p>
+				</li>
+				<li>
+					<p>If a triangle is equilateral, it is isosceles.</p>
+				</li>
+			</ol>
+		</div>
+		<p>
+			<span class="highlight01"> Solution</span>
+			<br />
+			The contrapositive of the these statements are
+		</p>
+		<div class="list1-ol default-spaced-indented list-numbered-style-lower-roman">
+			<ol>
+				<li>
+					<p>If a number is not divisible by 3, it is not divisible by 9.</p>
+				</li>
+				<li>
+					<p>If you are not a citizen of India, then you were not born in India.</p>
+				</li>
+				<li>
+					<p> If a triangle is not isosceles, then it is not equilateral.</p>
+				</li>
+			</ol>
+		</div>
+		<p> The above examples show the contrapositive of the statement if p, then q is "if <span class=\"latex\" lang=\"latex\"> \(  \sim q  \) </span>, then <span class=\"latex\" lang=\"latex\"> \(  \sim p  \) </span>". <br />
+			Next, we shall consider another term called converse. <br />
+			The converse of a given statement "if p, then q" is if q, then p. <br />
+			For example, the converse of the statement <br />
+			p : If a number is divisible by 10, it is divisible by 5 is <br />
+			<br />
+			q : If a number is divisible by 5, then it is divisible by 10.</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 6:</h4>
+		<p>For each of the following compound statements, first identify the corresponding component statements. Then check whether the statements are true or not.</p>
+		<div class="list1-ol default-spaced-indented list-numbered-style-lower-roman">
+			<ol>
+				<li>
+					<p>If a triangle ABC is equilateral, then it is isosceles. </p>
+				</li>
+				<li>
+					<p>If a and b are integers, then ab is a rational number.</p>
+				</li>
+			</ol>
+		</div>
+		<p>
+			<span class="highlight01"> Solution</span>
+			<br />
+		</p>
+		<div class="list1-ol default-spaced-indented list-numbered-style-lower-roman">
+			<ol>
+				<li>
+					<p>The component statements are given by <br />
+						p : Triangle ABC is equilateral. <br />
+						q : Triangle ABC is Isosceles. <br />
+						Since an equilateral triangle is isosceles, we infer that the given compound statement is true</p>
+				</li>
+				<li>
+					<p>The component statements are given by <br />
+						p : a and b are integers. <br />
+						q : ab is a rational number. <br />
+						since the product of two integers is an integer and therefore a rational number, the compound statement is true.</p>
+				</li>
+			</ol>
+		</div>
+		<p> 'If and only if', represented by the symbol ' <span class=\"latex\" lang=\"latex\"> \(  \Rightarrow  \) </span> ' means the following equivalent forms for the given statements p and q.</p>
+		<div class="list1-ol default-spaced-indented list-numbered-style-lower-roman">
+			<ol>
+				<li>
+					<p>p if and only if q</p>
+				</li>
+				<li>
+					<p>q if and only if p</p>
+				</li>
+				<li>
+					<p>p is necessary and sufficient condition for q and vice-versa</p>
+				</li>
+				<li>
+					<p>
+						<span class=\"latex\" lang=\"latex\"> \( p \ \Rightarrow  \ q  \) </span>
+					</p>
+				</li>
+			</ol>
+		</div>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 7:</h4>
+		<p>Given below are two pairs of statements. Combine these two statements using "if and only if " .</p>
+		<div class="list1-ol default-spaced-indented list-numbered-style-lower-roman">
+			<ol>
+				<li>
+					<p>p: If a rectangle is a square, then all its four sides are equal. <br />
+						q : If all the four sides of a rectangle are equal, then the rectangle is a square</p>
+				</li>
+				<li>
+					<p>p: If the sum of digits of a number is divisible by 3, then the number is divisible by 3. <br />
+						q: If a number is divisible by 3, then the sum of its digits is divisible by 3.</p>
+				</li>
+			</ol>
+		</div>
+		<p>
+			<span class="highlight01"> Solution</span>
+			<br />
+		</p>
+		<div class="list1-ol default-spaced-indented list-numbered-style-lower-roman">
+			<ol>
+				<li>
+					<p>A rectangle is a square if and only if all its four sides are equal.</p>
+				</li>
+				<li>
+					<p>A number is divisible by 3 if and only if the sum of its digits is divisible by 3.</p>
+				</li>
+			</ol>
+		</div>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 8:</h4>
+		<p>	Check whether the following statement is true or not. <br />
+			<span class="highlight01"> Solution </span>
+			<br />
+			If <span class=\"latex\" lang=\"latex\"> \(  x, \ y \ \epsilon \ Z  \) </span> are such that x and y are odd, then xy is odd.	<br />
+			Let p : <span class=\"latex\" lang=\"latex\"> \(  x, \ y \ \epsilon \ Z  \) </span> such that x and y are odd <br />
+			q : xy is odd <br />
+			To check the validity of the given statement, we apply Case 1 of Rule 3. That is assume that if p is true, then q is true. <br />
+			p is true means that x and y are odd integers. Then <br />
+			x = 2m + 1, for some integer m. y = 2n + 1, for some integer n. <br />
+			Thus xy = (2m + 1)(2n + 1) <br />
+			= 2(2mn + m + n) + 1 <br />
+			This shows that xy is odd. Therefore, the given statement is true. <br />
+			Suppose we want to check this by using Case 2 of Rule 3, then we will proceed as follows. <br />
+			We assume that q is not true. This implies that we need to consider the negation of the statement q. This gives the statement <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \sim \ q  \) </span> : Product xy is even. <br />
+			This is possible only if either x or y is even. This shows that p is not true. Thus we have shown that <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \sim \ q \ \Rightarrow \ \sim p  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 9:</h4>
+		<p>By giving a counter example, show that the following statement is false. If n is an odd integer, then n is prime.<br />
+			<span class="highlight01"> Solution </span>
+			<br />
+			The given statement is in the form "if p then q" we have to show that this is false. <br />
+			For this purpose we need to show that if p then <span class=\"latex\" lang=\"latex\"> \(  \sim \ q  \) </span>. <br />
+			To show this we look for an odd integer n which is not a prime number. 9 is one such number.<br />
+			So n = 9 is a counter example. Thus, we conclude that the given statement is false. <br />
+			In the above, we have discussed some techniques for checking whether a statement is true or not. </p>
+		<h4 class="solved-examples-question">Example 10:</h4>
+		<p>For the given statements identify the necessary and sufficient conditions. <br />
+			t: If you drive over 80 km per hour, then you will get a fine.<br />
+			<span class="highlight01"> Solution </span>
+			<br />
+			Let p and q denote the statements: <br />
+			p : you drive over 80 km per hour. <br />
+			q : you will get a fine. <br />
+			The implication if p, then q indicates that p is sufficient for q. That is driving over 80 km per hour is sufficient to get a fine. <br />
+			Here the sufficient condition is "driving over 80 km per hour": <br />
+			Similarly, if p, then q also indicates that q is necessary for p. That is </p>
+	</section>
+</section> 

@@ -1,0 +1,1253 @@
+---
+title: "Number Theory"
+topic: "Number Theory"
+subject: "Maths"
+channel: "Foundation 9"
+tags: [Maths, Foundation9]
+categories: [Maths, Foundation9]
+menuname: "Foundation9-submenu"
+draft: false
+image: "image/Foundation9-Maths-NumberTheory.png"
+defaultSummary: "Number Theory is an important Topic in the Subject of Maths for the Foundation 9 course.  Please review it thoroughly and attempt all the associated testing material to perform well on the Foundation 9 related Exams."
+menu:
+  Foundation9-submenu:
+    identifier: "Foundation9-Maths-NumberTheory"
+    name: "Number Theory"
+    url: "Foundation9/Maths/NumberTheory"
+    weight: 1800
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="skill" id="01">
+	<h3 class="skill-heading">Synopsis</h3>
+	<section class="subskill">
+		<h4 class="skill-subheading">The Greatest Integer Function</h4>
+		<p>Given any real number x, we can alway's find an integer n such that <span class=\"latex\" lang=\"latex\"> \(  n \leq x &gt; n + 1  \) </span>. This enables us to write x = n + f, where n is an integer and <span class=\"latex\" lang=\"latex\"> \(  0 \leq f &lt; 1  \) </span>. The integer n is called the integral part of x and the number f is called the fractional part of n. It is customary to denote n by [x] and call it the greatest integer not exceeding x. In this terminology, f = x - [x] </p>
+	</section>
+</section>
+<section class="skill" id="02">
+	<h3 class="skill-heading">Definition</h3>
+	<p>The greatest integer function ([ ]) is defined by setting [x] = the greatest integer not exceeding x, for every real number x. <br />
+		As an obvious consequence of the above definition we find that if x be an integer, then [x] = x. <br />
+		<span class="highlight01">For example:</span> [-4] = - 4, [4] = 4, [- 4.2] = - 5, [4.7] = 4 </p>
+	<section class="subskill">
+		<h4 class="skill-subheading">Properties of greatest integer function</h4>
+		<div class="list-custom-block-list-ol spaced20 indented20">
+			<ol>
+				<li>
+					<p>
+						<span class=\"latex\" lang=\"latex\"> \( [x] \leq x &lt; x [x] + 1 \ and \ x - 1 &lt; [x] \leq x, \ 0 \leq x, \ 0 \leq x - [x] &lt; 1  \) </span>
+					</p>
+				</li>
+				<li>
+					<p>
+						<span class=\"latex\" lang=\"latex\"> \(  If x \geq 0, \ [x] = \sum\limits_{1 \leq i \leq x} 1  \) </span>
+					</p>
+				</li>
+				<li>
+					<p>[x + m] = [x] + m, <br />
+						If m is an integer.</p>
+				</li>
+				<li>
+					<p>
+						<span class=\"latex\" lang=\"latex\"> \(  [x] + [y]  \leq [x + y] \leq [x] + [y] + 1  \) </span>
+					</p>
+				</li>
+				<li>
+					<p>[x] + [-x] = 0; if x is an integer = -1 otherwise.</p>
+				</li>
+				<li>
+					<p>
+						<span class=\"latex\" lang=\"latex\"> \(  \left [ \frac{[x]}{m} \right ] = \left [ \frac{x}{m} \right ]  \) </span>, if m is a positive integer. </p>
+				</li>
+				<li>
+					<p>-[-x] is the least integer greater than or equal to x. <br />
+						This is denoted as (x) (read as ceiling x) <br />
+						For example: [2.5] = 3, [-2.5.] = - 2</p>
+				</li>
+				<li>
+					<p>[x + 0.5] is the nearest integer to x. <br />
+						If x is midway between two integers, [x + 0.51 represents the larger of the two integers.</p>
+				</li>
+				<li>
+					<p>The number of positive integers less than or equal to n and divisible by m is given by <span class=\"latex\" lang=\"latex\"> \(  \left [ \frac{n}{m} \right ]  \) </span>.</p>
+				</li>
+				<li>
+					<p>If p is a prime number and e is the largest exponent of p such that <span class=\"latex\" lang=\"latex\"> \(  p^e| n!, \ then \ e = \sum \limits_{i= 1}^{\infty} \left [ \frac{n}{p_i} \right ]  \) </span>
+					</p>
+				</li>
+			</ol>
+		</div>
+	</section>
+</section>
+<section class="skill" id="03">
+	<h3 class="skill-heading">Theorems on Number Theory</h3>
+	<section class="subskill">
+		<h4 class="skill-subheading">Theorem:</h4>
+		<p>If a is real number, c is natural number, then <span class=\"latex\" lang=\"latex\"> \(  \left [ \frac{[a]}{c} \right ] = \left [ \frac{a}{c} \right ]  \) </span>
+		</p>
+		<h5 class="skill-smallheading">Proof</h5>
+		<p>Let [a] = n i.e., n is largest integer <span class=\"latex\" lang=\"latex\"> \(  \leq a   \) </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \therefore \ a = n + r, \ 0 \leq r &lt; 1  \\\\[3pt]
+				Let \ \left [ \frac{[a]}{c} \right ] = \left [ \frac{n}{c} \right ] = m  \\\\[3pt]
+				\therefore \ \frac{n}{c} = m + s, \ where \ 0 \leq s &lt; 1  \\\\[3pt]
+				\therefore \ n = mc + cs, \ where \ 0 \leq cs &lt; c  \\\\[3pt]
+				Now, \ LHS = - \left [ \frac{[a]}{c} \right ] = \left [ \frac{n}{c} \right ] = m  \\\\[3pt]
+				RHS	= \left [ \frac{a}{c} \right ] = \left [ \frac{n + r}{c} \right ]  \end{align}  \) </span>
+			<br />
+			value of a from (1) <br />
+			value of n from (2). <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  = \left [ \frac{mc + cs + r}{c} \right ] = \left [ m + \frac{cs + r}{c} \right ]  \\\\[3pt]
+				From \ (2), \ cs \leq (c - 1) \ and \ r &lt; 1 \ Adding  \\\\ cs + r &lt; c - 1 + 1  \\\\[3pt]
+				\Rightarrow \ cs + r &lt; c  \\\\[3pt]
+				\therefore \ \frac{cs + r}{c} &lt; 1 \ \therefore \ RHS = \left [ m + \frac{cs + r}{c} \right ] = m \ \therefore \ LHS = RHS.  \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="subskill">
+		<h4 class="skill-subheading">Theorem:</h4>
+		<p>For every positive real number <span class=\"latex\" lang=\"latex\"> \(  \left [ \frac{x}{2} \right ] + \left [ \frac{x + 1}{2} \right ] = [x]  \) </span>
+		</p>
+		<h5 class="skill-smallheading">Proof</h5>
+		<p>First suppose that x = 2m + y, where m is an integer and <span class=\"latex\" lang=\"latex\"> \( 0 leq y &lt; 1  \) </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  [x] = 2m, \ \left [ \frac{x}{2} \right ] = m  \\\\[3pt]
+				\left [ \frac{x + 1}{2} \right ] = \left [ \frac{2m + 1 + y}{2} \right ] = m  \\\\[3pt]
+				since \ \frac{1}{2} \leq \frac{1 + y}{2} &lt; 1  \\\\[3pt]
+				\therefore \ \left [ \frac{x}{2} \right ] + \left [ \frac{x + 1}{2} \right ] = [x]  \\\\[3pt]
+				Next, \ let \ x = (2m + 1) + y, \ \text{where m is an integer and} \ 0 \leq y &lt; 1.  \\\\[3pt]
+				Then, \ \left [ \frac{x + 1}{2} \right ] = m, \ \left [ \frac{x + 1}{2} \right ] = \left [ \frac{(2m + 2) + y}{2} \right ] = m + 1  \\\\[3pt]
+				\therefore \ \left [ \frac{x}{2} \right ] + \left [ \frac{x + 1}{2} \right ] = [x]  \end{align}  \) </span>
+			<br />
+			The desired equality holds for all possible values of x.</p>
+	</section>
+	<section class="subskill">
+		<h4 class="skill-subheading">Divisibility</h4>
+		<h5 class="skill-smallheading">Definition</h5>
+		<p>An integer a is said to divide an integer b if there exists an integer c such that ac = b. If a divides b, we also say that a is a divisor (or factor) of b, or that b is a multiple of a. Each of these facts is often written as a|b. If a is not a divisor of b, we write a/b.</p>
+	</section>
+	<section class="subskill">
+		<h4 class="skill-subheading">Theorem</h4>
+		<p>Let a, b, c, p, q be arbitrary integers. Divisibility has the following properties: </p>
+		<div class="list-custom-block-list-ol spaced20 indented20">
+			<ol>
+				<li>
+					<p>a|a   (reflexive property)</p>
+				</li>
+				<li>
+					<p>If a|b and b|c, then a|c   (transitive property)</p>
+				</li>
+				<li>
+					<p>If a|b and a|c, then a|(pb + qc)  (linearity property)  </p>
+				</li>
+				<li>
+					<p>If a|b, then ca|cb  (multiplication property)</p>
+				</li>
+				<li>
+					<p>If ca|cb, and  <span class=\"latex\" lang=\"latex\"> \(  c \neq 0  \) </span>, then a|b   (cancellation law)</p>
+				</li>
+				<li>
+					<p>1|a (property of 1)</p>
+				</li>
+				<li>
+					<p>a|0	(divisibility property of zero)</p>
+				</li>
+				<li>
+					<p>If a|b and <span class=\"latex\" lang=\"latex\"> \(  a \neq 0  \) </span>, then (b/a) | b</p>
+				</li>
+				<li>
+					<p>a|b and <span class=\"latex\" lang=\"latex\"> \( b \neq 0 , \ then \ \Rightarrow \ |a| \leq |b|  \) </span>
+					</p>
+				</li>
+				<li>
+					<p>a|b and <span class=\"latex\" lang=\"latex\"> \(  b|a \ \Rightarrow \ |a| = |b|  \) </span>
+					</p>
+				</li>
+			</ol>
+		</div>
+		<p>Because of the property (j) described in the above theorem, for each <span class=\"latex\" lang=\"latex\"> \(  a \epsilon Z  \) </span>.the integers a and -a are said to be associated.</p>
+		<h5 class="skill-smallheading">Definition</h5>
+		<p>An integer p &gt; 1 is said to be a prime number (or simply a prime) if its only divisors are  <span class=\"latex\" lang=\"latex\"> \(  \pm 1  \) </span> and  <span class=\"latex\" lang=\"latex\"> \(  \pm p.  \) </span>
+			<br />
+			For example, 2, 5, and 7 are primes, whereas 1, -1, -24 are not primes.</p>
+		<h5 class="skill-smallheading">Definition</h5>
+		<p>An integer p &gt; 1 is said to be a composite number if it has at least one divisor other than <span class=\"latex\" lang=\"latex\"> \(  \pm 1  \) </span> and  <span class=\"latex\" lang=\"latex\"> \(  \pm p.  \) </span>
+			<br />
+			For example: 6, 27 and 143 are composite numbers whereas -1, 1, 2, 7, 13 are not composite numbers. <br />
+			As a result of the above definitions we find that every integer belongs to one of the following classes: </p>
+		<div class="list-custom-block-list-ol spaced20 indented20">
+			<ol>
+				<li>
+					<p>{0};</p>
+				</li>
+				<li>
+					<p>the units {-1, 1};</p>
+				</li>
+				<li>
+					<p>the primes and their associated;</p>
+				</li>
+				<li>
+					<p>composite numbers and their associated.</p>
+				</li>
+			</ol>
+		</div>
+		<h5 class="skill-smallheading">Division Algorithm</h5>
+		<p>For any two natural numbers a and b, there exists unique numbers q and r called re-spectively quotient and remainder <br />
+			a = bq + r, where <span class=\"latex\" lang=\"latex\"> \(  0 \leq r &lt; b.  \) </span>
+		</p>
+		<h5 class="skill-smallheading">Common Divisor</h5>
+		<p>If a number 'c' divides any two numbers a and b i.e., if c|a and c|b, then c is known as a common divisor of a and b.</p>
+		<h5 class="skill-smallheading">Greater Common Divisor</h5>
+		<p>If a number d divides a and b and is divisible by all the common divisors of a and b, then d is known as the greatest common divisor (gcd) of a and b or HCF of a and b. <br />
+			The gcd of numbers a and b is the unique positive integer d with the following two properties.</p>
+		<div class="list-custom-block-list-ol spaced20 indented20">
+			<ol>
+				<li>
+					<p>d|a and d|b</p>
+				</li>
+				<li>
+					<p>If c|a and c|b; then c|d</p>
+				</li>
+			</ol>
+		</div>
+		<p>we write it as (a, b) = d <br />
+			For example: (12, 15) = 3;(7, 8) = 1 <br />
+			<span class="highlight01">Note 1: </span> (a, b) = (b, a) <br />
+			<span class="highlight01">Note 2:</span> If a|b; then (a, b) = a </p>
+		<h5 class="skill-smallheading">Properties of gcd</h5>
+		<div class="list-custom-block-list-ol spaced20 indented20">
+			<ol>
+				<li>
+					<p>If (b, c) = g and d is a common divisor of b and c, then d is a divisor of g.</p>
+				</li>
+				<li>
+					<p>For any m &gt; 0, (mb, mc) = m(b, c)</p>
+				</li>
+				<li>
+					<p>If d|b and d|c and d &gt; 0,then <br />
+						<span class=\"latex\" lang=\"latex\"> \(   \left ( \frac{b}{d}, \ \frac{c}{d} \right ) =  \left ( \frac{1}{d} \right )(b,c)  \) </span>
+					</p>
+				</li>
+				<li>
+					<p>If (b, c) = g, then <br />
+						<span class=\"latex\" lang=\"latex\"> \(   \left ( \frac{b}{g}, \ \frac{c}{g} \right ) = 1  \) </span>
+					</p>
+				</li>
+				<li>
+					<p>If (b, c) = g, then there exists two integers x aand y such that g = xb + yc</p>
+				</li>
+				<li>
+					<p>If (a, b) = 1 and (a, c) = 1, then (a, bc) = 1</p>
+				</li>
+				<li>
+					<p>If a|bc = 1 and (a, b) = 1, then a|c = 1</p>
+				</li>
+			</ol>
+		</div>
+		<p>
+			<span class="highlight01">For example:</span>
+			<br />
+			a = 6, b = 21, c = 10 <br />
+			<span class=\"latex\" lang=\"latex\"> \(   6|21 \times 10  \) </span> but (6, 21) = 3 and (6, 10) = 2 and 6 divides neither 21 nor 10. <br />
+			LCM of two integers a, b is the smallest positive integer divisible by both a and b and it is denoted by [a, b]. <br />
+			The Euclidean algorithm can be used to find the gcd of two integers as well as representing gcd as in 5th property. Consider 2 numbers 18, 28 <br />
+			28 = 1.8 + 10; 18 = 1.10 + 8 <br />
+			10 = 1.8 + 2; 8 = 4.2 + 0 <br />
+			(18, 28) = 2 <br />
+			(18, 28) = 2 = 10 - 1.8 <br />
+			= 10 - (18 - 1.10) <br />
+			= 2.10 -1.18 <br />
+			= 2(28 - 1.18) - 1.18 <br />
+			= 2.28 - 3.18 <br />
+			= 2.28 + (-3)18 <br />
+			<span class="highlight01">Note:</span>
+			<br />
+			The representation in 5th property is not unique. In fact we can represent (a, b) as xa + yb in infinite number of ways where <span class=\"latex\" lang=\"latex\"> \(  x, \ y \epsilon Z. \) </span>
+			<br />
+			Z = set of all integers. <br />
+			In above example, 252 is LCM of 18 and 28. <br />
+			252 = 9.28 <br />
+			252 = 14.18 <br />
+			(18, 28) = 2.28 + (-3).18 <br />
+			= 2.28 + 252K + (-3)18 - 252 K <br />
+			= (2 + 9K) 28 + (-3 - 14K)18 <br />
+			where K is any integer.</p>
+		<h5 class="skill-smallheading">Unit</h5>
+		<p>1 is called unit in the set of positive integers.</p>
+		<h5 class="skill-smallheading">Prime</h5>
+		<p>A positive integer P is said to be prime, if </p>
+		<div class="list-custom-block-list-ol spaced20 indented20">
+			<ol>
+				<li>
+					<p>p &gt; 1</p>
+				</li>
+				<li>
+					<p>P has no divisors except 1 and P i.e., A number which has exactly two different factors, itself and one, is called a prime number.</p>
+				</li>
+			</ol>
+		</div>
+		<p>Thus, 2, 3, 5, 7, 11, ... are primes. 2 is the only even number which is prime. All other primes being odd. <br />
+			But the converse is not true, i.e., every odd number need not be prime.</p>
+		<h5 class="skill-smallheading">Composite</h5>
+		<p>Every number (greater than one) which is not prime is called composite number. i.e., a number which has more than two different factors is called composite. For example 18 is a composite number because 2, 3, 6, 9 are divisors of 18 other than 1 and 18. <br />
+			We can also define a composite number as: A natural number n is said to be composite if there exists integers 1 and m such that n = lm, where 1 &lt; l &lt; n and l &lt; m &lt; n.</p>
+		<h5 class="skill-smallheading">Remark</h5>
+		<div class="list-custom-block-list-ol spaced20 indented20">
+			<ol>
+				<li>
+					<p>A prime number P can be written as a product only in one way namely P.1.</p>
+				</li>
+				<li>
+					<p>A composite number n can also be written as n.1. But composite number can be written in one more way also as mentioned above.</p>
+				</li>
+				<li>
+					<p>A composite number has at least three factors.</p>
+				</li>
+			</ol>
+		</div>
+		<p>
+			<span class="highlight01">Note:</span>
+			<br />
+			1 is neither prime nor composite.</p>
+		<h5 class="skill-smallheading">Twin primes</h5>
+		<p>A pair of numbers is said to be twin primes, if they differ by 2. <br />
+			<span class="highlight01"> Example: </span> 3, 5 are twin primes.</p>
+		<h5 class="skill-smallheading">Perfect number</h5>
+		<p>A number n is said to be perfect if the sum of all divisors of n (including n ) is equal to 2n. <br />
+			<span class="highlight01"> Example: </span> 28 is a perfect number because divisors of 28 are 1, 2, 4, 7, 14, 28. <br />
+			Sum of divisors of n(= 28) = 1 + 2 + 4 + 7 + 14 + 28 = 56 = 2n </p>
+		<h5 class="skill-smallheading">Coprime Integers</h5>
+		<p>Two numbers a and b are said to be coprime if 1 is only common divisors of a and b. <br />
+			i.e., if gcd of a and b = 1 i.e., if (a, b) = 1 <br />
+			<span class="highlight01"> Example: </span>(4, 5) = 1, (8, 9) = 1.</p>
+	</section>
+	<section class="subskill">
+		<h4 class="skill-subheading">Theorem:</h4>
+		<p>If a = qb + r, then (a, b) = (b, r)</p>
+		<h5 class="skill-smallheading">Proof</h5>
+		<p> Let (a, b) = d and (b, r) = e <br />
+			since, (a, b) = d <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \therefore  \) </span> d|a and d|b  <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \therefore  \) </span> d|a and d|qd <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \therefore  \) </span> d|(a - qb) <br />
+			i.e., d|r [since a - qb = r] <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \therefore  \) </span> d is common divisor of b and r. <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \therefore  \) </span> d|e [since e is the gcd of b and r].........(1) <br />
+			Again since (b, r) = e <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \therefore  \) </span> e|b and e|r <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \therefore \ \frac{e}{bq} \ and \ \frac{e}{r}  \) </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \therefore  \) </span>  e|bq + r  <br />
+			i.e., e|a [since a = bq + r] <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \therefore  \) </span>  e is a common divisor of a and b.<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \therefore  \) </span>  e|d <br />
+			[since d is the gcd of a and b]. ...........(2)<br />
+			From (1) and (2), we have d = e <br />
+			i.e., (a, b) = (b, r) </p>
+		<h5 class="skill-smallheading">Remark</h5>
+		<p>The above result can also be stated as gcd of a and b is same as gcd of b and r, where r is remainder obtained on dividing a by b.</p>
+		<h5 class="skill-smallheading">Corollary</h5>
+		<p>If (a, b) = 1, then (b, r) = (a, b) = 1 <br />
+			i.e., if a is coprime to b, then r is coprime to b. r is remainder obtained on dividing a by b. </p>
+	</section>
+	<section class="subskill">
+		<h4 class="skill-subheading">Theorem:</h4>
+		<p>If d is the greatest common divisor of a and b, then there exists integers x and y such that d = xa + yb and d is the least positive value of xa + yb.</p>
+		<h5 class="skill-smallheading">Proof</h5>
+		<p>By successive application of division algorithm to numbers a and b<br />
+			Let <span class=\"latex\" lang=\"latex\"> \(  r_1, \ r_2, \ .... \ r_n  \) </span> be successive remainders. <br />
+			Therefore <br />
+			<span class=\"latex\" lang=\"latex\"> \( a = bq_1 + r_1, \ 0 &lt; r_1 &lt; b  \) </span> (Dividing a by b) <br />
+			<span class=\"latex\" lang=\"latex\"> \( b = r_1 q_2, \ +  r_2, \ 0 &lt; r_2 &lt; r_1  \) </span> (Dividing b by remainder <span class=\"latex\" lang=\"latex\"> \(  r_1  \) </span>) <br />
+			<span class=\"latex\" lang=\"latex\"> \(  r_1 = r_2 q_3 + r_3, \ 0 &lt; r_3 &lt; r_2  \) </span> (Dividing <span class=\"latex\" lang=\"latex\"> \(  r_1  \) </span> by remainder <span class=\"latex\" lang=\"latex\"> \(  r_2  \) </span>) <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  r_{n - 2} = r_{n - 1} q_n + r_n, \ 0 &lt; r_n &lt; r_{n - 1}  \\\\[3pt]
+				r_{n - 1} = r_n q_{n + 1} + r_{n + 1}, \ 0 &lt; r_{n + 1} &lt; r_n   \end{align}  \) </span>
+			<br />
+			Since <span class=\"latex\" lang=\"latex\"> \( r_1 &gt; r_2 &gt; ...  \) </span> is a set of decreasing integers, this process must terminate after a finite number of step. i.e.., remainder must be zero after some stage. <br />
+			So let <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  r_{n + 1} = 0  \\\\[3pt]
+				\therefore \ r_{n - 1} = r_n q_{n + 1} + 0 = r_n q_{n + 1}  \\\\[3pt]
+				r_n | r_{n - 1}  \\\\[3pt]
+				\therefore \ (r_{n - 1}, \ r_n) = r_n \  \ [If \ a|b, \ then \ (a, \ b) = a]  \\\\[3pt]
+				Now, \ (a, \ b) = (b, \ r_1) = (r_1, \ r_2) = (r_2, \ r_3) = ..... \\\\[3pt]
+				= (r_{n - 1}, \ r_n ) = r_n ....... \ (1)  \end{align}  \) </span>
+			<br />
+			i.e., gcd of a and b is <span class=\"latex\" lang=\"latex\"> \(  r_n  \) </span>. <br />
+			From first of above equations<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  r_1 = a - dq_1 = ax_1 + by_1, \ where \ x_1 = 1, \ y_1 = - q,   \\\\[3pt]
+				\text{Substituting the value of} \ r_1 = a - bq_1 \ in \ r_2 = b - r_1 q_2  \\\\[3pt]
+				r_2 = b - r_1 q_2 = b - (a - bq_1)q_2  \\\\[3pt]
+				= b - aq_2 + bq_1 q_2  \\\\[3pt]
+				= -aq_2 + b(1 + q_1 q_2)  \\\\[3pt]
+				= ax_2 + by_2, \ where \ x_2 = -q_2  \\\\[3pt]
+				y_2 = 1 + q_1 q_2  \\\\[3pt]
+				Similarly,  \\\\[3pt]
+				r_3 = ax_3 + by_3 \ and \ so \ on  \\\\[3pt]
+				r_n = ax_n + by_n  \\\\[3pt]
+				or \ r_n = ax + by  \end{align}  \) </span>
+			<br />
+			i.e., gcd of a and <span class=\"latex\" lang=\"latex\"> \(  b = r_n  \) </span> can be expressed as (a, b) = d = ax + by [By (1)].<br />
+			<span class="highlight01">Part II </span>
+			<br />
+			(a, b) = d( since, d|a and d|b) <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \therefore  \) </span> d|(ax + yb) for all values of x and y. <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \therefore \ \exists  \) </span> an integer k such that <br />
+			xa + yb = kd .....(2) <br />
+			But least value of k is 1. <br />
+			Putting k = 1 in (2), least value of xa + yb is d.</p>
+		<h5 class="skill-smallheading">Corollary</h5>
+		<p>If a and b are coprime integers i.e., if (a, b) = 1, then there exists integers x and y such that <br />
+			ax + by = 1</p>
+	</section>
+	<section class="subskill">
+		<h4 class="skill-subheading">Theorem:</h4>
+		<p>Prove that the product of any r consecutive numbers is divisible by r!.</p>
+		<h5 class="skill-smallheading">Proof</h5>
+		<p>
+			<span class=\"latex\" lang=\"latex\"> \(  P_n = n(n + 1)(n + 2) ..... (n + r - 1)  \) </span> ..... (1) <br />
+			be the product of r consecutive integers beginning with n. <br />
+			We shall prove the theorem by induction method. <br />
+			For r = 1, <span class=\"latex\" lang=\"latex\"> \(  P_n = n  \) </span> is divisible by 1! for all n. <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \therefore  \) </span> The theorem is true for r = 1 i.e., the product of 1 (consecutive) integer is divisible by 1!. <br />
+			Let us assume the theorem to be true for the product of (r - 1) consecutive integers. <br />
+			i.e., every product of (r - 1) consecutive integers is divisible by (r - 1)!. <br />
+			Changing n to n + 1 in (1) <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \therefore \ P_{n + 1} = (n + 1) (n + 2) ... (n + r)  \) </span>
+			<br />
+			Multiplying both sides by n <br />
+			<span class=\"latex\" lang=\"latex\"> \(  nP_{n + 1} = n(n + 1)(n + 2) ....(n + r)  \) </span>
+			<br />
+			= n(n + 1)(n + 2) .... (n + r - 1)(n + r) <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  nP_{n + 1} + (n + r)P_n  \\\\[3pt]
+				= nP_n + rP_n  \\\\[3pt]
+				or \ n(P_{n + 1} - P_n) = r.P_n  \\\\[3pt]
+				or \ P_{n + 1} P_n = r. \frac{P_n}{n}  \\\\[3pt]
+				= r. \frac{n(n + 1)(n + 2).....(n + r - 1)}{n} \ \ \ \ [Using \ value \ P_n]  \\\\[3pt]
+				or \ P_{n + 1} - P_n = r(n + 1)(n + 2) .... (n + r - 1)  \\\\[3pt]
+				or \ P_{n + 1} - P_n = r  \end{align}  \) </span>
+			<br />
+			Product of (r - 1) consecutive integers = rP  <br />
+			where P denotes the product of (r - 1) consecutive integers. <br />
+			But the product P of (r - 1) consecutive integers is divisible by (r - 1)!. <br />
+			[By assumption] <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \therefore \ P = k(r - 1)!  \\\\[3pt]
+				\therefore \ (1) \ becomes \ P_{n + 1} - P_n = rk(r - 1)! = kr( r - 1)! = k(r)!  \\\\[3pt]
+				i.e., \ r!|(p_{n + 1} - P_n), \ \forall \ n  \\\\[3pt]
+				Put \ n = 1  \\\\[3pt]
+				\therefore \ r|(P_2 - P_1)  \\\\[3pt]
+				But \ P_1 = 1.2.3.... r! \ is \ divisible \ by \ r!  \\\\[3pt]
+				i.e., \ r_1!|P_1  \\\\[3pt]
+				\therefore \ r!|\(P_2 - P_1) + P_1 \ i.e.,  \\\\ r!|P_2  \\\\[3pt]
+				Put \ n = 2,  \\\\[3pt]
+				\therefore \ r!|(P_3 - P_2)  \\\\[3pt]
+				But \ r!|P_2  \\\\[3pt]
+				\therefore \ r!|(P_3 - P_2) + P_2  \\\\[3pt]
+				i.e., \ r!|P_3 \ and \ so \ on.  \end{align}  \) </span>
+			Generalising we can say that <span class=\"latex\" lang=\"latex\"> \(  r!|P_n  \) </span>  for all n. </p>
+		<h5 class="skill-smallheading">Corollary</h5>
+		<p>
+			<span class=\"latex\" lang=\"latex\"> \( ^nC_r  \) </span> is an integer <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  ^nC_r = \frac{n!}{r!(n - r)!}  \\\\[3pt]
+				= \frac{n(n - 1)(n - 2)..... (n - r + 1)(n - r)!}{r!(n - r)!}  \\\\[3pt]
+				= \frac{\text{the product of r consecutive integer}}{r!}  \end{align}  \) </span>
+			<br />
+			= An integer ( since the product of r consecutive integer is divisible by r!). <br />
+			<span class="highlight01">Note: </span>  Therefore the product of two consecutive integers is divisible by 2! = 2; the product of any three consecutive integers is divisible by 3 = 6! and so on.</p>
+	</section>
+	<section class="subskill">
+		<h4 class="skill-subheading">Theorem:</h4>
+		<p>If possible suppose that the numbers of prime is finite. <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \therefore \ \exists  \) </span> the greatest prime say q. <br />
+			Let b denote the product of these primes 2, 3, 5, ... q. <br />
+			i.e., let b = 2.3.5...q   ........ (1) <br />
+			let a = b + 1 ... (2) <br />
+			Surely, <span class=\"latex\" lang=\"latex\"> \(  a \neq 1  \) </span>  (since a = b + 1 &gt; 1) <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \therefore  \) </span> The number a must have a prime say factor p i.e., p|a. <br />
+			Now p is one of the primes 2, 3, 5, 7 .... q (Because according to our assumption 2, 3, 5, 7, ... q are the only primes). <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \therefore  \) </span> P|b	( since b = 2.3.5 ... q) <br />
+			Now since p|a and p|b <br />
+			p|a - b or p|1   ( since, from (2), a - b = 1) <br />
+			p = 1 (which is impossible).   ( since, 1 is not prime) <br />
+			So our supposition is false. <br />
+			The number of primes is infinite.</p>
+	</section>
+	<section class="subskill">
+		<h4 class="skill-subheading">Theorem:</h4>
+		<p>The number of divisors of a composite number n: If n is a composite number of the order <span class=\"latex\" lang=\"latex\"> \(  n = P_1^{\alpha_1}.P_2^{\alpha_2}....P_k^{\alpha_k}  \) </span>, then the number of divisors denoted by d(n) is <br />
+			<span class=\"latex\" lang=\"latex\"> \(  (\alpha_1 + 1) \ (\alpha_2 + 1) ....., \ (\alpha_k + 1)  \) </span>
+		</p>
+		<h5 class="skill-smallheading">Proof:</h5>
+		<p>Let n be any composite number, let d(n) denote the number of divisors of composite number n by Fundamental Theorem of Arithmetic. n can be expressed as the product of the powers of primes .<span class=\"latex\" lang=\"latex\"> \(  n = P_1^{\alpha_1}.P_2^{\alpha_2}....P_k^{\alpha_k} \ where \ P_1, \ P_2, \ .... \ P_k  \) </span> are distinct primes and <span class=\"latex\" lang=\"latex\"> \(  \alpha_1, \ \alpha_2.... , \ \alpha_k  \) </span> are non negative integers.  <br />
+			since <span class=\"latex\" lang=\"latex\"> \(  p_1  \) </span> is a prime number, therefore, the only divisors of <span class=\"latex\" lang=\"latex\"> \(  P_1^{\alpha_1} \ are \ 1, \ P_1, \ P_1^{2}, \ P_1^{3}, \ ... \ P_1^{\alpha_1}  \) </span>
+			<br />
+			The number of these divisors of <span class=\"latex\" lang=\"latex\"> \(  P_1^{\alpha_1} = \alpha_1 + 1  \) </span>
+			<br />
+			Similarly, the number of divisors of <span class=\"latex\" lang=\"latex\"> \(  P_2^{\alpha_2} = \alpha_2 + 1  \) </span>
+			<br />
+			The number of divisors of <span class=\"latex\" lang=\"latex\"> \(  P_k^{\alpha_k} = \alpha_k + 1  \) </span>
+			<br />
+			Therefore, the total number of divisors of <span class=\"latex\" lang=\"latex\"> \(  n = P_1^{\alpha_1}.P_2^{\alpha_2}....P_k^{\alpha_k} = (\alpha_1 + 1) \ (\alpha_2 + 1) ....., \ (\alpha_k + 1)  \) </span>
+			<br />
+			[Every divisor of <span class=\"latex\" lang=\"latex\"> \(  P_i^{\alpha_i} (1 \leq i \leq k)  \) </span> is a divisor of n]. <br />
+			i.e., d[n] = <span class=\"latex\" lang=\"latex\"> \(  (\alpha_1 + 1)(\alpha_2 + 1) .... (\alpha_k + 1)  \) </span>
+			<br />
+			<span class="highlight01"> Note: </span> Let <span class=\"latex\" lang=\"latex\"> \(  n = P_1^{\alpha_1}.P_2^{\alpha_2}.P_3^{\alpha_3}\ [P_1, \ P_2, \ P_3 \ \text{are distinct prime numbers.}]  \) </span>
+		</p>
+		<div class="list-custom-block-list-ol spaced20 indented20">
+			<ol>
+				<li>
+					<p>If n is a perfect square then d(n) is odd ( since, all the <span class=\"latex\" lang=\"latex\"> \(  d_i  \) </span> are even).</p>
+				</li>
+				<li>
+					<p>If n is not a perfect square then, d(n) is even. </p>
+				</li>
+			</ol>
+		</div>
+		<p> [The number of ways of writing n are the product of two factors]. <br />
+			If n is a perfect square, then number of ways are equal to <span class=\"latex\" lang=\"latex\"> \(  \frac{d(n) + 1}{2}  \) </span>. <br />
+			If n is not a perfect square, then number of ways are equal to <span class=\"latex\" lang=\"latex\"> \(  \frac{d(n)}{2}  \) </span>.</p>
+	</section>
+	<section class="subskill">
+		<h4 class="skill-subheading">Theorem:</h4>
+		<p>The sum of the divisors of any composite number n is denoted by <span class=\"latex\" lang=\"latex\"> \(  \sigma(n) \) </span> which is equal to <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \left ( \frac{P_1^{\alpha_1  + 1}}{P_1 - 1} \right ) \left ( \frac{P_2^{\alpha_2  + 1} - 1 }{P_2 - 1} \right )..... \left ( \frac{P_k^{\alpha_k  + 1} - 1 }{P_1 - 1} \right )  \) </span>
+		</p>
+		<h5 class="skill-smallheading">Proof:</h5>
+		<p>Let n be any composite number and let <span class=\"latex\" lang=\"latex\"> \(  \sigma(n) \) </span> is sum of positive divisors of n. By Fundamental Theorem of Arithmetic n can be expressed as the product of the powers of primes. <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \therefore \ n = P_1^{\alpha_1}.P_2^{\alpha_2}....., + p_k^{\alpha_k} \) </span>
+			<br />
+			[where <span class=\"latex\" lang=\"latex\"> \(  p_1, p_2,....,p_k  \) </span> are distinct primes and <span class=\"latex\" lang=\"latex\"> \(  \alpha_1, \ \alpha_2, \ .... \ \alpha_k  \) </span> are non negative integer] <br />
+			since <span class=\"latex\" lang=\"latex\"> \(  p_1  \) </span> is prime number <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \therefore \ divisors \ of \  p_1^{\alpha_1} \ are \ only  \ 1, \ p_1, \ P_1^{2},....p_1^{\alpha_1}  \) </span>
+			<br />
+			sum of the divisor of <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  p_1^{\alpha_1} = 1 + p_1 + {p_1}^2 + \ ..... + \ p_1^{\alpha_1}  \\\\[3pt]
+				=  \frac{1 \left[ p_1^{\alpha + 1} \right ]}{p - 1}  \end{align}  \) </span>
+			<br />
+			[since RHS is a Geometric Progression with a = 1, r = <span class=\"latex\" lang=\"latex\"> \(  p_1, \ n = {\alpha_1 + 1} \ and \ s_n = \frac{a \left( r^{n} - 1 \right )}{p - 1} ]  \) </span>
+			<br />
+			similarly sum of divisors of <span class=\"latex\" lang=\"latex\"> \( p_2^{\alpha_2} =  \frac{\left(p_2^{\alpha_2 + 1} - 1 \right)}{p_2 - 1}  \) </span>
+			<br />
+			sum of divisors of <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align} p_k^{\alpha_k} =  \frac{\left(p_k^{\alpha_k + 1 } - 1 \right)}{p_k - 1}  \\\\[3pt]
+				\therefore \ \sigma(n) = \text{Sum of divisors of n} = p_1^{\alpha_1}. p_2^{\alpha_2} \ .... \ p_k^{\alpha_k}  \\\\[3pt]
+				= \frac{\left(p_1^{\alpha_1 + 1} - 1 \right)}{p_1 - 1}.\frac{\left(p_2^{\alpha_2 + 1} - 1 \right)}{p_2 - 1} \ ..... \ \frac{\left(p_k^{\alpha_k + 1} - 1 \right)}{p_k - 1}  \\\\[3pt]
+				[Every \ divisor \ of \ p_i^{\alpha_i} (1 \leq i \leq k) as \ divisor \ of \ n] \end{align}  \) </span>
+			<br />
+			<span class="highlight01"> Note: </span>
+			<br />
+			if <span class=\"latex\" lang=\"latex\"> \( d_k(n) \) </span> denotes the sum of K the power of divisor of n, then <br />
+			<span class=\"latex\" lang=\"latex\"> \(  d_k(n) = \frac{\left(p_1^{k(\alpha_1 + 1)} - 1 \right)}{p_1^{(k - 1)}} . \frac{\left(p_2^{k(\alpha_2 + 1)} - 1 \right)}{p_2^{(k - 1)}} \ ..... \ \frac{\left ({p_m}^{k(\alpha_k + 1)} - 1 \right)}{p_m^{(k - 1)}}  \) </span>
+		</p>
+	</section>
+	<section class="subskill">
+		<h4 class="skill-subheading">Theorem:</h4>
+		<p>Prove that <span class=\"latex\" lang=\"latex\"> \(  [x] + [y] \leq [x + y] , \) </span> x = [x] + {x} and y = [y] + {y}, where both
+			{x} and {y} are greater than or equal to 0.</p>
+		<h5 class="skill-smallheading">Proof:</h5>
+		<p> x + y = [x] + [y] + {x} + {y} <br />
+			<span class=\"latex\" lang=\"latex\"> \( \Rightarrow  \) </span> [x + y] = [x] + [y] + [{x} + {y}] <br />
+			<span class=\"latex\" lang=\"latex\"> \( \Rightarrow \ [x + y] \geq [x] + [y]  \) </span>
+			<br />
+			This can be generalised for n numbers <br />
+			<span class=\"latex\" lang=\"latex\"> \(  [x_1] + [x_2] + \ ...... \ + [x_n] \leq [x_1 + x_2 + \ ..... \ + x_n]. \) </span>
+		</p>
+	</section>
+	<section class="subskill">
+		<h4 class="skill-subheading">Theorem:</h4>
+		<p> For every real number x <br />
+			<span class=\"latex\" lang=\"latex\"> \(  [x] + \left [x + \frac{1}{n} \right ] + \left [ x + \frac{2}{n} \right ] + \ ...... \ + \left[ x + \frac{n-1}{n} \right ] = [nx]  \) </span>
+		</p>
+		<h5 class="skill-smallheading">Proof:</h5>
+		<p> Let x = [x] + y, where <span class=\"latex\" lang=\"latex\"> \( 0 \leq y &lt; 1  \) </span>
+			<br />
+			let p be an integer such that <br />
+			<span class=\"latex\" lang=\"latex\"> \(  p - 1 \leq ny &lt; p  \) </span>
+			<br />
+			(This is always possible because given a real number, we can always find two consecutive
+			integers between which the number lies).<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  Now, x + \frac{k}{n} = [x] + y + \frac{k}{n}  \\\\[3pt]
+				\ also \ y + \frac{k}{n} \ lies \ between \ \frac{p - 1 + k}{n} \ and \ \frac{p + k}{n}  \end{align}  \) </span>
+			<br />
+			So long as <span class=\"latex\" lang=\"latex\"> \(  \frac{p - 1 + k}{n} &lt; 1,  \) </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  i.e., \ k &lt; n - (p - 1)  \\\\[3pt]
+				y + \frac{k}{n} \ is \ \ less \ than \ 1 \ and \ consequently \  \\\\[3pt]
+				\left[x + \frac{k}{n} \right] = [x]  \\\\[3pt]
+				i.e., \ \left[x + \frac{k}{n} \right] = [x] \ for \ k = 0,1, \ ... \ , n - p  \\\\[3pt]
+				But \ \left[x + \frac{k}{n} \right] = [x] + 1, \ for \ k = n - p + 1, \ .... \ , n - 1  \\\\[3pt]
+				\therefore \ [x] + \left[x + \frac{1}{n} \right] + \ .... \ + \left[x + \frac{n-1}{n} \right]  \\\\[3pt]
+				= [x] + \ ..... \ + [x] \ (n - p + 1 times) + ([x] + 1) + ([x] + 1) + \ .... \ (p - 1) times  \\\\[3pt]
+				= n[x + (p -1)]  \\\\[3pt]
+				Also \ [nx] = [n[x] + ny]  \\\\[3pt]
+				= n[x] + (p - 1)
+			 \end{align}  \) </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  Since \ p - 1 \leq ny &lt; p  \\\\[3pt]
+				from \ (1) \ and \(2)  \\\\[3pt]
+				[x] + \left[x + \frac{1}{n} \right] + \left[x + \frac{2}{n} \right] + \ ..... \ + \left[x + \frac{n -1}{n} \right] = [nx]  \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="subskill">
+		<h4 class="skill-subheading">Theorem:</h4>
+		<p> The highest power of a prime number p contained in n! is given by <br />
+			<span class=\"latex\" lang=\"latex\"> \(  k(n!) = \left[\frac{n}{p} \right] + \left[\frac{n}{p^2} \right] + \left[\frac{n}{p^3} \right] + \ ......   \) </span>
+		</p>
+		<h5 class="skill-smallheading">Proof:</h5>
+		<p> Let k(n!) denote the highest power of p contained in n!n! is the product of the factors 1, 2, 3, ..., n.
+			The factors in n! which will be divisible by p are <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}   p, \ 2p, \ 3p, \ .... \ \left[\frac{n}{p} \right]   \\\\[3pt]
+				\therefore \ k(n!) = \left[\frac{n}{p} \right] + k \left(\left[\frac{n}{p} \right] ! \right)  \\\\[3pt]
+				Changing \ n \ to \frac{n}{p} \ in \ (1)  \\\\[3pt]
+				k \left(\left[\frac{n}{p}! \right] \right) + \left[\frac{n}{p^2} \right] + k \left(\left[\frac{n}{p^2} \right] !\right)  \\\\[3pt]
+				Substituting \ the \ value \ from \ (2) \ in \ (1)  \\\\[3pt]
+				k(n!) = \left[\frac{n}{p} \right] + \left[\frac{n}{p^2} \right] + k \left(\left[\frac{n}{p^2} \right] !\right)  \\\\[3pt]
+				Continuing \ this \ process, \ we \ get \  \\\\[3pt]
+				k(n!) = \left[\frac{n}{p} \right]  + \left[\frac{n}{p^2} \right] + \left[\frac{n}{p^3} \right] + \ ...
+			 \end{align}  \) </span>
+			<br />
+			This process must end after a finite number of steps.
+		</p>
+	</section>
+	<section class="subskill">
+		<h4 class="skill-subheading">Congruences</h4>
+		<p> If a and b are two integers and m is a positive integer, then a is said to be congruent to b modulo m if m divides a - b denoted by m | (a - b). <br />
+			In notation form we express it as <br />
+			a = b mod m or <span class=\"latex\" lang=\"latex\"> \(  a - b \equiv 0  \) </span> mod m <br />
+			<span class="highlight01"> Note: </span>
+		</p>
+		<div class="list-custom-block-list-ol spaced20 indented20">
+			<ol>
+				<li>
+					<p>
+						<span class=\"latex\" lang=\"latex\"> \(  a \equiv b  \) </span> mod m, then m I (a - b) or (a - b) is a multiple of m.</p>
+				</li>
+				<li>
+					<p>If <span class=\"latex\" lang=\"latex\"> \(  m \nmid (a - b)  \) </span> [m does not divides (a - b)], then a is said to be incongruent to b mod m and this fact is expressed as a is not congruent to b mod m. </p>
+				</li>
+				<li>
+					<p>If m | a, then a= 0 mod m </p>
+				</li>
+			</ol>
+		</div>
+		<p>
+			<span class="highlight01"> Example:	</span>
+		</p>
+		<div class="list-custom-block-list-ol spaced20 indented20">
+			<ol>
+				<li>
+					<p>
+						<span class=\"latex\" lang=\"latex\"> \(  13 \equiv 1 \ mod \ 4  \) </span>    (since,4 |(13-1) = 12) </p>
+				</li>
+				<li>
+					<p>
+						<span class=\"latex\" lang=\"latex\"> \(  4 \equiv - 1 \ mod \ 5  \) </span>     (since,5 |(4 -(-1) )= 5) </p>
+				</li>
+				<li>
+					<p>
+						<span class=\"latex\" lang=\"latex\"> \(  12 \equiv 0 \ mod \ 4  \) </span>      (since,4 |12) </p>
+				</li>
+				<li>
+					<p> 17 is not congruent to 3 mod 5    (since,5 |(17 - 3)) </p>
+				</li>
+			</ol>
+		</div>
+	</section>
+	<section class="subskill">
+		<h4 class="skill-subheading">Theorem:</h4>
+		<p>
+			<span class=\"latex\" lang=\"latex\"> \(  \ If \ a \equiv b  \) </span> mod m, then</p>
+		<div class="list-custom-block-list-ol spaced20 indented20">
+			<ol>
+				<li>
+					<p> a + c = b + c  mod m </p>
+				</li>
+				<li>
+					<p>
+						<span class=\"latex\" lang=\"latex\"> \(  ac \equiv bc  \) </span> mod m, where c is any integer. </p>
+				</li>
+			</ol>
+		</div>
+		<h5 class="skill-smallheading">Proof:</h5>
+		<div class="list-custom-block-list-ol spaced20 indented20">
+			<ol>
+				<li>
+					<p> Since <br />
+						<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  a \equiv b \ mod \ m  \\\\[3pt]
+							m| (a - b)  \\\\[3pt]
+							\Rightarrow \ m | \{(a + C) - (b + c) \}  \ [Since,a + c - (b + c) = a - b]  \\\\[3pt]
+							a + c \equiv b + c \ mod \ m  \end{align}  \) </span>
+					</p>
+				</li>
+				<li>
+					<p>Since <br />
+						<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  a \equiv b \ mod \ m  \\\\[3pt]
+							m| (a - b)  \\\\[3pt]
+							m| c(a - b)  \\\\[3pt]
+							m| (ac - bc)  \\\\[3pt]
+							ac \equiv bc \ mod \ m  \end{align}  \) </span>
+					</p>
+				</li>
+			</ol>
+		</div>
+		<p>
+			<span class="highlight01"> Note:</span>
+			<br />
+			The converse of theorem 15 (ii) is not true. Theorem states that if <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  a \equiv b \ mod \ m, \ then  \\\\[3pt]
+				ac \equiv \ bc \ mod \ m. \end{align}  \) </span>
+			<br />
+			i.e., a congruence can always be multiplied by an integer. <br />
+			But the converse is not true i.e. It is not always possible to cancel a common factor from a congruence. <br />
+			<span class="highlight01"> Example: </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  16 \equiv 8 \ mod \ 4  \) </span>  [ since, 4 | 16 - 8] <br />
+			But if we cancel the common factor 8 from numbers 16 and 8, we get <span class=\"latex\" lang=\"latex\"> \(  2 \equiv 1  \) </span> mod 4 which is a false result because 4 |(2 - 1). </p>
+	</section>
+	<section class="subskill">
+		<h4 class="skill-subheading">Theorem:</h4>
+		<p>
+			<span class=\"latex\" lang=\"latex\"> \(  if \ a \equiv \ b \ mod \ m, \ and \ c \equiv \ d \ mod \ m, \ then  \) </span>
+		</p>
+		<div class="list-custom-block-list-ol spaced20 indented20">
+			<ol>
+				<li>
+					<p>
+						<span class=\"latex\" lang=\"latex\"> \(  a + c \equiv b + c \ mod \ m  \) </span>
+					</p>
+				</li>
+				<li>
+					<p>
+						<span class=\"latex\" lang=\"latex\"> \(  a - c \equiv b - d \ mod \ m  \) </span>
+					</p>
+				</li>
+				<li>
+					<p>
+						<span class=\"latex\" lang=\"latex\"> \(  ac \equiv bd \ mod \ m  \) </span>
+					</p>
+				</li>
+			</ol>
+		</div>
+		<h5 class="skill-smallheading">Proof:</h5>
+		<div class="list-custom-block-list-ol spaced20 indented20">
+			<ol>
+				<li>
+					<p> Since <br />
+						<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  a \equiv \ b \ mod \ m \ and \ c \equiv \ d \ mod \ m,  \\\\[3pt]
+							\therefore \ m |(a - b) \ and \ m|(c - d)  \\\\[3pt]
+							m |((a - b) + (c - d)  \\\\[3pt]
+							or \ m |((a + c) + (b + d)  \\\\[3pt]
+							\therefore \ a + c \equiv b + d \ mod \ m  \end{align}  \) </span>
+					</p>
+				</li>
+				<li>
+					<p>
+						<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  a \equiv \ b \ mod \ m \ and \ c \equiv \ b \ mod \ m  \\\\[3pt]
+							\therefore \ m |(a - b) \ and \ m|(c - d)  \\\\[3pt]
+							\therefore \ m |(a - b) - (c - d) \ or \ m |(a - c) - (b - d)  \\\\[3pt]
+							a - c \equiv b - d \ mod \ m   \end{align}  \) </span>
+					</p>
+				</li>
+				<li>
+					<p> Since <span class=\"latex\" lang=\"latex\"> \(  a \equiv \ b \ mod \ m \ and \ c \equiv \ b \ mod \ m  \) </span>
+						<br />
+						m |(a - b) and m |(c - d) <br />
+						<span class=\"latex\" lang=\"latex\"> \(  \therefore  \) </span> There exists integer h and k such that <br />
+						a - b = mh and c - d = mk <br />
+						a = b + mh and c = d + mk <br />
+						Multiplying the two equations,we get <br />
+						ac = (b + mh)(d + mk) <br />
+						= bd + mbk + mhd + m^2hk <br />
+						ac - bd = m(bk + hd + mhk) <br />
+						<span class=\"latex\" lang=\"latex\"> \(  \therefore  \) </span> By definition of divisibility m|(ac - bd) <br />or <span class=\"latex\" lang=\"latex\"> \(  ac \equiv	\ bd  \) </span> mod m </p>
+				</li>
+			</ol>
+		</div>
+	</section>
+	<section class="subskill">
+		<h4 class="skill-subheading">Corollary</h4>
+		<p> If <span class=\"latex\" lang=\"latex\"> \(  a \equiv b  \) </span> mod m, then <span class=\"latex\" lang=\"latex\"> \(  a^2 \equiv b^2  \) </span> mod m<br />
+			since, <span class=\"latex\" lang=\"latex\"> \(  a \equiv b  \) </span> mod m and again<br />
+			<span class=\"latex\" lang=\"latex\"> \(  a \equiv b  \) </span> mod m<br />
+			Multiplying the two congruence<br />
+			<span class=\"latex\" lang=\"latex\"> \(  a^2 \equiv b^2  \) </span> mod m.</p>
+	</section>
+	<section class="subskill">
+		<h4 class="skill-subheading">Theorem:</h4>
+		<div class="list-custom-block-list-ol spaced20 indented20">
+			<ol>
+				<li>
+					<p>	Prove that <span class=\"latex\" lang=\"latex\"> \(  a \equiv a  \) </span> mod m i.e., every integer is congruent to itself</p>
+				</li>
+				<br />
+				<li>
+					<p> If <span class=\"latex\" lang=\"latex\"> \(  a \equiv b  \) </span> mod m, then prove that <span class=\"latex\" lang=\"latex\"> \(  b \equiv a  \) </span> mod m </p>
+				</li>
+				<br />
+				<li>
+					<p> If <span class=\"latex\" lang=\"latex\"> \(  a \equiv b  \) </span> mod m, <span class=\"latex\" lang=\"latex\"> \(  b \equiv c  \) </span>mod m prove that <span class=\"latex\" lang=\"latex\"> \(  a \equiv c  \) </span> mod m  </p>
+				</li>
+			</ol>
+		</div>
+		<h5 class="skill-smallheading">Proof:</h5>
+		<div class="list-custom-block-list-ol spaced20 indented20">
+			<ol>
+				<li>
+					<p> We know that m | 0(m 0) <br />
+						m |(a - a) <br />
+						<span class=\"latex\" lang=\"latex\"> \(  a \equiv a  \) </span> mod m <br />
+						(by definition of congruence)</p>
+				</li>
+				<li>
+					<p>Let <span class=\"latex\" lang=\"latex\"> \(  a \equiv b  \) </span> mod m <br />
+						m | - (a - b) <br />
+						<span class=\"latex\" lang=\"latex\"> \(  \therefore  \) </span> m | (a - b) <br />
+						or m | (b - a) <br />
+						<span class=\"latex\" lang=\"latex\"> \(  \therefore \ b \equiv a  \) </span> mod m </p>
+				</li>
+				<li>
+					<p>Let <span class=\"latex\" lang=\"latex\"> \(  a \equiv b  \) </span> mod m and <span class=\"latex\" lang=\"latex\"> \(  b \equiv c  \) </span> mod m <br />
+						<span class=\"latex\" lang=\"latex\"> \(  \therefore   \) </span> m | (a - b) and m | (b - c) <br />
+						<span class=\"latex\" lang=\"latex\"> \(  \therefore   \) </span> m | (a - b) + (b - c) or m | (a - c) <br />
+						<span class=\"latex\" lang=\"latex\"> \(  \therefore \ a \equiv c  \) </span> mod m</p>
+				</li>
+			</ol>
+		</div>
+	</section>
+	<section class="subskill">
+		<h4 class="skill-subheading">Theorem:</h4>
+		<p> If <span class=\"latex\" lang=\"latex\"> \(  a \equiv b  \) </span> mod m, then <span class=\"latex\" lang=\"latex\"> \(  a^k \equiv b^k  \) </span> mod m for every positive integer k.</p>
+		<h5 class="skill-smallheading">Proof:</h5>
+		<p> We know that <br />
+			<span class=\"latex\" lang=\"latex\"> \(  a^k - b^k = (a - b)(a^{k - 1} + a^{k - 2} b + a^{k - 3}b^2 + ..... + b^{k - 1})  \) </span> ...... (1) <br />
+			But <span class=\"latex\" lang=\"latex\"> \(  a \equiv b  \) </span>  mod m  <span class=\"latex\" lang=\"latex\"> \( \Rightarrow  \) </span> m|(a - b) <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \therefore  \) </span> There exists an integer t such that <br />
+			a - b = mt ...... (2) <br />
+			Putting this value of (a - b) from (2) in (1) <br />
+			<span class=\"latex\" lang=\"latex\"> \(  a^k - b^k = mt(a^{k - 1} + a^{k - 2} b + b^{k - 1})  \) </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(   m|(a^k - b^k)  \) </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  a^k \equiv b^k  \) </span> mod m.  </p>
+	</section>
+	<section class="subskill">
+		<h4 class="skill-subheading">Theorem:</h4>
+		<p>If <span class=\"latex\" lang=\"latex\"> \(  a \equiv b  \) </span> mod m and <span class=\"latex\" lang=\"latex\"> \(  f(x) = p_0 x^n + p_1 x^{n - 1} + p_2 x^{n - 2} +.......+ p_{n - 1} x + p_n  \) </span> is an integral rational function of indeterminate x with integral coefficients, then  <span class=\"latex\" lang=\"latex\"> \(  f(a) \equiv  f(b)  \) </span>  mod m.</p>
+		<h5 class="skill-smallheading">Proof:</h5>
+		<p>
+			<span class=\"latex\" lang=\"latex\"> \(  f(x) = p_0 x^n + p_1 x^{n - 1} + p_2 x^{n - 2} +.......+ p_{n - 1} x + p_n  \) </span>
+			<br />
+			Putting x = a <br />
+			<span class=\"latex\" lang=\"latex\"> \(  f(a) = p_0 a^n + p_1 a^{n - 1} + p_2 a^{n - 2} +.......+ p_{n - 1} a + p_n \ ..... \ (1)  \) </span>
+			<br />
+			Putting x = b <br />
+			<span class=\"latex\" lang=\"latex\"> \(  f(b) = p_0 b^n + p_1 b^{n - 1} + p_2 b^{n - 2} +.......+ p_{n - 1} b + p_n \ ..... \ (2)  \) </span>
+			<br />
+			Subtract (1) from (2), we get <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  f(a) - f(b) = p_0 (a^n - b^n) + p_1 (a^{n - 1}  - b^{n - 2} ) +.......+ p_{n - 1} (a - b)  \\\\[3pt]
+				= p_0 (a - b)(a^{n - 1} + a^{n - 2} b + .... + b^{n - 1}) + p_1 (a - b)(a^{n - 2} + a^{n - 3} b + .... + b^{n - 2}) + ..... + p_{n - 1} (a - b)  \\\\[3pt]
+				or \ f(a) - f(b) = (a - b) [p_0(a^{n - 1} + a^{n - 2} b + ..... + b^{n - 2} ) + p_1(a^{n - 2} + a^{n - 3} b + ..... + b^{n - 2} )+ ... + p_{n - 1} ]  \end{align}  \) </span>
+			<br />
+			= (a - b)t (say) <br />
+			But <span class=\"latex\" lang=\"latex\"> \(  a \equiv b  \) </span> mod m (given) <br />
+			m | (a - b) <br />
+			<span class=\"latex\" lang=\"latex\"> \( \therefore \ \ni  \) </span> an integer k such that a - b = mk <br />
+			Putting this value of a - b = mk in (3) <br />
+			f(a) - f(b) = mkt <br />
+			<span class=\"latex\" lang=\"latex\"> \( \therefore  \) </span> m | f(a)- f(b) <br />
+			<span class=\"latex\" lang=\"latex\"> \( \Rightarrow \ f(a) \equiv \ f(b) \ mod \ m  \) </span>
+		</p>
+	</section>
+	<section class="subskill">
+		<h4 class="skill-subheading">Theorem:</h4>
+		<p> Fermat theorem <br />
+			If p is prime, then <span class=\"latex\" lang=\"latex\"> \( (a + b)^P = (a^P + b^P)  \) </span> mod p.</p>
+		<h5 class="skill-smallheading">Proof:</h5>
+		<p>Expanding by binomial theorem <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  (a + b)^p = a^p + \ ^pC_1 a^{p - 1} b + \ ^pC_2 a^{p - 2} b^2 + \ ^pC_{p - 1} ba^{p - 2} b^p   \\\\[3pt]
+				or \ (a + b)^p = (a^p + b^p) + \sum \limits_{r = 1}^{p - 1} \ ^pC_r a^{p - r} b^r \ ...... \ (1)  \\\\[3pt]
+				Now, \ ^pC_r = \frac{p!}{r!(p - r)!} ; 1 \leq r \leq ( p - 1)  \end{align}  \) </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \therefore  \) </span> But p! = 1.2.3 ... p is divisible by p <br />
+			p is coprime to r! <br />
+			since, p is coprime to 1, 2, 3, ... r (r &lt; p, p is prime) <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \therefore  \) </span> p is coprime to their product = r! <br />
+			Also for the same reason p is coprime to (p — r)! <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \therefore \ ^pC_r = \frac{p!}{r!(p - r)!}  \) </span> is divisible by p. <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \ni  \) </span> an integer <span class=\"latex\" lang=\"latex\"> \(   k_r  \) </span> such that <br />
+			<span class=\"latex\" lang=\"latex\"> \(   ^pC_r = pk_r  \) </span>
+			<br />
+			Putting this value of <span class=\"latex\" lang=\"latex\"> \(  PC_r  \) </span> in (1) <br />
+			<span class=\"latex\" lang=\"latex\"> \( (a + b)^p - (a^p + b^p) = p \sum\limits_{r = 1}^{p - 1} \ k_r a^{p - r} b^r  \) </span>
+			<br />
+			which is divisible by p. <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \therefore \ (a + b)^p \equiv (a^p + b^p) \ mod \ p  \) </span>
+			<br />
+			<span class="highlight01"> Generalization </span>
+			<br />
+			If p is a prime number, prove that  <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  (a_1 + a_2 + a_3 + .... + a_n)^p  \\\\[3pt]
+				= ({a_1}^p + {a_2}^p + {a_3}^p + ..... + {a_n}^p) \ mod \ p  \\\\[3pt]
+				(a_1 + a_2 + a_3 + .... + a_n)^p = (a_1 + b_1)^p  \\\\[3pt]
+				where \ b_1 = a_2 + a_3 + ... + a_n  \\\\[3pt]
+				\equiv \ ({a_1}^p + {b_1}^p) \ mod \ p  \\\\[3pt]
+				\equiv \ [{a_1}^p + (a_2 + a_3  + ..... + _n)^p] \ mod \ p  \\\\[3pt]
+				\equiv \ [{a_1}^p + (a_2  +c_2)p] \ mod \ p  \\\\[3pt]
+				where \ c_2 = a_3 + a_4 +... + a_n  \\\\[3pt]
+				\equiv \ ({a_1}^p + {a_2}^p + {c_2}^p \ mod \ p  \\\\[3pt]
+				\text{mod p continuing like this, we get}  \\\\[3pt]
+				(a_1 + a_2 + a_3 +.... + a_n)^p  \\\\[3pt]
+				\equiv \ ({a_1}^p + {a_2}^p + ..... + {a_n}^p) \ mod \ p \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="subskill">
+		<h4 class="skill-subheading">Theorem:</h4>
+		<p>If p prime number, then <span class=\"latex\" lang=\"latex\"> \(  a^P = a  \) </span> mod p.</p>
+		<h5 class="skill-smallheading">Proof:</h5>
+		<p>We know that <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  (a_2 + a_3 + ... + a_n) p  \\\\[3pt]
+				= ({a_1}^p + {a_2}^p + {a_3}^p + ..... + {a_n}^p) \ mod \ p \ ..... \ (1)  \\\\[3pt]
+				Putting \ a_1 = a_2 = a_3 = .... = a_n = 1 \ in \ (1)  \\\\[3pt]
+				(1 + 1 + 1 + .... + 1)^p  \\\\[3pt]
+				\equiv \ (1^p + 1^p + 1^p +..... 1^p) \ mod \ p   \\\\[3pt]
+				or \ n^p \ \equiv \ (1 + 1 + 1 + .... 1) \ mod \ p  \end{align}  \) </span>
+			<br />
+			or <span class=\"latex\" lang=\"latex\"> \(  n^p \equiv n  \) </span> mod p for every natural number n. <br />
+			Replacing n by a. <br />
+			<span class=\"latex\" lang=\"latex\"> \( a^p = a \ mod \ a  \) </span>. </p>
+	</section>
+	<section class="subskill">
+		<h4 class="skill-subheading">Theorem:</h4>
+		<p>(Fermat's Little Theorem). If p be a prime, and n be prime to p, then <span class=\"latex\" lang=\"latex\"> \( n^{P - 1} \ \equiv 1  \) </span> (mod. p).</p>
+		<h5 class="skill-smallheading">Proof:</h5>
+		<p>By division algorithm, we can find integers q, r with <span class=\"latex\" lang=\"latex\"> \(  0 \leq r &lt; p  \) </span>, such that n = pq + r. <br />
+			Since n = pq + r, therefore <span class=\"latex\" lang=\"latex\"> \( n \equiv r  \) </span> (mod. p) and consequently <span class=\"latex\" lang=\"latex\"> \(  n^{P - 1} \equiv r^{P - 1}  \) </span> (mod p). <br />
+			It is therefore, enough to show that <span class=\"latex\" lang=\"latex\"> \(  r^{P - 1) = 1  \) </span> (mod p). <br />
+			First observe that r cannot be equal to zero, for if r = 0, then n = pq in which case (n, p)= <span class=\"latex\" lang=\"latex\"> \(  p \neq 1  \) </span>.Thus we have 0 &lt; r &lt; p. <br />
+			Consider the p - 1 numbers <br />
+			1 . r, 2 . r,	(p - 1).r. <br />
+			None of these numbers is divisible by p. <br />
+			Also when these numbers are divided by p, the remainders are all different. For if a . r, b . r leave the same remainder when divided by p, then <br />
+			<span class=\"latex\" lang=\"latex\"> \( ar \equiv br  \) </span> (mod. p), <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \Rightarrow \ a \equiv b  \) </span> (mod. p), since <span class=\"latex\" lang=\"latex\"> \(  1 \leq r &lt; p  \) </span>
+			<br />
+			a = b, since <span class=\"latex\" lang=\"latex\"> \(  1 \leq a, \ b &lt; p  \) </span>. <br />
+			The remainders are, therefore, the numbers 1, 2, ...., p - 1 in some order.<br />
+			Therefore, (1 . r) (2 . r)......[(p - 1)r]  <span class=\"latex\" lang=\"latex\"> \(  \equiv  \) </span> 1.2.3.....(p - 1) (mod. p), <br />
+			i.e., <span class=\"latex\" lang=\"latex\"> \(  r^{P - 1} \{(p - 1) ! \} \equiv (p - 1)!  \) </span> (mod. p). <br />
+			Since ((p - 1)!, p) = 1, it follows that <br />
+			<span class=\"latex\" lang=\"latex\"> \(  r^{p - 1} \equiv  \) </span>(mod. p). <br />
+			As we have already remarked, this implies that <br />
+			<span class=\"latex\" lang=\"latex\"> \(  n^{p - 1} \equiv 1  \) </span> (mod.p).</p>
+	</section>
+	<section class="subskill">
+		<h4 class="skill-subheading">Corollary:</h4>
+		<p>If p be a prime and n be any positive integer, then <span class=\"latex\" lang=\"latex\"> \( n^P \equiv n  \) </span> (mod. p). </p>
+	</section>
+	<section class="subskill">
+		<h4 class="skill-subheading">Theorem:</h4>
+		<p>Since p is a prime, therefore given any positive integer n, either p|n, or (p, n) = 1. <br />
+			If p|n, then n <span class=\"latex\" lang=\"latex\"> \(  \equiv 0  \) </span> (mod. p), and so <br />
+			<span class=\"latex\" lang=\"latex\"> \(  n^P - n \equiv 0  \) </span>(mod. p). <br />
+			If (p, n) = 1, then by Fermat's theorem <br />
+			<span class=\"latex\" lang=\"latex\"> \(  n^P - 1 \equiv 1  \) </span> (mod. p). <br />
+			and therefore <span class=\"latex\" lang=\"latex\"> \(  n^P \equiv n  \) </span> (mod. p). <br />
+			Thus, in each case we have <span class=\"latex\" lang=\"latex\"> \(  n^P \equiv n  \) </span> (mod. p). <br />
+			<span class="highlight01"> Remark </span>
+			<br />
+			Fermat's theorem says, in effect, that if p is a prime and n is prime to p, then p divides <span class=\"latex\" lang=\"latex\"> \(  n^{P - 1} - 1  \) </span>.<br />
+			The corollary says that if p is a prime and n is any positive integer, then <span class=\"latex\" lang=\"latex\"> \(  n^P - n  \) </span> is divisible by p.</p>
+	</section>
+	<section class="subskill">
+		<h4 class="skill-subheading">Theorem:</h4>
+		<p>Wilson Theorem <br />
+			If p is prime, then (p - 1)! + 1 = 0 mod p. </p>
+		<h5 class="skill-smallheading">Proof:</h5>
+		<p>
+			<span class="highlight01"> Case 1: </span>
+			<br />
+			when p = 2 <br />
+			(2 - 1)! + 1 <span class=\"latex\" lang=\"latex\"> \(  \equiv  \) </span> 0 mod 2 <br />
+			[Putting p = 2 in (p - 1)! + 1 = 0 mod p]  <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \ \Rightarrow 1! + 1 \equiv  \) </span> 0 mod 2 <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \ 2 \equiv 0  \) </span> mod 2 <br />
+			which is true <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \therefore  \) </span> Wilson theorem is true for p = 2. <br />
+			<span class="highlight01"> Case 2: </span>
+			<br />
+			If p is an odd prime. <br />
+			<span class=\"latex\" lang=\"latex\"> \(  n! = n^n - \ ^nC_1(n - 1)^n + \ ^nC_2 (n - 2)^n - ..... + (-1)^{n - 2} \ ^nC_{n - 2} 2^n + (-1)^{n - 1} \ ^nC_{n - 1}  \) </span>
+			<br />
+			Put n = p - 1 on both sides <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \therefore \ (p - 1)! = (p - 1)^{p - 1} - \ ^{p - 1}C_1 (p - 1)^{p - 1} + \ ^{p - 1}C_2 (p - 3)^{p - 1} + .... + (-1)^{p - 3} \ ^{p - 1}C_{p - 3} {2^{p - 1}} + (-1)^{p - 2} \ ^{p - 1}C_{p - 2} \ ..... \ (1)  \) </span>
+			<br />
+			since p is prime. <br />
+			<span class=\"latex\" lang=\"latex\"> \( \therefore \) </span> p is coprime to all numbers &lt; p. <br />
+			i.e., p is coprime to p - 1, p - 2, p - 3, .... 2, 1. <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \therefore \) </span> Substituting a = p - 1, p - 2, p - 3, .... 2 in Fermat Theorem <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  a^{P - 1} \equiv mod \ p  \\\\[3pt]
+				(p - 1)^{p - 1} \equiv 1 \ mod \ p  \\\\[3pt]
+				or \ (p - 1)^{p - 1} - 1 = M(p)  \\\\[3pt]
+				(p - 1)^{p - 1} = M(p) + 1  \\\\[3pt]
+				Similarly, \ (p - 2)^{p - 1} = M(p) + 1  \\\\[3pt]
+				(p - 3)^{p - 1} = M(p) + 1  \end{align}  \) </span>
+			<br />
+			.......... <br />
+			.......... <br />
+			......... <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  2^{p - 1} = M(p) + 1  \\\\[3pt]
+				\text{Substituting these values of} \ (p - 1)^{p - 1}, \ (p - 2)^{p - 1}, ..... , 2^{p - 1} \ in \ (1).  \\\\[3pt]
+				\therefore \ (p - 1)! = [M(p) + 1] - \ ^{p - 1}C_1 [M(p) + 1] + \ ^{p - 1}C_2 [M(p) + 1] + ..... + (-1)^{p - 3} \ ^{p - 1}C_{p - 3} + (-1)^{p - 2} \ ^{p - 1}C_{p - 2}   \end{align}  \) </span>
+			<br />
+			Adding and subtracting <span class=\"latex\" lang=\"latex\"> \(  (-1)^{P - 1}  \) </span> in RHS. <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  (p - 1)! = M(p) + [(1)^{p - 1} - \ ^{p - 1}C_1 \ + \ ^{p - 1}C_2 - \ ^{p - 1}C_3 \ + .... + (-1)^{p - 3} \ ^{p - 3}C_{p - 3} + (-1)^{p - 2} \ ^{p - 1}C_{p - 2} + (-1)^{p - 1}] - (-1)^{p - 1} (p - 1)! M(p) + (1 - 1)^{p - 1} - (-1)^{p - 1}  \\\\[3pt]
+				\therefore \ (p - 1)! = M(p) + 0 - (-1)^{p - 1} = M(p) - 1  \end{align}  \) </span>
+			<br />
+			since, p is odd. <span class=\"latex\" lang=\"latex\"> \(  \therefore  \) </span> p - 1 is even. <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \therefore \ (-1)^{P - 1} = 1  \) </span>
+			<br />
+			or (p - 1)! + 1 = M(p) <br />
+			(p - 1)! + 1 is divisible by p. <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \therefore \ (p - 1)! + 1 \equiv \ 0 \ mod \ p  \) </span>.</p>
+	</section>
+	<section class="subskill">
+		<h4 class="skill-subheading">Theorem:</h4>
+		<p>Converse of Wilson Theorem <br />
+			If p &gt; 1 and (p - 1)! + 1 <span class=\"latex\" lang=\"latex\"> \(  \equiv  \) </span> 0 mod p, then p is a prime number.</p>
+		<h5 class="skill-smallheading">Proof:</h5>
+		<p>If possible let p be not prime. <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \therefore  \) </span> p is composite (since, p &gt; 1) <br />
+			So let <span class=\"latex\" lang=\"latex\"> \(   p = p_1 \ p_2  \) </span>, where (<span class=\"latex\" lang=\"latex\"> \(   1 &lt; p_1 &lt; p, \ 1 &lt; p_2 &lt; p) \ or \ 1 &lt; p_1 \leq p - 1, \ 1 &lt; p_2 &lt; p - 1   \) </span>
+			<br />
+			Now since, <span class=\"latex\" lang=\"latex\"> \(   1 &lt; p_1 \leq p - 1  \) </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  p_1  \) </span> is one of the factors in the value of (p - 1)! and therefore <span class=\"latex\" lang=\"latex\"> \(   p_1  \) </span> divides (p - 1)!. <br />
+			Also <span class=\"latex\" lang=\"latex\"> \(   p = p_1p_2 \ .... \ (1)  \) </span>
+			<br/>
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  P_1|P \ .... \ (2)  \\\\[3pt]
+				But \ (p - 1)! + 1 \equiv 0 \ mod \ p  \\\\[3pt]
+				\therefore \ P|(p - 1)! + 1 \ ... \ (3)  \\\\[3pt]
+				\text{From (2) and (3)}  \\\\[3pt]
+				p_1|(p - 1)! + 1 \ .... \ (4)  \\\\[3pt]
+				\text{From (4) and (1)}  \\\\[3pt]
+				p_1|(p - 1)! + 1 - (p - 1)!  \\\\[3pt]
+				i.e., \ p_1|1  \end{align}  \) </span>
+			<br />
+			But this is impossible	( since <span class=\"latex\" lang=\"latex\"> \(  p_1 &gt; 1  \) </span>) <br />
+			<span class=\"latex\" lang=\"latex\"> \(   \therefore  \) </span> p is a prime number.</p>
+	</section>
+	<section class="subskill">
+		<h4 class="skill-subheading">Euler's Function:</h4>
+		<h5 class="skill-smallheading">Definition: </h5>
+		<p>The number of integers <span class=\"latex\" lang=\"latex\"> \(  \leq n  \) </span> and coprime to n is called Euler's function for n and is denoted by <span class=\"latex\" lang=\"latex\"> \(   \phi(n)  \) </span>. <br />
+			<span class="highlight01"> Example: </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \phi(1) = 1  \) </span> [ since, 1 is the only integer <span class=\"latex\" lang=\"latex\"> \(  \leq 1  \) </span> and coprime to 1]. <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \phi(2) = 1  \) </span> [ since, 1 is the only integer &lt; 2 and coprime to 1]. <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \phi(8) = 4  \) </span> [ since, 1, 3, 5, 7 are the only four integers <span class=\"latex\" lang=\"latex\"> \(  &lt; 8  \) </span> and coprime to 8]. <br />
+			<span class="highlight01"> Remark: </span>
+			<br />
+			If p is a prime number, then 1, 2, 3, .... (p - 1) are all less than p and coprime to p and are (p - 1) in total. <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \phi(p) = p - 1  \) </span>
+		</p>
+	</section>
+	<section class="subskill">
+		<h4 class="skill-subheading">Theorem:</h4>
+		<p>Prove that <span class=\"latex\" lang=\"latex\"> \(  \phi(p^k) = p^k \left ( 1 - \frac{1}{p} \right )  \) </span>, where p is prime.</p>
+		<h5 class="skill-smallheading">Proof:</h5>
+		<p>Number of integers from 1 to <span class=\"latex\" lang=\"latex\"> \( p^k  \) </span> which are not coprime to <span class=\"latex\" lang=\"latex\"> \(  p^k  \) </span> are <span class=\"latex\" lang=\"latex\"> \(  p.1, \ p.2, \ p.3, \ ...... \ p.p^{k - 1}  \) </span>.<br />
+			Total number of such integers, which are not coprime to <span class=\"latex\" lang=\"latex\"> \(  p^k = p^{k - 1}  \) </span>. <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \therefore \ (p^k)  \) </span> = Number of integers coprime to <span class=\"latex\" lang=\"latex\"> \(  p^k  \) </span> and &lt; <span class=\"latex\" lang=\"latex\"> \(  p^k  \) </span>. <br />
+			<span class=\"latex\" lang=\"latex\"> \(  = p^k - p^{k - 1} = p^{k} \left ( 1 - \frac{1}{p} \right )  \) </span>
+			<br />
+			<span class="highlight01">Result </span>
+			<br />
+			If a and b are coprime to each other, then <span class=\"latex\" lang=\"latex\"> \(  \phi(ab) = \phi(a) \phi(b)  \) </span>. </p>
+	</section>
+	<section class="subskill">
+		<h4 class="skill-subheading">Theorem:</h4>
+		<p>Prove that <span class=\"latex\" lang=\"latex\"> \(  \phi(n) = n \left ( 1 - \frac{1}{p_1} \right ) \left ( 1 - \frac{1}{p_2} \right ) \ ...... \ \left ( 1 - \frac{1}{p_r} \right )  \) </span>
+			<br />
+			where <span class=\"latex\" lang=\"latex\"> \(  p_1, \ p_2, \ ..... \ p_r  \) </span> are distinct prime factors of n.</p>
+		<h5 class="skill-smallheading">Proof:</h5>
+		<p>Since <span class=\"latex\" lang=\"latex\"> \(  p_1, \ p_2, \ ..... \ p_r  \) </span> are distinct prime factors of n. <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \therefore \ n = {P_1}^{k_1}.{P_2}^{k_2} ...... {P_r}^{k_r}  \\\\[3pt]
+				\therefore \ \phi(n) = \phi \left ({P_1}^{k_1}.{P_2}^{k_2} ..... {P_r}^{k_r} \right )  \\\\[3pt]
+				= \phi ({P_1}^{k_1}) \phi({P_2}^{k_2}) ...... \phi({P_r}^{k_r})  \end{align}  \) </span>
+			<br />
+			[ since  <span class=\"latex\" lang=\"latex\"> \(  p_1, \ p_2 ......, p_r  \) </span> are distinct primes and hence are coprime to each other and  <span class=\"latex\" lang=\"latex\"> \(  \phi(ab) = \phi(a) \ \phi(b)  \) </span>, if a and b are coprime to each other]. <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  = {P_1}^{k_1} \left ( 1 - \frac{1}{p_1} \right ) \ {P_2}^{k_2} \left ( 1 - \frac{1}{p_2} \right ) \ ..... \ {P_r}^{k_r} \left ( 1 - \frac{1}{p_r} \right )  \\\\[3pt]
+				= {P_1}^{k_1}. {P_2}^{k_2} ..... {P_r}^{k_r} \left ( 1 - \frac{1}{p_1} \right ) \ \left ( 1 - \frac{1}{p_2} \right ) \ ..... \ \left ( 1 - \frac{1}{p_r} \right )  \\\\[3pt]
+				= n \left ( 1 - \frac{1}{p_1} \right ) \ \left ( 1 - \frac{1}{p_2} \right ) \ ..... \ \left ( 1 - \frac{1}{p_r} \right ) \ \ \ \ \ \ \ [since, \ n = {P_1}^{k_1}. {P_2}^{k_2} \ ..... \ {P_r}^{k_r} ]  \end{align}  \) </span>
+		</p>
+	</section> 
+</section> 
+<section class="solved-examples" id="examples">
+	<h3 class="solved-examples-heading">Solved examples</h3>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 1:</h4>
+		<p>Show that gcd of a + b and a - b is either 1 or 2 if (a, b) = 1.<br />
+			<span class="highlight01"> Solution:</span>
+			<br />
+			Let (a + b, a - b) = d <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \therefore  \) </span> d(a + b) and d|(a - b) <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \therefore  \) </span>  d|(a + b + a - b) and d|(a + b) - (a - b) or d|2a and d|2b. <br />
+			i.e., d is a common divisor of 2a and 2b. <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \therefore  \) </span>  d|(2a, 2b)	[By definition of gcd] <br />
+			i.e., d|2(a, b)   [ since (ma, mb) = m(a, b)] <br />
+			But	(a, b) = 1 <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \therefore  \) </span>  d|2 <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \therefore  \) </span>  d = 1 or d = 2. </p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 2:</h4>
+		<p>If <span class=\"latex\" lang=\"latex\"> \(  a^2 - b^2   \) </span> is a prime number, show that <span class=\"latex\" lang=\"latex\"> \(  a^2 - b^2  = a + b  \) </span> where a, b are natural numbers.<br />
+			<span class="highlight01"> Solution:</span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  a^2 - b^2 = (a - b)(a + b).\ ...... \ (1)  \) </span>
+			<br />
+			since,<span class=\"latex\" lang=\"latex\"> \(  a^2 - b^2   \) </span> is a prime number <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \therefore  \) </span> one of the two factors = 1 <br />
+			since, a - b = 1   [ since, a - b &lt; a + b] <br />
+			since, the only divisor of a prime number are 1 and itself. <br />
+			(1) becomes <span class=\"latex\" lang=\"latex\"> \(  a^2 - b^2 = 1 (a + b)  \) </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  or \ a^2 - b^2 = a + b  \) </span>
+			<br />
+			<span class="highlight01"> solution: </span>
+			<span class=\"latex\" lang=\"latex\"> \( 3^2 - 2^2 = 5  \) </span> (which is prime) <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \Rightarrow \ \therefore \ 3^2 - 2^2 = 3 + 2, \ 3, 2 \ \epsilon \ N  \) </span>.</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 3:</h4>
+		<p>If (4x - y) is a multiple of 3, show that <span class=\"latex\" lang=\"latex\"> \( 4x^2 + 7xy - 2y^2  \) </span> is divisible by 9.<br />
+			<span class="highlight01"> Solution:</span>
+			<br />
+			Since 4x - y is a multiple of 3. <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \therefore  \) </span> 4x - y = 3m <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \therefore  \) </span>  y = 4x - 3m <br />
+			On putting value of y in <span class=\"latex\" lang=\"latex\"> \(  4x^2 + 7xy - 2y^2  \) </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  = 4x^2 + 7x(4x - 3m) - 2(4x - 3m)^2  \\\\[3pt]
+				= 4x^2 + 28x^2 - 21xm - 2(16x^2 + 9m^2 - 24xm)  \\\\[3pt]
+				= 4x^2 + 28x^2 - 21xm - 32x^2 - 18m^2 + 48xm  \\\\[3pt]
+				= 27mx - 18m^2  \\\\[3pt]
+				= 9m(3x - 2m)  \end{align}  \) </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \therefore \ 4x^2 - 7x - 2y^2  \) </span> is divisible by 9.</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 4:</h4>
+		<p>Find the sum of divisors of 360.<br />
+			<span class="highlight01"> Solution:</span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  360 = 2^3.3^2.5^1  \\\\[3pt]
+				\sigma(n) = \frac{(2^4.1)}{(2.1)}. \frac{(3^3.1)}{(3.1)}. \frac{(5^2.1)}{(5.1)}  \\\\[3pt]
+				= 15 \times \frac{26}{2} \times \frac{24}{4}  \\\\[3pt]
+				= 15 \times 13 \times 6 = 1170  \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 5:</h4>
+		<p>Determine all integers n such that <span class=\"latex\" lang=\"latex\"> \(  n^4 - n^2 + 64  \) </span> is the square of an integer. <br />
+			<span class="highlight01"> Solution:</span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  Since \  n^4 - n^2 + 64 &gt; n^4 - 2n^2 + 1  \) </span>
+			<br />
+			= <span class=\"latex\" lang=\"latex\"> \(  (n^2 - 1)^2 \) </span> for some non-negative integer k, <span class=\"latex\" lang=\"latex\"> \(  ( n^4 - n^2 + 64 ) = (n^2 + k)^2 = n^4 + 2n^2k + k^2  \) </span>
+			<br />
+			i.e., <span class=\"latex\" lang=\"latex\"> \(  n^2 = \frac{64 - k^2}{2k - 1}  \) </span> from which we find that the possible values 64, 1, 0 for <span class=\"latex\" lang=\"latex\"> \(  n^2  \) </span> are obtained when k = 0, 7, 8 respectively. <br />
+			Hence, <span class=\"latex\" lang=\"latex\"> \(  n \ \epsilon \ (0, \ \pm 1, \ 8)  \) </span>.</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 6:</h4>
+		<p>Find n, if <span class=\"latex\" lang=\"latex\"> \( 2^{200} - 2^{192}.31 + 2^n  \) </span> is perfect square.<br />
+			<span class="highlight01"> Solution:</span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  2^{200} - 2^{192}.31 + 2^n = 2^{192}(2^8 - 31) + 2^n  \\\\[3pt]
+				= 2^{192}(256 - 31) + 2^n  \\\\[3pt]
+				= 2^{192}. 225 + 2^n  \\\\[3pt]
+				\therefore \ for \ some \ m \ \epsilon \ N  \\\\[3pt]
+				2^n = m^2 - 2^{192}.225  \\\\[3pt]
+				= m^2 - (2^{96}. 15)(m + 2^{96}.15)  \\\\[3pt]
+				So \ m = 2^{96}.15 = 2^{\alpha} \ and \ m + 2^{96}.15 = 2^{\alpha + \beta} \ \text{for some non negative integers} \ \alpha, \ \beta   \\\\[3pt]
+				Hence, \ 2^{97}.15 = 2^{\alpha + \beta} - 2^{\alpha} = 2^{\alpha}(2^{\beta} - 1)  \\\\[3pt]
+				\Rightarrow \ 2^{\alpha} = 2^{97} \ and \ 2^{\beta} - 1 = 15  \\\\[3pt]
+				i.e., \ \alpha = 97 \ and \ \beta = 4  \\\\[3pt]
+				\therefore \ n = 2 \alpha + \beta = 198  \end{align}  \) </span>.</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 7:</h4>
+		<p>Give with justification, a natural number n for which <span class=\"latex\" lang=\"latex\"> \( 3^9 + 3^{12} + 3^{15} + 3^n  \) </span> is a perfect cube.<br />
+			<span class="highlight01"> Solution:</span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align} 3^9 + 3^{12} + 3^{15} + 3^n = 3^9(1 + 3^4 + 3^6 + 3^{n - 9})  \\\\[3pt]
+				= (3^3)^3 \{ 1 + 3.3^2 + 3(3^2)^2 + (3^2)^3 + 3^{n - 9} - 3(3^2)^2 \}  \\\\[3pt]
+				= (3^3)^3 (1 + 3^2)^3 \ provided \ 3^{n - 9} - 3^5 = 0  \\\\[3pt]
+				= (270)^3 \ provided \ 3^{n - 9} = 3^5  \end{align}  \) </span>
+			<br />
+			i.e. provided n = 14 <br />
+			So given number is a perfect cube when n = 14. </p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 8:</h4>
+		<p>Show that 13 divides <span class=\"latex\" lang=\"latex\"> \( 2^{70} + 3^{70}  \) </span>
+		</p>
+		<p>
+			<span class="highlight01"> Solution:</span>
+			<br />
+			We can write <br />
+			<span class=\"latex\" lang=\"latex\"> \(  2^{70} + 3^{70} \ as \ 4^{35} + 9^{35} and \ as \ 35 \ is \ odd.  \) </span>
+			<br />
+			Now <span class=\"latex\" lang=\"latex\"> \(  a^n + b^n  \) </span> is divisible by aa + b when n is odd  </p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 9:</h4>
+		<p>Show that <span class=\"latex\" lang=\"latex\"> \(  1^{1997} + 2^{1997} + ..... + {1996}^{1997}  \) </span> is divisible by 1997.<br />
+			<span class="highlight01"> Solution:</span>
+			<br />
+			We shall make group of the terms <br />
+			<span class=\"latex\" lang=\"latex\"> \(  (1^{1997} + {1996}^{1997}) +(2^{1997} + {1995}^{1997}) + ({998}^{1997} + {999}^{1997})  \) </span>
+			<br />
+			Here each bracket is of the form <br />
+			<span class=\"latex\" lang=\"latex\"> \(  {a_i}^{2n + 1} + {b_i}^{2n + 1}  \) </span>. It is divisible by <span class=\"latex\" lang=\"latex\"> \(  (a_i + b_i)  \) </span>
+			<br />
+			But <span class=\"latex\" lang=\"latex\"> \(  a_i + b_i = 1997  \) </span> for all i <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \therefore  \) </span> Each bracket and hence their sum is divisible by 1997.</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 10:</h4>
+		<p>Find the remainder when <span class=\"latex\" lang=\"latex\"> \(  {2222}^{5555} \) </span> is divided by 7. <br />
+			<span class="highlight01"> Solution:</span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  2222 \ \equiv \ 3 \ mod \ 7  \\\\[3pt]
+				(2222)^3 \ \equiv \ 27 \ mod \ 7  \\\\[3pt]
+				and \ 27 \ \equiv \ - 1 \ mod \ 7  \\\\[3pt]
+				\therefore \ (2222)^3 \ \equiv \ -1 \ mod \ 7  \\\\[3pt]
+				(2222)^{5553} \ \equiv \ (-1)^{1851} \ mod \ 7  \\\\[3pt]
+				(2222)^{5553} \ \equiv \ -1 \ mod \ 7  \\\\[3pt]
+				(2222)^2 \ \equiv \ 9 \ mod \ 7  \\\\[3pt]
+				(2222)^{5555} \ \equiv \ -9 \ mod \ 7  \\\\[3pt]
+				-9 \ \equiv \ 5 \ mod \ 7  \\\\[3pt]
+				\therefore \ (2222)^{5555} \ \equiv \ 5 \ mod \ 7  \end{align}  \) </span>.</p>
+	</section> 
+</section> 

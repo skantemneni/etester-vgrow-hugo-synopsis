@@ -1,0 +1,597 @@
+---
+title: "Inequalities - III"
+layout: "default_foundation"
+isMath: true
+---
+<section class="skill" id="01">
+	<h3 class="skill-heading">The Inequality of the Means</h3>
+	<section class="subskill">
+		<h4 class="skill-subheading">Definition:</h4>
+		<p>Let a, b be two positive numbers. The positive numbers <span class=\"latex\" lang=\"latex\"> \(  A = \frac{a + b}{2}, \ G = \sqrt{ab}  \) </span> and <span class=\"latex\" lang=\"latex\"> \(  H = \frac{2ab}{a + b}  \) </span> are called respectively the arithmetic mean, the geometric mean and the harmonic mean of a and b.</p>
+	</section>
+	<section class="subskill">
+		<h4 class="skill-subheading">General case:</h4>
+		<p> Let <span class=\"latex\" lang=\"latex\"> \(  a_1, \ a_2, \ ........a_n  \) </span> be n positive numbers. The positive numbers. <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  A = \frac{a_1 + a_2 +......+ a_n}{n}  \\\\[3pt]
+				G = (a_1 \ a_2.......a_n)^{ \frac{1}{n}}  \end{align}  \) </span>
+			<br />
+			and <span class=\"latex\" lang=\"latex\"> \(  H = \left[ \frac{ \left\lbrace \frac{1}{a_1} + \frac{1}{a_2} +....... + \frac{1}{a^n} \right\rbrace}{n} \right]^{-1}  \) </span>
+			<br />
+			are called respectively the arithmetic mean, the geometric mean and the harmonic mean of <span class=\"latex\" lang=\"latex\"> \(  a_1, \ a_2, \ ........a_n.  \) </span>
+			<br />
+			If A, G and H be respectively the arithmetic mean, the geometric mean and the harmonic mean of n positive numbers <span class=\"latex\" lang=\"latex\"> \(  a_1, \ a_2, \ ........a_n,  \) </span> then <span class=\"latex\" lang=\"latex\"> \(  A \geq G \geq H  \) </span> . The equality sign holds if <span class=\"latex\" lang=\"latex\"> \(  a_1 = a_2 = ........= a_n.  \) </span>
+			<br />
+			If A and G be respectively the arithmetic mean and the geometric mean of n positive numbers <span class=\"latex\" lang=\"latex\"> \(  a_1, \ a_2, \ ........a_n,  \) </span> then <span class=\"latex\" lang=\"latex\"> \( A \geq G  \) </span>. The equality sign holds if <span class=\"latex\" lang=\"latex\"> \(  a_1 = a_2 = ........= a_n.  \) </span>
+			<br />
+			The above inequality is called the 'Inequality of the Means' or 'A.M. - G.M. inequality' and is referred to as <span class=\"latex\" lang=\"latex\"> \(  A.M. \geq G.M. \) </span>
+			<br />
+			Applying the inequality <span class=\"latex\" lang=\"latex\"> \(  A.M. \geq G.M. \) </span> to the number <span class=\"latex\" lang=\"latex\"> \(  a_1^{-1}, \ a_2^{-1}, \ ....., \ a_n^{-1},  \) </span> we have <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \frac{1}{n} \lbrace a_1^{-1} + a_2^{-1} + ......... + a_n^{-1} \rbrace \geq (a_1^{-1} \ a_2^{-1}.........a_n^{-1})^{ \frac{1}{n}}  \) </span>
+			<br />
+			or <span class=\"latex\" lang=\"latex\"> \(  (a_1 \ a_2.........a_n)^{ \frac{1}{n}} \geq \left[ \frac{1}{n} \lbrace a_1^{-1} + a_2^{-1} + ......... + a_n^{-1} \rbrace \right]^{-1}  \) </span>
+			<br />
+			is called the harmonic mean of the numbers <span class=\"latex\" lang=\"latex\"> \(  a_1, \ a_2, \ ........a_n  \) </span> and is denoted by H. The relation can be written as <span class=\"latex\" lang=\"latex\"> \(  G \geq H  \) </span> Together with the relation <span class=\"latex\" lang=\"latex\"> \(  A \geq G  \) </span>, we get <span class=\"latex\" lang=\"latex\"> \(  A \geq G \geq H  \) </span>
+		</p>
+	</section> 
+</section>
+<section class="skill" id="02">
+	<h3 class="skill-heading">Power Mean Inequality</h3>
+	<div class="list-custom-block-list-ol spaced20 indented20">
+		<ol>
+			<li>
+				<p>If a, b are positive reals then for 0 &lt; m &lt; 1. <br />
+					<span class=\"latex\" lang=\"latex\"> \(  \frac{a^m + b^m}{2} \geq  \left( \frac{a + b}{2} \right)^m  \) </span>
+					<br />
+					This can be remembered as, when 0 &lt; m &lt; 1 then the Arithmetic mean of the <span class=\"latex\" lang=\"latex\"> \(  m^{th}  \) </span> power of a and b is less than or equal to the <span class=\"latex\" lang=\"latex\"> \(  m^{th}  \) </span> power of the arithmetic mean of a and b. <br />
+					The equality holds when a = b.</p>
+			</li>
+			<li>
+				<p> If a, b are positive reals then for m &lt; 0 or m &gt; 1. <br />
+					<span class=\"latex\" lang=\"latex\"> \(  \frac{a^m + b^m}{2} \geq  \left( \frac{a + b}{2} \right)^m  \) </span>
+					<br />
+					The equality holds when a = b.</p>
+			</li>
+		</ol>
+	</div>
+</section>
+<section class="skill" id="03">
+	<h3 class="skill-heading">Cauchy-Schwarz inequality </h3>
+	<p> If a, b, c and x, y, z are any real numbers (positive, zero or negative), then <br />
+		<span class=\"latex\" lang=\"latex\"> \(  (ax + by + cz)^2 \leq (a^2 + b^2 + c^2) (x^2 + y^2 + z^2),  \) </span> with equality if a:b:c :: x:y:z  <br />
+		<span class="highlight01"> Remark:</span>
+		<br />
+		If none of the numbers <span class=\"latex\" lang=\"latex\"> \(  a_1,.........a_n, \ b_1,........., b_n  \) </span> be negative, the inequality can also be established as follows : <br />
+		Let <span class=\"latex\" lang=\"latex\"> \(  a_1^2 + a_2^2 +..... + a_n^2 = A_1^2, \ b_1^2 + b_2^2 +...... + b_n^2 = B^2 .......(1)  \) </span>
+		<br />
+		Let us now define <span class=\"latex\" lang=\"latex\"> \(  x_1, \ x_2,.........., \ x_n; \ y_1, \ y_2,....., \ y_n  \) </span> by the relations 
+		<br />
+		<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  x_1 = \frac{a_1}{A},........x_n = \frac{a_n}{A}........(2)  \\\\[3pt]
+			y_1 = \frac{b_1}{B},.......,y_n = \frac{b_n}{B}.........(3)  \end{align}  \) </span>
+		<br />
+		Then  <br />
+		<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \left. \begin{array}{c} x_1^2 + x_2^2 +.......+ x_n^2 = 1,  \\\\ y_1^2 + y_2^2 +......+ y_n^2 = 1 \end{array} \right\rbrace  \end{align}  \) </span> ..........(4) <br />
+		<br />
+		Since the geometric mean cannot exceed the arithmetic mean, <br />
+		<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \begin{array}{ccc} x_1 y_1 \leq \frac{x_1^2 + y_1^2}{2},  \\\\ .................  \\\\ .................  \\\\ x_n y_n \leq \frac{x_n^2 + y_n^2}{2} \end{array}  \end{align}  \) </span>
+		Adding these inequalities, we obtain <br />
+		<span class=\"latex\" lang=\"latex\"> \(  x_1 y_1 + x_2 y_2 +....... + x_n y_n \leq \frac{1}{2} (x_1^2 + x_2^2 +..... x_n^2) + \frac{1}{2} (y_1^2 + y_2^2 +......+ y_n^2)  \) </span>
+		<br />
+		On using (4), the above inequality yields <br />
+		<span class=\"latex\" lang=\"latex\"> \(  x_1 y_1 + x_2 y_2 +....... + x_n y_n \leq 1 ..........(5)  \) </span>
+		<br />
+		Substituting the values of <span class=\"latex\" lang=\"latex\"> \(  x_1,.......x_n, \ y_1, \ y_2,.........y_n  \) </span> from (2) and (3), we have <br />
+		<span class=\"latex\" lang=\"latex\"> \(  \frac{(a_1 b_1 +......  + a_n b_n)}{(AB)} \leq 1  \) </span>
+		<br />
+		Since AB is positive, we have <br />
+		<span class=\"latex\" lang=\"latex\"> \(  a_1 b_1 + ....... + a_n b_n \leq AB  \) </span>
+		<br />
+		Squaring both sides (this is permissible since each side in positive), we have <br />
+		<span class=\"latex\" lang=\"latex\"> \(  (a_1 b_1 +......+ a_n b_n)^2 \leq (a_1^2 +.....+ a_n^2) (b_1^2 + .......+ b_n^2)  \) </span>
+	</p>
+</section>
+<section class="skill" id="04">
+	<h3 class="skill-heading">Weistrass Inequality</h3>
+	<p> If <span class=\"latex\" lang=\"latex\"> \(  a_1, \ a_2, \ .....a_n  \) </span> are positive real numbers less than unity and <span class=\"latex\" lang=\"latex\"> \(  S_n = a_1 + a_2 +......a_n,  \) </span> then </p>
+	<div class="list-custom-block-list-ol spaced20 indented20">
+		<ol>
+			<li>
+				<p>
+					<span class=\"latex\" lang=\"latex\"> \(  1 - S_n &lt; (1 - a_1) (1 - a_2)........(1 - a_n); \) </span>
+				</p>
+			</li>
+			<li>
+				<p>
+					<span class=\"latex\" lang=\"latex\"> \(  1 + S_n &lt; (1 + a_1) (1 + a_2)........(1 + a_n); \) </span>
+				</p>
+			</li>
+			<li>
+				<p>
+					<span class=\"latex\" lang=\"latex\"> \(  (1 - a_1) (1 - a_2).........(1 - a_n) &lt; \frac{1}{1 + S_n};  \) </span>
+				</p>
+			</li>
+			<li>
+				<p>
+					<span class=\"latex\" lang=\"latex\"> \(  (1 + a_1) (1 + a_2).........(1 + a_n) &lt; \frac{1}{1 - S_n}  \) </span> provided <span class=\"latex\" lang=\"latex\"> \(  S_n \&lt;  \) </span>
+				</p>
+			</li>
+		</ol>
+	</div>
+</section>
+<section class="skill" id="05">
+	<h3 class="skill-heading">Tchebychef's Inequality</h3>
+	<p> If <span class=\"latex\" lang=\"latex\"> \(  a_1, \ a_2, \ a_3, \ b_1, \ b_2, \ b_3  \) </span> are any real numbers such that <span class=\"latex\" lang=\"latex\"> \(  a_1 \leq a_2 \leq a_3, \ b_1 \leq  b_2 \leq b_3,  \) </span> show that <br />
+		<span class=\"latex\" lang=\"latex\"> \(  3(a_1 b_1 + a_2 b_2 + a_3 b_3) \geq (a_1 + a_2 + a_3) (b_1 + b_2 + b_3)  \) </span>
+		<br />
+		The generalisation, usually called <span class="highlight01"> Tchebychefs inequality </span>, is given in the following theorem: </p>
+	<div class="list-custom-block-list-ol spaced20 indented20">
+		<ol>
+			<li>
+				<p> If <span class=\"latex\" lang=\"latex\"> \(  a_1,........ a_n  \) </span> and <span class=\"latex\" lang=\"latex\"> \(  b_1,.......b_n  \) </span> are any real numbers, such that <br />
+					<ol class="ordered-list-lower-roman">
+						<li>
+							<p>
+								<span class=\"latex\" lang=\"latex\"> \(  a_1 \leq ...... a_n, \ b_1 \leq ....... \leq b_n,  \) </span> then <br />
+								<span class=\"latex\" lang=\"latex\"> \(  n(a_1 b_1 +......+ a_n b_n) \geq (a_1 +......+ a_n) (b_2 +..... + b_n).  \) </span>
+							</p>
+						</li>
+						<li>
+							<p>
+								<span class=\"latex\" lang=\"latex\"> \(  a_1 \geq ...... a_n, \ b_1 \leq ....... \leq b_n,  \) </span> then <br />
+								<span class=\"latex\" lang=\"latex\"> \(  n(a_1 b_1 +......+ a_n b_n) \leq (a_1 +......+ a_n) (b_2 +..... + b_n).  \) </span>
+							</p>
+						</li>
+					</ol>
+				</p>
+			</li>
+			<li>
+				<p> The inequality in (i) above can be put in the following symmetric form: <br />
+					<span class=\"latex\" lang=\"latex\"> \(  \frac{a_1 b_1 + ..... + a_n b_n}{n} \geq \frac{a_1 + .... + a_n}{n}. \frac{b_1 +..... b_n}{n}  \) </span>
+					<br />
+					This form suggests the following generalisation which we state without proof: <br />
+					If <span class=\"latex\" lang=\"latex\"> \(  a_1,......., a_n; \ b_1 ,......., b_n; \ k_1 ,......., \ k_n  \) </span> are real numbers such that <br />
+					If <span class=\"latex\" lang=\"latex\"> \(  a_1 \leq ....... \leq a_n, \ b_1 \leq ....... \leq b_n, \ k_1 \leq ...... \leq k_n,  \) </span> then <br />
+					<span class=\"latex\" lang=\"latex\"> \(  \frac{a_1 b_1........k_1 + ..... + a_n b_n.......k_n}{n}  \) </span>
+					<br />
+					<span class=\"latex\" lang=\"latex\"> \(  \geq \frac{a_1 +...... + a_n}{n}. \frac{b_1 + .... b_n}{n}........ \frac{k_1 + ..... + k_n}{n}  \) </span>
+					<br />
+					We shall refer to this inequality as Generalised Tchebychefs Inequality.</p>
+			</li>
+		</ol>
+	</div>
+</section>
+<section class="skill" id="06">
+	<h3 class="skill-heading">Geometrical Inequalities</h3> 
+	<section class="subskill">
+		<h4 class="skill-subheading">Triangle Inequality</h4>
+		<p> In any <span class=\"latex\" lang=\"latex\"> \(  \triangle ABC  \) </span>, sum of any two sides is greater than the third side, .... or in other words one of the sides is less than the sum of the other two sides.</p>
+		<div class="list-custom-block-list-ol spaced20 indented20">
+			<ol>
+				<li>
+					<p> a &lt; b + c, </p>
+				</li>
+				<li>
+					<p> b &lt; c + a, </p>
+				</li>
+				<li>
+					<p> c &lt; a + b.</p>
+				</li>
+			</ol>
+		</div>
+	</section>
+</section>
+<section class="skill" id="07">
+	<h3 class="skill-heading">Trigonometric Inequalities</h3> 
+	<section class="subskill">
+		<h4 class="skill-subheading">Solution of Trigonometric Inequality</h4>
+		<p> Determination of base or fundamental interval is central to solve trigonometric inequality. The function values in this interval is repeated with a periodicity of trigonometric function. The base interval depends on the nature of trigonometric function and inequality in question. The steps to find solution of trigonometric inequality are:</p>
+		<div class="list-custom-block-list-ol spaced20 indented20">
+			<ol>
+				<li>
+					<p> Convert given inequality to trigonometric equation by replacing inequality sign by equality sign. </p>
+				</li>
+				<li>
+					<p> Solve resulting equation in the interval <span class=\"latex\" lang=\"latex\"> \(  [0, \ 2 \pi]  \) </span> . There are two solutions. They are the angle values at which trigonometric function has the value which is being compared in the given inequality.</p>
+				</li>
+				<li>
+					<p> Convert positive angle greater than <span class=\"latex\" lang=\"latex\"> \(  \pi  \) </span> to equivalent negative value to account for the fact that basic interval being repeated may lie on negative side of the origin (cosine, secant and tangent function).</p>
+				</li>
+				<li>
+					<p> Construct base interval between two values, keeping in mind the given inequality. It is always advantageous to draw a rough intersection of graphs of each side of given inequality.</p>
+				</li>
+				<li>
+					<p> If function asymptotes (tangent, cotangent, secant and cosecant) within the interval constructed, then basic interval is limited by the angle value at which function asymptotes. </p>
+				</li>
+				<li>
+					<p> Generalize solution by extending base interval with the period of the trigonometric function. In order to understand the process, let us solve the inequality given by: <br />
+						<span class=\"latex\" lang=\"latex\"> \(  tan x \geq - \sqrt{3}  \) </span>
+						<br />
+						This example has been selected here as it involves consideration of each step as enumerated above for finding solution of inequality. Corresponding trigonometric equation, in this case, is: <br />
+						<span class=\"latex\" lang=\"latex\"> \(  tan x = - \sqrt{3}  \) </span>
+						<br />
+						The acute angle is <span class=\"latex\" lang=\"latex\"> \(  = \frac{ \pi}{3}  \) </span>. Further, tangent function is negative in second and fourth quarter. Using value diagram in conjunction with sign diagram, solution of given equation in <span class=\"latex\" lang=\"latex\"> \(  [0, 2 \pi]  \) </span> are: </p>
+				</li>
+			</ol>
+		</div>
+		<div class="synopsis-image"> 
+			<img src="104190008_image-1.png" alt="image1" class="default-synopsis-medium-image" />
+		 </div>
+		<p>
+			<span class="highlight01"> Figure </span> Tangent function is negative in second and fourth quarter <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \Rightarrow x = \pi - \theta = \pi - \frac{ \pi}{3} = \frac{2 \pi}{3}  \\\\[3pt]
+				\Rightarrow x = 2 \pi - \theta = 2 \pi - \frac{ \pi}{3} = \frac{5 \pi}{3}  \end{align}  \) </span>
+			<br />
+			Here, second angle is greater than <span class=\"latex\" lang=\"latex\"> \(  \pi  \) </span>. Hence, equivalent negative angle is: <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \Rightarrow y = \frac{5 \pi}{3} - 2 \pi = - \frac{ \pi}{3}  \) </span>
+			<br />
+			Tangent function, however, is not a continuous function between <span class=\"latex\" lang=\"latex\"> \(  \frac{ - \pi}{3}  \) </span> and <span class=\"latex\" lang=\"latex\"> \(  \frac{2 \pi}{3}  \) </span>
+			<br />
+			Tangent values are greater than <span class=\"latex\" lang=\"latex\"> \(  - \sqrt{3}  \) </span> for angle greater than <span class=\"latex\" lang=\"latex\"> \(  \frac{ - \pi}{3}  \) </span> , but value asymptotes to infinity at it <span class=\"latex\" lang=\"latex\"> \(  \frac{ \pi}{2}  \) </span> . This can be verified from the intersection graph. </p>
+		<div class="synopsis-image"> 
+			<img src="104190008_image-2.png" alt="image2" class="default-synopsis-medium-image" />
+		 </div>
+		<p>
+			<span class="highlight01"> Figure </span> Intervals satisfying inequality, involving tangent function Thus basic interval satisfying inequality is: <br />
+			<span class=\"latex\" lang=\"latex\"> \(  - \frac{ \pi}{3} \leq x &lt; \frac{ \pi}{2}  \) </span>
+			<br />
+			It is also clear that the solution in this interval is repeated with a period of <span class=\"latex\" lang=\"latex\"> \(  \pi  \) </span> , which is the period of tangent function. Hence, solution of given inequality is: <br />
+			<span class=\"latex\" lang=\"latex\"> \(  n \pi - \frac{ \pi}{3} \leq x &lt; n \pi + \frac{ \pi}{2}; \ n \epsilon Z  \) </span>
+		</p>
+	</section>
+</section> 
+<section class="solved-examples" id="examples">
+	<h3 class="solved-examples-heading">Solved examples</h3>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 1:</h4>
+		<p>
+			<span class="highlight01"> Question:</span>
+			<br />
+			Prove that for different a, b, c positive (a + b) (b + c) (c + a) &gt; 8 abc </p>
+		<p>
+			<span class="highlight01">Solution:</span>
+			<br />
+			Applying AM &gt; GM, we have <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  a + b &gt; 2 \sqrt{ab}  \\\\[3pt]
+				b + c &gt; 2 \sqrt{bc}  \\\\[3pt]
+				c + a &gt; 2 \sqrt{ca}  \\\\[3pt]
+				(a + b) (b + c) (c + a) &gt; 8 \sqrt{(ab) (bc) (ca)}  \\\\[3pt]
+				(a + b) (b + c) (c + a) &gt; 8 abc  \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 2:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			If a, b, c, x, y, z are all positive, prove that <span class=\"latex\" lang=\"latex\"> \(  (x + y + z) \left( \frac{1}{x} + \frac{1}{y} + \frac{1}{z} \right) \geq 9  \) </span>
+		</p>
+		<p>
+			<span class="highlight01">Solution:</span>
+			<br />
+			The AM of x, y, z is <span class=\"latex\" lang=\"latex\"> \(  \frac{x + y + z}{3}  \) </span>
+			<br />
+			The GM of x, y, z is <span class=\"latex\" lang=\"latex\"> \(  \sqrt[3]{xyz}  \) </span>
+			<br />
+			The AM of <span class=\"latex\" lang=\"latex\"> \(  \frac{1}{x}, \ \frac{1}{y}, \ \frac{1}{z}  \) </span> is <span class=\"latex\" lang=\"latex\"> \(  \frac{ \frac{1}{x} + \frac{1}{y} + \frac{1}{z}}{3}  \) </span>
+			<br />
+			The GM of <span class=\"latex\" lang=\"latex\"> \(  \frac{1}{x}, \ \frac{1}{y}, \ \frac{1}{z}  \) </span> is <span class=\"latex\" lang=\"latex\"> \(  \sqrt[3]{ \frac{1}{xyz}}  \) </span>
+			<br />
+			Applying AM <span class=\"latex\" lang=\"latex\"> \(  \geq  \) </span> GM for the first and second terms we have <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \frac{x + y + z}{3} \geq \sqrt[3]{ xyz}  \\\\[3pt]
+				\frac{ \frac{1}{x} + \frac{1}{y} + \frac{1}{z}}{3} \geq \sqrt[3]{ \frac{1}{xyz}}  \end{align}  \) </span>
+			Multiplying we get <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \frac{(x + y + z) \left( \frac{1}{x} + \frac{1}{y} + \frac{1}{z} \right)}{9} \geq \sqrt[3]{xyz \frac{1}{xyz}}  \\\\[3pt]
+				\Rightarrow (x + y + z) \left( \frac{1}{x} + \frac{1}{y} + \frac{1}{z} \right) \geq 9  \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 3:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			If a, b, c are positive prove that (1 + a) (1 + b) (1 + c) = 8, find maximum of abc</p>
+		<p>
+			<span class="highlight01">Solution:</span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  1 + a \geq 2 \sqrt{a} \) </span> [A.M - G.M. Law] <br />
+			<span class=\"latex\" lang=\"latex\"> \(  1 + b \geq 2 \sqrt{b} \) </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  1 + b \geq 2 \sqrt{b} \) </span>
+			<br />
+			Multiplying all above equations <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  (1 + a) (1 + b) (1 + c) \geq 8 \sqrt{abc}  \\\\[3pt]
+				8 \geq 8 \sqrt{abc}  \\\\[3pt]
+				1 \geq \sqrt{abc}  \\\\[3pt]
+				\sqrt{abc} \leq 1  \\\\[3pt]
+				abc \leq 1  \end{align}  \) </span>
+			<br />
+			Maximum of abc is 1. </p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 4:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			prove that <span class=\"latex\" lang=\"latex\"> \(  (1^{2007} + 2^{2007} +...... + n^{2007}) \geq n^n (n!)^{2007}  \) </span>
+		</p>
+		<p>
+			<span class="highlight01">Solution:</span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}    A.M \geq G.M  \\\\[3pt]
+				(1^{2007} + 2^{2007} +...... + n^{2007}) \geq n \sqrt[n]{1^{2007}. 2^{2007}.......n^{2007}}  \\\\[3pt]
+				\geq n \sqrt[n]{(n!)^{2007}}  \\\\[3pt]
+				(1^{2007} + 2^{2007} +...... + n^{2007}) \geq \left[ \left( n(n!)^{2007} \right)^{ \frac{1}{n}} \right]^n \geq n^n (n!)^{2007}  \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 5:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			If a &gt; 0, b &gt; 0, c &gt; 0, prove that [(1 + a) (1 + b) (1 + c)] > 8 (1 - a) (1 - b) (1 - c) where a + b + c = 1</p>
+		<p>
+			<span class="highlight01">Solution:</span>
+			<br />
+			a + b + c = 1 <br />
+			1 + a + b + c = 1 + 1 <br />
+			1 + a = 2 - b - c <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  1 + a = (1 - b) + (1 - c) \geq 2 \sqrt{(1 - b) (1 - c)}  \\\\[3pt]
+				\therefore (1 + a) \geq 2 \sqrt{(1 - b) (1 - c)}........ (1)  \end{align}  \) </span>
+			<br />
+			Similarly <span class=\"latex\" lang=\"latex\"> \(  (1 + b) \geq 2 \sqrt{(1 - c) (1 - a)}......(2)  \) </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  (1 + c) \geq 2 \sqrt{(1 - a) (1 - b)}........(3)  \\\\[3pt]
+				(1) \times (2) \times (3)  \\\\[3pt]
+				(1 + a) (1 + b) (1 + c) \geq 8 (1 - a) (1 - b) (1 - c)  \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 6:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			If sum of any two quantities x, y, z be together greater than third, then prove that <span class=\"latex\" lang=\"latex\"> \(  (x + y + z)^3 &gt; 27 (y + z - x) (z + x - y) (x + y - z)  \) </span>
+		</p>
+		<p>
+			<span class="highlight01">Solution:</span>
+			<br />
+			x + y > z  (given) <br />
+			(x + y - z) &gt; 0, (z + x - y) &gt; 0 and (y + z - x) &gt; 0 <br />
+			Put y + z - x = a, z + x - y = b, x + y - z = c <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  z = \frac{a + b}{2}, \ x = \frac{b + c}{2}, \ y = \frac{c + a}{2}  \\\\[3pt]
+				\Rightarrow x + y + z = \frac{a + b + b + c + c + a}{2}  \\\\[3pt]
+				\Rightarrow x + y + z = a + b + c  \end{align}  \) </span>
+			<br />
+			But <span class=\"latex\" lang=\"latex\"> \(  a + b = c \geq 3 \sqrt[3]{abc}  \) </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  x + y + z \geq 3 \sqrt[3]{(y + z - x) (z + x - y) (x + y - z)} \) </span>
+			<br />
+			Cubing on both sides <br />
+			<span class=\"latex\" lang=\"latex\"> \(  (x + y + z)^3 \geq 27 (y + z - x) (z + x - y) (x + y - z)  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 7:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			Prove <span class=\"latex\" lang=\"latex\"> \(  (n !)^3 &lt; n^{2n} \left( \frac{n + 1}{2} \right)^{2n}  \) </span>
+		</p>
+		<p>
+			<span class="highlight01">Solution:</span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  1^3 + 2^3 + 3^3 + ....+ n^3 \geq \sqrt[3]{1^3. 2^3.......n^3}  \\\\[3pt]
+				\frac{n^2 (n + 1)^2}{4} \geq \sqrt[n]{(n!)^3}  \\\\[3pt]
+				\left[ \frac{n(n + 1)}{2} \right]^2 \geq \sqrt[n]{(n!)^3}  \end{align}  \) </span>
+			<br />
+			Raising to the power of n both sides, we have <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \left[ \frac{n(n + 1)}{2} \right]^{2n} \geq (n!)^3  \) </span>
+			<span class=\"latex\" lang=\"latex\"> \(  n^{2n} \left[ \frac{n(n + 1)}{2} \right]^{2n} \geq (n!)^3  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 8:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			Show that <span class=\"latex\" lang=\"latex\"> \(  n^n \left( \frac{n + 1}{2} \right)^{2n} &gt; (n!)^3  \) </span>
+		</p>
+		<p>
+			<span class="highlight01">Solution:</span>
+			<br />
+			Cosider the unequal positive numbers <br />
+			<span class=\"latex\" lang=\"latex\"> \(  1^3, \ 2^3, \ ....., n^3.  \) </span>
+			<br />
+			Since <span class=\"latex\" lang=\"latex\"> \(  A.M &gt; G.M  \) </span>., therefore <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \frac{1^3 + 2^3 + ..... + n^3}{n} &lt; > (1^3.2^3.....n^3)^{\frac{1}{n}}, <br />
+				i.e., \ \frac{n(n + 1)^2}{4} &gt; {(n!)^3}^{\frac{1}{n}}. \) </span>
+			<br />
+			Raising both sides to power n, we have <br />
+			<span class=\"latex\" lang=\"latex\"> \(  n^n \left ( \frac{n + 1}{2} \right )^{2n} &gt; (n!)^3  \) </span> .</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 9:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			Prove that if n be a positive integer, then <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \left ( 1 + \frac{1}{n} \right )^n &lt; \left ( 1 + \frac{1}{n + 1} \right )^{n + 1}  \) </span>
+		</p>
+		<p>
+			<span class="highlight01">Solution:</span>
+			<br />
+			If <span class=\"latex\" lang=\"latex\"> \(  a_1, ..... a_{n + 1}  \) </span> be positive number(not all equal), then by the inequality of the means, <br />
+			we have <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}   ( a_1, ..... a_{n + 1}){\frac{1}{(n + 1)}} &lt; \frac{a_1 + .... + a_{n + 1}}{n + 1} ...... (1)  \\\\[3pt]
+				Putting \ a_1 = a_2 = ..... a_n = 1 + \frac{1}{n}, \ a_{n + 1} = 1  \end{align}  \) </span>,<br /> we have <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}   \left ( 1 + \frac{1}{n} \right )^{n/(n + 1)} &lt; \frac{n + 2}{n + 1},  \\\\[3pt]
+				or \ \left ( 1 + \frac{1}{n} \right )^{n/(n + 1)} &lt;  1 + \frac{1}{n + 1}.  \end{align}  \) </span>
+			<br />
+			Raising both sides to power n + 1, we have <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \left ( 1 + \frac{1}{n} \right )^n &lt; \left ( 1 + \frac{1}{n + 1} \right )^{n + 1}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 10:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			If a, b, c, d are positive reals prove that <br />
+			<span class=\"latex\" lang=\"latex\"> \(  a^4 + b^4 + c^4 \geq abc(a + b + c)  \) </span>
+		</p>
+		<p>
+			<span class="highlight01">Solution:</span>
+			<br />
+			Applying power mean theorem <span class=\"latex\" lang=\"latex\"> \(  (m = 4 &gt; 1)  \) </span>. <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \frac{a^4 + b^4 + c^4}{3} &gt; \left ( \frac{a + b + c}{3} \right )^4  \\\\[3pt]
+				\Rightarrow \ \frac{a^4 + b^4 + c^4}{3}  &gt; \left ( \frac{a + b + c}{3} \right ) \left ( \frac{a + b + c}{3} \right )^3 ........ (1)  \end{align}  \) </span>
+			<br />
+			Using AM - GM inequality to a, b, c we get <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \frac{a + b + c}{3}  \geq \sqrt[3]{abc}  \\\\[3pt]
+				\Rightarrow \ \left ( \frac{a + b + c}{3} \right )^3 \geq abc  \\\\[3pt]
+				(1) \ \Rightarrow \ \frac{a^4 + b^4 + c^4}{3}  \geq \frac{abc}{a + b + c}{3}  \\\\[3pt]
+				\Rightarrow \ a^4 + b^4 + c^4 \geq abc(a + b + c)  \end{align}  \) </span>
+			<br />
+			The equality holds when a = b = c. </p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 11:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			Find all solutions in positive real numbers a, b, c, d to the following system.<br />
+			a + b + c + d = 12 <br />
+			and abcd = 27 + ab ac + ad + bc bd + cd </p>
+		<p>
+			<span class="highlight01">Solution:</span>
+			<br />
+			Given	a + b + c + d = 12 ......(1)<br />
+			and abcd = 27 + ab + ac + ad + bc + bd + cd .....(2)<br />
+			Consider the positive reals <br />
+			ab, ac, ad, be, bd, cd. <br />
+			Apply AM - GM inequality <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \frac{ab + ac + ad + bc + bd + cd}{6} \geq \sqrt[6]{ab.bc.ca.bd.cd}  \\\\[3pt]
+				\Rightarrow ab + ac + ad + bc + bd + cd \geq \sqrt[6]{abcd}  \\\\[3pt]
+				\Rightarrow abcd \geq 27 + \sqrt[6]{abcd} \ [using(2)]  \\\\[3pt]
+				\Rightarrow ( \sqrt{abcd} - 9)(\sqrt{abcd} + 3)  \geq 0  \\\\[3pt]
+				\Rightarrow \sqrt{abcd} \geq 9 \ ...(3)  \\\\[3pt]
+				Now, \ \frac{abcd}{4} \geq \sqrt[4]{abcd}.  \end{align}  \) </span>. <br />
+			But, a  + b + c + d = 12 by equation (1).<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}    3 &gt; \sqrt[4]{abcd}  \\\\[3pt]
+				\Rightarrow 9 &gt; \sqrt{abcd} \ ...(4)  \\\\[3pt]
+			 \end{align}  \) </span>
+			<br />
+			From (3) and (4) we get <span class=\"latex\" lang=\"latex\"> \(  \sqrt{abcd} = 9  \) </span> or abed = 81. Thus we have AM = GM. <br />
+			This can happen when	a = b = c = d <br />
+			a = b = c = d = 3. </p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 12:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			If x, y, z, a, b, c are reals and <span class=\"latex\" lang=\"latex\"> \(  x^2 + y^2 + z^2 = 1, \ a^2 + b^2 + c^2 = 1.  \) </span>. <br />
+			Prove <span class=\"latex\" lang=\"latex\"> \(  ax + by + cz \leq 1  \) </span>
+		</p>
+		<p>
+			<span class="highlight01">Solution:</span>
+			<br />
+			Consider the set of reals a, b, c<br />
+			x, y, z.<br />
+			Apply Cauchy-Schwarz inequality.<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align} 
+				(ax + by + cz)^2 \leq (a^2 + b^2 + c^2) (x^2 + y^2 + z^2)  \\\\[3pt]ax + by + c \leq 1.
+			 \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 13:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			If x, y, z are positive reals prove that <br />
+			<span class=\"latex\" lang=\"latex\"> \( (x + y + z)^3 \leq 9(x^3 + y^3 + z^3)  \) </span>
+		</p>
+		<p>
+			<span class="highlight01">Solution:</span>
+			<br />
+			Consider the reals<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  x^{ \frac{3}{2}}, \ y^{ \frac{3}{2}}, \ z^{ \frac{3}{2}}  \\\\[3pt]
+				x^{ \frac{1}{2}}, \ y^{ \frac{1}{2}}, \ z^{ \frac{1}{2}}  \end{align}  \) </span>.<br />
+			Applying Cauchy-Schwarz inequality we get <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \left( x^{ \frac{3}{2}}.x^{\frac{1}{2}} + y^{ \frac{3}{2}}.y^{\frac{1}{2}} + z^{ \frac{3}{2}}.z^{\frac{1}{2}} \right)^2 \leq (x^3 + y^3 + z^3)(x + y + z)  \\\\[3pt]
+				\Rightarrow (x^ 2 + y^2 + z^2) \leq (x^3 + y^3 + z^3)(x + y + z) \ ...(1)
+			 \end{align}  \) </span>.<br />
+			Now consider the reals <br />
+			x, y, z <br />
+			1, 1, 1 <br />
+			Applying Cauchy-Schwarz inequality we get <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  (x.1 + y.1 + z.1)^2 \leq (x^2 + y^2 + z^2)(1^2 + 1^2 + 1^2)  \\\\[3pt]
+				\Rightarrow (x + y + z)^2 \leq 3(x^2 +y^2 + z^2)  \\\\[3pt]
+				\Rightarrow (x + y + z)^2 \leq 9(x^2 +y^2 + z^2) \ ....(2)
+			 \end{align}  \) </span>
+			<br />
+			Combining (1) and (2)<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  (x + y + z)^4 \leq 9(x^2 +y^2 + z^2)(x + y + z)  \\\\[3pt]
+				\Rightarrow (x + y + z)^3 \leq 9(x^3 +y^3 + z^3)  \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 14:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			Let ABC be a right-angled triangle with AC as its hypotenuse. Prove that </p>
+		<div class="list1-ol default-spaced-indented list-numbered-style-lower-alpha">
+			<ol>
+				<li>
+					<p> AC &gt; AB and AC &gt; BC; </p>
+				</li>
+				<li>
+					<p>
+						<span class=\"latex\" lang=\"latex\"> \(  AC^3 &gt; AB^3 + BC^3.  \) </span>
+					</p>
+				</li>
+			</ol>
+		</div>
+		<p>
+			<span class="highlight01">Solution:</span>
+		</p>
+		<div class="list1-ol default-spaced-indented list-numbered-style-lower-alpha">
+			<ol>
+				<li>
+					<p> Since in any triangle, if two angles are unequal the greater angle has the greater side opposite to it, therefore,<br />
+						AC > AB and AC > BC <br />
+						(Alternatively, in a right-angled triangle, right angled at A, <span class=\"latex\" lang=\"latex\"> \(  AC^2 = AB^2 + BC^2  \) </span>, so that AC > AB and AC > BC)</p>
+				</li>
+				<li>
+					<p>
+						<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  AC^3 = AC^2.AC = (AB^2 + BC^2).AC  \\\\[3pt]
+							= AB^2.AC + BC^2.AC  \\\\[3pt]
+							= AB^2.AB + BC^2.BC  \\\\[3pt]
+							= AB^3 + BC^3, by \ (1).
+						 \end{align}  \) </span>
+					</p>
+				</li>
+			</ol>
+		</div>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 15:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			If A, B and C are the angles of <span class=\"latex\" lang=\"latex\"> \(  \Delta ABC  \) </span>, and C is obtuse, prove that tanA tanB &lt; 1. <br />
+			<span class=\"latex\" lang=\"latex\"> \(  a^4 + b^4 + c^4 \geq abc(a + b + c)  \) </span>
+		</p>
+		<p>
+			<span class="highlight01">Solution:</span>
+			<br />
+			tan C &lt; 0 since C is obtuse <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \therefore tan C = tan[180 - (A + B)] &lt; 0  \\\\[3pt]
+				= - tan (A + B) &lt; 0  \\\\[3pt]
+				= tan (A + B) &gt; 0  \\\\[3pt]
+				\Rightarrow \frac{tanA + tanB}{1 - tan A \ tan B} &gt; 0  \\\\[3pt]
+				\therefore 1 - tan A, \ tan B &gt; 0  \\\\[3pt]
+				\Rightarrow tanA \ tan B &lt; 1.
+			 \end{align}  \) </span>. </p>
+	</section>
+</section>  

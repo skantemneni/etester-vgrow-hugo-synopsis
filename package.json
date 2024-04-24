@@ -1,0 +1,22 @@
+{
+  "name": "etester-hugo-synopsis",
+  "version": "1.0.0",
+  "description": "Sybnopsis content from eTester",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skantemneni/etester-hugo-synopsis.git"
+  },
+  "author": "Sesi Kantemneni",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/skantemneni/etester-hugo-synopsis/issues"
+  },
+  "homepage": "https://github.com/skantemneni/etester-hugo-synopsis#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.3"
+  }
+}

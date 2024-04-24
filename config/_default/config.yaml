@@ -1,0 +1,28 @@
+baseURL: http://localhost:1313/
+languageCode: en-us
+title: eTester Synopsis
+theme: basic
+relativeURLS: true
+canonifyURLs: true
+
+
+
+cleanDestinationDir: true
+
+params:
+  description: eTester Synopsis
+  logo: /image/logo/logoETESTER.svg
+  parentWebsite: https://etester.com
+  parentWebsiteLinkText: eTester Application
+
+markup:
+  highlight:
+    codeFences: false
+  goldmark:
+    renderer:
+      unsafe: true
+
+module:
+  mounts:
+    source: "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+    target: "assets/js/bootstrap.bundle.min.js"

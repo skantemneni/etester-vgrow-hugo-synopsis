@@ -1,0 +1,836 @@
+---
+title: "Quadratic Equation - II"
+layout: "default_foundation"
+isMath: true
+--- 
+<section class="skill" id="01">
+	<h3 class="skill-heading">Introduction</h3>
+	<p>An equation of the form<br />
+		<span class=\"latex\" lang=\"latex\"> \(  ax^2 + bx + c = 0  \) </span>
+		<br />
+		Where <span class=\"latex\" lang=\"latex\"> \(  a, \ b, \ c \epsilon R  \) </span> and <span class=\"latex\" lang=\"latex\"> \(  a \neq 0  \) </span> is called a quadratic equation. The numbers a, b, c are called the coefficient of this equation.<br />
+		A root of the quadratic equation is a complex number <span class=\"latex\" lang=\"latex\"> \(  \alpha  \) </span> such that <span class=\"latex\" lang=\"latex\"> \(  a \alpha^2 + b \alpha + c = 0  \) </span>
+		<br />
+		Discriminant <span class=\"latex\" lang=\"latex\"> \(  D = b^2 - 4ac  \) </span>
+		<br />
+		The roots of the above quadratic equation are given by the formula<br />
+		<span class=\"latex\" lang=\"latex\"> \(  x = \frac{-b \pm \sqrt{D}}{2a} \ \ or \ \ x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}  \) </span>
+	</p>
+</section>
+<section class="skill" id="02">
+	<h3 class="skill-heading">Properties of Quadratic Equations</h3>
+	<div class="list-custom-block-list-ol spaced20 indented20">
+		<ol>
+			<li>
+				<p>A quadratic equation has only two roots.</p>
+			</li>
+			<li>
+				<p>A quadratic equation cannot have more than two different roots.</p>
+			</li>
+			<li>
+				<p>If <span class=\"latex\" lang=\"latex\"> \(  \alpha  \) </span> be a root of the quadratic equation <span class=\"latex\" lang=\"latex\"> \(  ax^2 + bx + c = 0  \) </span>, then <span class=\"latex\" lang=\"latex\"> \(  (x - \alpha)  \) </span> is a factor of <span class=\"latex\" lang=\"latex\"> \(  ax^2 + bx + c = 0  \) </span>
+				</p>
+			</li>
+		</ol>
+	</div>
+	<section class="subskill">
+		<h4 class="skill-subheading">Note:</h4>
+		<p>The possible values of x which satisfy the quadratic equation are called the roots of the quadratic equation.</p>
+	</section>
+</section>
+<section class="skill" id="03">
+	<h3 class="skill-heading">Sum and Product of the roots of a quadratic equation</h3>
+	<p>Let <span class=\"latex\" lang=\"latex\"> \(  \alpha, \ \beta  \) </span> be the roots of a quadratic equation <span class=\"latex\" lang=\"latex\"> \(  ax^2 + bx + c = 0; \ a \neq 0  \) </span>, then<br />
+		<span class=\"latex\" lang=\"latex\"> \(  \alpha + \beta = \frac{-b}{a} = - \left( \frac{coefficient \ of \ x}{coefficient \ of \ x^2} \right) \ and \ \alpha.\beta = \frac{c}{a} = \left( \frac{constant \ term}{coefficient \ of \ x^2} \right)  \) </span>
+		<br />
+		Therefore,</p>
+	<div class="list-custom-block-list-ol spaced20 indented20">
+		<ol>
+			<li>
+				<p>If the two roots <span class=\"latex\" lang=\"latex\"> \(  \alpha  \) </span> and <span class=\"latex\" lang=\"latex\"> \(  \beta  \) </span> be reciprocal to each other, then a = c.</p>
+			</li>
+			<li>
+				<p>If the two roots <span class=\"latex\" lang=\"latex\"> \(  \alpha  \) </span> and <span class=\"latex\" lang=\"latex\"> \(  \beta  \) </span> be equal in magnitude and opposite in sign, then b = 0.</p>
+			</li>
+		</ol>
+	</div> 
+</section>
+<section class="skill" id="04">
+	<h3 class="skill-heading">Sign of the roots</h3>
+	<div class="list-custom-block-list-ol spaced20 indented20">
+		<ol>
+			<li>
+				<p>The roots <span class=\"latex\" lang=\"latex\"> \(  \alpha, \ \beta  \) </span> are both negative, if <span class=\"latex\" lang=\"latex\"> \(  ( \alpha + \beta)  \) </span> and <span class=\"latex\" lang=\"latex\"> \(  \alpha \beta  \) </span> are both positive<br />
+					<span class=\"latex\" lang=\"latex\"> \(  \left(i.e., \ if \ \frac{-b}{a} \ and \ \frac{c}{a} \ are \ both \ positive \right)  \) </span>
+				</p>
+			</li>
+			<li>
+				<p>The roots <span class=\"latex\" lang=\"latex\"> \(  \alpha, \ \beta  \) </span> are both positive, if <span class=\"latex\" lang=\"latex\"> \(  \alpha + \beta  \) </span> is negative and <span class=\"latex\" lang=\"latex\"> \(  \alpha \beta  \) </span> is positive<br />
+					<span class=\"latex\" lang=\"latex\"> \(  \left(i.e., \ if \ \frac{b}{a} \ is \ negative \ and \ \frac{c}{a} \ is \ positive \right)  \) </span>
+				</p>
+			</li>
+			<li>
+				<p>The roots <span class=\"latex\" lang=\"latex\"> \(  \alpha, \ \beta  \) </span> are of opposite sign, if <span class=\"latex\" lang=\"latex\"> \(  \alpha \beta  \) </span> is negative<br />
+					<span class=\"latex\" lang=\"latex\"> \(  \left(i.e., \ \frac{c}{a} \ is \ negative \right)  \) </span>
+				</p>
+			</li>
+		</ol>
+	</div>
+	<table class="u-full-width summary-table">
+		<thead>
+			<tr>
+				<th align="center">Sign of <span class=\"latex\" lang=\"latex\"> \(  ( \alpha + \beta)  \) </span>
+				</th>
+				<th align="center">Sign of <span class=\"latex\" lang=\"latex\"> \(  ( \alpha \beta)  \) </span>
+				</th>
+				<th align="center">Sign of the <span class=\"latex\" lang=\"latex\"> \(  \alpha, \ \beta  \) </span>
+				</th>
+			</tr>
+		</thead>
+		<tr>
+			<td align="center">+ ve</td>
+			<td align="center">+ ve</td>
+			<td align="center">
+				<span class=\"latex\" lang=\"latex\"> \(  \alpha  \) </span> and <span class=\"latex\" lang=\"latex\"> \(  \beta  \) </span> are positive</td>
+		</tr>
+		<tr>
+			<td align="center">- ve</td>
+			<td align="center">+ ve</td>
+			<td align="center">
+				<span class=\"latex\" lang=\"latex\"> \(  \alpha  \) </span> and <span class=\"latex\" lang=\"latex\"> \(  \beta  \) </span> are negative</td>
+		</tr>
+		<tr>
+			<td align="center">+ ve</td>
+			<td align="center">- ve</td>
+			<td align="center">
+				<span class=\"latex\" lang=\"latex\"> \(  \alpha  \) </span> is positive and <span class=\"latex\" lang=\"latex\"> \(  \beta  \) </span> is negative if <span class=\"latex\" lang=\"latex\"> \(  \alpha > \beta  \) </span>(numerically)</td>
+		</tr>
+		<tr>
+			<td align="center">- ve</td>
+			<td align="center">- ve</td>
+			<td align="center">
+				<span class=\"latex\" lang=\"latex\"> \(  \alpha  \) </span> is negative and <span class=\"latex\" lang=\"latex\"> \(  \beta  \) </span> is positive if <span class=\"latex\" lang=\"latex\"> \(  \alpha > \beta  \) </span>(numerically)</td>
+		</tr>
+	</table>
+</section> 
+<section class="skill" id="05">
+	<h3 class="skill-heading">Nature of the roots</h3>
+	<p>For a quadratic equation <span class=\"latex\" lang=\"latex\"> \(  ax^2 + bx + c = 0  \) </span> where <span class=\"latex\" lang=\"latex\"> \(  a, \ b, \ c \epsilon R, \ a \neq 0  \) </span> and <span class=\"latex\" lang=\"latex\"> \(  D = b^2 - 4ac.  \) </span>
+	</p>
+	<div class="list-custom-block-list-ol spaced20 indented20">
+		<ol>
+			<li>
+				<p>If <span class=\"latex\" lang=\"latex\"> \(  D > 0  \) </span>, roots are imaginary</p>
+			</li>
+			<li>
+				<p>If <span class=\"latex\" lang=\"latex\"> \(  D \geq 0  \) </span> roots are real.</p>
+			</li>
+		</ol>
+	</div>
+	<div class="synopsis-image"> 
+		<img src="104190007_image-1.png" alt="image1" class="default-synopsis-medium-image" />
+	 </div>
+	<div class="list-custom-block-list-ol spaced20 indented20">
+		<ol>
+			<li>
+				<p>If <span class=\"latex\" lang=\"latex\"> \(  a, \ b, \ c \epsilon R  \) </span> and p + iq is one root of quadratic equation ( where <span class=\"latex\" lang=\"latex\"> \(  q \neq 0  \) </span>), then the other roots must be conjugate p - iq and vice - versa.(<span class=\"latex\" lang=\"latex\"> \(  p, \ q \epsilon R, \ a \neq 0  \) </span> and <span class=\"latex\" lang=\"latex\"> \(  i = \sqrt{-1}  \) </span>)</p>
+			</li>
+			<li>
+				<p>If <span class=\"latex\" lang=\"latex\"> \(  a, \ b, \ c \epsilon Q, \ a \neq 0  \) </span> and <span class=\"latex\" lang=\"latex\"> \(  p + \sqrt{q}  \) </span> is one root of the quadratic equation, then the other roots must be the conjugate <span class=\"latex\" lang=\"latex\"> \(  p - \sqrt{q}  \) </span> and vice - versa(where p is a rational and <span class=\"latex\" lang=\"latex\"> \(  \sqrt{q}  \) </span> is a surd).</p>
+			</li>
+			<li>
+				<p>If a = 1 and <span class=\"latex\" lang=\"latex\"> \(  b, \ c \epsilon I  \) </span> and the roots of quadratic equation are rational numbers, then these roots must be integers.</p>
+			</li>
+			<li>
+				<p>If the quadratic equation has more than 2 roots(complex numbers), then the equation becomes as identity i.e., a = b = c = 0.</p>
+			</li>
+		</ol>
+	</div>
+</section>
+<section class="skill" id="06">
+	<h3 class="skill-heading">Condition for Common Roots</h3>
+	<p>Consider two quadratic equations<br />
+		<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  ax^2 + bx + c = 0..........(i) \ a \neq 0  \\\\[3pt]
+			and \ \ a^{|}x^2 + b^{|}x + c^{|} ..........(ii) \ a^{|} \neq 0  \end{align}  \) </span>
+	</p>
+	<div class="list-custom-block-list-ol spaced20 indented20">
+		<ol>
+			<li>
+				<p>If one root is common then,<br />
+					<span class=\"latex\" lang=\"latex\"> \(  (ab^{|} - a^{|}b)(bc^{|} - b^{|}c) = (ca^{|} - c^{|}a)^2  \) </span>
+				</p>
+			</li>
+			<li>
+				<p>If two roots are common then,<br />
+					<span class=\"latex\" lang=\"latex\"> \(  \frac{a}{a^{'}} = \frac{b}{b^{'}} = \frac{c}{c^{'}}  \) </span>
+				</p>
+			</li>
+		</ol>
+	</div>
+	<section class="subskill">
+		<h4 class="skill-subheading">Condition that <span class=\"latex\" lang=\"latex\"> \(  ax^2 + bx + c = 0  \) </span> is Factorizable into two Linear Factors</h4>
+		<p> When <span class=\"latex\" lang=\"latex\"> \(  D \geq 0  \) </span>, then the equation <span class=\"latex\" lang=\"latex\"> \(  ax^2 + bx + c = 0  \) </span> id factorizable into two linear factors i.e., <span class=\"latex\" lang=\"latex\"> \(  ax^2 + bx + c = 0 \Rightarrow (x - \alpha)(x - \beta) = 0  \) </span>, where <span class=\"latex\" lang=\"latex\"> \(  \alpha  \) </span> and <span class=\"latex\" lang=\"latex\"> \(  \beta  \) </span> are the roots of quadratic equation.</p>
+		<h5 class="skill-smallheading">Formation of a Quadratic Equation:</h5>
+		<p>Let <span class=\"latex\" lang=\"latex\"> \(  \alpha, \ \beta  \) </span> be the two roots, then we can form a quadratic equation as follows:<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  x^2 - (sum \ of \ roots)x + (product \ of \ roots) = 0  \\\\[3pt]
+				i.e., \ \ \ x^2 - ( \alpha + \beta)x + ( \alpha \beta) = 0  \\\\[3pt]
+				or \ \ \ \ (x - \alpha)(x - \beta) = 0  \end{align}  \) </span>
+		</p>
+		<h5 class="skill-smallheading">Graph of a Quadratic Equation <span class=\"latex\" lang=\"latex\"> \(  ax^2 + bx + c = 0, \ a \neq 0  \) </span>
+		</h5>
+		<table class="u-full-width summary-table"> 
+			<tr>
+				<td align="center">Characteristics of the function</td>
+				<td align="center">
+					<span class=\"latex\" lang=\"latex\"> \(  b^2 - 4ac &lt; 0  \) </span>
+				</td>
+				<td align="center">
+					<span class=\"latex\" lang=\"latex\"> \(  b^2 - 4ac = 0  \) </span>
+				</td>
+				<td align="center">
+					<span class=\"latex\" lang=\"latex\"> \(  b^2 - 4ac > 0  \) </span>
+				</td>
+			</tr>
+			<tr>
+				<td align="center">When 'a' is positive<br />
+					<span class=\"latex\" lang=\"latex\"> \(  i.e., \ a > 0  \) </span>
+				</td>
+				<td align="center">
+					<div class="synopsis-image"> 
+						<img src="104190007_image-2.png" alt="image2" class="default-synopsis-medium-image" />
+					 </div>
+				</td>
+				<td align="center">
+					<div class="synopsis-image"> 
+						<img src="104190007_image-3.png" alt="image3" class="default-synopsis-medium-image" />
+					 </div>
+				</td>
+				<td align="center">
+					<div class="synopsis-image"> 
+						<img src="104190007_image-4.png" alt="image4" class="default-synopsis-medium-image" />
+					 </div>
+				</td>
+			</tr>
+			<tr>
+				<td align="center">When 'a' is negative<br />
+					<span class=\"latex\" lang=\"latex\"> \(  i.e., \ a &lt;  0  \) </span>
+				</td>
+				<td align="center">
+					<div class="synopsis-image"> 
+						<img src="104190007_image-5.png" alt="image5" class="default-synopsis-medium-image" />
+					 </div>
+				</td>
+				<td align="center">
+					<div class="synopsis-image"> 
+						<img src="104190007_image-6.png" alt="image6" class="default-synopsis-medium-image" />
+					 </div>
+				</td>
+				<td align="center">
+					<div class="synopsis-image"> 
+						<img src="104190007_image-7.png" alt="image7" class="default-synopsis-medium-image" />
+					 </div>
+				</td>
+			</tr>
+		</table>
+		<div class="list-custom-block-list-ol spaced20 indented20">
+			<ol>
+				<li>
+					<p>The graph of a quadratic function(expression) is called a parabola. The point at which its direction changes is called its turning point, commonly called the vertex of the parabola.</p>
+				</li>
+				<li>
+					<p>The graph of the function is concave upwards when a &gt; 0 and concave downwards when a &lt; 0.</p>
+				</li>
+				<li>
+					<p>If the graph has no points in common with the x - axis, the roots of the equation are imaginary and cannot be determined from the graph.</p>
+				</li>
+				<li>
+					<p>If the graph is tangent to the x - axis, the roots are real and equal.</p>
+				</li>
+				<li>
+					<p>If the graph cuts the x - axis, the roots of the equation will be real and unequal. Their values will be given by the abscissa of the points of intersection of the graph and the x - axis.</p>
+				</li>
+			</ol>
+		</div>
+	</section>
+</section>
+<section class="skill" id="07">
+	<h3 class="skill-heading">Roots of Cubic and Quartic Equations</h3>
+	<p>If the equation is of a cubic form, <span class=\"latex\" lang=\"latex\"> \(  ax^3 + bx^2 + cx + d = 0  \) </span> and <span class=\"latex\" lang=\"latex\"> \(  \alpha, \ \beta  \) </span> and <span class=\"latex\" lang=\"latex\"> \(  \gamma  \) </span> are the 3 roots of the cubic equation, then<br />
+		<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \alpha + \beta + \gamma = - \frac{b}{a}  \\\\[3pt]
+			\alpha \beta + \beta \gamma + \gamma \alpha = \frac{c}{a}  \\\\[3pt]
+			\alpha \beta \gamma = 	- \frac{d}{a}  \end{align}  \) </span>
+		<br />
+		If the equation is of a quartic form, <span class=\"latex\" lang=\"latex\"> \(  ax^4 + bx^3 + cx^2 + dx + e = 0  \) </span>, and <span class=\"latex\" lang=\"latex\"> \(  \alpha, \ \beta, \ \gamma, \ \delta  \) </span> are the four roots of the quartic equation,<br />
+		<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \alpha + \beta + \gamma + \delta = - \frac{b}{a}  \\\\[3pt]
+			\alpha \beta + \alpha \gamma + \alpha \delta + \beta \gamma + \beta \delta + \gamma \delta = \frac{c}{a}  \\\\[3pt]
+			\alpha \beta \gamma + \alpha \beta \delta + \alpha \gamma \delta + \beta \gamma \delta = - \frac{d}{a}  \\\\[3pt]
+			\alpha \beta \gamma \delta = \frac{e}{a}  \end{align}  \) </span>
+	</p>
+</section> 
+<section class="solved-examples" id="examples">
+	<h3 class="solved-examples-heading">Solved examples</h3>
+	<section class="solved-example">  
+		<h4 class="solved-examples-question">Example 1:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			The product of two consecutive numbers is 56. Find them.</p>
+		<p>
+			<span class="highlight01">Solution:</span>
+			<br />
+			Let the smaller number be x.<br />
+			Then larger number will be (x + 1)<br />
+			Given that x(x + 1) = 56<br />
+			i.e., <span class=\"latex\" lang=\"latex\"> \(  x^2 + x - 56 = 0  \) </span>
+			<br />
+			Factorizing, (x - 7)(x + 8) = 0<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \therefore x = 7 \ or \ - 8  \) </span>
+			<br />
+			If we take the positive value of x, the number are 7 and 8.<br />
+			Taking negative value of x, we have - 8 and - 7.</p>
+	</section>
+	<section class="solved-example">  
+		<h4 class="solved-examples-question">Example 2:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			The length of a hall exceeds its breadth by 8m and its area is <span class=\"latex\" lang=\"latex\"> \(  180 \ m^2.  \) </span> Find the dimensions of the hall.</p>
+		<p>
+			<span class="highlight01">Solution:</span>
+			<br />
+			Let the length of the room be x meters.<br />
+			Its breadth will be (x - 8)m.<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \therefore  \) </span> Its area <span class=\"latex\" lang=\"latex\"> \(  = x(x - 8)m^2  \) </span>
+			<br />
+			But by the hypothesis x(x - 8) = 180.<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  i.e., \ x^2 - 8x - 180 = 0 \Rightarrow (x - 18)(x + 10) = 0  \\\\[3pt]
+				\therefore x = 18 \ m,  \end{align}  \) </span>
+			<br />
+			(x = -10 is not permissible as the length of a room can't be negative)<br />
+			So the length x = 18 m.<br />
+			and the breadth x - 8 = 18 - 8 = 10 m.</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 3:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			A man walks a distance of 48 km in a given time. If he walks 2 km an hour faster, he will perform the journey 4 hours before. Find his normal rate of walking.</p>
+		<p>
+			<span class="highlight01">Solution:</span>
+			<br />
+			Let the normal rate of walking of the man be <span class=\"latex\" lang=\"latex\"> \(  x \ \frac{km}{hour}.  \) </span>
+			<br />
+			Time taken to walk 48 km <span class=\"latex\" lang=\"latex\"> \(  = \frac{48}{x} \ hours  \) </span>
+			<br />
+			At 2 km an hour faster he will take <span class=\"latex\" lang=\"latex\"> \(  = \frac{48}{x + 2} \ hours.  \) </span>
+			<br />
+			This time is 4 hour less than the usual time.<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \Rightarrow \frac{48}{x} = \frac{48}{x + 2} + 4  \\\\[3pt]
+				\Rightarrow 48(x + 2) = 48x + 4x(x + 2)  \\\\[3pt]
+				\Rightarrow x^2 + 2x - 24 = 0  \\\\[3pt]
+				\Rightarrow (x - 4)(x + 6) = 0  \\\\[3pt]
+				\therefore x = 4 \ or \ -6  \\\\[3pt]
+				\therefore Rate \ of \ walking \ is \ 4 \frac{km}{hour} \ as \ (x = -6 \ is \ not \ admissible) \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 4:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			Find the value of <span class=\"latex\" lang=\"latex\"> \(  \sqrt{a + \sqrt{a + \sqrt{a + .... \infty}}}.  \) </span>
+		</p>
+		<p>
+			<span class="highlight01">Solution:</span>
+			<br />
+			Let <span class=\"latex\" lang=\"latex\"> \(  \begin{align}  x = \sqrt{a + \sqrt{a + \sqrt{a + .... \infty}}}  \\\\[3pt]
+				\Rightarrow x = \sqrt{a + x}  \end{align}  \) </span>
+			<br />
+			Squaring on both sides,<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \Rightarrow x^2 = ( \sqrt{a + x})^2  \\\\[3pt]
+				\Rightarrow x^2 = a + x  \\\\[3pt]
+				\Rightarrow x^2 - x - a = 0  \\\\[3pt]
+				\Rightarrow x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}  \\\\[3pt]
+				\Rightarrow x = \frac{1 \pm \sqrt{1 - 4a}}{2}  \\\\[3pt]
+				\therefore x = \frac{1 + \sqrt{1 + 4a}}{2a} \ \ \ [since \ x > 0]  \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 5:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			Find the value of <span class=\"latex\" lang=\"latex\"> \(  \sqrt{a \sqrt{a \sqrt{a .... \infty}}}.  \) </span>
+		</p>
+		<p>
+			<span class="highlight01">Solution:</span>
+			<br />
+			Let <span class=\"latex\" lang=\"latex\"> \(  \begin{align}  x = \sqrt{a \sqrt{a \sqrt{a .... \infty}}}  \\\\[3pt]
+				\Rightarrow x = \sqrt{ax}  \end{align}  \) </span>
+			<br />
+			Squaring on both sides,<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \Rightarrow x^2 = ax  \\\\[3pt]
+				\Rightarrow x^2 - ax = 0  \\\\[3pt]
+				\Rightarrow x(x - a) = 0  \\\\[3pt]
+				\Rightarrow x = 0 \ or \ x = a \ \ \ \ [since x > 0]  \\\\[3pt]
+				\therefore x = a  \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 6:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			Find the equation whose roots are the reciprocals of the roots of <span class=\"latex\" lang=\"latex\"> \(  3x^2 - 5x + 7 = 0.  \) </span>
+		</p>
+		<p>
+			<span class="highlight01">Solution:</span>
+			<br />
+			The equation whose roots are the reciprocals of the roots of<br />
+			<span class=\"latex\" lang=\"latex\"> \(  f(x) = 0  \) </span> is<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  f \left( \frac{1}{x} \right) = 0  \\\\[3pt]
+				\Rightarrow The \ required \ equation \ is  \\\\[3pt]
+				3 \left( \frac{1}{x} \right)^2 - 5 \left( \frac{1}{x} \right) + 7 = 0  \\\\[3pt]
+				\Rightarrow \frac{3}{x^2} - \frac{5}{x} + 7 = 0  \\\\[3pt]
+				\Rightarrow 7x^2 - 5x + 3 = 0  \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 7:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			If the sum of the roots of <span class=\"latex\" lang=\"latex\"> \(  ax^2 + bx + c = 0  \) </span> is equal to the sum of the squares of the roots then find the condition.</p>
+		<p>
+			<span class="highlight01">Solution:</span>
+			<br />
+			If <span class=\"latex\" lang=\"latex\"> \(  \alpha, \ \beta  \) </span> are the roots of <span class=\"latex\" lang=\"latex\"> \(  ax^2 + bx + c = 0  \) </span> then <span class=\"latex\" lang=\"latex\"> \(  \alpha + \beta = \frac{-b}{a}, \ \alpha. \beta = \frac{c}{a}  \) </span>
+			<br />
+			Given that <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \alpha + \beta = \alpha^2 + \beta^2  \\\\[3pt]
+				\Rightarrow \alpha + \beta = ( \alpha + \beta)^2 - 2 \alpha. \beta  \\\\[3pt]
+				\Rightarrow \frac{-b}{a} = \left(- \frac{b}{a} \right)^2 - 2. \frac{c}{a} = \frac{b^2}{a^2} - \frac{2c}{a}  \\\\[3pt]
+				\Rightarrow \frac{-b}{a} = \frac{b^2 - 2ac}{a^2}  \\\\[3pt]
+				\Rightarrow \frac{-b}{a} \times a^2 = b^2 - 2ac  \\\\[3pt]
+				\Rightarrow - ab = b^2 - 2ac  \\\\[3pt]
+				\Rightarrow 2ac = b^2 + ab  \\\\[3pt]
+				\therefore 2ac = b^2 + ab  \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 8:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			If one root of <span class=\"latex\" lang=\"latex\"> \(  x^2 - x - k = 0  \) </span> is square that of other, then find the value of k.</p>
+		<p>
+			<span class="highlight01">Solution:</span>
+			<br />
+			Let one root be <span class=\"latex\" lang=\"latex\"> \(  \alpha  \) </span>
+			<br />
+			Other root <span class=\"latex\" lang=\"latex\"> \(  = \alpha^2  \) </span>
+			<br />
+			Sum of the roots = + 1<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \Rightarrow \alpha. \alpha^2 = -k  \\\\[3pt]
+				\Rightarrow \alpha^3 = -k  \\\\[3pt]
+				\Rightarrow \alpha = (-k)^{ \frac{1}{3}}  \\\\[3pt]
+				\alpha^2 + \alpha = +1  \\\\[3pt]
+				[(-k)^{ \frac{1}{3}}]^2 - k^{ \frac{1}{3}} = +1  \\\\[3pt]
+				k^{ \frac{2}{3}} - k^{ \frac{1}{3}} = 1  \\\\[3pt]
+				\Rightarrow \left( k^{ \frac{2}{3}} - k^{ \frac{1}{3}} \right)^3 = (1)^3  \\\\[3pt]
+				\Rightarrow k^2 - k - 3k = 1  \\\\[3pt]
+				\Rightarrow k^2 - 4k = 1  \\\\[3pt]
+				\Rightarrow k^2 - 4k - 1 = 0  \\\\[3pt]
+				\Rightarrow k = \frac{4 \pm \sqrt{16 + 4}}{2} = \frac{4 \pm \sqrt{20}}{2} = \frac{4 \pm 2 \sqrt{5}}{2}  \\\\[3pt]
+				\Rightarrow k = 2 \pm \sqrt{5}  \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 9:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			Find the nature of the roots of <span class=\"latex\" lang=\"latex\"> \(  x^2 + x + 1 = 0.  \) </span>
+		</p>
+		<p>
+			<span class="highlight01">Solution:</span>
+			<br />
+			Discriminant <span class=\"latex\" lang=\"latex\"> \(  = b^2 - 4ac = (1)^2 - 4(1)(1) = 1 - 4 = -3 &lt; 0  \) </span>
+			<br />
+			Roots are imaginary or complex.</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 10:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			Find the nature of the roots of <span class=\"latex\" lang=\"latex\"> \(  x^2 + 6x + 9 = 0  \) </span>
+		</p>
+		<p>
+			<span class="highlight01">Solution:</span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  D = b^2 - 4ac  \\\\[3pt]
+				= (6)^2 - 4(1)(9) = 36 - 36 = 0  \end{align}  \) </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \therefore  \) </span> Roots are real and equal.</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 11:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			If <span class=\"latex\" lang=\"latex\"> \(  \alpha, \ \beta  \) </span> are the roots of <span class=\"latex\" lang=\"latex\"> \(  ax^2 + bx + c = 0  \) </span> then find the equation for which the roots are <span class=\"latex\" lang=\"latex\"> \(  \frac{1}{ \alpha}  \) </span> and <span class=\"latex\" lang=\"latex\"> \(  \frac{1}{ \beta}.  \) </span>
+		</p>
+		<p>
+			<span class="highlight01">Solution:</span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \alpha, \ \beta  \) </span> are the roots of <span class=\"latex\" lang=\"latex\"> \(  ax^2 + bx + c = 0  \) </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \therefore \alpha + \beta = - \frac{b}{a}  \\\\[3pt]
+				\alpha. \beta = \frac{c}{a}  \end{align}  \) </span>
+			<br />
+			If <span class=\"latex\" lang=\"latex\"> \(  \frac{1}{ \alpha}, \ \frac{1}{ \beta}  \) </span> are the roots then the sum of the roots<br />
+			<span class=\"latex\" lang=\"latex\"> \(  = \frac{1}{ \alpha} + \frac{1}{ \beta} = \frac{ \beta + \alpha}{ \alpha \beta}  \) </span>
+			<br />
+			Product of the roots <span class=\"latex\" lang=\"latex\"> \(  = \frac{1}{ \alpha}. \frac{1}{ \beta} = \frac{1}{ \alpha. \beta}  \) </span>
+			<br />
+			Required equation is<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  x^2 - x \left( \frac{ \alpha + \beta}{ \alpha. \beta} \right) + \frac{1}{ \alpha \beta} = 0  \\\\[3pt]
+				\Rightarrow x^2 - x \left( \frac{- \frac{b}{a}}{ \frac{c}{a}} \right) + \frac{1}{ \frac{c}{a}} = 0  \\\\[3pt]
+				\Rightarrow x^2 + \frac{bx}{c} + \frac{a}{c} = 0  \\\\[3pt]
+				\Rightarrow cx^2 + bx + a = 0  \\\\[3pt]
+				\therefore cx^2 + bx + a = 0  \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 12:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			If <span class=\"latex\" lang=\"latex\"> \(  \alpha, \ \beta  \) </span> are the roots of the equation <span class=\"latex\" lang=\"latex\"> \(  2x^2 + 3x + 7 = 0  \) </span>, then find</p>
+		<div class="list1-ol default-spaced-indented list-numbered-style-lower-alpha">
+			<ol>
+				<li>
+					<p>
+						<span class=\"latex\" lang=\"latex\"> \(  \alpha^2 + \beta^2  \) </span>
+					</p>
+				</li>
+				<li>
+					<p>
+						<span class=\"latex\" lang=\"latex\"> \(  \alpha^3 + \beta^3  \) </span>
+					</p>
+				</li>
+				<li>
+					<p>
+						<span class=\"latex\" lang=\"latex\"> \(  \frac{1}{ \alpha} + \frac{1}{ \beta}  \) </span>
+					</p>
+				</li>
+				<li>
+					<p>
+						<span class=\"latex\" lang=\"latex\"> \(  \frac{1}{ \alpha^2} + \frac{1}{ \beta^2}  \) </span>
+					</p>
+				</li>
+			</ol>
+		</div>
+		<p>
+			<span class="highlight01">Solution:</span>
+			<br />
+			Since, <span class=\"latex\" lang=\"latex\"> \(  \alpha, \ \beta  \) </span> are the roots of the equation <span class=\"latex\" lang=\"latex\"> \(  2x^2 + 3x + 7 = 0,  \) </span> we have<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \alpha + \beta = \frac{-3}{2} \ \ \ \ and \ \ \ \ \alpha \beta = \frac{7}{2}  \) </span>
+			<br />
+			Therefore,</p>
+		<div class="list1-ol default-spaced-indented list-numbered-style-lower-alpha">
+			<ol>
+				<li>
+					<p>
+						<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \alpha^2 + \beta^2 = ( \alpha + \beta)^2 - 2 \alpha \beta  \\\\[3pt]
+							= \left( \frac{-3}{2} \right)^2 - 2 \times \frac{7}{2} = \frac{-19}{4}  \end{align}  \) </span>
+					</p>
+				</li>
+				<li>
+					<p>
+						<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \alpha^3 + \beta^3 = ( \alpha + \beta)^3 - 3 \alpha \beta ( \alpha + \beta)  \\\\[3pt]
+							= \left( \frac{-3}{2} \right)^3 - 2 \times \frac{7}{2} = \frac{-19}{4}  \end{align}  \) </span>
+					</p>
+				</li>
+				<li>
+					<p>
+						<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \frac{1}{ \alpha} + \frac{1}{ \beta} = \frac{ \alpha + \beta}{ \alpha \beta}  \\\\[3pt]
+							= \frac{-3}{2} \times \frac{2}{7} = \frac{-3}{7}  \end{align}  \) </span>
+					</p>
+				</li>
+				<li>
+					<p>
+						<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \frac{1}{ \alpha^2} + \frac{1}{ \beta^2} = \frac{( \alpha + \beta)^2 - 2 \alpha \beta}{( \alpha \beta)^2}  \\\\[3pt]
+							= \frac{ \left(- \frac{3}{2} \right)^2 - 2 \times \frac{7}{2}}{ \left( \frac{7}{2} \right)^2} = \frac{-19}{49}  \end{align}  \) </span>
+					</p>
+				</li>
+			</ol>
+		</div>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 13:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			If <span class=\"latex\" lang=\"latex\"> \(  \alpha, \ \beta  \) </span> are the roots of the quadratic equation <span class=\"latex\" lang=\"latex\"> \(  px^2 + qx + r = 0, \ p \neq 0,  \) </span> then form the quadratic equation whose roots are</p>
+		<div class="list1-ol default-spaced-indented list-numbered-style-lower-alpha">
+			<ol>
+				<li>
+					<p>
+						<span class=\"latex\" lang=\"latex\"> \(  2 \alpha, \ 2 \beta  \) </span>
+					</p>
+				</li>
+				<li>
+					<p>
+						<span class=\"latex\" lang=\"latex\"> \(  \alpha^2, \ \beta^2  \) </span>
+					</p>
+				</li>
+				<li>
+					<p>
+						<span class=\"latex\" lang=\"latex\"> \(  \frac{1}{ \alpha}, \ \frac{1}{ \beta}  \) </span>
+					</p>
+				</li>
+				<li>
+					<p>
+						<span class=\"latex\" lang=\"latex\"> \(  \alpha^2 \beta, \ \alpha \beta^2  \) </span>
+					</p>
+				</li>
+			</ol>
+		</div>
+		<p>
+			<span class="highlight01">Solution:</span>
+			<br />
+			Since <span class=\"latex\" lang=\"latex\"> \(  \alpha, \ \beta  \) </span> are the roots of the given equation, we have<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \alpha + \beta = \frac{-q}{p} \ \ \ \ and \ \ \ \ \alpha \beta = \frac{r}{p}  \) </span>
+			<br />
+			Let <span class=\"latex\" lang=\"latex\"> \(  \alpha^{'}  \) </span> and <span class=\"latex\" lang=\"latex\"> \(  \beta^{'}  \) </span> be the roots of the required equation. Then</p>
+		<div class="list1-ol default-spaced-indented list-numbered-style-lower-alpha">
+			<ol>
+				<li>
+					<p>In this case<br />
+						<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \alpha^{'} + \beta^{'} = 2 \alpha + 2 \beta = 2( \alpha + \beta) = \frac{-2q}{p}  \\\\[3pt]
+							\alpha^{'} \beta^{'} = (2 \alpha)(2 \beta) = 4 \alpha \beta = \frac{4r}{p}.  \end{align}  \) </span>
+						<br />
+						The equation whose roots are <span class=\"latex\" lang=\"latex\"> \(  \alpha^{'}, \ \beta^{'}  \) </span> is given by <span class=\"latex\" lang=\"latex\"> \(  x^2 - ( \alpha^{'} + \beta^{'})x + ( \alpha^{'} \beta^{'}) = 0.  \) </span>
+						<br />
+						Hence, the required equation is<br />
+						<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  x^2 - \frac{(-2q)}{p}x + \frac{4r}{p} = 0  \\\\[3pt]
+							or  \\\\[3pt]
+							px^2 + 2qx + 4r = 0  \end{align}  \) </span>
+					</p>
+				</li>
+				<li>
+					<p>In this case<br />
+						<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \alpha^{'} + \beta^{'} = \alpha^2 + \beta^2 = ( \alpha + \beta)^2 - 2 \alpha \beta = \frac{q^2}{p^2} - \frac{2r}{p} = \frac{q^2 - 2pr}{p^2}  \\\\[3pt]
+							\alpha^{'} \beta^{'} = \alpha^2 \beta^2 = ( \alpha \beta)^2 = \frac{r^2}{p^2}  \end{align}  \) </span>
+						<br />
+						Hence the required equation is<br />
+						<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  x^2 - \frac{(q^2 - 2px)}{p^2}x + \frac{r^2}{p^2} = 0  \\\\[3pt]
+							or  \\\\[3pt]
+							p^2x^2 - (q^2 - 2pr)x + r^2 = 0  \end{align}  \) </span>
+					</p>
+				</li>
+				<li>
+					<p>In this case<br />
+						<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \alpha^{'} + \beta^{'} = \frac{1}{ \alpha} + \frac{1}{ \beta} = \frac{ \alpha + \beta}{ \alpha \beta} = \frac{-q}{r}  \\\\[3pt]
+							\alpha^{'} \beta^{'} = \frac{1}{ \alpha \beta} = \frac{p}{r}  \end{align}  \) </span>
+						<br />
+						Hence the required equation is<br />
+						<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  x^2 - \left( \frac{-q}{r} \right)x + \frac{p}{r} = 0  \\\\[3pt]
+							or  \\\\[3pt]
+							rx^2 + qx + p = 0  \end{align}  \) </span>
+					</p>
+				</li>
+				<li>
+					<p>In this case,<br />
+						<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \alpha^{'} + \beta^{'} = \alpha^2 \beta + \alpha \beta^2 = \alpha \beta ( \alpha + \beta) = \frac{-qr}{p^2}  \\\\[3pt]
+							\alpha^{'} \beta^{'} = ( \alpha^2 \beta)( \alpha \beta^2) = ( \alpha \beta)^3 = \frac{r^3}{p^3}  \end{align}  \) </span>
+						<br />
+						Hence the required equation is<br />
+						<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  x^2 - \left( \frac{-qr}{p^2} \right)x + \frac{r^3}{p^3} = 0  \\\\[3pt]
+							or  \\\\[3pt]
+							p^3x^2 + pqrx + r^3 = 0  \end{align}  \) </span>
+					</p>
+				</li>
+			</ol>
+		</div>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 14:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			Evaluate</p>
+		<div class="list1-ol default-spaced-indented list-numbered-style-lower-alpha">
+			<ol>
+				<li>
+					<p>
+						<span class=\"latex\" lang=\"latex\"> \(  \sqrt{20 + \sqrt{20 + \sqrt{20 +....}}}  \) </span>
+					</p>
+				</li>
+				<li>
+					<p>
+						<span class=\"latex\" lang=\"latex\"> \(  20 + \frac{1}{20 + \frac{1}{20....}}  \) </span>
+					</p>
+				</li>
+			</ol>
+		</div>
+		<p>
+			<span class="highlight01">Solution:</span>
+		</p>
+		<div class="list1-ol default-spaced-indented list-numbered-style-lower-alpha">
+			<ol>
+				<li>
+					<p>Let,<br />
+						<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  x = \sqrt{20 + \sqrt{20 + \sqrt{20 +....}}}  \\\\[3pt]
+							or  \\\\[3pt]
+							x = \sqrt{20 + x}  \end{align}  \) </span>
+						<br />
+						Squaring on both sides, we get<br />
+						<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  x^2 = 20 + x  \\\\[3pt]
+							or  \\\\[3pt]
+							x^2 - x - 20 = 0  \\\\[3pt]
+							Which \ gives \ \ \ x = \frac{1 + \sqrt{1 + 80}}{2} = 5  \\\\[3pt]
+							or  \\\\[3pt]
+							x = \frac{1 - \sqrt{1 + 80}}{2} = -4  \end{align}  \) </span>
+						<br />
+						Since the value of the given expression is positive neglect -4. Hence the value of the given expression is 5.</p>
+				</li>
+				<li>
+					<p>Let,<br />
+						<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  x = 20 + \frac{1}{20 + \frac{1}{20....}}  \\\\[3pt]
+							or  \\\\[3pt]
+							x = 20 + \frac{1}{x}  \\\\[3pt]
+							Therefore, \ x^2 - 20x - 1 = 0  \\\\[3pt]
+							This \ gives \ x = \frac{20 + \sqrt{404}}{2} = 10 + \sqrt{101}  \\\\[3pt]
+							or  \\\\[3pt]
+							x = \frac{20 - \sqrt{404}}{2} = 10 - \sqrt{101} \end{align}  \) </span>
+						<br />
+						Since the given expression can not be negative therefore, we neglect the negative value <span class=\"latex\" lang=\"latex\"> \(  10 - \sqrt{101}  \) </span>. Hence, the desired value of the expression is <span class=\"latex\" lang=\"latex\"> \(  10 + \sqrt{101}  \) </span>
+					</p>
+				</li>
+			</ol>
+		</div>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 15:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			The roots <span class=\"latex\" lang=\"latex\"> \(  \alpha, \ \beta  \) </span> of the equation <span class=\"latex\" lang=\"latex\"> \(  x^3 - 3ax + a^2 = 0  \) </span> are such that <span class=\"latex\" lang=\"latex\"> \(  \alpha^2 + \beta^2 = 1.75  \) </span>. Find the value of a.</p>
+		<p>
+			<span class="highlight01">Solution:</span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \alpha, \ \beta  \) </span> are the roots of <span class=\"latex\" lang=\"latex\"> \(  x^2 - 3ax + a^2 = 0,  \) </span> we have<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \alpha + \beta = 3a \ \ \ \ and \ \ \ \ \alpha \beta = a^2  \\\\[3pt]
+				Now,  \\\\[3pt]
+				\alpha^2 + \beta^2 = ( \alpha + \beta)^2 - 2 \alpha \beta = 9a^2 - 2a^2 = 7a^2  \\\\[3pt]
+				7a^2 = 1.75  \\\\[3pt]
+				Therefore, \ \ 7a^2 = 1.75 \ \ or \ \ a = \pm 0.5  \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 16:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			A two - digit number is four times the sum and three times the product of its digits. Find the number.</p>
+		<p>
+			<span class="highlight01">Solution:</span>
+			<br />
+			Let x be the digit in ten's place and y be in the unit's place of the number. Then the number is 10x + y. By hypotheses<br />
+			10x + y = 4(x + y)<br />
+			and 10x + y = 3xy<br />
+			The first of these equations gives<br />
+			6x = 3y   2x = y<br />
+			Substituting 2x = y is the second equation, we have<br />
+			<span class=\"latex\" lang=\"latex\"> \(  10x + 2x = 6x^2 \ \ \ or \ \ \ x^2 - 2x = 0  \) </span>
+			<br />
+			which gives x = 0 or x = 2. If x = 0, then y = 0 and the number in this case does not have two digits. The solution is therefore x = 2, y = 4. Hence the desired number is 24.</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 17:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			Find the number which exceeds its positive square root by 20.</p>
+		<p>
+			<span class="highlight01">Solution:</span>
+			<br />
+			Let x be the required number. Then, by hypothesis<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  x - \sqrt{x} = 20  \\\\[3pt]
+				or \ \ \ x - 20 = \sqrt{x}  \end{align}  \) </span>
+			<br />
+			Squaring on both sides, we get<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \Rightarrow (x - 20)^2 = x  \\\\[3pt]
+				\Rightarrow x^2 - 40x + 400 = x  \\\\[3pt]
+				\Rightarrow x^2 - 41x + 400 = 0  \\\\[3pt]
+				\Rightarrow (x - 25)(x - 16) = 0  \\\\[3pt]
+				This \ gives \ x = 25 \ or \ x = 16.  \end{align}  \) </span>
+			<br />
+			But x = 16 does not satisfy the given equation. Hence the required number is 25.</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 18:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			Find the condition that the quadratic equations <span class=\"latex\" lang=\"latex\"> \(  x^2 + ax + b = 0  \) </span> and <span class=\"latex\" lang=\"latex\"> \(  x^2 + bx + a = 0  \) </span> may have a common root.</p>
+		<p>
+			<span class="highlight01">Solution:</span>
+			<br />
+			Let <span class=\"latex\" lang=\"latex\"> \(  \alpha  \) </span> be a common root of the given equations.<br />
+			Then <span class=\"latex\" lang=\"latex\"> \(  \alpha^2 + a \alpha + b = 0  \) </span>
+			<br />
+			and <span class=\"latex\" lang=\"latex\"> \(  \alpha^2 + b \alpha + a = 0  \) </span>
+			<br />
+			By the method of cross - multiplication, we get<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \frac{ \alpha^2}{a^2 - b^2} = \frac{ \alpha}{b - a} = \frac{1}{b - a}  \) </span>
+			<br />
+			This give <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \alpha^2 = \frac{a^2 - b^2}{b - a} = -(a + b) \ and \ \alpha = 1  \\\\[3pt]
+				\Rightarrow (1)^2 = -(a + b) \Rightarrow 1 = - a - b  \\\\[3pt]
+				\Rightarrow a + b + 1 = 0 \ is \ the \ required \ condition  \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 19:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			For what values of m will the equation<br />
+			<span class=\"latex\" lang=\"latex\"> \(  (m + 1)x^2 + 2(m + 3)x + (2m + 3) = 0  \) </span>
+			<br />
+			have equal roots.</p>
+		<p>
+			<span class="highlight01">Solution:</span>
+			<br />
+			The given equation will have equal roots, if any only if<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  [2(m + 3)]^2 = 4(m + 1)(2m + 3)  \\\\[3pt]
+				\Rightarrow m^2 - m - 6 = 0  \\\\[3pt]
+				\Rightarrow (m - 3)(m + 2) = 0  \\\\[3pt]  \end{align}  \) </span>
+			<br />
+			which gives m = 3 or -2</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 20:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			Show that the equation <span class=\"latex\" lang=\"latex\"> \(  (x - a)(x - b) = h^2  \) </span> has real roots.</p>
+		<p>
+			<span class="highlight01">Solution:</span>
+			<br />
+			The given equation can be written as<br />
+			<span class=\"latex\" lang=\"latex\"> \(  x^2 - (a + b)x + ab - h^2 = 0  \) </span>
+			<br />
+			The discriminant for this quadratic equation is given by<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  D = (a + b)^2 - 4(ab - h^2)  \\\\[3pt]
+				= (a + b)^2 - 4ab + 4h^2  \\\\[3pt]
+				= (a - b)^2 + 4h^2  \end{align}  \) </span>
+			<br />
+			which is always non - negative. Hence, the given equation has real roots.</p>
+	</section> 
+</section>  

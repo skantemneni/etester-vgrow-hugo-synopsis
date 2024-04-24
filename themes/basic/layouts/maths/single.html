@@ -1,0 +1,19 @@
+{{ define "main" }}
+
+<div class= "project-container" >
+    <section class= "project-list" >
+        <h2>Mathematics Topics</h2>
+            <ul>
+            {{ range (where .Site.RegularPages "Type" "in" "Maths") }}
+                <li><a href= "{{ .RelPermalink }}" >{{ .Title }}</a></li>
+            {{ end }}
+            </ul>
+
+    </section>
+    <section class= "project" >
+        <h2 class="topic-header">{{ .Title }}</h2>
+        {{ .Content }}
+    </section>
+</div>
+
+{{ end }}

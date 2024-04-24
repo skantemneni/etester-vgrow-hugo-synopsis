@@ -1,0 +1,568 @@
+---
+title: "InDefinite Integration"
+layout: "default"
+isMath: true
+---
+<section class="skill" id="01">
+	<h3 class="skill-heading">Definition </h3>
+	<p> A function F(x) is an antiderivative of a function f(x) if <span class=\"latex\" lang=\"latex\"> \(  F^{\prime}(x) = f(x)  \) </span> for all x in a domain of f. The set of all antiderivatives of f is the indefinite integral of f with respect to x, denoted by <br />
+		<span class=\"latex\" lang=\"latex\"> \(  \int f(x) dx  \) </span>
+		<br />
+		The function f is the integrand of the integral and x is the derivable of integration.By mean value theorem, once we found one antiderivative, the other antiderivative of f from F by a constant. we can indicate this by <br />
+		<span class=\"latex\" lang=\"latex\"> \(  \int f(x) dx = F(x) + C  \) </span>
+		<br />
+		Constant C is the constant of integration or arbitrary constant.
+	</p>
+	<section class="subskill">
+		<h4 class="skill-subheading">Table of basic Formula </h4>
+		<table class="u-full-width summary-table">
+			<thead>
+				<tr>
+					<th align="center">S.No</th>
+					<th align="center">f(x)</th>
+					<th align="center">
+						<span class=\"latex\" lang=\"latex\"> \(  \int f(x) dx  \) </span>
+					</th>
+				</tr>
+			</thead>
+			<tr>
+				<td align="center">1</td>
+				<td align="center">0</td>
+				<td align="center">C</td>
+			</tr>
+			<tr>
+				<td align="center">2</td>
+				<td align="center">
+					<span class=\"latex\" lang=\"latex\"> \( x^n(n \neq -1)  \) </span>
+				</td>
+				<td align="center">
+					<span class=\"latex\" lang=\"latex\"> \( \frac{1}{n + 1} x^{n + 1}  \) </span>
+				</td>
+			</tr>
+			<tr>
+				<td align="center">3</td>
+				<td align="center">
+					<span class=\"latex\" lang=\"latex\"> \(  \frac{1}{x}  \) </span>
+				</td>
+				<td align="center">
+					<span class=\"latex\" lang=\"latex\"> \(  log|x|  \) </span>
+				</td>
+			</tr>
+			<tr>
+				<td align="center">4</td>
+				<td align="center">
+					<span class=\"latex\" lang=\"latex\"> \(  e^x  \) </span>
+				</td>
+				<td align="center">
+					<span class=\"latex\" lang=\"latex\"> \(  e^x  \) </span>
+				</td>
+			</tr>
+			<tr>
+				<td align="center">5</td>
+				<td align="center">
+					<span class=\"latex\" lang=\"latex\"> \( a^x(a &gt; 0, \ a \neq 1)  \) </span>
+				</td>
+				<td align="center">
+					<span class=\"latex\" lang=\"latex\"> \( \frac{a^x}{log \ a}  \) </span>
+				</td>
+			</tr>
+			<tr>
+				<td align="center">6</td>
+				<td align="center">
+					<span class=\"latex\" lang=\"latex\"> \( cos \ x  \) </span>
+				</td>
+				<td align="center">
+					<span class=\"latex\" lang=\"latex\"> \( sin \ x  \) </span>
+				</td>
+			</tr>
+			<tr>
+				<td align="center">7</td>
+				<td align="center">
+					<span class=\"latex\" lang=\"latex\"> \( sin \ x  \) </span>
+				</td>
+				<td align="center">
+					<span class=\"latex\" lang=\"latex\"> \(  - cos \ x  \) </span>
+				</td>
+			</tr>
+			<tr>
+				<td align="center">8</td>
+				<td align="center">
+					<span class=\"latex\" lang=\"latex\"> \( sec^2 x  \) </span>
+				</td>
+				<td align="center">
+					<span class=\"latex\" lang=\"latex\"> \( tan \ x  \) </span>
+				</td>
+			</tr>
+			<tr>
+				<td align="center">9</td>
+				<td align="center">
+					<span class=\"latex\" lang=\"latex\"> \(  cosec^2 x  \) </span>
+				</td>
+				<td align="center">
+					<span class=\"latex\" lang=\"latex\"> \(  - cot \ x  \) </span>
+				</td>
+			</tr>
+			<tr>
+				<td align="center">10</td>
+				<td align="center">
+					<span class=\"latex\" lang=\"latex\"> \( sec \ x \ tan \ x  \) </span>
+				</td>
+				<td align="center">
+					<span class=\"latex\" lang=\"latex\"> \( sec \ x \) </span>
+				</td>
+			</tr>
+			<tr>
+				<td align="center">11</td>
+				<td align="center">
+					<span class=\"latex\" lang=\"latex\"> \(  cosec \ x \ cot \ x  \) </span>
+				</td>
+				<td align="center">
+					<span class=\"latex\" lang=\"latex\"> \( - cosec \ x  \) </span>
+				</td>
+			</tr>
+			<tr>
+				<td align="center">12</td>
+				<td align="center">
+					<span class=\"latex\" lang=\"latex\"> \( \frac{1}{ \sqrt{1 - x^2}}  \) </span>
+				</td>
+				<td align="center">
+					<span class=\"latex\" lang=\"latex\"> \( sin^{-1} x \ or \ - cos^{-1} x  \) </span>
+				</td>
+			</tr>
+			<tr>
+				<td align="center">13</td>
+				<td align="center">
+					<span class=\"latex\" lang=\"latex\"> \(  \frac{1}{1 + x^2}  \) </span>
+				</td>
+				<td align="center">
+					<span class=\"latex\" lang=\"latex\"> \( tan^{-1} x \ or \ - cot^{-1} x  \) </span>
+				</td>
+			</tr>
+			<tr>
+				<td align="center">14</td>
+				<td align="center">
+					<span class=\"latex\" lang=\"latex\"> \( tan \ x  \) </span>
+				</td>
+				<td align="center">
+					<span class=\"latex\" lang=\"latex\"> \( log|sec \ x| \ or \ - log|cos \ x|  \) </span>
+				</td>
+			</tr>
+			<tr>
+				<td align="center">15</td>
+				<td align="center">
+					<span class=\"latex\" lang=\"latex\"> \(  cot \ x \) </span>
+				</td>
+				<td align="center">
+					<span class=\"latex\" lang=\"latex\"> \( log|sin \ x| \ or \ - log|cosec \ x|  \) </span>
+				</td>
+			</tr>
+			<tr>
+				<td align="center">16</td>
+				<td align="center">
+					<span class=\"latex\" lang=\"latex\"> \( sec \ x  \) </span>
+				</td>
+				<td align="center">
+					<span class=\"latex\" lang=\"latex\"> \(  log|sec \ x + tan \ x| \ or \ log \left|tan \left( \frac{x}{2} + \frac{ \pi}{4} \right) \right|  \) </span>
+				</td>
+			</tr>
+			<tr>
+				<td align="center">17</td>
+				<td align="center">
+					<span class=\"latex\" lang=\"latex\"> \( cosec \ x  \) </span>
+				</td>
+				<td align="center">
+					<span class=\"latex\" lang=\"latex\"> \(  log|cosec \ x - cot \ x| \ or \ log \left|tan \frac{x}{2} \right|  \) </span>
+				</td>
+			</tr>
+			<tr>
+				<td align="center">18</td>
+				<td align="center">
+					<span class=\"latex\" lang=\"latex\"> \( \frac{1}{ \sqrt{a^2 - x^2}}  \) </span>
+				</td>
+				<td align="center">
+					<span class=\"latex\" lang=\"latex\"> \( sin^{-1} \left( \frac{x}{a} \right)  \) </span>
+				</td>
+			</tr>
+			<tr>
+				<td align="center">19</td>
+				<td align="center">
+					<span class=\"latex\" lang=\"latex\"> \(  \frac{1}{ \sqrt{x^2 + a^2}}  \) </span>
+				</td>
+				<td align="center">
+					<span class=\"latex\" lang=\"latex\"> \(  log|x + \sqrt{x^2 + a^2}|  \) </span>
+				</td>
+			</tr>
+			<tr>
+				<td align="center">20</td>
+				<td align="center">
+					<span class=\"latex\" lang=\"latex\"> \( \frac{1}{ \sqrt{x^2 - a^2}}    \) </span>
+				</td>
+				<td align="center">
+					<span class=\"latex\" lang=\"latex\"> \(  log|x + \sqrt{x^2 - a^2}| \) </span>
+				</td>
+			</tr>
+			<tr>
+				<td align="center">21</td>
+				<td align="center">
+					<span class=\"latex\" lang=\"latex\"> \( \sqrt{a^2 - x^2}  \) </span>
+				</td>
+				<td align="center">
+					<span class=\"latex\" lang=\"latex\"> \( \frac{x}{2} \sqrt{x^2 - a^2} + \frac{1}{2} a^2sin^{-1} \left( \frac{x}{a} \right)  \) </span>
+				</td>
+			</tr>
+			<tr>
+				<td align="center">22</td>
+				<td align="center">
+					<span class=\"latex\" lang=\"latex\"> \( \sqrt{x^2 + a^2}  \) </span>
+				</td>
+				<td align="center">
+					<span class=\"latex\" lang=\"latex\"> \( \frac{x}{2} \sqrt{x^2 + a^2} + \frac{1}{2}a^2 log|x + \sqrt{x^2 + a^2}|  \) </span>
+				</td>
+			</tr>
+			<tr>
+				<td align="center">23</td>
+				<td align="center">
+					<span class=\"latex\" lang=\"latex\"> \( \sqrt{x^2 - a^2}  \) </span>
+				</td>
+				<td align="center">
+					<span class=\"latex\" lang=\"latex\"> \( \frac{x}{2}\sqrt{x^2 - a^2} - \frac{1}{2}a^2 log|x + \sqrt{x^2 - a^2}| \) </span>
+				</td>
+			</tr>
+			<tr>
+				<td align="center">24</td>
+				<td align="center">
+					<span class=\"latex\" lang=\"latex\"> \(  \frac{1}{x^2 - a^2}  \) </span>
+				</td>
+				<td align="center">
+					<span class=\"latex\" lang=\"latex\"> \( \frac{1}{2a} log \left| \frac{x - a}{x + a} \right|  \) </span>
+				</td>
+			</tr>
+			<tr>
+				<td align="center">25</td>
+				<td align="center">
+					<span class=\"latex\" lang=\"latex\"> \( \frac{1}{a^2 - x^2}  \) </span>
+				</td>
+				<td align="center">
+					<span class=\"latex\" lang=\"latex\"> \( \frac{1}{2a} log \left| \frac{a + x}{a - x} \right|  \) </span>
+				</td>
+			</tr>
+			<tr>
+				<td align="center">26</td>
+				<td align="center">
+					<span class=\"latex\" lang=\"latex\"> \(  \frac{1}{a^2 + x^2}  \) </span>
+				</td>
+				<td align="center">
+					<span class=\"latex\" lang=\"latex\"> \( \frac{1}{a} tan^{-1} \left( \frac{x}{a} \right)  \) </span>
+				</td>
+			</tr>
+			<tr>
+				<td align="center">27</td>
+				<td align="center">
+					<span class=\"latex\" lang=\"latex\"> \( Integration \ by \ parts \ u(x)v(x)  \) </span>
+				</td>
+				<td align="center">
+					<span class=\"latex\" lang=\"latex\"> \( v(x) \int u(x) dx - \int \left [ \int \frac{dv}{dx} \int u(x) dx \right ]dx  \) </span>
+				</td>
+			</tr>
+		</table>
+		<p>
+			<span class="highlight01">Tip </span>
+			<br />
+			Remembering formula 21, 22, and 23. <br />
+			<span class=\"latex\" lang=\"latex\"> \( \int (integrand)dx = \frac{x}{2}(integrand) \pm \frac{a^2}{2} \int \frac{dx}{integrand}  \) </span>
+			<span class="highlight01">Note </span>
+			<br /> Use <span class=\"latex\" lang=\"latex\"> \(  a^2  \) </span> or <span class=\"latex\" lang=\"latex\"> \(  - a^2  \) </span> are given in the integrand.
+		</p>
+	</section>
+	<section class="subskill">
+		<h4 class="skill-subheading">Some Tips for Simplifying Computations </h4>
+		<div class="list-custom-block-list-ol spaced20 indented20">
+			<ol>
+				<li>
+					<p> In case of <span class=\"latex\" lang=\"latex\"> \(  \frac{1}{ \sqrt{Q}}, \ \sqrt{Q}, \ or \ \frac{1}{Q}  \) </span>, where <span class=\"latex\" lang=\"latex\"> \(  Q = ax^2 + bx + c  \) </span>, the substitution <span class=\"latex\" lang=\"latex\"> \(  x + \frac{b}{2a} = t  \) </span> may be used instead of completing the square in the quadratic Q. <br />
+						If <span class=\"latex\" lang=\"latex\"> \(  Q = (x - \alpha)(x - \beta)  \) </span> with <span class=\"latex\" lang=\"latex\"> \(  \alpha \neq \beta  \) </span> then <span class=\"latex\" lang=\"latex\"> \(  x - \frac{1}{2}( \alpha + \beta) = t  \) </span> can be used.
+					</p>
+				</li>
+				<li>
+					<p> In case of <span class=\"latex\" lang=\"latex\"> \(  \frac{L}{ \sqrt{Q}}, \ L \sqrt{Q}  \) </span> and <span class=\"latex\" lang=\"latex\"> \(  \frac{L}{Q}  \) </span> where L = px + q and <span class=\"latex\" lang=\"latex\"> \(  Q = ax^2 + bx + c, \ p \neq 0, \ q \neq 0  \) </span>
+						<br />
+						the following steps are unnecessary <br />
+						Express <br />
+						<span class=\"latex\" lang=\"latex\"> \(  L = \alpha \frac{d}{dx}[Q] + \beta  \) </span>
+						<br />
+						The problem can be easily solved by putting <br />
+						<span class=\"latex\" lang=\"latex\"> \(  x + \frac{b}{2a} = t  \) </span>
+					</p>
+				</li>
+				<li>
+					<p>
+						To evaluate <br />
+						<span class=\"latex\" lang=\"latex\"> \(  \int R (x, \ \sqrt{ax^2 + bx + c})dx  \) </span>
+						<br />
+						where R is a rational function of x and <br />
+						<span class=\"latex\" lang=\"latex\"> \(  \sqrt{ax^2 + bx + c}  \) </span>, <br />
+						we may use the following substitutions.
+						<ol>
+							<li>
+								<p>
+									<span class=\"latex\" lang=\"latex\"> \(  \sqrt{ax^2 + bx + c} = t \pm x \sqrt{a}  \) </span> if a &gt; 0 </p>
+							</li>
+							<li>
+								<p>
+									<span class=\"latex\" lang=\"latex\"> \(  \sqrt{ax^2 + bx + c} = tx \pm \sqrt{c}  \) </span> if c &gt; 0 </p>
+							</li>
+							<li>
+								<p>
+									<span class=\"latex\" lang=\"latex\"> \(  \sqrt{ax^2 + bx + c} = t(x - \alpha)  \) </span>
+									<br />
+									where <span class=\"latex\" lang=\"latex\"> \(  \alpha  \) </span> is a real root of <span class=\"latex\" lang=\"latex\"> \(  ax^2 + bx + c = 0  \) </span>
+								</p>
+							</li>
+						</ol>
+					</p>
+				</li>
+				<li>
+					<p> To evaluate <br/>
+						<span class=\"latex\" lang=\"latex\"> \(  I = \int \frac{dx}{a + b \ sin \ x}  \) </span>
+						<br />
+						we rewrite <br />
+						<span class=\"latex\" lang=\"latex\"> \(  I = \int \frac{dx}{a - b \ cos \left ( \frac{ \pi}{2} + x \right )}  \) </span>
+						<br />
+						and put <span class=\"latex\" lang=\"latex\"> \(  \frac{ \pi}{2} + x = \theta  \) </span>
+						<br />
+						This will lead to simpler computation then direct evaluation.
+					</p>
+				</li>
+			</ol>
+		</div>
+	</section>
+</section>
+<section class="skill" id="02">
+	<h3 class="skill-heading">Partial Fractions </h3>
+	<div class="list-custom-block-list-ol spaced20 indented20">
+		<ol>
+			<li>
+				<p> Partial fractions <br />
+					<span class=\"latex\" lang=\"latex\"> \(  f(x) = \frac{P(x)}{(x - a_1)...(x - a_n)}  \) </span>
+					<br />
+					(where deg P(x) &lt; n <span class=\"latex\" lang=\"latex\"> \(  a_1, \ a_2, ..., \ a_n  \) </span> are distinct) is given by <br />
+					<span class=\"latex\" lang=\"latex\"> \(  \frac{A_1}{x - a_1} + \frac{A_2}{x - a_2} + ... + \frac{A_n}{x - a_n}  \) </span>
+					<br />
+					where <br />
+					<span class=\"latex\" lang=\"latex\"> \(  A_i = \frac{P(a_i)}{(a_i - a_1)...(a_i - a_{i - 1})(a_i - a_{i + 1})...(a_i - a_n)}  \) </span>
+					<br />
+					= value of the expression <span class=\"latex\" lang=\"latex\"> \( (x - a_i)f(x)  \) </span> at <span class=\"latex\" lang=\"latex\"> \(  x = a_i  \) </span>. In other words, <span class=\"latex\" lang=\"latex\"> \(  A_i  \) </span> is the value obtained by substituting <span class=\"latex\" lang=\"latex\"> \(  x = a_i  \) </span> everywhere in f(x) except in the factor <span class=\"latex\" lang=\"latex\"> \(  x - a_i  \) </span>.
+				</p>
+			</li>
+			<li>
+				<p>
+					<span class=\"latex\" lang=\"latex\"> \(  P(x) = b_0 + b_1 x + ...... + b_n x^n  \) </span>, the partial fraction of <span class=\"latex\" lang=\"latex\"> \(  \frac{P(x)}{(x - a_1)....... (x - a_n)}  \) </span>
+					<br />
+					where, <span class=\"latex\" lang=\"latex\"> \(  a_1, \ a_2, \ ....... a_n  \) </span> are distinct, is given by <br />
+					<span class=\"latex\" lang=\"latex\"> \(  b_n + \frac{A_1}{x - a_1} + \frac{A_2}{x - a_2} + .......+ \frac{A_n}{x - a_n}  \) </span>
+				</p>
+			</li>
+		</ol>
+	</div>
+</section>  
+<section class="solved-examples" id="examples">
+	<h3 class="solved-examples-heading">Solved examples</h3>
+	<section class="solved-example"> 
+		<h4 class="solved-examples-question">Example 1:</h4>
+		<p>Write an anti derivative for each of the following functions using the method of inspection:</p>
+		<div class="list1-ol default-spaced-indented list-numbered-style-lower-alpha">
+			<ol>
+				<li>
+					<p>cos 2x</p>
+				</li>
+				<li>
+					<p>
+						<span class=\"latex\" lang=\"latex\"> \(  3x^2 + 4x^3  \) </span>
+					</p>
+				</li>
+				<li>
+					<p>
+						<span class=\"latex\" lang=\"latex\"> \(  \frac{1}{x}, \ x \ \neq o  \) </span>
+					</p>
+				</li>
+			</ol>
+		</div>
+		<br />
+		<p>
+			<span class="highlight01"> Solution </span>
+		</p>
+		<div class="list1-ol default-spaced-indented list-numbered-style-lower-alpha">
+			<ol>
+				<li>
+					<p>We look for a function whose derivative is cos 2x. Recall that <br />
+						<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \frac{d}{dx} sin 2x = 2 \ cos 2x  \\\\[3pt]
+							or \ cos \ 2x = \frac{1}{2} \frac{d}{dx} (sin \ 2x) = \frac{d}{dx} \left ( \frac{1}{2} sin \ 2x \right )  \end{align}  \) </span>
+						<br />
+						Therefore, an anti derivative of cos 2x is <span class=\"latex\" lang=\"latex\"> \(  \frac{1}{2} sin \ 2x  \) </span>. </p>
+				</li>
+				<li>
+					<p>We look for a function whose derivative is <span class=\"latex\" lang=\"latex\"> \(  3x^2 + 4x^3  \) </span>. Note that <br />
+						<span class=\"latex\" lang=\"latex\"> \(  \frac{d}{dx} \left ( x^3 + x^4 \right ) = 3x^2 + 4x^3  \) </span>
+						<br />
+						Therefore, an anti derivative of  <span class=\"latex\" lang=\"latex\"> \(  3x^2 + 4x^3 \ is \ x^3 + x^4  \) </span>.</p>
+				</li>
+				<li>
+					<p>We know that <br />
+						<span class=\"latex\" lang=\"latex\"> \(  \frac{d}{dx} (log \ x) = \frac{1}{x}, \ x &gt; 0 \ and \ \frac{d}{dx} \log[ (-x) ] = \frac{1}{-x} (-1) = \frac{1}{x}, \ x &gt; 0  \) </span>
+						<br />
+						Combining above, we get <span class=\"latex\" lang=\"latex\"> \(  \frac{d}{dx} (log|x|) = \frac{1}{x}, \ x \ \neq \ 0  \) </span>
+						<br />
+						Therefore <span class=\"latex\" lang=\"latex\"> \(  \int \frac{1}{x} dx = log|x|  \) </span> is one of the anti derivatives of <span class=\"latex\" lang=\"latex\"> \(  \frac{1}{x}  \) </span>
+					</p>
+				</li>
+			</ol>
+		</div>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 2:</h4>
+		<p>Find the anti derivative F of f defined by <span class=\"latex\" lang=\"latex\"> \( f(x) = 4x^3 - 6  \) </span>, where F(0) = 3 <br />
+			<span class="highlight01">Solution</span>
+			<br />
+			One anti derivative of f(x) is <span class=\"latex\" lang=\"latex\"> \(  x^4 - 6x  \) </span> since <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \frac{d}{dx} (x^4 - 6x) = 4x^3 - 6  \) </span>
+			<br />
+			Therefore, the anti derivative F is given by <br />
+			<span class=\"latex\" lang=\"latex\"> \(  F(x) = x^4 - 6x + C  \) </span>, where C is constant. <br />
+			Given that F(0) = 3, which gives, <br />
+			<span class=\"latex\" lang=\"latex\"> \(  3 = 0 - 6 \times 0 + C  \) </span> or C = 3 <br />
+			Hence, the required anti derivative is the unique function F defined by <br />
+			<span class=\"latex\" lang=\"latex\"> \(  F(x) = x^4 - 6x + 3  \) </span>.</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 3:</h4>
+		<p> Find the following integrals: <span class=\"latex\" lang=\"latex\"> \( \int sin^3 \ x \ cos^2 \ x \ dx  \) </span>
+			<br />
+			<span class="highlight01">Solution</span>
+			<br />
+			We have <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \int sin^3 \ x \ cos^2 \ x \ dx = \int sin^2 \ x \ cos^2 x (sin \ x) \ dx  \\\\[3pt]
+				= \int (1 - cos^2 \ x) cos^2 \ x (sin \ x) \ dx  \end{align}  \) </span>
+			<br />
+			Put t = cos x so that dt = - sin x dx <br />
+			Therefore, <span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \int sin^2 \ x \ cos^2 \ x (sin \ x) dx = - \int (1 - t^2) t^2 \ dt  \\\\[3pt]
+				= - \int (t^2 - t^4) dt = - \left ( \frac{t^3}{3} - \frac{t^5}{5} \right ) + C  \\\\[3pt]
+				= - \frac{1}{3} cos^3 \ x + \frac{1}{5} \ cos^5 \ x + C  \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 4:</h4>
+		<p> Find the following integrals: <span class=\"latex\" lang=\"latex\"> \( \int \frac{sin \ x}{sin(x + a)} \ dx  \) </span>
+			<br />
+			<span class="highlight01">Solution</span>
+			<br />
+			Put x + a = t. Then dx = dt. Therefore <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align} \int \frac{sin \ x}{sin(x + a)} \ dx = \int \frac{sin(t - a)}{sin \ t} \ dt  \\\\[3pt]
+				= \int \frac{sin \ t \ cos \ a - cos \ t \ sin \ a}{sin \ t} dt  \\\\[3pt]
+				= cos \ a \ \int dt - sin \ a \int cot \ t \ dt  \\\\[3pt]
+				= (cos \ a)t - (sin \ a) \left [ log|sin \ t| + C_1 \right ]  \\\\[3pt]
+				(cos \ a)(x + a) - (sin \ a) \left [ log|sin (x + a) + C_1 \right ]  \\\\[3pt]
+				= x \ cos \ a + a \ cos \ a - (sin \ a) \ log \ sin(x + a) - C_1 \ sin \ a   \\\\[3pt]
+				Hence, \ \int \frac{sin \ x}{sin(x + a)} \ dx = x \ cos \ a - sin \ a \ log \ |sin (x + a) + C  \end{align}  \) </span>
+			<br />
+			where, <span class=\"latex\" lang=\"latex\"> \(  C = - C_1 \ sin \ a + a \ cos \ a  \) </span>, is another arbitrary constant.
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 5:</h4>
+		<p> Find the following integrals: <span class=\"latex\" lang=\"latex\"> \(  \frac{dx}{1 + tan \ x} \ dx  \) </span>
+			<br />
+			<span class="highlight01">Solution</span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \frac{dx}{1 + tan \ x} \ dx = \int \frac{cos \ x \ dx}{cos \ x + sin \ x}  \\\\[3pt]
+				= \frac{1}{2} \int \frac{(cos \ x + sin \ x + cos \ x - sin \ x ) dx }{cos \ x + sin x}  \\\\[3pt]
+				= \frac{1}{2} \int dx + \frac{1}{2} \int \frac{cos \ x - sin \ x}{cos \ x + sin \ x } dx  \\\\[3pt]
+				= \frac{x}{2} + \frac{C_1}{2} + \frac{1}{2} \int \frac{cos \ x - sin \ x}{cos \ x + sin \ x } dx \ ..... \ (1)  \\\\[3pt]
+				Now, \ consider I = \frac{cos \ x - sin \ x}{cos \ x + sin \ x } dx   \end{align}  \) </span>
+			<br />
+			Put cos x + sin x = t so that (cos x - sin x) dx = dt <br />
+			<span class=\"latex\" lang=\"latex\"> \(  Therefore, \ I = \int \frac{dt}{t} = log |t| + C_2 = log | cos \ x + sin \ x | + C_2  \) </span>
+			<br />
+			Putting it in (1), we get <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \frac{dx}{1 + tan \ x} \ dx = \frac{x}{2} + \frac{C_1}{2} + \frac{1}{2} log|cos \ x + sin \ x| + \frac{C_2}{2}  \\\\[3pt]
+				= \frac{x}{2} + \frac{1}{2} log| cos \ x + sin \ x| + \frac{C_1}{2} + \frac{C_2}{2}  \\\\[3pt]
+				= \frac{x}{2} + \frac{1}{2} log| cos \ x + sin \ x| + C, \ \left ( C = \frac{C_1}{2} + \frac{C_2}{2} \right )  \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 6:</h4>
+		<p> Find the following integrals: <span class=\"latex\" lang=\"latex\"> \( \int \frac{dx}{x^2 - 16} \) </span>
+			<br />
+			<span class="highlight01">Solution</span>
+			<br />
+			We have <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \int \frac{dx}{x^2 - 16} = \int \frac{dx}{x^2 - 4^2} = \frac{1}{8} log \left| \frac{x - 4}{x + 4}  \right | + C  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 7:</h4>
+		<p> Find the following integrals: <span class=\"latex\" lang=\"latex\"> \( \int \frac{dx}{\sqrt{2x - x^2}} \) </span>
+			<br />
+			<span class="highlight01">Solution</span>
+			<br />
+			We have <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \int \frac{dx}{\sqrt{2x - x^2}} = \int \frac{dx}{\sqrt{1 - (x - 1)^2}} \) </span>
+			<br />
+			Put x - 1 = t. Then dx = dt. <br />
+			Therefore, <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \int \frac{dx}{\sqrt{2x - x^2}} = \int \frac{dx}{\sqrt{1 - t^2}} = sin^{-1} (t) + C  \\\\[3pt]
+				= sin^{-1} (x - 1) + C  \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 8:</h4>
+		<p> Find <span class=\"latex\" lang=\"latex\"> \(  \int \frac{dx}{(x + 1)(x + 2)} dx \) </span>
+			<br />
+			<span class="highlight01">Solution</span>
+			<br />
+			The integrand is a proper rational function. Therefore, by using the form of partial fraction  , we write <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \int \frac{dx}{(x + 1)(x + 2)} dx = \frac{A}{x + 1} + \frac{B}{x + 2} \ ..... \ (1)  \) </span>
+			<br />
+			where, real numbers A and B are to be determined suitably. This gives <br />
+			1 = A (x + 2) + B (x + 1). <br />
+			Equating the coefficients of x and the constant term, we get <br />
+			A + B = 0 and 2A + B = 1 <br />
+			Solving these equations, we get A = 1 and B = - 1. <br />
+			Thus, the integrand is given by <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \int \frac{dx}{(x + 1)(x + 2)} dx  = \int \frac{dx}{x + 1} - \int \frac{dx}{x + 2}  \\\\[3pt]
+				= log |x + 1| - log|x + 2| + C  \\\\[3pt]
+				= log \left| \frac{x + 1}{x + 2} \right | + C  \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 9:</h4>
+		<p> Find <span class=\"latex\" lang=\"latex\"> \(  \int \frac{x^2 + 1 }{x^2 - 5x + 6} dx \) </span>
+			<br />
+			<span class="highlight01">Solution</span>
+			<br />
+			Here the integrand <span class=\"latex\" lang=\"latex\"> \(  \int \frac{x^2 + 1 }{x^2 - 5x + 6} dx \) </span> is not proper rational function, so we divide <span class=\"latex\" lang=\"latex\"> \(  x^2 + 1  \) </span> by  <span class=\"latex\" lang=\"latex\"> \(  x^2 - 5x + 6  \) </span> and find that<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \frac{x^2 + 1}{x^2 - 5x + 6} = 1 +  \frac{5x - 5}{x^2 - 5x + 6} = 1 +  \frac{5x - 5}{(x - 2)(x - 3)}  \\\\[3pt]
+				Let \ \frac{5x - 5}{x - 2)(x - 3)} = \frac{A}{x - 2} + \frac{B}{x - 2}  \\\\[3pt]
+				So \ that \ 5x - 5 = A(x - 3) + B(x - 2)  \end{align}  \) </span>
+			<br />
+			Equating the coefficients of x and constant terms on both sides, we get A + B = 5 and 3A + 2B = 5. Solving these equations, we get A = - 5 and B = 10 <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  Thus \ \frac{x^2 + 1}{x^2 - 5x + 6} = 1 - \frac{5}{x - 2} + \frac{10}{x - 3}  \\\\[3pt]
+				Therefore, \ \int \frac{x^2 + 1}{x^2 - 5x + 6} dx  = \int dx - 5 \int \frac{1}{x - 2} dx + 10 \int \frac{dx}{x - 3}  \\\\[3pt]
+				= x - 5 \ log |x - 2| + 10 \ log |x - 3| + C  \end{align}  \) </span>
+		</p> 
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 10:</h4>
+		<p> Find <span class=\"latex\" lang=\"latex\"> \(  \int cos \ x \ dx \) </span>
+			<br />
+			<span class="highlight01">Solution</span>
+			<br />	Put f (x) = x (first function) and g (x) = cos x (second function). <br />
+			Then, integration by parts gives <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \int cos \ x \ dx = x \int cos \ x \ dx - \int \left [ \frac{d}{dx}(x) \int cos \ x \ dx \right ] dx  \\\\[3pt]
+				= x \ sin \ x - \int sin \ x \ dx = x \ sin \ x + cos \ x + C  \end{align}  \) </span>
+			<br />
+			Suppose, we take f (x) = cos x and g(x) = x. Then  <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \int cos \ x \ dx =  cos \ x \int x \ dx - \int \left [ \frac{d}{dx}(cos \ x) \int x \ dx \right ] dx  \\\\[3pt]
+				= (cos \ x) \frac{x^2}{2} + \int sin \ x \frac{x^2}{2} \ dx  \end{align}  \) </span>
+		</p>
+	</section>
+</section> 

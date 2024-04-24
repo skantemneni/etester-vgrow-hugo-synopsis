@@ -1,0 +1,100 @@
+---
+title: "Permutations"
+layout: "default_banking"
+isQuantitativeAptitude: true
+---
+
+<section class="skill" id="01">
+	<h3 class="skill-heading">Permutations</h3>
+	<section class="subskill">
+		<h4 class="skill-subheading">Definition:</h4>
+		<p>Each of the different arrangements which can be made by taking some or all of a number of given things or objects at a time is called a permutation.<br />
+			<span class="highlight01">Note : </span>It should be noted that in permutations the order of arrangements is taken into account, when the order is changed, a different permutation is obtained. </p>
+	</section>
+	<section class="subskill">
+		<h4 class="skill-subheading">The symbol <span class=\"latex\" lang=\"latex\"> \(  ^nP_r  \) </span>:</h4>
+		<p>The symbol <span class=\"latex\" lang=\"latex\"> \(  ^nP_r  \) </span>, denotes the number of permutations of n different things taken r at a time. The letter P stands for permutations.  <br />
+			Thus the symbol <span class=\"latex\" lang=\"latex\"> \(  ^5P_2  \) </span> will denote the number of permutations or arrangements of 5 different things taken 2 at a time. </p>
+	</section>
+</section>
+<section class="skill" id="02">
+	<h3 class="skill-heading">Combinations</h3>
+	<section class="subskill">
+		<h4 class="skill-subheading">Definition:</h4>
+		<p>Each of the different groups or selections which can be made by. taking some or all of a number of given things or objects at a time is called a combination. </p>
+	</section>
+	<section class="subskill">
+		<h4 class="skill-subheading">The symbol <span class=\"latex\" lang=\"latex\"> \(  ^nC_r  \) </span>:</h4>
+		<p>The symbol <span class=\"latex\" lang=\"latex\"> \(  ^nC_r  \) </span> denotes the number of combinations of n different things taken r at a time. The letter C stands for combination. <br />
+			Thus, The symbol <span class=\"latex\" lang=\"latex\"> \(  ^5C_2  \) </span> will denote the number of combinations or selections of 5 different things taken 2 at a time. <br />
+			<span class="highlight01">Remark:</span> In combination or selection order of things is not taken into account. We have already pointed out that Number of arrangements <br />
+			<span class=\"latex\" lang=\"latex\"> \( = \angle{r}  \) </span> (number of selections or groups) <br />
+			where r is the no. of objects in each group.  <br />
+			Thus <span class=\"latex\" lang=\"latex\"> \(  ^nP_r = \angle{r}.^hC_r  \) </span>.</p>
+	</section>
+	<section class="subskill">
+		<h4 class="skill-subheading">Difference between Permutation and Combination </h4>
+		<div class="list-custom-block-list-ol spaced20 indented20">
+			<ol>
+				<li>In a combination only selection is made whereas in a permutation not only a selection is made but also an arrangement in a definite order is taken into consideration.</li>
+				<li>In a combination, the ordering of the selected objects is immaterial whereas in a permutation, the ordering is essential. For example, 1, 2 and 2. 1 are same as combinations but different as permutations. </li>
+				<li>Practically to find the permutations of n different items or objects, taken r at a time, we first select r items from n items and then arrange them. So, usually the number of permutations exceeds the number of combinations.</li>
+				<li>Each combination corresponds to many permutations. For example, the six permutations 123, 132, 231, 213, 321 and 312 correspond to the same combination (1, 2, 3).</li>
+			</ol>
+		</div>
+	</section>
+</section>
+<section class="solved-examples" id="examples">
+	<h3 class="solved-examples-heading">Solved examples</h3>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 1:</h4>
+		<p>In how many different way the words <span class="highlight01">HOUSE</span> can be arranged?</p>
+		<p>
+			<span class="highlight01">Answer:</span>
+			<br />
+			The word <span class="highlight01"> HOUSE </span> contains 5 letters. <br />
+			Required number of word using formula <span class=\"latex\" lang=\"latex\"> \(  ^5P_5 = 5! = ( 1 \times 2 \times 3 \times 4 \times 5 ) = 120  \) </span>.</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 2:</h4>
+		<p>In how many several way the word <span class="highlight01">HOUSE</span> can be prepared so that as vowel always come together?</p>
+		<p>
+			<span class="highlight01">Answer:</span>
+			<br />
+			First of all we need to know how many vowel in this given word,<br />
+			here is three vowel that is E ,O and U.<br />
+			then we count the consonant that is Two.<br />
+			Now we count the number of vowel as a single unit that is vowel E,<br />
+			O and U count as single unit and add it with consonant so we have a three unit.<br />
+			(2 consonant + three vowel as single unit ) = <span class=\"latex\" lang=\"latex\"> \(  3 \times 3  \) </span> (three vowel).<br />
+			<span class=\"latex\" lang=\"latex\"> \( 3! \times 3! = 1 \times 2 \times 3 \times 1 \times 2 \times 3 = 36  \) </span> ways we prepared the word.</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 3:</h4>
+		<p>In how many several ways the word <span class="highlight01">"CAME"</span> can be arranged,that the vowels not come together?</p>
+		<p>
+			<span class="highlight01">Answer:</span>
+			<br />
+			First of all we need to know how many vowel in this given word, here is two vowel that is A and E. <br />
+			then we count the consonant that is Two. Now we count the number of vowel as a single unit that is vowel A and E count as single unit and add it with consonant so we have a three unit.<br />
+			(2 consonant + two vowel as single unit ) = <span class=\"latex\" lang=\"latex\"> \(  3 \times 2  \) </span> ( two vowel). <br />
+			<span class="highlight01">Note:</span>
+			If we Subtract total number ways from within vowel ways than we get the not come together ways,<br />
+			So, <span class=\"latex\" lang=\"latex\"> \( ( 4! - 3! \times 2! ) = 12. \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 4:</h4>
+		<p> In how many several ways the word <span class="highlight01">"HATE"</span> can be arranged, that the vowels not come together?</p>
+		<p>
+			<span class="highlight01">Answer:</span>
+			<br />
+			First of all we need to know how many vowel in this given word, here is two vowel that is A and E. <br />
+			then we count the consonant that is Two. Now we count the number of vowel as a single unit that is vowel A and E count as single unit and add it with consonant so we have a three unit.<br />
+			(2 consonant + two vowel as single unit ) = <span class=\"latex\" lang=\"latex\"> \(  3 \times 2  \) </span> ( two vowel).  <br />
+			<span class="highlight01">Note:</span>
+			If we Subtract total number ways from within vowel ways than we get the not come together ways,<br />
+			So, <span class=\"latex\" lang=\"latex\"> \( ( 4! - 3! \times 2! ) = 12. \) </span>
+		</p>
+	</section>
+</section>

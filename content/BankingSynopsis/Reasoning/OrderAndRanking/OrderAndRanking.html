@@ -1,0 +1,228 @@
+---
+title: "Order and Ranking "
+layout: "default_banking"
+isReasoning: true
+---
+<section class="skill" id="01">
+	<h3 class="skill-heading">Order and Ranking</h3>
+	<section class="subskill">
+		<h4 class="skill-subheading">Order</h4>
+		<p> Order is known as sequence. For example left, right, top, bottom, ascending and descending </p>
+	</section>
+	<section class="subskill">
+		<h4 class="skill-subheading">Rank</h4>
+		<p> Rank is known s position in the given sequence. </p>
+	</section>
+	<section class="subskill">
+		<h4 class="skill-subheading">Type of Rank</h4>
+		<p>There are two types of Rank: </p>
+		<div class="list-custom-block-list-ol spaced20 indented20">
+			<ol>
+				<li>
+					<p>
+						<span class="highlight01"> Base Rank:</span> When rank of object is given from end. <br />
+						For example - A is 4th base rank from left end
+					</p>
+				</li>
+				<li>
+					<p>
+						<span class="highlight01"> Reference Rank:</span> When rank of one object with reference to another object is given <br />
+						For example - A is 2nd reference rank to the right of B
+					</p>
+				</li>
+			</ol>
+		</div>
+	</section>
+	<section class="subskill">
+		<h4 class="skill-subheading">Type of order and Ranking Question</h4>
+		<p>Finding the rank of a person from one side value required to find the rank of a person.</p>
+		<div class="list-custom-block-list-ol spaced20 indented20">
+			<ol>
+				<li>
+					<p>
+						Total number
+					</p>
+				</li>
+				<li>
+					<p>
+						Rank of same person from another side. <br />
+						Formula, Rank from <span class=\"latex\" lang=\"latex\"> \(  \frac{left}{right}  \) </span> = Total No - Rank from <span class=\"latex\" lang=\"latex\"> \(  \frac{right}{left} + 1  \) </span>
+					</p>
+				</li>
+			</ol>
+		</div>
+		<p>
+			<span lang="highlight 01"> Example : </span>
+			<br />
+			In a row of 27 students, X is 14th from right end. Then find the Rank of X from left end? <br />
+			<span lang="highlight 01"> Solution : </span>
+			<br />
+			Given: Total no.of students = 27 <br />
+			Rank of X from right end = 14 <br />
+			To find: Rank of X from left end = ? <br />
+			<span lang="highlight 01"> Formula is, </span>
+			<br />
+			Rank of X from left = Total number of students- <br />
+			Rank of X from right +1 </p>
+		<div class="synopsis-image"> 
+			<img src="111102030_image-1.png" alt="image1" class="default-synopsis-medium-image" />
+		 </div>
+		<p>
+			<span class=\"latex\" lang=\"latex\"> \(  \therefore  \) </span> Rank of X from left = (27 + 1) - 14 = 14 <br />
+			To Finding the total number in a sequence/order. <br />
+			Values required to find the total number.</p>
+		<div class="list-custom-block-list-ol spaced20 indented20">
+			<ol>
+				<li>
+					<p>
+						Rank of a person from one side.
+					</p>
+				</li>
+				<li>
+					<p>
+						Rank of same person from another side. </p>
+				</li>
+			</ol>
+		</div>
+		<p> Formula, to find total number is: <br />
+			Total number = Rank of a person from left + Rank of a person from right - 1 </p>
+		<p>
+			<span lang="highlight 01"> Example : </span>
+			<br />
+			In a row, X is 17th from left end and 19th from right end. Then find the total number in the given row? <br />
+			<span lang="highlight 01"> Solution : </span>
+			<br />
+			Given: Rank of X from left = 17 <br />
+			Rank of X from right end = 19 <br />
+			To find: Total number = ? <br />
+			<span lang="highlight 01"> Formula </span>
+			<br />
+			Total number = Rank of X from left + Rank of X from right - 1 <br />
+			Rank of X from right - 1 <br />
+			Total number = 17 + 19 - 1 <br />
+			= 35 <span class=\"latex\" lang=\"latex\"> \(  \overset{ 17th + 19 th - 1}{ \longleftrightarrow }  \) </span>
+		</p>
+		<p>
+			<span lang="highlight 01"> To finding the Mid Number </span>
+			<br />
+			Values required to find the mid number. </p>
+		<div class="list-custom-block-list-ol spaced20 indented20">
+			<ol>
+				<li>
+					<p>
+						Rank of one person from one end.
+					</p>
+				</li>
+				<li>
+					<p>
+						Rank of another person from another end. </p>
+				</li>
+				<li>
+					<p>
+						Total number. </p>
+				</li>
+			</ol>
+		</div>
+		<p>
+			<span class="highlight01"> Formula to find Mid Number (Simple case):</span>
+			<br />
+			<span class="highlight01"> Note: </span> Simple Case: When total number is more than the addition of rank from both the end. Then such question is based as Mid number (Simple Case).<br />
+			<span class="highlight01"> Formula: </span>
+			<br />
+			Mid No. (Simple Case) = Total No. - (Rank of one person from one end + Rank of another person from another end).<br />
+			<span class="highlight01">Formula to Find Mid Number (Overlap Case): </span>
+			<br />
+			<span class="highlight01"> Note: Overlap Case: </span> When Total Number is less than the addition of rank from both the end. Then such question is based on Mid number (overlap case)<br />
+			<span class="highlight01">Formula:</span> Mid No. (overlap Case) = (Rank of one person from one end + Rank of another person from another end) - (Total Number + 2) <br />
+			<span class="highlight01"> For Example </span>
+			<br />
+			In a row of 27 boys, X is 17th from left end and Y is 13th from right end. Then find how many boys are in between X and Y?<br />
+			<span class="highlight01">Solution :</span> Given: Total number = 27 <br />
+			Rank of X from left end = 17 <br />
+			Rank of Y from right end = 13 <br />
+			To find: How many boys are in between X and Y. <br />
+			Formula is: <br />
+			Mid No. = (Rank of X from left end + Rank of Y from right end) - (Total No + 2) <br />
+			Mid No. = (17 + 13) - (27 + 2) <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \Rightarrow  \) </span> 30 - 29 </p>
+		<div class="synopsis-image"> 
+			<img src="111102030_image-2.png" alt="image2" class="default-synopsis-medium-image" />
+		 </div>
+		<p>To Find total Number with Mid Number: <br />
+			Value required to find total number. </p>
+		<div class="list-custom-block-list-ol spaced20 indented20">
+			<ol>
+				<li>
+					<p>
+						Rank of one person from one end.
+					</p>
+				</li>
+				<li>
+					<p>
+						Rank of another person from another end. </p>
+				</li>
+				<li>
+					<p>
+						Mid number. </p>
+				</li>
+			</ol>
+		</div>
+		<p>
+			<span class="highlight01">Both Mid number (Simple Case) and Mid number (overlap case) </span>formula is required to find total number. By using Mid number (Simple Case) fromula, we will get maximum total number and by using Mid Number (overlap case). Formula we will get minimum total number.<br />
+			<span class="highlight01">Example:</span>
+			<br />
+			In a row, X is 17th from left end and Y is 11th from right end and there are 4 person are sitting in between X and Y. Then find total number of person in a row?<br />
+			<span class="highlight01">Solution:</span>
+			<br />
+			Given: Mid No.4 <br />
+			Rank of X from left end = 17 <br />
+			Rank of Y from right end = 11 <br />
+			To find: Total Number = ? <br />
+			<span class="highlight01">Maximum total number of person:</span>
+			<br />
+			Mid no. (Simple Case) = Total No - (Rank of X from left end + Rank of y from right end) <br />
+			Total No = Mid No + Rank of X from left end + Rank of y from right end. <br />
+			Then, Total No = 4 + 17 + 11 = 32 </p>
+		<div class="synopsis-image"> 
+			<img src="111102030_image-3.png" alt="image3" class="default-synopsis-medium-image" />
+		 </div>
+		<p>
+			<span class="highlight01"> Minimum Total Number of Person:</span>
+			<br />
+			Mid No. (Overlap Case) = (Rank of X from left end + Rank of y from right end) - (Total No. + 2) <br />
+			Total No = (Rank of X from left end + Rank of y from right end) - (Mid No. + 2) then, Total No = (17 + 11) - (4 + 2) <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \Rightarrow  \) </span> 28 - 6 <br />
+			22 </p>
+		<div class="synopsis-image"> 
+			<img src="111102030_image-4.png" alt="image4" class="default-synopsis-medium-image" />
+		 </div>
+		<p>
+			<span lang="highlight 01"> To Finding the Exact Mid:</span>
+			<br />
+			Value required to find Exact Mid: </p>
+		<div class="list-custom-block-list-ol spaced20 indented20">
+			<ol>
+				<li>
+					<p>
+						Total Number
+					</p>
+				</li>
+				<li>
+					<p>
+						Rank of one person from one end. </p>
+				</li>
+				<li>
+					<p>
+						Rank of another person from another end. </p>
+				</li>
+				<li>
+					<p>
+						Mid Number </p>
+				</li>
+			</ol>
+		</div>
+		<p>
+			<span class=\"latex\" lang=\"latex\"> \(  Exact \ Mid = \frac{Mid \ number + 1}{2}  \) </span>
+		</p>
+	</section>
+</section>

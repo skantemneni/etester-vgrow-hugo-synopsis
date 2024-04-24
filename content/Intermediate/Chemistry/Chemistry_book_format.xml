@@ -1,0 +1,349 @@
+<book>
+	<preheading>Intermediate</preheading>
+	<title>Chemistry</title>
+	<description>Intermediate Preperation Course Materials provided by eTester Classes.</description>
+	<book_chapter_number_offset>0</book_chapter_number_offset>
+	<book_page_number_offset>0</book_page_number_offset>
+	<show_chapter_numbers>true</show_chapter_numbers>
+	<chapters>
+		<chapter>
+			<number>1</number>
+			<title>Atomic Structure</title>
+			<description>
+				<![CDATA[Essential Exam Preperation guide for Employment Readiness Exams]]>
+			</description>
+			<filename>AtomicStructure.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>2</number>
+			<title>Classification of Elements</title>
+			<description>
+				<![CDATA[Essential Exam Preperation guide for Employment Readiness Exams]]>
+			</description>
+			<filename>PeriodicClassification.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>3</number>
+			<title>Chemical Bond</title>
+			<description>
+				<![CDATA[Essential Exam Preperation guide for Employment Readiness Exams]]>
+			</description>
+			<filename>ChemicalBond.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>4</number>
+			<title>States of matter</title>
+			<description>
+				<![CDATA[Essential Exam Preperation guide for Employment Readiness Exams]]>
+			</description>
+			<filename>StatesOfMatter.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>5</number>
+			<title>Stoichiometry</title>
+			<description>
+				<![CDATA[Essential Exam Preperation guide for Employment Readiness Exams]]>
+			</description>
+			<filename>Stoichiometry.html</filename> 
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>6</number>
+			<title>Thermodynamics</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>Thermodynamics.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>7</number>
+			<title>Chemical Equilibrium Acid – Bases</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>ChemicalEquilibriumAcidsBases.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>8</number>
+			<title>Hydrogen and its Compounds</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>HydrogenAndItsCompounds.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>9</number>
+			<title>Organic Chemistry</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>OrganicChemistry.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>10</number>
+			<title>EnvironmentalChemistry</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>EnvironmentalChemistry.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>11</number>
+			<title>S – Block Elements (IA and IIA Group Elements)</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>S-BlockElements-IAAndIIAGroupElements.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>12</number>
+			<title>P – Block Elements (IIIA and IVA Group Elements)</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>P-BlockElements.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>13</number>
+			<title>Redox reaction and electro chemistry</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>RedoxReactionAndElectroChemistry.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>14</number>
+			<title>Solid State</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>SolidState.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>15</number>
+			<title>Solutions</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>Solutions.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>16</number>
+			<title>Electrochemistry</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>Electrochemistry.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>17</number>
+			<title>Chemical Kinetics</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>ChemicalKinetics.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>18</number>
+			<title>Surface Chemistry</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>SurfaceChemistry.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>19</number>
+			<title>General Principles of Metallurgy</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>GeneralPrinciplesOfMetallurgy.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>20</number>
+			<title>'P'- Block Elements Group-15 Elements</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>PBlockElementsGroup-15Elements.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>21</number>
+			<title>Group – 16 Elements</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>Group16Elements.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>22</number>
+			<title>Group – 17 Elements</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>Group17Elements.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>23</number>
+			<title>Group – 18 Elements</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>Group18Elements.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>24</number>
+			<title>d and f Block elements and Coordination Compounds</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>d-And-f-BlockElementsAndCoordinationCompounds.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>25</number>
+			<title>Polymers</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>Polymers.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>26</number>
+			<title>Biomolecules</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>Biomolecules.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>27</number>
+			<title>Chemistry in Everyday life</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>ChemistryInEverydayLife.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>28</number>
+			<title>Halo Alkanes and Haloarenes</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>HaloAlkanesAndHaloarenes.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>29</number>
+			<title>Organic compounds containing C.H and O Alcohols Phenols and Ethers</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>OrganicCompoundsContainingCHOAlcoholsPhenolsAndEthers.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>30</number>
+			<title>Aldehydes and Ketones</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>AldehydesAndKetones.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>31</number>
+			<title>Organic Compounds containing Nitrogen Amines</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>OrganicCompoundsContainingNitrogenAmines.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>32</number>
+			<title>Diazonium salts</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>DiazoniumSalts.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>33</number>
+			<title>Cyanides and Isocyanides</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>CyanidesAndIsocyanides.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>34</number>
+			<title>Purification and characterization of organic compounds</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>PurificationAndCharacterizationOfOrganicCompounds.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<chapter>
+			<number>35</number>
+			<title>Organic compounds containing halogens</title>
+			<description>
+				<![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]>
+			</description>
+			<filename>OrganicCompoundsContainingHalogens.html</filename>
+			<notespages>0</notespages>
+		</chapter>
+		<!-- Topic need to be added. -->
+		<!-- Topic having some changes working on it. -->
+		<!-- It will be added soon in the Curriculum. -->
+		<!-- <chapter> -->
+			<!-- <number>36</number> -->
+			<!-- <title>Stereochemistry</title> -->
+			<!-- <description> -->
+				<!-- <![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]> -->
+			<!-- </description> -->
+			<!-- <filename>Stereochemistry.html</filename> -->
+			<!-- <notespages>0</notespages> -->
+		<!-- </chapter> -->
+		<!-- Topic need to be added. -->
+		<!-- Topic having some changes working on it. -->
+		<!-- It will be added soon in the Curriculum. -->
+		<!-- <chapter> -->
+			<!-- <number>37</number> -->
+			<!-- <title>Theoretical Principles of Experimental Chemistry</title> -->
+			<!-- <description> -->
+				<!-- <![CDATA[Essential Exam Preperation content for Employment Readiness Exams]]> -->
+			<!-- </description> -->
+			<!-- <filename>TheoreticalPrinciplesOfExperimentalChemistry.html</filename> -->
+			<!-- <notespages>0</notespages> -->
+		<!-- </chapter> -->
+	</chapters>
+</book>

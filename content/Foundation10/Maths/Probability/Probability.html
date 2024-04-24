@@ -1,0 +1,661 @@
+---
+title: "Probability"
+layout: "default_foundation"
+isMath: true
+---
+<section class="skill" id="01">
+	<h3 class="skill-heading">Probabilities of Simple Combined Events</h3>
+	<div class="synopsis-image"> 
+		<img src="104190009_image-1.png" alt="image1" class="default-synopsis-medium-image" />
+	 </div>
+	<p>A random experiment is a process involving chance that generates a result called outcome. In general, there are two or more possible outcomes in a random expe The probability that an outcome will occur is a measure of the change of the occ of the outcome. <br />
+		The set of the possible outcomes is called the sample space, usually denoted by S. A of some of the possible outcomes is called an event, usually denoted by E. In words, an event E is a subset of the sample space S. <br />
+		For a finite sample space with equally likely outcomes, the probability of an event denoted by P(E), is given by <br />
+		A summary of the basic properties of probability is given below. <br />
+		<span class=\"latex\" lang=\"latex\"> \(  P(E) = \frac{Number \ of  \ outcomes \ favourable \ to \ the \ event \ E}{Total \ number \ of \ possible \ outcomes}  \) </span>
+		<br />
+		i.e., <span class=\"latex\" lang=\"latex\"> \(  P(E) = \frac{n(E)}{n(S)}  \) </span>
+		<br />
+		A summary of the basic properties of probability is given is below. </p>
+	<div class="list-custom-block-list-ol spaced20 indented20">
+		<ol>
+			<li>
+				<p>
+					<span class=\"latex\" lang=\"latex\"> \( 0 &lt; P(E) &lt; 1  \) </span> for any event E.</p>
+			</li>
+			<li>
+				<p> p (certain event) = 1, P(sample space) = 1.</p>
+			</li>
+			<li>
+				<p> P (impossible event) = 0 </p>
+			</li>
+			<li>
+				<p> P(E') = 1 - P(E)</p>
+			</li>
+		</ol>
+	</div>
+	<p> In this chapter, we will learn how to solve more complicated probability problems. In order to help us visualize the sample space and the events in such problems, we usually draw a diagram called a possibility diagram or a tree diagram.</p>
+	<section class="subskill">
+		<h4 class="skill-subheading">Possibility Diagram:</h4>
+		<p>When a random experiment involves two stages, we can use a rectangular grid, called a possibility diagram, to represent the sample space. <br />
+			<span class="highlight01"> EX: </span> An unbiased coin is tossed and a letter is selected at random from the word "SMART". Find the probability of getting a head on the tossed coin and the letter "M" from the word.<br />
+			<span class="highlight01"> Sol : </span> Here, the tossing of a coin is a stage; and the selection of a letter is another stage. This experiment involves two stages. The outcomes can be represented by the crosses in the diagram below. This diagram is called a <span class="highlight01">possibility diagram.</span>
+		</p>
+		<div class="synopsis-image"> 
+			<img src="104190009_image-2.png" alt="image2" class="default-synopsis-medium-image" />
+		 </div>
+		<p>The sample space S = {HS, HM, HA, HR, HT, TS, TM, TA, TR, TT}, where the first letter stands for the result of tossing the coin (H for Head and T for Tail), and the second letter stands for the letter selected from the word "SMART". <br />
+			The favourable outcome of getting a head and the letter "M" is HM. <br />
+			P (getting a head and the letter " M " = <span class=\"latex\" lang=\"latex\"> \(  = \frac{1}{10}  \) </span>.</p>
+	</section>
+	<section class="subskill">
+		<h4 class="skill-subheading">Tree Diagram:</h4>
+		<p>If a random experiment consists of two or more stages, we can use a tree diagram to represent the process. Let us study some examples. <br />
+			<span class="highlight01"> EX:</span> Three unbiased coins are tossed. Find the probability of getting </p>
+		<div class="list-custom-block-list-ol spaced20 indented20">
+			<ol>
+				<li>
+					<p> 3 heads,</p>
+				</li>
+				<li>
+					<p> 2 heads and 1 tail.</p>
+				</li>
+			</ol>
+		</div>
+		<p>
+			<span class="highlight01"> Sol: </span>
+		</p>
+		<div class="list-custom-block-list-ol spaced20 indented20">
+			<ol>
+				<li>
+					<p> Here, the tossing of each coin is a stage.
+						<div class="synopsis-image"> 
+							<img src="104190009_image-3.png" alt="image3" class="default-synopsis-medium-image" />
+						 </div>
+						The above diagram is a tree diagram showing the outcomes of tossing three coins. In a tree diagram, the result of each stage is shown at the end of a branch for that stage. reading along the branches, we get the outcomes of the experiment. <br />
+						In this case the outcome HHH means the first coin shows a head, the second coin show a head and the third coin shows a head (as indicated by the branches). <br />
+						The 8 outcomes are equally likely.  <br />
+						<span class=\"latex\" lang=\"latex\"> \(  \therefore  \) </span> P(3 heads) = P(HHH) <br />
+						<span class=\"latex\" lang=\"latex\"> \(  = \frac{1}{8}  \) </span>
+					</p>
+				</li>
+				<li>
+					<p> Let E = {outcomes showing 2 heads and 1 tail} <br />
+						= { HHT, HTH, THH} <br />
+						<span class=\"latex\" lang=\"latex\"> \(  \therefore  \) </span> P (2 heads and 1 tail) = <span class=\"latex\" lang=\"latex\"> \(  \frac{3}{8}. \) </span>
+					</p>
+				</li>
+			</ol>
+		</div>
+	</section>
+</section>
+<section class="skill" id="02">
+	<h3 class="skill-heading">Mutually Exclusive Events</h3>
+	<p>For any two events, A and B, we denote </p>
+	<div class="list-custom-block-list-ol spaced20 indented20">
+		<ol>
+			<li>
+				<p> probability that both events A and B will occur as P(A and B); </p>
+			</li>
+			<li>
+				<p> probability that either even'- A or event B will occur, or both will occur as P (A or B) </p>
+			</li>
+		</ol>
+	</div>
+	<p> In a sample space, two events are mutually exclusive if they cannot occur at the same time. </p>
+	<div class="synopsis-image"> 
+		<img src="104190009_image-4.png" alt="image4" class="default-synopsis-medium-image" />
+	 </div>
+	<p> For example, in rolling a die, <br />
+		event A = {1, 3, 5} and event B = {2, 4} <br />
+		are mutually exclusive. This is because when the die shows 1, 3 or 5, it definitely cannot show 2 or 4. <br />
+		Note that <span class=\"latex\" lang=\"latex\"> \(  A \cap B = \phi  \) </span>. That means, two events, A and B, are mutually exclusive if <span class=\"latex\" lang=\"latex\"> \(  A \cap B = \phi  \) </span>.<br />
+		Let us investigate the relationships between P(A), P(B), P(A and B) and P(A or B) for two  mutually exclusive events, A and B. <br />
+		If A and B are two mutually exclusive events, then the probability of A or B occurring is</p>
+	<div class="synopsis-image"> 
+		<img src="104190009_image-5.png" alt="image5" class="default-synopsis-medium-image" />
+	 </div>
+	<p> P(A or B) = P(A) + P(B) </p>
+</section>
+<section class="skill" id="03">
+	<h3 class="skill-heading">Independent Events</h3>
+	<p> Let us study another type of combination of events. Intuitively, two events are said to be  <span class="highlight01"> independent events </span> if the occurrence or non-occurrence of one event does not affect the probability of occurrence of the other event. <br />
+		For example, in tossing a fair coin twice, the event A that the first toss shows a head and the event B that the second toss shows a head are independent. That is, event A does not affect how likely event B will occur, and vice versa. <br />
+		If A and B are independent events, the probability of both events A and B occurring is the product of their individual probabilities. <br />
+		ie.,  <span class=\"latex\" lang=\"latex\"> \(  P(A \ and \ B) = P(A) \times P(B)  \) </span>. </p>
+</section> 
+<section class="skill" id="04">
+	<h3 class="skill-heading">Further Probabilities</h3>
+	<p> Consider drawing two balls at random from a bag containing 3 red balls and 5 green balls. Suppose the balls are drawn one by one without replacement. <br />
+		Let A be the event that the first ball drawn is red, <br />
+		B be the event that cue second ball drawn is green. <br />
+		At first, there are 8 balls in the bag. After drawing the first ball, there will be 7 balls left in the bag.</p>
+	<div class="list-custom-block-list-ol spaced20 indented20">
+		<ol>
+			<li>
+				<p> If event A happens (i.e, the first ball drawn is red), the remaining balls are 2 red ones and 5 green ones. <br />
+					Hence, <span class=\"latex\" lang=\"latex\"> \(  P(B) = \frac{5}{7}  \) </span>. </p>
+			</li>
+			<li>
+				<p> If event A does not happen (i.e., that first ball drawn is not red), the remaining balls are 3 red ones and 4 green ones. <br />
+					Hence, <span class=\"latex\" lang=\"latex\"> \(  P(B) = \frac{4}{7}  \) </span>. <br />
+					That means, the probability of event B depends on whether event A will occur or not  Thus, A and B are NOT independent events. How do we calculate the probability of both events A and B occurring if they are not independent? <br />
+					We can also use a tree diagram to do this. In the tree diagram, the probabilities indicating the second stage branches will depend on the results of the first stage.</p>
+			</li>
+		</ol>
+	</div>
+	<div class="synopsis-image"> 
+		<img src="104190009_image-6.png" alt="image6" class="default-synopsis-medium-image" />
+	 </div>
+	<p>Hence P the first ball drawn is red and the second ball drawn is green <br />
+		= P(RG) <br />
+		= <span class=\"latex\" lang=\"latex\"> \(  \frac{3}{8} \times \frac{5}{7}  \) </span>
+		<br />
+		In general, when the occurrence of the second event depends on the occurrence of the first event, we may use a tree diagram to help us compute the probabilities. </p>
+</section>
+<section class="skill" id="05">
+	<h3 class="skill-heading">Algebra of Events</h3>
+	<p> Some standard methods of constructing new events in terms of some given events associated with a random expreiment.</p>
+	<table class="u-full-width summary-table">
+		<thead>
+			<tr>
+				<th align="center">Verbal Description of event</th>
+				<th align="center">Equivalent set theoritic notation</th>
+			</tr>
+		</thead>
+		<tr>
+			<td align="center">Not A </td>
+			<td align="center">
+				<span class=\"latex\" lang=\"latex\"> \(  \overline{A}  \) </span>
+			</td>
+		</tr>
+		<tr>
+			<td align="center">A or B</td>
+			<td align="center">
+				<span class=\"latex\" lang=\"latex\"> \(  A \cup B \) </span>
+			</td>
+		</tr>
+		<tr>
+			<td align="center">A and B</td>
+			<td align="center">
+				<span class=\"latex\" lang=\"latex\"> \( A \cap B \) </span>
+			</td>
+		</tr>
+		<tr>
+			<td align="center">A but not B</td>
+			<td align="center">
+				<span class=\"latex\" lang=\"latex\"> \(  A \cap \overline{B}  \) </span>
+			</td>
+		</tr>
+		<tr>
+			<td align="center">Neither A nor B</td>
+			<td align="center">
+				<span class=\"latex\" lang=\"latex\"> \( \overline{A} \cap \overline{B} = (\overline{A \cup B}) \) </span>
+			</td>
+		</tr>
+		<tr>
+			<td align="center">At least one of A, B or C</td>
+			<td align="center">
+				<span class=\"latex\" lang=\"latex\"> \( (A \cup B) \cup C \) </span>
+			</td>
+		</tr>
+		<tr>
+			<td align="center">Exactly one of A and B</td>
+			<td align="center">
+				<span class=\"latex\" lang=\"latex\"> \( (A \cap \overline{B}) \cup (\overline{A} \cup B) \) </span>
+			</td>
+		</tr>
+		<tr>
+			<td align="center">All three of A, B and C</td>
+			<td align="center">
+				<span class=\"latex\" lang=\"latex\"> \( A \cap B \cap C \) </span>
+			</td>
+		</tr>
+		<tr>
+			<td align="center">Exactly two of A, B and C</td>
+			<td align="center">
+				<span class=\"latex\" lang=\"latex\"> \( (A \cap B \cap \overline{C}) \cup (A \cap \overline{B} \cap C) \cup (\overline{A} \cap B \cap C) \) </span>
+			</td>
+		</tr>
+	</table>
+</section>
+<section class="skill" id="06">
+	<h3 class="skill-heading">Addition Theorems on Probability</h3> 
+	<section class="subskill">
+		<h4 class="skill-subheading">Addition theorem for two events</h4>
+		<p>If A and B are two events associated with a random experiment. <br />
+			<span class=\"latex\" lang=\"latex\"> \(  P(A \cup B) = P(A) + P(B) - P(A \cap B)  \) </span>
+			<br />
+			<span class="highlight01">Note:</span>
+			<br />
+			If A and B are mutually exclusive events, then  <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \therefore P(A \cap B) = P(A) + P(B)  \) </span>
+		</p>
+	</section>
+	<section class="subskill">
+		<h4 class="skill-subheading">Addition theorem for three events </h4>
+		<p>If A, B, C are three events associated with a random experiment, then <br />
+			<span class=\"latex\" lang=\"latex\"> \(  P(A \cup B \cup C) = P(A) + P(B) + p(C) - P(A \cap B) - P(B \cap C) - P(A \cap C) + P(A \cap B \cap C)  \) </span>
+			<br />
+			<span class="highlight01">Note:</span>
+			<br />
+			If A, B, C are mutually exclusive events, then <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  P(A \cap B) = P(B \cap C) = P(A \cap C) = P(A \cap B\cap C) = 0  \\\\[3pt]
+				\therefore \ P(A \cup B \cup C) = P(A) + P(B) + P(C)  \end{align}  \) </span>
+		</p>
+		<div class="list-custom-block-list-ol spaced20 indented20">
+			<ol>
+				<li>
+					<p>
+						<span class=\"latex\" lang=\"latex\"> \(  P(\overline{A} \cap B) = P(B) - P(A \cap B)  \) </span>
+					</p>
+				</li>
+				<li>
+					<p>
+						<span class=\"latex\" lang=\"latex\"> \(  P(A \cap \overline{B}) = P(B) - P(A \cap B)  \) </span>
+					</p>
+				</li>
+				<li>
+					<p> If <span class=\"latex\" lang=\"latex\"> \(  B \subst A  \) </span>, then<br />
+						<ol>
+							<li>
+								<p>
+									<span class=\"latex\" lang=\"latex\"> \(  P(A \cap \overline{B}) = P(A) - P(B)  \) </span>
+								</p>
+							</li>
+							<li>
+								<p>
+									<span class=\"latex\" lang=\"latex\"> \(  P(B) \leq P(A)  \) </span>
+								</p>
+							</li>
+						</ol>
+					</p>
+				</li>
+			</ol>
+		</div>
+	</section>
+</section>
+<section class="solved-examples" id="examples">
+	<h3 class="solved-examples-heading">Solved examples</h3>
+	<section class="solved-example"> 
+		<h4 class="solved-examples-question">Example 1:</h4>
+		<p>
+			<span class="highlight01"> Question: </span>
+			<br />
+			Find the probability of obtaining a number greater than 4 on a single toss of a die.</p>
+		<p>
+			<span class="highlight01">Solution: </span>
+			<br />
+			There are six different possible outcomes and two of these outcomes, {5, 6}, are successful.<br />
+			Hence, the probability in favour of obtaining a number greater than 4 is <span class=\"latex\" lang=\"latex\"> \(  \frac{2}{6}  \) </span>. <br />
+			P (number greater than 4) = <span class=\"latex\" lang=\"latex\"> \(  \frac{2}{6} = \frac{1}{3}  \) </span>. </p>
+	</section>
+	<section class="solved-example"> 
+		<h4 class="solved-examples-question">Example 2:</h4>
+		<p>
+			<span class="highlight01"> Question: </span>
+			<br />
+			Find the probability of drawing a king (one pick) from a shuffled standard deck of 52 cards. (A standard deck of cards is the most common type of deck used in most card games containing 52 cards).</p>
+		<p>
+			<span class="highlight01">Solution: </span>
+			<br />
+			There are 52 different possible outcomes. Four of these outcomes are successful: king of spades, king of hearts, king of clubs, king of diamonds. Therefore, the probability in <br />
+			favour of obtaining a king is <span class=\"latex\" lang=\"latex\"> \(  \frac{4}{52}  \) </span>. <br />
+			P(K) = <span class=\"latex\" lang=\"latex\"> \(  \frac{4}{52} = \frac{1}{13}  \) </span>. </p>
+	</section>
+	<section class="solved-example"> 
+		<h4 class="solved-examples-question">Example 3:</h4>
+		<p>
+			<span class="highlight01"> Question: </span>
+			<br />
+			Find the probability of obtaining 7 on a single toss of one die.</p>
+		<p>
+			<span class="highlight01">Solution: </span>
+			<br />
+			There are six different possible outcomes and none of these out comes would probability 7. That is, zero of these outcomes would be successful. The probability in favour of obtaining a 7 on a single toss of one die is <span class=\"latex\" lang=\"latex\"> \(  \frac{0}{6}  \) </span>, or 0: <br />
+			P(7) = <span class=\"latex\" lang=\"latex\"> \(  \frac{0}{6} = 0  \) </span>. <br />
+			When an event cannot possibly succeed, we say it is an impossible event. The probability of an impossible event is zero: <br />
+			P (impossible event) = <span class=\"latex\" lang=\"latex\"> \(  \frac{0}{T} = 0(T \neq 0)  \) </span>
+		</p>
+	</section>
+	<section class="solved-example"> 
+		<h4 class="solved-examples-question">Example 4:</h4>
+		<p>
+			<span class="highlight01"> Question: </span>
+			<br />
+			One card is drawn at random from a shuffled standard deck of 52 cards. Find the probability that the card selected is not a king.
+		</p>
+		<p>
+			<span class="highlight01">Solution: </span>
+			<br />
+			There are 52 different possible outcomes. There are 4 kings in a deck, so the other 48 cards are not kings, and these are the successful outcomes. Hence, the probability that the card selected is not a king is <span class=\"latex\" lang=\"latex\"> \(  \frac{48}{52}  \) </span>.<br />
+			P(not K) = <span class=\"latex\" lang=\"latex\"> \(  \frac{48}{52} = \frac{12}{13}  \) </span>. <br />
+			The sum of the probability that an event will occur and the probability that it will not occur is 1. Therefore, we can solve this in another way. <br />
+			Be sure to remember that if <br />
+			P(A) = <span class=\"latex\" lang=\"latex\"> \(  \frac{S}{T}  \) </span> then P(not A) = <span class=\"latex\" lang=\"latex\"> \(  1 - \frac{S}{T} (T \neq 0)  \) </span>
+			<br />
+			<span class="highlight01"> Alternate Solution: </span> The probability of selecting a king is <span class=\"latex\" lang=\"latex\"> \(   \frac{4}{52}  \) </span> or <span class=\"latex\" lang=\"latex\"> \(   \frac{1}{13}  \) </span>. Therefore, the probability that the card selected is not a king is  <br />
+			<span class=\"latex\" lang=\"latex\"> \(  P(not \ K) = 1 - \frac{1}{13} = \frac{13}{13} - \frac{1}{13} = \frac{12}{13}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example"> 
+		<h4 class="solved-examples-question">Example 5:</h4>
+		<p>
+			<span class="highlight01"> Question: </span>
+			<br />
+			Use the sample space for the total number of possible outcomes when a pair of dice is tossed to find the probability of obtaining a sum of 7 on a single toss of a pair of dice.
+		</p>
+		<p>
+			<span class="highlight01">Solution: </span>
+			<br />
+			There are 36 total possible outcomes and six of these outcomes are successful, because there are six ways of obtaining a sum of 7. Hence, the probability of obtaining a 7 is <span class=\"latex\" lang=\"latex\"> \(  \frac{6}{36} \ or \ \frac{1}{6}  \) </span>. <br />
+			<span class=\"latex\" lang=\"latex\"> \(  P(7) = \frac{6}{36} = \frac{1}{6}  \) </span>
+			<br />
+			<span class="highlight01">Note</span> that a 7 is the most likely outcome when a pair of dice is tossed. It is believed that this is one of the reasons why many people consider 7 as their lucky number. It keeps coming up for them more often than other numbers.
+		</p>
+	</section>
+	<section class="solved-example"> 
+		<h4 class="solved-examples-question">Example 6:</h4>
+		<p>
+			<span class="highlight01"> Question: </span>
+			<br />At a recent college registration, 100 students were interviewed. Eighty of the students stated that they had registered for a mathematics course, 14 of the students stated that they had registered for a history course, and 5 of the students stated that they had registered for a mathematics course and a history course. What is the probability that a student in this survey registered only for history? </p>
+		<p>
+			<span class="highlight01">Solution: </span>
+		</p>
+		<div class="synopsis-image"> 
+			<img src="104190009_image-7.png" alt="image7" class="default-synopsis-medium-image" />
+		 </div>
+		<p>A Venn diagram using the given information is shown in above figure. With it, we can summarize the information that 11 of the students did not register for either a mathematics course or a history course, 9 students registered only for history, and students registered only for mathematics. <br />
+			This information can also be used to solve the probability problem. We note that the total number of students is 100. Whereas 9 of them are registered only for history <br />
+			Hence, the answer is <span class=\"latex\" lang=\"latex\"> \(  \frac{9}{100}  \) </span>.</p>
+	</section>
+	<section class="solved-example"> 
+		<h4 class="solved-examples-question">Example 7:</h4>
+		<p>
+			<span class="highlight01"> Question: </span>
+			<br />
+			In a certain group of 75 students, it has been determined that 16 students are taking statistics, chemistry, and psychology; 24 students are taking statistics and chemistry 30 students are taking statistics and psychology; 22 students are taking chemistry and psychology; 6 students are taking only statistics; 9 students are taking only chemistry and 5 students are taking only psychology.</p>
+		<div class="synopsis-image"> 
+			<img src="104190009_image-8.png" alt="image8" class="default-synopsis-medium-image" />
+		 </div>
+		<div class="list1-ol default-spaced-indented list-numbered-style-lower-alpha">
+			<ol>
+				<li>
+					<p>What is the probability that a student is not taking any of the three subjects? </p>
+				</li>
+				<li>
+					<p>What is the probability that a student is taking chemistry?</p>
+				</li>
+			</ol>
+		</div>
+		<p>
+			<span class="highlight01">Solution: </span>
+			<br />
+			We first complete the necessary Venn diagram (See above figure). After completir diagram, we can answer the questions. </p>
+		<div class="list1-ol default-spaced-indented list-numbered-style-lower-alpha">
+			<ol>
+				<li>
+					<p>The probability that a student is not taking any of the three subjects is <span class=\"latex\" lang=\"latex\"> \(  \frac{11}{75}  \) </span>
+					</p>
+				</li>
+				<li>
+					<p>The probability that a student is taking chemistry is <span class=\"latex\" lang=\"latex\"> \(  \frac{39}{75}  \) </span>
+					</p>
+				</li>
+			</ol>
+		</div> 
+	</section>
+	<section class="solved-example"> 
+		<h4 class="solved-examples-question">Example 8:</h4>
+		<p>
+			<span class="highlight01"> Question: </span>
+			<br />
+			Mr. Examination is preparing a quickie quiz for his mathematics class to see if the students did their assignment. The quiz is to consist of three true-false questions. How many different arrangements of the answers are possible? What are the possible outcomes? </p>
+		<p>
+			<span class="highlight01">Solution: </span>
+			<br />
+			We have three questions and each questions has two possible outcomes (true or false). Using the counting principle; we compute <span class=\"latex\" lang=\"latex\"> \(  2 \times 2 \times 2 = 8  \) </span> total possible outcomes. <br />
+			We can determine the various outcomes by means of a tree diagram. Remember that the quickie quiz consists of three questions and the answer to each question is either true or false. </p>
+		<div class="synopsis-image"> 
+			<img src="104190009_image-9.png" alt="image9" class="default-synopsis-medium-image" />
+		 </div>
+		<p>The sample space is listed beside the tree diagram. </p>
+	</section>
+	<section class="solved-example"> 
+		<h4 class="solved-examples-question">Example 9:</h4>
+		<p>
+			<span class="highlight01"> Question: </span>
+			<br />
+			What are the odds is favour of obtaining a sum of 7 when a pair of dice is tossed once?  </p>
+		<p>
+			<span class="highlight01">Solution: </span>
+			<br />
+			Using our definition, we first find probability of obtaining a sum of 7 when a pair of dice is tossed. It is  <span class=\"latex\" lang=\"latex\"> \(  \frac{6}{36}  \) </span> .Next, we find the probability of not getting a 7. Recall that if  <span class=\"latex\" lang=\"latex\"> \(  P(A) = \frac{S}{T}  \) </span>,then  <span class=\"latex\" lang=\"latex\"> \(  P(not \ A) = 1 - \frac{S}{T}  \) </span>. Hence, we have <br />
+			<span class=\"latex\" lang=\"latex\"> \(  P(7) = \frac{6}{36}  \) </span> and  <span class=\"latex\" lang=\"latex\"> \(  P(not \ 7) = 1 - \frac{6}{36} = \frac{36}{36} - \frac{6}{36} = \frac{30}{36}   \) </span>
+			<br />
+			Alternatively, if there are 6 ways in 36 that we may obtain a 7, then the remaining 3, ways in 36 is the probability of not obtaining a 7. <br />
+			Now we construct our ratio according to the definition: <br />
+			Odds in favour of A  = <span class=\"latex\" lang=\"latex\"> \(  \frac{Probability \ that \ A will \ occur}{Probability \ that \ A will \ not \ occur}  \) </span>
+			<br />
+			Odds in favour of 7 <span class=\"latex\" lang=\"latex\"> \( = \frac{\frac{6}{36}}{\frac{30}{36}} = \frac{6}{36} \times \frac{36}{30} = \frac{6}{30} = \frac{1}{5}  \) </span>. <br />
+			The odds in favour of obtaining a 7 are t <span class=\"latex\" lang=\"latex\"> \(  \frac{1}{5}  \) </span>. But remember that the odds may also be stated as 1 to 5 or 1:5. </p>
+	</section>
+	<section class="solved-example"> 
+		<h4 class="solved-examples-question">Example 10:</h4>
+		<p>
+			<span class="highlight01"> Question: </span>
+			<br />
+			What are the odds against obtaining an 11 when a pair of dice is tossed once?  </p>
+		<p>
+			<span class="highlight01">Solution: </span>
+			<br />
+			Using the definition, we still find the probability in favour of getting an 11 and probability against getting and the 11 when a pair of dice is tossed. The probability of getting an 11 is <span class=\"latex\" lang=\"latex\"> \(  \frac{2}{36}  \) </span>, and the probability of not getting an 11 is <br />
+			<span class=\"latex\" lang=\"latex\"> \(  1 - \frac{2}{36} = \frac{36}{36} - \frac{2}{36} = \frac{34}{36}  \) </span>
+			<br />
+			Now we construct our ratio according to the definition:  <br />
+			Odds against an 11 <span class=\"latex\" lang=\"latex\"> \(  \frac{\frac{34}{36}}{\frac{2}{36}} = \frac{34}{36} \times \frac{36}{2} = \frac{17}{1}  \) </span>. <br />
+			The odds against obtaining an 11 are <span class=\"latex\" lang=\"latex\"> \(   \frac{17}{1}  \) </span>.which we would usually write as 17 to 1, or 17:1. Therefore, from the odds (17 : 1), we can see that we probably are not going to 225 an 11 when we roll the dice. Over the long run, we should get an 11 once out of every tries. This si not a very good percentage of successful outcomes. </p>
+	</section>
+	<section class="solved-example"> 
+		<h4 class="solved-examples-question">Example 11:</h4>
+		<p>
+			<span class="highlight01"> Question: </span>
+			<br />
+			Bag A contains 4 chips numbered 1, 3, 5 and 7 respectively. Bag B contains 3 chips numbered 2, 4 and 6 respectively. A chip is drawn at random from each bag.</p>
+		<div class="list1-ol default-spaced-indented list-numbered-style-lower-alpha">
+			<ol>
+				<li>
+					<p> Draw a tree diagram to show all the possible outcomes.</p>
+				</li>
+				<li>
+					<p> Find the probability that the sum of the two chips drawn is
+						<ol>
+							<li>
+								<p>7</p>
+							</li>
+							<li>
+								<p>Odd,</p>
+							</li>
+							<li>
+								<p>even</p>
+							</li>
+						</ol>
+					</p>
+				</li>
+			</ol>
+		</div>
+		<p>
+			<span class="highlight01">Solution: </span>
+		</p>
+		<div class="list1-ol default-spaced-indented list-numbered-style-lower-alpha">
+			<ol>
+				<li>
+					<p/>
+					<div class="synopsis-image"> 
+						<img src="104190009_image-10.png" alt="image10" class="default-synopsis-medium-image" />
+					 </div>
+					<p>The above diagram is the required tree diagram. There are 12 equally likely outcomes in the sample space.
+					</p>
+				</li>
+				<li>
+					<p> The favourable outcomes for a sum of 7 are: (1, 6), (3, 4) and (5, 2)<br />
+						<span class=\"latex\" lang=\"latex\"> \(  \therefore  \) </span> P (the sum is 7) = <span class=\"latex\" lang=\"latex\"> \(  \frac{3}{12} = \frac{1}{4}  \) </span>
+						<ol>
+							<li>
+								<p> Since all the sums of the outcomes are odd,<br />
+									P(the sum is odd) = <span class=\"latex\" lang=\"latex\"> \(  \frac{12}{12}  \) </span> = 1 </p>
+							</li>
+							<li>
+								<p>There are no even sums.<br />
+									P(the sum is even) = <span class=\"latex\" lang=\"latex\"> \(  \frac{0}{12}  \) </span> = 0 </p>
+							</li>
+						</ol>
+					</p>
+				</li>
+			</ol>
+		</div>
+	</section>
+	<section class="solved-example"> 
+		<h4 class="solved-examples-question">Example 12:</h4>
+		<p>
+			<span class="highlight01"> Question: </span>
+			<br />
+			A club holds an election for the post of chairperson. The probabilities that the candidates Anjani and Laxmi will be elected are 0.36 and 0.47 respectively. Find the probability that </p>
+		<div class="list1-ol default-spaced-indented list-numbered-style-lower-alpha">
+			<ol>
+				<li>
+					<p> either Anjani or Laxmi will be elected</p>
+				</li>
+				<li>
+					<p> neither Anjani nor Laxmi will be elected.</p>
+				</li>
+			</ol>
+		</div>
+		<p>
+			<span class="highlight01">Solution: </span>
+		</p>
+		<div class="list1-ol default-spaced-indented list-numbered-style-lower-alpha">
+			<ol>
+				<li>
+					<p> Let A be the event that Anjani will be elected,<br />
+						B be the event the Laxmi will be elected.<br />
+						Since there is only 1 chairperson, the events, A and B, are mutually exclusive. <br />
+						P(either Anjani or Laxmi will be elected)<br />
+						= P(A or B)<br />
+						= P(A) + P(B)	(addition of probabilities of mutually exclusive events)<br />
+						= 0.36 + 0.47<br />
+						= 0.83
+					</p>
+				</li>
+				<li>
+					<p> P (neither Anjani nor Laxmi will be elected)<br />
+						= 1 - P (either Monica or Roland will be elected)<br />
+						= 1 - 0.83 <br />
+						= 0.17
+					</p>
+				</li>
+			</ol>
+		</div>
+	</section>
+	<section class="solved-example"> 
+		<h4 class="solved-examples-question">Example 13:</h4>
+		<p>
+			<span class="highlight01"> Question: </span>
+			<br />
+			A card is drawn at random from a pack of 52 playing cards. Find the probability that the card drawn is </p>
+		<div class="list1-ol default-spaced-indented list-numbered-style-lower-alpha">
+			<ol>
+				<li>
+					<p> an ace or a 3,</p>
+				</li>
+				<li>
+					<p> an ace or a red card.</p>
+				</li>
+			</ol>
+		</div>
+		<p>
+			<span class="highlight01">Solution: </span>
+		</p>
+		<div class="list1-ol default-spaced-indented list-numbered-style-lower-alpha">
+			<ol>
+				<li>
+					<p> Let A be event that the card drawn is an ace,<br />
+						B be event that the card drawn is a 3,<br />
+						C be event that the card drawn is red,<br />
+						Then, P(A)4 P(B) = <span class=\"latex\" lang=\"latex\"> \(  \frac{[4}{52}  \) </span> and P(C) = <span class=\"latex\" lang=\"latex\"> \(  \frac{26}{52}  \) </span>
+						<br />
+						We cannot draw a card which is both an ace and a 3.<br />
+						<span class=\"latex\" lang=\"latex\"> \(  \therefore  \) </span> events A and B are mutually exclusive events..<br />
+						P (an ace or a 3) = P(A or B).<br />
+						= P(A) + P(B).<br />
+						<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \frac{4}{52} + \frac{4}{52}  \\\\[3pt]
+							\frac{8}{52} = \frac{2}{13} \end{align}  \) </span>
+					</p>
+				</li>
+				<li>
+					<p> As there are 2 red aces, the diamond ace and the heart ace, events A and C are not mutually exclusive events. Therefore, we cannot apply the addition of probabilities of mutually exclusive events to evaluate P(A or C). We have to find P(A or C) here by counting.<br />
+						Apart from the two red aces, there are 24 red cards.<br />
+						Plan ace or a red card) = P (A or C)<br />
+						<span class=\"latex\" lang=\"latex\"> \(  \frac{4 + 24}{52} = \frac{28}{52} = \frac{7}{13} = \frac{2}{13} \) </span>
+					</p>
+				</li>
+			</ol>
+		</div>
+	</section>
+	<section class="solved-example"> 
+		<h4 class="solved-examples-question">Example 14:</h4>
+		<p>
+			<span class="highlight01"> Question: </span>
+			<br />
+			Meena has 7 Indian stamps and 5 Singapore stamps. Seema has 12 Indian stamps and 18 Singapore stamps. Each of them selects a stamp at random from her own collection. Find the probability that the two stamps selected are one Indian stamp and one Singapore stamp.</p>
+		<p>
+			<span class="highlight01">Solution: </span>
+		</p>
+		<div class="synopsis-image"> 
+			<img src="104190009_image-11.png" alt="image11" class="default-synopsis-medium-image" />
+		 </div>
+		<p>(one Indian stamp and one Singapore stamp) <br />
+			= P (IS or SI) <br />
+			= P(IS) + P(SI) <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \frac{7}{12} \times \frac{18}{30} + \frac{5}{12} = \frac{12}{30}  \\\\[3pt]
+				= \frac{31}{60}  \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example"> 
+		<h4 class="solved-examples-question">Example 15:</h4>
+		<p>
+			<span class="highlight01"> Question: </span>
+			<br />
+			The probability that Guru will hit a target is <span class=\"latex\" lang=\"latex\"> \(  \frac{4}{5}  \) </span>.The probability that Srinu will hit the same target is <span class=\"latex\" lang=\"latex\"> \(  \frac{3}{4}  \) </span>. If each of them fires once, find the probability that the target will be hit by</p>
+		(a) both of them, (b) only one of them.
+		<p>
+			<span class="highlight01">Solution: </span>
+		</p>
+		<div class="synopsis-image"> 
+			<img src="104190009_image-12.png" alt="image12" class="default-synopsis-medium-image" />
+		 </div>
+		<div class="list1-ol default-spaced-indented list-numbered-style-lower-alpha">
+			<ol>
+				<li>
+					<p> P (Guru will miss) = 1 - P (Guru will hit)<br />
+						<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  = 1 - \frac{4}{5}  \\\\[3pt]
+							= \frac{1}{5}  \end{align}  \) </span>
+						Similarly, P (Srinu will miss) = <span class=\"latex\" lang=\"latex\"> \(  \begin{align}  = 1 - \frac{3}{4}  \\\\[3pt]
+							= \frac{1}{4}  \end{align}  \) </span>
+						<br />
+						Hence, we have a tree diagram as shown below. <br />
+						P(the target will be hit by both) = P(HH) <br />
+						<span class=\"latex\" lang=\"latex\"> \(  \frac{4}{5} \times \frac{3}{4} = \frac{3}{5}  \) </span>
+					</p>
+				</li>
+				<li>
+					<p> P(the target will be hit by only one of them)<br />
+						= P(Guru will hit and Srinu will miss) + P(Guru will miss and Srinu will hit)<br />
+						= P (HM) + P(MH) <br />
+						<span class=\"latex\" lang=\"latex\"> \(  \frac{4}{5} \times \frac{1}{4} + \frac{1}{5} \times \frac{3}{4} = \frac{4}{20} + \frac{3}{20} = \frac{7}{20}  \) </span>
+					</p>
+				</li>
+			</ol>
+		</div>
+	</section>
+</section> 

@@ -1,0 +1,35 @@
+<nav class="breadcrumb container" aria-label="breadcrumb">
+    <ol class="breadcrumb">
+
+
+
+
+
+
+
+
+
+        <!-- This block seems entirely unnecessary -->
+        <!-- Get rid of it soon... -->
+        <!--
+
+
+
+        -->
+        <!-- This above block seems entirely unnecessary -->
+
+
+
+
+
+
+
+        {{ if not .IsHome }}
+
+        {{ template "breadcrumb" . }}
+
+        <li class="breadcrumb-item active" aria-current="page">  {{ .Title }}</li>
+
+        {{ end }}
+    </ol>
+</nav>

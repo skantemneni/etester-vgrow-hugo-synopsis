@@ -1,0 +1,199 @@
+<book>
+    <preheading>Bank Exam Preparation</preheading>
+    <title>Quantitative Aptitude</title>
+    <description>Bank Exam Preparation Course Materials provided by eTester Classes.</description>
+    <book_chapter_number_offset>0</book_chapter_number_offset>
+    <book_page_number_offset>0</book_page_number_offset>
+    <show_chapter_numbers>true</show_chapter_numbers>
+    <chapters>
+        <chapter>
+            <number>1</number>
+            <title>Averages</title>
+            <description><![CDATA[Essential Exam Preparation guide for Employment Readiness Exams]]></description>
+            <filename>Averages.html</filename>
+			<notespages>0</notespages>
+        </chapter>
+        <chapter>
+            <number>2</number>
+            <title>Percentages</title>
+            <description><![CDATA[Essential Exam Preparation guide for Employment Readiness Exams]]></description>
+            <filename>Percentages.html</filename>
+			<notespages>0</notespages>
+        </chapter>
+        <chapter>
+            <number>3</number>
+            <title>Ratio and Proportion</title>
+            <description><![CDATA[Essential Exam Preparation guide for Employment Readiness Exams]]></description>
+            <filename>RatioAndProportion.html</filename>
+			<notespages>0</notespages>
+        </chapter>
+        <chapter>
+            <number>4</number>
+            <title>Mixtures and Allegations</title>
+            <description><![CDATA[Essential Exam Preparation guide for Employment Readiness Exams]]></description>
+			  <filename>MixturesAndAllegations.html</filename>
+			  <notespages>0</notespages>
+        </chapter>
+        <chapter>
+            <number>5</number>
+            <title>Clocks and Calendars</title>
+            <description><![CDATA[Essential Exam Preparation guide for Employment Readiness Exams]]></description>
+            <filename>ClocksAndCalendars.html</filename>
+			<notespages>0</notespages>
+        </chapter>
+        <chapter>
+            <number>6</number>
+            <title>Time speed distance and work</title>
+            <description><![CDATA[Essential Exam Preparation content for Employment Readiness Exams]]></description>
+            <filename>TimeSpeedDistanceAndWork.html</filename>
+			<notespages>0</notespages>
+        </chapter>
+		<chapter>
+            <number>7</number>
+            <title>Number Systems</title>
+            <description><![CDATA[Essential Exam Preparation content for Employment Readiness Exams]]></description>
+            <filename>NumberSystems.html</filename>
+			<notespages>0</notespages>
+        </chapter>
+		 <chapter>
+            <number>8</number>
+            <title>Probability</title>
+            <description><![CDATA[Essential Exam Preparation content for Employment Readiness Exams]]></description>
+            <filename>Probability.html</filename>
+			<notespages>0</notespages>
+        </chapter>
+		<chapter>
+            <number>9</number>
+            <title>Permutations and Combinations</title>
+            <description><![CDATA[Essential Exam Preparation content for Employment Readiness Exams]]></description>
+            <filename>PermutationsAndCombinations.html</filename>
+			<notespages>0</notespages>
+        </chapter>
+		<chapter>
+            <number>10</number>
+            <title>Sequences Progressions and Series</title>
+            <description><![CDATA[Essential Exam Preparation content for Employment Readiness Exams]]></description>
+            <filename>SequencesProgressionsAndSeries.html</filename>
+			<notespages>0</notespages>
+        </chapter>
+		<chapter>
+            <number>11</number>
+            <title>Logarithms</title>
+            <description><![CDATA[Essential Exam Preparation content for Employment Readiness Exams]]></description>
+            <filename>Logarithms.html</filename>
+			<notespages>0</notespages>
+        </chapter>
+		<chapter>
+            <number>12</number>
+            <title>Simplification</title>
+            <description><![CDATA[Essential Exam Preparation content for Employment Readiness Exams]]></description>
+            <filename>Simplification.html</filename>
+			<notespages>0</notespages>
+        </chapter>
+		<chapter>
+            <number>13</number>
+            <title>Roots and averages</title>
+            <description><![CDATA[Essential Exam Preparation content for Employment Readiness Exams]]></description>
+            <filename>RootsAndAverages.html</filename>
+			<notespages>0</notespages>
+        </chapter>
+		<chapter>
+            <number>14</number>
+            <title>Profit and loss</title>
+            <description><![CDATA[Essential Exam Preparation content for Employment Readiness Exams]]></description>
+            <filename>ProfitAndLoss.html</filename>
+			<notespages>0</notespages>
+        </chapter>
+		<chapter>
+            <number>15</number>
+            <title>Boats and streams</title>
+            <description><![CDATA[Essential Exam Preparation content for Employment Readiness Exams]]></description>
+            <filename>BoatsAndStreams.html</filename>
+			<notespages>0</notespages>
+        </chapter>
+		<chapter>
+            <number>16</number>
+            <title>Simple interest and compound interest</title>
+            <description><![CDATA[Essential Exam Preparation content for Employment Readiness Exams]]></description>
+            <filename>SimpleInterestAndCompoundInterest.html</filename>
+			<notespages>0</notespages>
+			</chapter>
+			<chapter>
+            <number>17</number>
+            <title>Mensuration</title>
+            <description><![CDATA[Essential Exam Preparation content for Employment Readiness Exams]]></description>
+            <filename>Mensuration.html</filename>
+			<notespages>0</notespages>
+        </chapter>
+		<chapter>
+            <number>18</number>
+            <title>Pipes and Cisterns</title>
+            <description><![CDATA[Essential Exam Preparation content for Employment Readiness Exams]]></description>
+            <filename>PipesAndCisterns.html</filename>
+			<notespages>0</notespages>
+        </chapter>
+		<chapter>
+            <number>19</number>
+            <title>Partnership</title>
+            <description><![CDATA[Essential Exam Preparation content for Employment Readiness Exams]]></description>
+            <filename>Partnership.html</filename>
+			<notespages>0</notespages>
+        </chapter>
+		<chapter>
+            <number>20</number>
+            <title>Problems on Ages</title>
+            <description><![CDATA[Essential Exam Preparation content for Employment Readiness Exams]]></description>
+            <filename>ProblemsOnAges.html</filename>
+			<notespages>0</notespages>
+        </chapter>
+		<chapter>
+            <number>21</number>
+            <title>Number Series</title>
+            <description><![CDATA[Essential Exam Preparation content for Employment Readiness Exams]]></description>
+            <filename>NumberSeries.html</filename>
+			<notespages>0</notespages>
+        </chapter>
+		<chapter>
+            <number>22</number>
+            <title>Inequality</title>
+            <description><![CDATA[Essential Exam Preparation content for Employment Readiness Exams]]></description>
+            <filename>Inequality.html</filename>
+			<notespages>0</notespages>
+        </chapter>
+		<chapter>
+            <number>23</number>
+            <title>Geometry</title>
+            <description><![CDATA[Essential Exam Preparation content for Employment Readiness Exams]]></description>
+            <filename>Geometry.html</filename>
+			<notespages>0</notespages>
+        </chapter>
+		<chapter>
+            <number>24</number>
+            <title>Co ordinate Geometry</title>
+            <description><![CDATA[Essential Exam Preparation content for Employment Readiness Exams]]></description>
+            <filename>CoordinateGeometry.html</filename>
+			<notespages>0</notespages>
+        </chapter>
+		<chapter>
+            <number>25</number>
+            <title>Trigonometry</title>
+            <description><![CDATA[Essential Exam Preparation content for Employment Readiness Exams]]></description>
+            <filename>Trigonometry.html</filename>
+			<notespages>0</notespages>
+        </chapter>
+		<chapter>
+            <number>26</number>
+            <title>Height and Distance</title>
+            <description><![CDATA[Essential Exam Preparation content for Employment Readiness Exams]]></description>
+            <filename>HeightAndDistance.html</filename>
+			<notespages>0</notespages>
+        </chapter>
+		<chapter>
+            <number>27</number>
+            <title>Statistics</title>
+            <description><![CDATA[Essential Exam Preparation content for Employment Readiness Exams]]></description>
+            <filename>Statistics.html</filename>
+			<notespages>0</notespages>
+        </chapter>
+    </chapters>
+</book>

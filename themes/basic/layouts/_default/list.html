@@ -1,0 +1,38 @@
+{{ define "main" }}
+
+<div class="container">
+    <h2 class="display-4 fs-1">{{ .Title }}</h2>
+    {{ .Content }}
+    
+    {{with .Pages }}
+    
+    <div class="row">
+        {{range .}}
+
+        {{$summarywordcount := .Summary | countwords}}
+        {{$summary_to_show := .Summary }}
+        {{ if (eq $summarywordcount 0) }}
+            {{$summary_to_show = (htmlUnescape .Params.defaultSummary) }}
+        {{ else }}
+        {{ end }}
+    
+        <div class="col-lg-4 col-md-6">
+            <div class="card" style="margin-bottom: 30px;">
+                <div class="card-body">
+                <div class="align-middle bg-primary rounded" style="height: 50px;"><a href= "{{ .Permalink }}"><h5 class="card-title text-white text-center display-4 fs-5" style="overflow: hidden;">{{ .Title }}</h5></a></div>
+                <div class="card-text" style="height: 150px; overflow: hidden; padding: 10px;">
+                    {{ $summary_to_show }}
+                </div>
+                </div>
+                <div class="card-footer">
+                <a class="btn btn-secondary" href= "{{ .Permalink }}" role="button">Read More...</a>
+                </div>
+            </div>
+        </div>
+        {{end}}
+</div>
+{{end}}  
+
+
+{{ end }}
+

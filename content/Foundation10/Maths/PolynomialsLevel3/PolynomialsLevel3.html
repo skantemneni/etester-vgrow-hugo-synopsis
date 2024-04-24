@@ -1,0 +1,664 @@
+---
+title: "Polynomials - III"
+layout: "default_foundation"
+isMath: true
+---
+<section class="skill" id="01">
+	<h3 class="skill-heading">Introduction</h3>
+	<section class="subskill">
+		<h4 class="skill-subheading">Observe the following polynomials</h4>
+		<p>
+			<span class=\"latex\" lang=\"latex\"> \(  2x^2 + 3x + 1, \ 3x^2 - 2x^2 + x - 2, \ 5x^4 + 4x^3 - 5x^2 + x + 3......  \) </span>
+			<br />
+			These are polynomials in x of different degrees. The exponents in the powers of x are non-negative integers and the coefficients of various powers of x are integers. Such polynomials are called Rational Integral functions of x. <br />
+			Given a rational integral function f(x), can we find the remainder when f(x) is divided by (x - a) without actual division? The answer is affirmative and is provided by the following theorem called "remainder theorem". <br />
+			Before taking up the theorem we shall observe the following examples. </p>
+		<div class="list-custom-block-list-ol spaced20 indented20">
+			<ol>
+				<li>
+					<p> When <span class=\"latex\" lang=\"latex\"> \(  x^2 + x - 5  \) </span> is divided by (x - 2) the quotient is (x + 3) and remainder is 1. <br />
+						<span class=\"latex\" lang=\"latex\"> \(  \therefore \ x^2 + x - 5 = (x + 3) (x - 2) + 1  \) </span>
+					</p>
+				</li>
+				<li>
+					<p>When <span class=\"latex\" lang=\"latex\"> \(  x^3 + x^2 - 4x - 2  \) </span> is divided by (x + 1) the quotient is <span class=\"latex\" lang=\"latex\"> \(  (x^2 - 4)  \) </span> and the remainder is 2. <br />
+						<span class=\"latex\" lang=\"latex\"> \(  \therefore \ X^3 + X^2 - 4x - 2 = (x + 1) (x^2 - 4) + 2  \) </span>
+					</p>
+				</li>
+				<li>
+					<p> When <span class=\"latex\" lang=\"latex\"> \(  x^3 + 2x^2 - 9x - 20  \) </span> is divided by (x + 3) the quotient is <span class=\"latex\" lang=\"latex\"> \(  (x^2 - x - 6)  \) </span> and the remainder is -2. <br />
+						<span class=\"latex\" lang=\"latex\"> \(  \therefore \ X^3 + 2X^2 - 9x - 20 = (x + 3) (x^2 - x - 6) - 2  \) </span>
+					</p>
+				</li>
+			</ol>
+		</div>
+		<p>These examples illustrate that if a polynomial is divided by a first degree binomial, the quotient is a polynomial whose degree is one less than the degree of the dividend and the remainder is a constant. </p>
+		<div class="list-custom-block-list-ol spaced20 indented20">
+			<ol>
+				<li>
+					<p>substituting zero of (x - 2) in <span class=\"latex\" lang=\"latex\"> \(  x^2 + x - 5  \) </span>
+						<br />
+						<span class=\"latex\" lang=\"latex\"> \(  f(x) = x^2 + x - 5 = (2)^2 + (2) - 5 = 1  \) </span>
+					</p>
+				</li>
+				<li>
+					<p>substituting zero of (x + 1) in <span class=\"latex\" lang=\"latex\"> \(  x^3 + x^2 - 4x - 2  \) </span>
+						<br />
+						<span class=\"latex\" lang=\"latex\"> \(  f(-1) = (-1)^3 + (-1)^2 - 4(-1) - 2 = 2  \) </span>
+					</p>
+				</li>
+				<li>
+					<p>substituting zero of (x + 3) in <span class=\"latex\" lang=\"latex\"> \(  x^3 + 2x^2 - 9x - 20  \) </span>
+						<br />
+						<span class=\"latex\" lang=\"latex\"> \(  f(-3) = (-3)^3 + 2(-3)^2 - 9(-3) - 20 = -2  \) </span>
+					</p>
+				</li>
+			</ol>
+		</div>
+	</section>
+	<section class="subskill">
+		<h4 class="skill-subheading">Remainder Theorem: </h4>
+		<p>If a rational integral function of x, say f(x) is divided by (x - a) then the remainder is f(a). <br />
+			<span class="highlight01"> proof: </span>
+			<br />
+			Let Q(x) be the quotient and R the remainder when f(x) is divided by (x - a). <br />
+			Then we have f(x) = Q(x) (x - a) + R, where in the degree of Q is one less than that of f(x) and R is a constant. <br />
+			Since the equation is true for all real values of x putting x = a in the above, we get f(a) = Q(x) (a - a) + R <br />
+			i.e., R = f(a) <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \therefore \ f(x) = (x - a) Q(x) + f(a)  \) </span>
+		</p>
+	</section>
+	<section class="subskill">
+		<h4 class="skill-subheading">Factor Theorem: </h4>
+		<p>If f(x) is a rational integral function of x and f(a) = 0 then (x - a) is a factor of f(x). <br />
+			<span class="highlight01"> Proof: </span>
+			<br />
+			We have, by Remainder theorem, <br />
+			f(x) = (x - a) Q(x). This shows that (x - a) is a factor of f(x).
+		</p>
+	</section>
+	<section class="subskill">
+		<h4 class="skill-subheading"> Remainder theorem (another form): </h4>
+		<p> If f(x) denotes a polynomial function of degree <span class=\"latex\" lang=\"latex\"> \(  \geq  \) </span> 1 and if r <span class=\"latex\" lang=\"latex\"> \(  \epsilon  \) </span> R then there is a polynomial function denoted by p(x) such that for all <span class=\"latex\" lang=\"latex\"> \(  \epsilon  \) </span> R. <br />
+			f(x) = (x - r) p(x) + f(r) <br />
+			If f(r) = 0 then f(x) = (x - r) p(x) <br />
+			(x - r) is a factor of f(x) iff f(r) = 0 <br />
+			This is called the factor theorem. <br />
+			If f and g are two polynomials then f is a factor of g iff there is some polynomial Q that the equation g = f.Q is an identity. <br />
+			Some times simple inspection about the coefficients of f(x) yields some of the factors the given expression. <br />
+			Let <span class=\"latex\" lang=\"latex\"> \(  f(x) = a_0 x^n + a_1 x^{n - 1} + a_2 x^{n - 2} + a_3 x^{n - 3} + a_4 x^{n - 4} + a_5 x^{n - 5} + ....... + a_n = 0  \) </span>
+		</p>
+		<div class="list-custom-block-list-ol spaced20 indented20">
+			<ol>
+				<li>
+					<p>(X - 1) is a factor of f(x) iff <br />
+						<span class=\"latex\" lang=\"latex\"> \(  a_0 + a_1 + a_2 + a_3 + a_4 + a_5 +....... + a_n = 0  \) </span>
+						<br />
+						(X - 1) is a factor of f(x) <span class=\"latex\" lang=\"latex\"> \(  \Leftrightarrows  \) </span> f(1) = 0. <br />
+						ie., <span class=\"latex\" lang=\"latex\"> \(  a_0 1^n + a_1 1^{n - 1} + a_2	1^{n - 2} +........+ a_n = 0  \) </span>
+						<br />
+						i.e., <span class=\"latex\" lang=\"latex\"> \(  a_0 + a_1 + a_2 +........+ a_n = 0  \) </span>
+						<br />
+						i.e., (x - 1) is a factor of f(x) iff the sum of the coefficients of powers of x in f(x) is zero.
+					</p>
+				</li>
+				<li>
+					<p> (x + 1) is a factor of f(x) if the sum of the coefficients of even powers of x is equal to the sum of the coefficients of odd powers of x. <br />
+						For, if (x + 1) is a factor of f(x) then f(-1) = 0. This gives <br />
+						<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  a_0 (-1)^n + a_1(-1)^{n - 1} + a_2 (-1)^{n - 2} + a_3 (-1)^{n - 3} + a_4 (-1)^{n - 4} + a_5 (-1)^{n - 5} + ..... +  a_n = 0  \\\\[3pt]
+							I.e.,	a_0 + a_2 + a_4 +.......  = a_1 + a_3 + a_5 +........  \end{align}  \) </span>
+						<br />
+						in both the cases i.e., when 'n' is odd and 'n is even the converse is also true.
+					</p>
+				</li>
+			</ol>
+		</div>
+		<p>
+			This shows that the sum of coefficients of even powers of 'x' is equal to the sum of the coefficients of odd powers of x iff (x + 1) is a factor of f(x).
+		</p>
+	</section>
+</section>
+<section class="skill" id="02">
+	<h3 class="skill-heading">Horner's Method of Synthetic Division </h3>
+	<p>We shall explain the method with the following examples. <br />
+		To divide <span class=\"latex\" lang=\"latex\"> \(  x^4 + 4x^3 + 3x^2 - 4x - 4 by (x - 1)  \) </span>
+		<br />
+		The quotient is <span class=\"latex\" lang=\"latex\"> \(  x^3 + 5x^2 + 8x + 4  \) </span>
+		<br />
+		<span class="highlight01">Explanation </span>
+		<br />
+		First horizontal row contains the multiplier which is obtained by the zero of x - 1, which is 1. <br />
+		The remaining elements in the first horizontal row are the coefficients of descending powers of x (The coefficient of missing power of x, if any, should be taken as zero). <br />
+		To form the second horizontal row start with zero right under the second element of first row and add, the result is 1 which is first entry in the third row. Multiply this 1 with the multiplier 1 put the result under 4 (the third entry of the first row). Thus we get the second entry 1 in the second row. Then add 4 and 1 to get the second entry in the third row which is 5. Now multiply this 5 with the multiplier, put the product right under 3 (the fourth entry of the first row). Add 3 and 5 to get third entry in the third row. Thus the third entry in the third row is 8. Now multiply 8 with the multiplier 1, put the product under -4 (the fifth entry of the first row). Add 8 and -4 to get the fourth entry of the third row. Repeat the same procedure to get zero as the fifth entry of the third row. <br />
+		The last entry in the third row stands for he remainder, while the first four figures stand  for the coefficients of descending powers of x of quotient. <br />
+		Thus the quotient is <span class=\"latex\" lang=\"latex\"> \(  x^3 + 5x^2 + 8x + 4  \) </span>
+		<br />
+		We shall return to our problem. <br />
+		<span class=\"latex\" lang=\"latex\"> \(  f(x) = x^4 + 4x^3 + 3x^2 - 4x - 4 = (x - 1) (x^3 + 5x^2 + 8x + 4)  \) </span>
+		<br />
+		Now if we write <span class=\"latex\" lang=\"latex\"> \(  g(x) = x^3 + 5x^2 + 8x + 4  \) </span>
+		<br />
+		<span class=\"latex\" lang=\"latex\"> \(  g(-1) = (-1)^3 + 5(-1)^2 + 8(-1) + 4 = 0  \) </span>
+		<br />
+		<span class=\"latex\" lang=\"latex\"> \(  \therefore  \) </span> (x + 1) is a factor of g(x) and so a factor of f(x) Now to divide g(x) by (x + 1), the multiplier is -1, the zero of x + 1. <br />
+		Let us once again apply synthetic division, to g(x). <br />
+		The quotient is <span class=\"latex\" lang=\"latex\"> \(  x^2 + 4x + 4  \) </span> and the remainder is 0 <br />
+		<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \therefore  f(x) = (x - 1) g(x)  \\\\[3pt]
+			= (x - 1) (x + 1) (x^2 + 4x + 4)  \\\\[3pt]
+			= (x - 1) (x + 1) (x + 2)^2  \end{align}  \) </span>
+	</p>
+</section>
+<section class="skill" id="03">
+	<h3 class="skill-heading">Solving Cubic Equations </h3>
+	<p> Having solved linear and quadratic equations, we shall now consider cubic equations of the form <span class=\"latex\" lang=\"latex\"> \(  ax^3 + bx^2 + cx + d = 0  \) </span> where a, b, c, d are constants. </p> 
+	<section class="subskill">
+		<h4 class="skill-subheading">Steps in solving Cubic Equations: </h4>
+		<div class="list-custom-block-list-ol spaced20 indented20">
+			<ol>
+				<li>
+					<p>
+						<span class="highlight01"> Step 1: </span> Let f(x) be the expression. </p>
+				</li>
+				<li>
+					<p>
+						<span class="highlight01"> Step 2: </span> Find a factor <span class=\"latex\" lang=\"latex\"> \(  (x - \alpha)  \) </span> by trial and error method, where <span class=\"latex\" lang=\"latex\"> \(  \alpha  \) </span> is constant. </p>
+				</li>
+				<li>
+					<p>
+						<span class="highlight01"> step 3: </span> The other two factors can be found by: </p>
+					<ol>
+						<li>
+							<p> Comparing coefficients </p>
+						</li>
+						<li>
+							<p> Long division </p>
+						</li>
+						<li>
+							<p>Synthetic method </p>
+						</li>
+					</ol>
+				</li>
+				<li>
+					<p>
+						<span class="highlight01"> Step 4: </span> Write down f(x) = <span class=\"latex\" lang=\"latex\"> \(  (x - \alpha) (px^2 + qx + r) = 0  \) </span> and obtain the answers. </p>
+				</li>
+			</ol>
+		</div>
+	</section> 
+</section> 
+<section class="solved-examples" id="examples">
+	<h3 class="solved-examples-heading">Solved examples</h3>
+	<section class="solved-example">  
+		<h4 class="solved-examples-question">Example 1:</h4 >
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			Find the remainder when <span class=\"latex\" lang=\"latex\"> \(  x^3 - 3x^2 + 4x - 5  \) </span> is divided by </p>
+		<div class="list1-ol default-spaced-indented list-numbered-style-lower-alpha">
+			<ol>
+				<li>
+					<p> (x - 2)	</p>
+				</li>
+				<li>
+					<p> (x + 1)</p>
+				</li>
+				<li>
+					<p> (x + 2)</p>
+				</li>
+				<li>
+					<p> (x - 3)</p>
+				</li>
+			</ol>
+		</div>
+		<p>
+			<span class="highlight01">Solution: </span>
+			<br />
+			Here <span class=\"latex\" lang=\"latex\"> \(  f(x) = x^3 - 3x^2 + 4x - 5  \) </span>
+		</p>
+		<div class="list1-ol default-spaced-indented list-numbered-style-lower-alpha">
+			<ol>
+				<li>
+					<p> Remainder <span class=\"latex\" lang=\"latex\"> \(  f(2) = 2^3 - 3.2^2 + 4.2 - 5 = -1  \) </span>
+					</p>
+				</li>
+				<li>
+					<p> Remainder <span class=\"latex\" lang=\"latex\"> \(  f(-1) = (-1)^3 - 3.(-1)^2 + 4.(-1) - 5 = -13  \) </span>
+					</p>
+				</li>
+				<li>
+					<p> Remainder <span class=\"latex\" lang=\"latex\"> \(  f(-2) = (-2)^3 - 3.(-2)^2 + 4.(-2) - 5 = -33  \) </span>
+					</p>
+				</li>
+				<li>
+					<p> Remainder <span class=\"latex\" lang=\"latex\"> \(  f(3) = 3^3 - 3.3^2 + 4.3 - 5 = 7  \) </span>
+					</p>
+				</li>
+			</ol>
+		</div>
+		<p>
+			<span class="highlight01">Note:</span>
+			<br />
+			If f(x) is divided by ax + b, then the remainder is <span class=\"latex\" lang=\"latex\"> \(  f \left ( - \frac{b}{a} \right )  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">  
+		<h4 class="solved-examples-question">Example 2:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			Find the remainder when <span class=\"latex\" lang=\"latex\"> \(  4x^2 - 8x + 3  \) </span> is divided by </p>
+		<div class="list1-ol default-spaced-indented list-numbered-style-lower-alpha">
+			<ol>
+				<li>
+					<p> (2x - 1) </p>
+				</li>
+				<li>
+					<p> (2x + 1) </p>
+				</li>
+				<li>
+					<p> (2x - 3) </p>
+				</li>
+				<li>
+					<p> (2x + 3) </p>
+				</li>
+			</ol>
+		</div>
+		<p>
+			<span class="highlight01">Solution: </span>
+		</p>
+		<div class="list1-ol default-spaced-indented list-numbered-style-lower-alpha">
+			<ol>
+				<li>
+					<p> Remainder <br />
+						<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  f \left ( \frac{1}{2} \right ) = 4 \left ( \frac{1}{2} \right )^2 - 8 \left ( \frac{1}{2} \right ) + 3  \\\\[3pt]
+							= 4 \times \frac{1}{4} - 8 \times \frac{1}{2} + 3 = 0 \end{align}  \) </span>
+					</p>
+				</li>
+				<li>
+					<p> Remainder <br />
+						<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  f \left ( - \frac{1}{2} \right ) = 4 \left ( - \frac{1}{2} \right )^2 - 8 \left ( - \frac{1}{2} \right ) + 3  \\\\[3pt]
+							= 4 \times \frac{1}{4} + 8 \times \frac{1}{2} + 3 = 8  \end{align}  \) </span>
+					</p>
+				</li>
+				<li>
+					<p> Remainder <br />
+						<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  f \left ( \frac{3}{2} \right ) = 4 \left ( \frac{3}{2} \right )^2 - 8 \left ( \frac{3}{2} \right ) + 3  \\\\[3pt]
+							= 9 - 12 + 3 = 0  \end{align}  \) </span>
+					</p>
+				</li>
+				<li>
+					<p> Remainder <br />
+						<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  f \left ( - \frac{3}{2} \right ) = 4 \left ( - \frac{3}{2} \right )^2 - 8 \left ( - \frac{3}{2} \right ) + 3  \\\\[3pt]
+							= 9 + 12 + 3 = 24   \end{align}  \) </span>
+					</p>
+				</li>
+			</ol>
+		</div>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 3:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			If <span class=\"latex\" lang=\"latex\"> \(  x^3 + 2x^2 + ax + b  \) </span> has factors x + 1 and x - 1 find a and b.
+		</p>
+		<p>
+			<span class="highlight01">Solution: </span>
+			<br />
+			If (x - 1) to be a factor for f(x) we should have f(1) = 0 <br />
+			This gives <span class=\"latex\" lang=\"latex\"> \(  1^3 + 2.1^2 + a.1 + b = 0  \) </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \therefore \ a + b = -3....... (1)  \) </span>
+			<br />
+			(x + 1) to be a factor of f(x) we should have <br />
+			<span class=\"latex\" lang=\"latex\"> \(  f(-1) = 0 \Rightarrow (-1)^3 + 2(-1)^2 + a(-1) + b = 0  \) </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \therefore  \) </span> -1 + 2 - a + b = 0 <br />
+			-a + b = -1 <br />
+			i.e.,	a - b = 1....... (2) <br />
+			Adding (2) and (1), we get <br />
+			2a = -2	 <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \therefore  \) </span> a = -1 Using a = -1 in either (1) or (2) we get b = -2
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 4:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			Factorize <span class=\"latex\" lang=\"latex\"> \( x^4 + 5x^3 + 5x^2 - 5x - 6  \) </span>
+		</p>
+		<p>
+			<span class="highlight01">Solution: </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align} f(x) = x^4 + 5x^3 + 5x^2 - 5x - 6  \\\\[3pt]
+				consider \ f(1) = 1^4 + 5.1^3 + 5.1^2 - 5.1 - 6 = 0  \\\\[3pt]
+				and \ f(-1) = (-1)^4 + 5(-1)^3 + 5(-1)^2 - 5(-1) - 6 = 0  \end{align}  \) </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \therefore \ (x - 1), \ (x + 1)  \) </span> are two factors of f(x) <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \therefore \ (x - 1) (x + 1) = (x^2 - 1)  \) </span>
+			<br />
+			Dividing f(x) by <span class=\"latex\" lang=\"latex\"> \(  (x^2 - 1) = (x - 1) (x + 1)  \) </span> we get <span class=\"latex\" lang=\"latex\"> \(  x^2 + 5x + 6  \) </span> as quotient. <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \therefore \ f(x) = (x - 1) (x + 1) (x^2 + 5x + 6)  \\\\[3pt]
+				\therefore \ f(x) = (x - 1) (x + 1) (x + 3) (x + 2)  \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 5:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			If <span class=\"latex\" lang=\"latex\"> \(  ax^2 + bx + c  \) </span> is exactly divisible by (x - 1), (x - 2) and leaves remainder 6 when divided by (x + 1), find a, b and c.
+		</p>
+		<p>
+			<span class="highlight01">Solution: </span>
+			<br />
+			If <span class=\"latex\" lang=\"latex\"> \(  f(x) = ax^2 + bx + c  \) </span>, then by the hypothesis <br />
+			f(1) = a + b + c = 0.....(1) <br />
+			f(2) = 4a + 2b + c = 0........(2) <br />
+			f(-1) = a - b + c = 6.........(3) <br />
+			(1) - (3) <span class=\"latex\" lang=\"latex\"> \(  \Rightarrow  \) </span> 2b = -6, So, b = - 3 <br />
+			Using b = -3 in (1) and (2), we get <br />
+			a + c = 3....... (4) <br />
+			4a + c = 6...... (5) <br />
+			Solving (4) and (5), we get a = 1 and c = 2 <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \therefore  \) </span> a = 1, b = -3 and	c = 2.
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 6:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			Find a and b in order that <span class=\"latex\" lang=\"latex\"> \(  x^3 — 6x^2 + ax + b  \) </span> may be exactly divisible by <span class=\"latex\" lang=\"latex\"> \(  x^2 - 3x + 2  \) </span>.
+		</p>
+		<p>
+			<span class="highlight01">Solution: </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  x^2 - 3x + 2 = (x - 1) (x - 2)  \) </span>
+			<br />
+			Let <span class=\"latex\" lang=\"latex\"> \(  f(x) = x^3 - 6x^2 + ax + b  \) </span> is divisible by <span class=\"latex\" lang=\"latex\"> \(  x^2 - 3x + 2  \) </span>, then it should be divisible by its
+			actors (x - 1) and (x - 2). <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \therefore  \) </span> f(1) = 0 and f(2) = 0 <br />
+			f(1) = 0 <span class=\"latex\" lang=\"latex\"> \(  \Rightarrow  \) </span> a + b = 5...... (1) <br />
+			f(2) = 0 <span class=\"latex\" lang=\"latex\"> \(  \Rightarrow  \) </span> 2a + b = 16..... (2) <br />
+			solving (1) and (2), we get a = 11 and b = -6
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 7:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			Find the quotient and the remainder when <span class=\"latex\" lang=\"latex\"> \(  4x^3 - 3x + 9  \) </span> is divided by 2x - 3.
+		</p>
+		<p>
+			<span class="highlight01">Solution: </span>
+			<br />
+			Let <span class=\"latex\" lang=\"latex\"> \(  F(x) = 4x^3 - 3x + 9  \) </span>. When divided by 2x - 3 the remainder is <span class=\"latex\" lang=\"latex\"> \(  f \left ( \frac{3}{2} \right )  \) </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  f \left ( \frac{3}{2} \right ) = 4 \left ( \frac{3}{2} \right )^3 - 3 \left ( \frac{3}{2} \right ) + 9  \\\\[3pt]
+				= \frac{4 \times 27}{8} - \frac{9}{2} + 9 = 18  \end{align}  \) </span>
+			<br />
+			remainder = <span class=\"latex\" lang=\"latex\"> \(  f \left ( \frac{3}{2} \right )  \) </span>
+			<br />
+			Now the divisor is <span class=\"latex\" lang=\"latex\"> \(  2x - 3 = 2 \left ( x - \frac{3}{2} \right )  \) </span>
+			<br />
+			the quotient is <span class=\"latex\" lang=\"latex\"> \(  4x^2 + 6x + 6  \) </span>
+			<br />
+			But <span class=\"latex\" lang=\"latex\"> \(  x - \frac{3}{2}  \) </span> is half of 2x - 3. <br />
+			Therefore when the given polynomial is divided by 2x - 3, the quotient will be half of <span class=\"latex\" lang=\"latex\"> \(  4x^2 + 6x + 6  \) </span>. <br />
+			Hence to obtain the required quotient, the result in the third row is divided by 2 <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \therefore  \) </span> Quotient = <span class=\"latex\" lang=\"latex\"> \(  2x^2 + 3x + 3  \) </span>
+			<br />
+			Remainder = 18
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 8:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			Given that 2x - 1 and 3x + 1 are factors of <span class=\"latex\" lang=\"latex\"> \( 6x^4 + 29x^3 + 30x^2 - 11x - 6  \) </span>. Find the other factors.
+		</p>
+		<p>
+			<span class="highlight01">Solution: </span>
+			<br />
+			Divide the given polynomial by 2x - 1 and 3x + 1 in succession, find the quotient which will be of second degree which may be factorized. <br />
+			<span class="highlight01"> Steps </span>
+		</p>
+		<div class="list1-ol default-spaced-indented list-numbered-style-lower-alpha">
+			<ol>
+				<li>
+					<p>write the coefficients of the dividend. </p>
+				</li>
+				<li>
+					<p>
+						<span class=\"latex\" lang=\"latex\"> \(  2x - 1 = 2 \left ( x - \frac{1}{2} \right )  \) </span>. First divide by <span class=\"latex\" lang=\"latex\"> \(  x - \frac{1}{2}  \) </span> then divide by 2. </p>
+				</li>
+				<li>
+					<p>
+						<span class=\"latex\" lang=\"latex\"> \( 3x + 1 = 3 \left ( x - \frac{1}{3} \right )  \) </span>. Divide by <span class=\"latex\" lang=\"latex\"> \(  x + \frac{1}{3}  \) </span> followed by 3. </p>
+				</li>
+				<li>
+					<p>
+						<span class=\"latex\" lang=\"latex\"> \(  Quotient = x^2 + 5x + 6 = (x + 2)(x + 3)  \) </span>
+						<br />
+						given polynomial = (2x - 1)(3x + 1)(x + 2)(x + 3) <br />
+						The other factors are x + 2 and x + 3.
+					</p>
+				</li>
+			</ol>
+		</div>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 9:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			Find the quadratic polynomial in x, which when divided by (x - 1), (x - 2) and (x - 3) leaves remainders of 11, 22 and 37 respectively.
+		</p>
+		<p>
+			<span class="highlight01">Solution: </span>
+			<br />
+			Let the quadratic polynomial in x be <span class=\"latex\" lang=\"latex\"> \(  ax^2 + bx + c  \) </span>. Now if <span class=\"latex\" lang=\"latex\"> \(  f(x) = ax^2 + bx + c  \) </span> is divided by (x - 1) <br />
+			The remainder = f(1) = <span class=\"latex\" lang=\"latex\"> \(  a(1)^2 + b(1) + c = a + b + c  \) </span>. It is given to be 11. <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \therefore  \) </span> a + b + c = 11......	(1) <br />
+			when f(x) is divided by (x - 2) <br />
+			remainder = f(2) = <span class=\"latex\" lang=\"latex\"> \(  a(2)^2 + b(2) + c = 4a + 2b + c  \) </span>. It is given to be 22. <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \therefore  \) </span> 4a + 2b + c = 22......	(2) <br />
+			when f(x) is divided by x - 3 <br />
+			remainder = f(3) = <span class=\"latex\" lang=\"latex\"> \(  a(3)^2 + b(3) + c = 9a + 3b + c  \) </span>. It is given to be 37. <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \therefore  \) </span> 9a + 3b + c = 37......	(3) <br />
+			solving (1), (2) and (3) we get <br />
+			a = 2, b = 5 and c = 4 <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \therefore  \) </span> Required polynomial = <span class=\"latex\" lang=\"latex\"> \(  2x^2 + 5x + 4  \) </span>.
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 10:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			If <span class=\"latex\" lang=\"latex\"> \(  f(x) = x^2 + 5x + p  \) </span> and <span class=\"latex\" lang=\"latex\"> \(  Q(x) = x^2 + 3x + q  \) </span> have a common factor then </p>
+		<div class="list1-ol default-spaced-indented list-numbered-style-lower-alpha">
+			<ol>
+				<li>
+					<p>find the common factor	</p>
+				</li>
+				<li>
+					<p> show that <span class=\"latex\" lang=\"latex\"> \(  (p - q)^2 = 2 (3p - 5q)  \) </span>
+					</p>
+				</li>
+			</ol>
+		</div>
+		<p>
+			<span class="highlight01">Solution: </span>
+			<br />
+			Let the common factor be x - k <br />
+			Remainder for the first polynomial <span class=\"latex\" lang=\"latex\"> \(  f(k) = k^2 + 5k + p = 0  \) </span>
+			<br />
+			Remainder for the second polynomial <span class=\"latex\" lang=\"latex\"> \(  Q(k) = k^2 + 3k + q = 0  \) </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \therefore \ k^2 + 5k + p = k^2 + 3k + q  \\\\[3pt]
+				\therefore \ 2k = q - p  \\\\[3pt]
+				\therefore k = \frac{1}{2} \left ( q - p \right )  \end{align}  \) </span>
+			<br />
+			So the common factor = x - k = <span class=\"latex\" lang=\"latex\"> \(  x - \frac{1}{2} (q - p) = x + \frac{1}{2}(p - q)  \) </span>
+			<br />
+			Substituting <span class=\"latex\" lang=\"latex\"> \(  k = \frac{1}{2}(q - p) \ in \ k^2 + 5k + p = 0  \) </span>
+			<br />
+			we have <span class=\"latex\" lang=\"latex\"> \(  \left ( \frac{q - p}{2} \right )^2 + 5 \left ( \frac{q - p}{2} \right ) + p = 0  \) </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \therefore \frac{(p - q)^2}{4} - 5 \frac{(p - q)}{2} + p = 0  \\\\[3pt]
+				\therefore  (p - q)^2 - 10(p - q) + 4p = 0  \\\\[3pt]
+				\therefore (p - q)^2 = 10(p - q) -  4p = 6p - 10q = 2(3p - 5q)  \\\\[3pt]
+				\therefore (p - q)^2 = 2(3p - 5q)  \end{align}  \) </span>
+			<br />
+			<span class="highlight01">Note: </span>
+			We observe that k is a common root. <br />
+			Hence f(k) = 0, Q(k) = 0
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 11:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			The remainder of the polynomial <span class=\"latex\" lang=\"latex\"> \(  5 + bx - 2x^2 + ax^3  \) </span> when divided by x - 2 is twice the remainder when it is divided by x + 1. Show that 10a + 4b = 9.
+		</p>
+		<p>
+			<span class="highlight01">Solution: </span>
+			<br />
+			Let	<span class=\"latex\" lang=\"latex\"> \(  f(x) = 5 + bx - 2x^2 + ax^3  \) </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  f(2) = 5 + b(2) - 2(2)^2 + a(2)^3 = 8a + 2b - 3  \\\\[3pt]
+				f(-1) = 5 + b(-1) - 2(-1)^2 + a(-1)^3 = -a - b + 3  \end{align}  \) </span>
+			<br />
+			Since f(2) = 2f(-1), <br />
+			8a + 2b - 3 = 2(-a -b + 3) <br />
+			8a + 2b - 3 = -2a -2b + 6 <br />
+			10a + 4b = 9 <br />
+			Hence it is proved
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 12:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			The expression <span class=\"latex\" lang=\"latex\"> \( 2x^3 + ax^2 + bx - 2  \) </span> is divisible by x + 2 but leaves a remainder of 7 when divided by 2x - 3. Determine </p>
+		<div class="list1-ol default-spaced-indented list-numbered-style-lower-alpha">
+			<ol>
+				<li>
+					<p>the values of a and b, </p>
+				</li>
+				<li>
+					<p>the remainder when the expression is divided by x - 2. </p>
+				</li>
+			</ol>
+		</div>
+		<p>
+			<span class="highlight01">Solution: </span>
+			<br />
+			Let <span class=\"latex\" lang=\"latex\"> \(  f(x) = 2x^3 + ax^2 + bx - 2  \) </span>
+		</p>
+		<div class="list1-ol default-spaced-indented list-numbered-style-lower-alpha">
+			<ol>
+				<li>
+					<p>f(-2) = 0 <br />
+						<span class=\"latex\" lang=\"latex\"> \(  2(-2)^3 + a(-2)^2+ b(-2) - 2 = 0  \) </span>
+						<br />
+						-16 + 4a - 2b - 2 = 0 <br />
+						4a - 2b = 18 <br />
+						Dividing by 2,	2a - b = 9...... (1) <br />
+						<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  f \left ( \frac{3}{2} \right ) = 7  \\\\[3pt]
+							2 \left ( \frac{3}{2} \right )^3 + a \left ( \frac{3}{2} \right )^2 + b \left ( \frac{3}{2} \right ) - 2 = 7  \\\\[3pt]
+							\frac{27}{4} + \frac{9}{4} a + \frac{3}{2}b - 2 = 7  \\\\[3pt]
+							\frac{9}{4}a + \frac{3}{2}b = \frac{9}{4}.......(2)  \end{align}  \) </span>
+						<br />
+						from (1), b = 2a - 9 <br />
+						substituting  in (2), we get <br />
+						<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \frac{9}{4}a + \frac{3}{2} (2a - 9) = \frac{9}{4}  \\\\[3pt]
+							\frac{9}{4}a  + 3a - \frac{27}{2} = \frac{9}{4}  \\\\[3pt]
+							\frac{21}{4} a = \frac{63}{4}  \\\\[3pt]
+							a = 3  \\\\[3pt]
+							b = 2(3) - 9  \\\\[3pt]
+							= -3  \end{align}  \) </span>
+					</p>
+				</li>
+				<li>
+					<p>
+						we have, <span class=\"latex\" lang=\"latex\"> \( f(x) = 2x^3 + 3x^2 - 3x - 2  \) </span>
+						<br />
+						<span class=\"latex\" lang=\"latex\"> \(  f(2) = 2(2)^3 + 3(2)^2 - 3(2) - 2  \) </span>
+						<br />
+						= 20
+					</p>
+				</li>
+			</ol>
+		</div>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 13:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			Find the value of k for which <span class=\"latex\" lang=\"latex\"> \(  x^2 + 5kx + k^2 + 5  \) </span> is exactly divisible by x + 2 but not divisible x + 3.
+		</p>
+		<p>
+			<span class="highlight01">Solution: </span>
+			<br />
+			Let <span class=\"latex\" lang=\"latex\"> \(  f(x) = x^2 + 5kx + k^2 + 5  \) </span>
+			<br />
+			As f(-2) = 0 <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  (-2)^2 + 5k(-2) + k^2 + 5 = 0  \\\\[3pt]
+				4 - 10k + k^2 + 5 = 0  \\\\[3pt]
+				k^2 - 10k + 9 = 0  \end{align}  \) </span>
+			<br />
+			(k - 1) (k - 9) = 0 <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \therefore  \) </span> k = 1 or k = 9 <br />
+			For k = 1, <span class=\"latex\" lang=\"latex\"> \(  f(x) = x^2 + 5(1)x + (1)^2 + 5  \) </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  = x^2 + 5x + 1 + 5  \\\\[3pt]
+				= x^2 + 5x + 6  \end{align}  \) </span>
+			<br />
+			When divided by (x + 3), <br />
+			<span class=\"latex\" lang=\"latex\"> \(  f(-3) = (-3)^2 + 5(-3) + 6  \) </span>
+			<br />
+			= 0 <br />
+			Since for k = 1, f(x) is divisible by (x + 3), k = 1 is rejected. <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \therefore  \) </span> k = 9
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 14:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			Solve <span class=\"latex\" lang=\"latex\"> \(  x(3x^2 - 19) = 2(x^2 - 11)  \) </span>, leaving your answer in the form <span class=\"latex\" lang=\"latex\"> \(  a \pm b \sqrt{c}  \) </span> where possible.
+		</p>
+		<p>
+			<span class="highlight01">Solution: </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  x(3x^2 - 19) = 2(x^2 - 11)  \\\\[3pt]
+				3x^3 - 19x = 2x^2 - 22  \\\\[3pt]
+				3x^3 - 2x^2 - 19x + 22 = 0  \\\\[3pt]
+				Let \ f(x) = 3x^3 - 2x^2 - 19x + 22  \\\\[3pt]
+				Try \ (x - 2), \ f(2) = 3(2)^3 - 2(2)^2 - 19(2) + 22  \\\\[3pt]
+				= 24 - 8 - 38 + 22 = 0  \end{align}  \) </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \therefore  \) </span> (x - 2) is a factor. <br />
+			Using synthetic method, <br />
+			Hence <span class=\"latex\" lang=\"latex\"> \(  f(x) = (x - 2) (3x^2 + 4x - 11) = 0  \) </span>
+			<br />
+			x - 2 = 0 <br />
+			x = 2 <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  3x^2 + 4x - 11 = 0  \\\\[6pt]
+				a = 3, \ b = 4, \ c = -11  \\\\[6pt]
+				x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a} = \frac{-4 \pm \sqrt{16 + 132}}{6} = \frac{-4 \pm \sqrt{148}}{6}  \\\\[6pt]
+				= \frac{-4 \pm \sqrt{7} \sqrt{37}}{6} = \frac{-4 \pm 2 \sqrt{37}}{6} = \frac{-2 \pm \sqrt{37}}{3}  \\\\[6pt]
+				\therefore x = 2, \ - \frac{2}{3} \pm \frac{ \sqrt{37}}{3}  \end{align}  \) </span>
+		</p>
+	</section> 
+</section> 

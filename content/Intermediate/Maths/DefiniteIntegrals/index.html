@@ -1,0 +1,306 @@
+---
+title: "Definite Integrals"
+topic: "Definite Integrals"
+subject: "Maths"
+channel: "Intermediate"
+tags: [Maths, Intermediate]
+categories: [Maths, Intermediate]
+menuname: "Intermediate-submenu"
+draft: false
+image: "image/Intermediate-Maths-DefiniteIntegrals.png"
+defaultSummary: "Definite Integrals is an important Topic in the Subject of Maths for the Intermediate course.  Please review it thoroughly and attempt all the associated testing material to perform well on the Intermediate related Exams."
+menu:
+  Intermediate-submenu:
+    identifier: "Intermediate-Maths-DefiniteIntegrals"
+    name: "Definite Integrals"
+    url: "Intermediate/Maths/DefiniteIntegrals"
+    weight: 1800
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+<section class="skill" id="01">
+	<h3 class="skill-heading">The Newton - Leibnitz Formula </h3>
+	<p> If F(x) is one of the anti derivatives of a function f(x) continuous on [a, b] i.e. <span class=\"latex\" lang=\"latex\"> \(  F'(x) = f(x) \ (a &lt; x &lt; b)  \) </span>. then we have the following formula due to Newton and Leibnitz : <br />
+		<span class="highlight01"> (FUNDAMENTAL THEOREM OF CALCULUS)</span>
+		<br/>
+		<span class=\"latex\" lang=\"latex\"> \(  \int \limits_{a}^{b} f(x) dx = F(x) |_{a}^{b} = F(b) - F(a)  \) </span>
+	</p>
+</section>
+<section class="skill" id="02">
+	<h3 class="skill-heading">Geometrical Interpretation Of the Definite Integral </h3>
+	<p> If we construct the graph of the integrand y = f(x), then for <span class=\"latex\" lang=\"latex\"> \(  f(x) \geq 0  \) </span>, the definite integral <span class=\"latex\" lang=\"latex\"> \(  \int\limits_{a}^{b} f(x) dx  \) </span> numerically equal to the area bounded by the curve y = f(x), the x-axis in the straight lines x = a and x = b </p>
+	<p> In general <span class=\"latex\" lang=\"latex\"> \(  \int \limits_{a}^{b} f(x) dx  \) </span> represents an algebraic sum of the of the figures bounded by the graph of the function y = f(x), the x - axis and straight lines x = a and x = b. <br />
+		The areas above the x-axis enter into this sum with a plus sign, while those below the x-axis enter it with a minus sign. </p>
+</section>
+<section class="skill" id="03">
+	<h3 class="skill-heading">Properties Of Definite Integrals</h3>
+	<div class="list-custom-block-list-ol spaced20 indented20">
+		<ol>
+			<li>
+				<p> If <span class=\"latex\" lang=\"latex\"> \(  f(x) \geq 0  \) </span> on the interval [a, b], then <span class=\"latex\" lang=\"latex\"> \(  \int\limits_{a}^{b} f(x) dx \geq 0  \) </span>. If <span class=\"latex\" lang=\"latex\"> \(  f(x) &gt; 0  \) </span> for all points of [a, b]. Then <span class=\"latex\" lang=\"latex\"> \(  \int \limits_{a}^{b} f(x) dx &gt; 0  \) </span>
+				</p>
+			</li>
+			<li>
+				<p> If <span class=\"latex\" lang=\"latex\"> \(  f(x) \leq g(x)  \) </span> on [a, b], then <span class=\"latex\" lang=\"latex\"> \(  \int \limits_{a}^{b} f(x) dx \leq \int \limits_{a}^{b} g(x) dx  \) </span> .</p>
+			</li>
+			<li>
+				<p>
+					<span class=\"latex\" lang=\"latex\"> \(  \int \limits_{a}^{b} (\alpha f_1(x) + \beta f_2(x)) dx = \alpha \int \limits_{a}^{b} f_1(x) dx + \beta \int \limits_{a}^{b} f_2(x) dx, \ \alpha, \ \beta \ \epsilon \ R  \) </span>
+				</p>
+			</li>
+			<li>
+				<p>
+					<span class=\"latex\" lang=\"latex\"> \(  \left | \int \limits_{a}^{b} f(x) dx \right | \leq \int \limits_{a}^{b} |f(x)| dx  \) </span>
+				</p>
+			</li>
+			<li>
+				<p>
+					<span class=\"latex\" lang=\"latex\"> \( \int \limits_{a}^{b} f(x) dx = \int\limits_{a}^{b} f(t) dt  \) </span>
+				</p>
+			</li>
+			<li>
+				<p>
+					<span class=\"latex\" lang=\"latex\"> \(  \int \limits_{a}^{b} f(x) dx = - \int \limits_{b}^{a} f(x) dx  \) </span>.</p>
+			</li>
+			<li>
+				<p>
+					<span class=\"latex\" lang=\"latex\"> \(  \int \limits_{a}^{b} f(x) dx = \int \limits_{a}^{c} f(x) dx + \int \limits_{c}^{b} f(x) dx  \) </span>
+				</p>
+			</li>
+			<li>
+				<p>
+					<span class=\"latex\" lang=\"latex\"> \(  \int \limits_{a}^{b} f(x) dx = \int \limits_{a}^{b} f(a + b - x) dx  \) </span>, in particular <br />
+					<span class=\"latex\" lang=\"latex\"> \(  \int \limits_{0}^{a}  f(x) dx = \int\limits_{0}^{a}  f(a - x) dx  \) </span>
+				</p>
+			</li>
+			<li>
+				<p>
+					<span class=\"latex\" lang=\"latex\"> \(  \int \limits_{0}^{a} f(x) dx = \int \limits_{0}^{\frac{a}{2}} f(x) + \int\limits_{0}^{\frac{a}{2}}  f(a - x) dx  \) </span>. <br />
+					<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \int \limits_{0}^{a} f(x) dx = \left \{ \begin{array}{rcl} 0 &amp; \mbox{if} &amp; f(a - x) = - f(x)  \\\\ 2 \int \limits_{0}^{\frac{a}{2}}f(x) dx  &amp; \mbox{if} &amp; f(a - x) = f(x) \end{array}\right.  \end{align}  \) </span>
+				</p>
+			</li>
+			<li>
+				<p> If f(-x) = f(x) (i.e., f is an even function), then <span class=\"latex\" lang=\"latex\"> \(   \int \limits_{-a}^{a} f(x) dx = 2 \int \limits_{0}^{a} f(x) dx  \) </span>
+				</p>
+			</li>
+			<li>
+				<p> If f(-x) = f(x) (i.e., f is an odd function), then <span class=\"latex\" lang=\"latex\"> \(   \int \limits_{-a}^{a} f(x) dx = 0  \) </span>
+				</p>
+			</li>
+			<li>
+				<p> If f is continuous on [a, b], then the integral function g defined by <span class=\"latex\" lang=\"latex\"> \(  g(x) = \int\limits_{a}^{x} f(t) dt  \) </span> for <span class=\"latex\" lang=\"latex\"> \(  x \ \epsilon \ [a, b]  \) </span>  is derivable on [a, b], and g'(x) = f(x) for all <span class=\"latex\" lang=\"latex\"> \(  x \ \epsilon \ [a, b]  \) </span> .</p>
+			</li>
+			<li>
+				<p> If m and M are the smallest and greatest values of a function f(x) on an interval [a, b] then <span class=\"latex\" lang=\"latex\"> \(  m(b - a) \leq \int \limits_{a}^{b} f(x) dx \leq M(b - a)  \) </span>
+				</p>
+			</li>
+			<li>
+				<p> If f(x) is continuous on [a, b], then there exists a point <span class=\"latex\" lang=\"latex\"> \(  c \ \epsilon \ (a, \ b)  \) </span> such that <span class=\"latex\" lang=\"latex\"> \(   \int \limits_{a}^{b} f(x) dx = f(c) (b - a)  \) </span>. The number <span class=\"latex\" lang=\"latex\"> \(  f(c) = \frac{1}{b - a} \int \limits_{a}^{b} f(x)  \) </span> is called the mean value of the function f(x) an the interval [a, b]. The above result is called the first mean value theorem for Integrals.</p>
+			</li>
+			<li>
+				<p> If f(x) is periodic with period T then <span class=\"latex\" lang=\"latex\"> \(  \int \limits_{a}^{b} f(x) dx  = \int\limits_{a + nT}^{b + nT} f(x) dx  \) </span>, where n is an integer. In particular. <span class=\"latex\" lang=\"latex\"> \(  \int\limits_{0}^{nT} f(x) dx = n \int \limits_{0}^{T} f(x) dx  \) </span> .</p>
+			</li>
+			<li>
+				<p> If <span class=\"latex\" lang=\"latex\"> \(  f^2(x)  \) </span> and <span class=\"latex\" lang=\"latex\"> \(  g^2(x)  \) </span> are integrable on [a, b], then <span class=\"latex\" lang=\"latex\"> \(  \left | \int \limits_{a}^{b} f(x) g(x) dx \right | \leq \left ( \int \limits_{a}^{b} f^2(x) dx \right )^{\frac{1}{2}} \left ( \int \limits_{a}^{b} g^2(x) dx \right )^{\frac{1}{2}}  \) </span>. </p>
+			</li>
+			<li>
+				<p> If the function <span class=\"latex\" lang=\"latex\"> \(  \phi(x)  \) </span> and <span class=\"latex\" lang=\"latex\"> \(  \psi  \) </span> are defined on [a, b] and differentiable at every point <span class=\"latex\" lang=\"latex\"> \(  x \ \epsilon (a, \ b)  \) </span>. and f(t) is continuous for <span class=\"latex\" lang=\"latex\"> \(  \phi(a) \leq t \leq \phi(b)  \) </span>, then <span class=\"latex\" lang=\"latex\"> \(  \frac{d}{dx} \left ( \int \limits_{\phi(x)}^{\psi(x)} f(t) dt \right ) = f(\psi(x)) \frac{d \psi}{dx} - f(\phi(x)) \frac{d \phi}{dx}  \) </span>
+				</p>
+			</li>
+			<li>
+				<p> Let a function <span class=\"latex\" lang=\"latex\"> \(  f(x, \ \alpha)  \) </span> be continuous for  <span class=\"latex\" lang=\"latex\"> \(  a \leq x \leq b  \) </span> and <span class=\"latex\" lang=\"latex\"> \(  c \leq \alpha \leq d  \) </span>. For any  <span class=\"latex\" lang=\"latex\"> \(  \alpha \ \epsilon \ [c, \ d]  \) </span>,  if <span class=\"latex\" lang=\"latex\"> \(  I(\alpha) = \int \limits_{a}^{b} f(x, \ \alpha) dx  \) </span>, then <span class=\"latex\" lang=\"latex\"> \(  I'(\alpha) = \int\limits_{a}^{b} f'(x, \ \alpha) dx  \) </span> where <span class=\"latex\" lang=\"latex\"> \(  I'(\alpha)  \) </span> is the derivative of  <span class=\"latex\" lang=\"latex\"> \( 
+						f(x, \ \alpha)  \) </span> w.r.t <span class=\"latex\" lang=\"latex\"> \(  \alpha  \) </span>, keeping x constant. </p>
+			</li>
+			<li>
+				<p> Let f be continuous and  non negative at all points of [a, b] and <span class=\"latex\" lang=\"latex\"> \(  f(x_0) &gt; 0  \) </span> at least one point <span class=\"latex\" lang=\"latex\"> \(  x_0  \) </span>  within the interval then  <span class=\"latex\" lang=\"latex\"> \(  \int \limits_{a}^{b} f(x) dx &gt; 0  \) </span>.</p>
+			</li>
+		</ol>
+	</div>
+</section>
+<section class="skill" id="04">
+	<h3 class="skill-heading"> Reduction Formulae </h3>
+	<p>
+		<span class=\"latex\" lang=\"latex\"> \(  \int \limits_{0}^{\frac{ \pi}{2}} sin^n x \ dx \ and \ \int \limits_{0}^{\frac{ \pi}{2}} sin^p x \ cos^q x \ dx  \) </span>
+		<br />
+		<span class=\"latex\" lang=\"latex\"> \(  \int \limits_{0}^{\frac{ \pi}{2}} cos^n x \ dx  = \int \limits_{0}^{\frac{ \pi}{2}} sin^n x \ dx  \) </span>
+		<br />
+		<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  = \left \{ \begin{array}{rcl} \frac{n - 1}{n}  \times \frac{n - 3}{n - 2}  \times   ....  \times \frac{1}{2}. \frac{ \pi}{2} \mbox{if n is even}  \\\\ \frac{n - 1}{n} \times \frac{n - 3}{n - 2} \times  ....  \frac{2}{3}. \mbox{if n is odd} \end{array} \right.  \end{align}  \) </span>
+		<br />
+		<span class=\"latex\" lang=\"latex\"> \(  I_{p, \ q} = \int \limits_{0}^{\frac{ \pi}{2}} sin^p x \ cos^q x \ dx  \) </span>
+		<br />
+		<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  = \left \{ \begin{array}{rcl} \frac{p - 1}{p + q} \times \frac{p - 3}{p + q - 2} \times .... \times \frac{2}{3 + q}. I_{1, \ q} \mbox{if p is odd}  \\\\ \frac{q - 1}{p + q} \times \frac{p - 3}{p + q  - 2} \times ....  \frac{1}{2 + q}I_{0, \ q} \mbox{if n is even} \end{array}\right.  \end{align}  \) </span>
+		<br />
+		where <span class=\"latex\" lang=\"latex\"> \(  I_{1, \ q} = \frac{1}{1 + q}  \) </span> and  <br />
+		<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  I_{0, \ q} = \left \{ \begin{array}{rcl} \frac{q - 1}{q} \times \frac{q - 3}{q - 2} \times .... \times \frac{2}{3} \mbox{if q is odd}  \\\\ \frac{q - 1}{q} \times \frac{q - 3}{q  - 2} \times ....  \frac{1}{2}. \frac{1}{2} \mbox{if q is even} \end{array} \right. \end{align}  \) </span>
+		<br />
+		Note that if p is odd then it does not matter whether q is even or odd.</p>
+</section> 
+<section class="solved-examples" id="examples">
+	<h3 class="solved-examples-heading">Solved examples</h3>
+	<section class="solved-example"> 
+		<h4 class="solved-examples-question">Example 1:</h4>
+		<p>Find <span class=\"latex\" lang=\"latex\"> \(  \int \limits_{0}^{2} (x^2 + 1) dx  \) </span> as the limit of a sum. <br />
+			<span class="highlight01"> Solution </span>
+			<br />
+			By definition <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \int_{a}^{b}f(x) \ dx = (b - a) \lim \limits_{n \ \rightarrow \ \infty} \frac{1}{n} \left [ f(a) + f(a + h) + .... + f(a + (n - 1) h \right ].  \\\\[3pt]
+				Where, \ h = \frac{b - a}{n}  \\\\[3pt]
+				\text{In this example, a = 0, b = 2,} \ f(x) = x^2 + 1, \ h = \frac{2 - 0}{n} = \frac{2}{n}  \\\\[3pt]
+				Therefore,  \\\\[3pt]
+				\int_{0}^{2} (x^2 + 1) dx = 2 \lim \limits_{n \ \rightarrow \ \infty} \frac{1}{n} \left [ f(0) + f \left( \frac{2}{n} \right ) + f \left( \frac{4}{n} \right ) + ....... + f \left( \frac{2(n - 1)}{n} \right ) \right ]   \end{align}  \) </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align} 
+				= 2 \lim \limits_{n \ \rightarrow \ \infty} \frac{1}{n} \left [ 1 +  \left ( \frac{2^2}{n^2} + 1 \right ) + \left( \frac{4^2}{n^2} + 1 \right ) + ......  + \left( \frac{2(n - 1)^2}{n^2} + 1 \right ) \right ]  \\\\[3pt]
+				= 2 \lim \limits_{n \ \rightarrow \ \infty} \frac{1}{n} \left [ \underset{n - teram}{1 + 1 + .... + 1} + \frac{1}{n^2} \left( 2^2 + 4^2 + ... (2n - 2)^2 \right ) \right ]  \\\\[3pt]
+				= 2 \lim \limits_{n \ \rightarrow \ \infty} \frac{1}{n} \left [ n + \frac{2^2}{n^2} \left( 1^2 + 2^2 + ... (n - 1)^2 \right ) \right ]  \end{align}  \) </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align} 
+				= 2 \lim \limits_{n \ \rightarrow \ \infty} \frac{1}{n} \left [ n + \frac{4}{n^2}  \frac{(n - 1) n (2n - 1)}{6} \right ]  \\\\[3pt]
+				= 2 \lim \limits_{n \ \rightarrow \ \infty} \frac{1}{n} \left [ n + \frac{2}{3} \frac{(n - 1)(2n - 1)}{6} \right ]  \\\\[3pt]
+				= = 2 \lim \limits_{n \ \rightarrow \ \infty} \frac{1}{n} \left [ 1 + \frac{2}{3} \left ( 1 - \frac{1}{n} \right ) \left ( 2 - \frac{1}{n} \right )  \right ]  \\\\[3pt]
+				= 2 \left [ 1 + \frac{4}{3} \right ] = \frac{14}{3}
+			 \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 2:</h4>
+		<p>Evaluate <span class=\"latex\" lang=\"latex\"> \(  \int \limits_{0}^{2} e^x \ dx  \) </span>
+			<br />
+			<span class="highlight01"> Solution </span>
+			<br />
+			By definition <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \int \limits_{0}^{2} e^x \ dx = (2 - 0) \lim \limits_{n \ \rightarrow \ \infty} \frac{1}{n} \left[e^0 + e^{\frac{2}{n}}  + e^{\frac{4}{n}} + .... + e^{\frac{2n - 2}{n}} \right ]   \) </span>
+			<br />
+			Using the sum to n terms of a G.P., where a = 1, 2, <span class=\"latex\" lang=\"latex\"> \(  r = e^{\frac{2}{n}}  \) </span>, we have <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \int \limits_{0}^{2} e^x \ dx = 2 \lim \limits_{n \ \rightarrow \ \infty} \frac{1}{n} \left [ \frac{e^{\frac{2n}{n}} - 1}{e^{\frac{2}{n}} - 1} \right ]  \\\\[3pt]
+				= 2 \lim \limits_{n \ \rightarrow \ \infty} \frac{1}{n} \left [ \frac{e^2 - 1}{e^{\frac{2}{n}} - 1} \right ]  \\\\[3pt]
+				=  \frac{2(e^2 - 1)}{\lim \limits_{n \rightarrow \infty} \left [  \frac{e^{\frac{2}{n}}}{\frac{2}{n}} \right ]. 2} = e^2 - 1 \ \ \ \ \left [ Using \ \lim \limits_{h \ \rightarrow \ \infty} \frac{e^h - 1)}{h} - 1 \right ] 		 \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 3:</h4>
+		<p>Evaluate the following integrals: <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \int \limits_{3}^{2}  x^2 \ dx  \) </span>
+			<br />
+			<span class="highlight01"> Solution </span>
+			<br />
+			Let <span class=\"latex\" lang=\"latex\"> \(  \int \limits_{3}^{2} x^2 \ dx  \) </span>.Since <span class=\"latex\" lang=\"latex\"> \(  \int  x^2 \ dx = \frac{x^3}{3} = F(x)  \) </span>
+			<br />
+			Therefore, by the second fundamental theorem, we get <br />
+			<span class=\"latex\" lang=\"latex\"> \(  I = F(3) - F(2) = \frac{27}{3} - \frac{8}{3} = \frac{19}{3}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 4:</h4>
+		<p>Evaluate the following integrals: <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \int \limits_{9}^{4} \frac{\sqrt{x}}{ \left ( 30 - x^{\frac{3}{2}}  \right )^2} \ dx  \) </span>
+			<br />
+			<span class="highlight01"> Solution </span>
+			<br />
+			Let <span class=\"latex\" lang=\"latex\"> \(  \int \limits_{9}^{4} \frac{\sqrt{x}}{ \left ( 30 - x^{\frac{3}{2}}  \right )^2} \ dx  \) </span> We first find the anti derivative of the integrand. <br />
+			Put <span class=\"latex\" lang=\"latex\"> \(  30 - x^{\frac{3}{2}} = t.   \) </span> Then <span class=\"latex\" lang=\"latex\"> \(  - \frac{3}{2} \sqrt{x} \ dx = dt \ or \ \sqrt{x} \ dx = - \frac{2}{3} \ dt  \) </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  Thus, \ \frac{\sqrt{x}}{ \left ( 30 - x^{\frac{3}{2}}  \right )^2} dx  \\\\[3pt]
+				= - \frac{2}{3} \int \frac{dt}{t^2} = \frac{2}{3} \left [ \frac{1}{t} \right ] = \frac{2}{3} \left [ \frac{1}{ \left ( 30 - x^{\frac{3}{2}}  \right )^2} \right ] = F(x) \end{align}  \) </span>
+			<br />
+			Therefore, by the second fundamental theorem of calculus, we have <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  I = F(9) - F(4) = \frac{2}{3} \left [ \frac{1}{ \left ( 30 - x^{\frac{3}{2}}  \right )} \right ]_{4}^{9}  \\\\[3pt]
+				= \frac{2}{3} \left [ \frac{1}{(30 - 27)} - \frac{1}{30 - 8} \right ]  \\\\[3pt]
+				= \frac{2}{3} \left [ \frac{1}{3} - \frac{1}{22} \right ]  \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 5:</h4>
+		<p>Evaluate <span class=\"latex\" lang=\"latex\"> \(  \int \limits_{0}^{1} \frac{tan^{-1} x}{1 + x^2} \ dx  \) </span>
+			<br />
+			<span class="highlight01"> Solution </span>
+			<br />
+			Let <span class=\"latex\" lang=\"latex\"> \(  t = tan^{-1} x  \) </span>, then <span class=\"latex\" lang=\"latex\"> \(  dt = \frac{1}{1 + x^2} dx   \) </span>.The new limits are, when x = 0, t = 0 and when x = 1, <span class=\"latex\" lang=\"latex\"> \(  t = \frac{\pi}{4}  \) </span>. Thus, as x varies from 0 to 1, t varies from 0 to <span class=\"latex\" lang=\"latex\"> \(  t = \frac{\pi}{4}  \) </span>.<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align} Therefore \ \int \limits_{0}^{1} \frac{tan^{-1} x}{1 + x^2} \ dx = \int \limits_{0}^{\frac{\pi}{4}} t \ dx \left [ \frac{t^2}{2} \right ]_{0}^{\frac{\pi}{4}}  \\\\[3pt]
+				= \frac{1}{2} \left [ \frac{\pi^2}{16} - 0 \right ]  \\\\[3pt]
+				= \frac{\pi^2}{32}  \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 6:</h4>
+		<p>Evaluate <span class=\"latex\" lang=\"latex\"> \(  \int \limits_{-1}^{2} |x^3 - x| \ dx  \) </span>
+			<br />
+			<span class="highlight01"> Solution </span>
+			<br />
+			We note that <span class=\"latex\" lang=\"latex\"> \( x^3 - x \geq 0  \) </span> on [- 1, 0] and <span class=\"latex\" lang=\"latex\"> \( x^3 - x \leq 0  \) </span> on [0, 1] and that <span class=\"latex\" lang=\"latex\"> \( x^3 - x \geq 0  \) </span> on [1, 2]. So by <span class=\"latex\" lang=\"latex\"> \( P_2  \) </span> we write  <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \int \limits_{-1}^{2} |x^3 - x| \ dx  =  \int \limits_{-1}^{0} (x^3 - x) \ dx +  \int \limits_{0}^{1} - (x^3 - x) \ dx +  \int \limits_{1}^{2} (x^3 - x) \ dx  \\\\[3pt]
+				=  \int \limits_{-1}^{0} (x^3 - x) \ dx +  \int \limits_{0}^{1} (x - x^3) \ dx +  \int \limits_{1}^{2} (x^3 - x) \ dx  \\\\[3pt]
+				= \left [ \frac{x^4}{4} - \frac{x^2}{2}  \right ]_{-1}^{0} + \left [ \frac{x^2}{2} - \frac{x^4}{4}  \right ]_{0}^{1} + \left [ \frac{x^4}{4} - \frac{x^2}{2}  \right ]_{1}^{2}  \\\\[3pt]
+				= - \left( \frac{1}{4} - \frac{1}{2} \right ) + \left( \frac{1}{2} - \frac{1}{4} \right ) + (4 - 2) - \left ( \frac{1}{4} - \frac{1}{2} \right )  \\\\[3pt]
+				= - \frac{1}{4} + \frac{1}{2} + \frac{1}{2}- \frac{1}{4} + 2 - \frac{1}{4} + \frac{1}{2} = \frac{3}{2} - \frac{3}{4} + 2 = \frac{11}{4} \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 7:</h4>
+		<p>Evaluate <span class=\"latex\" lang=\"latex\"> \(  \int \limits_{- \frac{\pi}{4}}^{\frac{\pi}{4}} sin^2 \ x \ dx  \) </span>
+			<br />
+			<span class="highlight01"> Solution </span>
+			<br />
+			We observe that <span class=\"latex\" lang=\"latex\"> \(  sin^2 \ x  \) </span> is an even function. Therefore, by <span class=\"latex\" lang=\"latex\"> \(  P_7  \) </span>(i), we get <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \int \limits_{- \frac{\pi}{4}}^{\frac{\pi}{4}} sin^2 \ x \ dx = 2  \int \limits_{0}^{\frac{\pi}{4}} sin^2 \ x \ dx  \\\\[3pt]
+				= 2 \int \limits_{0}^{\frac{\pi}{4}} \frac{(1 - cos \ 2x)}{2} \ dx = \int \limits_{0}^{\frac{\pi}{4}} (1 - cos \ 2x) \ dx  \\\\[3pt]
+				\left [ x - \frac{1}{2} sin \ 2x \right]_{0}^{\frac{\pi}{4}} = \left ( \frac{\pi}{4} - \frac{1}{2} sin \frac{\pi}{2} \right ) - 0 = \frac{\pi}{4} - \frac{1}{2}  \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 8:</h4>
+		<p>Evaluate <span class=\"latex\" lang=\"latex\"> \(  \int \limits_{-1}^{1} sin^5 \ x \ cos^4 \ x  dx  \) </span>.<br />
+			<span class="highlight01"> Solution </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \int \limits_{-1}^{1} sin^5 \ x \ cos^4 \ x  dx \ Let \  f(x) = sin^5 \ x \ cos^4 \ x.  Then  \ f(-x) = sin^5 \ (-x) \ cos^4 \ (-x) = - sin^5 \ x \ cos^4 \ x = - f(x) \) </span> i.e., f is an odd function. Therefore, by <span class=\"latex\" lang=\"latex\"> \(  P_7  \) </span> (ii), I = 0  </p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 9:</h4>
+		<p>Evaluate <span class=\"latex\" lang=\"latex\"> \(  \int \limits_{0}^{\frac{\pi}{2}}  \frac{sin^4 \ x}{sin^4 \ x + cos^4 \ x} \ dx  \) </span>
+			<br />
+			<span class="highlight01"> Solution </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  Let \ I = \int \limits_{0}^{\frac{\pi}{2}}  \frac{sin^4 \ x}{sin^4 \ x + cos^4 \ x} \ dx \ ...... \ (1)  \\\\[3pt]
+				I = \int \limits_{0}^{\frac{\pi}{2}}  \frac{sin^4 \left ( \frac{\pi}{4} - x \right ) }{sin^4 \left ( \frac{\pi}{4} - x \right ) + cos^4 \left ( \frac{\pi}{4} - x \right )} \ dx  \\\\[3pt]
+				= \int \limits_{0}^{\frac{\pi}{2}}  \frac{cos^4 \ x }{cos^4  \\\\ x+ sin^4 \ x} \ dx  \ ..... \ (2)  \\\\[3pt]
+				\text{Adding (1) and (2), we get}  \\\\[3pt]
+				2I = \int \limits_{0}^{\frac{\pi}{2}}  \frac{sin^4 \ x + cos^4 \ x }{sin^4  \\\\ x+ cos^4 \ x} \ dx  \\\\[3pt]
+				= = \int \limits_{0}^{\frac{\pi}{2}} dx = \left [x \right]_{0}^{\frac{\pi}{2}} = \frac{\pi}{2}  \\\\[3pt]
+				Hence \ I = \frac{\pi}{4}  \end{align}  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 10:</h4>
+		<p> Evaluate <span class=\"latex\" lang=\"latex\"> \( \int \limits_{ \frac{\pi}{6}}^{\frac{\pi}{3}} \frac{dx}{1 + \sqrt{tan \ x}}  \) </span>
+			<br />
+			<span class="highlight01"> Solution </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align} Let \ I = \int \limits_{ \frac{\pi}{6}}^{\frac{\pi}{3}} \frac{dx}{1 + \sqrt{tan \ x}} = \int \limits_{ \frac{\pi}{6}}^{\frac{\pi}{3}} \frac{\sqrt{cos \ x} dx}{\sqrt{cos \ x} + \sqrt{sin \ x}} \ ..... \ (1)  \\\\[3pt]
+				Then \ by \ P_3 \ I = \int \limits_{ \frac{\pi}{6}}^{\frac{\pi}{3}} \frac{ \sqrt{ cos \left ( \frac{\pi}{3} + \frac{\pi}{6} - x \right ) dx }}{ \sqrt{ cos \left ( \frac{\pi}{3} + \frac{\pi}{6} - x \right ) dx } +  \sqrt{ sin \left ( \frac{\pi}{3} + \frac{\pi}{6} - x \right ) dx }}  \\\\[3pt]
+				= \int \limits_{ \frac{\pi}{6}}^{\frac{\pi}{3}} \frac{\sqrt{sin \ x} dx}{\sqrt{sin \ x} + \sqrt{cos \ x}} \ ..... \ (2)  \\\\[3pt]
+				\text{Adding (1) and (2), we get}  \\\\[3pt]
+				2I = \int \limits_{ \frac{\pi}{6}}^{\frac{\pi}{3}} dx= \left [ x \right ]_{\frac{\pi}{6}}^{\frac{\pi}{3}} = \frac{\pi}{3} - \frac{\pi}{6} = \frac{\pi}{6}.  \\\\[3pt]
+				Hence \ I = \frac{\pi}{12}  \end{align}  \) </span>
+		</p>
+	</section>
+</section> 

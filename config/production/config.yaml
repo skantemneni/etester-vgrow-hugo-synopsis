@@ -1,0 +1,9 @@
+baseURL: https://etester.com/synopsis/
+publishDir: synopsis
+title: eTester Synopsis
+
+params:
+  description: eTester Synopsis
+  logo: /image/logo/logoETESTER.svg
+  parentWebsite: https://etester.com
+  parentWebsiteLinkText: eTester Application

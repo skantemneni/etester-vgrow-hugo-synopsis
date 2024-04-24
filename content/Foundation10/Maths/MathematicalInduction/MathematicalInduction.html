@@ -1,0 +1,1018 @@
+---
+title: "Mathematical Induction"
+layout: "default_foundation"
+isMath: true
+---
+<section class="skill" id="01">
+	<h3 class="skill-heading">Introduction</h3>
+	<p>Reasoning can be classified into two categories. </p>
+	<div class="list-custom-block-list-ol spaced20 indented20">
+		<ol>
+			<li>
+				<p> Inductive reasoning </p>
+			</li>
+			<li>
+				<p> Deductive reasoning </p>
+			</li>
+		</ol>
+	</div>
+</section>
+<section class="skill" id="02">
+	<h3 class="skill-heading">Inductive Reasoning</h3>
+	<p> Here, the conclusion is made on the basis of a particular observation or experience. <br />
+		For example: A person touches an electric wire carrying current, gets shocked. Then, he forbades others to do so, on behalf of his experience.
+	</p>
+</section>
+<section class="skill" id="03">
+	<h3 class="skill-heading">Deductive Reasoning</h3>
+	<p>Here, conclusions are drawn from assumptions, rather than experience. These assumptions are proved mathematically. <br />
+		<span class="highlight01">For example: </span>By drawing a number of circles and measuring their circumferences with the help of thread, he finds that the length of circumference is <span class=\"latex\" lang=\"latex\"> \(  2 \pi r  \) </span>
+		<br />
+		<span class="highlight01">Conjecture: </span>Induction begins by observations. And from observations we arrive at some tentative conclusions, called conjectures. A conjecture may be true or false. The principles of mathematical induction helps us in proving conjectures. <br />
+		<span class="highlight01">For example: </span>
+	</p>
+	<div class="list-custom-block-list-ol spaced20 indented20">
+		<ol>
+			<li>
+				<p> n(n + 1) is divisible by 2 </p>
+			</li>
+			<li>
+				<p>
+					<span class=\"latex\" lang=\"latex\"> \( 3^{2n} - 1  \) </span> is divisible by 8.  </p>
+			</li>
+		</ol>
+	</div>
+</section>
+<section class="skill" id="04">
+	<h3 class="skill-heading">Inductive Method </h3>
+	<p>A person measures the angles of triangles and he finds that the sum of the angles of a triangle is <span class=\"latex\" lang=\"latex\"> \( 180^{\circ}  \) </span>. The experimenter concludes that, "Sum of the angles of a triangle is always equal to <span class=\"latex\" lang=\"latex\"> \( 180^{\circ}  \) </span>". Thus, he arrived at a generalisation from particular cases. This is called an inductive method. </p>
+</section>
+<section class="skill" id="05">
+	<h3 class="skill-heading">Deductive Method </h3>
+	<p>We know that the sum of n odd natural numbers is <span class=\"latex\" lang=\"latex\"> \( n^2  \) </span>. This is a general result. From this general result we deduce a particular case that the sum of first 10 odd natural numbers is <span class=\"latex\" lang=\"latex\"> \( 10^2 = 100  \) </span>. This process of deducting particular result from general result is called the process of deduction. <br />
+		<span class="highlight01"> Statement </span>: A sentence is called a statement, if it can be adjudged as true or false. <br />
+		<span class="highlight01"> For example: </span>
+	</p>
+	<div class="list-custom-block-list-ol spaced20 indented20">
+		<ol>
+			<li>
+				<p> "3 divides 6" is a statement, because it is true. </p>
+			</li>
+			<li>
+				<p>"Shahrukh Khan is an actor" is a statement, as it is true. </p>
+			</li>
+			<li>
+				<p> "There are 6 days in a week" is a statement, as it is false. </p>
+			</li>
+		</ol>
+	</div>
+	<p>
+		A sentence, which can be both true and false, cannot be a statement. <br />
+		e.g.:</p>
+	<div class="list-custom-block-list-ol spaced20 indented20">
+		<ol>
+			<li>
+				<p> The water is cold. </p>
+			</li>
+			<li>
+				<p> The boy is tall </p>
+			</li>
+		</ol>
+	</div>
+	<p>
+		Here, the above sentences can be both true and false, hence they are not statements.
+	</p>
+</section>
+<section class="skill" id="06">
+	<h3 class="skill-heading">Mathematical Statement </h3>
+	<p>A statement having mathematical relations is known as the mathematical statement. </p>
+	<p>
+		<span class="highlight01">For example: </span> Following are the mathematical statements. </p>
+	<div class="list-custom-block-list-ol spaced20 indented20">
+		<ol>
+			<li>
+				<p> "35 is a multiple of 5" </p>
+			</li>
+			<li>
+				<p> (x + 1) is a factor of <span class=\"latex\" lang=\"latex\"> \( x^2 - 3x + 2  \) </span>
+				</p>
+			</li>
+			<li>
+				<p>
+					<span class=\"latex\" lang=\"latex\"> \( A \cap B = B \cap A  \) </span>
+				</p>
+			</li>
+		</ol>
+	</div>
+</section>
+<section class="skill" id="07">
+	<h3 class="skill-heading">Principle of Mathematical Induction</h3>
+	<p>Consider the set N of natural numbers. N has two characteristic properties contained in the axiom of induction : </p>
+	<div class="list-custom-block-list-ol spaced20 indented20">
+		<ol>
+			<li>
+				<p> N contains the natural number 1. </p>
+			</li>
+			<li>
+				<p>N is closed with respect to addition of 1 to each of its members. </p>
+			</li>
+		</ol>
+	</div>
+	<p>
+		Thus to determine whether a set K consisting of natural numbers is set of all natural numbers, we have to verify the following two conditions on K: </p>
+	<div class="list-custom-block-list-ol spaced20 indented20">
+		<ol>
+			<li>
+				<p>Does 1 <span class=\"latex\" lang=\"latex\"> \(  \epsilon  \) </span> K ? </p>
+			</li>
+			<li>
+				<p>For each natural number k <span class=\"latex\" lang=\"latex\"> \(  \epsilon  \) </span> K , is it true that k + 1 <span class=\"latex\" lang=\"latex\"> \(  \epsilon  \) </span> K ? <br />
+					When the answer to both the questions is 'yes', then (and then only) K is N.
+				</p>
+			</li>
+		</ol>
+	</div>
+	<p>
+		The above test has several important consequences. It gives (at least three important principles for establishing the truth of certain classes of propositions. The first of these is the following:
+	</p>
+</section>
+<section class="skill" id="08">
+	<h3 class="skill-heading">First Principle of Induction</h3>
+	<p>Let <span class=\"latex\" lang=\"latex\"> \(  \{ T(n) : n \epsilon N \}  \) </span> be a set of statements, one for each natural number n. If T(1) is true and the truth of T(k) implies that of T(k + 1) then T(n) is true for all n. </p>
+	<p>
+		<span class="highlight01"> Example: </span>
+		<br />
+		Let T(k) be the statement <br />
+		<span class=\"latex\" lang=\"latex\"> \( 1 + 3 + 5 + ..... + (2k - 1) = k^2+ 10.  \) </span>
+		<br />
+		Show that T(k) is true <span class=\"latex\" lang=\"latex\"> \(  \Rightarrow  \) </span> T(k + 1) is true. Can we conclude by applying FPI that T(n) is true for all n?
+	</p>
+	<p>
+		<span class="highlight01">Solution: </span>
+		<br />
+		Assume that T(k) is true <br />
+		Then [1 + 3 +.....+ (2k - 1)] + (2k + 1) <br />
+		<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  = (k^2 + 10) + (2k + 1)  \\\\[12pt]
+			= (k + 1)^2 + 10  \end{align}  \) </span>
+		<br />
+		so that T(k + 1) is true. <br />
+		We have proved that for the given statement, the truth of T(k) implies that of T(k + 1). But what about T(1)? Obviously, T(1) is not true. Hence we cannot conclude by applying FPI that T(n) is true for all n. In fact, in this case T(n) is not true for any n.
+	</p>
+</section>
+<section class="skill" id="09">
+	<h3 class="skill-heading">Second Principle of Induction</h3>
+	<p>Let <span class=\"latex\" lang=\"latex\"> \(  \{ T(n) : n \epsilon N \}  \) </span> be a set of statements, one for each natural number n. If (i) T(1) is true, and (ii) if for each natural number k, the truth of T(m) for all m &lt; k implies the truth of T(k), then T(n) is true for all n. </p>
+</section>
+<section class="skill" id="10">
+	<h3 class="skill-heading">Third Principle of Induction</h3>
+	<p>Let <span class=\"latex\" lang=\"latex\"> \(  \{ (T(n) : n \epsilon N \}  \) </span> be a set of statements, one for each natural number n. If (i) T(a) is true for some a <span class=\"latex\" lang=\"latex\"> \(  \epsilon  \) </span> N and (ii) T(k) is true implies T(k + 1) is true for all <span class=\"latex\" lang=\"latex\"> \( k \geq a  \) </span>, then T(n) is true for all <span class=\"latex\" lang=\"latex\"> \( n \geq a  \) </span>. <br />
+		Working rule to prove that a statement is true for all natural numbers using Principle of Mathematical Induction: <br />
+		<span class="highlight01"> Step 1: </span> Show that the given statement is true for n = 1. <br />
+		<span class="highlight01"> Step 2: </span> Assume that the statement is true for n = k. <br />
+		<span class="highlight01"> Step 3: </span> Using the assumption made in step 2, show that the statement is true for n = k + 1. <br />
+		<span class="highlight01"> Step 4: </span> This completes the Principle of Mathematical Induction. <br />
+		Thus, we conclude that the given statement is true for all <span class=\"latex\" lang=\"latex\"> \( n \epsilon N  \) </span>
+	</p>
+</section> 
+<section class="solved-examples" id="examples">
+	<h3 class="solved-examples-heading">Solved examples</h3>
+	<section class="solved-example">  
+		<h4 class="solved-examples-question">Example 1:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			Let P(n) be the statement <span class=\"latex\" lang=\"latex\"> \( '3^n > n'  \) </span>. If P(n) is true, prove that P(n + 1) is true.
+		</p>
+		<p>
+			<span class="highlight01">Solution: </span>
+			<br />
+			We are given that P(n) is true i.e., <span class=\"latex\" lang=\"latex\"> \( 3^n > n  \) </span>, and we wish to prove that P(n + 1) is true <br />
+			i.e., <span class=\"latex\" lang=\"latex\"> \( 3^{(n + 1)} > (n + 1)  \) </span>. <br />
+			Now, P(n) is true <span class=\"latex\" lang=\"latex\"> \(  \Rightarrow 3^n > n \Rightarrow 3.3^n > 3 . n	 \) </span> [Multiplying both sides by 3] <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \Rightarrow 3^{n + 1} > n + 2n  \\\\[12pt]
+				\Rightarrow 3^{n + 1} > n + 1  \end{align}  \) </span>
+			<br />
+			[ 2n > 1 for every n <span class=\"latex\" lang=\"latex\"> \(  \epsilon N \Rightarrow  \) </span> 2n + n > n + 1 for every n <span class=\"latex\" lang=\"latex\"> \(  \epsilon  \) </span> N ] <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \Rightarrow  \) </span> P(n + 1) is true.
+		</p>
+	</section>
+	<section class="solved-example"> 
+		<h4 class="solved-examples-question">Example 2:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			If P(n) is the statement <span class=\"latex\" lang=\"latex\"> \( '2^{3n} - 1  \) </span> is an integral multiple of 7', and if P(r) is true, prove that P(r + 1) is true.
+		</p>
+		<p>
+			<span class="highlight01">Solution: </span>
+			<br />
+			Let P(r) be true. Then, <span class=\"latex\" lang=\"latex\"> \( 2^{3r} - 1  \) </span> is an integral multiple of 7. We wish to prove that P(r + 1) is true i.e., <br />
+			<span class=\"latex\" lang=\"latex\"> \( 2^{3(r + 1)} — 1  \) </span>is an integral multiple of 7. Now, <br />
+			P(r) is true <span class=\"latex\" lang=\"latex\"> \(  \Rightarrow 2^{3r} — 1  \) </span> is an integral multiple of 7 <br />
+			<span class=\"latex\" lang=\"latex\"> \(  2^{3r} — 1 = 7 \lambda,  \) </span> for some <span class=\"latex\" lang=\"latex\"> \(  \lambda \epsilon N  \) </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  2^{3r} = 7 \lambda + 1  \) </span>
+			<br />
+			Now, <span class=\"latex\" lang=\"latex\"> \( 2^{3(r + 1)} — 1 = 2^{3r}.2^3 — 1 = (7 \lambda + 1) \times 8 — 1  \) </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  = 56 \lambda + 8 - 1 = 56 \lambda + 7 = 7( 8 \lambda + 1)  \\\\[12pt]
+				= 7 \mu, \ where \ \mu = 8 \lambda + 1 \epsilon N  \\\\[12pt]
+				\Rightarrow 2^{3(r + 1)} - 1  \end{align}  \) </span>
+			<br />
+			is an integral part of 7 <span class=\"latex\" lang=\"latex\"> \(  \Rightarrow  \) </span> P(r + 1) is true
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 3:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			Prove by the principle of mathematical induction that for all <span class=\"latex\" lang=\"latex\"> \( n \epsilon N  \) </span>. <br />
+			<span class=\"latex\" lang=\"latex\"> \( n^2 + n  \) </span> is an even natural number
+		</p>
+		<p>
+			<span class="highlight01">Solution: </span>
+			<br />
+			Let P(n) be the statement '<span class=\"latex\" lang=\"latex\"> \( n^2 + n  \) </span> is even'. <br />
+			<span class="highlight01"> Step - I: </span> We have, <span class=\"latex\" lang=\"latex\"> \(  P(n): n^2 + n  \) </span> is even <br />
+			<span class=\"latex\" lang=\"latex\"> \(  1^2 + 1 = 2  \) </span> which is even <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \therefore  \) </span> P(1) is true <br />
+			<span class="highlight01"> Step-II: </span> Let P(m) be true. Then, <br />
+			<span class=\"latex\" lang=\"latex\"> \(  m^2 + m  \) </span> is even <span class=\"latex\" lang=\"latex\"> \(  \Rightarrow m^2 + m = 2 \lambda  \) </span>, for some <span class=\"latex\" lang=\"latex\"> \(  \lambda \epsilon N	.....(i)  \) </span>
+			<br />
+			Now we shall show that P(m + 1) is true. For this we have to show that <span class=\"latex\" lang=\"latex\"> \(  (m + 1)^2 + (m + 1)  \) </span> is an even natural number. <br />
+			We have, <br />
+			<span class=\"latex\" lang=\"latex\"> \( (m + 1)^2 + (m + 1) = (m^2 + 2m + 1) + (m + 1) = (m^2 + m) + (2m + 2)  \) </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  = m^2 + m + 2 (m + 1) = 2 \lambda + 2(m + 1)	[Using (i)]  \\\\[12pt]
+				= 2(\lambda + m + 1) = 2 \mu, \ where \ \mu = \lambda + m + 1 \epsilon N  \end{align}  \) </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \Rightarrow (m + 1)^2 + (m + 1)  \) </span> is an even natural number <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \Rightarrow P(m + 1)  \) </span> is true <br />
+			Thus, P(m) is true <span class=\"latex\" lang=\"latex\"> \(  \Rightarrow  \) </span> P(m + 1) is true <br />
+			Hence, by the principle of mathematical induction, P(n) is true for all <span class=\"latex\" lang=\"latex\"> \( n \epsilon N  \) </span> i.e, <span class=\"latex\" lang=\"latex\"> \( n^2 + n  \) </span> is even for all <span class=\"latex\" lang=\"latex\"> \( n \epsilon N  \) </span> .
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 4:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			Prove by the principle of mathematical induction that n(n + 1)(2n + 1) is divisible by 6 for all <span class=\"latex\" lang=\"latex\"> \( n \epsilon N  \) </span>.
+		</p>
+		<p>
+			<span class="highlight01">Solution: </span>
+			<br />
+			Let P(n) be the statement 'n(n + 1)(2n + 1) is divisible by 6' <br />
+			i.e., P(n) : n(n + 1)(2n + 1) is divisible by 6 <br />
+			<span class="highlight01"> Step - I: </span> We have P(1) : 1(1 + 1) (2 + 1) is divisible by 6. <br />
+			<span class=\"latex\" lang=\"latex\"> \( \therefore  \) </span> 1(1 + 1) (2 + 1) = 6 which is divisible by 6 <br />
+			P(1) is true. <br />
+			<span class="highlight01"> Step - II: </span> Let P(m) be true. Then, m(m + 1) (2m + 1) is divisible by 6. <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \Rightarrow m(m + 1) (2m + 1) = 6 \lambda  \) </span>, for some <span class=\"latex\" lang=\"latex\"> \(  \lambda \epsilon N......(i)  \) </span>
+			<br />
+			Now, we shall show that P(m + 1) is true. For this we have to show that (m + 1) (m + 1 + 1) [2(m + 1) + 1] is divisible by 6. <br />
+			We have, (m + 1) (m + 1 + 1) [2(m + 1) + 1] = (m + 1) (m + 2) [(2m + 1) + 2] <br />
+			=(m + 1)(m + 2)(2m + 1) + 2(m + 1)(m + 2) <br />
+			= m(m + 1)(2m + 1) + 2(m + 1)(2m + 1) + 2(m + 1)(m + 2) <br />
+			= m(m + 1)(2m + 1) + 2(m + 1)(2m + 1 + m + 2) <br />
+			= m(m + 1) (2m + 1) + 2 (m + 1) (3m + 3) <br />
+			<span class=\"latex\" lang=\"latex\"> \(  = m(m + 1) (2m + 1) + 6 (m + 1)^ 2 = 6 \lambda + 6 (m + 1)^2  \) </span> [Using (i)] <br />
+			<span class=\"latex\" lang=\"latex\"> \(  = 6[ \lambda + (m + 1)^2]  \) </span>, which is divisible by 6 <span class=\"latex\" lang=\"latex\"> \(  \Rightarrow  \) </span> P(m + 1) is true. <br />
+			Thus, P(m) is true <span class=\"latex\" lang=\"latex\"> \(  \Rightarrow  \) </span> P(m + 1) is true <br />
+			Hence, by the principle of mathematical induction, the given statement is true for all <span class=\"latex\" lang=\"latex\"> \( n \epsilon N  \) </span>.
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 5:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			Prove by the principle of mathematical induction that for all <span class=\"latex\" lang=\"latex\"> \( n \epsilon N  \) </span>
+			<br />
+			1 + 4 + 7 + ....... + (3n - 2) = <span class=\"latex\" lang=\"latex\"> \(  \frac{1}{2}  \) </span> n(3n - 1)
+		</p>
+		<p>
+			<span class="highlight01">Solution: </span>
+			<br />
+			Let P(n) be the statement given by, <br />
+			<span class=\"latex\" lang=\"latex\"> \(  P(n): 1 + 4 + 7 + ...... + (3n - 2) = \frac{1}{2} n(3n - 1)  \) </span>
+			<br />
+			<span class="highlight01"> step - I : </span> we have P(1) : 1 = <span class=\"latex\" lang=\"latex\"> \(  \frac{1}{2} \times (1) \times (3 \times 1 - 1)  \) </span>
+			<br />
+			since 1 = <span class=\"latex\" lang=\"latex\"> \(  \frac{1}{2} \times (1) \times (3 \times 1 - 1)  \) </span>
+			<br />
+			so, P(1) is true <br />
+			<span class="highlight01"> step - II : </span> Let P(m) be true. Then, <br />
+			<span class=\"latex\" lang=\"latex\"> \(  1 + 4 + 7 + ...... + (3m - 2) = \frac{1}{2} m(3m - 1)  \) </span>
+			<br />
+			we wish to show that P(m + 1) is true. For this we have to show that, <br />
+			1 + 4 + 7 + ..... + (3m - 2) + [3(m + 1) - 2] = <span class=\"latex\" lang=\"latex\"> \(  \frac{1}{2}  \) </span> (m + 1) [3(m + 1) - 1] <br />
+			Now, 1 + 4 + 7 + ..... + (3m - 2) + [3(m + 1) - 2] <br />
+			<span class=\"latex\" lang=\"latex\"> \(   = \frac{1}{2} m (3m - 1) + [3 (m + 1) - 2]  \) </span> [using (i)] <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  = \frac{1}{2} m (3m - 1) + (3m + 1) = \frac{1}{2} [ 3m^2 - m + 6m + 2]  \\\\[12pt]
+				= \frac{1}{2} [ 3m^2 + 5m + 2] = \frac{1}{2} (m + 1) (3m + 2) = \frac{1}{2} (m + 1)[3 (m + 1) - 1] \end{align}  \) </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \therefore  \) </span> P(m + 1) is true <br />
+			Thus, P(m) is true <span class=\"latex\" lang=\"latex\"> \(  \Rightarrow  \) </span> P(m + 1) is true. <br />
+			Hence, by the principle of mathematical induction, the given result is true for all <span class=\"latex\" lang=\"latex\"> \( n \epsilon N  \) </span>.
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 6:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			Prove by the principle of mathematical induction that for all <span class=\"latex\" lang=\"latex\"> \( n \epsilon N  \) </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \frac{1}{1.2} + \frac{1}{2.3} + \frac{1}{3.4} + ....... + \frac{1}{n (n + 1)} = \frac{n}{n + 1}  \) </span>
+		</p>
+		<p>
+			<span class="highlight01">Solution: </span>
+			<br />
+			Let P(n) be the statement given by, <br />
+			<span class=\"latex\" lang=\"latex\"> \(  P(n) : \frac{1}{1.2} + \frac{1}{2.3} + \frac{1}{3.4} + ....... + \frac{1}{n (n + 1)} = \frac{n}{n + 1}  \) </span>
+			<br />
+			<span class="highlight01"> Step - I : </span> we have <span class=\"latex\" lang=\"latex\"> \(  P(1) : \frac{1}{1.2} = \frac{1}{1 + 1}  \) </span>
+			<br />
+			since, <span class=\"latex\" lang=\"latex\"> \(  \frac{1}{1.2} = \frac{1}{1 + 1} = \frac{1}{2}.  \) </span> so P(1) is true <br />
+			<span class="highlight01"> Step - II : </span> Let P(m) be true. Then, <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \frac{1}{1.2} + \frac{1}{2.3} + \frac{1}{3.4} + ..... + \frac{1}{m (m + 1)} = \frac{m}{m + 1}  \) </span>
+			<br />
+			we shall now show that P(m + 1) is true. For this we have to show that <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \frac{1}{1.2} + \frac{1}{2.3} + \frac{1}{3.4} + ..... + \frac{1}{m (m + 1)} + \frac{1}{(m + 1)(m + 1 + 1)} = \frac{m + 1}{( m + 1) + 1}  \) </span>
+			<br />
+			Now, <span class=\"latex\" lang=\"latex\"> \(  \frac{1}{1.2} + \frac{1}{2.3} + \frac{1}{3.4} + ..... + \frac{1}{m (m + 1)} + \frac{1}{(m + 1)((m + 1) + 1)}  \) </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  = \left [ \frac{1}{1.2} + \frac{1}{2.3} + \frac{1}{3.4} + ..... + \frac{1}{m (m + 1)} \right ] + \frac{1}{(m + 1)((m + 1) + 1)}  \\\\[12pt]
+				= \frac{m}{m + 1} + \frac{1}{(m + 1)((m + 1) + 1)}   \\\\[12pt]
+				= \frac{1}{(m + 1)} \left \{ \frac{m}{1} + \frac{1}{m + 2} \right \} = \frac{1}{(m + 1)} \frac{(m^2 + 2m + 1)}{(m + 2)} = \frac{(m + 1)^2}{(m + 1)(m + 2)}  \\\\[12pt]
+				= \frac{m + 1}{m + 2} = \frac{(m + 1)}{(m + 1) + 1}  \end{align}  \) </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \therefore  \) </span> P(m + 1) is true <br />
+			Thus, P(m) is true <span class=\"latex\" lang=\"latex\"> \(  \Rightarrow  \) </span> P(m + 1) is true <br />
+			Hence, by the principle of mathematical induction, the given statement is true for all <span class=\"latex\" lang=\"latex\"> \( n \epsilon N  \) </span>.
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 7:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			Prove by induction that the sum <span class=\"latex\" lang=\"latex\"> \(  S_n = n^3 + 3n^2 + 5n + 3  \) </span> is divisible by 3 for all <span class=\"latex\" lang=\"latex\"> \( n \epsilon N  \) </span> .
+		</p>
+		<p>
+			<span class="highlight01">Solution: </span>
+			<br />
+			Let P(n) be the statement given by <br />
+			<span class=\"latex\" lang=\"latex\"> \(  P(n) : S_n = n^3 + 3n^2 + 5n + 3  \) </span> is divisible by 3 <br />
+			<span class="highlight01"> Step - I: </span> We have <span class=\"latex\" lang=\"latex\"> \(  P(1) : S_1 = 1^3 + 3(1)^2 + 5(1) + 3  \) </span> is divisible by 3 <br />
+			Since, <span class=\"latex\" lang=\"latex\"> \(  1^3 + 3(1)^2 + 5(1) + 3 = 12  \) </span>, which is divisible by 3. <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \therefore  \) </span> P(1) is true <br />
+			<span class="highlight01"> Step - II : </span> Let P(m) be true. Then, <br />
+			<span class=\"latex\" lang=\"latex\"> \(  S_m = m^3 + 3m^2 + 5m + 3  \) </span> is divisible by 3 <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \Rightarrow S_m = m^3 + 3m^2 + 5m + 3 = 3 \lambda  \) </span>, for some <span class=\"latex\" lang=\"latex\"> \(  \lambda \epsilon N.....(i)  \) </span>
+			<br />
+			We now wish to show that P(m + 1) is true. For this we have to show that <span class=\"latex\" lang=\"latex\"> \(  (m + 1)^3 + 3(m + 1)^2 + 5(m + 1) + 3  \) </span> is divisible by 3. <br />
+			Now, <span class=\"latex\" lang=\"latex\"> \(  (m + 1)^3 + 3(m + 1)^2 + 5(m + 1) + 3 = (m^3 + 3m^2 + 5m + 3) + 3m^2 + 9m + 9  \) </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(   = 3 \lambda + 3(m^2 + 3m + 3) = 3[ \lambda + m^2 + 3m + 3]  \) </span> [using (i)] <br />
+			<span class=\"latex\" lang=\"latex\"> \(  = 3 \mu, \ where \ \mu = \lambda + m^2 + 3m + 3 \epsilon N  \) </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \therefore  \) </span> P(m + 1) is true <br />
+			Thus, P(m) is true <span class=\"latex\" lang=\"latex\"> \(  \Rightarrow  \) </span> P(m + 1) is true <br />
+			Hence, by the principle of mathematical induction, the given statement is true for all <span class=\"latex\" lang=\"latex\"> \( n \epsilon N  \) </span>.
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 8:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			Prove by the principle of mathematical induction that for all <span class=\"latex\" lang=\"latex\"> \( n \epsilon N  \) </span>.<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \frac{1}{1.3} + \frac{1}{3.5} + \frac{1}{5.7} + ...... +  \frac{1}{(2n - 1)(2n + 1)} = \frac{n}{2n + 1}  \) </span>
+		</p>
+		<p>
+			<span class="highlight01">Solution: </span>
+			<br />
+			Let P(n) be the statement given by <br />
+			<span class=\"latex\" lang=\"latex\"> \(  P(n) : \frac{1}{1.3} + \frac{1}{3.5} + \frac{1}{5.7} + ..... + \frac{1}{(2n - 1)(2n + 1)} = \frac{n}{2n + 1}   \) </span>
+			<br />
+			<span class="highlight01"> Step - I :</span> We have <span class=\"latex\" lang=\"latex\"> \( P(1) : \frac{1}{1.3} = \frac{1}{(2 \times 1 + 1)}. \ clearly, \ \frac{1}{1.3} = \frac{1}{(2 \times 1 + 1)}.  \) </span> So, P(1) is true. <br />
+			<span class="highlight01"> Step - II : </span> Let P(m) be true. Then, <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \frac{1}{1.3} + \frac{1}{3.5} + \frac{1}{5.7} + ..... + \frac{1}{(2m - 1)(2m + 1)} = \frac{m}{2m + 1}......(i)   \) </span>
+			<br />
+			We shall now show that P(m + 1) is true. For this we shall show that <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \frac{1}{1.3} + \frac{1}{3.5} + \frac{1}{5.7} + ..... + \frac{1}{(2m - 1)(2m + 1)} + \frac{1}{(2m + 1)(2m + 3)} = \frac{m + 1}{3m + 3}.....(ii)  \) </span>
+			<br />
+			Now, <span class=\"latex\" lang=\"latex\"> \(  \frac{1}{1.3} + \frac{1}{3.5} + \frac{1}{5.7} + ..... + \frac{1}{(2m - 1)(2m + 1)} + \frac{1}{(2m + 1)(2m + 3)}  \) </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  = \frac{m}{2m + 1} + \frac{1}{(2m + 1)(2m + 3)}  \) </span> [using (i)] <br />
+			<span class=\"latex\" lang=\"latex\"> \(  = \frac{2m^2 + 3m + 1}{(2m + 1)(2m + 3)} = \frac{(2m + 1)(m + 1)}{(2m + 1)(2m + 3)} = \frac{m + 1}{2m + 3}  \) </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \therefore  \) </span> P(m + 1) is true <br />
+			Thus, P(m) is true <span class=\"latex\" lang=\"latex\"> \(  \Rightarrow  \) </span> P(m + 1) is true. <br />
+			Hence, by the principle of mathematical induction, the given result is true for all <span class=\"latex\" lang=\"latex\"> \( n \epsilon N  \) </span>.
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 9:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			If x and y are any two distinct integers, then prove by mathematical induction that <span class=\"latex\" lang=\"latex\"> \( (x^n - y^n)  \) </span> is divisible by (x - y) for all <span class=\"latex\" lang=\"latex\"> \( n \epsilon N  \) </span> .
+		</p>
+		<p>
+			<span class="highlight01">Solution: </span>
+			<br />
+			Let P(n) be the statement given by <br />
+			P(n): <span class=\"latex\" lang=\"latex\"> \( (x^n - y^n)  \) </span> is divisible by (x - y) <br />
+			<span class="highlight01"> Step - I : </span> P(1) : <span class=\"latex\" lang=\"latex\"> \( (x^1 - y^1)  \) </span> is divisible by (x - y) <br />
+			<span class=\"latex\" lang=\"latex\"> \( (x^1 - y^1)  \) </span> = (x - y) is divisible by (x - y) <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \therefore  \) </span> P(1) is true. <br />
+			<span class="highlight01"> Step - II : </span> Let P(m) be true. Then, <span class=\"latex\" lang=\"latex\"> \( (x^m - y^m)  \) </span> is divisible by (x - y)<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \Rightarrow (x^m - y^m) = \lambda(x - y)  \) </span>, for some <span class=\"latex\" lang=\"latex\"> \(  \lambda \epsilon Z .......(i)  \) </span>
+			<br />
+			we shall now show that P(m + 1) is true. For this it is sufficient to show that <span class=\"latex\" lang=\"latex\"> \(  \left ( x^{m + 1} - y^{m + 1} \right )  \) </span> is divisible by (x - y). <br />
+			Now, <span class=\"latex\" lang=\"latex\"> \(  x^{m + 1} - y^{m + 1} = x^{m + 1} - x^m y + x^m y - y^{m + 1} = x^m(x - y) + y(x^m - y^m)  \) </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(   = x^m(x - y) + y \lambda(x - y)  \) </span> [ using (i) ] <br />
+			<span class=\"latex\" lang=\"latex\"> \(  = (x - y)(x^m + y \lambda )  \) </span>, which is divisible by (x - y) <br />
+			So, P(m + 1) is true. <br />
+			Thus, P(m) is true <span class=\"latex\" lang=\"latex\"> \(  \Rightarrow  \) </span> P(m + 1) is true. <br />
+			Hence, by the principle of mathematical induction, P(n) is true for all <span class=\"latex\" lang=\"latex\"> \( n \epsilon N  \) </span> i.e., <span class=\"latex\" lang=\"latex\"> \( (x^n - y^n)  \) </span> is divisible by (x - y) for all <span class=\"latex\" lang=\"latex\"> \( n \epsilon N  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 10:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			Prove by the principle of mathematical induction that for all <span class=\"latex\" lang=\"latex\"> \( n \epsilon N  \) </span>, <span class=\"latex\" lang=\"latex\"> \( 3^{2n}  \) </span> when divided by
+			8, the remainder is always 1.
+		</p>
+		<p>
+			<span class="highlight01">Solution: </span>
+			<br />
+			Let P(n) be the statement given by <br />
+			P(n) : <span class=\"latex\" lang=\"latex\"> \( 3^{2n}  \) </span> when divided by 8, the remainder is 1 <br />
+			or p(n) : <span class=\"latex\" lang=\"latex\"> \( 3^{2n} = 8 \lambda + 1  \) </span> for some <span class=\"latex\" lang=\"latex\"> \( \lambda \epsilon N  \) </span>
+			<br />
+			<span class="highlight01"> Step - I: </span>
+			<span class=\"latex\" lang=\"latex\"> \(  P(1) : 3^2 = 8 \lambda + 1  \) </span> for some <span class=\"latex\" lang=\"latex\"> \( \lambda \epsilon N  \) </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  3^2 = 8 \times 1 + 1 = 8 \lambda + 1, \ where \ \lambda = 1  \) </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \therefore  \) </span> P(1) is true. <br />
+			<span class="highlight01"> Step - II: </span> Let P(m) be true. Then, <br />
+			<span class=\"latex\" lang=\"latex\"> \( 3^{2m} = 8 \lambda + 1  \) </span> for some <span class=\"latex\" lang=\"latex\"> \(  \lambda \epsilon N  \) </span>
+			<br />
+			We shall now show that P(m + 1) is true for which we have to show that <span class=\"latex\" lang=\"latex\"> \(  3^{2(m + 1)}  \) </span> when divided by 8, the remainder is 1 i.e., <span class=\"latex\" lang=\"latex\"> \( 3^{2(m + 1)} = 8 \mu + 1  \) </span> for some <span class=\"latex\" lang=\"latex\"> \(  \mu \epsilon N  \) </span>. <br />
+			Now,	<span class=\"latex\" lang=\"latex\"> \(  3^{2(m + 1)} = 3^{2m}.3^2 = (8 \lambda	+ 1) \times 9  \) </span> [Using (i)] <br />
+			<span class=\"latex\" lang=\"latex\"> \(  = 72 \lambda + 9 = 72 \lambda + 8 + 1 = 8(9 \lambda + 1) + 1 = 8 \mu + 1, \ where \ \mu = 9 \lambda + 1 \epsilon N  \) </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \Rightarrow  \) </span> P(m + 1) is true <br />
+			Thus, P(m) is true	<span class=\"latex\" lang=\"latex\"> \(  \Rightarrow  \) </span> P(m + 1) is true <br />
+			Hence, by the principle of mathematical induction P(n) is true for all <span class=\"latex\" lang=\"latex\"> \( n \epsilon N  \) </span> i.e., <span class=\"latex\" lang=\"latex\"> \( 3^{2n}  \) </span>
+			when divided by 8 the remainder is always 1.
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 11:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			Prove by the principle of mathematical induction that <span class=\"latex\" lang=\"latex\"> \(  n &lt; 2^n  \) </span> for all <span class=\"latex\" lang=\"latex\"> \( n \epsilon N  \) </span> .
+		</p>
+		<p>
+			<span class="highlight01">Solution: </span>
+			<br />
+			Let P(n) be the statement given by P(n) : <span class=\"latex\" lang=\"latex\"> \(  n &lt; 2^n  \) </span>
+			<br />
+			<span class="highlight01"> Step - I:	</span>
+			<span class=\"latex\" lang=\"latex\"> \( P(1) : 1 &lt; 2^1  \) </span>
+			<br />
+			since <span class=\"latex\" lang=\"latex\"> \(  1 &lt; 2^1 \ \therefore  \) </span> P(1) is true <br />
+			<span class="highlight01"> Step - II: </span> Let P(m) be true. Then <span class=\"latex\" lang=\"latex\"> \(  m &lt; 2^m  \) </span>
+			<br />
+			We shall not show that P(m + 1) is true for which we will have to prove that <span class=\"latex\" lang=\"latex\"> \( (m + 1) &lt; 2^{m + 1}  \) </span>. <br />
+			Now, P(m) is true	<span class=\"latex\" lang=\"latex\"> \(  \Rightarrow m &lt; 2^m \Rightarrow 2m &lt; 2.2^m \Rightarrow 2m &lt; 2^{m + 1}	\Rightarrow (m + m) &lt; 2^{m + 1}  \) </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \Rightarrow m + 1 \leq m + m &lt; 2^{m + 1} \ \ \ [ 1 \leq m \ \therefore m + 1 \leq m + m]  \) </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \Rightarrow (m + 1) &lt; 2^{m + 1}	\Rightarrow  \) </span> P(m + 1) is true <br />
+			Thus, P(m) is true <span class=\"latex\" lang=\"latex\"> \(  \Rightarrow  \) </span> P(m + 1) is true. <br />
+			So by the principle of mathematical induction P(n) is true for all <span class=\"latex\" lang=\"latex\"> \( n \epsilon N  \) </span> i.e., <span class=\"latex\" lang=\"latex\"> \(  n &lt; 2^n  \) </span> for all <span class=\"latex\" lang=\"latex\"> \( n \epsilon N  \) </span>.
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 12:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			Prove by induction the inequality <span class=\"latex\" lang=\"latex\"> \( (1 + x)^n \geq 1 + nx  \) </span> whenever 'x' is positive and 'n' is a positive integer.
+		</p>
+		<p>
+			<span class="highlight01">Solution: </span>
+			<br />
+			Let P(n) be the statement given by P(n) : <span class=\"latex\" lang=\"latex\"> \( (1 + x)^n \geq 1 + nx  \) </span>
+			<br />
+			<span class="highlight01"> Step - I:	</span> P(1) : <span class=\"latex\" lang=\"latex\"> \( (1 + x)^1 \geq 1 + 1 (x)  \) </span>
+			<br />
+			since <span class=\"latex\" lang=\"latex\"> \( (1 + x)^1 \geq 1 + 1 (x) \ \therefore  \) </span>	P(1) is true <br />
+			<span class="highlight01"> Step - II: </span> Let P(m) be true. Then, <br />
+			<span class=\"latex\" lang=\"latex\"> \( (1 + x)^m \geq 1 + mx.......  (i)  \) </span>
+			<br />
+			We shall now prove that P(m + 1) is true whenever P(m) is true. For this we have to show that <span class=\"latex\" lang=\"latex\"> \(  (1 + x)^{m + 1} \geq 1 + (m + 1)x.  \) </span>
+			<br />
+			Now, <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \Rightarrow P(m) is true \Rightarrow (1 + x)^m \geq 1 + mx  \\\\[12pt]
+				\Rightarrow (1 + x) (1 + x)^m \geq (1 + x) (1 + mx)  \end{align}  \) </span>
+			<br />
+			Multiplying both sides by (1 + x) <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  (1 + x)^{m + 1} \geq 1 + (m + 1) x + mx^2  \\\\[12pt]
+				\Rightarrow (1 + x)^{m + 1} \geq 1 + (m + 1) x + mx^2 \geq 1 + (m + 1)x  \\\\[12pt]
+				\Rightarrow (1 + x)^{m + 1} \geq 1 + (m + 1) x  \end{align}  \) </span>
+			<br />
+			P(m + 1) is true <br />
+			Hence by the principle of induction, P(n) is true for all <span class=\"latex\" lang=\"latex\"> \( n \epsilon N  \) </span> i.e., <span class=\"latex\" lang=\"latex\"> \( (1 + x)^n \geq 1 + nx  \) </span> for all <span class=\"latex\" lang=\"latex\"> \( n \epsilon N  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 13:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			Prove by induction that <span class=\"latex\" lang=\"latex\"> \( (2n + 7) &lt; (n + 3)^2  \) </span> for all natural numbers n. Using this, prove by induction that <span class=\"latex\" lang=\"latex\"> \(  (n + 3)^2 \leq 2^{n + 3}  \) </span> for all <span class=\"latex\" lang=\"latex\"> \( n \epsilon N  \) </span> .
+		</p>
+		<p>
+			<span class="highlight01">Solution: </span>
+			<br />
+			Let P(n) be the statement given by <br />
+			P(n) : <span class=\"latex\" lang=\"latex\"> \( (2n + 7) &lt; (n + 3)^2  \) </span>
+			<br />
+			<span class="highlight01"> Step - I: </span>
+			<span class=\"latex\" lang=\"latex\"> \(  P(1) : (2 \times 1 + 7) &lt; (1 + 3)^2  \) </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  since \ (2 \times 1 + 7) = 9 &lt; (1 + 3)^2  \) </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \( \therefore  \) </span> P(1) is true <br />
+			<span class="highlight01"> Step - II: </span> Let P(m) be true. Then, <br />
+			<span class=\"latex\" lang=\"latex\"> \(  2m + 7 &lt; (m + 3)^2  \) </span>
+			<br />
+			We shall now show that P(m + 1) is true whenever P(m) is true. For this we have to show that <span class=\"latex\" lang=\"latex\"> \(  2(m + 1) + 7 &lt; (m + 1 + 3)^2  \) </span>. <br />
+			Now, P(m) is true	<span class=\"latex\" lang=\"latex\"> \(  \Rightarrow	2m + 7 &lt; (m + 3)^2  \) </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \Rightarrow 2m + 7 + 2 &lt; (m + 3)^2 + 2  \\\\[12pt]
+				\Rightarrow 2(m + 1) + 7 &lt; m^2 + 6m + 11  \\\\[12pt]
+				\Rightarrow 2(m + 1) + 7 &lt; m^2 + 6m + 11 &lt; m^2 + 8m + 16  \\\\[12pt]
+				\Rightarrow 2(m + 1) 7 &lt; (m + 4)^2	\Rightarrow	[2(m + 1) +	7 ] &lt; [(m + 1) + 3]^2  \end{align}  \) </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \Rightarrow  \) </span> P(m + 1) is true. <br />
+			Hence, by the principle of mathematical induction, P(n) is true for all <span class=\"latex\" lang=\"latex\"> \( n \epsilon N.  \) </span>
+			<br />
+			Now, let P'(n) be the statement given by <span class=\"latex\" lang=\"latex\"> \( P^{\prime}(n) : (n + 3)^2 \leq 2^{n + 3}  \) </span>
+			<br />
+			<span class="highlight01"> Step - I:	</span>
+			<span class=\"latex\" lang=\"latex\"> \( P^{\prime}(1) : (1 + 3)^2 \leq 2^{1 + 3}  \) </span>
+			<br />
+			since <span class=\"latex\" lang=\"latex\"> \(  (1 + 3)^2 = 16 \leq 2^{1 + 3}  \) </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \therefore \ P^{\prime}(1)  \) </span> is true <br />
+			<span class="highlight01"> Step - II : </span> Let <span class=\"latex\" lang=\"latex\"> \( P^{\prime}(m)  \) </span> be true Then, <span class=\"latex\" lang=\"latex\"> \(  (m + 3)^2 \leq 2^{m + 3}  \) </span>
+			<br />
+			We shall now show that <span class=\"latex\" lang=\"latex\"> \(  P^{\prime}(m + 1)  \) </span> is true whenever P(m) is true. For this we have to show that <span class=\"latex\" lang=\"latex\"> \(  \left [ (m + 1) + 3 \right ]^2 \leq 2^{(m + 1) + 3}  \) </span>
+			<br />
+			Now, <span class=\"latex\" lang=\"latex\"> \( P^{\prime}(m)  \) </span> is true <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \Rightarrow (m + 3)^2 \leq 2^{m + 3}  \\\\[12pt]
+				\Rightarrow (M + 3)^2 + (2m + 7) \leq 2^{m + 3} + (2m + 7)  \\\\[12pt]
+				\Rightarrow (m + 4)^2 \leq 2^{m + 3} + (M + 3)^2  \\\\[12pt]
+				[ 2m + 7 &lt; (m + 3)^2	\ \ \therefore 2^{m + 3} + (2m + 7)	&lt; 2^{m + 3} + (m + 3)^2 ]  \\\\[12pt]
+				\Rightarrow (m + 4)^2 \leq 2^{m + 3} + 2^{m + 3}  \\\\[12pt]
+				[ (m + 3)^2 \leq 2^{m + 3} \Rightarrow	(m + 3)^2 + 2^{m + 3} \leq 2^{m + 3} + 2^{m + 3} ]  \\\\[12pt]
+				\Rightarrow (m + 4)^2 \leq 2.2^{m + 3}  \\\\[12pt]
+				\Rightarrow (m + 4)^2 \leq 2^{m + 4}  \\\\[12pt]
+				\Rightarrow [(m + 1) + 3]^2 \leq 2^{(m + 1) + 3}  \end{align}  \) </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \Rightarrow P^{\prime}(m + 1)  \) </span> is true <br />
+			Hence, by the principle of mathematical induction, <span class=\"latex\" lang=\"latex\"> \( P^{\prime}(n)  \) </span> is true for all <span class=\"latex\" lang=\"latex\"> \( n \epsilon N  \) </span> i.e., <span class=\"latex\" lang=\"latex\"> \( (n + 3)^2 \leq 2^{n + 3}  \) </span> for all <span class=\"latex\" lang=\"latex\"> \( n \epsilon N  \) </span>.
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 14:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			Prove by induction that the sum of the cubes of three consecutive natural numbers is divisible by 9.
+		</p>
+		<p>
+			<span class="highlight01">Solution: </span>
+			<br />
+			Let P(n) be the statement given by <br />
+			P(n) : Sum of the cubes of three consecutive natural numbers starting from 'n' is divisible by 9. <br />
+			<span class="highlight01"> Step - I: </span> P(1) : Sum of the cubes of first three consecutive natural numbers is divisible by 9. <br />
+			Since	<span class=\"latex\" lang=\"latex\"> \(  1^3 + 2^3 + 3^3 = 36  \) </span>, which is divisible by 9. <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \therefore  \) </span> P(1) is true <br />
+			<span class="highlight01"> Step - II: </span> Let P(m) be true. Then, sum of the cubes of three consecutive natural numbers starting with 'm' is divisible by 9. <br />
+			i.e.,
+			<span class=\"latex\" lang=\"latex\"> \( 
+				m^3 + (m + 1)^3 + (m + 2)^3  \) </span> is divisible by 9 <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \Rightarrow m^3 + (m + 1)^3 + (m + 2)^3 = 9 \lambda, \ \lambda \epsilon N  \) </span>
+			<br />
+			We shall now show that P(m + 1) is true for which we have to show that <span class=\"latex\" lang=\"latex\"> \( (m + 1)^3 + (m + 2)^3 + (m + 3)^3  \) </span> is divisible by 9. <br />
+			Now, <span class=\"latex\" lang=\"latex\"> \(  (m + 1)^3 + (m + 2)^3 + (m + 3)^3 = (m + 1)^3 + (m + 2)^3 + m^3 + 9m^2 + 27m + 27  \) </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  = m^3 + (m + 1)^3 + (m + 2)^3 + 9(m^2 + 3m + 3) = 9 \lambda + 9(m^2 + 3m + 3) \ ] [Using (i)]  \) </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  = 9( \lambda + m^2 + 3m + 3)  \) </span>, which is divisible by 9. <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \therefore  \) </span> P(m + 1) is true <br />
+			Thus, P(m) is true <span class=\"latex\" lang=\"latex\"> \(  \Rightarrow  \) </span> P(m + 1) is true. <br />
+			Hence, by the principle of mathematical induction P(n) is true for all <span class=\"latex\" lang=\"latex\"> \( n \epsilon N  \) </span>.
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 15:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			Let P(n) be the statement "n(n + 1)(n + 2) is divisible by 12". Show that P(3) and P(4) are true, but not P(5).</p>
+		<p>
+			<span class="highlight01">Solution: </span>
+			<br />
+			We have, <br />
+			P(n) = n(n + 1) (n + 2) is divisible by 12. <br />
+			For n = 3, P(3) = 3(3 + 1)(3 + 2) <span class=\"latex\" lang=\"latex\"> \(  = 3 \times 4 \times 5 = 12 \times 5  \) </span>, which is divisible by 12. <br />
+			Therefore, P(3) is true. <br />
+			For	n = 4, P(4) = 4(4 + 1) (4 + 2) <span class=\"latex\" lang=\"latex\"> \(  = 4 \times 5 \times 6 = 120 = 12 \times 10  \) </span>, which is divisible by 12 <br />
+			Therefore, P(4) is also true. <br />
+			For	n = 5, P(5) = 5(5 + 1) (5 + 2) <span class=\"latex\" lang=\"latex\"> \(  = 5 \times 6 \times 7 = 210  \) </span>, which is not divisible by 12. <br />
+			Therefore, P(5) is not true.
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 16:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			If P(n) is the statement " <span class=\"latex\" lang=\"latex\"> \(  2^n > 3n  \) </span>" and if P(k) is true, show that P(k + 1) is also true. </p>
+		<p>
+			<span class="highlight01">Solution: </span>
+			<br />
+			It is given that P(k) is true, i.e., <span class=\"latex\" lang=\"latex\"> \(  2^k > 3k  \) </span>. <br />
+			And, we have to prove that P(k + 1) is true i.e., <span class=\"latex\" lang=\"latex\"> \(  2^{k + 1} > 3(k + 1)  \) </span>. <br />
+			since P(k) is true <span class=\"latex\" lang=\"latex\"> \(  2^k > 3k ..........(1)  \) </span>
+			<br />
+			On multiplying both sides of (1) by 2, we get <br />
+			<span class=\"latex\" lang=\"latex\"> \(  2 \times 2^k > 2 \times 3k \Rightarrow 2^{k + 1} > 6k......... (2)  \) </span>
+			<br />
+			Also, for every natural number n, 6n > 3(n + 1) <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \Rightarrow 6k > 3(k + 1) \ [since \ k > 1 \Rightarrow 3k > 3 \Rightarrow 3k + 3k > 3 + 3k \Rightarrow 6k > 3(k + 1)].......(3)  \) </span>
+			<br />
+			From (2) and (3), we get <br />
+			<span class=\"latex\" lang=\"latex\"> \( 2^{k + 1} > 3(k + 1)  \) </span>
+			<br />
+			i.e., P(k + 1) is true.
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 17:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			Prove by the principle of mathematical induction that n(n + 1)(n + 2) is divisible by 6, for all <span class=\"latex\" lang=\"latex\"> \(  n \epsilon N  \) </span>.
+		</p>
+		<p>
+			<span class="highlight01">Solution: </span>
+			<br />
+			Let P(n) be the statement 'n(n + 1) (n + 2) is divisible by 6' <br />
+			i.e., P(n) = n(n + 1)(n + 2) is divisible by 6. <br />
+			<span class="highlight01"> Step - I: </span> For n = 1, we have <br />
+			P(1) = 1(1 + 1)(1 + 2) = <span class=\"latex\" lang=\"latex\"> \(  1 \times 2 \times 3 = 6  \) </span> which is divisible by 6. <br />
+			Thus, P(1) is true for n = 1 <br />
+			<span class="highlight01"> Step - II: </span> For n = k. Let P(k) be true, <br />
+			i.e., P(k) = k(k + 1)(k + 2) is divisible by 6. <br />
+			Let k(k + 1)(k + 2) = <span class=\"latex\" lang=\"latex\"> \(  6 \lambda  \) </span> for some <span class=\"latex\" lang=\"latex\"> \(  \lambda \epsilon N  \) </span>.<br />
+			<span class="highlight01"> Step - II: </span> For n = k + 1 we have to show that P(k + 1) is true, <br />
+			i.e.,	P(k + 1) is divisible by 6. <br />
+			[Take (k + 1) (k + 2) = 2t as (k + 1) and (k + 2) are two consecutive integers. <span class=\"latex\" lang=\"latex\"> \(  \therefore  \) </span> One of them must be even,
+			hence divisible by 2. It means (k + 1) (k + 2) is divisible by 2 = 2t (say) ] <br />
+			P(k + 1) = (k + 1) (k + 1 + 1) (k + 1 + 2) = (k + 1) (k + 2) (k + 3)
+			= k(k + 1) (k + 2) + 3(k + 1)(k + 2)
+			<span class=\"latex\" lang=\"latex\"> \(  = 6 \lambda + 3(k + 1)(k + 2)  \) </span> [From (1)]	<br />
+			<span class=\"latex\" lang=\"latex\"> \(  = 6 \lambda + 6t = 6(\lambda + t)  \) </span>, which is divisible by 6. <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \therefore  \) </span> P(k + 1) is true <br />
+			Thus, P(k) is true <span class=\"latex\" lang=\"latex\"> \(  \Rightarrow  \) </span> P(k + 1) is true <br />
+			Hence, by the principle of mathematical induction P(n) is true for all <span class=\"latex\" lang=\"latex\"> \(  n \epsilon N  \) </span>
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 18:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			Prove by the principle of mathematical induction that <br />
+			<span class=\"latex\" lang=\"latex\"> \(  1^2 + 2^2 + 3^2 + ........ + n^2 = \frac{1}{6} n(n + 1)(2n + 1)  \) </span> for all <span class=\"latex\" lang=\"latex\"> \(  n \epsilon N  \) </span> :
+		</p>
+		<p>
+			<span class="highlight01">Solution: </span>
+			<br />
+			Let P(n) be the statement given by <br />
+			<span class=\"latex\" lang=\"latex\"> \(  P(n): 1^2 + 2^2 + 3^2 + ........ + n^2 = \frac{1}{6} n(n + 1)(2n + 1)  \) </span>
+			<br />
+			<span class="highlight01"> Step - 1: </span> For n = 1, we have <br />
+			P(n) : 1 = <span class=\"latex\" lang=\"latex\"> \(  \frac{1}{6} 1(1 + 1)(2 + 1) = \frac{1}{6} \times 2 \times 3 = 1  \) </span>
+			<br />
+			Thus, P(1) is true. <br />
+			<span class="highlight01"> Step - 2: </span> For n = k, assume that P(k) is true. <br />
+			Then, <span class=\"latex\" lang=\"latex\"> \( 1^2 + 2^2 + 3^2 + . . . .+	k^2 = \frac{1}{6} k(k + 1)(2k + 1).......(1)  \) </span>
+			<br />
+			<span class="highlight01"> Step - 3: </span> For n = k + 1, we have to show that <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  1^2 + 2^2 + 3^2 +...	. + k^2 + (k + 1)^2 = \frac{1}{6} (k + 1)(k + 1 + 1)[2(k + 1) + 1]  \\\\[12pt]
+				Now, \ 1^2 + 2^2 + 3^2 +......+ k^2 + (k + 1)^2  \\\\[12pt]
+				= \frac{1}{6} k(k + 1)(2k + 1) + (k + 1)^2	\ [From (1)]  \\\\[12pt]
+				= \frac{1}{6} (k + 1) [k(2k + 1) + 6(k + 1)]  \\\\[12pt]
+				= \frac{1}{6} (k + 1) [2k^2 + 7k + 6]  \\\\[12pt]
+				= \frac{1}{6} (k + 1) (k + 2) (2k + 3)  \\\\[12pt]
+				= \frac{1}{6} (k + 1) (k + 1 + 1) [2(k + 1) + 1]  \end{align}  \) </span>
+			<br />
+			Therefore, P(k + 1) is true. <br />
+			Thus, P(k) is true <span class=\"latex\" lang=\"latex\"> \(  \Rightarrow  \) </span> P(k + 1) is true. <br />
+			Hence, by the principle of mathematical induction P(n) is true for all <span class=\"latex\" lang=\"latex\"> \(  n \epsilon N  \) </span> .
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 19:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			Prove by the principle of mathematical induction, "<span class=\"latex\" lang=\"latex\"> \(  10^n + 3.4^{n + 2} + 5  \) </span>is divisible by 9" for all <span class=\"latex\" lang=\"latex\"> \(  n \epsilon N  \) </span>.</p>
+		<p>
+			<span class="highlight01">Solution: </span>
+			<br />
+			Let	P(n) be the statement "<span class=\"latex\" lang=\"latex\"> \(  10^n + 3.4^{n + 2} + 5  \) </span> is divisible by 9" <br />
+			i.e.,	P(n) : <span class=\"latex\" lang=\"latex\"> \(  1O^n + 3.4^{n + 2} + 5  \) </span> is divisible by 9. <br />
+			<span class="highlight01"> Step - I: </span> For n = 1, we have <br />
+			P(1) : <span class=\"latex\" lang=\"latex\"> \(  10^1 + 3.4^{1 + 2} + 5 = 10 + 3 \times 64 + 5 = 207 = 9 \times 23  \) </span>
+			<br />
+			Which is divisible by 9. <br />
+			Thus, P(n) is true for n = 1. <br />
+			<span class="highlight01"> Step - 2: </span> For n = k, assume that P(k) is true. <br />
+			Then, P(k): <span class=\"latex\" lang=\"latex\"> \(  10^k + 3.4^{k + 2} + 5  \) </span> is divisible by 9. <br />
+			= 9m, where <span class=\"latex\" lang=\"latex\"> \(  m \epsilon N  \) </span>. <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \Rightarrow 10^k = 9m — 3.4^{k + 2} — 5.........(1)  \) </span>
+			<br />
+			<span class="highlight01"> Step - 3: </span> For n = k + 1, we have to show that P(k + 1) is divisible by 9. <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \Rightarrow P(k + 1): 10^{k + 1} + 3.4^{k + 1 + 2} + 5  \\\\[12pt]
+				= 10^1. 10^k + 3.4^1.4^{k + 2} + 5  \\\\[12pt]
+				= 10.10^k+ 12.4^{k + 2} + 5  \\\\[12pt]
+				= 10(9m - 3.4^{k + 2} - 5) + 12.4^{k + 2} + 5 \ [From (1)]  \\\\[12pt]
+				= 90m - 30.4^{k + 2} — 50 + 12.4^{k	+ 2} + 5  \\\\[12pt]
+				= 90m - 18.4^{k + 2} - 45  \\\\[12pt]
+				= 9(10m - 2.4^{k + 2} - 5)  \end{align}  \) </span>
+			<br />
+			Which is divisible by 9, as 9 is a factor of it. <br />
+			Therefore, P(k + 1) is true. <br />
+			Thus, P(k) is true <span class=\"latex\" lang=\"latex\"> \(  \Rightarrow  \) </span> P(k + 1 ) is true. <br />
+			Hence, by the principle of mathematical induction P(n) is true for all <span class=\"latex\" lang=\"latex\"> \(  n \epsilon N  \) </span> .
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 20:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			Using the principle of mathematical induction prove that: <br />
+			<span class=\"latex\" lang=\"latex\"> \(  1 + 3 + 3^2 + ..... + 3^{n - 1} = \frac{(3^n - 1)}{2}  \) </span>
+		</p>
+		<p>
+			<span class="highlight01">Solution: </span>
+			<br />
+			Let	P(n) be the statement given by <br />
+			P(n) : <span class=\"latex\" lang=\"latex\"> \(  1 + 3 + 3^2 + ..... + 3^{n - 1} = \frac{(3^n - 1)}{2}  \) </span>
+			<br />
+			<span class="highlight01"> Step - I: </span> For n = 1, we have <br />
+			P(1) : <span class=\"latex\" lang=\"latex\"> \( 3^{1 - 1} = \frac{3^1 - 1}{2}	\Rightarrow 1 = 1  \) </span>
+			<br />
+			Thus, P(1) is true. <br />
+			<span class="highlight01"> Step - II: </span> For n = k ; assume that P(k) is true. <br />
+			Then, <span class=\"latex\" lang=\"latex\"> \(  1 + 3 + 3^2 +.....	+ 3^{k - 1} = \frac{3^k — 1}{2}  \) </span>
+			<br />
+			<span class="highlight01"> Step - III: </span> For n = k + 1 ; we have to show that <br />
+			<span class=\"latex\" lang=\"latex\"> \(  1 + 3 + 3^2 +.....+ 3^{k - 1} + 3^{k + 1 - 1} = \frac{3^{k + 1} — 1}{2}  \) </span>
+			<br />
+			now, L.H.S. = <span class=\"latex\" lang=\"latex\"> \(  1 + 3 + 3^2 + ...... + 3^{k - 1} + 3^{k + 1 - 1}  \) </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  = \frac{3^k - 1}{2} + 3^{k + 1 - 1}  \) </span> [using (1)] <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  = \frac{3^k - 1}{2} + 3^k = \frac{3^k - 1 + 2.3^k}{2} = \frac{3^k(1 + 2) - 1}{2}  \\\\[12pt]
+				= \frac{3.3^k - 1}{2} = \frac{3^{k + 1} - 1}{2}  \end{align}  \) </span>
+			<br />
+			Therefore, P(k + 1) is true. <br />
+			Thus, P(k) is true <span class=\"latex\" lang=\"latex\"> \(  \Rightarrow  \) </span>  P(k + 1) is true. <br />
+			Hence, by the principle of mathematical induction P(n) is true for all <span class=\"latex\" lang=\"latex\"> \(  n \epsilon N  \) </span> .
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 21:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			Using the principle of mathematical induction prove that: <br />
+			<span class=\"latex\" lang=\"latex\"> \(  1.3 + 2.3^2 + 3.3^3 +. . . + n.3^n = \frac{(2n - 1)3^{n + 1} + 3}{4}  \) </span>
+		</p>
+		<p>
+			<span class="highlight01">Solution: </span>
+			<br />
+			Let P(n) be the statement given by <br />
+			<span class=\"latex\" lang=\"latex\"> \(  P(n) : 1.3 + 2.3^2 + 3.3^3 +. . . + n.3^n = \frac{(2n - 1)3^{n + 1} + 3}{4}  \) </span>
+			<br />
+			<span class="highlight01"> Step - I: </span> For n = 1, we have <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  P(1) : 1.3^1 = \frac{(2 - 1)3^{1 + 1} + 3}{4}  \\\\[12pt]
+				or \ 3 = \frac{9 + 3}{4} \ or \ 3 = 3  \end{align}  \) </span>
+			<br />
+			Thus, P(1) is true. <br />
+			<span class="highlight01"> Step - II: </span> for n = k, assume that P(k) is true. <br />
+			Then, <span class=\"latex\" lang=\"latex\"> \(  1.3 + 2.3^2 + 3.3^3 +. . . + k.3^k = \frac{(2k - 1)3^{k + 1} + 3}{4}........ (1)  \) </span>
+			<br />
+			<span class="highlight01"> Step - III: </span> for n = k + 1; we have to show that <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  1.3 + 2.3^2 + 3.3^3 +. . . + k.3^k + (k + 1) 3^{k + 1} = \frac{[2(k + 1) - 1] . 3^{(k + 1) + 1} + 3}{4}  \\\\[12pt]
+				now, \ L.H.S =  1.3 + 2.3^2 + 3.3^3 +. . . + k.3^k + (k + 1) 3^{k + 1}   \\\\[12pt]
+				= \frac{(2k - 1) 3^{k + 1} + 3}{4} + (k + 1) 3^{k + 1} \ \ \ \ [using(1)]  \\\\[12pt]
+				= \frac{(2k - 1)3^{k + 1} + 3 + 4(k + 1)3^{k + 1}}{4}  \\\\[12pt]
+				= \frac{(2k - 1 + 4k + 4)3^{k + 1} + 3}{4} = \frac{(6k + 3)3^{k + 1} + 3}{4}  \\\\[12pt]
+				= \frac{3(2k + 1)3^{k + 1} + 3}{4} = \frac{(2k + 1)3^{k + 2} + 3}{4}  \\\\[12pt]
+				= \frac{[2(k + 1) - 1]3^{(k + 1) + 1} + 3}{4} \end{align}  \) </span>
+			<br />
+			Therefore, P(k + 1) is true. <br />
+			Thus, P(k) is true <span class=\"latex\" lang=\"latex\"> \(  \Rightarrow  \) </span> P(k + 1) is true. <br />
+			Hence, by principle of mathematical induction P(n) is true for all <span class=\"latex\" lang=\"latex\"> \(  n \epsilon N  \) </span>.
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 22:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			Using principle of mathematical induction prove that: <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \left ( 1 + \frac{3}{1} \right ) \left ( 1 + \frac{5}{4} \right ) \left ( 1 + \frac{7}{9} \right ).......... \left ( 1 + \frac{2n + 1}{n^2} \right ) = (n + 1)^2  \) </span>
+		</p>
+		<p>
+			<span class="highlight01">Solution: </span>
+			<br />
+			Let P(n) be the statement given by <br />
+			<span class=\"latex\" lang=\"latex\"> \(  P(n) : \left ( 1 + \frac{3}{1} \right ) \left ( 1 + \frac{5}{4} \right ) \left ( 1 + \frac{7}{9} \right ).......... \left ( 1 + \frac{2n + 1}{n^2} \right ) = (n + 1)^2  \) </span>
+			<br />
+			<span class="highlight01"> Step - I: </span> For n = 1, we have <br />
+			<span class=\"latex\" lang=\"latex\"> \(  P(1) : \left ( 1 + \frac{2 \times 1 + 1}{1^2} \right ) = (1 + 1)^2 \ or \ \left ( 1 + \frac{3}{1} \right ) = 2^2 \ or \ 4 = 4  \) </span>
+			<br />
+			Thus, P(1) is true. <br />
+			<span class="highlight01"> Step - II: </span> for n = k, assume that P(k) is true. <br />
+			Then, <span class=\"latex\" lang=\"latex\"> \(  \left ( 1 + \frac{3}{1} \right ) \left ( 1 + \frac{5}{4} \right ) \left ( 1 + \frac{7}{9} \right ).......... \left ( 1 + \frac{2k + 1}{k^2} \right ) = (k + 1)^2 ....... (1)  \) </span>
+			<br />
+			<span class="highlight01"> Step - III: </span> for n = k + 1; we have to show that <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \left ( 1 + \frac{3}{1} \right ) \left ( 1 + \frac{5}{4} \right ) \left ( 1 + \frac{7}{9} \right ).......... \left ( 1 + \frac{2k + 1}{k^2} \right ) \left ( 1 + \frac{2(k + 1) + 1}{(k + 1)^2} \right ) = (k + 1 + 1)^2 \) </span>
+			<br />
+			now, <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \left ( 1 + \frac{3}{1} \right ) \left ( 1 + \frac{5}{4} \right ) \left ( 1 + \frac{7}{9} \right ).......... \left ( 1 + \frac{2k + 1}{k^2} \right ) \left ( 1 + \frac{2(k + 1) + 1}{(k + 1)^2} \right ) = (k + 1)^2 \left [ 1 + \frac{2k + 3}{(k + 1)^2} \right ]  \) </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  = (k + 1)^2 \left [ \frac{(k + 1)^2 + 2k + 3}{(k + 1)^2} \right ]  \) </span>  [using(1)] <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  = (k^2 + 2k + 1 + 2k + 3)  \\\\[12pt]
+				= (k^2 + 4k + 4) = (k + 2)^2 = ( \overline{k + 1} + 1)^2  \end{align}  \) </span>
+			<br />
+			Therefore, P(k + 1) is true. <br />
+			Thus, P(k) is true <span class=\"latex\" lang=\"latex\"> \(  \Rightarrow  \) </span> P(k + 1) is true. <br />
+			Hence, by principle of mathematical induction P(n) is true for all <span class=\"latex\" lang=\"latex\"> \(  n \epsilon N  \) </span>.
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 23:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			Using the principle of mathematical induction prove that: <br />
+			<span class=\"latex\" lang=\"latex\"> \(  1 + 2 + 3 +.......+ n &lt; \frac{1}{8} (2n + 1)^2  \) </span>
+		</p>
+		<p>
+			<span class="highlight01">Solution: </span>
+			<br />
+			Let P(n) be the statement given by <br />
+			<span class=\"latex\" lang=\"latex\"> \(  P(n) : 1 + 2 + 3 +.......+ n &lt; \frac{1}{8} (2n + 1)^2  \) </span>
+			<br />
+			<span class="highlight01"> Step - I: </span> For n = 1, we have <br />
+			<span class=\"latex\" lang=\"latex\"> \(  P(1) : 1 &lt; \frac{1}{8} (2 + 1)^2 \ or \ 1 &lt; \frac{9}{8} \) </span>
+			<br />
+			Thus, P(1) is true. <br />
+			<span class="highlight01"> Step - II: </span> for n = k, assume that P(k) is true. <br />
+			Then, <span class=\"latex\" lang=\"latex\"> \(  1 + 2 + 3 +.......+ k &lt; \frac{1}{8} (2k + 1)^2....... (1)  \) </span>
+			<br />
+			<span class="highlight01"> Step - III: </span> for n = k + 1; we have to show that <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  1 + 2 + 3 +.......+ k + (k + 1) &lt; \frac{1}{8} [2(k + 1) + 1]^2  \\\\[12pt]
+				now, \ L.H.S = 1 + 2 + 3 +.......+ k + (k + 1) &lt; \frac{1}{8} (2k + 1)^2 + k + 1 \ [using(1)]  \\\\[12pt]
+				&lt; \frac{1}{8} [4k^2 + 4k + 1 + 8k + 8]  \\\\[12pt]
+				&lt; \frac{1}{8} [4k^2 + 12k + 9]  \\\\[12pt]
+				&lt; \frac{1}{8} [2k + 3]^2  \\\\[12pt]
+				&lt; \frac{1}{8} [2(k + 1) + 1]^2 \end{align}  \) </span>
+			<br />
+			Therefore, P(k + 1) is true. <br />
+			Thus, P(k) is true <span class=\"latex\" lang=\"latex\"> \(  \Rightarrow  \) </span> P(k + 1) is true. <br />
+			Hence, by principle of mathematical induction P(n) is true for all <span class=\"latex\" lang=\"latex\"> \(  n \epsilon N  \) </span>.
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 24:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			Using the principle of mathematical induction prove that: <br />
+			<span class=\"latex\" lang=\"latex\"> \(  10^{2n - 1} + 1  \) </span> is divisible by 11.
+		</p>
+		<p>
+			<span class="highlight01">Solution: </span>
+			<br />
+			Let P(n) be the statement given by <br />
+			<span class=\"latex\" lang=\"latex\"> \(  P(n) : 10^{2n - 1} + 1  \) </span> is divisible by 11. <br />
+			<span class="highlight01"> Step - I: </span> For n = 1, we have <br />
+			<span class=\"latex\" lang=\"latex\"> \(  P(1) : 10^{2 - 1} + 1 = 10 + 1 = 11  \) </span>, which is divisible by 11.
+			Thus, P(1) is true. <br />
+			<span class="highlight01"> Step - II: </span> for n = k, assume that P(k) is true. <br />
+			Then, <span class=\"latex\" lang=\"latex\"> \(  10^{2k - 1} + 1  \) </span> is divisible by 11.<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \Rightarrow 10^{2k - 1} + 1 = 11m, \ where \ m \epsilon N.  \) </span>
+			<br />
+			<span class="highlight01"> Step - III: </span> for n = k + 1; we have to prove that <span class=\"latex\" lang=\"latex\"> \(  10^{2(k + 1) - 1} - 1  \) </span> is divisible by 11.<br />
+			now, <span class=\"latex\" lang=\"latex\"> \(  10^{2(k + 1) - 1} + 1 = 10^{2k + 2 - 1} + 1 \) </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  = 10^{2k + 1} + 1 = 10^2. 10^{2k - 1} + 1 = 100 (10^{2k - 1} + 1) - 100 + 1  \\\\[12pt]
+				= 100(10^{2k - 1} + 1) - 99 = 100(11m) - 99 = 11(100m - 9) \ [from (1)]  \end{align}  \) </span>
+			Hence, P(k + 1) is divisible by 11. <br />
+			Therefore, by principle of mathematical induction P(n) is true for all <span class=\"latex\" lang=\"latex\"> \(  n \epsilon N  \) </span>.
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 25:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			Using the principle of mathematical induction prove that: <br />
+			<span class=\"latex\" lang=\"latex\"> \(  x^{2n} - y^{2n}  \) </span> is divisible by x + y.
+		</p>
+		<p>
+			<span class="highlight01">Solution: </span>
+			<br />
+			Let P(n) be the statement given by <br />
+			<span class=\"latex\" lang=\"latex\"> \(  P(n) : x^{2n} - y^{2n}  \) </span> is divisible by x + y. <br />
+			<span class="highlight01"> Step - I: </span> For n = 1, we have <br />
+			<span class=\"latex\" lang=\"latex\"> \(  P(1) : x^2 - y^2 = (x + y)(x - y)  \) </span> which is divisible by (x + y) <br />
+			Thus, P(1) is true. <br />
+			<span class="highlight01"> Step - II: </span> for n = k, assume that P(k) is true. <br />
+			Then, <span class=\"latex\" lang=\"latex\"> \(  P(k) : x^{2k} - y^{2k}  \) </span> which is divisible by (x + y)  
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \Rightarrow x^{2k} - y^{2k} = m(x + y)  \) </span> for some integer m. <br />
+			<span class=\"latex\" lang=\"latex\"> \(  \therefore \ x^{2k} = m(x + y) + y^{2k}...... (1) \) </span>
+			<br />
+			<span class="highlight01"> Step - III: </span> for n = k + 1; we have to prove that P(k + 1) is true <br />
+			i.e., <span class=\"latex\" lang=\"latex\"> \(  x^{2(k + 1)} - y^{2(k + 1)}  \) </span> is divisible by (x + y). <br />
+			Now, <span class=\"latex\" lang=\"latex\"> \(  x^{2k + 2} - y^{2k + 2} = x^2.x^{2k} - y^2.y^{2k}  \) </span>
+			<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  = x^2 \left [ m(x + y) + y^{2k} \right ] - y^2.y^{2k} \ [using(1)]  \\\\[12pt]
+				= mx^2(x + y) + x^2.y^{2k} - y^2.y^{2k}  \\\\[12pt]
+				= mx^2(x + y) + y^{2k}(x^2 - y^2)  \\\\[12pt]
+				= mx^2(x + y) + y^{2k}(x + y)(x - y)  \\\\[12pt]
+				= (x + y) [mx^2 + (x - y)y^{2k}]  \end{align}  \) </span>
+			<br />
+			Therefore, P(k + 1) is divisible by (x + y). <br />
+			Hence, by principle of mathematical induction P(n) is true for all <span class=\"latex\" lang=\"latex\"> \(  n \epsilon N  \) </span>.
+		</p>
+	</section>
+	<section class="solved-example">
+		<h4 class="solved-examples-question">Example 26:</h4>
+		<p>
+			<span class="highlight01">Question:</span>
+			<br />
+			Using the principle of mathematical induction prove that: <br />
+			<span class=\"latex\" lang=\"latex\"> \(  3^{2n + 2} - 8n - 9  \) </span> is divisible by 8.
+		</p>
+		<p>
+			<span class="highlight01">Solution: </span>
+			<br />
+			Let P(n) be the statement given by <br />
+			<span class=\"latex\" lang=\"latex\"> \(  P(n) : 3^{2n + 2} - 8n - 9  \) </span> is divisible by 8. <br />
+			<span class="highlight01"> Step - I: </span> For n = 1, we have <br />
+			<span class=\"latex\" lang=\"latex\"> \(  P(1) : 3^{2 + 2} - 8(1) - 9 = 3^4 - 8 - 9 = 81 - 17 = 64 \) </span>, which is divisible by 8 <br />
+			Thus, P(1) is true. <br />
+			<span class="highlight01"> Step - II: </span> for n = k, assume that P(k) is true. <br />
+			Then, <span class=\"latex\" lang=\"latex\"> \(  P(k) : 3^{2k + 2} - 8k - 9  \) </span> is divisible by 8.<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  3^{2k + 2} - 8k - 9 = 8m, \ where \ m \epsilon N.  \\\\[12pt]
+				\Rightarrow 3^{2k + 2} = 8m + 8k + 9  \end{align}  \) </span>
+			<br />
+			<span class="highlight01"> Step - III: </span> for n = k + 1; we have to show that P(k + 1) is divisible by 8<br />
+			<span class=\"latex\" lang=\"latex\"> \(  \begin{align}  \Rightarrow P(k + 1): 3^{2(k + 1) + 2} - 8(k + 1) - 9 = 3^{2k + 2 + 2} - 8k - 8 - 9  \\\\[12pt]
+				= 3^2(3^{2k + 2}) - 8k - 17  \\\\[12pt]
+				= 9[8m + 8k + 9] - 8k - 17  \\\\[12pt]
+				= 72m + 72k + 81 - 8k - 17  \\\\[12pt]
+				= 72m + 64k + 64 = 8[9m + 8k + 8] \end{align}  \) </span>
+			<br />
+			which is divisible by 8. <br />
+			Hence, P(k + 1) is true. <br />
+			Hence, by principle of mathematical induction P(n) is true for all <span class=\"latex\" lang=\"latex\"> \(  n \epsilon N  \) </span>.
+		</p>
+	</section> 
+</section>  

@@ -1,0 +1,52 @@
+<book>
+    <preheading>Bank Exam Preparation</preheading>
+    <title>General Studies</title>
+    <description>Bank Exam Preparation Course Materials provided by eTester Classes.</description>
+    <book_chapter_number_offset>0</book_chapter_number_offset>
+    <book_page_number_offset>0</book_page_number_offset>
+    <show_chapter_numbers>true</show_chapter_numbers>
+    <chapters>
+        <chapter>
+            <number>1</number>
+            <title>Science</title>
+            <description><![CDATA[Essential Exam Preparation guide for Employment Readiness Exams]]></description>
+            <filename>Science.html</filename>
+			<notespages>0</notespages>
+        </chapter>
+        <chapter>
+            <number>2</number>
+            <title>Geography</title>
+            <description><![CDATA[Essential Exam Preparation guide for Employment Readiness Exams]]></description>
+            <filename>Geography.html</filename>
+			<notespages>0</notespages>
+        </chapter>
+        <chapter>
+            <number>3</number>
+            <title>History</title>
+            <description><![CDATA[Essential Exam Preparation guide for Employment Readiness Exams]]></description>
+            <filename>History.html</filename>
+			<notespages>0</notespages>
+        </chapter>
+        <chapter>
+            <number>4</number>
+            <title>Polity</title>
+            <description><![CDATA[Essential Exam Preparation guide for Employment Readiness Exams]]></description>
+            <filename>Polity.html</filename>
+			<notespages>0</notespages>
+        </chapter>
+        <chapter>
+            <number>5</number>
+            <title>Economics</title>
+            <description><![CDATA[Essential Exam Preparation guide for Employment Readiness Exams]]></description>
+            <filename>Economics.html</filename>
+			<notespages>0</notespages>
+        </chapter>
+        <chapter>
+            <number>6</number>
+            <title>Miscellaneous</title>
+            <description><![CDATA[Essential Exam Preparation content for Employment Readiness Exams]]></description>
+            <filename>Miscellaneous.html</filename>
+			<notespages>0</notespages>
+        </chapter>
+    </chapters>
+</book>
