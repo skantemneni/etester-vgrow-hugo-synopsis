@@ -13,6 +13,10 @@
     {{ $options := (dict "targetPath" "css/styles.css" "outputStyle" "compressed") }}
     {{ $style := resources.Get "sass/main.scss" | toCSS  $options | minify }}
     <link rel="stylesheet" href="{{ $style.RelPermalink }}" media="screen">
+
+    
+        <link rel="stylesheet" href="{{ .Site.BaseURL }}css/styles.min.css" media="screen">
+
     <!-- doing the above to include bootstrap scss to css -->
     <!--    <img style="height: 24px; width: 46px;" href="{{ .Site.Home.Permalink }}" src="/image/logo/logoETESTER_ONLY_E.svg" class="logo" tabindex="0"> -->
 
